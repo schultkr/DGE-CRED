@@ -9,7 +9,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 
-\title{Spatial Small Open Economy Dynamic General Equilibrium Model \\
+\title{Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)\\
 \large{Technical Report}}
 \date{March 2020}
 \author{Christoph Schult and Andrej Drygalla \\ Halle Institute for Economic Research}
@@ -59,8 +59,14 @@ P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(S(\f
 \end{dmath}
 Households have access to the international financial market to purchase and sell internationally traded bonds. We only consider net foreign positions.
 \begin{dmath}
-\lambda_{t+1} \, \beta \, \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t}-{{\phi^{B}}}\, \left({B_{t}}-(\bar{B})\right)
+\lambda_{t+1} \, \beta \, S^{f}_{t+1} \, \phi^{B}_{t+1} \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t} \\
 \end{dmath}
+
+The required interest rate will increase if the foreign debt relative to GDP increases and current net exports relative to GDP will decrease. 
+\begin{dmath}
+\phi^{B}_{t+1} = exp \left(-\phi^B \,(S^{f}_{t+1} \, r^{f}_{t+1} \, \frac{B_{t}}{Y_{t+1}}+\frac{NX_{t}}{Y_t})\right)
+\end{dmath}
+
 \subsection{Firms}
 
 \subsection{Government}
