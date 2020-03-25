@@ -1,0 +1,132 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{cite}
+\usepackage[authoryear]{natbib}     
+\usepackage{geometry}
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{breqn}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Spatial Small Open Economy Dynamic General Equilibrium Model \\
+\large{Technical Report}}
+\date{March 2020}
+\author{Christoph Schult and Andrej Drygalla \\ Halle Institute for Economic Research}
+
+% define citation style
+\bibliographystyle{agsm}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This report is a guide on how to use the spatial small open economy dynamic general equilibrium model for climate change and adaptation simulations. In general the model belongs to the class of real business cycle models, because no nominal rigidities are explicitly considered. Nevertheless, it is possible to extend the model to feature also nominal rigidities. The model structure is depicted in Figure \ref{fig:ModelStructure}.
+\begin{figure}[h]
+\caption{Model Structure}\label{fig:ModelStructure}
+\includegraphics[width = 1\textwidth, height = 0.7\textwidth]{ModelStructure.jpg}
+\end{figure}
+Regional climate variables (precipitation, wind speed, temperature and sea level) are exogenous to economic variables. Regional sectoral production functions depend on regional climate variables. The model is meant to reflect small open economies and therefore the climate system is unaffected by the domestic economic system.
+
+The model consists of an arbitrary number of regions and sectors. Regional differentiation is only provided on the supply side and not on the demand side. Representative households consume sectoral goods and supply capital and labour to the firms in the regions. Households also demand goods and services from the rest of the world. Firms use capital and labour to produce sectoral goods with sectoral and regional specific constant elasticity of substitution production functions.
+
+The government collects taxes, consumes and can use its funds to finance adaptation measures for specific regions and sectors. So far, adaptation measures will reduce overall damage by all climate variables at the same time. The effectiveness of government expenditure in one specific region and sector can vary.
+
+One can use the model to conduct scenario simulations to evaluate the costs and benefits for different adaptation measures. It is important to understand that the model is not meant to produce explicit forecasts for an economy. The model is meant to simulate long-run developments considering the impact of potential changes in climate variables and their effect on the supply side of the economy. the user is able to define scenarios for different climate variables and adaptation measures. Therefore, it is possible to disentangle the effect of specific climate variable changes on the economy. Further, the model is able to quantify upper limits for costs of adaptation measures to reduce damages by climate change. E.g., it is possible to evaluate the impact of temperature increases on different sectors and the overall impact on total gross value added. The discounted cumulative difference between a scenario without a temperature increase and with temperature increase can be used to determine the upper bound for the costs to reduce the damage caused by a temperature increase.  
+
+In the following Section \ref{sec:modelderivation} the derivation of the model equations is explicitly described. Readers who are interested in using the model can skip the model section and can directly go to Section \ref{sec:modelusage}.
+
+\cleardoublepage
+\section{Model}\label{sec:modelderivation}
+\subsection{Households}
+As depicted in Figure \ref{fig:ModelStructure} the demand side is represented by representative households $h$ providing labour $N$ and capital $K$ to domestic firms $f$. Households maximize discounted utility over an infinite horizon by choosing consumption $C_t(h)$, capital $K_{k,r,t+1}(h)$, investments $I_{k,r,t}(h)$, labour $N_{k,r,t}(h)$ and foreign net bond holdings $B_{t+1}$ to maximize utility constrained by the budget constraint and the law of motion for sectoral and regional capital. Therefore, the Lagrangian eq.~\ref{eq:hhlagrangian} of the representative household is
+\begin{dmath}\label{eq:hhlagrangian}
+\sum_{t=0}^{\infty} \beta^{t} \left[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) 
+- \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + P^{f}_{t} \, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{L}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
+- \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta) \, K_{k,r,t} - I_{k,r,t} \, S\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace  \right].
+\end{dmath}
+Households receive utility by consuming goods, where the inter temporal elasticity of consumption is defined by $\sigma^{C}$. Dis-utility from labour is sector and region specific $\phi^{L}_{k,r}$, the inverse Frisch elasticity $\sigma^{L}$ is identical for all sectors and regions. Households spent money either on consumption goods $P_t \, C_t(h) \, (1 + \tau^{C})$, regional and sector specific investment $P_{k,r,t} I_{k,r,t}(h)$ and need to repay foreign bonds $B_{t+1}(h)$. They receive income from labour $W_{k,r,t} \, N_{k,r,t}(h) \, (1 - \tau^{L})$, capital renting $P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}(h) \, (1 - \tau^{K})$ and can use their borrowed money from the foreign economy $B_{t}(h)$. The first order conditions to the problem are the behavioral equations. As is standard in teh literature we replace the Lagrange multiplier $\lambda_{t}$ by the marginal utility of consumption $\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}$ derived from the first order condition (FOC) of the above problem with respect to (w.r.t.) consumption. Households supply labour according to the FOC w.r.t. labour eq.~\ref{eq:hhlaboursupply} for each sector and region depending on the wage $W_{k,r,t}$ and the marginal dis-utility of labour for the specific sector and region
+\begin{dmath}\label{eq:hhlaboursupply}
+\phi^{L}_{k,r} N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{L}_{k,r,t}).
+\end{dmath}
+The household also needs to decide how much of its income it wants to consume or invest into capital. The famous Euler equation eq.~\ref{eq:hhfoccapital} is obtained by taking the first derivative of the Lagrangian w.r.t. sector and region specific capital
+\begin{dmath}\label{eq:hhfoccapital}
+\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} + (1 - \delta) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
+\end{dmath}
+Further, the household also faces investment adjustment cost $S(\frac{I_{k,r,t}}{I_{k,r,t-1}}) = 3 - exp\left\lbrace\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right\rbrace\right) - exp\left\lbrace-\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right)\right\rbrace$, which are sector and region specific. The specification of the investment adjustment cost function is the same as proposed and estimated by \cite{christiano2014risk} for the US.  The marginal value of sectoral and regional investment $\omega^{I}_{k,r,t}$ is determined by
+\begin{dmath}\label{eq:hhfocinvestment}
+P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(S(\frac{I_{k,r,t}}{I_{k,r,t-1}}) - \frac{\partial S(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial I_{k,r,t}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) + \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial S(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial I_{k,r,t}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
+\end{dmath}
+Households have access to the international financial market to purchase and sell internationally traded bonds. We only consider net foreign positions.
+\begin{dmath}
+\lambda_{t+1} \, \beta \, \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t}-{{\phi^{B}}}\, \left({B_{t}}-(\bar{B})\right)
+\end{dmath}
+\subsection{Firms}
+
+\subsection{Government}
+
+\subsection{Climate variables}
+
+\subsection{Rest of the world}
+
+
+\cleardoublepage
+\section{How to use the model?}\label{sec:modelusage}
+\subsection{Usage}
+\begin{enumerate}
+\item In order to use the model you need to install \href{https://www.dynare.org/}{Dynare (at least version 4.5.5)}  and \href{https://www.mathworks.com/products/matlab.html}{Matlab (at least 2018b)} or \href{https://www.gnu.org/software/octave/}{Octave} on your computing machine. 
+\item You need to download the repository from Github. 
+\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file {\tt Model Simulation and Calibration K Sectors and R Regions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt IWH\_CRED\_Model.mod}.
+\item The simulation results are stored in the file {\tt Results Scenarios K Sectors and R Regions.xlsx}.
+\end{enumerate}
+
+\section{Folder structure}
+\begin{enumerate}
+\item The main file containing all necessary mod files is {\tt IWH_CRED_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
+\begin{enumerate}
+\item {\tt IWH_CRED_Model_Declarations.mod} declares all endogenous and exogenous variables if the model and structural parameters.
+\item {\tt IWH_CRED_Model_Parameters.mod} assigns values to the structural parameters of the model.
+\item {\tt IWH_CRED_Model_Equations.mod} contains the equations of the model.
+\item {\tt IWH_CRED_Model_LatexOutput.mod} produces latex output for documentation of the declared variables and model equations.
+\item {\tt IWH_CRED_Model_SteadyState.mod} computes initial and terminal condition for the dynamic simulation.
+\item {\tt IWH_CRED_Model_Simulations.mod} starts the dynamic simulation.
+\end{enumerate}
+\item Subroutines responsible for finding the initial and terminal conditions are located in the subfolder {\tt Functions}:
+\begin{enumerate}
+\item {\tt Calibration.mat} finds the initial conditions to reflect a specific year of the economy.
+\item {\tt FIndA.mat} looks for exogenous productivity shocks across sectors and regions to meet the terminal conditions.
+\item {\tt FIndK.mat} looks for a capital allocation across sectors and regions to fulfill the static equations of the model.
+\item {\tt rng.mat} random number generator function necessary for Octave users.
+\end{enumerate}
+\item To define scenarios and structural parameters one needs to create an Excel workbook located in the subfolder {\tt ExcelFiles}:
+\begin{enumerate}
+\item {\tt Model Simulation and Calibration for K Sectors and R regions.xlsx} has multiple sheets:
+\begin{enumerate}
+\item initial {\tt Start}
+\item terminal {\tt Terminal}
+\item parameters to define rigidity parameters {\tt Dynamics}
+\item elasticity parameters and tax rates {\tt Structural Parameters}
+\item coefficients for regional and sector specific damage functions {\tt Climate Damage Functions}
+\item {\tt Baseline} scenario and other optional scenario sheets defining long-run values of climate variables
+\end{enumerate}
+\item {\tt Results Scenarios K Sectors and R regions.xlsx} has as many sheets as Scenarios defined in the previous Excel file.
+\end{enumerate}
+\item The latex files produced by {\tt IWH_CRED_Model_LatexOutput.mod} are stored in {\tt LatexFiles}.
+\begin{enumerate}
+\item the system of dynamic equations as implemented in Matlab {\tt IWH_CRED_Model_Dynamic}, {\tt IWH_CRED_Model_Dynamic_content}
+\item names of endogenous, exogenous variables and parameters {\tt IWH_CRED_Model_latex_definitions}
+\item the system of dynamic equations in original form without auxiliary variables for leads and lags {\tt IWH_CRED_Model_original}, {\tt IWH_CRED_Model_original_content}
+\end{enumerate}
+\item The file to run different simulations is {\tt RunSimulations.m}.
+\item A Matlab function to find solutions to the static system of equations is {\tt IWH_CRED_Model_steady_state.m}.
+\end{enumerate}
+
+\bibliography{references}
+
+\appendix
+\section{Model Equations}
+\footnotesize
+\include{Model_Equations}
+\cleardoublepage
+\include{IWH_CRED_Model_latex_definitions}
+\end{document}
