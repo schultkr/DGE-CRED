@@ -2,6 +2,7 @@
 \usepackage{cite}
 \usepackage[authoryear]{natbib}     
 \usepackage{geometry}
+\usepackage{amsmath}
 \usepackage{fullpage}
 \usepackage{amsfonts}
 \usepackage{breqn}
@@ -38,11 +39,12 @@ In the following Section \ref{sec:modelderivation} the derivation of the model e
 
 \cleardoublepage
 \section{Model}\label{sec:modelderivation}
-\subsection{Households}
+\subsection{Demand}
+\subsubsection{Households}
 As depicted in Figure \ref{fig:ModelStructure} the demand side is represented by representative households $h$ providing labour $N$ and capital $K$ to domestic firms $f$. Households maximize discounted utility over an infinite horizon by choosing consumption $C_t(h)$, capital $K_{k,r,t+1}(h)$, investments $I_{k,r,t}(h)$, labour $N_{k,r,t}(h)$ and foreign net bond holdings $B_{t+1}$ to maximize utility constrained by the budget constraint and the law of motion for sectoral and regional capital. Therefore, the Lagrangian eq.~\ref{eq:hhlagrangian} of the representative household is
 \begin{dmath}\label{eq:hhlagrangian}
 \sum_{t=0}^{\infty} \beta^{t} \left[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) 
-- \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + P^{f}_{t} \, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{L}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
+- \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{L}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
 - \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta) \, K_{k,r,t} - I_{k,r,t} \, S\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace  \right].
 \end{dmath}
 Households receive utility by consuming goods, where the inter temporal elasticity of consumption is defined by $\sigma^{C}$. Dis-utility from labour is sector and region specific $\phi^{L}_{k,r}$, the inverse Frisch elasticity $\sigma^{L}$ is identical for all sectors and regions. Households spent money either on consumption goods $P_t \, C_t(h) \, (1 + \tau^{C})$, regional and sector specific investment $P_{k,r,t} I_{k,r,t}(h)$ and need to repay foreign bonds $B_{t+1}(h)$. They receive income from labour $W_{k,r,t} \, N_{k,r,t}(h) \, (1 - \tau^{L})$, capital renting $P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}(h) \, (1 - \tau^{K})$ and can use their borrowed money from the foreign economy $B_{t}(h)$. The first order conditions to the problem are the behavioral equations. As is standard in teh literature we replace the Lagrange multiplier $\lambda_{t}$ by the marginal utility of consumption $\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}$ derived from the first order condition (FOC) of the above problem with respect to (w.r.t.) consumption. Households supply labour according to the FOC w.r.t. labour eq.~\ref{eq:hhlaboursupply} for each sector and region depending on the wage $W_{k,r,t}$ and the marginal dis-utility of labour for the specific sector and region
@@ -67,11 +69,34 @@ The required interest rate will increase if the foreign debt relative to GDP inc
 \phi^{B}_{t+1} = exp \left(-\phi^B \,(S^{f}_{t+1} \, r^{f}_{t+1} \, \frac{B_{t}}{Y_{t+1}}+\frac{NX_{t}}{Y_t})\right)
 \end{dmath}
 
-\subsection{Firms}
+\subsubsection{Government}
+
+We are interested in different policy measures taken by the government to adapt to a new climate regime. Government behavior is not a result of an optimization problem. The Government collects taxes from consumption $\tau^{C} \, C_{t}$, labour income $\tau^{N} \, W_{t} \, N_{t} \, PoP_{t}$ and capital income $\tau^{K}$. In order to finance its activities the government can also get loans from the rest of the world $B^{G}_{t+1}$ and has to repay loans and interest from the previous period denominated in foreign currency $(1 + r^{f}_{t})$ identical to the household. 
+
+Government expenditures can be used to finance adaptation measures in specific sectors and regions $G^{A}_{k,n,t}$.
+
+\subsubsection{Resource constraint}
+
+Households and the Government use domestic final goods $Y_t$ produced by firms for consumption, investment and for exports $X_{t}$ and can also use imports $M_t$ for consumption and investment. This gives rise to the well known resource constraint or the expenditure approach to define GDP 
+\begin{align}
+Y_{t} = C_{t} + I_{t} + G_{t} + X_{t} - M_{t} 
+\end{align}
+
+\subsection{Production}
+
+Households demand final domestic goods $Y_{t}$ combining goods from different sectors $Y_{k,t}$ using a CES composition function. They minimize expenditures subject to the composition function
+\begin{align}
+\underset{Y_{k,t}}{\mathrm{min}} & \sum_{k} Y_{k,t} \, P_{k,t} \\ 
+Y_{t} &= \left(\sum_{k} {\omega^{C}_{k}}^{\frac{1}{\eta^C}} Y_{k,t}^{\frac{\eta^C-1}{\eta^C}} \right)^{\frac{\eta^C}{\eta^C-1}}
+\end{align}
+
+Therefore demand for sectoral products correspond to the first order conditions of theabove optimuization problem. The Lagrange multiplier is 
 
 \subsection{Government}
 
+
 \subsection{Climate variables}
+
 
 \subsection{Rest of the world}
 
@@ -88,14 +113,14 @@ The required interest rate will increase if the foreign debt relative to GDP inc
 
 \section{Folder structure}
 \begin{enumerate}
-\item The main file containing all necessary mod files is {\tt IWH_CRED_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
+\item The main file containing all necessary mod files is {\tt DGE_CRED_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
 \begin{enumerate}
-\item {\tt IWH_CRED_Model_Declarations.mod} declares all endogenous and exogenous variables if the model and structural parameters.
-\item {\tt IWH_CRED_Model_Parameters.mod} assigns values to the structural parameters of the model.
-\item {\tt IWH_CRED_Model_Equations.mod} contains the equations of the model.
-\item {\tt IWH_CRED_Model_LatexOutput.mod} produces latex output for documentation of the declared variables and model equations.
-\item {\tt IWH_CRED_Model_SteadyState.mod} computes initial and terminal condition for the dynamic simulation.
-\item {\tt IWH_CRED_Model_Simulations.mod} starts the dynamic simulation.
+\item {\tt DGE_CRED_Model_Declarations.mod} declares all endogenous and exogenous variables if the model and structural parameters.
+\item {\tt DGE_CRED_Model_Parameters.mod} assigns values to the structural parameters of the model.
+\item {\tt DGE_CRED_Model_Equations.mod} contains the equations of the model.
+\item {\tt DGE_CRED_Model_LatexOutput.mod} produces latex output for documentation of the declared variables and model equations.
+\item {\tt DGE_CRED_Model_SteadyState.mod} computes initial and terminal condition for the dynamic simulation.
+\item {\tt DGE_CRED_Model_Simulations.mod} starts the dynamic simulation.
 \end{enumerate}
 \item Subroutines responsible for finding the initial and terminal conditions are located in the subfolder {\tt Functions}:
 \begin{enumerate}
@@ -117,14 +142,14 @@ The required interest rate will increase if the foreign debt relative to GDP inc
 \end{enumerate}
 \item {\tt Results Scenarios K Sectors and R regions.xlsx} has as many sheets as Scenarios defined in the previous Excel file.
 \end{enumerate}
-\item The latex files produced by {\tt IWH_CRED_Model_LatexOutput.mod} are stored in {\tt LatexFiles}.
+\item The latex files produced by {\tt DGE_CRED_Model_LatexOutput.mod} are stored in {\tt LatexFiles}.
 \begin{enumerate}
-\item the system of dynamic equations as implemented in Matlab {\tt IWH_CRED_Model_Dynamic}, {\tt IWH_CRED_Model_Dynamic_content}
-\item names of endogenous, exogenous variables and parameters {\tt IWH_CRED_Model_latex_definitions}
-\item the system of dynamic equations in original form without auxiliary variables for leads and lags {\tt IWH_CRED_Model_original}, {\tt IWH_CRED_Model_original_content}
+\item the system of dynamic equations as implemented in Matlab {\tt DGE_CRED_Model_Dynamic}, {\tt DGE_CRED_Model_Dynamic_content}
+\item names of endogenous, exogenous variables and parameters {\tt DGE_CRED_Model_latex_definitions}
+\item the system of dynamic equations in original form without auxiliary variables for leads and lags {\tt DGE_CRED_Model_original}, {\tt DGE_CRED_Model_original_content}
 \end{enumerate}
 \item The file to run different simulations is {\tt RunSimulations.m}.
-\item A Matlab function to find solutions to the static system of equations is {\tt IWH_CRED_Model_steady_state.m}.
+\item A Matlab function to find solutions to the static system of equations is {\tt DGE_CRED_Model_steady_state.m}.
 \end{enumerate}
 
 \bibliography{references}
