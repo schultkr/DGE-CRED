@@ -105,10 +105,12 @@ Therefore demand for sectoral products correspond to the first order conditions 
 \section{How to use the model?}\label{sec:modelusage}
 \subsection{Usage}
 \begin{enumerate}
-\item In order to use the model you need to install \href{https://www.dynare.org/}{Dynare (at least version 4.5.5)}  and \href{https://www.mathworks.com/products/matlab.html}{Matlab (at least 2018b)} or \href{https://www.gnu.org/software/octave/}{Octave} on your computing machine. 
+\item In order to use the model you need to install \href{https://www.dynare.org/download/}{Dynare (at least version 4.6.1)}  and \href{https://www.mathworks.com/products/matlab.html}{Matlab (at least 2018b)} or \href{https://www.gnu.org/software/octave/}{Octave} on your computing machine. 
+For Octave you need to have the version 5.2.0 as reported by the Dynare team. 
 \item You need to download the repository from Github. 
-\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file {\tt Model Simulation and Calibration K Sectors and R Regions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt IWH\_CRED\_Model.mod}.
-\item The simulation results are stored in the file {\tt Results Scenarios K Sectors and R Regions.xlsx}.
+\item Open Octave or Matlab GUI and browse to the location of the folder in your computer. You have the right folder if the command {\tt pwd()} returns {\tt YourPath/DGE-CRED/DGE_CRED_Model}.
+\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file \\ {\tt ModelSimulationandCalibrationKSectorsandRRegions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt IWH\_CRED\_Model.mod}.
+\item The simulation results are stored in the file {\tt ResultsScenariosKSectorsandRRegions.xlsx}.
 \end{enumerate}
 
 \section{Folder structure}
@@ -125,22 +127,23 @@ Therefore demand for sectoral products correspond to the first order conditions 
 \item Subroutines responsible for finding the initial and terminal conditions are located in the subfolder {\tt Functions}:
 \begin{enumerate}
 \item {\tt Calibration.mat} finds the initial conditions to reflect a specific year of the economy.
-\item {\tt FIndA.mat} looks for exogenous productivity shocks across sectors and regions to meet the terminal conditions.
-\item {\tt FIndK.mat} looks for a capital allocation across sectors and regions to fulfill the static equations of the model.
+\item {\tt FindA.mat} looks for exogenous productivity shocks across sectors and regions to meet the terminal conditions.
+\item {\tt FindK.mat} looks for a capital allocation across sectors and regions to fulfill the static equations of the model.
 \item {\tt rng.mat} random number generator function necessary for Octave users.
+\item {\tt LoadExogenous.mat} reads exogenous variables for different scenarios.
 \end{enumerate}
 \item To define scenarios and structural parameters one needs to create an Excel workbook located in the subfolder {\tt ExcelFiles}:
 \begin{enumerate}
-\item {\tt Model Simulation and Calibration for K Sectors and R regions.xlsx} has multiple sheets:
+\item {\tt ModelSimulationandCalibrationforKSectorsandRregions.xlsx} has multiple sheets:
 \begin{enumerate}
 \item initial {\tt Start}
 \item terminal {\tt Terminal}
 \item parameters to define rigidity parameters {\tt Dynamics}
 \item elasticity parameters and tax rates {\tt Structural Parameters}
 \item coefficients for regional and sector specific damage functions {\tt Climate Damage Functions}
-\item {\tt Baseline} scenario and other optional scenario sheets defining long-run values of climate variables
+\item {\tt Baseline} scenario and other optional scenario sheets defining paths for exogenous varibales
 \end{enumerate}
-\item {\tt Results Scenarios K Sectors and R regions.xlsx} has as many sheets as Scenarios defined in the previous Excel file.
+\item {\tt ResultsScenariosKSectorsandRregions.xlsx} has as many sheets as Scenarios defined in the previous Excel file.
 \end{enumerate}
 \item The latex files produced by {\tt DGE_CRED_Model_LatexOutput.mod} are stored in {\tt LatexFiles}.
 \begin{enumerate}
