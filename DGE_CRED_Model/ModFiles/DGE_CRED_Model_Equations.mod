@@ -7,6 +7,12 @@ model(bytecode);
         [name = 'sector specific TFP growth rate']
         gA_@{sec}_@{reg} = A_@{sec}_@{reg} / A_@{sec}_@{reg}(-1);
         
+        [name = 'sector specific corporate tax rate paid by firms']
+        tauK_@{sec}_@{reg} = tauK_@{sec}_@{reg}_p + exo_tauK_@{sec}_@{reg};
+        
+        [name = 'sector specific labour tax rate paid by firms']
+        tauN_@{sec}_@{reg} = tauN_@{sec}_@{reg}_p + exo_tauN_@{sec}_@{reg};
+
         [name = 'sector specific TFP']
         A_@{sec}_@{reg} = rhoA_@{sec}_@{reg}_p * A_@{sec}_@{reg}(-1) + (1 - rhoA_@{sec}_@{reg}_p) * (A_@{sec}_@{reg}_p * exp(exo_@{sec}_@{reg}));
 
@@ -32,10 +38,10 @@ model(bytecode);
         Y_@{sec}_@{reg} = (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg} * (alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg} * K_@{sec}_@{reg}(-1))^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p) + alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p))^(etaNK_@{sec}_@{reg}_p/(etaNK_@{sec}_@{reg}_p - 1));
 
         [name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
-        r_@{sec}_@{reg} = alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * A_K_@{sec}_@{reg}^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * (K_@{sec}_@{reg}(-1) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
+        r_@{sec}_@{reg} * (1 + tauK_@{sec}_@{reg}) = alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * A_K_@{sec}_@{reg}^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * (K_@{sec}_@{reg}(-1) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
 
         [name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
-        W_@{sec}_@{reg}/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg}) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
+        W_@{sec}_@{reg} * (1 + tauN_@{sec}_@{reg})/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg}) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
 
         [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
         (1 - tauN_p) * W_@{sec}_@{reg} * (P * C/PoP)^(-sigmaC_p) / (1 + tauC_p) = phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
@@ -124,7 +130,13 @@ P * Y =
     ;
 
 [name = 'Resource Constraint']
-Y = C + I + G - NX;
+Y = C + I + G - NX
+@# for sec in 1:Sectors
+    @# for reg in 1:Regions
+        + G_A_@{sec}_@{reg} 
+    @# endfor
+@# endfor
+;
 
 [name = 'Net Exports']
 NX = (B - (1 + rf) * Sf * B(-1));
@@ -141,10 +153,15 @@ rf = (1/beta_p-1);
 
 [name = 'Government Budget Constraint']
 G + (1 + rf) * Sf * BG (-1)
+@# for sec in 1:Sectors
+    @# for reg in 1:Regions
+        + G_A_@{sec}_@{reg} 
+    @# endfor
+@# endfor
 = BG + tauC_p * C
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
-        + tauN_p * W_@{sec}_@{reg} * N_@{sec}_@{reg} /P + tauK_p * P_@{sec}_@{reg} /P * r_@{sec}_@{reg} * K_@{sec}_@{reg} 
+        + (tauN_p + tauN_@{sec}_@{reg}) * W_@{sec}_@{reg} * N_@{sec}_@{reg} * PoP/P + (tauK_p + tauK_@{sec}_@{reg}) * P_@{sec}_@{reg} /P * r_@{sec}_@{reg} * K_@{sec}_@{reg} 
     @# endfor
 @# endfor
 ;

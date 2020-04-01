@@ -37,29 +37,27 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
         strpar.(['A_Y_' ssec '_p']) = strys.(['A_Y_' ssec]);
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
+            strys.(['tauK_' ssec '_' sreg]) = strpar.(['tauK_' ssec '_' sreg '_p']) + strexo.(['exo_tauK_' ssec '_' sreg]);
+            strys.(['tauN_' ssec '_' sreg]) = strpar.(['tauN_' ssec '_' sreg '_p']) + strexo.(['exo_tauN_' ssec '_' sreg]);
             strpar.(['phiY_' ssec '_' sreg '_p']) = strpar.(['phiY0_' ssec '_' sreg '_p']);
+            strpar.(['phiN_' ssec '_' sreg '_p']) = strpar.(['phiN0_' ssec '_' sreg '_p']);
             strys.(['A_N_' ssec '_' sreg]) = 1;
             strys.(['A_K_' ssec '_' sreg]) = 1;
             strpar.(['A_N_' ssec '_' sreg '_p']) = strys.(['A_N_' ssec '_' sreg]);
             strpar.(['A_K_' ssec '_' sreg '_p']) = strys.(['A_K_' ssec '_' sreg]);
             strys.(['G_A' ssec '_' sreg]) = strexo.(['exo_GA_' ssec '_' sreg]);
-%             strys.(['P_' ssec '_' sreg]) = strpar.(['phiP_' ssec '_' sreg '_p']) * strys.(['P_' ssec]);
-%             strys.(['Y_' ssec '_' sreg]) = strpar.(['phiY_' ssec '_' sreg '_p']) * strys.Y *strys.P / strys.(['P_' ssec '_' sreg]);
             strys.(['N_' ssec '_' sreg]) = strpar.(['phiN_' ssec '_' sreg '_p']) * strys.N;
-                        strys.(['r_' ssec '_' sreg]) = (1/strpar.beta_p - 1 + strpar.delta_p)/(1 - strpar.tauK_p);
-            wtemp = ((1 - (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * strys.(['r_' ssec '_' sreg])^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1)) / strpar.(['phiW_' ssec '_' sreg '_p']))^(1/(strpar.(['etaNK_' ssec '_' sreg '_p'])-1));
+            strys.(['r_' ssec '_' sreg]) = (1/strpar.beta_p - 1 + strpar.delta_p)/(1 - strpar.tauK_p);
+            rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauK_' ssec '_' sreg]));
+            wtemp = ((1 - (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * rkgross^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1)) / strpar.(['phiW_' ssec '_' sreg '_p']))^(1/(strpar.(['etaNK_' ssec '_' sreg '_p'])-1));
             strys.(['P_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p'])/wtemp * strpar.(['phiY_' ssec '_' sreg '_p']) * strys.Y *strys.P / (strys.PoP * strys.(['N_' ssec '_' sreg]));
             strys.(['Y_' ssec '_' sreg]) = strpar.(['phiY_' ssec '_' sreg '_p']) * strys.Y *strys.P / strys.(['P_' ssec '_' sreg]);
-            strys.(['K_' ssec '_' sreg]) = (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * strys.(['Y_' ssec '_' sreg]) / strys.(['r_' ssec '_' sreg]);
-            tempK = strys.(['r_' ssec '_' sreg])^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.(['K_' ssec '_' sreg]);
-            tempN = (strys.(['W_' ssec '_' sreg])/ strys.(['P_' ssec '_' sreg]))^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.PoP * strys.(['N_' ssec '_' sreg]);
+            strys.(['K_' ssec '_' sreg]) = (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * strys.(['Y_' ssec '_' sreg]) / rkgross;
+            tempK = rkgross^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.(['K_' ssec '_' sreg]);
+            tempN = wtemp^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.PoP * strys.(['N_' ssec '_' sreg]);
             strpar.(['alphaK_' ssec '_' sreg '_p']) = tempK / (tempN + tempK);
             strpar.(['alphaN_' ssec '_' sreg '_p']) = tempN / (tempN + tempK);
-            strys.(['W_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p']) * strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg]) / (strys.PoP * strys.(['N_' ssec '_' sreg]));
-%             strys.(['r_' ssec '_' sreg]) = (1/strpar.beta_p - 1 + strpar.delta_p)/(1 - strpar.tauK_p);
-%             strys.(['K_' ssec '_' sreg]) = (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * strys.(['Y_' ssec '_' sreg]) / strys.(['r_' ssec '_' sreg]);
-%             strpar.(['alphaK_' ssec '_' sreg '_p']) = strys.(['r_' ssec '_' sreg])^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.(['K_' ssec '_' sreg]) / strys.(['Y_' ssec '_' sreg]);
-%             strpar.(['alphaN_' ssec '_' sreg '_p']) = (strys.(['W_' ssec '_' sreg])/strys.(['P_' ssec '_' sreg]))^strpar.(['etaNK_' ssec '_' sreg '_p']) * strys.PoP * strys.(['A_N_' ssec '_' sreg]) .* strys.(['N_' ssec '_' sreg]) / strys.(['Y_' ssec '_' sreg]); 
+            strys.(['W_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p']) * strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg]) / (strys.PoP * strys.(['N_' ssec '_' sreg]) * (1 + strys.(['tauN_' ssec '_' sreg])));
             strys.(['D_' ssec '_' sreg]) = min(1,strpar.(['a_T_1_' ssec '_' sreg '_p']) * strys.(['T_' sreg]) + strpar.(['a_T_2_' ssec '_' sreg '_p']) * strys.(['T_' sreg])^(strpar.(['a_T_3_' ssec '_' sreg '_p'])) + ...
                                strpar.(['a_W_1_' ssec '_' sreg '_p']) * strys.(['WS_' sreg]) + strpar.(['a_W_2_' ssec '_' sreg '_p']) * strys.(['WS_' sreg])^(strpar.(['a_W_3_' ssec '_' sreg '_p'])) + ...
                                strpar.(['a_P_1_' ssec '_' sreg '_p']) * strys.(['PERC_' sreg]) + strpar.(['a_P_2_' ssec '_' sreg '_p']) * strys.(['PERC_' sreg])^(strpar.(['a_P_3_' ssec '_' sreg '_p'])) + ...
@@ -146,15 +144,15 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
         strys.N = strys.N + strys.(['N_' num2str(icosec)]);
     end
     
-    strys.wagebill = 0;
-    strys.capitalbill = 0;
+    strys.wagetax = 0;
+    strys.capitaltax = 0;
     strys.adaptationcost = 0;
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
-        strys.wagebill = strys.wagebill + strys.(['N_' ssec]) * strys.(['W_' ssec])./strys.P;
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
-            strys.capitalbill = strys.capitalbill + strys.(['P_' ssec '_' sreg]) * strys.(['K_' ssec '_' sreg]) * strys.(['r_' ssec '_' sreg])./strys.P;
+            strys.wagetax = strys.wagetax + strys.(['W_' ssec '_' sreg]) * strys.(['N_' ssec '_' sreg]) * strys.PoP ./strys.P * (strpar.tauN_p + strys.(['tauN_' ssec '_' sreg]));
+            strys.capitaltax = strys.capitaltax + strys.(['P_' ssec '_' sreg]) * strys.(['K_' ssec '_' sreg]) * strys.(['r_' ssec '_' sreg])./strys.P * (strpar.tauK_p + strys.(['tauK_' ssec '_' sreg]));
             strys.adaptationcost = strys.adaptationcost + strys.(['G_A_' ssec '_' sreg]);
         end
     end
@@ -164,8 +162,8 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     strys.I = strpar.delta_p * strys.K;
     strys.lambrf = 1;
 
-    strys.C = (strys.Y + strys.NX - strys.I - strpar.tauN_p * strys.wagebill  - strpar.tauK_p * strys.capitalbill + strys.rf * strys.BG) / (1 + strpar.tauC_p);
-    strys.G = (strpar.tauN_p * strys.wagebill + strpar.tauK_p * strys.capitalbill + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost;
+    strys.C = (strys.Y + strys.NX - strys.I - strys.wagetax  - strys.capitaltax + strys.rf * strys.BG) / (1 + strpar.tauC_p);
+    strys.G = (strys.wagetax + strys.capitaltax + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost;
     %% compute labour disutlity parameters
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);

@@ -54,6 +54,8 @@ aSL_3_mat = [2, 2; 2 2];
     omega_@{sec}_p = 1/inbsectors_p;
     etaC_@{sec}_p = 2;
     @# for reg in 1:Regions
+        tauK_@{sec}_@{reg}_p = 0.2;
+        tauN_@{sec}_@{reg}_p = 0;
         A_@{sec}_@{reg}_p = 1;
         omegaA_@{sec}_@{reg}_p = 0.025;
         gY0_@{sec}_@{reg}_p = 1.06;

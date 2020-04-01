@@ -43,6 +43,8 @@ SL ${SL}$ (long_name = 'sea level')
         P_@{sec}_@{reg} ${P_{k,n}}$ (long_name = 'regional sector price index')
         omegaI_@{sec}_@{reg} ${\omega^I_{k,n}}$ (long_name = 'shadow value of regional private sector investment')
         r_@{sec}_@{reg} ${r_{k,n}}$ (long_name = 'regional sector rental rate on capital')
+        tauK_@{sec}_@{reg} ${\tau^{K}_{k,n}}$ (long_name = 'regional sector corporate tax rate on capital')
+        tauN_@{sec}_@{reg} ${\tau^{N}_{k,n}}$ (long_name = 'regional sector labour tax rate on capital')
     @# endfor
 @# endfor
 ;
@@ -58,6 +60,8 @@ exo_NX ${\eta_{NX}}$ (long_name = 'exogenous net exports')
 exo_BG ${\eta_{BG}}$ (long_name = 'exogenous structural balance')
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
+        exo_tauK_@{sec}_@{reg} ${\eta_{\tau^{K},k,n}}$ (long_name = 'exogenous sector and region corporate tax rate')
+        exo_tauN_@{sec}_@{reg} ${\eta_{\tau^{N},k,n}}$ (long_name = 'exogenous sector and region labour tax rate')
         exo_@{sec}_@{reg} ${\eta_{A,k,n}}$ (long_name = 'exogenus TFP')
         exo_N_@{sec}_@{reg} ${\eta_{A^{N},k,n}}$ (long_name = 'exogenous labour specific TFP')
         exo_K_@{sec}_@{reg} ${\eta_{A^{K},k,n}}$ (long_name = 'exogenous capital specific TFP')
@@ -80,6 +84,8 @@ parameters
     omega_@{sec}_p ${\omega_{k}}$ (long_name = 'sector capital share')
     etaC_@{sec}_p ${\eta^{C}}$ (long_name = 'intratemporal elasticity of substitution')
     @# for reg in 1:Regions
+        tauK_@{sec}_@{reg}_p ${\tau^{K}_{k,n}}$ (long_name = 'region and sector specific tax rate on capital')
+        tauN_@{sec}_@{reg}_p ${\tau^{N}_{k,n}}$ (long_name = 'region and sector specific tax rate on labour')
         rhoA_@{sec}_@{reg}_p ${\rho^{A}_{k,n}}$ (long_name = 'persistence productivity shock')
         rhoA_N_@{sec}_@{reg}_p ${\rho^{A,N}_{k,n}}$ (long_name = 'persistence labour specific productivity shock')
         rhoA_K_@{sec}_@{reg}_p ${\rho^{A,K}_{k,n}}$ (long_name = 'persistence capital specific productivity shock')
