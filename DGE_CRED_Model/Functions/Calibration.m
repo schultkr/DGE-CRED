@@ -25,7 +25,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
         sreg = num2str(icoreg);
         strys.(['T_' sreg]) = strpar.(['T0_' sreg '_p']) + strexo.(['exo_T_' sreg]);
         strys.(['WS_' sreg]) = strpar.(['WS0_' sreg '_p']) + strexo.(['exo_WS_' sreg]);
-        strys.(['PERC_' sreg]) = strpar.(['PERC0_' sreg '_p']) + strexo.(['exo_PERC_' sreg]);
+        strys.(['PREC_' sreg]) = strpar.(['PREC0_' sreg '_p']) + strexo.(['exo_PREC_' sreg]);
     end
     strys.PoP = strpar.PoP0_p * exp(strexo.exo_PoP);
     strys.N = strpar.N0_p;
@@ -60,7 +60,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             strys.(['W_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p']) * strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg]) / (strys.PoP * strys.(['N_' ssec '_' sreg]) * (1 + strys.(['tauN_' ssec '_' sreg])));
             strys.(['D_' ssec '_' sreg]) = min(1,strpar.(['a_T_1_' ssec '_' sreg '_p']) * strys.(['T_' sreg]) + strpar.(['a_T_2_' ssec '_' sreg '_p']) * strys.(['T_' sreg])^(strpar.(['a_T_3_' ssec '_' sreg '_p'])) + ...
                                strpar.(['a_W_1_' ssec '_' sreg '_p']) * strys.(['WS_' sreg]) + strpar.(['a_W_2_' ssec '_' sreg '_p']) * strys.(['WS_' sreg])^(strpar.(['a_W_3_' ssec '_' sreg '_p'])) + ...
-                               strpar.(['a_P_1_' ssec '_' sreg '_p']) * strys.(['PERC_' sreg]) + strpar.(['a_P_2_' ssec '_' sreg '_p']) * strys.(['PERC_' sreg])^(strpar.(['a_P_3_' ssec '_' sreg '_p'])) + ...
+                               strpar.(['a_P_1_' ssec '_' sreg '_p']) * strys.(['PREC_' sreg]) + strpar.(['a_P_2_' ssec '_' sreg '_p']) * strys.(['PREC_' sreg])^(strpar.(['a_P_3_' ssec '_' sreg '_p'])) + ...
                                strpar.(['a_SL_1_' ssec '_' sreg '_p']) * strys.SL + strpar.(['a_SL_2_' ssec '_' sreg '_p']) * strys.SL^(strpar.(['a_SL_3_' ssec '_' sreg '_p']))) * exp(-strpar.(['phiGA_' ssec '_' sreg '_p']) * strys.(['G_A_' ssec '_' sreg]));
             temp = (strpar.(['alphaK_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * (strys.(['A_K_' ssec '_' sreg]) * strys.(['K_' ssec '_' sreg]))^((strpar.(['etaNK_' ssec '_' sreg '_p'])-1)/strpar.(['etaNK_' ssec '_' sreg '_p'])) + strpar.(['alphaN_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * (strys.PoP * strys.(['N_' ssec '_' sreg]))^((strpar.(['etaNK_' ssec '_' sreg '_p'])-1)/strpar.(['etaNK_' ssec '_' sreg '_p'])))^(strpar.(['etaNK_' ssec '_' sreg '_p'])/(strpar.(['etaNK_' ssec '_' sreg '_p'])-1));
             strys.(['A_' ssec '_' sreg]) = strys.(['Y_' ssec '_' sreg]) / ((1 - strys.(['D_' ssec '_' sreg])) * temp);
@@ -81,38 +81,38 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
             temp= 0;
-            tempdenom = (strys.(['P_' ssec '_' sreg]) /((strys.(['Y_' ssec '_' sreg]))^(-1/strpar.(['etaC_' ssec '_p']))))^(strpar.(['etaC_' ssec '_p']));
+            tempdenom = (strys.(['P_' ssec '_' sreg]) /((strys.(['Y_' ssec '_' sreg]))^(-1/strpar.(['etaQ_' ssec '_p']))))^(strpar.(['etaQ_' ssec '_p']));
             for icoregm = 1:strpar.inbregions_p
                 sregm = num2str(icoregm);
-                tempnum = (strys.(['P_' ssec '_' sregm]) /((strys.(['Y_' ssec '_' sregm]))^(-1/strpar.(['etaC_' ssec '_p']))))^(strpar.(['etaC_' ssec '_p']));
+                tempnum = (strys.(['P_' ssec '_' sregm]) /((strys.(['Y_' ssec '_' sregm]))^(-1/strpar.(['etaQ_' ssec '_p']))))^(strpar.(['etaQ_' ssec '_p']));
                 temp = temp + tempnum / tempdenom;
             end
-            strpar.(['omega_' ssec '_' sreg '_p']) = 1/temp;
+            strpar.(['omegaQ_' ssec '_' sreg '_p']) = 1/temp;
             strys.(['N_' ssec]) = strys.(['N_' ssec]) + strys.(['N_' ssec '_' sreg]);               
-            strys.(['P_' ssec]) = strys.(['P_' ssec]) + strpar.(['omega_' ssec '_' sreg '_p']) * strys.(['P_' ssec '_' sreg])^(1 - strpar.(['etaC_' ssec '_p']));
-            rhs_vec(icosec) = rhs_vec(icosec) + strpar.(['omega_' ssec '_' sreg '_p']) * strys.(['P_' ssec '_' sreg])^(1 - strpar.(['etaC_' ssec '_p']));
+            strys.(['P_' ssec]) = strys.(['P_' ssec]) + strpar.(['omegaQ_' ssec '_' sreg '_p']) * strys.(['P_' ssec '_' sreg])^(1 - strpar.(['etaQ_' ssec '_p']));
+            rhs_vec(icosec) = rhs_vec(icosec) + strpar.(['omegaQ_' ssec '_' sreg '_p']) * strys.(['P_' ssec '_' sreg])^(1 - strpar.(['etaQ_' ssec '_p']));
         end
-        strys.(['P_' ssec]) = strys.(['P_' ssec])^(1/(1 - strpar.(['etaC_' ssec '_p'])));
-        rhs_vec(icosec) = rhs_vec(icosec)^(1/(1 - strpar.(['etaC_' ssec '_p'])));
+        strys.(['P_' ssec]) = strys.(['P_' ssec])^(1/(1 - strpar.(['etaQ_' ssec '_p'])));
+        rhs_vec(icosec) = rhs_vec(icosec)^(1/(1 - strpar.(['etaQ_' ssec '_p'])));
         strys.(['Y_' ssec]) = 0;
         rhs_vec(icosec) = 0;
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
-            strys.(['Y_' ssec]) = strys.(['Y_' ssec]) + strpar.(['omega_' ssec '_' sreg '_p'])^(1/strpar.(['etaC_' ssec '_p'])) * (strys.(['Y_' ssec '_' sreg]))^((strpar.(['etaC_' ssec '_p'])-1)/strpar.(['etaC_' ssec '_p']));
+            strys.(['Y_' ssec]) = strys.(['Y_' ssec]) + strpar.(['omegaQ_' ssec '_' sreg '_p'])^(1/strpar.(['etaQ_' ssec '_p'])) * (strys.(['Y_' ssec '_' sreg]))^((strpar.(['etaQ_' ssec '_p'])-1)/strpar.(['etaQ_' ssec '_p']));
         end
-        strys.(['Y_' ssec]) = strys.(['Y_' ssec])^(strpar.(['etaC_' ssec '_p'])/(strpar.(['etaC_' ssec '_p'])-1));
+        strys.(['Y_' ssec]) = strys.(['Y_' ssec])^(strpar.(['etaQ_' ssec '_p'])/(strpar.(['etaQ_' ssec '_p'])-1));
     end
     
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         temp= 0;
-        tempdenom = (strys.(['P_' ssec]) /((strys.(['Y_' ssec]))^(-1/strpar.etaC_p)))^(strpar.etaC_p);
+        tempdenom = (strys.(['P_' ssec]) /((strys.(['Y_' ssec]))^(-1/strpar.etaQ_p)))^(strpar.etaQ_p);
         for icosecm = 1:strpar.inbsectors_p
             ssecm = num2str(icosecm);
-            tempnum = (strys.(['P_' ssecm]) /((strys.(['Y_' ssecm]))^(-1/strpar.etaC_p)))^(strpar.etaC_p);
+            tempnum = (strys.(['P_' ssecm]) /((strys.(['Y_' ssecm]))^(-1/strpar.etaQ_p)))^(strpar.etaQ_p);
             temp = temp + tempnum / tempdenom;
         end
-        strpar.(['omega_' ssec '_p']) = 1/temp;
+        strpar.(['omegaQ_' ssec '_p']) = 1/temp;
         strys.(['I_' ssec]) = 0;
         strys.(['K_' ssec]) = 0;
         strys.(['W_' ssec]) = 0;
@@ -156,7 +156,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             strys.adaptationcost = strys.adaptationcost + strys.(['G_A_' ssec '_' sreg]);
         end
     end
-    strys.NX = strpar.omegaNX0_p * strys.Y * exp(strexo.exo_NX);
+    strys.NX = strpar.omegaNX_p * strys.Y * strys.P * exp(strexo.exo_NX);
     strys.B = -strys.NX/strys.rf;
     strys.BG = strexo.exo_BG;
     strys.I = strpar.delta_p * strys.K;
@@ -184,12 +184,12 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     P_temp = 0;
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
-        Y_temp = Y_temp + strpar.(['omega_' ssec '_p'])^(1/strpar.etaC_p) * (strys.(['Y_' ssec]))^((strpar.etaC_p-1)/strpar.etaC_p);
-        P_temp = P_temp + strpar.(['omega_' ssec '_p']) * (strys.(['P_' ssec]))^(1-strpar.etaC_p);
-        rhs = strpar.(['omega_' ssec '_p'])^(1/strpar.etaC_p) * (strys.(['Y_' ssec])/strys.Y)^(-1/strpar.etaC_p) * strys.P;
+        Y_temp = Y_temp + strpar.(['omegaQ_' ssec '_p'])^(1/strpar.etaQ_p) * (strys.(['Y_' ssec]))^((strpar.etaQ_p-1)/strpar.etaQ_p);
+        P_temp = P_temp + strpar.(['omegaQ_' ssec '_p']) * (strys.(['P_' ssec]))^(1-strpar.etaQ_p);
+        rhs = strpar.(['omegaQ_' ssec '_p'])^(1/strpar.etaQ_p) * (strys.(['Y_' ssec])/strys.Y)^(-1/strpar.etaQ_p) * strys.P;
         fval_vec(icosec) = 1 - strys.(['P_' ssec])./rhs;
     end
-    P_temp = P_temp^(1/(1 - strpar.etaC_p));
+    P_temp = P_temp^(1/(1 - strpar.etaQ_p));
     fval_vec = 1 - strys.P/P_temp;
     
 end

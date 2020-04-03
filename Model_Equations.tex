@@ -3,27 +3,31 @@
 % Equation 1
 Damage function
 \begin{dmath}
-{{D_{k,r}}_{t}}=exp\left(-\phi^{G^{A}_{k,n}} \, G^{A}_{k,n}\right) \, \left({{a_{1,k,r}}} \, {{T_{r}}_{t}}+{{a_{2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{3,k,r}}+{{a_{1,k,r}}}\, {{SL}_{t}}+{{a_{2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{3,k,r}}}}+{{a_{1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a_{2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a_{3,k,r}}}}+{{a_{1,k,r}}}\, {{PERC_{r}}_{t}}+{{a_{2,k,r}}}\, \left({PERC_{r}}_{t}\right)^{{{a_{3,k,r}}}}\right) 
+{{D_{k,r}}_{t}}=exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \left({{a_{1,k,r}}} \, {{T_{r}}_{t}}+{{a_{2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{3,k,r}}+{{a_{1,k,r}}}\, {{SL}_{t}}+{{a_{2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{3,k,r}}}}+{{a_{1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a_{2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a_{3,k,r}}}}+{{a_{1,k,r}}}\, {{PREC_{r}}_{t}}+{{a_{2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{3,k,r}}}}\right) 
+\end{dmath}
+Government expenditure for adaptation measures
+\begin{dmath}
+G^{A}_{k,r,t}=\eta_{G^{A},k,r,t}
 \end{dmath}
 % Equation 2
 TFP
 \begin{dmath}
-{{A_{k,r}}_{t}}=\rho^{A}_{k,r} \, {{A_{k,r}}_{t-1}} + (1 - \rho^{A}_{k,r}) \, exp\left({{\eta_{A,k,r}}_{t}}\right)
+A_{k,r,t}= A_{k,r,0} \, exp\left({\eta_{A,k,r,t}}\right)
 \end{dmath}
 % Equation 3
 capital specific productivity
 \begin{dmath}
-{{A^{K}_{k,r}}_{t}}=\rho^{A^{K}}_{k,r} \, {A^{K}_{k,r}}_{t-1} + (1 - \rho^{A^{K}}_{k,r}) \, exp\left({{\eta_{A^{K},k,n}}_{t}}\right)
+A^{K}_{k,r,t}= A^{K}_{k,r,0} \, exp\left({\eta_{A^{K},k,r,t}}\right)
 \end{dmath}
 % Equation 4
 labour specific productivity
 \begin{dmath}
-{{A^{N}_{k,r}}_{t}}=\rho^{A^{N}}_{k,r} \, {{A^{N}_{k,r}}_{t-1}} + (1 - \rho^{A^{N}}_{k,r}) \, exp\left({{\eta_{A^{N},k,n}}_{t}}\right)
+A^{N}_{k,r,t}= A^{N}_{k,r,0} \, exp\left({\eta_{A^{N},k,r,t}}\right)
 \end{dmath}
 % Equation 3
 Price of regional sectoral goods
 \begin{dmath}
-\frac{{{P_{k,r}}_{t}}}{{{P_k}_{t}}}={{\omega_{k,r}}}^{\frac{1}{{{\eta^{C}}}}}\, \left(\frac{{{Y_{k,r}}_{t}}}{{{Y_k}_{t}}}\right)^{\frac{\left(-1\right)}{{{\eta^{C}}}}}
+\frac{{{P_{k,r}}_{t}}}{{{P_k}_{t}}}={{\omega^{Q}_{k,r}}}^{\frac{1}{{{\eta^{Q}_{k}}}}}\, \left(\frac{{{Y_{k,r}}_{t}}}{{{Y_k}_{t}}}\right)^{\frac{\left(-1\right)}{{{\eta^{Q}_{k}}}}}
 \end{dmath}
 % Equation 3
 Production function
@@ -33,48 +37,48 @@ Production function
 % Equation 4
 Firms FOC capital
 \begin{dmath}
-{{r_{k,r}}_{t}}={{\alpha^{K}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, {{A^{K}_{k,r}}_{t}}^{\frac{{{\eta^{N,K}_{k,r}}}-1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{K_{k,r}}_{t-1}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
+{{r_{k,r}}_{t}} \, \left(1+\tau^{K}_{k,r,t}\right)={{\alpha^{K}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, {{A^{K}_{k,r}}_{t}}^{\frac{{{\eta^{N,K}_{k,r}}}-1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{K_{k,r}}_{t-1}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
 \end{dmath}
 % Equation 5
 Firms FOC labour
 \begin{dmath}
-\frac{{{W_{k,r}}_{t}}}{{{P_{k,r}}_{t}}}={{\alpha^{N}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{A^{N}_{k,r}}_{t}}\, {PoP_{t}}\, {{N_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
+\frac{{{W_{k,r}}_{t}}\left(1+\tau^{N}_{k,r,t}\right)}{{{P_{k,r}}_{t}}}={{\alpha^{N}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{A^{N}_{k,r}}_{t}}\, {PoP_{t}}\, {{N_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
 \end{dmath}
 
 \subsection{Retailer for Aggregation}
 Relative price of sectoral output
 \begin{dmath}
-\frac{{{P_k}_{t}}}{{P_{t}}}={{\omega_{k}}}^{\frac{1}{{{\eta^{C}}}}}\, \left(\frac{{{Y_k}_{t}}}{{Y_{t}}}\right)^{\frac{\left(-1\right)}{{{\eta^{C}}}}}
+\frac{{{P_k}_{t}}}{{P_{t}}}={{\omega^{Q}_{k}}}^{\frac{1}{{{\eta^{Q}}}}}\, \left(\frac{{{Y_k}_{t}}}{{Y_{t}}}\right)^{\frac{\left(-1\right)}{{{\eta^{Q}}}}}
 \end{dmath}
 Sectoral CES aggregation
 \begin{dmath}
-{{Y_k}_{t}}=\left(\sum_{r}^{R}{{\omega_{k,r}}}^{\frac{1}{{{\eta^{C}_{k}}}}}\, {{Y_{k,r}}_{t}}^{\frac{{{\eta^{C}_{k}}}-1}{{{\eta^{C}}}}}\right)^{\frac{{{\eta^{C}_{k}}}}{{{\eta^{C}_{k}}}-1}}
+{Y_k,t}=\left(\sum_{r}^{R}{{\omega^{Q}_{k,r}}}^{\frac{1}{{{\eta^{Q}_{k}}}}}\, {{Y_{k,r}}_{t}}^{\frac{{{\eta^{Q}_{k}}}-1}{{{\eta^{Q}_{k}}}}}\right)^{\frac{{{\eta^{Q}_{k}}}}{{{\eta^{Q}_{k}}}-1}}
 \end{dmath}
 
 \subsection{Households}
 % Equation 6
 Households FOC labour
 \begin{dmath}
-\frac{{{W_{k,r}}_{t}}\, \left(1-{{\tau^{N}}}\right)\, \left(\frac{{C_{t}}}{{PoP_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{1+{{\tau^{C}}}}={{\phi^{L}}}\, {{N_k}_{t}}^{{{\sigma^{L}}}}
+\frac{{{W_{k,r}}_{t}}\, \left(1-{{\tau^{N}}}\right)\, \left(\frac{{C_{t}}}{{PoP_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right) \, P_{t}}={{\phi^{L}}}\, {{N_k}_{t}}^{{{\sigma^{L}}}}
 \end{dmath}
 % Equation 7
 Households FOC capital
 \begin{dmath}
-\frac{\left(\frac{{P_{t+1}}\, {C_{t+1}}}{{PoP_{t+1}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{1+{{\tau^{C}}}}\, {{\beta}}\, {{P_{k,r}}_{t+1}}\, {{r_{k,r}}_{t+1}}\, \left(1-{{\tau^{K}}}\right)+{{\beta}}\, {{\omega^I_{k,r}}_{t+1}}\, \left(1-{{\delta}}\right)={{\omega^I_{k,r}}_{t}}
+\frac{\left(\frac{{P_{t+1}}\, {C_{t+1}}}{{PoP_{t+1}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right) \, P_{t+1}}\, {{\beta}}\, {{P_{k,r}}_{t+1}}\, {{r_{k,r}}_{t+1}}\, \left(1-{{\tau^{K}}}\right)+{{\beta}}\, {{\omega^I_{k,r}}_{t+1}}\, \left(1-{{\delta}}\right)={{\omega^I_{k,r}}_{t}}
 \end{dmath}
 % Equation 8
 Households FOC investment
 \begin{dmath}
-{{P_{k,r}}_{t}}\, \frac{\left(\frac{{P_{t}}\, {C_{t}}}{{PoP_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{1+{{\tau^{C}}}}={{\omega^I_{k,r}}_{t}}\, \left(1-\frac{{{\phi^{K}}}\, \left(\frac{{{I_{k,r}}_{t}}}{{{I_{k,r}}_{t-1}}}-1\right)}{{{I_{k,r}}_{t-1}}}\right)+\frac{{{\phi^{K}}}\, {{\omega^I_{k,r}}_{t+1}}\, {{\beta}}\, {{P_{k,r}}_{t+1}}\, \left(\frac{{{I_{k,r}}_{t+1}}}{{{I_{k,r}}_{t}}}-1\right)\, {{I_{k,r}}_{t+1}}^{2}}{{{I_{k,r}}_{t}}^{2}}
+P_{k,r,t}\, \frac{\left(\frac{{C}_{t}}{{PoP}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}={{\omega^I_{k,r}}}_{t} \, \frac{\left(\frac{{C}_{t}}{{PoP}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}\, \left(S\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) - S'\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \, \left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \right) + {{\omega^I_{k,r}}}_{t+1}\, \frac{\left(\frac{{C}_{t+1}}{{PoP}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}\, {{\beta}}}{\left(1+{{\tau^{C}}}\right)\, {P}_{t+1}} \, S'\left(\frac{{{I_{k,r}}}_{t+1}}{{{I_{k,r}}}_{t}}\right) \, \frac{{{I_{k,r}}}_{t+1}^{2}}{{{I_{k,r}}}_{t}^{2}}
 \end{dmath}
 % Equation 8
 Households LOM capital
 \begin{dmath}
-{{K_{k,r}}_{t}}={{K_{k,r}}_{t-1}}\, \left(1-{{\delta}}\right)+max(0,{{I_{k,r}}_{t}}\, \left(1-\frac{{{\phi^{K}}}}{2}\, \left(\frac{{{I_{k,r}}_{t}}}{{{I_{k,r}}_{t-1}}}-1\right)^{2}\right))
+{{K_{k,r}}_{t}}={{K_{k,r}}_{t-1}}\, \left(1-{{\delta}}\right) + I_{k,r,t} \, S\left(\frac{{{I_{k,r}}_{t}}}{{{I_{k,r}}_{t-1}}}\right)
 \end{dmath}
 Households FOC foreign bonds
 \begin{dmath}
-\left(\frac{{P_{t+1}}\, {C_{t+1}}}{{PoP_{t+1}}}\right)^{\left(-{{\sigma^{C}}}\right)}\, {{\beta}}\, \left(1+{{r^{f}}_{t+1}}\right)=\left(\frac{{P_{t}}\, {C_{t}}}{{PoP_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}-{{\phi^{B}}}\, \left({B_{t}}-(\bar{B})\right)
+\frac{\left(\frac{{C}_{t+1}}{{PoP}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right)\, {P}_{t+1}}\, {{\beta}}\, {S^{f}}_{t+1}\, \exp\left(-\phi^{B}\, \left(\frac{{B}_{t}\, {S^{f}}_{t+1}\, {{r^{f}}}_{t+1}}{{Y}_{t+1}}+\frac{{NX}_{t}}{{Y}_{t}}\right)\right)\, \left(1+{{r^{f}}}_{t+1}\right)=\frac{\left(\frac{{C}_{t}}{{PoP}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}
 \end{dmath}
 
 \subsection{Climate Variables}
@@ -86,9 +90,9 @@ Wind speed
 \begin{dmath}
 {{W_{r}^{S}}_{t}}={{W^{S}_{0,r}}}+{{\eta_{W^{S},r}}_{t}}
 \end{dmath}
-Percipitation
+PRECipitation
 \begin{dmath}
-{{PERC_{r}}_{t}}={{PERC_{0,r}}}+{{\eta_{PERC,r}}_{t}}
+{{PREC_{r}}_{t}}={{PREC_{0,r}}}+{{\eta_{PREC,r}}_{t}}
 \end{dmath}
 Sea level
 \begin{dmath}
@@ -98,22 +102,35 @@ Sea level
 \subsection{Trade}
 Trade balance
 \begin{dmath}
-{NX_{t}}=\left(-\left({B_{t}}-\left(1+{{r^{f}}_{t}}\right)\, {B_{t-1}}\right)\right)
+{NX_{t}}=-\left({B_{t}}-\left(1+{{r^{f}}_{t}}\right) \, S^{f}_{t} \, {B_{t-1}}\right)
 \end{dmath}
 Net exports
 \begin{dmath}
 {NX_{t}}={{\rho^{NX}}}\, {NX_{t-1}}+{Y_{t}}\, \left(1-{{\rho^{NX}}}\right)\, exp\left({{\eta_{NX}}_{t}}\right)\, {{\omega^{NX}}}
 \end{dmath}
+foreign interest rates
+\begin{dmath}
+r^{f}_{t} = \bar{r}^{f}
+\end{dmath}
 
 \subsection{Government}
 Budget constraint
 \begin{dmath}
-{P_{t}}\, {G_{t}}+{P_{t}}\, \left(1+{{r^{f}}_{t}}\right)\, {BG_{t}}={P_{t}}\, {BG_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}}}+{{N_{k,r}}_{t}}\, {{W_{k,r}}_{t}}\, {{\tau^{N}}}+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, {{\tau^{K}}}
+{P_{t}}\, {G_{t}} + \sum_{r}^{R} \sum_{k}^{K} {P_{t}} \, G^{A}_{k,r,t} + {P_{t}} \, {S^{f}_{t}} \, \left(1+{{r^{f}}_{t}}\right)\, {BG_{t-1}}={P_{t}}\, {BG_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}}}+\sum_{k}^{K} \sum_{r}^{R} \, N_{k,r,t} \, W_{k,r,t} \, \left({\tau^{N} + \tau^{N}_{k,r,t}}\right)+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, \left(\tau^{K} + \tau^{K}_{k,r,t}\right)
 \end{dmath}
 Government foreign debt
 \begin{dmath}
 {BG_{t}}={{\eta_{BG}}_{t}}
 \end{dmath}
+Tax rates on capital expenditure
+\begin{dmath}
+\tau^{K}_{k,r,t} = \tau^{K}_{k,r,0} + \eta^{\tau^{K}}_{k,r,t}
+\end{dmath}
+Tax rates on labour compensation
+\begin{dmath}
+\tau^{N}_{k,r,t} = \tau^{N}_{k,r,0} + \eta^{\tau^{N}}_{k,r,t}
+\end{dmath}
+
 
 \subsection{Aggregates}
 National price level
@@ -126,7 +143,7 @@ National population
 \end{dmath}
 Resource constraint
 \begin{dmath}
-{Y_{t}}={C_{t}}+{I_{t}}+{G_{t}}-{NX_{t}}
+{Y_{t}}={C_{t}}+{I_{t}}+{G_{t}}+\sum_{k}^{K} \sum_{r}^{R} {G^{A}_{k,r,t}}-{NX_{t}}
 \end{dmath}
 Sector labour
 \begin{dmath}
@@ -154,7 +171,7 @@ National capital
 \end{dmath}
 National output
 \begin{dmath}
-{P_{t}}\, {Y_{t}}={{P_k}_{t}}\, {{Y_k}_{t}}
+{P_{t}}\, {Y_{t}}={\sum_{k}^{K} {P_k}_{t}}\, {{Y_k}_{t}}
 \end{dmath}
 National labour share
 \begin{dmath}

@@ -3,7 +3,7 @@
 % ================================
 inbsectors_p = @{Sectors};
 inbregions_p = @{Regions};
-etaC_p = 9;
+etaQ_p = 9;
 tauC_p = 0.19;
 tauN_p = 0.2;
 tauK_p = 0.3;
@@ -12,10 +12,10 @@ delta_p = 0.05;
 sigmaL_p = 0.25;
 sigmaC_p = 1;
 rhoA_p = 0.9;
-omegaNX0_p = 0.03;
+omegaNX0_p = 0.01;
 omegaNX_p = omegaNX0_p; 
-omegaNXT_p = 0.03;
-rhoNX_p = 0.9;
+omegaNXT_p = 0.01;
+rhoNX_p = 0.7;
 rhoSL_p = 0.9;
 PoP0_p = 95;
 Y0_p = 1;
@@ -27,7 +27,7 @@ YT_p = Y0_p;
 rhoPoP_p = 0.9;
 rhoT_p = 0.9;
 rhoWS_p = 0.9;
-rhoPERC_p = 0.9;
+rhoPREC_p = 0.9;
 rhoSL_p = 0.9;
 phiB_p = 10;
 phiK_p = 10;
@@ -36,8 +36,8 @@ SLT_p = 0;
 @# for reg in 1:Regions
     T0_@{reg}_p = 0;
     TT_@{reg}_p = T0_@{reg}_p;
-    PERC0_@{reg}_p = 0;
-    PERCT_@{reg}_p = PERC0_@{reg}_p;
+    PREC0_@{reg}_p = 0;
+    PRECT_@{reg}_p = PREC0_@{reg}_p;
     WS0_@{reg}_p = 0;
     WST_@{reg}_p = WS0_@{reg}_p;
 @# endfor
@@ -51,8 +51,8 @@ aSL_2_mat = [0 0; 0 0];
 aSL_3_mat = [2, 2; 2 2];
 
 @# for sec in 1:Sectors
-    omega_@{sec}_p = 1/inbsectors_p;
-    etaC_@{sec}_p = 2;
+    omegaQ_@{sec}_p = 1/inbsectors_p;
+    etaQ_@{sec}_p = 2;
     @# for reg in 1:Regions
         tauK_@{sec}_@{reg}_p = 0.2;
         tauN_@{sec}_@{reg}_p = 0;
@@ -78,7 +78,7 @@ aSL_3_mat = [2, 2; 2 2];
         phiL_@{sec}_@{reg}_p = 1;
         alphaK_@{sec}_@{reg}_p = 0.5;
         alphaN_@{sec}_@{reg}_p = 0.5;
-        omega_@{sec}_@{reg}_p = 1/inbregions_p;
+        omegaQ_@{sec}_@{reg}_p = 1/inbregions_p;
         etaNK_@{sec}_@{reg}_p = 0.95;
         a_T_1_@{sec}_@{reg}_p = 0;
         a_T_2_@{sec}_@{reg}_p = 0.00253;

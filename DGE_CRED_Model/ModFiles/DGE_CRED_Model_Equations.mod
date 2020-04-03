@@ -26,13 +26,13 @@ model(bytecode);
         D_@{sec}_@{reg} = min(1,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
                           a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p) +
                           a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p) + 
-                          a_P_1_@{sec}_@{reg}_p * PERC_@{reg} + a_P_2_@{sec}_@{reg}_p * PERC_@{reg}^(a_P_3_@{sec}_@{reg}_p)) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+                          a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p)) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
 
         [name = 'sector specific adaptation expenditures by the government']
         G_A_@{sec}_@{reg} = exo_GA_@{sec}_@{reg};
 
         [name = 'demand for regional sector output',mcp = 'Y_@{sec}_@{reg} > 0']
-        P_@{sec}_@{reg}  = omega_@{sec}_@{reg}_p^(1/etaC_@{sec}_p) * ((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaC_@{sec}_p) * P_@{sec};
+        P_@{sec}_@{reg}  = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p) * ((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaQ_@{sec}_p) * P_@{sec};
 
         [name = 'sector specific output']
         Y_@{sec}_@{reg} = (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg} * (alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg} * K_@{sec}_@{reg}(-1))^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p) + alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p))^(etaNK_@{sec}_@{reg}_p/(etaNK_@{sec}_@{reg}_p - 1));
@@ -49,27 +49,24 @@ model(bytecode);
         [name = 'HH FOC capital',mcp = 'K_@{sec}_@{reg}>0']
         (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1) * (1 + tauC_p)) * beta_p * r_@{sec}_@{reg}(+1) * P_@{sec}_@{reg}(+1) * (1 - tauK_p) + (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * beta_p * (1 - delta_p) = omegaI_@{sec}_@{reg} * (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
 
-        [name = 'HH FOC investment',mcp = 'I_@{sec}_@{reg} > 0']
-        
+        [name = 'HH FOC investment',mcp = 'I_@{sec}_@{reg} > 0']       
         (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p))*P_@{sec}_@{reg} = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p)) * omegaI_@{sec}_@{reg} * (1 -  (exp(sqrt(phiK_p / 2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) + exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - 2) - I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1) * sqrt(phiK_p / 2) * (exp(sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)))) + beta_p * (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * I_@{sec}_@{reg}(+1)^2/(I_@{sec}_@{reg})^2 * sqrt(phiK_p / 2) * (exp(sqrt(phiK_p / 2) * (I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)) 
                  - exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)));
-        //(C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p))*P_@{sec}_@{reg} = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p)) * omegaI_@{sec}_@{reg} * (1 -  phiK_p/2 * (I_@{sec}_@{reg}/K_@{sec}_@{reg}(-1) - delta_p)^2 - I_@{sec}_@{reg} * phiK_p * (I_@{sec}_@{reg}/K_@{sec}_@{reg}(-1) - delta_p));
-
 
         [name = 'LOM capital',mcp = 'I_@{sec}_@{reg} > 0']
         K_@{sec}_@{reg} = (1 - delta_p) * K_@{sec}_@{reg}(-1) + I_@{sec}_@{reg} * (1 -  (exp(sqrt(phiK_p / 2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) + exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - 2));
-        //K_@{sec}_@{reg} = (1 - delta_p) * K_@{sec}_@{reg}(-1) + I_@{sec}_@{reg} * (1 -  phiK_p/2 * (I_@{sec}_@{reg}/K_@{sec}_@{reg}(-1) - delta_p)^2);
+
     @# endfor
     
     [name = 'demand for sector output']
-    P_@{sec} / P = omega_@{sec}_p^(1/etaC_p) * (Y_@{sec}/Y)^(-1/etaC_p);
+    P_@{sec} / P = omegaQ_@{sec}_p^(1/etaQ_p) * (Y_@{sec}/Y)^(-1/etaQ_p);
 
     [name = 'sector aggregate specific output']
     Y_@{sec} = (
             @# for reg in 1:Regions
-                + omega_@{sec}_@{reg}_p^(1/etaC_@{sec}_p) * ((Y_@{sec}_@{reg}))^((etaC_@{sec}_p - 1) / etaC_@{sec}_p)
+                + omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p) * ((Y_@{sec}_@{reg}))^((etaQ_@{sec}_p - 1) / etaQ_@{sec}_p)
             @# endfor
-                )^(etaC_@{sec}_p / (etaC_@{sec}_p - 1));
+                )^(etaQ_@{sec}_p / (etaQ_@{sec}_p - 1));
 
 
 
@@ -111,7 +108,7 @@ model(bytecode);
     WS_@{reg} = WS0_@{reg}_p + exo_WS_@{reg};
 
     [name = 'Percipitation']
-    PERC_@{reg} = PERC0_@{reg}_p + exo_PERC_@{reg};
+    PREC_@{reg} = PREC0_@{reg}_p + exo_PREC_@{reg};
 @# endfor
 [name = 'Sea level']
 SL = SL0_p + exo_SL;
@@ -142,7 +139,7 @@ Y = C + I + G - NX
 NX = (B - (1 + rf) * Sf * B(-1));
 
 [name = 'LOM Net Exports']
-NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y;
+NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
 
 [name = 'World interest rate']
 rf = (1/beta_p-1);

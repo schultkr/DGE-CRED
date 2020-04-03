@@ -12,7 +12,7 @@
 
 \title{Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)\\
 \large{Technical Report}}
-\date{March 2020}
+\date{April 2020}
 \author{Christoph Schult and Andrej Drygalla \\ Halle Institute for Economic Research}
 
 % define citation style
@@ -39,17 +39,29 @@ In the following Section \ref{sec:modelderivation} the derivation of the model e
 
 \cleardoublepage
 \section{Model}\label{sec:modelderivation}
+
+\subsection{Climate variables}
+In order to capture the effect of climate change on the economy it is necessary to include climate variables into the model. A small open economy model does not need to include the impact of domestic economic activity on climate variables. Therefore, in contrast to \cite{nordhaus1993optimal} we do not need to model the interaction between economic activity and climate change. Climate variables are independent of other endogenous variables in the model. We explicitly model the regional average annual temperature $T_{r,t}$, the average precipitation $PREC_{r,t}$, the average annual wind speed $WS_{r,t}$, and the sea level $SL_{t}$. 
+\begin{align}\label{eq:climatevariables}
+T_{r,t} = T_{r,0} + \eta_{T,r,t} \nonumber \\
+PREC_{r,t} = PREC_{r,0} + \eta_{PREC,r,t} \nonumber \\
+W^S_{r,t} = W^S_{r,0} + \eta_{W^S,r,t} \nonumber \\
+SL_{t} = SL_{0} + \eta_{SL,r,0}
+\end{align}
+
+The approach in eq.~\ref{eq:climatevariables} allows to specify the evolution of climate variables according to the projections by metreolgical models \citep[e.g.]{stocker2013climate}.
+
 \subsection{Demand}
 \subsubsection{Households}
 As depicted in Figure \ref{fig:ModelStructure} the demand side is represented by representative households $h$ providing labour $N$ and capital $K$ to domestic firms $f$. Households maximize discounted utility over an infinite horizon by choosing consumption $C_t(h)$, capital $K_{k,r,t+1}(h)$, investments $I_{k,r,t}(h)$, labour $N_{k,r,t}(h)$ and foreign net bond holdings $B_{t+1}$ to maximize utility constrained by the budget constraint and the law of motion for sectoral and regional capital. Therefore, the Lagrangian eq.~\ref{eq:hhlagrangian} of the representative household is
 \begin{dmath}\label{eq:hhlagrangian}
 \sum_{t=0}^{\infty} \beta^{t} \left[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) 
-- \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{L}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
+- \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
 - \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta) \, K_{k,r,t} - I_{k,r,t} \, S\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace  \right].
 \end{dmath}
 Households receive utility by consuming goods, where the inter temporal elasticity of consumption is defined by $\sigma^{C}$. Dis-utility from labour is sector and region specific $\phi^{L}_{k,r}$, the inverse Frisch elasticity $\sigma^{L}$ is identical for all sectors and regions. Households spent money either on consumption goods $P_t \, C_t(h) \, (1 + \tau^{C})$, regional and sector specific investment $P_{k,r,t} I_{k,r,t}(h)$ and need to repay foreign bonds $B_{t+1}(h)$. They receive income from labour $W_{k,r,t} \, N_{k,r,t}(h) \, (1 - \tau^{L})$, capital renting $P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}(h) \, (1 - \tau^{K})$ and can use their borrowed money from the foreign economy $B_{t}(h)$. The first order conditions to the problem are the behavioral equations. As is standard in teh literature we replace the Lagrange multiplier $\lambda_{t}$ by the marginal utility of consumption $\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}$ derived from the first order condition (FOC) of the above problem with respect to (w.r.t.) consumption. Households supply labour according to the FOC w.r.t. labour eq.~\ref{eq:hhlaboursupply} for each sector and region depending on the wage $W_{k,r,t}$ and the marginal dis-utility of labour for the specific sector and region
 \begin{dmath}\label{eq:hhlaboursupply}
-\phi^{L}_{k,r} N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{L}_{k,r,t}).
+\phi^{L}_{k,r} N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{N}).
 \end{dmath}
 The household also needs to decide how much of its income it wants to consume or invest into capital. The famous Euler equation eq.~\ref{eq:hhfoccapital} is obtained by taking the first derivative of the Lagrangian w.r.t. sector and region specific capital
 \begin{dmath}\label{eq:hhfoccapital}
@@ -60,7 +72,7 @@ Further, the household also faces investment adjustment cost $S(\frac{I_{k,r,t}}
 P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(S(\frac{I_{k,r,t}}{I_{k,r,t-1}}) - \frac{\partial S(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial I_{k,r,t}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) + \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial S(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial I_{k,r,t}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
 \end{dmath}
 Households have access to the international financial market to purchase and sell internationally traded bonds. We only consider net foreign positions.
-\begin{dmath}
+\begin{dmath}\label{eq:hhfocbonds}
 \lambda_{t+1} \, \beta \, S^{f}_{t+1} \, \phi^{B}_{t+1} \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t} \\
 \end{dmath}
 
@@ -71,15 +83,26 @@ The required interest rate will increase if the foreign debt relative to GDP inc
 
 \subsubsection{Government}
 
-We are interested in different policy measures taken by the government to adapt to a new climate regime. Government behavior is not a result of an optimization problem. The Government collects taxes from consumption $\tau^{C} \, C_{t}$, labour income $\tau^{N} \, W_{t} \, N_{t} \, PoP_{t}$ and capital income $\tau^{K}$. In order to finance its activities the government can also get loans from the rest of the world $B^{G}_{t+1}$ and has to repay loans and interest from the previous period denominated in foreign currency $(1 + r^{f}_{t})$ identical to the household. 
+We are interested in different policy measures taken by the government to adapt to a new climate regime. Government behavior is not a result of an optimization problem. The Government collects taxes from consumption $\tau^{C} \, C_{t}$, labour income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, PoP_{t}$ and capital income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}$. In order to finance its activities the government can also get loans from the rest of the world $B^{G}_{t+1}$ and has to repay loans and interest from the previous period denominated in foreign currency $(1 + r^{f}_{t})$ identical to the household. The government budget constraint boils down to eq.~\ref{eq:GovBudget}.
+\begin{align}\label{eq:GovBudget}
+G_{t} + \sum_{k}^{K} \sum_{r}^{R} G^{A}_{k,r,t} + B^G_{t} =& \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t} + (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, PoP_{t} \right\rbrace \nonumber \\
+& + (1 + r^{f}_{t}) \, S^{f}_{t} \phi^{B}_{t} \, B^G_{t-1}
+\end{align}
 
-Government expenditures can be used to finance adaptation measures in specific sectors and regions $G^{A}_{k,n,t}$.
+Government expenditures can be used to finance adaptation measures in specific sectors and regions $G^{A}_{k,n,t}$. Government expenditures on adaptation measures, taxes on regional and sectoral capital expenditure, and government debt are independent of other variables or to formulate it differently are discretionary. This allows us to evaluate different policy paths for the future and to model the variables by exogenous processes as stated in eq.~\ref{eq:GovExpenditure}.
+\begin{align}\label{eq:GovExpenditure}
+G^{A}_{k,r,t} = G^{A}_{k,r,0} + \eta^{A}_{k,r,t} \nonumber \\
+\tau^{K}_{k,r,t} = \tau^{K}_{k,r,0} + \eta^{\tau^{K}}_{k,r,t} \nonumber \\
+\tau^{N}_{k,r,t} = \tau^{N}_{k,r,0} + \eta^{\tau^{N}}_{k,r,t} \nonumber \\
+B^G_{t} = B^G_{0} + \eta^{B^{G}}_{t}
+\end{align} 
+
 
 \subsubsection{Resource constraint}
 
 Households and the Government use domestic final goods $Y_t$ produced by firms for consumption, investment and for exports $X_{t}$ and can also use imports $M_t$ for consumption and investment. This gives rise to the well known resource constraint or the expenditure approach to define GDP 
 \begin{align}
-Y_{t} = C_{t} + I_{t} + G_{t} + X_{t} - M_{t} 
+Y_{t} = C_{t} + I_{t} + G_{t} + \underbrace{X_{t} - M_{t}}_{NX_{t}}
 \end{align}
 
 \subsection{Production}
@@ -87,18 +110,63 @@ Y_{t} = C_{t} + I_{t} + G_{t} + X_{t} - M_{t}
 Households demand final domestic goods $Y_{t}$ combining goods from different sectors $Y_{k,t}$ using a CES composition function. They minimize expenditures subject to the composition function
 \begin{align}
 \underset{Y_{k,t}}{\mathrm{min}} & \sum_{k} Y_{k,t} \, P_{k,t} \\ 
-Y_{t} &= \left(\sum_{k} {\omega^{C}_{k}}^{\frac{1}{\eta^C}} Y_{k,t}^{\frac{\eta^C-1}{\eta^C}} \right)^{\frac{\eta^C}{\eta^C-1}}
+Y_{t} &= \left(\sum_{k} {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} Y_{k,t}^{\frac{\eta^Q-1}{\eta^Q}} \right)^{\frac{\eta^Q}{\eta^Q-1}}
 \end{align}
 
-Therefore demand for sectoral products correspond to the first order conditions of theabove optimuization problem. The Lagrange multiplier is 
+Therefore demand for sectoral products correspond to the first order conditions of the above optimization problem. The Lagrange multiplier is the price level $P_{t}$ of domestic products. 
+\begin{align}
+\frac{P_{k,t}}{P_{t}} &= {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} \left(\frac{Y_{k,t}}{Y_{t}}\right)^{\frac{-1}{\eta^Q}}
+\end{align}
 
-\subsection{Government}
+In order to model regional economic activity we further decompose the production process on a regional level. One can either think about this approach as modeling the optimization problem of a representative firm operating in one sector on a national level allocating production activity across the nation. Another way is to consider that households make direct purchases from regional operating firms in one sector. In this case the following optimization problem would be part of the above optimization problem. 
+\begin{align}
+\underset{Y_{k,r,t}}{\mathrm{min}} & \sum_{k} Y_{k,r,t} \, P_{k,r,t} \\ 
+Y_{k,t} &= \left(\sum_{k} {\omega^{Q}_{k,r}}^{\frac{1}{\eta^Q_{k}}} Y_{k,r,t}^{\frac{\eta^Q_{k}-1}{\eta^Q_{k}}} \right)^{\frac{\eta^Q_{k}}{\eta^Q_{k}-1}}
+\end{align}
 
+Demand for sectoral and regional products correspond to the first order conditions of the above optimization problem. The Lagrange multiplier is the sectoral price level $P_{k,t}$ of domestic products. 
+\begin{align}
+\frac{P_{k,r,t}}{P_{k,t}} &= {\omega^{Q}_{k,r}}^{\frac{1}{\eta^{Q}_{k}}} \left(\frac{Y_{k,r,t}}{Y_{k,t}}\right)^{\frac{-1}{\eta^{Q}_{k}}}
+\end{align}
 
-\subsection{Climate variables}
+At the regional and sectoral level are representative firms maximizing profits using capital $K_{k,r,t}$ and labour $L_{k,r,t} = N_{k,r,t} \, PoP_{t}$ provided by households to produce products. They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.  Representative firms have access to a regional and sector specific constatn elasticity of substitution production function. The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, W^{S}_{r,t}, \, SL_{r,t} \, G^{A}_{r,k,t} \right)$ and the exogenous level of productivity $A_{k,r,t}$. As in \cite{nordhaus1993optimal} we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors eq.~\ref{eq:Damages}.
+\begin{align}\label{eq:Damages}
+{{D_{k,r}}_{t}}=& exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \Big( \nonumber \\
+&\underbrace{{{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a_{SL,1,k,r}}}\, {{SL}_{t}}+{{a_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
++ & \underbrace{{{a_{W^{S},1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a_{W^{S},2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a_{W^{S},3,k,r}}}}}_{\mbox{impact of wind speed}}
++ \underbrace{{{a_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}} \nonumber \\
+&\Big). 
+\end{align}
 
+Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital. Eq.~\ref{eq:profitoptim} states the optimization problem of the firm.
+\begin{align}\label{eq:profitoptim}
+\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, PoP_{t} - r_{k,r,t} P_{k,r,t} K_{k,r,t} \nonumber \\ 
+\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( PoP_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
+\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
+\end{align}
+
+Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
+
+\begin{align}\label{eq:focfirm}
+\frac{W_{k,r,t}}{P_{k,r,t}} = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(\frac{PoP_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
+r_{k,r,t} = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
+\end{align}
+
+We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. Temporary productivity shocks are in our set-up also weather extremes. We will discuss the problem later. 
 
 \subsection{Rest of the world}
+
+The demand for domestic exports and foreign imports is not explicitly modeled in this version of the model. We assume that net exports follow an auto-regressive process of order one and that the long run value of net exports depend on the long-run development of gross domestic product. We therefore assume that imports and exports will grow at the same speed as GDP. Sluggish adjusmtents in export and import behavior of companies is captured by an auto-regressive process. 
+\begin{align}
+NX_{t} = \rho^{NX} \, NX_{t-1} + (1 - \rho^{NX}) \omega^{NX} P_{t} \, Y_{t}
+\end{align}
+
+The effective exchange rate $S^f_{t}$ and the world interest rate $r^{f}_{t}$ determine how much governments and households have to pay back in domestic currency as net lender or how much they receive as net borrower to the rest of the world. Here the world interest rate is independent of domestic developments and only the effective exchange rate adjusts according to eq.~\ref{eq:hhfocbonds}.
+
+\section{Scenario Analysis}
+
+
+
 
 
 \cleardoublepage
@@ -109,7 +177,7 @@ Therefore demand for sectoral products correspond to the first order conditions 
 For Octave you need to have the version 5.2.0 as reported by the Dynare team. 
 \item You need to download the repository from Github. 
 \item Open Octave or Matlab GUI and browse to the location of the folder in your computer. You have the right folder if the command {\tt pwd()} returns {\tt YourPath/DGE-CRED/DGE_CRED_Model}.
-\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file \\ {\tt ModelSimulationandCalibrationKSectorsandRRegions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt IWH\_CRED\_Model.mod}.
+\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file \\ {\tt ModelSimulationandCalibrationKSectorsandRRegions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt DGE\_CRED\_Model.mod}.
 \item The simulation results are stored in the file {\tt ResultsScenariosKSectorsandRRegions.xlsx}.
 \end{enumerate}
 
@@ -162,5 +230,5 @@ For Octave you need to have the version 5.2.0 as reported by the Dynare team.
 \footnotesize
 \include{Model_Equations}
 \cleardoublepage
-\include{IWH_CRED_Model_latex_definitions}
+\include{DGE_CRED_Model_latex_definitions}
 \end{document}

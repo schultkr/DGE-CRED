@@ -7,7 +7,7 @@ if isequal(sScenario, 'Baseline')
     initval;
     @# for reg in 1:Regions
         exo_T_@{reg} = 0;
-        exo_PERC_@{reg} = 0;
+        exo_PREC_@{reg} = 0;
         exo_WS_@{reg} = 0;
     @# endfor
     exo_SL = 0;

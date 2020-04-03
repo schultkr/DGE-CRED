@@ -1,10 +1,10 @@
-# Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)
+# Spatial Small Open Economy Dynamic General Equilibrium Model
 > This repository contains a spatial small open economy dynamic general equilibrium model implemented in Dynare using Matlab/Octave as software by the Halle Institute for Economic Research (IWH).
 
 
 ## Installation
 
-To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/Model%20Description.pdf).
+To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/Vietnam_RBC_model/blob/master/Model%20Description.pdf).
 
 ## Scenario Simulation
 
@@ -27,11 +27,15 @@ Christoph Schult – christoph.schult@iwh-halle.de
 
 ## Contributing
 
-1. Fork it (<https://github.com/yourname/yourproject/fork>)
-2. Create your feature branch (`git checkout -b feature/fooBar`)
-3. Commit your changes (`git commit -am 'Add some fooBar'`)
-4. Push to the branch (`git push origin feature/fooBar`)
-5. Create a new Pull Request
+1. In order to collaborate on Github everyone needs to have an account. In order to see a private repository this step has been done already.
+2. Download the [Github desktop app](https://desktop.github.com/). 
+3. Click in the browser on the repository site on the green button clone or download repository and click on open in desktop.
+![](ScreenshotCloneDownload.png)
+4. You can now see the repository in your gihub desktop app and access all files in your explorer (Strg + Shift + F).
+5. You can upload changes to the online repository by commiting changes (Step 1) and then click fetch to origin (Step 2). ![](ScreenShotUploadChanges.png)
+
+
+
 
 <!-- Markdown link & img dfn's -->
 [npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square

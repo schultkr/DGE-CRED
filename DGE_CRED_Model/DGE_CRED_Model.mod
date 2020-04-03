@@ -25,9 +25,11 @@ end
 % =====================
 @# include "MOdFiles/DGE_CRED_Model_AuxiliaryVariables.mod"
 @# include "ModFiles/DGE_CRED_Model_Declaration.mod"
-@# include "ModFiles/DGE_CRED_Model_Parameters.mod"
 @# include "ModFiles/DGE_CRED_Model_Equations.mod"
 //@# include "ModFiles/DGE_CRED_Model_LatexOutput.mod"
+
+@# include "ModFiles/DGE_CRED_Model_Parameters.mod"
+
 for icoScenario = 1:size(casScenarioNames,2)
     sScenario = char(casScenarioNames(icoScenario));
     @# include "ModFiles/DGE_CRED_Model_SteadyState.mod"

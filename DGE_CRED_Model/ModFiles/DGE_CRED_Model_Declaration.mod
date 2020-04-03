@@ -17,7 +17,7 @@ Y $Y$ (long_name = 'GDP')
 N $N$ (long_name = 'labour')
 SL ${SL}$ (long_name = 'sea level')
 @# for reg in 1:Regions
-    PERC_@{reg} ${PERC_{r}}$ (long_name = 'regional percipitation')
+    PREC_@{reg} ${PREC_{r}}$ (long_name = 'regional percipitation')
     T_@{reg} ${T_{r}}$ (long_name = 'regional temperature')
     WS_@{reg} ${W_{r}^{S}}$ (long_name = 'regional wind speed')
 @# endfor
@@ -71,7 +71,7 @@ exo_BG ${\eta_{BG}}$ (long_name = 'exogenous structural balance')
 
 @# for reg in 1:Regions
     exo_T_@{reg} ${\eta_{T,n}}$ (long_name = 'exogenus regional temperature')
-    exo_PERC_@{reg} ${\eta_{PERC,n}}$ (long_name = 'exogenus regional percipitation')
+    exo_PREC_@{reg} ${\eta_{PREC,n}}$ (long_name = 'exogenus regional percipitation')
     exo_WS_@{reg} ${\eta_{W^{S},n}}$ (long_name = 'exogenus regional wind speed')
 @# endfor
 ;
@@ -81,8 +81,8 @@ exo_BG ${\eta_{BG}}$ (long_name = 'exogenous structural balance')
 % ==========================
 parameters 
 @# for sec in 1:Sectors
-    omega_@{sec}_p ${\omega_{k}}$ (long_name = 'sector capital share')
-    etaC_@{sec}_p ${\eta^{C}}$ (long_name = 'intratemporal elasticity of substitution')
+    omegaQ_@{sec}_p ${\omega^{Q}_{k}}$ (long_name = 'distribution parameter for output from one sector')
+    etaQ_@{sec}_p ${\eta^{C}_{k}}$ (long_name = 'elasticity of substitution between regional production')
     @# for reg in 1:Regions
         tauK_@{sec}_@{reg}_p ${\tau^{K}_{k,n}}$ (long_name = 'region and sector specific tax rate on capital')
         tauN_@{sec}_@{reg}_p ${\tau^{N}_{k,n}}$ (long_name = 'region and sector specific tax rate on labour')
@@ -98,7 +98,7 @@ parameters
         phiW_@{sec}_@{reg}_p $\frac{W_{k,n,0} \, N_{k,n,0}}{P_{k,n,0} \, Y_{k,n,0}}$ (long_name = 'share of regional and sectoral employment')
         phiP_@{sec}_@{reg}_p $\frac{P_{k,n,0}}{P_{0}}$ (long_name = 'share of regional and sectoral employment')
         phiL_@{sec}_@{reg}_p ${\phi^{L}_{k,n}}$ (long_name = 'coefficient of disutility to work')
-        omega_@{sec}_@{reg}_p ${\omega_{k,n}}$ (long_name = 'sector capital share')
+        omegaQ_@{sec}_@{reg}_p ${\omega^{Q}_{k,n}}$ (long_name = 'distribution parameter for regional production')
         alphaK_@{sec}_@{reg}_p ${\alpha^{K}_{k,n}}$ (long_name = 'distribution parameter capital share')
         alphaN_@{sec}_@{reg}_p ${\alpha^{N}_{k,n}}$ (long_name = 'distribution parameter labour share')
         etaNK_@{sec}_@{reg}_p ${\eta^{N,K}_{k,n}}$ (long_name = 'elasticity of substitution between labour and capital')
@@ -129,7 +129,7 @@ beta_p ${\beta}$ (long_name = 'discount factor')
 delta_p ${\delta}$ (long_name = 'capital depreciation rate')
 sigmaL_p ${\sigma^{L}}$ (long_name = 'inverse Frisch elasticity')
 sigmaC_p ${\sigma^{C}}$ (long_name = 'intertemporal elasticity of substitution')
-etaC_p ${\eta^{C}}$ (long_name = 'intratemporal elasticity of substitution')
+etaQ_p ${\eta^{Q}}$ (long_name = 'elasticity of substitution between sectoral production')
 phiB_p ${\phi^{B}}$ (long_name = 'coefficient of foreign adjustment cost')
 phiK_p ${\phi^{K}}$ (long_name = 'coefficient of investment adjustment cost')
 tauC_p  ${\tau^{C}}$ (long_name = 'consumption tax')
@@ -144,16 +144,16 @@ rhoPoP_p  ${\rho^{PoP}}$ (long_name = 'persistency in population')
 rhoSL_p  ${\rho^{SL}}$ (long_name = 'persistency in sea level')
 rhoT_p  ${\rho^{T}}$ (long_name = 'persistency in temperature')
 rhoWS_p  ${\rho^{T}}$ (long_name = 'persistency in wind speed')
-rhoPERC_p  ${\rho^{T}}$ (long_name = 'persistency in percipitation')
+rhoPREC_p  ${\rho^{T}}$ (long_name = 'persistency in percipitation')
 inbsectors_p  ${K}$ (long_name = 'number of sectors')
 inbregions_p  ${R}$ (long_name = 'number of regions')
 lCalibration_p  ${l^{Calib}}$ (long_name = 'logical indiactor whether model is calibrated or not')
 @# for reg in 1:Regions
     T0_@{reg}_p ${T_{0,n}}$ (long_name = 'initial regional temperature')
-    PERC0_@{reg}_p ${PERC_{0,n}}$ (long_name = 'initial regional percipitation')
+    PREC0_@{reg}_p ${PREC_{0,n}}$ (long_name = 'initial regional percipitation')
     WS0_@{reg}_p ${W^{S}_{0,n}}$ (long_name = 'initiial regional wind speed')
     TT_@{reg}_p ${T_{T,n}}$ (long_name = 'terminal regional temperature')
-    PERCT_@{reg}_p ${PERC_{T,n}}$ (long_name = 'terminal regional percipitation')
+    PRECT_@{reg}_p ${PREC_{T,n}}$ (long_name = 'terminal regional percipitation')
     WST_@{reg}_p ${W^{S}_{T,n}}$ (long_name = 'terminal regional wind speed')
 @# endfor
 % === initial values ===
