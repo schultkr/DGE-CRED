@@ -1,0 +1,48 @@
+% Equation 1
+\subsection{Regional Energy industries}
+% Equation 3
+output production function
+\begin{dmath}
+{{Q_{k,r}}_{t}}= \left({{\omega^{Q^{I}}_{k,r}}}^{\frac{1}{{{\eta^{I}_{k,r}}}}}\, \left(Q^{I,E}_{k,r,t}\right)^{\frac{{{\eta^{Q^{I}}_{k,r}}}-1}{{{\eta^{Q^{I}}_{k,r}}}}}+\left(1 - {{\omega^{Q^{I}}_{k,r}}} \right)^{\frac{1}{{{\eta^{I}_{k,r}}}}} \, \left(Y_{k,r,t}\right)^{\frac{{{\eta^{I}_{k,r}}}-1}{{{\eta^{I}_{k,r}}}}}\right)^{\frac{{{\eta^{I}_{k,r}}}}{{{\eta^{I}_{k,r}}}-1}}
+\end{dmath}
+nested composition function for intermediate energy and non-energy inputs
+\begin{dmath}
+{{Q^{I,E}_{k,r}}_{t}}= \left(({1-\omega^{Q^{E}}_{k,r}})^{\frac{1}{{{\eta^{E}_{k,r}}}}} \, \left(Q^{I,E}_{k,r,t}\right)^{\frac{{{\eta^{E}_{k,r}}}-1}{{{\eta^{E}}_{k,r}}}}+\left(\omega^{E}_{k,r} \right)^{\frac{1}{{{\eta^{E}_{k,r}}}}} \, \left(E_{k,r,t}\right)^{\frac{{{\eta^{E}_{k,r}}}-1}{{{\eta^{E}_{k,r}}}}}\right)^{\frac{{{\eta^{E}_{k,r}}}}{{{\eta^{E}_{k,r}}}-1}} \label{eq:energyintermediatecomposite}
+\end{dmath}
+nested composition function for energy inputs
+\begin{dmath}
+E_{k,r,t}= \left( \sum_{c}^{EC} {\omega^{Q^{E}}_{k,r,c}}^{\frac{1}{{{\eta^{EC}_{k,r}}}}}\, \left(E_{k,r,c,t}\right)^{\frac{{{\eta^{EC}_{k,r}}}-1}{{{\eta^{EC}}_{k,r}}}}\right)^{\frac{{{\eta^{EC}_{k,r}}}}{{{\eta^{EC}_{k,r}}}-1}} \label{eq:energycomposite}
+\end{dmath}
+demand for intermediate products
+\begin{dmath}
+\frac{{P^{I}_{k,r,t}}}{{P^{D}_{k,r,t}}}={\omega^{Q^{I}}_{k,r}}^{\frac{1}{{{\eta^{I}_{k}}}}} \, \left(\frac{Q^{I}_{k,r,t}}{Q^{I,E}_{k,r,t}}\right)^{\frac{\left(-1\right)}{{{\eta^{I}_{k}}}}}
+\end{dmath}
+demand for energy as intermediate product
+\begin{dmath}
+\frac{{P^{E}_{k,r,t}}}{{P^{I}_{k,r,t}}}={\omega^{E}_{k,r}}^{\frac{1}{{{\eta^{E}_{k,r}}}}} \, \left(\frac{E_{k,r,t}}{Q^{I,E}_{k,r,t}}\right)^{\frac{\left(-1\right)}{{{\eta^{E}_{k}}}}}
+\end{dmath}
+demand for non-energy intermediate products
+\begin{dmath}
+\frac{P_{t}}{P^{I}_{k,r,t}} = (1 - \omega^{E}_{k,r})^{\frac{1}{{{\eta^{E}_{k,r}}}}} \, \left(\frac{Q^{I}_{k,r,t}}{Q^{I,E}_{k,r,t}}\right)^{\frac{\left(-1\right)}{{{\eta^{E}_{k}}}}}
+\end{dmath}
+
+
+\subsection{Aggregates}
+total demand for intermediate products
+\begin{align}\label{eq:aggregationintermediateinputswithenergy}
+P_{t} Q^{I}_{t} = \sum_{k}^{K} \sum_{r}^{R} \begin{cases}
+			P^{I}_{k,r,t} \, Q^{I,E}_{k,r,t} & \mbox{if} k = k^{E} \\
+			P_{t} \, Q^{I}_{k,r,t} & \mbox{otherwise}
+			\end{cases}
+\end{align}
+
+total consumption of energy carrier
+\begin{align}
+E_{c,t} = \sum_{r}^{R} E_{k^{E},r,c,t} \label{eq:energycarrieraggregate}
+\end{align}
+
+price of energy carrier
+\begin{align}
+P^{EC}_{c,t} = P^{EC}_{c,0} + \eta^{EC}_{c,t} \label{eq:priceenergycarrier}
+\end{align}
+

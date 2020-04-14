@@ -1,4 +1,4 @@
-# Spatial Small Open Economy Dynamic General Equilibrium Model
+# Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)
 > This repository contains a spatial small open economy dynamic general equilibrium model implemented in Dynare using Matlab/Octave as software by the Halle Institute for Economic Research (IWH).
 
 
@@ -10,7 +10,7 @@ To use the model just download the repository and follow the instructions provid
 
 The model can be used to simulate different climate change scenarios. Therefore one first defines a Baseline scenario and climatechange scenarios. 
 
-![](SimulationGVA_example.jpg)
+![](pictures/SimulationGVA_example.jpg)
 
 _For more examples on using dynare, please refer to the website of [Dynare](https://www.dynare.org/)._
 
@@ -30,9 +30,9 @@ Christoph Schult – christoph.schult@iwh-halle.de
 1. In order to collaborate on Github everyone needs to have an account. In order to see a private repository this step has been done already.
 2. Download the [Github desktop app](https://desktop.github.com/). 
 3. Click in the browser on the repository site on the green button clone or download repository and click on open in desktop.
-![](ScreenshotCloneDownload.png)
+![](pictures/ScreenshotCloneDownload.png)
 4. You can now see the repository in your gihub desktop app and access all files in your explorer (Strg + Shift + F).
-5. You can upload changes to the online repository by commiting changes (Step 1) and then click fetch to origin (Step 2). ![](ScreenShotUploadChanges.png)
+5. You can upload changes to the online repository by commiting changes (Step 1) and then click fetch to origin (Step 2). ![](pictures/ScreenShotUploadChanges.png)
 
 
 

@@ -1,5 +1,22 @@
 \begin{thebibliography}{xx}
 
+\harvarditem[Arndt et~al.]{Arndt, Tarp \harvardand\
+  Thurlow}{2015}{arndt2015economic}
+Arndt, C., Tarp, F. \harvardand\ Thurlow, J.  \harvardyearleft
+  2015\harvardyearright , `The economic costs of climate change: a multi-sector
+  impact assessment for vietnam', {\em Sustainability} {\bf 7}(4),~4131--4145.
+
+\harvarditem{Boateng}{2012}{boateng2012GIS}
+Boateng, I.  \harvardyearleft 2012\harvardyearright , `Gis assessment of
+  coastal vulnerability to climate change and coastal adaption planning in
+  vietnam', {\em Journal of Coastal Conservation} {\bf 16}(1),~25--36.
+
+\harvarditem[Chen et~al.]{Chen, McCarl \harvardand\
+  Chang}{2012}{chen2012climate}
+Chen, C.-C., McCarl, B. \harvardand\ Chang, C.-C.  \harvardyearleft
+  2012\harvardyearright , `Climate change, sea level rise and rice: global
+  market implications', {\em Climatic change} {\bf 110}(3-4),~543--560.
+
 \harvarditem[Christiano et~al.]{Christiano, Motto \harvardand\
   Rostagno}{2014}{christiano2014risk}
 Christiano, L.~J., Motto, R. \harvardand\ Rostagno, M.  \harvardyearleft
@@ -18,5 +35,12 @@ Stocker, T.~F., Qin, D., Plattner, G.-K., Tignor, M., Allen, S.~K., Boschung,
   2013\harvardyearright , `Climate change 2013: The physical science basis',
   {\em Contribution of working group I to the fifth assessment report of the
   intergovernmental panel on climate change} {\bf 1535}.
+
+\harvarditem[Wassmann et~al.]{Wassmann, Hien, Hoanh \harvardand\
+  Tuong}{2004}{wassmann2004sea}
+Wassmann, R., Hien, N.~X., Hoanh, C.~T. \harvardand\ Tuong, T.~P.
+  \harvardyearleft 2004\harvardyearright , `Sea level rise affecting the
+  vietnamese mekong delta: water elevation in the flood season and implications
+  for rice production', {\em Climatic change} {\bf 66}(1-2),~89--107.
 
 \end{thebibliography}
