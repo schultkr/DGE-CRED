@@ -1,10 +1,10 @@
 % =================================
 % === Deterministic Simulations ===
 % =================================
-perfect_foresight_setup(periods = 1000);
+perfect_foresight_setup(periods = 500);
 iStep = options_.iStepSimulation;
-imaxTermination_p = 110;
-iminTermination_p = 110;
+imaxTermination_p = 120;
+iminTermination_p = 120;
 lCalibration_p = 0;
 
 % find positions of initial growth parameters of gross value added
@@ -38,6 +38,7 @@ casNVars = [temp{:}];
 lSelectNVars = ismember(cellstr(M_.endo_names), casNVars);
 lSelectN = ismember(cellstr(M_.endo_names), 'N');
 
+oo_ = LoadExogenous(sWorkbookNameInput, sScenario, oo_, M_);
 
 if ~isequal(sScenario,'Baseline')
     sVersion = ['Sectors' num2str(inbsectors_p) 'Regions' num2str(inbregions_p)];
@@ -45,7 +46,6 @@ if ~isequal(sScenario,'Baseline')
     oo_.exo_simul(:,lSelectProdShocksN) = structScenarioResults.(sVersion).Baseline.oo_.exo_simul(:,lSelectProdShocksN);
 end
 
-oo_ = LoadExogenous(sWorkbookNameInput, sScenario, oo_, M_);
 oo_.endo_simul_start = oo_.endo_simul;
 oo_.exo_simul_start = oo_.exo_simul;
 exo_temp = zeros(size(oo_.exo_simul));
@@ -67,8 +67,9 @@ for icostep = 1:iStep
     end
     oo_.exo_steady_state = oo_.exo_simul(end,:)';
     oo_.steady_state = oo_.endo_simul(:,end);
+
+    steady;
     if icostep == iStep
-        steady;
         check;
     end
     tic;
@@ -82,11 +83,11 @@ if isequal(sScenario, 'Baseline')
     icoiter = 1;
     iInitGrowthRates = M_.params(lSelectInitGrowthParams);
     iInitGrowthRatesN = M_.params(lSelectInitGrowthParamsN);
-    rhogrowthrates = fsolve(@(x) ((iInitGrowthRates-1)~=0) .* (log(oo_.endo_simul(lSelectProdVars,end)./oo_.endo_simul(lSelectProdVars,1)) - sum(log(1 + (iInitGrowthRates-1) .* x.^(0:(iTermination_p-1))),2)) + ((iInitGrowthRates-1)==0).*(x-0), 0.5.*ones(inbsectors_p.*inbregions_p,1));
-    rhogrowthratesN = fsolve(@(x) ((iInitGrowthRatesN-1)~=0) .* (log((oo_.endo_simul(lSelectNVars,end)./oo_.endo_simul(lSelectN,end))./(oo_.endo_simul(lSelectNVars,1)./oo_.endo_simul(lSelectN,end))) - sum(log(1 + (iInitGrowthRatesN-1) .* x.^(0:(iTermination_p-1))),2)) + ((iInitGrowthRatesN-1)==0).*(x-0), 0.5.*ones(inbsectors_p.*inbregions_p,1));
+    rhogrowthrates = fsolve(@(x) ((iInitGrowthRates-1)~=0) .* (log(oo_.endo_simul(lSelectProdVars,iTermination_p)./oo_.endo_simul(lSelectProdVars,1)) - sum(log(1 + (iInitGrowthRates-1) .* x.^(0:(iTermination_p-1))),2)) + ((iInitGrowthRates-1)==0).*(x-0), 0.5.*ones(inbsectors_p.*inbregions_p,1));
+    rhogrowthratesN = fsolve(@(x) ((iInitGrowthRatesN-1)~=0) .* (log((oo_.endo_simul(lSelectNVars,iTermination_p)./oo_.endo_simul(lSelectN,iTermination_p))./(oo_.endo_simul(lSelectNVars,1)./oo_.endo_simul(lSelectN,1))) - sum(log(1 + (iInitGrowthRatesN-1) .* x.^(0:(iTermination_p-1))),2)) + ((iInitGrowthRatesN-1)==0).*(x-0), 0.5.*ones(inbsectors_p.*inbregions_p,1));
     iaTargetGrowthRates = 1 + (iInitGrowthRates-1).*rhogrowthrates.^(0:(iTermination_p-1));
     iaTargetGrowthRatesN = 1 + (iInitGrowthRatesN-1).*rhogrowthratesN.^(0:(iTermination_p-1));
-    
+    iaTargetGrowthRates(:,1) = 0.94;
     fvalY_vec = iaTargetGrowthRates-oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1));
     fvalN_vec = iaTargetGrowthRatesN-(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)))./(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)));
     fval_vec = [fvalY_vec fvalN_vec];
@@ -100,11 +101,11 @@ if isequal(sScenario, 'Baseline')
         icoiter = icoiter + 1;
         fvalY_vec = iaTargetGrowthRates-oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1));
         fvalN_vec = iaTargetGrowthRatesN-(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)))./(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)));
-        fval_vec = [fvalY_vec fvalN_vec];
+        fval_vec = fvalY_vec;%[fvalY_vec fvalN_vec];
         iaDifference = diff(oo_.exo_simul((M_.maximum_lag):(iTermination_p+M_.maximum_lag),lSelectProdShocks));
         iaNDifference = diff(oo_.exo_simul((M_.maximum_lag):(iTermination_p+M_.maximum_lag),lSelectProdShocksN));
-        iaDifference = iaDifference + 1./5.*fvalY_vec';
-        iaNDifference = iaNDifference - 1./5 .*fvalN_vec';
+        iaDifference = iaDifference + 1./7.*fvalY_vec';
+        iaNDifference = iaNDifference - 1./7 .*fvalN_vec';
         oo_.exo_simul((1+M_.maximum_lag):(iTermination_p+M_.maximum_lag),lSelectProdShocks)  = cumsum(iaDifference);
         oo_.exo_simul((1+M_.maximum_lag):(iTermination_p+M_.maximum_lag),lSelectProdShocksN) = cumsum(iaNDifference);
         disp('=============================================')

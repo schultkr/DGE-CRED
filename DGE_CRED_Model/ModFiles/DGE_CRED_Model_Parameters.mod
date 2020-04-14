@@ -19,7 +19,7 @@ rhoNX_p = 0.7;
 rhoSL_p = 0.9;
 PoP0_p = 95;
 Y0_p = 1;
-N0_p = 0.5;
+N0_p = 0.145;
 NT_p = N0_p;
 P0_p = 1;
 PoPT_p = PoP0_p;
@@ -40,6 +40,8 @@ SLT_p = 0;
     PRECT_@{reg}_p = PREC0_@{reg}_p;
     WS0_@{reg}_p = 0;
     WST_@{reg}_p = WS0_@{reg}_p;
+    DRO0_@{reg}_p = 0;
+    CYC0_@{reg}_p = 0;
 @# endfor
 
 aT_1_mat = [0.0, 0.0; 0.0 0.0];
@@ -66,7 +68,6 @@ aSL_3_mat = [2, 2; 2 2];
         rhoA_N_@{sec}_@{reg}_p = 0;
         rhoA_K_@{sec}_@{reg}_p = 0;
         phiW_@{sec}_@{reg}_p = 0.5;
-        phiP_@{sec}_@{reg}_p = 1;
         GAT_@{sec}_@{reg}_p = 0;
         phiGA_@{sec}_@{reg}_p = 1;
         phiN_@{sec}_@{reg}_p = 1/(inbsectors_p*inbregions_p);
@@ -80,6 +81,7 @@ aSL_3_mat = [2, 2; 2 2];
         alphaN_@{sec}_@{reg}_p = 0.5;
         omegaQ_@{sec}_@{reg}_p = 1/inbregions_p;
         etaNK_@{sec}_@{reg}_p = 0.95;
+        // TFP coefficients
         a_T_1_@{sec}_@{reg}_p = 0;
         a_T_2_@{sec}_@{reg}_p = 0.00253;
         a_T_3_@{sec}_@{reg}_p = 2;
@@ -92,6 +94,50 @@ aSL_3_mat = [2, 2; 2 2];
         a_P_1_@{sec}_@{reg}_p = 0;
         a_P_2_@{sec}_@{reg}_p = 0;
         a_P_3_@{sec}_@{reg}_p = 2;
+        a_DR_1_@{sec}_@{reg}_p = 0;
+        a_DR_2_@{sec}_@{reg}_p = 0;
+        a_DR_3_@{sec}_@{reg}_p = 2;
+        a_CY_1_@{sec}_@{reg}_p = 0;
+        a_CY_2_@{sec}_@{reg}_p = 0;
+        a_CY_3_@{sec}_@{reg}_p = 2;
+        // labour productvity coefficients
+        aN_T_1_@{sec}_@{reg}_p = 0;
+        aN_T_2_@{sec}_@{reg}_p = 0;
+        aN_T_3_@{sec}_@{reg}_p = 2;
+        aN_SL_1_@{sec}_@{reg}_p = 0;
+        aN_SL_2_@{sec}_@{reg}_p = 0;
+        aN_SL_3_@{sec}_@{reg}_p = 2;
+        aN_W_1_@{sec}_@{reg}_p = 0;
+        aN_W_2_@{sec}_@{reg}_p = 0;
+        aN_W_3_@{sec}_@{reg}_p = 2;
+        aN_P_1_@{sec}_@{reg}_p = 0;
+        aN_P_2_@{sec}_@{reg}_p = 0;
+        aN_P_3_@{sec}_@{reg}_p = 2;
+        aN_DR_1_@{sec}_@{reg}_p = 0;
+        aN_DR_2_@{sec}_@{reg}_p = 0;
+        aN_DR_3_@{sec}_@{reg}_p = 2;
+        aN_CY_1_@{sec}_@{reg}_p = 0;
+        aN_CY_2_@{sec}_@{reg}_p = 0;
+        aN_CY_3_@{sec}_@{reg}_p = 2;
+        // capital stock coefficients
+        aK_T_1_@{sec}_@{reg}_p = 0;
+        aK_T_2_@{sec}_@{reg}_p = 0;
+        aK_T_3_@{sec}_@{reg}_p = 2;
+        aK_SL_1_@{sec}_@{reg}_p = 0;
+        aK_SL_2_@{sec}_@{reg}_p = 0;
+        aK_SL_3_@{sec}_@{reg}_p = 2;
+        aK_W_1_@{sec}_@{reg}_p = 0;
+        aK_W_2_@{sec}_@{reg}_p = 0;
+        aK_W_3_@{sec}_@{reg}_p = 2;
+        aK_P_1_@{sec}_@{reg}_p = 0;
+        aK_P_2_@{sec}_@{reg}_p = 0;
+        aK_P_3_@{sec}_@{reg}_p = 2;
+        aK_DR_1_@{sec}_@{reg}_p = 0;
+        aK_DR_2_@{sec}_@{reg}_p = 0;
+        aK_DR_3_@{sec}_@{reg}_p = 2;
+        aK_CY_1_@{sec}_@{reg}_p = 0;
+        aK_CY_2_@{sec}_@{reg}_p = 0;
+        aK_CY_3_@{sec}_@{reg}_p = 2;
     @# endfor
 @# endfor
 
@@ -107,8 +153,17 @@ TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Structural Parameters');
 [lParams,iaMparams] = ismember(cellstr(M_.param_names), TempValues.Parameter);
 M_.params(lParams) = TempValues.Value(iaMparams(iaMparams>0));
 
-TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Climate Damage Functions');
+TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Damage Functions TFP');
 [lParams,iaMparams] = ismember(cellstr(M_.param_names), TempValues.Parameter);
 M_.params(lParams) = TempValues.Value(iaMparams(iaMparams>0));
+
+TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Damage Functions Labour');
+[lParams,iaMparams] = ismember(cellstr(M_.param_names), TempValues.Parameter);
+M_.params(lParams) = TempValues.Value(iaMparams(iaMparams>0));
+
+TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Damage Functions Capital');
+[lParams,iaMparams] = ismember(cellstr(M_.param_names), TempValues.Parameter);
+M_.params(lParams) = TempValues.Value(iaMparams(iaMparams>0));
+
 
 

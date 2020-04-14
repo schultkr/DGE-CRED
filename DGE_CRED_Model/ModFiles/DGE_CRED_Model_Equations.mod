@@ -23,10 +23,32 @@ model(bytecode);
         A_N_@{sec}_@{reg} = rhoA_N_@{sec}_@{reg}_p * A_N_@{sec}_@{reg}(-1) + (1 - rhoA_N_@{sec}_@{reg}_p) * (A_N_@{sec}_@{reg}_p * exp(exo_N_@{sec}_@{reg}));
 
         [name = 'sector specific damage function']
-        D_@{sec}_@{reg} = min(1,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
+        D_@{sec}_@{reg} = min(0.75,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
                           a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p) +
                           a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p) + 
-                          a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p)) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+                          a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p) +
+                          a_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + a_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(a_DR_3_@{sec}_@{reg}_p) +
+                          a_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + a_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(a_CY_3_@{sec}_@{reg}_p)
+                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+
+        [name = 'sector specific damage function on labour productivity']
+        D_N_@{sec}_@{reg} = min(1,aN_T_1_@{sec}_@{reg}_p * T_@{reg} + aN_T_2_@{sec}_@{reg}_p * T_@{reg}^(aN_T_3_@{sec}_@{reg}_p) + 
+                          aN_SL_1_@{sec}_@{reg}_p * SL + aN_SL_2_@{sec}_@{reg}_p * SL^(aN_SL_3_@{sec}_@{reg}_p) +
+                          aN_W_1_@{sec}_@{reg}_p * WS_@{reg} + aN_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aN_W_3_@{sec}_@{reg}_p) + 
+                          aN_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aN_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aN_P_3_@{sec}_@{reg}_p) + 
+                          aN_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aN_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aN_DR_3_@{sec}_@{reg}_p) +
+                          aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_CY_3_@{sec}_@{reg}_p)
+                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+
+        [name = 'sector specific damage function on labour productivity']
+        D_K_@{sec}_@{reg} = min(1,aK_T_1_@{sec}_@{reg}_p * T_@{reg} + aK_T_2_@{sec}_@{reg}_p * T_@{reg}^(aK_T_3_@{sec}_@{reg}_p) + 
+                          aK_SL_1_@{sec}_@{reg}_p * SL + aK_SL_2_@{sec}_@{reg}_p * SL^(aK_SL_3_@{sec}_@{reg}_p) +
+                          aK_W_1_@{sec}_@{reg}_p * WS_@{reg} + aK_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aK_W_3_@{sec}_@{reg}_p) + 
+                          aK_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aK_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aK_P_3_@{sec}_@{reg}_p) +
+                          aK_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aK_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aK_DR_3_@{sec}_@{reg}_p) +
+                          aK_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aK_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aK_CY_3_@{sec}_@{reg}_p)
+                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+
 
         [name = 'sector specific adaptation expenditures by the government']
         G_A_@{sec}_@{reg} = exo_GA_@{sec}_@{reg};
@@ -35,26 +57,26 @@ model(bytecode);
         P_@{sec}_@{reg}  = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p) * ((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaQ_@{sec}_p) * P_@{sec};
 
         [name = 'sector specific output']
-        Y_@{sec}_@{reg} = (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg} * (alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg} * K_@{sec}_@{reg}(-1))^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p) + alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p))^(etaNK_@{sec}_@{reg}_p/(etaNK_@{sec}_@{reg}_p - 1));
+        Y_@{sec}_@{reg} = (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg} * (alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg} * K_@{sec}_@{reg}(-1))^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p) + (alphaN_@{sec}_@{reg}_p)^(1/etaNK_@{sec}_@{reg}_p) * ((1 - D_N_@{sec}_@{reg}) * A_N_@{sec}_@{reg} * PoP * N_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p))^(etaNK_@{sec}_@{reg}_p/(etaNK_@{sec}_@{reg}_p - 1));
 
         [name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
-        r_@{sec}_@{reg} * (1 + tauK_@{sec}_@{reg}) = alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * A_K_@{sec}_@{reg}^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * (K_@{sec}_@{reg}(-1) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
+        r_@{sec}_@{reg} * (1 + tauK_@{sec}_@{reg}) = alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * A_K_@{sec}_@{reg}^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * (K_@{sec}_@{reg}(-1) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
 
         [name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
-        W_@{sec}_@{reg} * (1 + tauN_@{sec}_@{reg})/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((PoP * A_N_@{sec}_@{reg} * N_@{sec}_@{reg}) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
+        W_@{sec}_@{reg} * (1 + tauN_@{sec}_@{reg})/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((1 - D_N_@{sec}_@{reg}) * A_N_@{sec}_@{reg} * (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * ((PoP * N_@{sec}_@{reg}) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
 
         [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
-        (1 - tauN_p) * W_@{sec}_@{reg} * (P * C/PoP)^(-sigmaC_p) / (1 + tauC_p) = phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
+        (1 - tauN_p) * W_@{sec}_@{reg} * (P * C/PoP)^(-sigmaC_p) / (1 + tauC_p) = A_N_@{sec}_@{reg} * phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
 
         [name = 'HH FOC capital',mcp = 'K_@{sec}_@{reg}>0']
-        (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1) * (1 + tauC_p)) * beta_p * r_@{sec}_@{reg}(+1) * P_@{sec}_@{reg}(+1) * (1 - tauK_p) + (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * beta_p * (1 - delta_p) = omegaI_@{sec}_@{reg} * (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
+        (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1) * (1 + tauC_p)) * beta_p * r_@{sec}_@{reg}(+1) * P_@{sec}_@{reg}(+1) * (1 - tauK_p) + (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * beta_p * (1 - delta_p - D_K_@{sec}_@{reg}(+1)) = omegaI_@{sec}_@{reg} * (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
 
         [name = 'HH FOC investment',mcp = 'I_@{sec}_@{reg} > 0']       
         (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p))*P_@{sec}_@{reg} = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p)) * omegaI_@{sec}_@{reg} * (1 -  (exp(sqrt(phiK_p / 2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) + exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - 2) - I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1) * sqrt(phiK_p / 2) * (exp(sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)))) + beta_p * (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * I_@{sec}_@{reg}(+1)^2/(I_@{sec}_@{reg})^2 * sqrt(phiK_p / 2) * (exp(sqrt(phiK_p / 2) * (I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)) 
-                 - exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)));
-
+          - exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)));
+      
         [name = 'LOM capital',mcp = 'I_@{sec}_@{reg} > 0']
-        K_@{sec}_@{reg} = (1 - delta_p) * K_@{sec}_@{reg}(-1) + I_@{sec}_@{reg} * (1 -  (exp(sqrt(phiK_p / 2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) + exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - 2));
+        K_@{sec}_@{reg} = (1 - delta_p - D_K_@{sec}_@{reg}) * K_@{sec}_@{reg}(-1) + I_@{sec}_@{reg} * (1 - (exp(sqrt(phiK_p / 2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) + exp(-sqrt(phiK_p / 2) * (I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)) - 2));
 
     @# endfor
     
@@ -77,7 +99,7 @@ model(bytecode);
             @# endfor
             ;
 
-    [name = 'aggergate sector labour']
+    [name = 'aggergate sector labour income']
     W_@{sec} * N_@{sec} = 
             @# for reg in 1:Regions
                 + W_@{sec}_@{reg} * N_@{sec}_@{reg}
@@ -109,6 +131,13 @@ model(bytecode);
 
     [name = 'Percipitation']
     PREC_@{reg} = PREC0_@{reg}_p + exo_PREC_@{reg};
+
+    [name = 'Cyclone']
+    CYC_@{reg} = CYC0_@{reg}_p + exo_CYC_@{reg};
+
+    [name = 'Drought']
+    DRO_@{reg} = DRO0_@{reg}_p + exo_DRO_@{reg};
+
 @# endfor
 [name = 'Sea level']
 SL = SL0_p + exo_SL;
@@ -117,7 +146,7 @@ SL = SL0_p + exo_SL;
 P = P0_p * exp(exo_P);
 
 [name = 'Population']
-PoP = rhoPoP_p * PoP(-1) + (1 - rhoPoP_p) * PoP0_p * exp(exo_PoP);
+PoP = PoP0_p + exo_PoP;
 
 [name = 'aggregate gross value added']
 P * Y = 
@@ -127,7 +156,7 @@ P * Y =
     ;
 
 [name = 'Resource Constraint']
-Y = C + I + G - NX
+Y = C + I + G + NX
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         + G_A_@{sec}_@{reg} 

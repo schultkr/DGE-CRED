@@ -41,7 +41,7 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         if isoctave()
             options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'Updating', 'on');  
         else
-            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
+            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
         end
         xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
         for icosec = 1:strpar.inbsectors_p
@@ -62,7 +62,7 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         if isoctave()
             options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'Updating', 'on');  
         else
-            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
+            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
         end
         xstart_vec_1 = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
         xstart_vec_2 = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
@@ -79,47 +79,71 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         end
 %         xstart_vec = [xstart_vec_1(:); xstart_vec_2(:); xstart_vec_3(:)];
         xstart_vec = [xstart_vec_1(:); xstart_vec_3(:)];
-        %% evaluate residuals of HH FOC w.r.t. labour in each region and sector
+        % evaluate residuals of HH FOC w.r.t. labour in each region and sector
         iStep = options_.iStepSteadyState;
         YTtemp_p = strpar.YT_p;
         NTtemp_p = strpar.NT_p;
+        PoPTtemp_p = strpar.PoPT_p;
         for icostep = 1:iStep
             disp(['Step ' num2str(icostep) ' of ' num2str(iStep) ' to find terminal condition'])
             for icosec = 1:strpar.inbsectors_p
                 ssec = num2str(icosec);
                 for icoreg = 1:strpar.inbregions_p
                     sreg = num2str(icoreg);
+                    strpar.PoPT_p = icostep./iStep .* PoPTtemp_p + (iStep-icostep)./iStep .* strpar.PoP0_p;
                     strpar.YT_p = icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p;
                     strpar.NT_p = icostep./iStep .* NTtemp_p + (iStep-icostep)./iStep .* strpar.N0_p;
                     strpar.(['phiY_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiY0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiYT_' ssec '_' sreg '_p']);
                     strpar.(['phiN_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiN0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiNT_' ssec '_' sreg '_p']);
+                    iIncrease = (icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p)./((icostep-1)./iStep .* YTtemp_p + (iStep-(icostep-1))./iStep .* strpar.Y0_p);
                 end
             end
             FindAtemp = @(x)FindA(x,strys,strexo,strpar);
-            [Fval_vec, strys,strexo] = FindA(xstart_vec, strys, strexo, strpar);
+            [Fval_vec, strys,strexo] = FindA(xstart_vec.*iIncrease, strys, strexo, strpar);
             if max(abs(Fval_vec(:)))>1e-8
-                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindAtemp, xstart_vec, options);%, strys, strexo, strpar);
+                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindAtemp, xstart_vec.*iIncrease, options);%, strys, strexo, strpar);
                 [~, strys,strexo] = FindA(real(xopt), strys, strexo, strpar);
                 xstart_vec = xopt;
             end 
             disp(['Maximum absolute residual ' num2str(max(abs(Fval_vec)))])          
+            errortemp = 0;
+            for icosec = 1:strpar.inbsectors_p
+                ssec = num2str(icosec);
+                for icoreg = 1:strpar.inbregions_p
+                    sreg = num2str(icoreg);
+                    wtemp = strys.(['W_' ssec '_' sreg]) * (1 + strys.(['tauN_' ssec '_' sreg])) / strys.(['P_' ssec '_' sreg]);
+                    rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauK_' ssec '_' sreg]));
+                    errortemp = max(abs(strys.(['Y_' ssec '_' sreg]) - (wtemp * strys.PoP * strys.(['N_' ssec '_' sreg]) + rkgross * strys.(['K_' ssec '_' sreg]))), errortemp);
+                end
+            end
+            disp(['Maximum profit error ' num2str(max(abs(errortemp)))])
+            
         end
     else
-        
-        
-        %% calibrate model
+        % calibrate model
         if isoctave()
             options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20);  
         else
-            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
+            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
         end
         
         Calibrationtemp = @(x)Calibration(x,strys,strexo,strpar);
-%         xstart_vec = ones(strpar.inbsectors_p,1);
         xstart_vec = 1;
-%         xstart_vec = [0.9 0.9 1.05 1.05 0.9 0.9];%ones(strpar.inbsectors_p.*strpar.inbregions_p,1);
         [xopt, Feval, Info, outtemp, fjac] = fsolve(Calibrationtemp, xstart_vec, options);%#ok
         [~, strpar,strys] = Calibration(xopt, strys, strexo, strpar);
+        
+        errorvatemp = 0;
+        errorwagetemp = 0;        
+        for icosec = 1:strpar.inbsectors_p
+            ssec = num2str(icosec);
+            for icoreg = 1:strpar.inbregions_p
+                sreg = num2str(icoreg);
+                errorvatemp = max(abs(strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg]) / (strys.Y * strys.P) - strpar.(['phiY_' ssec '_' sreg '_p'])), errorvatemp);
+                errorwagetemp = max(abs(strys.(['W_' ssec '_' sreg]) * strys.(['N_' ssec '_' sreg]) * strys.PoP * (1 + strys.(['tauN_' ssec '_' sreg])) / (strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg])) - strpar.(['phiW_' ssec '_' sreg '_p'])), errorwagetemp);
+            end
+        end
+        disp(['Maximum value added share error ' num2str(max(abs(errorvatemp)))])
+        disp(['Maximum wage share error ' num2str(max(abs(errorwagetemp)))])
         
     end
     %% end own model equations

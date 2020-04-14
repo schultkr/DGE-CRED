@@ -1,4 +1,4 @@
-tabvars = array2table(reshape(Y, [ny periods+2])');
+tabvars = array2table(reshape(y, [ny periods])');
 tabvars.Properties.VariableNames = cellstr(M.endo_names);
 open tabvars
 

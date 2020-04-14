@@ -7,7 +7,7 @@
 % ==============================
 % === Define number of steps ===
 % ==============================
-options_.iStepSteadyState = 10;
+options_.iStepSteadyState = 20;
 options_.iStepSimulation = 20;
 
 % =====================================================

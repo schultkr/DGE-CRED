@@ -5,20 +5,11 @@ if isequal(sScenario, 'Baseline')
     oo_.steady_state = zeros(size(oo_.steady_state));
     oo_.exo_steady_state = zeros(size(oo_.exo_steady_state));
     initval;
-    @# for reg in 1:Regions
-        exo_T_@{reg} = 0;
-        exo_PREC_@{reg} = 0;
-        exo_WS_@{reg} = 0;
-    @# endfor
-    exo_SL = 0;
-    exo_PoP = 0;
-    exo_BG = 0;
-    exo_P = 0;
+		exo_SL = 0;
     end;
     lCalibration_p = 1;
     options_.qz_zero_threshold = 1e-6;
     [oo_.steady_state, params, oo_.exo_steady_state] = DGE_CRED_Model_steadystate(oo_.steady_state, oo_.exo_steady_state,M_,options_);
-    M_.params = params;
     steady;
     check;
 
@@ -31,8 +22,7 @@ if isequal(sScenario, 'Baseline')
     casShareNParams = [temp{:}];
 
     endval;
-    exo_N_1_1 = 0;
-    exo_N_1_2 = 0;
+		exo_SL = 0;
     end;
     lCalibration_p = 2;
     omegaNX_p = omegaNXT_p;
@@ -46,6 +36,7 @@ if isequal(sScenario, 'Baseline')
     oo_.steady_state = ys;
     lCalibration_p = 0;
     steady;
+    check;
 else
     sVersion = ['Sectors' num2str(inbsectors_p) 'Regions' num2str(inbregions_p)];
     load('structScenarioResults.mat','structScenarioResults');
