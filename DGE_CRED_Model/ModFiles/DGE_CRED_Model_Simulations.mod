@@ -87,7 +87,6 @@ if isequal(sScenario, 'Baseline')
     rhogrowthratesN = fsolve(@(x) ((iInitGrowthRatesN-1)~=0) .* (log((oo_.endo_simul(lSelectNVars,iTermination_p)./oo_.endo_simul(lSelectN,iTermination_p))./(oo_.endo_simul(lSelectNVars,1)./oo_.endo_simul(lSelectN,1))) - sum(log(1 + (iInitGrowthRatesN-1) .* x.^(0:(iTermination_p-1))),2)) + ((iInitGrowthRatesN-1)==0).*(x-0), 0.5.*ones(inbsectors_p.*inbregions_p,1));
     iaTargetGrowthRates = 1 + (iInitGrowthRates-1).*rhogrowthrates.^(0:(iTermination_p-1));
     iaTargetGrowthRatesN = 1 + (iInitGrowthRatesN-1).*rhogrowthratesN.^(0:(iTermination_p-1));
-    iaTargetGrowthRates(:,1) = 0.94;
     fvalY_vec = iaTargetGrowthRates-oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectProdVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1));
     fvalN_vec = iaTargetGrowthRatesN-(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)))./(oo_.endo_simul(lSelectNVars,(1+M_.maximum_lag-1):(iTermination_p+M_.maximum_lag-1))./oo_.endo_simul(lSelectN,(1+M_.maximum_lag):(iTermination_p+M_.maximum_lag)));
     fval_vec = [fvalY_vec fvalN_vec];

@@ -3,28 +3,35 @@
 \BOOKMARK [2][-]{subsection.2.1}{Climate variables}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Demand}{section.2}% 4
 \BOOKMARK [3][-]{subsubsection.2.2.1}{Households}{subsection.2.2}% 5
-\BOOKMARK [3][-]{subsubsection.2.2.2}{Government}{subsection.2.2}% 6
-\BOOKMARK [3][-]{subsubsection.2.2.3}{Resource constraint}{subsection.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.3}{Production}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.4}{Rest of the world}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.5}{Model extension: intermediate consumption and sectoral trade}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.6}{Model extension: energy consumption}{section.2}% 11
-\BOOKMARK [1][-]{section.3}{How to use the model?}{}% 12
-\BOOKMARK [2][-]{subsection.3.1}{Usage}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Folder structure}{}% 14
-\BOOKMARK [1][-]{appendix.A}{Model equations for baseline version}{}% 15
-\BOOKMARK [2][-]{subsection.A.1}{Regional Industries}{appendix.A}% 16
-\BOOKMARK [2][-]{subsection.A.2}{Aggregation}{appendix.A}% 17
-\BOOKMARK [2][-]{subsection.A.3}{Households}{appendix.A}% 18
-\BOOKMARK [2][-]{subsection.A.4}{Climate Variables}{appendix.A}% 19
-\BOOKMARK [2][-]{subsection.A.5}{Trade}{appendix.A}% 20
-\BOOKMARK [2][-]{subsection.A.6}{Government}{appendix.A}% 21
-\BOOKMARK [2][-]{subsection.A.7}{Aggregates}{appendix.A}% 22
-\BOOKMARK [1][-]{appendix.B}{Additional and modified model equations for input-output extension}{}% 23
-\BOOKMARK [2][-]{subsection.B.1}{Regional Industries}{appendix.B}% 24
-\BOOKMARK [2][-]{subsection.B.2}{Aggregation}{appendix.B}% 25
-\BOOKMARK [2][-]{subsection.B.3}{Aggregates}{appendix.B}% 26
-\BOOKMARK [2][-]{subsection.B.4}{Trade}{appendix.B}% 27
-\BOOKMARK [1][-]{appendix.C}{Additional and modified model equations for energy extension}{}% 28
-\BOOKMARK [2][-]{subsection.C.1}{Regional Energy industries}{appendix.C}% 29
-\BOOKMARK [2][-]{subsection.C.2}{Aggregates}{appendix.C}% 30
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Rest of the world}{subsection.2.2}% 6
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Government}{subsection.2.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Resource constraint}{subsection.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.3}{Production}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.4}{Rest of the world}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.5}{Model extension: intermediate consumption and sectoral trade}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.6}{Model extension: energy consumption}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Scenario Analysis}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{Baseline}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Temperature}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.3}{Sea Level}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{Extremes}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.5}{Results}{section.3}% 18
+\BOOKMARK [1][-]{section.4}{How to use the model?}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Usage}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.2}{Folder structure}{section.4}% 21
+\BOOKMARK [1][-]{appendix.A}{Model equations for CRED baseline version}{}% 22
+\BOOKMARK [2][-]{subsection.A.1}{Regional Industries}{appendix.A}% 23
+\BOOKMARK [2][-]{subsection.A.2}{Aggregation}{appendix.A}% 24
+\BOOKMARK [2][-]{subsection.A.3}{Households}{appendix.A}% 25
+\BOOKMARK [2][-]{subsection.A.4}{Climate Variables}{appendix.A}% 26
+\BOOKMARK [2][-]{subsection.A.5}{Trade}{appendix.A}% 27
+\BOOKMARK [2][-]{subsection.A.6}{Government}{appendix.A}% 28
+\BOOKMARK [2][-]{subsection.A.7}{Aggregates}{appendix.A}% 29
+\BOOKMARK [1][-]{appendix.B}{Additional and modified model equations for input-output extension}{}% 30
+\BOOKMARK [2][-]{subsection.B.1}{Regional Industries}{appendix.B}% 31
+\BOOKMARK [2][-]{subsection.B.2}{Aggregation}{appendix.B}% 32
+\BOOKMARK [2][-]{subsection.B.3}{Aggregates}{appendix.B}% 33
+\BOOKMARK [2][-]{subsection.B.4}{Trade}{appendix.B}% 34
+\BOOKMARK [1][-]{appendix.C}{Additional and modified model equations for energy extension}{}% 35
+\BOOKMARK [2][-]{subsection.C.1}{Regional Energy industries}{appendix.C}% 36
+\BOOKMARK [2][-]{subsection.C.2}{Aggregates}{appendix.C}% 37

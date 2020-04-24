@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage{cite}
-\usepackage[authoryear]{natbib}     
+\usepackage[authoryear]{natbib}   
 \usepackage{geometry}
 \usepackage{amsmath}
 \usepackage{fullpage}
@@ -11,7 +11,10 @@
 \usepackage{hyperref}
 
 \title{Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)\\
-\large{Technical Report}}
+\hspace{1cm}
+\large{Technical Report} \\
+\hspace{1cm}
+\large{Preliminary Draft}}
 \date{April 2020}
 \author{Christoph Schult and Andrej Drygalla \\ Halle Institute for Economic Research}
 
@@ -23,28 +26,28 @@
 
 \section{Introduction}
 
-Projections  by  the  international  panel  on  climate  change  (IPCC)  show  that  the  global  average  temperature,  the  sea  level  and  the  frequency  of  weather  extremes  are  likely  to  change  as  a  consequence  of  higher  greenhouse  gas  concentration  in  the  atmosphere  \cite{stocker2013climate}.  Climate  change  has  the  potential  to  affect  the  further  economic  development  of  Vietnam.  Previous  studies  \citep[e.g.][]{arndt2015economic,wassmann2004sea,chen2012climate}  show  that  an  increase  in  temperature,  sea  level  rise  and  a  higher  frequency  of  weather  extremes  (e.g.  cyclones  and  droughts)  are  hazards  to  the  future  economic  development.  Vietnam  belongs  to  the  group  of  highly  vulnerable  countries  to  climate  change  
+Projections by the international panel on climate change (IPCC) show that the global average temperature, the sea level and the frequency of weather extremes are likely to change as a consequence of higher greenhouse gas concentration in the atmosphere \cite{stocker2013climate}. Climate change has the potential to affect the further economic development of Vietnam. Previous studies \citep[e.g.][]{arndt2015economic,wassmann2004sea,chen2012climate} show that an increase in temperature, sea level rise and a higher frequency of weather extremes (e.g. cyclones and droughts) are hazards to the future economic development. Vietnam belongs to the group of highly vulnerable countries to climate change.
 
-The  impact  of  climate  change  on  Vietnam  will  be  different  across  regions.  Official  statistics  differentiate  between  six  different  statistical  regions  in  Vietnam:  Red  River  Delta,  Northern  Midlands  and  Mountain  Areas  (North  East  and  North  West),  North  Central  and  Central  Coastal  area  (North  Central  Coast  and  South  Central  Coast),  Central  Highlands,  South  East,  and  Mekong  River  Delta.  The  map  in  Figure  \ref{fig:MapVietnam}  shows  that  four  of  the  six  regions  are  located  at  the  coast.  The  impact  of  sea  level  rise  in  Vietnam  will  be  different  for  coastal  and  non-coastal  regions.  For  economic  adaptation  measures  a  regional  dimension  is  important.  
+For economic adaptation measures a regional dimension is important because the impact of climate change on Vietnamese economy will be different across regions. National statistics differentiate between six different statistical regions in Vietnam: Red River Delta, Northern Midlands and Mountain Areas (North East and North West), North Central and Central Coastal area (North Central Coast and South Central Coast), Central Highlands, South East, and Mekong River Delta. The map in Figure \ref{fig:MapVietnam} shows that four of the six regions are located at the coast. Hence, the impact of sea level rise will be different for coastal and non-coastal regions in Vietnam. 
 
 Further, climate change will affect economic activities like agriculture, forestry and fishery differently than manufacturing. Climate variables have different effects on the production factors labour and capital used in the different economic sectors. Adaptation measures can target different sectors and different production factors. Building a damn will reduce the damage by sea level rise on land use. Early warning systems for cyclones are able to reduce the damage on capital. Water management systems are able to tackle the issue of water scarcity due to higher temperatures. Labour productivity will be affected by heatwaves as well. Adaptation measures replacing labour intensive tasks using more capital intensive production processes are potential adaptation measures. To prioritize and evaluate different adaptation measures a cost benefit analysis is necessary. A cost benefit analysis needs to account for the dynamic nature of the problem. It is also necessary to evaluate the sensitivity of the results to different assumptions made in order to get robust policy decisions. Further, the analysis needs to be transparent and all the assumptions made are explicitly stated. Structural mathematical models are a suitable tool for this task. 
 
 Dynamic general equilibrium models with optimizing agents are a standard tool to assess the impact of different policy measures. All adaptation measures will either reduce productivity in the short-run by relocating economic activity or reduce available public funds for other development measures. Therefore, a general equilibrium framework is necessary to assess the economic implications of different adaptation measures. Investment decisions today will affect the future development of specific sectors. This implies path dependency and requires a dynamic framework. We need to differentiate between different regions and economic activities to account for different regional climate developments.
 
-Our model is implemented in the open source environment \href{https://www.dynare.org/}{Dynare} and can be run using Matlab or Octave. An open surce environment allows low costs to acquire the necessary skills and experience to workith the model. The model is calibrated to represent the current economic structure. Sectors in the model correspond to economic activities and the classification by the General Statistical Office (GSO). Regions are based on the statistical regions depicted in Figure \ref{fig:MapVietnam}. It is possible to modify the number of sectors and regions by aggregating the official data. This allows to reduce the size of the model and makes it easier to test new modifications and features of the model. The core of the model can be extended to feature different aspects of the economy. Currently, there are extensions of the model available only for a accessible .
+Our model is implemented in the open source environment \href{https://www.dynare.org/}{Dynare} and can be run using Matlab or Octave. An open source environment allows low costs to acquire the necessary skills and experience to work with the model. The model is calibrated to represent the current economic structure. Sectors in the model correspond to economic activities and the classification by the General Statistical Office (GSO). Regions are based on the statistical regions depicted in Figure \ref{fig:MapVietnam}. It is possible to modify the number of sectors and regions by aggregating the official data. This allows to reduce the size of the model and makes it easier to test new modifications and features of the model. The core of the model can be extended to feature different aspects of the economy. %Currently, there are extensions of the model available only for a accessible.
 
-We extend the approach by \cite{nordhaus1993optimal} to model the impact of climate change through damage functions. The link between climate and the economy is modeled using sector and region specific damage functions. Damage functions will affect the productivity of all production factors, or only labour productivity, or the formation of capital. We know that the impact of Vietnamese economic variables on average annual temperature, precipitation, wind speed, average intensity of cyclones and droughts are ´negligible. Our cost beenfit analysis will use the results of metreological models to define paths for climate variables.
+We extend the approach by \cite{nordhaus1993optimal} to model the impact of climate change through damage functions. The link between climate and the economy is modeled using sector and region specific damage functions. Damage functions will affect the productivity of all production factors, or only labour productivity, or the formation of capital. We know that the impact of Vietnamese economic variables on average annual temperature, precipitation, wind speed, average intensity of cyclones and droughts are negligible. Our cost benefit analysis will use the results of meteorology models to define paths for climate variables.
 
-We will define different scenarios to evaluate the costs and benefits associated with different climate variables. Therefore, we first need to define a \emph{Baseline} scenario. The Baseline scenario is necessary to define the evolution of the Vietnamese economy without any climate change. Costs associated with climate change are defined as the difference between the Baseline path and another scenario with climate change for any target variable like gross domestic product. The model is a laboratory for policy makers and researchers to conduct experiments by alternating different climate variables and adaption measures. Data is required to set up the experiments and to get plausible results. Reporting the structural equations of the model is equivalent to a protocol and ensures replication of the experiment. Only replication and transparency ensures that the results can be judged by experts and the public. The model simulates long-run developments. The simulations are not meant to predict bumps in the road, e.g. the economic downturn caused by the coronavirus disease 2019 (COVID-19) virus. But, it is possible to include the impact of the COVID-19. One easy way to do this is to use economic forecasts as conducted by the \href{https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020}{April 2020 World Economic Outlook} by the International Monetary Fund (IMF) to adjust the Baseline scenario to reflect recent developments. Model users are able to quantify upper limits for costs of adaptation measures to reduce damages by climate change. e.g., it is possible to evaluate the impact of temperature increases on different sectors and the overall impact on total gross value added. The discounted cumulative difference between a scenario without a temperature increase and with temperature increase can be used to determine the upper bound for the costs to reduce the damage caused by a temperature increase. 
+We will define different scenarios to evaluate the costs and benefits associated with different climate variables. Therefore, we first need to describe a \emph{Baseline} scenario. The Baseline scenario is necessary to define the evolution of the Vietnamese economy without any climate change. Costs associated with climate change are defined as the difference between the Baseline path and another scenario with climate change for any target variable like gross domestic product. The model is a laboratory for policy makers and researchers to conduct experiments by alternating different climate variables and adaption measures. Data is required to set up the experiments and to get plausible results. Reporting the structural equations of the model is equivalent to a protocol and ensures replication of the experiment. Only replication and transparency ensures that the results can be judged by experts and the public. The model simulates long-run developments. The simulations are not meant to predict bumps in the road, e.g. the economic downturn caused by the coronavirus disease 2019 (COVID-19). But, it is possible to include the impact of the COVID-19 on the economy. One easy way to do this is to use latest economic forecasts as conducted by e.g. the \href{https://www.imf.org/en/Publications/WEO/Issues/2020/04/14/weo-april-2020}{International Monetary Fund (IMF)} in April 2020 in the World Economic Outlook to adjust the Baseline scenario to reflect recent developments. Model users are able to quantify upper limits for costs of adaptation measures to reduce damages by climate change. For instance, it is possible to evaluate the impact of temperature increases on different sectors and the overall impact on total gross value added. The discounted cumulative difference between a scenario without a temperature increase and with temperature increase can be used to determine the upper bound for the costs to reduce the damage caused by a temperature increase. To study the interaction between adaptation and mitigation measures it is also possible to extend the model to explicity consider energy consumption.
 
-In the following Section \ref{sec:modelderivation} the derivation of the model equations is explicitly described. Readers who are interested in using the model can skip the model section and can directly go to Section \ref{sec:modelusage}.
+In Section \ref{sec:modelderivation} the derivation of the model equations is explicitly described. Readers who are interested in directly using the model can skip the model description and can directly proceed with Section \ref{sec:modelusage}.
 
 \begin{figure}[h]
-\caption{Map  of  Vietnam}\label{fig:MapVietnam}
+\caption{Map of Vietnam}\label{fig:MapVietnam}
 \begin{center}
-\includegraphics[width  =  0.5\textwidth,  height  =  0.7\textwidth]{pictures/VietnamStatisticalRegions.jpg}
+\includegraphics[width = 0.5\textwidth, height = 0.7\textwidth]{pictures/VietnamStatisticalRegions.jpg}
 \end{center}
-\footnotesize{Source:  The  illustration  is  published  in  \cite{boateng2012GIS}.}
+\footnotesize{Source: The illustration is published in \cite{boateng2012GIS}.}
 \end{figure}
 
 \section{Model}\label{sec:modelderivation}
@@ -58,7 +61,7 @@ This report is a guide on how to use the spatial small open economy dynamic gene
 \end{figure}
 Regional climate variables (precipitation, wind speed, temperature and sea level) are exogenous to economic variables. Regional sectoral production functions depend on regional climate variables. The model is meant to reflect small open economies and therefore the climate system is unaffected by the domestic economic system.
 
-The model consists of an arbitrary number of regions and sectors. Regional differentiation is only provided on the supply side and not on the demand side. Representative households consume sectoral goods and supply capital and labour to the firms in the regions. Households also demand goods and services from the rest of the world. Firms use capital and labour to produce sectoral goods with sectoral and regional specific constant elasticity of substitution production functions.
+The model consists of an arbitrary number of regions ($R$) and sectors ($K$). Regional differentiation is only provided on the supply side and not on the demand side. Representative households consume sectoral goods and supply capital and labour to the firms in the regions. Households also demand goods and services from the rest of the world. Firms use capital and labour to produce sectoral goods with sectoral and regional specific constant elasticity of substitution production functions.
 
 The government collects taxes, consumes and can use its funds to finance adaptation measures for specific regions and sectors. So far, adaptation measures will reduce overall damage by all climate variables at the same time. The effectiveness of government expenditure in one specific region and sector can vary.
 
@@ -66,51 +69,58 @@ The government collects taxes, consumes and can use its funds to finance adaptat
 Table \ref{tab:listofsymbols} provides a comprehensive list of all variables and parameters. Appendix \ref{app:modelequationsbaseline} reports all equations of the model.
 
 \subsection{Climate variables}
-In order to capture the effect of climate change on the economy it is necessary to include climate variables into the model. A small open economy model does not need to include the impact of domestic economic activity on climate variables. Therefore, in contrast to \cite{nordhaus1993optimal} we do not need to model the interaction between economic activity and climate change. Climate variables are independent of other endogenous variables in the model. We explicitly model the regional average annual temperature $T_{r,t}$, the average precipitation $PREC_{r,t}$, the average annual wind speed $WS_{r,t}$, the sea level $SL_{t}$, cyclones $CYC_{r,t}$ and droughts $DRO_{r,t}$. 
+In order to capture the effect of climate change on the economy it is necessary to include climate variables into the model. A small open economy model does not need to include the impact of domestic economic activity on climate variables. Therefore, in contrast to \cite{nordhaus1993optimal} we do not need to model the interaction between economic activity and climate change. Climate variables are independent of other endogenous variables in the model. We explicitly model the regional average annual temperature $T_{r,t}$, the average precipitation $PREC_{r,t}$, the average annual wind speed $W^S_{r,t}$, the sea level $SL_{t}$, cyclones $CYC_{r,t}$ and droughts $DRO_{r,t}$. 
 \begin{align}\label{eq:climatevariables}
 T_{r,t} = T_{r,0} + \eta_{T,r,t} \nonumber \\
 PREC_{r,t} = PREC_{r,0} + \eta_{PREC,r,t} \nonumber \\
-W^S_{r,t} = W^S_{r,0} + \eta_{W^S,r,t} \nonumber \\
-SL_{t} = SL_{0} + \eta_{SL,r,0} \nonumber \\
-CYC_{t} = CYC_{0} + \eta_{CYC,r,0} \nonumber \\
-DRO_{t} = SL_{0} + \eta_{DRO,r,0} \nonumber \\
+WS_{r,t} = WS_{r,0} + \eta_{WS,r,t} \nonumber \\
+SL_{t} = SL_{0} + \eta_{SL,r,t} \nonumber \\
+CYC_{r,t} = CYC_{r,0} + \eta_{CYC,r,t} \nonumber \\
+DRO_{r,t} = SL_{r,0} + \eta_{DRO,r,t} \nonumber \\
 \end{align}
 
-The approach in eq.~\ref{eq:climatevariables} allows to specify the evolution of climate variables according to the projections by meteorological models \citep[e.g.]{stocker2013climate}.
+The approach in eq.~\ref{eq:climatevariables} allows to specify the evolution of climate variables according to the projections by meteorological models \citep[e.g.][]{stocker2013climate}.
 
 \subsection{Demand}
 \subsubsection{Households}
-As depicted in Figure \ref{fig:ModelStructure} the demand side is represented by representative households $h$ providing labour $N$ and capital $K$ to domestic firms $f$. Households maximize discounted utility over an infinite horizon by choosing consumption $C_t(h)$, capital $K_{k,r,t+1}(h)$, investments $I_{k,r,t}(h)$, labour $N_{k,r,t}(h)$ and foreign net bond holdings $B_{t+1}$ to maximize utility constrained by the budget constraint and the law of motion for sectoral and regional capital. Therefore, the Lagrangian eq.~\ref{eq:hhlagrangian} of the representative household is
+As depicted in Figure \ref{fig:ModelStructure}, the demand side is represented by representative households $h$ providing labour $N$ and capital $K$ to domestic firms $f$. Households maximize discounted utility over an infinite horizon by choosing consumption $C_t(h)$, capital $K_{k,r,t+1}(h)$, investments $I_{k,r,t}(h)$, labour $N_{k,r,t}(h)$ and foreign net bond holdings $B_{t+1}$ to maximize utility constrained by the budget constraint and the law of motion for sectoral and regional capital. Therefore, the Lagrangian eq.~\ref{eq:hhlagrangian} of the representative household is
 \begin{dmath}\label{eq:hhlagrangian}
 \sum_{t=0}^{\infty} \beta^{t} \left[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) 
 - \lambda_{t}(h) \left(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - B_{t+1}(h) \right) 
-- \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta) \, K_{k,r,t} - I_{k,r,t} \, S\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace  \right].
+- \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta) \, K_{k,r,t} - I_{k,r,t} \, S\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace \right].
 \end{dmath}
-Households receive utility by consuming goods, where the inter temporal elasticity of consumption is defined by $\sigma^{C}$. Dis-utility from labour is sector and region specific $\phi^{L}_{k,r}$, the inverse Frisch elasticity $\sigma^{L}$ is identical for all sectors and regions. Households spent money either on consumption goods $P_t \, C_t(h) \, (1 + \tau^{C})$, regional and sector specific investment $P_{k,r,t} I_{k,r,t}(h)$ and need to repay foreign bonds $B_{t+1}(h)$. They receive income from labour $W_{k,r,t} \, N_{k,r,t}(h) \, (1 - \tau^{L})$, capital renting $P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}(h) \, (1 - \tau^{K})$ and can use their borrowed money from the foreign economy $B_{t}(h)$. The first order conditions to the problem are the behavioral equations. As is standard in teh literature we replace the Lagrange multiplier $\lambda_{t}$ by the marginal utility of consumption $\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}$ derived from the first order condition (FOC) of the above problem with respect to (w.r.t.) consumption. Households supply labour according to the FOC w.r.t. labour eq.~\ref{eq:hhlaboursupply} for each sector and region depending on the wage $W_{k,r,t}$ and the marginal dis-utility of labour for the specific sector and region
+Households receive utility by consuming goods, where the intertemporal elasticity of consumption is defined by $\sigma^{C}$. Disutility from labour is sector and region specific $\phi^{L}_{k,r}$, the inverse Frisch elasticity $\sigma^{L}$ is identical for all sectors and regions. Households spent money either on consumption goods $P_t \, C_t(h) \, (1 + \tau^{C})$, regional and sector specific investment $P_{k,r,t} I_{k,r,t}(h)$ and need to repay foreign bonds $B_{t+1}(h)$. They receive income from labour $W_{k,r,t} \, N_{k,r,t}(h) \, (1 - \tau^{L})$, capital renting $P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}(h) \, (1 - \tau^{K})$ and can use their borrowed money from the foreign economy $B_{t}(h)$. The first order conditions to the problem are the behavioural equations. Following the literature, we replace the Lagrange multiplier $\lambda_{t}$ by the marginal utility of consumption $\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}$ derived from the first order condition (FOC) of the above problem with respect to (w.r.t.) consumption. Households supply labour according to the FOC w.r.t. labour eq.~\ref{eq:hhlaboursupply} for each sector and region depending on the wage $W_{k,r,t}$ and the marginal disutility of labour for the specific sector and region
 \begin{dmath}\label{eq:hhlaboursupply}
 \phi^{L}_{k,r} \, A^{N}_{k,r,t} \, N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{N}).
 \end{dmath}
-The household also needs to decide how much of its income it wants to consume or invest into capital. The famous Euler equation eq.~\ref{eq:hhfoccapital} is obtained by taking the first derivative of the Lagrangian w.r.t. sector and region specific capital
+Households also need to decide how much of their income they want to consume or invest into capital. The famous Euler equation eq.~\ref{eq:hhfoccapital} is obtained by taking the first derivative of the Lagrangian w.r.t. sector and region specific capital
 \begin{dmath}\label{eq:hhfoccapital}
 \lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} + (1 - \delta) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
 \end{dmath}
-Further, the household also faces investment adjustment cost $S(\frac{I_{k,r,t}}{I_{k,r,t-1}}) = 3 - exp\left\lbrace\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right\rbrace\right) - exp\left\lbrace-\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right)\right\rbrace$, which are sector and region specific. The specification of the investment adjustment cost function is the same as proposed and estimated by \cite{christiano2014risk} for the US.  The marginal value of sectoral and regional investment $\omega^{I}_{k,r,t}$ is determined by
+
+Further, households also face investment adjustment cost $\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) = 3 - exp\left\lbrace\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right\rbrace\right) - exp\left\lbrace-\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right)\right\rbrace$, which are sector and region specific. The specification of the investment adjustment cost function is the same as proposed and estimated by \cite{christiano2014risk} for the US.  The marginal value of sectoral and regional investment $\omega^{I}_{k,r,t}$ is determined by
+
 \begin{dmath}\label{eq:hhfocinvestment}
-P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(S(\frac{I_{k,r,t}}{I_{k,r,t-1}}) - \frac{\partial S(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial I_{k,r,t}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) + \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial S(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial I_{k,r,t}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
+P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) - \frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial I_{k,r,t}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) + \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial I_{k,r,t}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
 \end{dmath}
-Households have access to the international financial market to purchase and sell internationally traded bonds. We only consider net foreign positions.
+
+\subsubsection{Rest of the world}
+Households have access to the international financial market to purchase and sell internationally-traded bonds. However, we only consider net foreign positions 
+
 \begin{dmath}\label{eq:hhfocbonds}
 \lambda_{t+1} \, \beta \, S^{f}_{t+1} \, \phi^{B}_{t+1} \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t} \\
 \end{dmath}
-
-The required interest rate will increase if the foreign debt relative to GDP increases and current net exports relative to GDP will decrease. 
+with effective exchange rate $S^f$ and the world interest rate $r^f$.
+The required interest rate is above the world interest rate if the foreign debt ($B_{t+1}<0$)/ foreign claims ($B_{t+1}>0$) relative to GDP increases/decreases and future net exports relative to GDP will decrease. 
 \begin{dmath}
-\phi^{B}_{t+1} = exp \left(-\phi^B \,(S^{f}_{t+1} \, r^{f}_{t+1} \, \frac{B_{t}}{Y_{t+1}}+\frac{NX_{t}}{Y_t})\right)
+\phi^{B}_{t+1} = exp \left(-\phi^B \,(S^{f}_{t+1} \, r^{f}_{t+1} \, \frac{B_{t+1}}{Y_{t+1}}+\frac{NX_{t+1}}{Y_{t+1}})\right)
 \end{dmath}
+Here we introduce $\phi^{B}_{t+1}$ to ensure stability of the system as discussed in \cite{schmitt2003closing}.
+
 
 \subsubsection{Government}
 
-We are interested in different policy measures taken by the government to adapt to a new climate regime. Government behavior is not a result of an optimization problem. The Government collects taxes from consumption $\tau^{C} \, C_{t}$, labour income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t}$ and capital income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}$. In order to finance its activities the government can also get loans from the rest of the world $B^{G}_{t+1}$ and has to repay loans and interest from the previous period denominated in foreign currency $(1 + r^{f}_{t})$ identical to the household. The government budget constraint boils down to eq.~\ref{eq:GovBudget}.
+We are interested in different policy measures taken by the government to adapt to a new climate regime. Government behaviour is not a result of an optimization problem. The government collects taxes from consumption $\tau^{C} \, C_{t}$, labour income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t}$ and capital income $\sum_{k}^{K} \sum_{r}^{R} \, (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}$. In order to finance its activities the government can receive loans from the rest of the world $B^{G}_{t+1}$ and has to repay loans and interest from the previous period denominated in foreign currency $(1 + r^{f}_{t})$ identical to the interest rates paid by households. The government budget constraint boils down to eq.~\ref{eq:GovBudget}.
 \begin{align}\label{eq:GovBudget}
 G_{t} + \sum_{k}^{K} \sum_{r}^{R} G^{A}_{k,r,t} + B^G_{t} =& \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t} + (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \right\rbrace \nonumber \\
 & + (1 + r^{f}_{t}) \, S^{f}_{t} \phi^{B}_{t} \, B^G_{t-1}
@@ -127,20 +137,20 @@ B^G_{t} = B^G_{0} + \eta^{B^{G}}_{t}
 
 \subsubsection{Resource constraint}
 
-Households and the Government use domestic final goods $Y_t$ produced by firms for consumption, investment and for exports $X_{t}$ and can also use imports $M_t$ for consumption and investment. This gives rise to the well known resource constraint or the expenditure approach to define GDP 
+Households and government use domestic final goods $Y_t$ produced by firms for consumption, investment and for exports $X_{t}$ and can also use imports $M_t$ for consumption and investment. This gives rise to the well known resource constraint or the expenditure approach to define GDP 
 \begin{align}
 Y_{t} = C_{t} + I_{t} + G_{t} + \underbrace{X_{t} - M_{t}}_{NX_{t}}
 \end{align}
 
 \subsection{Production}
 
-Households demand final domestic goods $Y_{t}$ combining goods from different sectors $Y_{k,t}$ using a CES composition function. They minimize expenditures subject to the composition function
+Households demand final domestic goods $Y_{t}$ combining goods from different sectors $Y_{k,t}$ using a CES production function. They minimize expenditures subject to the production function
 \begin{align}
 \underset{Y_{k,t}}{\mathrm{min}} & \sum_{k} Y_{k,t} \, P_{k,t} \\ 
 Y_{t} &= \left(\sum_{k} {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} Y_{k,t}^{\frac{\eta^Q-1}{\eta^Q}} \right)^{\frac{\eta^Q}{\eta^Q-1}}
 \end{align}
 
-Therefore demand for sectoral products correspond to the first order conditions of the above optimization problem. The Lagrange multiplier is the price level $P_{t}$ of domestic products. 
+Therefore, the demand for sectoral products correspond to the first order conditions of the above optimization problem. The Lagrange multiplier is the price level $P_{t}$ of domestic products. 
 \begin{align}
 \frac{P_{k,t}}{P_{t}} &= {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} \left(\frac{Y_{k,t}}{Y_{t}}\right)^{\frac{-1}{\eta^Q}}
 \end{align}
@@ -156,25 +166,26 @@ Demand for sectoral and regional products correspond to the first order conditio
 \frac{P_{k,r,t}}{P_{k,t}} &= {\omega^{Q}_{k,r}}^{\frac{1}{\eta^{Q}_{k}}} \left(\frac{Y_{k,r,t}}{Y_{k,t}}\right)^{\frac{-1}{\eta^{Q}_{k}}}
 \end{align}
 
-At the regional and sectoral level are representative firms maximizing profits using capital $K_{k,r,t}$ and labour $L_{k,r,t} = N_{k,r,t} \, Pop_{t}$ provided by households to produce products. They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.  Representative firms have access to a regional and sector specific constant elasticity of substitution production function. The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function affecting total factor productivity $A_{k,r,t}$ by $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, W^{S}_{r,t}, \, SL_{r,t}, \, CYC_{r,t}, \, DRO_{r,t}, \, G^{A}_{r,k,t} \right)$.  Further, we explicity differenitate between climate induced damages affecting labour productivity $D_{N,k,r,t}$ and capital depreciation $D_{K,k,r,t}$. As in \cite{nordhaus1993optimal} we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors eq.~\ref{eq:Damages}.
+At the regional and sectoral level are representative firms maximizing profits using capital $K_{k,r,t}$ and labour $L_{k,r,t} = N_{k,r,t} \, Pop_{t}$ provided by households to produce products. They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.  Representative firms have access to a regional and sector specific constant elasticity of substitution production function. The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function affecting total factor productivity $A_{k,r,t}$ by $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, WS_{r,t}, \, SL_{r,t}, \, CYC_{r,t}, \, DRO_{r,t}, \, G^{A}_{r,k,t} \right)$.  Further, we explicity differentiate between climate induced damages affecting labour productivity $D_{N,k,r,t}$ and capital depreciation $D_{K,k,r,t}$. As in \cite{nordhaus1993optimal}, we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors (eq.~\ref{eq:Damages}).
+
 \begin{align}
 {{D_{k,r}}_{t}}=& exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \Big( \nonumber \\
 &\underbrace{{{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a_{SL,1,k,r}}}\, {{SL}_{t}}+{{a_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
-+ & \underbrace{{{a_{W^{S},1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a_{W^{S},2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a_{W^{S},3,k,r}}}}}_{\mbox{impact of wind speed}}
++ & \underbrace{{{a_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}}
 + \underbrace{{{a_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}} \nonumber \\
 + & \underbrace{{{a_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}
 + \underbrace{{{a_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}} \nonumber \\
 &\Big). \label{eq:Damages} \\
 {{D^{N}_{k,r}}_{t}}=& exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \Big( \nonumber \\
 &\underbrace{{{a^{N}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{N}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{N}_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a^{N}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{N}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{N}_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
-+ & \underbrace{{{a^{N}_{W^{S},1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a^{N}_{W^{S},2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a^{N}_{W^{S},3,k,r}}}}}_{\mbox{impact of wind speed}}
++ & \underbrace{{{a^{N}_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{N}_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{N}_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}}
 + \underbrace{{{a^{N}_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a^{N}_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{N}_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}} \nonumber \\
 + & \underbrace{{{a^{N}_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{N}_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{N}_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}
 + \underbrace{{{a^{N}_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a^{N}_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{N}_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}} \nonumber \\
 &\Big). \label{eq:DamagesLabour} \\
 {{D^{K}_{k,r}}_{t}}=& exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \Big( \nonumber \\
 &\underbrace{{{a^{K}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{K}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{K}_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a^{K}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{K}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{K}_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
-+ & \underbrace{{{a^{K}_{W^{S},1,k,r}}}\, {{W_{r}^{S}}_{t}}+{{a^{K}_{W^{S},2,k,r}}}\, \left({W_{r}^{S}}_{t}\right)^{{{a^{K}_{W^{S},3,k,r}}}}}_{\mbox{impact of wind speed}}
++ & \underbrace{{{a^{K}_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{K}_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{K}_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}}
 + \underbrace{{{a^{K}_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a^{K}_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{K}_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}} \nonumber \\
 + & \underbrace{{{a^{K}_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{K}_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{K}_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}
 + \underbrace{{{a^{K}_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a^{K}_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{K}_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}} \nonumber \\
@@ -195,11 +206,11 @@ Demand for production factors are given by the first order condition of the abov
 r_{k,r,t} = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
 \end{align}
 
-We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. Temporary productivity shocks are in our set-up also weather extremes. We will discuss the problem later. 
+We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. Temporary productivity shocks are in our set-up also weather extremes. Cyclones can destroy the capital stock. Firms can either substitute caital using more labour in the period, e.g. using more labour to replace tractors. Or they need to layoff workers because they are useless without machines, e.g. destruction of factories. The parameter $\eta^{NK}_{k,r}$ allows to specify the reaction of firms according to the data.
 
 \subsection{Rest of the world}
 
-The demand for domestic exports and foreign imports is not explicitly modeled in this version of the model. We assume that net exports follow an auto-regressive process of order one and that the long run value of net exports depend on the long-run development of gross domestic product. We therefore assume that imports and exports will grow at the same speed as GDP. Sluggish adjustments in export and import behavior of companies is captured by an auto-regressive process. 
+The demand for domestic exports and foreign imports is not explicitly modeled in this version of the model. We assume that net exports follow an auto-regressive process of order one and that the long-run value of net exports depend on the long-run development of gross domestic product. We therefore assume that imports and exports will grow at the same speed as GDP. Sluggish adjustments in export and import behaviour of companies is captured by an auto-regressive process. 
 \begin{align}
 NX_{t} = \rho^{NX} \, NX_{t-1} + (1 - \rho^{NX}) \omega^{NX} P_{t} \, Y_{t}
 \end{align}
@@ -209,59 +220,101 @@ The effective exchange rate $S^f_{t}$ and the world interest rate $r^{f}_{t}$ de
 \subsection{Model extension: intermediate consumption and sectoral trade} 
 Table \ref{tab:listofsymbolsextension1} provides a list of all additional variables and parameters included for the extension. Appendix \ref{app:modelequationsextension1} reports all additional and modified equations associated with the respective extension.
 
-In order to consider the impact of climate change on exports and imports, we need to extend the model to feature sectoral exports $X_{k,t}$ and imports $M_{k,t}$. It is also necessary to include intermediate consumption $Q^{I}_{k,r,t}$ by firms to ensure that the model can be calibrated to match export and import ratios for different sectors. In contrast to the baseline version imports are used to produce final domestically used output $Q^U_t$. Final domestically used output is provided by a representative firm using domestic output from different sectors and regions $Q^{D}_{k,t}$ and sectoral imports. Imports and domestic products from different sectors are combined using a CES composition function. The production function of the firm is a nested CES function.
+In order to consider the impact of climate change on exports and imports, we need to extend the model to feature sectoral exports $X_{k,t}$ and imports $M_{k,t}$. It is also necessary to include intermediate consumption $Q^{I}_{k,r,t}$ by firms to ensure that the model can be calibrated to match export and import ratios for different sectors. In contrast to the baseline version imports are used to produce final domestically used output $Q^U_t$. The later is provided by a representative firm using domestic output from different sectors and regions $Q^{D}_{k,t}$ and sectoral imports. Imports and domestic products from different sectors are combined using a CES production function. The production function of the firm is a nested CES function:
 \begin{align}
 Q^U_t = \left((1 - \omega^{F})^{\frac{1}{\eta^{F}}} \, {Q^D_t}^{\rho^F} + {\omega^{F}}^{\frac{1}{\eta^{F}}} \, {M_t}^{\rho^F}\right)^{\frac{1}{\rho^F}}, \mbox{where } \rho^{F} = \frac{\eta^F - 1}{\eta^F} \label{eq:cesfinal}\\
 M_t = \left(\sum_{k}^{K}{\omega^{M}_{k}}^{\frac{1}{\eta^{M}}} \, {M_{k,t}}^{\rho^M}\right)^{\frac{1}{\rho^M}}, \mbox{where } \rho^{M} = \frac{\eta^M - 1}{\eta^M} \label{eq:imports} \\
 Q^D_t = \left(\sum_{k}^{K}{\omega^{Q}_{k}}^{\frac{1}{\eta^{Q}}} \, {Q^D_{k,t}}^{\rho^Q}\right)^{\frac{1}{\rho^Q}}, \mbox{where } \rho^{Q} = \frac{\eta^Q - 1}{\eta^Q} \label{eq:domesticusedoutput} \\
-Q^{D}_{k} = Q_{k,t} - X_{k,t} \nonumber \\ 
+Q^{D}_{k,t} = Q_{k,t} - X_{k,t} \nonumber \\ 
 Q_{k,t} = \left(\sum_{k}^{K}{\omega^{Q}_{k,r}}^{\frac{1}{\eta^{Q}_{k}}} \, {Q_{k,r,t}}^{\rho^Q_{k}}\right)^{\frac{1}{\rho^Q_{k}}}, \mbox{where } \rho^{Q}_{k} = \frac{\eta^Q_{k} - 1}{\eta^Q_{k}} \nonumber 
 \end{align}
 
-Prices of sectoral imports $P^{M}_{k,t}$ are exogenous eq.~\eqref{eq:importprices} as well as the export demand eq.~\eqref{eq:exportsdemand} for domestic produced sectoral products. The optimization problem of the final goods producer can be split up into different parts. At the top level eq.~\eqref{eq:cesfinal} they choose the amount of imports according to eq.~\eqref{eq:demandimports} and domestically used and produced products eq.~\eqref{eq:demanddomesticoutput}. In the next layer the final goods producer minimizes costs for a given level of imports eq.~\eqref{eq:imports} and domestically used and produced output eq.~\eqref{eq:domesticusedoutput}. This leads to demand functions for sectoral domestic output eq.~\eqref{eq:demandsectoraloutput} and sectoral imports eq.~\eqref{eq:demandsectoralimports}.
+Prices of sectoral imports $P^{M}_{k,t}$ are exogenous (eq.~\eqref{eq:importprices}) as well as the export demand (eq.~\eqref{eq:exportsdemand}) for domestic produced sectoral products. The optimization problem of the final goods producer can be split up into different parts. According to eq.~\eqref{eq:cesfinal} they first choose the amount of imports (eq.~\eqref{eq:demandimports}) and domestically used and produced products (eq.~\eqref{eq:demanddomesticoutput}). In the next layer the final goods producer minimizes costs for a given level of imports (eq.~\eqref{eq:imports}) and domestically used and produced output (eq.~\eqref{eq:domesticusedoutput}). This leads to demand functions for sectoral domestic output (eq.~\eqref{eq:demandsectoraloutput}) and sectoral imports (eq.~\eqref{eq:demandsectoralimports}).
 
 Further, imports and domestic production are used to consume, invest and for intermediate goods $Q^{I}_{k,r,t}$ in the domestic production process. Therefore, firms are using labour and capital, but also intermediate input to produce goods and services. The production function of firms operating in different regions is now modified to feature another layer of the CES production function. The firm is now maximizing profits combining value-added $Y_{k,r,t}$ and intermediate products $Q^{I}_{k,r,t}$ to produce output $Q_{k,r,t}$. They sell their products under prefect competition for the price $P^{D}_{k,r,t}$. The optimization problem is 
 \begin{align}
 \underset{Q^{I}_{k,r,t}, \, Y_{k,r,t}}{\mathrm{min}} P^{D}_{k,r,t} \, Q_{k,r,t} - P_{t} \, Q^{I}_{k,r,t} - P_{k,r,t} \, Y_{k,r,t} \nonumber \\
-Q_{k,r,t} = \left({\omega^{Q^{I}}_{k,r}}^{\frac{1}{\eta^{I}_{k,r}}}  \, {Q^{I}_{k,r,t}}^{rho^{I}_{k,r}} + (1 - \omega^{Q^{I}}_{k,r})^{\frac{1}{\eta^{I}_{k,r}}} \, {Y_{k,r,t}}^{\rho^{I}_{k,r}} \right)^{\frac{1}{\rho^I_{k,r}}}, \mbox{where } \rho^I_{k,r} = \frac{\eta^{I}_{k,r} - 1}{\eta^{I}_{k,r}}
+Q_{k,r,t} = \left({\omega^{Q^{I}}_{k,r}}^{\frac{1}{\eta^{I}_{k,r}}} \, {Q^{I}_{k,r,t}}^{rho^{I}_{k,r}} + (1 - \omega^{Q^{I}}_{k,r})^{\frac{1}{\eta^{I}_{k,r}}} \, {Y_{k,r,t}}^{\rho^{I}_{k,r}} \right)^{\frac{1}{\rho^I_{k,r}}}, \mbox{where } \rho^I_{k,r} = \frac{\eta^{I}_{k,r} - 1}{\eta^{I}_{k,r}}
 \end{align}
 
-Therefore, we obtain equations determining the demand for value added eq.~\eqref{eq:demandva} and intermediate products eq.~\eqref{eq:demandinput} by one sector in a region depending on the relative prices of labour, capital and intermediate products.
+Therefore, we obtain equations determining the demand for value added (eq.~\eqref{eq:demandva}) and intermediate products (eq.~\eqref{eq:demandinput}) by one sector in a region depending on the relative prices of labour, capital and intermediate products.
 \begin{align}
 \frac{{{P_{k,r}}_{t}}}{{P^{D}_{k,r,t}}}=\left(1 - {\omega^{Q^{I}}_{k,r}}\right)^{\frac{1}{{{\eta^{I}_{k}}}}} \, \left(\frac{Y_{k,r,t}}{Q_{k,r,t}}\right)^{\frac{\left(-1\right)}{{{\eta^{I}_{k}}}}} \label{eq:demandva}\\
 \frac{{P_{t}}}{{P^{D}_{k,r,t}}}={\omega^{Q^{I}}_{k,r}}^{\frac{1}{{{\eta^{I}_{k}}}}} \, \left(\frac{Q^{I}_{k,r,t}}{Q_{k,r,t}}\right)^{\frac{\left(-1\right)}{{{\eta^{I}_{k}}}}} \label{eq:demandinput}
 \end{align}
 
-Net exports eq.~\eqref{eq:netexports} are now the difference between aggregate export expenditures $P^{D}_{t} X_{t}$ and aggregate import expenditures $P^{M}_{t} M_{t}$. The resource constraint now equates total domestic production with domestic consumption, investment, government consumption, net exports and intermediate products eq.~\eqref{eq:resourceconstraint}. Gross value added is total domestic output less total intermediate consumption.
+Net exports (eq.~\eqref{eq:netexports}) are now the difference between aggregate export expenditures $P^{D}_{t} X_{t}$ and aggregate import expenditures $P^{M}_{t} M_{t}$. The resource constraint now equates total domestic production with domestic consumption, investment, government consumption, net exports and intermediate products (eq.~\eqref{eq:resourceconstraint}). Gross value added is total domestic output less total intermediate consumption.
 
 \subsection{Model extension: energy consumption} 
 Table \ref{tab:listofsymbolsextension2} provides a list of all additional variables and parameters included for the extension. Appendix \ref{app:modelequationsextension2} reports all additional and modified equations associated with the respective extension.
 
-To model the impact of mitigation policy on the economy we define an energy sector $k^{E}$. We add two new layers to the production function in the energy sector. The energy sector uses intermediate products $Q^{I}_{k^{E},r,t}$ and a composite energy product $E_{k,r,t}$ to produce a composite intermediate product $Q^{I,E}_{k,r,t}$ eq.~\eqref{eq:energyintermediatecomposite}. The composite energy input is a combination of different energy carriers $c \in \{1, \dots, EC\}$ using a CES production function eq.~\eqref{eq:energycomposite}. The price of an energy carrier is the same across regions and exogenous to other variables eq.~\eqref{eq:priceenergycarrier}. Aggregate consumption of energy carriers eq.~\eqref{eq:energycarrieraggregate} is necessary to compute emissions associated with different energy carriers. Total  intermediate input $Q^{I}_{t}$ expenditures is the sum over all intermediate inputs demanded by different sectors including expenditures on energy carriers eq.~\eqref{eq:aggregationintermediateinputswithenergy}.
+To model the impact of mitigation policy on the economy we define an energy sector $k^{E}$. We add two new layers to the production function in the energy sector. The energy sector uses intermediate products $Q^{I}_{k^{E},r,t}$ and a composite energy product $E_{k,r,t}$ to produce a composite intermediate product $Q^{I,E}_{k,r,t}$ (eq.~\eqref{eq:energyintermediatecomposite}). The composite energy input is a combination of different energy carriers $c \in \{1, \dots, EC\}$ using a CES production function (eq.~\eqref{eq:energycomposite}). The price of an energy carrier is the same across regions and exogenous to other variables (eq.~\eqref{eq:priceenergycarrier}). Aggregate consumption of energy carriers (eq.~\eqref{eq:energycarrieraggregate}) is necessary to compute emissions associated with different energy carriers. Total  intermediate input $Q^{I}_{t}$ expenditures is the sum over all intermediate inputs demanded by different sectors including expenditures on energy carriers (eq.~\eqref{eq:aggregationintermediateinputswithenergy}).
 
-%\section{Scenario Analysis}
-%
-%It is necessary to define different Scenarios in order to quantify the economic costs of climate change on the Vietnamese economy. We follow here the approach by \cite{}
+\section{Scenario Analysis}
+
+For simulations it is necessary to specify a direct mapping between sectors in the model and the available data. The analysis in the following paragraphs will differentiate between three economic sectors: 
+\begin{enumerate}
+	\item A - agriculture, forestry and fishing
+	\item B-F: industrial sectors (mining and quarrying, manufacturing, electricity, gas, stream and air conditioning supply, water supply, sewerage, waste management and remediation activities) and construction
+	\item G-S: services
+\end{enumerate}
+
+It is also necessary to define the regions. Therefore, we will explicitly model three regions: 
+\begin{enumerate}
+	\item Mekong river delta
+	\item Red river delta
+	\item North Central and Central Coast, Southeast, Central Highlands, Northern Midlands and Mountains
+\end{enumerate}
+
+We calibrate the model to reflect the economic structure of Vietnam for the year 2016. The year 2016 is our base year, because the latest supply and use table is available for this year. We calibrate the production function parameters $\alpha^{K}_{k,r,n}, \, \alpha^{N}_{k,r,n}$ such that we match for a given elasticity of substitution $\eta^{NK}_{k,r}$ the observed share of the wage bill on gross value added $\frac{W_{k,r,0} \, N_{k,r,0}}{P_{k,r,0} \, Y_{k,r,0}}$ and ensure a correct accounting of factor income by economic activity. Further, we calibrate the sectoral composition production function parameters $\omega^{Q}_{k,r},\, \omega^{Q}_{k}$ for a given elasticity of substitutions $\eta^{Q}, \, \eta^{Q}_{k}$ to meet the initial gross value added shares $\phi^{Y}_{k,r,0} = \frac{P_{k,r,0} \, Y_{k,r,0}}{P_{0} \, Y_{0}}$ for the year 2016.
+
+A scenario defines paths for variables exogenous to the economic system. In the standard version of the model we need to define how exogenous total factor productivity $\eta_{A,k,r,t}$, labour productivity $\eta^{A^N}_{k,r,t}$, climate variables $\{\eta^{T}_{r,t},\, \eta^{PREC}_{r,t},\, \eta^{WS}_{r,t},\, \eta^{CYC}_{r,t},\, \eta^{DRO}_{r,t},\, \eta^{SL}_{t}\}$, population $\eta^{Pop}_{t}$, price level $\eta^{P}_{t}$, taxes  $\eta^{\tau^{K,N}}_{k,r,t},\, \eta^{\tau^{K,N}}_{t},\, \eta^{\tau^{C}}_{t}$, the government deficit $\eta^{BG}_{t}$, adaptation measures $\eta^{G^{A}}_{k,r,t}$ and the trade balance $\eta^{NX}_{t}$ evolve over time. 
+
+\subsection{Baseline}
+
+Vietnam is a developing economy with a GDP per inhabitant in constant 2010 US Dollar of 1,752 USD equivalent to roughly 4 percent of Japan's GDP per inhabitant in 2016. Japan was the first Asian country becoming a developed economy in the 20th century. We will use the development of the Japanese economy in the 20th century as a benchmark for a counter-factual development of Vietnam without climate change in the 21st century. Japan is the best benchmark among other developed economies, which are either the United States of America or countries from Europe. Japan's GDP grew annually from 1960 to 2018 by 3 percent according to the World Bank. In the Baseline scenario Vietnam's geometric average annual growth rate will be 4 percent for the next century.
+
+It is common for developing economies to face also a change in the composition of their economic structure. The agricultural sector in Vietnam is still an important employer (40\% of all employees worked in the agricultural sector) and is responsible for roughly 15\% of total gross value added in Vietnam. In developed countries (e.g. Japan, Germany, United Kingdom etc.) the share of agriculture on total gross value added is approximately 1\% and the share of employees is roughly the same. Services contribute 64\% and mining, manufacturing, water supply and waste management, energy supply, and construction contribute 35\% to GDP. We therefore determine sectoral total productivity shocks $\eta_{A,k,r,t}$ to match an assumed new long-run composition of gross value added by economic activity $\phi^{Y}_{k,r,T} = \frac{P_{k,r,T} \, Y_{k,r,T}}{P_{T} \, Y_{T}}$. We also define the long-run development on the labour market. The long-run development of labour productivity $\eta_{A^{N},k,r,t}$ ensures that employment shares $\phi^{Y}_{k,r,T} = \frac{Pop_{T} \, N_{k,r,T}}{Pop_{T} \, N_{T}}$ will converge to observed shares for other industrial countries. The evolution of sector specific labour productivity and total factor productivity is determined such that the initial simulated sectoral growth rates of labour share $g^{N}_{k,r,1} = \frac{N_{k,r,1}/N_{1}}{N_{k,r,0}/N_{0}}$ and real gross value added $g^{Y}_{k,r,1} = \frac{Y_{k,r,1}}{Y_{k,r,0}}$ match the observed growth rates of different sectors in Vietnam over the last decade. Growth rates follow an auto-regressive process of order one, where the auto-correlation parameter is determined such that growth rates are approximately zero after 120 periods. We ensure that the exogenous evolution of sectoral labour and total factor productivity is completed after 120 periods.
+
+The evolution of the population is given by the projection of the GSO. The GSO published four different projections with different fertility rates of the Vietnamese population. We use the medium variant population projection. The population is expected to grow from roughly 95 million people in 2016 to 108 million people by 2050. After 2050 the population stays constant. In our simulation we do not consider potential feedback between the economic development of Vietnam and the development of the population. Potential interdependence between the population and climate change through higher mortality caused by weather extremes (e.g. droughts, heat waves, cyclones) are not considered. It is hard to find studies on the effects of temperature increases on the services sector regarding TFP. Therefore, we will assume that the productivity of the services sector is unaffected by annual average increase in temperature.
+
+\subsection{Temperature}
+
+Average annual temperature change will not exceed 6 degree Celsius with a probability of 90\% according to down scaling techniques of the RCP 8.5 scenario from the IPCC conducted by \cite{thuc2016climate}. We consider the upper bound to estimate the maximum expected damage associated with a change in temperature. The average annual temperature will follow a linear trend. According to the results published in \cite{thuc2016climate} the average annual temperature in the Mekong delta river, Red River Delta, and the remaining regions will increase by 4.4, 5.4, and 5 degree Celsius until the end of the 21st century, respectively. 
+
+To evaluate the impact of climate change on the economy in Vietnam we need to specify the parameters $a_{T,\{1,2,3\},k,r}, \, a^{N}_{T,\{1,2,3\},k,r}, \, a^{K}_{T,\{1,2,3\},k,r}$ of the damage functions. We use the literature to define these parameters. We  assume a linear relationship between total factor productivity of the agricultural sector and a change in temperature. The coefficient $a_{T,1,1,r}$ is set to $0.045$ based on \cite{challinor2014meta} and the other parameters are set to zero for agriculture. \cite{challinor2014meta} report a decline of crop yield of 4.5\% as a response to a one degree Celsius increase in average annual temperature. This is a simplification of a complex causal mechanism between temperature and crop yield. Further, different crops will respond differently to a one degree Celsius increase of temperature. It is possible to explicitly model different crops and to define the damage functions differently for different crops. 
+
+For the industry sector we use the results of \cite{zhang2018temperature} for total factor productivity. The study estimates a reduction in TFP by 9\% in the manufacturing sector in China as a response to a 2 degree Celsius increase of average annual temperature. Therefore, we calibrate the parameter to $a_{T,1,2,r} = 0.045$. The other parameters are set to zero regarding temperature.
+
+\subsection{Sea Level}
+
+The impact of sea level rise on Vietnam is well studied in the literature \citep{}. The impact will be mainly on the agricultural sector. 
+
+\subsection{Extremes}
 
 
+\subsection{Results}
 
 \cleardoublepage
 \section{How to use the model?}\label{sec:modelusage}
 \subsection{Usage}
 \begin{enumerate}
-\item In order to use the model you need to install \href{https://www.dynare.org/download/}{Dynare (at least version 4.6.1)}  and \href{https://www.mathworks.com/products/matlab.html}{Matlab (at least 2018b)} or \href{https://www.gnu.org/software/octave/}{Octave} on your computing machine. 
+\item In order to use the model you need to install \href{https://www.dynare.org/download/}{Dynare (at least version 4.6.1)} and \href{https://www.mathworks.com/products/matlab.html}{Matlab (at least 2018b)} or \href{https://www.gnu.org/software/octave/}{Octave} on your computing machine. 
 For Octave you need to have the version 5.2.0 as reported by the Dynare team. 
+Furthermore, MS Excel is used to specify the parameters and to save the results. Result tables are saved additionally in Latex-format.
+
 \item You need to download the repository from Github. 
 \item Open Octave or Matlab GUI and browse to the location of the folder in your computer. You have the right folder if the command {\tt pwd()} returns {\tt YourPath/DGE-CRED/DGE_CRED_Model}.
-\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file \\ {\tt ModelSimulationandCalibrationKSectorsandRRegions.xlsx}. We need to adopt the number of sectors and regions in the file {\tt DGE\_CRED\_Model.mod}.
+\item The script {\tt RunSimulations.m} has to be executed in order to run simulations for different scenarios. Make sure that the scenarios and model parameters are defined in the file \\ {\tt ModelSimulationandCalibrationKSectorsandRRegions.xlsx}. 
+You need to adopt the number of sectors and regions in the file {\tt DGE\_CRED\_Model.mod}. All program files are descibed in the next section.
 \item The simulation results are stored in the file {\tt ResultsScenariosKSectorsandRRegions.xlsx}.
 \end{enumerate}
 
-\section{Folder structure}
+\subsection{Folder structure}
 \begin{enumerate}
-\item The main file containing all necessary mod files is {\tt DGE_CRED_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
+\item The main file containing all necessary mod-files is {\tt DGE_CRED_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
 \begin{enumerate}
-\item {\tt DGE_CRED_Model_Declarations.mod} declares all endogenous and exogenous variables if the model and structural parameters.
+\item {\tt DGE_CRED_Model_Declarations.mod} declares all endogenous and exogenous variables of the model and structural parameters.
 \item {\tt DGE_CRED_Model_Parameters.mod} assigns values to the structural parameters of the model.
 \item {\tt DGE_CRED_Model_Equations.mod} contains the equations of the model.
 \item {\tt DGE_CRED_Model_LatexOutput.mod} produces latex output for documentation of the declared variables and model equations.
@@ -276,7 +329,7 @@ For Octave you need to have the version 5.2.0 as reported by the Dynare team.
 \item {\tt rng.mat} random number generator function necessary for Octave users.
 \item {\tt LoadExogenous.mat} reads exogenous variables for different scenarios.
 \end{enumerate}
-\item To define scenarios and structural parameters one needs to create an Excel workbook located in the subfolder {\tt ExcelFiles}:
+\item To define scenarios and structural parameters you need to create an Excel file located in the subfolder {\tt ExcelFiles}:
 \begin{enumerate}
 \item {\tt ModelSimulationandCalibrationforKSectorsandRregions.xlsx} has multiple sheets:
 \begin{enumerate}
@@ -284,12 +337,13 @@ For Octave you need to have the version 5.2.0 as reported by the Dynare team.
 \item terminal {\tt Terminal}
 \item parameters to define rigidity parameters {\tt Dynamics}
 \item elasticity parameters and tax rates {\tt Structural Parameters}
-\item coefficients for regional and sector specific damage functions {\tt Climate Damage Functions}
-\item {\tt Baseline} scenario and other optional scenario sheets defining paths for exogenous varibales
+\item coefficients for regional and sector specific damage functions {\tt Climate Damage Functions (Labour, Capital, TFP)}
+\item {\tt Baseline} scenario and other optional scenario sheets {\tt Adaptation and Extremes} defining paths for exogenous variables 
+\item {\tt Data} to load external data sources
 \end{enumerate}
-\item {\tt ResultsScenariosKSectorsandRregions.xlsx} has as many sheets as Scenarios defined in the previous Excel file.
+\item {\tt ResultsScenariosKSectorsandRregions.xlsx} has as many sheets as scenarios defined in the previous Excel file.
 \end{enumerate}
-\item The latex files produced by {\tt DGE_CRED_Model_LatexOutput.mod} are stored in {\tt LatexFiles}.
+\item The latex files produced by {\tt DGE_CRED_Model_LatexOutput.mod} are stored in the sub-folder {\tt LatexFiles}:
 \begin{enumerate}
 \item the system of dynamic equations as implemented in Matlab {\tt DGE_CRED_Model_Dynamic}, \\
  {\tt DGE_CRED_Model_Dynamic_content}
@@ -303,7 +357,7 @@ For Octave you need to have the version 5.2.0 as reported by the Dynare team.
 \bibliography{references}
 \cleardoublepage
 \appendix
-\section{Model equations for baseline version}\label{app:modelequationsbaseline}
+\section{Model equations for CRED baseline version}\label{app:modelequationsbaseline}
 \footnotesize
 \include{texfiles/Model_Equations}
 \section{Additional and modified model equations for input-output extension}\label{app:modelequationsextension1}

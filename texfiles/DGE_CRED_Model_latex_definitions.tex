@@ -1,5 +1,5 @@
 \begin{center}
-\begin{longtable}{lrr}
+\begin{longtable}{lrl}
 \caption{List of symbols for baseline version}\label{tab:listofsymbols}\\%
 \hline
 \multicolumn{1}{c}{\textbf{Variable}} &
@@ -31,9 +31,9 @@
 \texttt{Y} & $Y$ & GDP\\
 \texttt{N} & $N$ & labour\\
 \texttt{SL} & ${SL}$ & sea level\\
-\texttt{PREC\_k} & ${PREC_{r}}$ & regional PRECipitation\\
-\texttt{T\_k} & ${T_{r}}$ & regional temperature\\
-\texttt{WS\_k} & ${W_{r}^{S}}$ & regional wind speed\\
+\texttt{PREC\_r} & ${PREC_{r}}$ & regional precipitation\\
+\texttt{T\_r} & ${T_{r}}$ & regional temperature\\
+\texttt{WS\_r} & ${W_{r}^{S}}$ & regional wind speed\\
 \texttt{Y\_k} & ${Y_k}$ & sector GDP\\
 \texttt{K\_k} & ${K_k}$ & sector capital\\
 \texttt{N\_k} & ${N_k}$ & sector employment\\
@@ -70,9 +70,9 @@
 \texttt{exo\_N\_k\_r} & ${\eta_{A^{N},k,r}}$ & exogenous labour specific TFP\\
 \texttt{exo\_K\_k\_r} & ${\eta_{A^{K},k,r}}$ & exogenous capital specific TFP\\
 \texttt{exo\_GA\_k\_r} & ${\eta_{G^{A},k,r}}$ & exogenous sector adaptation expenditure\\
-\texttt{exo\_T\_k} & ${\eta_{T,n}}$ & exogenous regional temperature\\
-\texttt{exo\_PREC\_k} & ${\eta_{PREC,n}}$ & exogenous regional precipitation\\
-\texttt{exo\_WS\_k} & ${\eta_{W^{S},n}}$ & exogenous regional wind speed\\
+\texttt{exo\_T\_r} & ${\eta_{T,r}}$ & exogenous regional temperature\\
+\texttt{exo\_PREC\_r} & ${\eta_{PREC,r}}$ & exogenous regional precipitation\\
+\texttt{exo\_WS\_r} & ${\eta_{WS,r}}$ & exogenous regional wind speed\\
 \hline%
 \multicolumn{3}{c}{Parameters}\\%
 \hline%
@@ -84,7 +84,7 @@
 \texttt{rhoA\_N\_k\_r\_p} & ${\rho^{A,N}_{k,r}}$ & persistence labour specific productivity shock\\
 \texttt{rhoA\_K\_k\_r\_p} & ${\rho^{A,K}_{k,r}}$ & persistence capital specific productivity shock\\
 \texttt{phiY\_k\_r\_p} & $\frac{P_{k,r,0} \, Y_{k,r,0}}{P_{0} \, Y_{0}}$ & long-run share of regional and sectoral output\\
-\texttt{phiN\_k\_r\_p} & ${N_{k,r,0}}$ & long run share of regional and sectoral employment\\
+\texttt{phiN\_k\_r\_p} & ${N_{k,r,0}}$ & long-run share of regional and sectoral employment\\
 \texttt{phiY0\_k\_r\_p} & $\frac{P_{k,r,0} \, Y_{k,r,0}}{P_{0} \, Y_{0}}$ & terminal share of regional and sectoral output\\
 \texttt{phiN0\_k\_r\_p} & ${N_{k,r,0}}$ & initial share of regional and sectoral employment\\
 \texttt{phiYT\_k\_r\_p} & $\frac{P_{k,r,0} \, Y_{k,r,0}}{P_{0} \, Y_{0}}$ & terminal share of regional and sectoral output\\
@@ -107,9 +107,9 @@
 \texttt{a\_T\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function temperature\\
 \texttt{a\_T\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function temperature\\
 \texttt{a\_T\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function temperature\\
-\texttt{a\_P\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function PRECipitation\\
-\texttt{a\_P\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function PRECipitation\\
-\texttt{a\_P\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function PRECipitation\\
+\texttt{a\_P\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function precipitation\\
+\texttt{a\_P\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function precipitation\\
+\texttt{a\_P\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function precipitation\\
 \texttt{a\_W\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function wind speed\\
 \texttt{a\_W\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function wind speed\\
 \texttt{a\_W\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function wind speed\\
@@ -135,16 +135,16 @@
 \texttt{rhoSL\_p} & ${\rho^{SL}}$ & persistency in sea level\\
 \texttt{rhoT\_p} & ${\rho^{T}}$ & persistency in temperature\\
 \texttt{rhoWS\_p} & ${\rho^{T}}$ & persistency in wind speed\\
-\texttt{rhoPREC\_p} & ${\rho^{T}}$ & persistency in PRECipitation\\
+\texttt{rhoPREC\_p} & ${\rho^{T}}$ & persistency in precipitation\\
 \texttt{inbsectors\_p} & ${K}$ & number of sectors\\
 \texttt{inbregions\_p} & ${R}$ & number of regions\\
 \texttt{lCalibration\_p} & ${l^{Calib}}$ & logical indiactor whether model is calibrated or not\\
 \texttt{T0\_r\_p} & ${T_{0,n}}$ & initial regional temperature\\
-\texttt{PREC0\_r\_p} & ${PREC_{0,n}}$ & initial regional PRECipitation\\
-\texttt{WS0\_r\_p} & ${W^{S}_{0,n}}$ & initiial regional wind speed\\
+\texttt{PREC0\_r\_p} & ${PREC_{0,n}}$ & initial regional precipitation\\
+\texttt{WS0\_r\_p} & ${WS_{0,n}}$ & initiial regional wind speed\\
 \texttt{TT\_r\_p} & ${T_{T,n}}$ & terminal regional temperature\\
-\texttt{PRECT\_r\_p} & ${PREC_{T,n}}$ & terminal regional PRECipitation\\
-\texttt{WST\_r\_p} & ${W^{S}_{T,n}}$ & terminal regional wind speed\\
+\texttt{PRECT\_r\_p} & ${PREC_{T,n}}$ & terminal regional precipitation\\
+\texttt{WST\_r\_p} & ${WS_{T,n}}$ & terminal regional wind speed\\
 \texttt{SL0\_p} & ${SL_0}$ & initial sea level\\
 \texttt{PoP0\_p} & ${POP_0}$ & initial population\\
 \texttt{Y0\_p} & ${Y_0}$ & initial output\\

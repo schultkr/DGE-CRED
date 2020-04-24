@@ -23,7 +23,7 @@ model(bytecode);
         A_N_@{sec}_@{reg} = rhoA_N_@{sec}_@{reg}_p * A_N_@{sec}_@{reg}(-1) + (1 - rhoA_N_@{sec}_@{reg}_p) * (A_N_@{sec}_@{reg}_p * exp(exo_N_@{sec}_@{reg}));
 
         [name = 'sector specific damage function']
-        D_@{sec}_@{reg} = min(0.75,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
+        D_@{sec}_@{reg} = min(0.7,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
                           a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p) +
                           a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p) + 
                           a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p) +
@@ -165,7 +165,7 @@ Y = C + I + G + NX
 ;
 
 [name = 'Net Exports']
-NX = (B - (1 + rf) * Sf * B(-1));
+NX = (B - (1 + rf) * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * Sf * B(-1));
 
 [name = 'LOM Net Exports']
 NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
@@ -175,10 +175,10 @@ rf = (1/beta_p-1);
 
 
 [name = 'Foreign Assets']
-(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * beta_p * Sf(+1) * exp(-phiB_p*((Sf(+1)*rf(+1)*B/Y(+1)+NX/Y))) * (1 + rf(+1)) = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
+(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * beta_p * Sf(+1) * exp(-phiB_p*((Sf(+1)*rf(+1)*B/Y(+1)+NX(+1)/Y(+1)))) * (1 + rf(+1)) = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
 
 [name = 'Government Budget Constraint']
-G + (1 + rf) * Sf * BG (-1)
+G + (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1)
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         + G_A_@{sec}_@{reg} 
