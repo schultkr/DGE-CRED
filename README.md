@@ -4,7 +4,7 @@
 
 ## Installation
 
-To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE_CRED/blob/master/Model%20Description.pdf).
+To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/Model%20Description.pdf).
 
 ## Scenario Simulation
 
