@@ -5770,9 +5770,9 @@ lSelectWindSpeedShocks = ismember(cellstr(M_.exo_names), casWindSpeedShocks);
 lSelectProdShocks = ismember(cellstr(M_.exo_names), casProdShocks);
 iVarTemp = 0;
 perfect_foresight_solver;
-iDisplay = 100;
+iDisplay = 84;
 iFrequency = 1;
-iStartYear = 2018;
+iStartYear = 2016;
 if isoctave()
 caResults = [cellstr(M_.endo_names)'; mat2cell(oo_.endo_simul(:,1:iFrequency:iDisplay)', ones(iDisplay,1), ones(M_.endo_nbr,1))];
 caYear = cellstr(['Year'; num2str((iStartYear + (1:iFrequency:iDisplay))')]);

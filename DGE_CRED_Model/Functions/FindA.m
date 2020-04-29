@@ -20,9 +20,7 @@ function [fval_vec,strys, strexo] = FindA(x,strys,strexo,strpar)
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
             icovec = icoreg + (icosec-1)*strpar.inbregions_p;
-            strys.(['A_' ssec '_' sreg]) = real(x_1(icovec));
-%             strys.(['A_N_' ssec '_' sreg]) = real(x_1(icovec));
-%             strexo.(['exo_N_' ssec '_' sreg]) = log(strys.(['A_N_' ssec '_' sreg])/strpar.(['A_N_' ssec '_' sreg '_p']));            
+            strys.(['A_' ssec '_' sreg]) = real(x_1(icovec));           
             strexo.(['exo_' ssec '_' sreg]) = log(strys.(['A_' ssec '_' sreg])/strpar.(['A_' ssec '_' sreg '_p']));
             strys.(['K_' ssec '_' sreg]) = real(x_2(icovec));
         end

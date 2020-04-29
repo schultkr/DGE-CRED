@@ -120,9 +120,9 @@ perfect_foresight_solver;
 
 
 
-iDisplay = 100;
+iDisplay = 85;
 iFrequency = 1;
-iStartYear = 2018;
+iStartYear = 2016;
 if isoctave()
     caResults = [cellstr(M_.endo_names)'; mat2cell(oo_.endo_simul(:,1:iFrequency:iDisplay)', ones(iDisplay,1), ones(M_.endo_nbr,1))];
     caYear = cellstr(['Year'; num2str((iStartYear + (1:iFrequency:iDisplay))')]);

@@ -35,7 +35,6 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     strys.lambrf = 1;
     temp = 0;
     if strpar.lCalibration_p == 2
-        strexo.exo_PoP = log(strpar.PoPT_p / strpar.PoP0_p);
         strys.N = strpar.NT_p;
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);

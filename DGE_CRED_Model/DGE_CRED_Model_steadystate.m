@@ -83,25 +83,23 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         iStep = options_.iStepSteadyState;
         YTtemp_p = strpar.YT_p;
         NTtemp_p = strpar.NT_p;
-        PoPTtemp_p = strpar.PoPT_p;
         for icostep = 1:iStep
             disp(['Step ' num2str(icostep) ' of ' num2str(iStep) ' to find terminal condition'])
             for icosec = 1:strpar.inbsectors_p
                 ssec = num2str(icosec);
                 for icoreg = 1:strpar.inbregions_p
                     sreg = num2str(icoreg);
-                    strpar.PoPT_p = icostep./iStep .* PoPTtemp_p + (iStep-icostep)./iStep .* strpar.PoP0_p;
                     strpar.YT_p = icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p;
                     strpar.NT_p = icostep./iStep .* NTtemp_p + (iStep-icostep)./iStep .* strpar.N0_p;
                     strpar.(['phiY_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiY0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiYT_' ssec '_' sreg '_p']);
                     strpar.(['phiN_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiN0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiNT_' ssec '_' sreg '_p']);
-                    iIncrease = (icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p)./((icostep-1)./iStep .* YTtemp_p + (iStep-(icostep-1))./iStep .* strpar.Y0_p);
+%                     iIncrease = (icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p)./((icostep-1)./iStep .* YTtemp_p + (iStep-(icostep-1))./iStep .* strpar.Y0_p);
                 end
             end
             FindAtemp = @(x)FindA(x,strys,strexo,strpar);
-            [Fval_vec, strys,strexo] = FindA(xstart_vec.*iIncrease, strys, strexo, strpar);
+            [Fval_vec, strys,strexo] = FindA(xstart_vec, strys, strexo, strpar);
             if max(abs(Fval_vec(:)))>1e-8
-                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindAtemp, xstart_vec.*iIncrease, options);%, strys, strexo, strpar);
+                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindAtemp, xstart_vec, options);%, strys, strexo, strpar);
                 [~, strys,strexo] = FindA(real(xopt), strys, strexo, strpar);
                 xstart_vec = xopt;
             end 

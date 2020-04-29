@@ -5,11 +5,11 @@
 addpath('C:\dynare\4.6.1\matlab')
 % specify scenario names
 casScenarioNames = {'Baseline', 'Temperature', 'SeaLevel', 'Adaptation', 'Extremes'};
-% casScenarioNames = {'Temperature', 'SeaLevel', 'Adaptation', 'Extremes'};
+% casScenarioNames = {'Baseline','SeaLevel', 'Extremes'};
 % execute dynare to run the model
 dynare DGE_CRED_Model noclearall
 close all;
-sVarMain = 'P_';
+sVarMain = 'N_';
 for icosec = 1:inbsectors_p
     for icoreg = 1:inbregions_p
         icovec = icoreg + inbregions_p * (icosec-1);
