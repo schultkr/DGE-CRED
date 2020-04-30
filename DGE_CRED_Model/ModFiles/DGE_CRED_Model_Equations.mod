@@ -23,13 +23,14 @@ model(bytecode);
         A_N_@{sec}_@{reg} = rhoA_N_@{sec}_@{reg}_p * A_N_@{sec}_@{reg}(-1) + (1 - rhoA_N_@{sec}_@{reg}_p) * (A_N_@{sec}_@{reg}_p * exp(exo_N_@{sec}_@{reg}));
 
         [name = 'sector specific damage function']
-        D_@{sec}_@{reg} = min(0.7,a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p) + 
-                          a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p) +
-                          a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p) + 
-                          a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p) +
-                          a_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + a_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(a_DR_3_@{sec}_@{reg}_p) +
-                          a_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + a_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(a_CY_3_@{sec}_@{reg}_p)
-                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+        D_@{sec}_@{reg} = min(0.7,
+                          (a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p)) * exp(-phiGAT_@{sec}_@{reg}_p*K_A_T_@{sec}_@{reg}(-1)) + 
+                          (a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p)) * (SL > (K_A_SL_@{sec}_@{reg}(-1) / phiGASL_@{sec}_@{reg}_p)) + 
+                          (a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p)) * exp(-phiGAWS_@{sec}_@{reg}_p*K_A_WS_@{sec}_@{reg}(-1)) + 
+                          (a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p)) * exp(-phiGAPREC_@{sec}_@{reg}_p*K_A_PREC_@{sec}_@{reg}(-1)) +
+                          (a_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + a_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(a_DR_3_@{sec}_@{reg}_p)) * exp(-phiGADRO_@{sec}_@{reg}_p*K_A_DRO_@{sec}_@{reg}(-1)) +
+                          (a_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + a_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(a_CY_3_@{sec}_@{reg}_p)) * exp(-phiGACYC_@{sec}_@{reg}_p*K_A_CYC_@{sec}_@{reg}(-1))
+                        );
 
         [name = 'sector specific damage function on labour productivity']
         D_N_@{sec}_@{reg} = min(1,aN_T_1_@{sec}_@{reg}_p * T_@{reg} + aN_T_2_@{sec}_@{reg}_p * T_@{reg}^(aN_T_3_@{sec}_@{reg}_p) + 
@@ -38,7 +39,7 @@ model(bytecode);
                           aN_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aN_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aN_P_3_@{sec}_@{reg}_p) + 
                           aN_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aN_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aN_DR_3_@{sec}_@{reg}_p) +
                           aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_CY_3_@{sec}_@{reg}_p)
-                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+                        );
 
         [name = 'sector specific damage function on labour productivity']
         D_K_@{sec}_@{reg} = min(1,aK_T_1_@{sec}_@{reg}_p * T_@{reg} + aK_T_2_@{sec}_@{reg}_p * T_@{reg}^(aK_T_3_@{sec}_@{reg}_p) + 
@@ -47,11 +48,15 @@ model(bytecode);
                           aK_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aK_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aK_P_3_@{sec}_@{reg}_p) +
                           aK_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aK_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aK_DR_3_@{sec}_@{reg}_p) +
                           aK_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aK_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aK_CY_3_@{sec}_@{reg}_p)
-                        ) * exp(-phiGA_@{sec}_@{reg}_p*G_A_@{sec}_@{reg});
+                        );
 
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+            [name = 'sector specific adaptation expenditures by the government against sea level rise']
+            K_A_@{z}_@{sec}_@{reg} = exo_GA_@{z}_@{sec}_@{reg};
 
-        [name = 'sector specific adaptation expenditures by the government']
-        G_A_@{sec}_@{reg} = exo_GA_@{sec}_@{reg};
+            [name = 'sector specific adaptation capital against sea level rise']
+            K_A_@{z}_@{sec}_@{reg} = (1 - deltaKA@{z}_@{sec}_@{reg}_p) * K_A_@{z}_@{sec}_@{reg}(-1) + G_A_@{z}_@{sec}_@{reg};
+        @# endfor
 
         [name = 'demand for regional sector output',mcp = 'Y_@{sec}_@{reg} > 0']
         P_@{sec}_@{reg}  = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p) * ((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaQ_@{sec}_p) * P_@{sec};
@@ -159,7 +164,7 @@ P * Y =
 Y = C + I + G + NX
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
-        + G_A_@{sec}_@{reg} 
+        + G_A_SL_@{sec}_@{reg}  + G_A_PREC_@{sec}_@{reg} + G_A_T_@{sec}_@{reg} + G_A_WS_@{sec}_@{reg} + G_A_CYC_@{sec}_@{reg} + G_A_DRO_@{sec}_@{reg} 
     @# endfor
 @# endfor
 ;
@@ -181,7 +186,7 @@ rf = (1/beta_p-1);
 G + (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1)
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
-        + G_A_@{sec}_@{reg} 
+        + G_A_SL_@{sec}_@{reg}  + G_A_PREC_@{sec}_@{reg} + G_A_T_@{sec}_@{reg} + G_A_WS_@{sec}_@{reg} + G_A_CYC_@{sec}_@{reg} + G_A_DRO_@{sec}_@{reg} 
     @# endfor
 @# endfor
 = BG + tauC_p * C

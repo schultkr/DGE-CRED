@@ -39,7 +39,10 @@ SL ${SL}$ (long_name = 'sea level')
         N_@{sec}_@{reg} ${N_{k,n}}$ (long_name = 'regional sector employment')
         W_@{sec}_@{reg} ${W_{k,n}}$ (long_name = 'regional sector wages')
         A_@{sec}_@{reg} ${A_{k,n}}$ (long_name = 'regional sector TFP')
-        G_A_@{sec}_@{reg} ${G^{A}_{k,n}}$ (long_name = 'regional sector adaptation government expenditure')
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+            G_A_@{z}_@{sec}_@{reg} ${G^{A,@{z}}_{k,n}}$ (long_name = 'regional sector adaptation government expenditure @{z}')       
+            K_A_@{z}_@{sec}_@{reg} ${K^{A,@{z}}_{k,n}}$ (long_name = 'regional sector adaptation capital stock @{z}')
+        @# endfor
         gA_@{sec}_@{reg} ${g^{A}_{k,n}}$ (long_name = 'regional growth rate of sector TFP')
         A_N_@{sec}_@{reg} ${A^{N}_{k,n}}$ (long_name = 'regional sector labour specific TFP')
         A_K_@{sec}_@{reg} ${A^{K}_{k,n}}$ (long_name = 'regional sector capital specific TFP')
@@ -69,16 +72,19 @@ exo_BG ${\eta_{BG}}$ (long_name = 'exogenous structural balance')
         exo_@{sec}_@{reg} ${\eta_{A,k,n}}$ (long_name = 'exogenus TFP')
         exo_N_@{sec}_@{reg} ${\eta_{A^{N},k,n}}$ (long_name = 'exogenous labour specific TFP')
         exo_K_@{sec}_@{reg} ${\eta_{A^{K},k,n}}$ (long_name = 'exogenous capital specific TFP')
-        exo_GA_@{sec}_@{reg} ${\eta_{G^{A},k,n}}$ (long_name = 'exogenous sector adaptation expenditure')
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+            exo_GA_@{z}_@{sec}_@{reg} ${\eta_{G^{A,@{z}},k,n}}$ (long_name = 'exogenous sector adaptation expenditure against @{z}')
+        @# endfor
+
     @# endfor
 @# endfor
 
 @# for reg in 1:Regions
-    exo_T_@{reg} ${\eta_{T,n}}$ (long_name = 'exogenus regional temperature')
-    exo_PREC_@{reg} ${\eta_{PREC,n}}$ (long_name = 'exogenus regional percipitation')
-    exo_WS_@{reg} ${\eta_{W^{S},n}}$ (long_name = 'exogenus regional wind speed')
-    exo_DRO_@{reg} ${\eta_{DR^{S},n}}$ (long_name = 'exogenus regional intnsity of drought')
-    exo_CYC_@{reg} ${\eta_{CY^{S},n}}$ (long_name = 'exogenus regional intnsity of cyclone')
+    exo_T_@{reg} ${\eta_{T,n}}$ (long_name = 'exogenous regional temperature')
+    exo_PREC_@{reg} ${\eta_{PREC,n}}$ (long_name = 'exogenous regional percipitation')
+    exo_WS_@{reg} ${\eta_{W^{S},n}}$ (long_name = 'exogenous regional wind speed')
+    exo_DRO_@{reg} ${\eta_{DR^{S},n}}$ (long_name = 'exogenous regional intnsity of drought')
+    exo_CYC_@{reg} ${\eta_{CY^{S},n}}$ (long_name = 'exogenous regional intnsity of cyclone')
 @# endfor
 ;
 
@@ -108,8 +114,10 @@ parameters
         alphaN_@{sec}_@{reg}_p ${\alpha^{N}_{k,n}}$ (long_name = 'distribution parameter labour share')
         etaNK_@{sec}_@{reg}_p ${\eta^{N,K}_{k,n}}$ (long_name = 'elasticity of substitution between labour and capital')
         A_@{sec}_@{reg}_p ${A_{k,n}}$ (long_name = 'sector long-run TFP')
-        GAT_@{sec}_@{reg}_p ${G^{A}_{T,k,n}}$ (long_name = 'sector region specific government expenditure for adaptation')
-        phiGA_@{sec}_@{reg}_p ${\phi^{G^{A}}_{k,n}}$ (long_name = 'coefficient of effectiveness of government expenditure on adaptation measures in a specific region and sector')
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+            phiGA@{z}_@{sec}_@{reg}_p ${\phi^{G^{A,@{z}}}_{k,n}}$ (long_name = 'coefficient of effectiveness of government expenditure on adaptation measures in a specific region and sector @{z}')
+            deltaKA@{z}_@{sec}_@{reg}_p ${\delta^{K^{A,@{z}}_{k,n}}$ (long_name = 'depreciation rate of adaptation capital stock against @{z}')
+        @# endfor
         gY0_@{sec}_@{reg}_p ${\frac{Y_{2,k,n}}{Y_{1,k,n}}}$ (long_name = 'initial sector growth')
         gN0_@{sec}_@{reg}_p ${\frac{\frac{N_{2,k,n}{N_{2}}}}{\frac{N_{1,k,n}}{N_{1}}}$ (long_name = 'initial sector labour growth')
         omegaA_@{sec}_@{reg}_p ${\omega^{A}_{k,n}}$ (long_name = 'exponent for productivity growth')

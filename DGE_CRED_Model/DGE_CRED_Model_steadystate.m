@@ -74,11 +74,12 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
                 icovec = icoreg + (icosec-1)*strpar.inbregions_p;
                 xstart_vec_1(icovec) = strys.(['A_' ssec '_' sreg]);
                 xstart_vec_2(icovec) = strys.(['A_N_' ssec '_' sreg]);
-                xstart_vec_3(icovec) = strys.(['K_' ssec '_' sreg]);
+                xstart_vec_3(icovec) = strys.(['K_' ssec '_' sreg])/strys.(['Y_' ssec '_' sreg]);
             end
         end
 %         xstart_vec = [xstart_vec_1(:); xstart_vec_2(:); xstart_vec_3(:)];
         xstart_vec = [xstart_vec_1(:); xstart_vec_3(:)];
+        xstart_vec = xstart_vec_3;
         % evaluate residuals of HH FOC w.r.t. labour in each region and sector
         iStep = options_.iStepSteadyState;
         YTtemp_p = strpar.YT_p;
@@ -96,11 +97,13 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
 %                     iIncrease = (icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p)./((icostep-1)./iStep .* YTtemp_p + (iStep-(icostep-1))./iStep .* strpar.Y0_p);
                 end
             end
-            FindAtemp = @(x)FindA(x,strys,strexo,strpar);
-            [Fval_vec, strys,strexo] = FindA(xstart_vec, strys, strexo, strpar);
+%             FindAtemp = @(x)FindA(x,strys,strexo,strpar);
+%             [Fval_vec, strys,strexo] = FindA(xstart_vec, strys, strexo, strpar);
+            FindKtemp = @(x)FindK(x,strys,strexo,strpar);
+            [Fval_vec, strys,strexo] = FindK(xstart_vec, strys, strexo, strpar);
             if max(abs(Fval_vec(:)))>1e-8
-                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindAtemp, xstart_vec, options);%, strys, strexo, strpar);
-                [~, strys,strexo] = FindA(real(xopt), strys, strexo, strpar);
+                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindKtemp, xstart_vec, options);%, strys, strexo, strpar);
+                [~, strys,strexo] = FindK(real(xopt), strys, strexo, strpar);
                 xstart_vec = xopt;
             end 
             disp(['Maximum absolute residual ' num2str(max(abs(Fval_vec)))])          
