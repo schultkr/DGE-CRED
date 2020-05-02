@@ -3,19 +3,29 @@
 % Equation 1
 damage function TFP
 \begin{dmath}
-{{D_{k,r}}_{t}}=exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \left({{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}+{{a_{SL,1,k,r}}}\, {{SL}_{t}}+{{a_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{SL,3,k,r}}}}+{{a_{W,1,k,r}}}\, {{WS_{r}}_{t}}+{{a_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a_{W,3,k,r}}}}+{{a_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{P,3,k,r}}}}+{{a_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a_{C,3,k,r}}}}+{{a_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a_{DRO,3,k,r}}}}\right) 
+{{D_{k,r}}_{t}}=\left\lbrace\left({{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}\right) \, exp\left(-\phi^{G^{A,T}_{k,r}} \, G^{A,T}_{k,r,t}\right)
+ + \left({{a_{SL,1,k,r}}}\, {{SL}_{t}}+{{a_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{SL,3,k,r}}}}\right)  \, I\left(SL_{t} > \frac{K^{A,SL}_{k,r,t}}{\phi^{G^{A,SL}_{k,r}}} \right)
+ + \left({{a_{W,1,k,r}}}\, {{WS_{r}}_{t}} + {{a_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a_{W,3,k,r}}}} \right) \, exp\left(-\phi^{G^{A,WS}_{k,r}} \, G^{A,WS}_{k,r,t}\right)
+ + \left({{a_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{P,3,k,r}}}}\right) \, exp\left(-\phi^{G^{A,PREC}_{k,r}} \, G^{A,PREC}_{k,r,t}\right)
+ + \left({{a_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a_{C,3,k,r}}}}\right) \, exp\left(-\phi^{G^{A,CYC}_{k,r}} \, G^{A,CYC}_{k,r,t}\right)
+ + \left({{a_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a_{DRO,3,k,r}}}}\right) \, exp\left(-\phi^{G^{A,DRO}_{k,r}} \, G^{A,DRO}_{k,r,t}\right)
+\right\rbrace
 \end{dmath}
 damage function capital
 \begin{dmath}
-{{D^{K}_{k,r}}_{t}}=exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \left({{a^{K}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{K}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{K}_{T,3,k,r}}+{{a^{K}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{K}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{K}_{SL,3,k,r}}}}+{{a^{K}_{W,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{K}_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{K}_{W,3,k,r}}}}+{{a^{K}_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a^{K}_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{K}_{P,3,k,r}}}}+{{a^{K}_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{K}_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{K}_{C,3,k,r}}}}+{{a^{K}_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a^{K}_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{K}_{DRO,3,k,r}}}}\right) 
+{{D^{K}_{k,r}}_{t}}=\left({{a^{K}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{K}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{K}_{T,3,k,r}}+{{a^{K}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{K}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{K}_{SL,3,k,r}}}}+{{a^{K}_{W,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{K}_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{K}_{W,3,k,r}}}}+{{a^{K}_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a^{K}_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{K}_{P,3,k,r}}}}+{{a^{K}_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{K}_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{K}_{C,3,k,r}}}}+{{a^{K}_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a^{K}_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{K}_{DRO,3,k,r}}}}\right) 
 \end{dmath}
 damage function labour productivity
 \begin{dmath}
-{{D^{N}_{k,r}}_{t}}=exp\left(-\phi^{G^{A}_{k,r}} \, G^{A}_{k,r,t}\right) \, \left({{a^{N}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{N}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{N}_{T,3,k,r}}+{{a^{N}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{N}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{N}_{SL,3,k,r}}}}+{{a^{N}_{W,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{N}_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{N}_{W,3,k,r}}}}+{{a^{N}_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a^{N}_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{N}_{P,3,k,r}}}}+{{a^{N}_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{N}_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{N}_{C,3,k,r}}}}+{{a^{N}_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a^{N}_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{N}_{DRO,3,k,r}}}}\right) 
+{{D^{N}_{k,r}}_{t}}=\left({{a^{N}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{N}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{N}_{T,3,k,r}}+{{a^{N}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{N}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{N}_{SL,3,k,r}}}}+{{a^{N}_{W,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{N}_{W,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{N}_{W,3,k,r}}}}+{{a^{N}_{P,1,k,r}}}\, {{PREC_{r}}_{t}}+{{a^{N}_{P,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{N}_{P,3,k,r}}}}+{{a^{N}_{C,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{N}_{C,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{N}_{C,3,k,r}}}}+{{a^{N}_{D,1,k,r}}}\, {{DRO_{r}}_{t}}+{{a^{N}_{D,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{N}_{DRO,3,k,r}}}}\right) 
 \end{dmath}
-government expenditure for adaptation measures
+capital stock financed by government expenditure for adaptation measures against against different climate variables $z \in \{T,\, WS,\, PREC, \, DRO,\, CYC,\, SL\}$
 \begin{dmath}
-G^{A}_{k,r,t}=\eta_{G^{A},k,r,t}
+K^{A,SL}_{k,r,t}=\eta_{G^{A,z},k,r,t}
+\end{dmath}
+law of motion of capital stock financed by government expenditure
+\begin{dmath}
+K^{A,z}_{k,r,t}= (1 - \delta_{K^{A,z},k,r}) K^{A,z}_{k,r,t-1} + G^{A,z}_{k,r,t}
 \end{dmath}
 % Equation 2
 TFP
@@ -107,6 +117,14 @@ sea level
 \begin{dmath}
 {{SL}_{t}}={{SL_0}}+{{\eta_{SL}}_{t}}
 \end{dmath}
+drought
+\begin{dmath}
+{{DRO}_{t}}={{DRO_0}}+{{\eta_{DRO}}_{t}}
+\end{dmath}
+cyclone
+\begin{dmath}
+{{CYC}_{t}}={{CYC_0}}+{{\eta_{CYC}}_{t}}
+\end{dmath}
 
 \subsection{Trade}
 trade balance
@@ -123,9 +141,9 @@ r^{f}_{t} = \bar{r}^{f}
 \end{dmath}
 
 \subsection{Government}
-budget constraint
+budget constraint with adaptation measures for climate variables $z \in \{T,\, SL,\, WS,\, PREC,\, CYC,\, DRO\}$
 \begin{dmath}
-{P_{t}}\, {G_{t}} + \sum_{r}^{R} \sum_{k}^{K} {P_{t}} \, G^{A}_{k,r,t} + {P_{t}} \, {S^{f}_{t}} \, \left(1+{{r^{f}}_{t}}\right)\, {BG_{t-1}}={P_{t}}\, {BG_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}}}+\sum_{k}^{K} \sum_{r}^{R} \, N_{k,r,t} \, W_{k,r,t} \, \left({\tau^{N} + \tau^{N}_{k,r,t}}\right)+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, \left(\tau^{K} + \tau^{K}_{k,r,t}\right)
+{P_{t}}\, {G_{t}} + \sum_{r}^{R} \sum_{k}^{K} {P_{t}} \, \sum_{z} G^{A,z}_{k,r,t} + {P_{t}} \, {S^{f}_{t}} \, \left(1+{{r^{f}}_{t}}\right)\, {BG_{t-1}}={P_{t}}\, {BG_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}}}+\sum_{k}^{K} \sum_{r}^{R} \, N_{k,r,t} \, W_{k,r,t} \, \left({\tau^{N} + \tau^{N}_{k,r,t}}\right)+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, \left(\tau^{K} + \tau^{K}_{k,r,t}\right)
 \end{dmath}
 government foreign debt
 \begin{dmath}
@@ -148,7 +166,7 @@ national price level
 \end{dmath}
 national population
 \begin{dmath}
-PoP_{t}=Pop_0 + \eta_{Pop,t}
+Pop_{t}=Pop_0 + \eta_{Pop,t}
 \end{dmath}
 resource constraint
 \begin{dmath}
