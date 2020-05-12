@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  12 MAY 2020 10:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  12 MAY 2020 11:04
 entering extended mode
 **"./Model Description.tex"
 ("Model Description.tex"
@@ -799,12 +799,7 @@ Underfull \vbox (badness 10000) detected at line 39
 
 
 
-] [27]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 2 on input line 184.
-
-) [28]
+] [27]) [28]
 \openout2 = `texfiles/DGE_CRED_Model_latex_definitions_IO_extension.aux'.
 
  (texfiles/DGE_CRED_Model_latex_definitions_IO_extension.tex
@@ -825,12 +820,9 @@ Underfull \vbox (badness 10000) detected at line 43
 
 
 ]
-
-Package longtable Warning: Table widths have changed. Rerun LaTeX.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
-("Model Description.aux" (texfiles/Model_Equations.aux) (texfiles/Model_Equations_IO_Extension.aux)
+ ("Model Description.aux" (texfiles/Model_Equations.aux) (texfiles/Model_Equations_IO_Extension.aux)
 (texfiles/Model_Equations_Energy_Extension.aux) (texfiles/DGE_CRED_Model_latex_definitions.aux)
 (texfiles/DGE_CRED_Model_latex_definitions_IO_extension.aux)
 (texfiles/DGE_CRED_Model_latex_definitions_Energy_extension.aux))
@@ -864,7 +856,7 @@ s/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
 y8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on "Model Description.pdf" (30 pages, 857899 bytes).
+Output written on "Model Description.pdf" (30 pages, 857877 bytes).
 PDF statistics:
  636 PDF objects out of 1000 (max. 8388607)
  173 named destinations out of 1000 (max. 500000)
