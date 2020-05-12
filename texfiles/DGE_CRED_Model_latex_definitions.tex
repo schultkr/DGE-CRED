@@ -46,7 +46,18 @@
 \texttt{N\_k\_r} & ${N_{k,r}}$ & regional sector employment\\
 \texttt{W\_k\_r} & ${W_{k,r}}$ & regional sector wages\\
 \texttt{A\_k\_r} & ${A_{k,r}}$ & regional sector TFP\\
-\texttt{G\_A\_k\_r} & ${G^{A}_{k,r}}$ & regional sector adaptation government expenditure\\
+\texttt{K\_A\_SL\_k\_r} & ${K^{A,SL}_{k,r}}$ & regional sector capital adaptation stock against sea level\\
+\texttt{K\_A\_WS\_k\_r} & ${K^{A,WS}_{k,r}}$ & regional sector capital adaptation stock against wind speed\\
+\texttt{K\_A\_T\_k\_r} & ${K^{A,T}_{k,r}}$ & regional sector capital adaptation stock against temperature\\
+\texttt{K\_A\_PREC\_k\_r} & ${K^{A,PREC}_{k,r}}$ & regional sector capital adaptation stock against precipitation\\
+\texttt{K\_A\_CYC\_k\_r} & ${K^{A,CYC}_{k,r}}$ & regional sector capital adaptation stock against cyclones\\
+\texttt{K\_A\_DRO\_k\_r} & ${K^{A,DRO}_{k,r}}$ & regional sector capital adaptation stock against droughts\\
+\texttt{G\_A\_SL\_k\_r} & ${G^{A,SL}_{k,r}}$ & regional sector adaptation government expenditure against sea level\\
+\texttt{G\_A\_T\_k\_r} & ${G^{A,T}_{k,r}}$ & regional sector adaptation government expenditure against temperature\\
+\texttt{G\_A\_WS\_k\_r} & ${G^{A,WS}_{k,r}}$ & regional sector adaptation government expenditure against wind speed\\
+\texttt{G\_A\_PREC\_k\_r} & ${G^{A,PREC}_{k,r}}$ & regional sector adaptation government expenditure against precipitation\\
+\texttt{G\_A\_CYC\_k\_r} & ${G^{A,CYC}_{k,r}}$ & regional sector adaptation government expenditure against cyclones\\
+\texttt{G\_A\_DRO\_k\_r} & ${G^{A,DRO}_{k,r}}$ & regional sector adaptation government expenditure against droughts\\
 \texttt{gA\_k\_r} & ${g^{A}_{k,r}}$ & regional growth rate of sector TFP\\
 \texttt{A\_N\_k\_r} & ${A^{N}_{k,r}}$ & regional sector labour specific TFP\\
 \texttt{A\_K\_k\_r} & ${A^{K}_{k,r}}$ & regional sector capital specific TFP\\
@@ -69,7 +80,12 @@
 \texttt{exo\_k\_r} & ${\eta_{A,k,r}}$ & exogenous TFP\\
 \texttt{exo\_N\_k\_r} & ${\eta_{A^{N},k,r}}$ & exogenous labour specific TFP\\
 \texttt{exo\_K\_k\_r} & ${\eta_{A^{K},k,r}}$ & exogenous capital specific TFP\\
-\texttt{exo\_GA\_k\_r} & ${\eta_{G^{A},k,r}}$ & exogenous sector adaptation expenditure\\
+\texttt{exo\_GA\_SL\_k\_r} & ${\eta_{G^{A,SL},k,r}}$ & exogenous sector adaptation government expenditure against sea level\\
+\texttt{exo\_GA\_T\_k\_r} & ${\eta_{G^{A,T},k,r}}$ & exogenous sector adaptation government expenditure against temperature\\
+\texttt{exo\_GA\_WS\_k\_r} & ${\eta_{G^{A,SL},k,r}}$ & exogenous sector adaptation government expenditure against wind speed\\
+\texttt{exo\_GA\_PREC\_k\_r} & ${\eta_{G^{A,SL},k,r}}$ & exogenous sector adaptation government expenditure against precipitation\\
+\texttt{exo\_GA\_CYC\_k\_r} & ${\eta_{G^{A,SL},k,r}}$ & exogenous sector adaptation government expenditure against cyclones\\
+\texttt{exo\_GA\_DRO\_k\_r} & ${\eta_{G^{A,SL},k,r}}$ & exogenous sector adaptation government expenditure against drought\\
 \texttt{exo\_T\_r} & ${\eta_{T,r}}$ & exogenous regional temperature\\
 \texttt{exo\_PREC\_r} & ${\eta_{PREC,r}}$ & exogenous regional precipitation\\
 \texttt{exo\_WS\_r} & ${\eta_{WS,r}}$ & exogenous regional wind speed\\
@@ -97,27 +113,37 @@
 \texttt{alphaN\_k\_r\_p} & ${\alpha^{N}_{k,r}}$ & distribution parameter labour share\\
 \texttt{etaNK\_k\_r\_p} & ${\eta^{N,K}_{k,r}}$ & elasticity of substitution between labour and capital\\
 \texttt{A\_k\_r\_p} & ${A_{k,r}}$ & sector long-run TFP\\
-\texttt{GAT\_k\_r\_p} & ${G^{A}_{T,k,r}}$ & sector region specific government expenditure for adaptation\\
-\texttt{phiGA\_k\_r\_p} & ${\phi^{G^{A}}_{k,r}}$ & coefficient of effectiveness of government expenditure on adaptation measures\\
+\texttt{phiGAT\_k\_r\_p} & ${\phi^{G^{A,T}}_{k,r}}$ & effectiveness of adaptation measures against temperature\\
+\texttt{phiGASL\_k\_r\_p} & ${\phi^{G^{A,SL}}_{k,r}}$ & effectiveness of adaptation measures against sea level\\
+\texttt{phiGAWS\_k\_r\_p} & ${\phi^{G^{A,WS}}_{k,r}}$ & coefficient of adaptation measures against wind speed\\
+\texttt{phiGAPREC\_k\_r\_p} & ${\phi^{G^{A,PREC}}_{k,r}}$ & coefficient of adaptation measures against precipitation\\
+\texttt{phiGACYC\_k\_r\_p} & ${\phi^{G^{A,CYC}}_{k,r}}$ & coefficient of adaptation measures against cyclones\\
+\texttt{phiGADRO\_k\_r\_p} & ${\phi^{G^{A,DRO}}_{k,r}}$ & coefficient of adaptation measures against droughts\\
 \texttt{gY0\_k\_r\_p} & ${\frac{Y_{2,k,r}}{Y_{1,k,r}}}$ & initial sector growth\\
 \texttt{gN0\_k\_r\_p} & $\frac{\frac{N_{2,k,r}}{N_{2}}}{\frac{N_{1,k,r}}{N_{1}}}$ & initial sector labour growth\\
 \texttt{omegaA\_k\_r\_p} & ${\omega^{A}_{k,r}}$ & exponent for productivity growth\\
 \texttt{A\_N\_k\_r\_p} & ${A^{N}_{k,r}}$ & sector labour specific TFP\\
 \texttt{A\_K\_k\_r\_p} & ${A^{K}_{k,r}}$ & sector capital specific TFP\\
-\texttt{a\_T\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function temperature\\
+\texttt{a\_T\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function temperature\\
 \texttt{a\_T\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function temperature\\
 \texttt{a\_T\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function temperature\\
-\texttt{a\_P\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function precipitation\\
+\texttt{a\_P\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function precipitation\\
 \texttt{a\_P\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function precipitation\\
 \texttt{a\_P\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function precipitation\\
-\texttt{a\_W\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function wind speed\\
+\texttt{a\_W\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function wind speed\\
 \texttt{a\_W\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function wind speed\\
 \texttt{a\_W\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function wind speed\\
-\texttt{a\_SL\_k\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function sea level\\
+\texttt{a\_SL\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function sea level\\
 \texttt{a\_SL\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function sea level\\
 \texttt{a\_SL\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function sea level\\
 \texttt{beta\_p} & ${\beta}$ & discount factor\\
 \texttt{delta\_p} & ${\delta}$ & capital depreciation rate\\
+\texttt{deltaKASL\_k\_r\_p} & ${\delta_{K^{A,SL},k,r}}$ & capital depreciation rate for adaptation capital stock against sea level rise\\
+\texttt{deltaKAT\_k\_r\_p} & ${\delta_{K^{A,T},k,r}}$ & capital depreciation rate for adaptation capital stock against temperature\\
+\texttt{deltaKAWS\_k\_r\_p} & ${\delta_{K^{A,WS},k,r}}$ & capital depreciation rate for adaptation capital stock against wind speed\\
+\texttt{deltaKAPREC\_k\_r\_p} & ${\delta_{K^{A,PREC},k,r}}$ & capital depreciation rate for adaptation capital stock against precipitation\\
+\texttt{deltaKACYC\_k\_r\_p} & ${\delta_{K^{A,CYC},k,r}}$ & capital depreciation rate for adaptation capital stock against cyclones\\
+\texttt{deltaKADRO\_k\_r\_p} & ${\delta_{K^{A,DRO},k,r}}$ & capital depreciation rate for adaptation capital stock against droughts\\
 \texttt{sigmaL\_p} & ${\sigma^{L}}$ & inverse Frisch elasticity\\
 \texttt{sigmaC\_p} & ${\sigma^{C}}$ & intertemporal elasticity of substitution\\
 \texttt{etaQ\_p} & ${\eta^{Q}}$ & elasticity of substitution between sectoral production\\
@@ -141,7 +167,7 @@
 \texttt{lCalibration\_p} & ${l^{Calib}}$ & logical indiactor whether model is calibrated or not\\
 \texttt{T0\_r\_p} & ${T_{0,n}}$ & initial regional temperature\\
 \texttt{PREC0\_r\_p} & ${PREC_{0,n}}$ & initial regional precipitation\\
-\texttt{WS0\_r\_p} & ${WS_{0,n}}$ & initiial regional wind speed\\
+\texttt{WS0\_r\_p} & ${WS_{0,n}}$ & initial regional wind speed\\
 \texttt{TT\_r\_p} & ${T_{T,n}}$ & terminal regional temperature\\
 \texttt{PRECT\_r\_p} & ${PREC_{T,n}}$ & terminal regional precipitation\\
 \texttt{WST\_r\_p} & ${WS_{T,n}}$ & terminal regional wind speed\\

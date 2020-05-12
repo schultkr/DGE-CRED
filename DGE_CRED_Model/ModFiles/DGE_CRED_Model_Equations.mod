@@ -183,13 +183,13 @@ rf = (1/beta_p-1);
 (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * beta_p * Sf(+1) * exp(-phiB_p*((Sf(+1)*rf(+1)*B/Y(+1)+NX(+1)/Y(+1)))) * (1 + rf(+1)) = (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
 
 [name = 'Government Budget Constraint']
-G + (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1)
+G + BG
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         + G_A_SL_@{sec}_@{reg}  + G_A_PREC_@{sec}_@{reg} + G_A_T_@{sec}_@{reg} + G_A_WS_@{sec}_@{reg} + G_A_CYC_@{sec}_@{reg} + G_A_DRO_@{sec}_@{reg} 
     @# endfor
 @# endfor
-= BG + tauC_p * C
+= (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1) + tauC_p * C
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         + (tauN_p + tauN_@{sec}_@{reg}) * W_@{sec}_@{reg} * N_@{sec}_@{reg} * PoP/P + (tauK_p + tauK_@{sec}_@{reg}) * P_@{sec}_@{reg} /P * r_@{sec}_@{reg} * K_@{sec}_@{reg} 
