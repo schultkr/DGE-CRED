@@ -3,7 +3,8 @@
 
 ## Disclaimer
 
-The project is part of the Global Programme “Policy Advice for Climate Resilient Economic Development” [(CRED)](https://www.giz.de/en/worldwide/79266.html) implemented by Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH on behalf of German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMU).
+![](pictures/CRED_Disclaimer.png)
+
 
 ## Installation
 
