@@ -1,6 +1,9 @@
 # Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)
 > This repository contains a spatial small open economy dynamic general equilibrium model implemented by the Halle Institute for Economic Research (IWH) in Dynare using Matlab/Octave as software.
 
+## Disclaimer
+
+The project is part of the Global Programme “Policy Advice for Climate Resilient Economic Development” [(CRED)](https://www.giz.de/en/worldwide/79266.html) implemented by Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH on behalf of German Federal Ministry for the Environment, Nature Conservation and Nuclear Safety (BMU).
 
 ## Installation
 
