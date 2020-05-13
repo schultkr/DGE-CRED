@@ -11,7 +11,7 @@
 \usepackage{hyperref}
 \usepackage{float}
 
-\title{Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)\\
+\title{Dynamic General Equilibrium Model for Climate Resilient Economic Development (DGE-CRED)\thanks{Financial support by the Gesellschaft für Internationale Zusammenarbeit (GIZ) in the context of the research project Climate Resilient Economic Development is acknowledged.}\\
 \hspace{1cm}
 \large{Technical Report} \\
 \hspace{1cm}
@@ -52,7 +52,7 @@ In Section \ref{sec:modelderivation} the derivation of the model equations is ex
 \end{figure}
 
 \section{Model}\label{sec:modelderivation}
-This report is a guide on how to use the spatial small open economy dynamic general equilibrium model for climate change and adaptation simulations. In general the model belongs to the class of real business cycle models, because no nominal rigidities are explicitly considered. Nevertheless, it is possible to extend the model to feature also nominal rigidities. The model structure is depicted in Figure \ref{fig:ModelStructure}.
+This report is a guide on how to use the spatial small open economy dynamic general equilibrium model for climate change and adaptation simulations. In general the model belongs to the class of neoclassical growth models, because no nominal rigidities are explicitly considered. Nevertheless, it is possible to extend the model to feature also nominal rigidities. The model structure is depicted in Figure \ref{fig:ModelStructure}.
 \begin{figure}[h]
 \caption{Model Structure}\label{fig:ModelStructure}
 \begin{center}
@@ -62,7 +62,7 @@ This report is a guide on how to use the spatial small open economy dynamic gene
 \end{figure}
 Regional climate variables (precipitation, wind speed, temperature and sea level) are exogenous to economic variables. Regional sectoral production functions depend on regional climate variables. The model is meant to reflect small open economies and therefore the climate system is unaffected by the domestic economic system.
 
-The model consists of an arbitrary number of regions ($R$) and sectors ($K$). Regional differentiation is only provided on the supply side and not on the demand side. Representative households consume sectoral goods and supply capital and labour to the firms in the regions. Households also demand goods and services from the rest of the world. Firms use capital and labour to produce sectoral goods with sectoral and regional specific constant elasticity of substitution production functions.
+The model consists of an arbitrary number of regions ($R$) and sectors ($K$). Regional differentiation is only provided on the supply side and not on the demand side. Representative households consume, supply capital and labour to the firms in the regions. Households also demand goods and services from the rest of the world. Firms use capital and labour to produce sectoral goods with sectoral and regional specific constant elasticity of substitution production functions.
 
 The government collects taxes, consumes and can use its funds to finance adaptation measures for specific regions and sectors. So far, adaptation measures will reduce overall damage by all climate variables at the same time. The effectiveness of government expenditure in one specific region and sector can vary.
 
@@ -152,7 +152,7 @@ NX_t = B_{t+1} - (1 + r^{f}_{t}) S^{f}_{t} \phi^B_{t} B_{t}
 
 \subsection{Production}
 
-Households demand final domestic goods $Y_{t}$ combining goods from different sectors $Y_{k,t}$ using a CES production function. They minimize expenditures subject to the production function
+Final domestic goods $Y_{t}$ are created combining goods from different sectors $Y_{k,t}$ using a CES production function. Final domestic goods are used for consumption or investment. Households minimize expenditures subject to the production function
 \begin{align}
 \underset{Y_{k,t}}{\mathrm{min}} & \sum_{k} Y_{k,t} \, P_{k,t} \\ 
 Y_{t} &= \left(\sum_{k} {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} Y_{k,t}^{\frac{\eta^Q-1}{\eta^Q}} \right)^{\frac{\eta^Q}{\eta^Q-1}}
@@ -324,19 +324,20 @@ The impact of sea level rise on Vietnam is well studied in the literature \citep
 
 \subsection{Extremes}
 
-As a result of sea level rise and different precipitation the frequency and severity of cyclones and droughts might increase. Cyclones and other weather extremes have a temporary effect on the formation of capital, the productivity of labour and the maximum number of business days available. The model incorporates droughts $DRO_{r,t}$ and cyclones $CYC_{r,t}$ as exogenous variables. There is no endogenous link between temperature and weather extremes explicitly included in the model. This allows to model any potential dependency between temperature increase or other annual averages of climate variables considered and weather extremes. We use the relationship reported by \cite{arndt2015economic} of storm surge height and capital stock destruction as depicted in Figure \ref{fig:cyclonesdamages} to model the impact of cyclones on the Vietnamese economy. 
+As a result of sea level rise and different precipitation the frequency and severity of cyclones and droughts might increase. Cyclones and other weather extremes have a temporary effect on the formation of capital, the productivity of labour and the maximum number of business days available. The model incorporates droughts $DRO_{r,t}$ and cyclones $CYC_{r,t}$ as exogenous variables. There is no endogenous link between temperature and weather extremes explicitly included in the model. This allows to model any potential dependency between temperature increase or other annual averages of climate variables considered and weather extremes. We use the relationship reported by \cite{arndt2015economic} of storm surge height and capital stock destruction as depicted in Figure \ref{fig:cyclonesdamages} to model the impact of cyclones on the Vietnamese economy. Due to the increase in sea level and the change in temperature the return period is likely to decrease. \cite{arndt2015economic} states that the return period may fall by 50\% until the mid of the century. 
 
 \begin{figure}[H]
 \caption{Capital stock destruction and storm surge height}\label{fig:cyclonesdamages}
 \begin{center}
 \includegraphics[width = 8cm, height = 8cm]{pictures/DamagesCyclones.jpg}
 \end{center}
-\footnotesize{Source: The illustration is published in \cite{arndt2015economic}.}
+\footnotesize{Source: The illustration is published in \cite{arndt2015economic}. \\
+							Note: The historic return periods (RP) in years for storms classified by height is reported in parenthesis.}
 \end{figure}
 
 \subsection{Adaptation}
 
-One classical example of an adaptation measure against climate change and especially sea level rise are dikes. A dike needs to be build before the sea level rises. A dike is a capital good which needs maintenance. \cite{lenk2017costs} show that construction costs of a dike with one meter length and one meter height is 40,000 EURO. The coastline of the Mekong River Delta is 600 km long. Building a dike along the coastline of the Mekong River Delta of one meter height costs roughly 24 billion Euro or roughly 15\% of the GDP of Vietnam in 2016. We assume that the damage caused by inundation can be reduced to zero if the height of the dike exceeds the change in sea level \eqref{eq:Damages}. Otherwise, the full damage materializes. We can translate the monetary value of the dike into meters, using the estimates by \cite{lenk2017costs}. If sea level rises by one meter the cumulative invesmtents into the dike have to exceed 24 billion Euro excluding maintenance costs.
+One classical example of an adaptation measure against climate change and especially sea level rise are dikes. A dike needs to be build before the sea level rises. A dike is a capital good which needs maintenance. \cite{lenk2017costs} show that construction costs of a dike with one meter length and one meter height is 40,000 EURO. The coastline of the Mekong River Delta is 600 km long. Building a dike along the coastline of the Mekong River Delta of one meter height costs roughly 24 billion Euro or roughly 15\% of the GDP of Vietnam in 2016. We assume that the damage caused by inundation can be reduced to zero if the height of the dike exceeds the change in sea level \eqref{eq:Damages}. Otherwise, the full damage materializes. We can translate the monetary value of the dike into meters, using the estimates by \cite{lenk2017costs}. If sea level rises by one meter the cumulative investments into the dike have to exceed 24 billion Euro excluding maintenance costs.
 
 \subsection{Results}
 
