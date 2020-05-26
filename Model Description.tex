@@ -102,7 +102,7 @@ Households also need to decide how much of their income they want to consume or 
 Further, households also face investment adjustment cost $\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) = 3 - exp\left\lbrace\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right\rbrace\right) - exp\left\lbrace-\sqrt{\phi^{K}/2}\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}-1\right)\right\rbrace$, which are sector and region specific. The specification of the investment adjustment cost function is the same as proposed and estimated by \cite{christiano2014risk} for the US.  The marginal value of sectoral and regional investment $\omega^{I}_{k,r,t}$ is determined by
 
 \begin{dmath}\label{eq:hhfocinvestment}
-P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) - \frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial I_{k,r,t}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) + \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial I_{k,r,t}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
+P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) + \frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial \frac{I_{k,r,t}}{I_{k,r,t-1}}} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) - \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial \frac{I_{k,r,t+1}}{I_{k,r,t}}} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
 \end{dmath}
 
 \subsubsection{Rest of the world}
