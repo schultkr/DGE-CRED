@@ -1,0 +1,9 @@
+\frametitle{Declaration of endogenous variables}
+  \begin{verbatim}
+		var
+		k $k$ (long_name = 'capital'),
+		c $c$ (long_name = 'consumption'),
+		h $h$ (long_name = 'hours worked'),
+		epsil $\epsilon$ (long_name = 'tfp shock')
+		;
+	\end{verbatim}
