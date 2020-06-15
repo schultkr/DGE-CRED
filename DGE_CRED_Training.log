@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  15 JUN 2020 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  15 JUN 2020 18:29
 entering extended mode
 **./DGE_CRED_Training.tex
 (DGE_CRED_Training.tex
@@ -954,70 +954,100 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/arial\uarial.sty"
 Package: uarial 2006/03/21 1.0 (WaS)
-)) ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
-Package: biblatex 2019/08/17 v3.13 programmable bibliographies (PK/MW)
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb.sty"
+Package: fancyvrb 2019/01/15
+ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count193
+\FV@InFile=\read4
+\FV@TabBox=\box84
+\c@FancyVerbLine=\count194
+\FV@StepNumber=\count195
+\FV@OutFile=\write8
+LaTeX Info: Redefining \UseVerb on input line 1201.
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip67
+\subfigcapskip=\skip68
+\subfigcaptopadj=\dimen298
+\subfigbottomskip=\skip69
+\subfigcapmargin=\dimen299
+\subfiglabelskip=\skip70
+\c@subfigure=\count196
+\c@lofdepth=\count197
+\c@subtable=\count198
+\c@lotdepth=\count199
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.cfg")
+\subfig@top=\skip71
+\subfig@bottom=\skip72
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.sty"
+Package: biblatex 2019/08/17 v3.13 programmable bibliographies (PK/MW)
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.sty"
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count193
+\lrq@indent=\count266
  ("C:\Program Files\MiKTeX 2.9\tex/latex/logreq\logreq.def"
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count194
-\c@listtotal=\count195
-\c@listcount=\count196
-\c@liststart=\count197
-\c@liststop=\count198
-\c@citecount=\count199
-\c@citetotal=\count266
-\c@multicitecount=\count267
-\c@multicitetotal=\count268
-\c@instcount=\count269
-\c@maxnames=\count270
-\c@minnames=\count271
-\c@maxitems=\count272
-\c@minitems=\count273
-\c@citecounter=\count274
-\c@maxcitecounter=\count275
-\c@savedcitecounter=\count276
-\c@uniquelist=\count277
-\c@uniquename=\count278
-\c@refsection=\count279
-\c@refsegment=\count280
-\c@maxextratitle=\count281
-\c@maxextratitleyear=\count282
-\c@maxextraname=\count283
-\c@maxextradate=\count284
-\c@maxextraalpha=\count285
-\c@abbrvpenalty=\count286
-\c@highnamepenalty=\count287
-\c@lownamepenalty=\count288
-\c@maxparens=\count289
-\c@parenlevel=\count290
-\blx@tempcnta=\count291
-\blx@tempcntb=\count292
-\blx@tempcntc=\count293
-\blx@maxsection=\count294
-\blx@maxsegment@0=\count295
-\blx@notetype=\count296
-\blx@parenlevel@text=\count297
-\blx@parenlevel@foot=\count298
-\blx@sectionciteorder@0=\count299
-\blx@entrysetcounter=\count300
-\labelnumberwidth=\skip67
-\labelalphawidth=\skip68
-\biblabelsep=\skip69
-\bibitemsep=\skip70
-\bibnamesep=\skip71
-\bibinitsep=\skip72
-\bibparsep=\skip73
-\bibhang=\skip74
-\blx@bcfin=\read4
-\blx@bcfout=\write8
+\c@tabx@nest=\count267
+\c@listtotal=\count268
+\c@listcount=\count269
+\c@liststart=\count270
+\c@liststop=\count271
+\c@citecount=\count272
+\c@citetotal=\count273
+\c@multicitecount=\count274
+\c@multicitetotal=\count275
+\c@instcount=\count276
+\c@maxnames=\count277
+\c@minnames=\count278
+\c@maxitems=\count279
+\c@minitems=\count280
+\c@citecounter=\count281
+\c@maxcitecounter=\count282
+\c@savedcitecounter=\count283
+\c@uniquelist=\count284
+\c@uniquename=\count285
+\c@refsection=\count286
+\c@refsegment=\count287
+\c@maxextratitle=\count288
+\c@maxextratitleyear=\count289
+\c@maxextraname=\count290
+\c@maxextradate=\count291
+\c@maxextraalpha=\count292
+\c@abbrvpenalty=\count293
+\c@highnamepenalty=\count294
+\c@lownamepenalty=\count295
+\c@maxparens=\count296
+\c@parenlevel=\count297
+\blx@tempcnta=\count298
+\blx@tempcntb=\count299
+\blx@tempcntc=\count300
+\blx@maxsection=\count301
+\blx@maxsegment@0=\count302
+\blx@notetype=\count303
+\blx@parenlevel@text=\count304
+\blx@parenlevel@foot=\count305
+\blx@sectionciteorder@0=\count306
+\blx@entrysetcounter=\count307
+\labelnumberwidth=\skip73
+\labelalphawidth=\skip74
+\biblabelsep=\skip75
+\bibitemsep=\skip76
+\bibnamesep=\skip77
+\bibinitsep=\skip78
+\bibparsep=\skip79
+\bibhang=\skip80
+\blx@bcfin=\read5
+\blx@bcfout=\write9
 \blx@langwohyphens=\language83
-\c@mincomprange=\count301
-\c@maxcomprange=\count302
-\c@mincompwidth=\count303
+\c@mincomprange=\count308
+\c@maxcomprange=\count309
+\c@mincompwidth=\count310
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1028,88 +1058,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count304
-\c@savedafterword=\count305
-\c@annotator=\count306
-\c@savedannotator=\count307
-\c@author=\count308
-\c@savedauthor=\count309
-\c@bookauthor=\count310
-\c@savedbookauthor=\count311
-\c@commentator=\count312
-\c@savedcommentator=\count313
-\c@editor=\count314
-\c@savededitor=\count315
-\c@editora=\count316
-\c@savededitora=\count317
-\c@editorb=\count318
-\c@savededitorb=\count319
-\c@editorc=\count320
-\c@savededitorc=\count321
-\c@foreword=\count322
-\c@savedforeword=\count323
-\c@holder=\count324
-\c@savedholder=\count325
-\c@introduction=\count326
-\c@savedintroduction=\count327
-\c@namea=\count328
-\c@savednamea=\count329
-\c@nameb=\count330
-\c@savednameb=\count331
-\c@namec=\count332
-\c@savednamec=\count333
-\c@translator=\count334
-\c@savedtranslator=\count335
-\c@shortauthor=\count336
-\c@savedshortauthor=\count337
-\c@shorteditor=\count338
-\c@savedshorteditor=\count339
-\c@labelname=\count340
-\c@savedlabelname=\count341
-\c@institution=\count342
-\c@savedinstitution=\count343
-\c@lista=\count344
-\c@savedlista=\count345
-\c@listb=\count346
-\c@savedlistb=\count347
-\c@listc=\count348
-\c@savedlistc=\count349
-\c@listd=\count350
-\c@savedlistd=\count351
-\c@liste=\count352
-\c@savedliste=\count353
-\c@listf=\count354
-\c@savedlistf=\count355
-\c@location=\count356
-\c@savedlocation=\count357
-\c@organization=\count358
-\c@savedorganization=\count359
-\c@origlocation=\count360
-\c@savedoriglocation=\count361
-\c@origpublisher=\count362
-\c@savedorigpublisher=\count363
-\c@publisher=\count364
-\c@savedpublisher=\count365
-\c@language=\count366
-\c@savedlanguage=\count367
-\c@origlanguage=\count368
-\c@savedoriglanguage=\count369
-\c@pageref=\count370
-\c@savedpageref=\count371
-\shorthandwidth=\skip75
-\shortjournalwidth=\skip76
-\shortserieswidth=\skip77
-\shorttitlewidth=\skip78
-\shortauthorwidth=\skip79
-\shorteditorwidth=\skip80
-\locallabelnumberwidth=\skip81
-\locallabelalphawidth=\skip82
-\localshorthandwidth=\skip83
-\localshortjournalwidth=\skip84
-\localshortserieswidth=\skip85
-\localshorttitlewidth=\skip86
-\localshortauthorwidth=\skip87
-\localshorteditorwidth=\skip88
+\c@afterword=\count311
+\c@savedafterword=\count312
+\c@annotator=\count313
+\c@savedannotator=\count314
+\c@author=\count315
+\c@savedauthor=\count316
+\c@bookauthor=\count317
+\c@savedbookauthor=\count318
+\c@commentator=\count319
+\c@savedcommentator=\count320
+\c@editor=\count321
+\c@savededitor=\count322
+\c@editora=\count323
+\c@savededitora=\count324
+\c@editorb=\count325
+\c@savededitorb=\count326
+\c@editorc=\count327
+\c@savededitorc=\count328
+\c@foreword=\count329
+\c@savedforeword=\count330
+\c@holder=\count331
+\c@savedholder=\count332
+\c@introduction=\count333
+\c@savedintroduction=\count334
+\c@namea=\count335
+\c@savednamea=\count336
+\c@nameb=\count337
+\c@savednameb=\count338
+\c@namec=\count339
+\c@savednamec=\count340
+\c@translator=\count341
+\c@savedtranslator=\count342
+\c@shortauthor=\count343
+\c@savedshortauthor=\count344
+\c@shorteditor=\count345
+\c@savedshorteditor=\count346
+\c@labelname=\count347
+\c@savedlabelname=\count348
+\c@institution=\count349
+\c@savedinstitution=\count350
+\c@lista=\count351
+\c@savedlista=\count352
+\c@listb=\count353
+\c@savedlistb=\count354
+\c@listc=\count355
+\c@savedlistc=\count356
+\c@listd=\count357
+\c@savedlistd=\count358
+\c@liste=\count359
+\c@savedliste=\count360
+\c@listf=\count361
+\c@savedlistf=\count362
+\c@location=\count363
+\c@savedlocation=\count364
+\c@organization=\count365
+\c@savedorganization=\count366
+\c@origlocation=\count367
+\c@savedoriglocation=\count368
+\c@origpublisher=\count369
+\c@savedorigpublisher=\count370
+\c@publisher=\count371
+\c@savedpublisher=\count372
+\c@language=\count373
+\c@savedlanguage=\count374
+\c@origlanguage=\count375
+\c@savedoriglanguage=\count376
+\c@pageref=\count377
+\c@savedpageref=\count378
+\shorthandwidth=\skip81
+\shortjournalwidth=\skip82
+\shortserieswidth=\skip83
+\shorttitlewidth=\skip84
+\shortauthorwidth=\skip85
+\shorteditorwidth=\skip86
+\locallabelnumberwidth=\skip87
+\locallabelalphawidth=\skip88
+\localshorthandwidth=\skip89
+\localshortjournalwidth=\skip90
+\localshortserieswidth=\skip91
+\localshorttitlewidth=\skip92
+\localshortauthorwidth=\skip93
+\localshorteditorwidth=\skip94
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -1131,19 +1161,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.def"
 File: biblatex.def 2019/08/17 v3.13 biblatex compatibility (PK/MW)
-\c@textcitecount=\count372
-\c@textcitetotal=\count373
-\c@textcitemaxnames=\count374
-\c@biburlbigbreakpenalty=\count375
-\c@biburlbreakpenalty=\count376
-\c@biburlnumpenalty=\count377
-\c@biburlucpenalty=\count378
-\c@biburllcpenalty=\count379
+\c@textcitecount=\count379
+\c@textcitetotal=\count380
+\c@textcitemaxnames=\count381
+\c@biburlbigbreakpenalty=\count382
+\c@biburlbreakpenalty=\count383
+\c@biburlnumpenalty=\count384
+\c@biburlucpenalty=\count385
+\c@biburllcpenalty=\count386
 \biburlbigskip=\muskip12
 \biburlnumskip=\muskip13
 \biburlucskip=\muskip14
 \biburllcskip=\muskip15
-\c@smartand=\count380
+\c@smartand=\count387
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.bbx' found.
@@ -1160,8 +1190,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex/bbx\standard.bbx"
 File: standard.bbx 2019/08/17 v3.13 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count381
-\c@bbx:relatedtotal=\count382
+\c@bbx:relatedcount=\count388
+\c@bbx:relatedtotal=\count389
 )))
 Package biblatex Info: Trying to load citation style 'authoryear-comp'...
 Package biblatex Info: ... file 'authoryear-comp.cbx' found.
@@ -1187,26 +1217,6 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/biblatex\biblatex.cfg"
 File: biblatex.cfg 
 ))
-("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip89
-\subfigcapskip=\skip90
-\subfigcaptopadj=\dimen298
-\subfigbottomskip=\skip91
-\subfigcapmargin=\dimen299
-\subfiglabelskip=\skip92
-\c@subfigure=\count383
-\c@lofdepth=\count384
-\c@subtable=\count385
-\c@lotdepth=\count386
-
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-("C:\Program Files\MiKTeX 2.9\tex/latex/subfigure\subfigure.cfg")
-\subfig@top=\skip93
-\subfig@bottom=\skip94
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/ragged2e\ragged2e.sty"
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
  ("C:\Program Files\MiKTeX 2.9\tex/latex/ms\everysel.sty"
@@ -1236,8 +1246,8 @@ File: english.lbx 2019/08/17 v3.13 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count387
-\@quotereset=\count388
+\@quotelevel=\count390
+\@quotereset=\count391
 (DGE_CRED_Training.aux)
 \openout1 = `DGE_CRED_Training.aux'.
 
@@ -1295,19 +1305,19 @@ File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 
 ("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count389
+\scratchcounter=\count392
 \scratchdimen=\dimen300
-\scratchbox=\box84
-\nofMPsegments=\count390
-\nofMParguments=\count391
+\scratchbox=\box85
+\nofMPsegments=\count393
+\nofMParguments=\count394
 \everyMPshowfont=\toks61
-\MPscratchCnt=\count392
+\MPscratchCnt=\count395
 \MPscratchDim=\dimen301
-\MPnumerator=\count393
-\makeMPintoPDFobject=\count394
+\MPnumerator=\count396
+\makeMPintoPDFobject=\count397
 \everyMPtoPDFconversion=\toks62
 ) ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box85
+\AtBeginShipoutBox=\box86
 Package hyperref Info: Link coloring OFF on input line 42.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1315,14 +1325,14 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count395
+\c@section@level=\count398
 )
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
 LaTeX Info: Redefining \nameref on input line 42.
  (DGE_CRED_Training.out) (DGE_CRED_Training.out)
-\@outlinefile=\write9
-\openout9 = `DGE_CRED_Training.out'.
+\@outlinefile=\write10
+\openout10 = `DGE_CRED_Training.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
@@ -1384,14 +1394,14 @@ Dictionary: translator-numbers-dictionary, Language: English
 ("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-theorem-dictionary-English.dict"
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-\c@lstlisting=\count396
+\c@lstlisting=\count399
 Package biblatex Info: Input encoding 'ansinew' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'ansinew'.
 Package biblatex Info: Input encoding 'ansinew' specified.
 Package biblatex Info: Data encoding 'ansinew' specified.
 (biblatex)             No need to reencode data.
-\openout8 = `DGE_CRED_Training-blx.bib'.
+\openout9 = `DGE_CRED_Training-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'DGE_CRED_Training.bbl' found.
@@ -1412,26 +1422,61 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ua1/b/n' tried instead on input line 50.
-<pictures/GIZ_Logo.png, id=80, 1505.625pt x 415.5525pt>
+<pictures/GIZ_Logo.png, id=76, 1505.625pt x 415.5525pt>
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 50.
 (pdftex.def)             Requested size: 113.81102pt x 31.40604pt.
-<pictures/IWH_Logo_RGB_DE_Grossformat.png, id=81, 316.5426pt x 124.5453pt>
-File: pictures/IWH_Logo_RGB_DE_Grossformat.png Graphic file (type png)
-<use pictures/IWH_Logo_RGB_DE_Grossformat.png>
-Package pdftex.def Info: pictures/IWH_Logo_RGB_DE_Grossformat.png  used on input line 50.
-(pdftex.def)             Requested size: 113.81102pt x 44.77925pt.
-<pictures/seperationbar.png, id=83, 288.1164pt x 17.3448pt>
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 50.
-(pdftex.def)             Requested size: 113.81102pt x 6.8515pt.
-<pictures/BMWI_logo.png, id=84, 164.7756pt x 98.2872pt>
-File: pictures/BMWI_logo.png Graphic file (type png)
-<use pictures/BMWI_logo.png>
-Package pdftex.def Info: pictures/BMWI_logo.png  used on input line 50.
-(pdftex.def)             Requested size: 113.81102pt x 67.8872pt.
+
+
+LaTeX Warning: File `pictures/IWH_Logo_RGB_DE_Grossformat.png' not found on input line 50.
+
+
+! Package pdftex.def Error: File `pictures/IWH_Logo_RGB_DE_Grossformat.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 50.
+("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 50.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `pictures/BMWI_logo.png' not found on input line 50.
+
+
+! Package pdftex.def Error: File `pictures/BMWI_logo.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 
 Overfull \hbox (22.4775pt too wide) in paragraph at lines 50--50
 [][] 
@@ -1442,16 +1487,24 @@ Overfull \hbox (22.4775pt too wide) in paragraph at lines 50--50
 [] 
  []
 
-<pictures/BackgroundGIZ.jpg, id=85, 702.9462pt x 279.9258pt>
-File: pictures/BackgroundGIZ.jpg Graphic file (type jpg)
-<use pictures/BackgroundGIZ.jpg>
-Package pdftex.def Info: pictures/BackgroundGIZ.jpg  used on input line 50.
-(pdftex.def)             Requested size: 443.8667pt x 179.25014pt.
-[1
 
-{C:/Users/cst/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./pictures/BackgroundGIZ.jpg> <./pictures/GIZ_Logo.png
-> <./pictures/IWH_Logo_RGB_DE_Grossformat.png> <./pictures/seperationbar.png> <./pictures/BMWI_logo.png>]
-(DGE_CRED_Training.toc)
+LaTeX Warning: File `pictures/BackgroundGIZ.jpg' not found on input line 50.
+
+
+! Package pdftex.def Error: File `pictures/BackgroundGIZ.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1{C:/Users/cst/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+ <./pictures/GIZ_Logo.png>] (DGE_CRED_Training.toc)
 LaTeX Font Info:    Calculating math sizes for size <4> on input line 56.
 
 
@@ -1482,10 +1535,21 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2.79999> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <2> not available
 (Font)              size <5> substituted on input line 56.
 
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 56.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 56.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 56.
@@ -1493,78 +1557,139 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 56.
 [2
 
 ] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 58.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 58.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \section{Introduction to Dynare}
+                                     
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 58.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [3
+[3
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 68.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 68.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 68.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [4
+[4
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 85.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 85.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 85.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [5
+[5
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 97.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 97.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \end{frame}
+                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 97.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [6
+[6
 
-] (DGE_CRED_Training.toc
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 15.
+] (DGE_CRED_Training.toc)
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pcr.fd"
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-))
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 102.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 102.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 102.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [7
+[7
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 117.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 117.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 117.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [8
+[8
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -1574,124 +1699,233 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 117.
 LaTeX Warning: Characters dropped after `\end{verbatim}' on input line 9.
 
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 137.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 137.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 137.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [9
+[9
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 152.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 152.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 152.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [10
+[10
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 160.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 160.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 160.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [11
+[11
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 176.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 176.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.176 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 176.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [12
+[12
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 193.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 193.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.193 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 193.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [13
+[13
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 200.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 200.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 200.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [14
+[14
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 211.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 211.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 211.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [15
+[15
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 225.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 225.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.225 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 225.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [16
+[16
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 239.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 239.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 239.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
 [17
 
 ] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 244.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 244.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 244.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [18
+[18
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -1703,15 +1937,26 @@ n the \T1/pcr/m/n/10.95 shocks\T1/ua1/m/n/10.95 ,
  []
 
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 259.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 259.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.259 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 259.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [19
+[19
 
 ]
 Overfull \hbox (31.72595pt too wide) in paragraph at lines 268--268
@@ -1719,10 +1964,21 @@ Overfull \hbox (31.72595pt too wide) in paragraph at lines 268--268
 he \T1/pcr/m/n/10.95 oo_.endo_simul
  []
 
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 268.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 268.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.268 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 268.
@@ -1733,47 +1989,96 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 268.
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 287.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 287.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 287.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [21
+[21
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb
-<pictures/consumption01.png, id=276, 198.7425pt x 198.7425pt>
-File: pictures/consumption01.png Graphic file (type png)
-<use pictures/consumption01.png>
-Package pdftex.def Info: pictures/consumption01.png  used on input line 6.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/capital01.png, id=277, 198.7425pt x 198.7425pt>
-File: pictures/capital01.png Graphic file (type png)
-<use pictures/capital01.png>
-Package pdftex.def Info: pictures/capital01.png  used on input line 7.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/TFP01.png, id=278, 198.7425pt x 198.7425pt>
-File: pictures/TFP01.png Graphic file (type png)
-<use pictures/TFP01.png>
-Package pdftex.def Info: pictures/TFP01.png  used on input line 8.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
+
+! LaTeX Error: File `pictures/consumption01' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...phics[width=3.5cm]{pictures/consumption01}}
+                                                  \qquad
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `pictures/capital01' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...egraphics[width=3.5cm]{pictures/capital01}}
+                                                  \qquad
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `pictures/TFP01' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...cludegraphics[width=3.5cm]{pictures/TFP01}}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 304.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 304.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.304 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 304.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [22
+[22
 
- <./pictures/consumption01.png (PNG copy)> <./pictures/capital01.png (PNG copy)> <./pictures/TFP01.png (PNG copy)>]
+]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb
@@ -1783,170 +2088,316 @@ l \T1/ua1/m/n/10.95 block fills both \T1/pcr/m/n/10.95 oo_.endo_simul
  []
 
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 314.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 314.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.314 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 314.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [23
+[23
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 333.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 333.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 333.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [24
+[24
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb
-<pictures/consumption02.png, id=294, 198.7425pt x 198.7425pt>
-File: pictures/consumption02.png Graphic file (type png)
-<use pictures/consumption02.png>
-Package pdftex.def Info: pictures/consumption02.png  used on input line 6.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/capital02.png, id=295, 198.7425pt x 198.7425pt>
-File: pictures/capital02.png Graphic file (type png)
-<use pictures/capital02.png>
-Package pdftex.def Info: pictures/capital02.png  used on input line 7.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/TFP02.png, id=296, 198.7425pt x 198.7425pt>
-File: pictures/TFP02.png Graphic file (type png)
-<use pictures/TFP02.png>
-Package pdftex.def Info: pictures/TFP02.png  used on input line 8.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
+
+! LaTeX Error: File `pictures/consumption02' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 ...phics[width=3.5cm]{pictures/consumption02}}
+                                                  \qquad
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `pictures/capital02' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 ...egraphics[width=3.5cm]{pictures/capital02}}
+                                                  \qquad
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: File `pictures/TFP02' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...cludegraphics[width=3.5cm]{pictures/TFP02}}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 346.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 346.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.346 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 346.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [25
+[25
 
- <./pictures/consumption02.png (PNG copy)> <./pictures/capital02.png (PNG copy)> <./pictures/TFP02.png (PNG copy)>]
+]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 356.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 356.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.356 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 356.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [26
+[26
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 376.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 376.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.376 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 376.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [27
+[27
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
+ (DGE_CRED_Training.vrb)
 
-(DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 385.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 385.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.385 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 385.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [28
+[28
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 399.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 399.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.399 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 399.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [29
+[29
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 415.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 415.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.415 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 415.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [30
+[30
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 429.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 429.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.429 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 429.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [31
+[31
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 442.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 442.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.442 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 442.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
 [32
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 453.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 453.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.453 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 453.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [33
+[33
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -1958,230 +2409,437 @@ perfect_foresight_solver\T1/ua1/m/n/10.95 ,
  []
 
 )
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 463.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 463.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.463 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 463.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [34
+[34
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 483.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 483.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.483 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 483.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [35
+[35
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 500.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 500.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.500 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 500.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [36
+[36
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 518.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 518.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.518 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 518.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [37
+[37
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 537.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 537.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.537 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 537.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
 [38
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 556.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 556.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.556 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 556.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [39
+[39
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 567.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 567.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.567 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 567.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [40
+[40
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 578.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 578.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.578 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 578.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [41
+[41
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 591.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 591.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.591 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 591.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [42
+[42
 
 ] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 596.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 596.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.596 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 596.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [43
+[43
 
 ]
 LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ua1/b/n' tried instead on input line 614.
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 614.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 614.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.614 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 614.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [44
+[44
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 624.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 624.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.624 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 624.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [45
+[45
 
 ]
-<pictures/flowchart_macroprocessor.png, id=419, 449.68pt x 217.81375pt>
-File: pictures/flowchart_macroprocessor.png Graphic file (type png)
-<use pictures/flowchart_macroprocessor.png>
-Package pdftex.def Info: pictures/flowchart_macroprocessor.png  used on input line 635.
-(pdftex.def)             Requested size: 284.52756pt x 137.82494pt.
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 635.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+! LaTeX Error: File `pictures/flowchart_macroprocessor' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.635 \end{frame}
+                 
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 635.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.635 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 635.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [46
+[46
 
- <./pictures/flowchart_macroprocessor.png>]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 651.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+]
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 651.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.651 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 651.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [47
+[47
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 670.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 670.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.670 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 670.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [48
+[48
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 681.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 681.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.681 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 681.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [49
+[49
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 688.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 688.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.688 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 688.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [50
+[50
 
 ] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 691.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 691.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.691 \section{DGE-CRED Model}
+                              
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 691.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [51
+[51
 
 ] [52
 
 ]
-<pictures/Model_Structure.png, id=466, 963.6pt x 542.025pt>
+<pictures/Model_Structure.png, id=446, 963.6pt x 542.025pt>
 File: pictures/Model_Structure.png Graphic file (type png)
 <use pictures/Model_Structure.png>
 Package pdftex.def Info: pictures/Model_Structure.png  used on input line 711.
@@ -2189,37 +2847,69 @@ Package pdftex.def Info: pictures/Model_Structure.png  used on input line 711.
  [53
 
  <./pictures/Model_Structure.png>]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 729.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 729.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.729 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 729.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [54
+[54
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 744.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 744.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.744 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 744.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [55
+[55
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 760.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 760.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.760 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 760.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
 [56
 
 ]
@@ -2227,10 +2917,21 @@ Overfull \hbox (10.2378pt too wide) detected at line 784
 []
  []
 
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 784.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 784.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.784 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 784.
@@ -2242,10 +2943,21 @@ Overfull \hbox (10.2378pt too wide) detected at line 799
 []
  []
 
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 799.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 799.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.799 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 799.
@@ -2253,226 +2965,220 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 799.
 [58
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 816.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 816.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.816 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 816.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [59
+[59
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 830.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 830.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.830 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 830.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [60
+[60
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 853.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 853.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.853 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 853.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [61
+[61
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 868.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 868.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.868 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 868.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [62
+[62
 
 ]
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 889.
- ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1ptm.fd"
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 889.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 887.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.887 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 889.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 887.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [63
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 907.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 907.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [64
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 920.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 920.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [65
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 936.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 936.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [66
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 951.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 951.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [67
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 965.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 965.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [68
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 979.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 979.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
-[69
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 995.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 995.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [70
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1008.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1008.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [71
+[63
 
 ] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1010.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 890.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.890 \section{Model Simulation and Calibration}
+                                                
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1010.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 890.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [72
+[64
 
 ]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1016.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+
+LaTeX Warning: File `pictures/seperationbar.png' not found on input line 896.
+
+
+! Package pdftex.def Error: File `pictures/seperationbar.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.896 \end{frame}
+                 
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1016.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 896.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [73
+[65
 
  <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
-\tf@nav=\write10
-\openout10 = `DGE_CRED_Training.nav'.
+\tf@nav=\write11
+\openout11 = `DGE_CRED_Training.nav'.
 
-\tf@toc=\write11
-\openout11 = `DGE_CRED_Training.toc'.
+\tf@toc=\write12
+\openout12 = `DGE_CRED_Training.toc'.
 
-\tf@snm=\write12
-\openout12 = `DGE_CRED_Training.snm'.
+\tf@snm=\write13
+\openout13 = `DGE_CRED_Training.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1018.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1018.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 898.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 898.
+ (DGE_CRED_Training.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 898.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 898.
 
-(DGE_CRED_Training.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1018.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1018.
-Package rerunfilecheck Info: File `DGE_CRED_Training.out' has not changed.
-(rerunfilecheck)             Checksum: 7617D712D7E212237101E010CD47F976;1084.
 
+Package rerunfilecheck Warning: File `DGE_CRED_Training.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `DGE_CRED_Training.out':
+(rerunfilecheck)             Before: CCCEA450F61202B4CE59558EB53D4BF7;1037
+(rerunfilecheck)             After:  7617D712D7E212237101E010CD47F976;1084.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 3.0pt have occurred.
+
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'DGE_CRED_Training.run.xml'.
 \openout1 = `DGE_CRED_Training.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33439 strings out of 492891
- 645247 string characters out of 3133353
- 1084170 words of memory out of 3000000
- 36412 multiletter control sequences out of 15000+200000
- 158411 words of font info for 119 fonts, out of 3000000 for 9000
+ 33676 strings out of 492891
+ 648226 string characters out of 3133353
+ 1088266 words of memory out of 3000000
+ 36653 multiletter control sequences out of 15000+200000
+ 148711 words of font info for 116 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,21n,78p,797b,1501s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,21n,78p,797b,1500s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1b8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1ri8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
-b>
-Output written on DGE_CRED_Training.pdf (73 pages, 664370 bytes).
+mex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/urw/arial/ua1b8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1r8a.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/urw/arial/ua1ri8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
+Output written on DGE_CRED_Training.pdf (65 pages, 434266 bytes).
 PDF statistics:
- 692 PDF objects out of 1000 (max. 8388607)
- 177 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 618 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 199 words of extra memory for PDF output out of 10000 (max. 10000000)
 
