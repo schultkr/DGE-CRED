@@ -1,17 +1,23 @@
-\BOOKMARK [2][]{Outline0.1}{Introduction to Dynare}{}% 1
-\BOOKMARK [3][]{Outline0.1.1.4}{What is Dynare?}{Outline0.1}% 2
-\BOOKMARK [3][]{Outline0.1.2.5}{Neoclassical Growth Model}{Outline0.1}% 3
-\BOOKMARK [3][]{Outline0.1.3.7}{Setting up a Model File}{Outline0.1}% 4
-\BOOKMARK [3][]{Outline0.1.4.13}{Deterministic Simulation}{Outline0.1}% 5
-\BOOKMARK [3][]{Outline0.1.5.18}{Perfect Foresight Setup}{Outline0.1}% 6
-\BOOKMARK [3][]{Outline0.1.6.30}{Steady State}{Outline0.1}% 7
-\BOOKMARK [3][]{Outline0.1.7.34}{Remarks}{Outline0.1}% 8
-\BOOKMARK [3][]{Outline0.1.8.35}{Examples}{Outline0.1}% 9
-\BOOKMARK [3][]{Outline0.1.9.40}{Newton Method}{Outline0.1}% 10
-\BOOKMARK [3][]{Outline0.1.10.43}{Macro Processor}{Outline0.1}% 11
-\BOOKMARK [2][]{Outline0.2}{DGE-CRED Model}{}% 12
-\BOOKMARK [3][]{Outline0.2.1.52}{Introduction}{Outline0.2}% 13
-\BOOKMARK [3][]{Outline0.2.2.54}{Demand}{Outline0.2}% 14
-\BOOKMARK [3][]{Outline0.2.3.63}{Production}{Outline0.2}% 15
-\BOOKMARK [2][]{Outline0.3}{Model Simulation and Calibration}{}% 16
-\BOOKMARK [2][]{Outline0.4}{References}{}% 17
+\BOOKMARK [2][]{Outline0.1}{Motivation}{}% 1
+\BOOKMARK [2][]{Outline0.2}{Modeling Approach}{}% 2
+\BOOKMARK [3][]{Outline0.2.1.6}{Key characteristics}{Outline0.2}% 3
+\BOOKMARK [3][]{Outline0.2.2.11}{Advantages and limitations of the modeling approach}{Outline0.2}% 4
+\BOOKMARK [3][]{Outline0.2.3.13}{Possible applications}{Outline0.2}% 5
+\BOOKMARK [2][]{Outline0.3}{Model building steps}{}% 6
+\BOOKMARK [3][]{Outline0.3.1.15}{Data for model calibration}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.2.16}{Modeling Steps}{Outline0.3}% 8
+\BOOKMARK [3][]{Outline0.3.3.18}{Regression analysis}{Outline0.3}% 9
+\BOOKMARK [3][]{Outline0.3.4.19}{Performing scenario analysis}{Outline0.3}% 10
+\BOOKMARK [2][]{Outline0.4}{Introduction to Dynare}{}% 11
+\BOOKMARK [3][]{Outline0.4.1.21}{What is Dynare?}{Outline0.4}% 12
+\BOOKMARK [3][]{Outline0.4.2.22}{Implementing a Model in Dynare}{Outline0.4}% 13
+\BOOKMARK [3][]{Outline0.4.3.30}{Steady State in Dynare}{Outline0.4}% 14
+\BOOKMARK [3][]{Outline0.4.4.36}{Deterministic Simulations in Dynare}{Outline0.4}% 15
+\BOOKMARK [3][]{Outline0.4.5.77}{Remarks and Examples}{Outline0.4}% 16
+\BOOKMARK [3][]{Outline0.4.6.82}{Macro Processor}{Outline0.4}% 17
+\BOOKMARK [2][]{Outline0.5}{DGE\205CRED Model}{}% 18
+\BOOKMARK [3][]{Outline0.5.1.95}{Introduction}{Outline0.5}% 19
+\BOOKMARK [3][]{Outline0.5.2.97}{Demand}{Outline0.5}% 20
+\BOOKMARK [3][]{Outline0.5.3.106}{Production}{Outline0.5}% 21
+\BOOKMARK [2][]{Outline0.6}{Model Simulation and Calibration}{}% 22
+\BOOKMARK [2][]{Outline0.7}{References}{}% 23
