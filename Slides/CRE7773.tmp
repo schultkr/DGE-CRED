@@ -29,11 +29,6 @@
 \usepackage{upquote}
 \usepackage{subfigure}
 \usepackage{ragged2e}
-\lstset{ 
-  backgroundcolor=\color{white},
-	breaklines=true,
-	basicstyle=\tiny
-}
 % Section numbering:
 \setbeamertemplate{section in toc}[sections numbered]
 \setbeamertemplate{subsection in toc}[subsections numbered]
@@ -293,107 +288,88 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Model building steps}
 
-\subsection{Definition of Scenarios}
+\subsection{Identification of Climate Hazards}
+
 
 \begin{frame}<presentation>
 	\frametitle{{\thesection.\thesubsection} Define Climate Change Scenarios}
 	\begin{itemize}
 		\item First, it is necessary to obtain climate change scenarios for Vietnam.
 		\item We use results from \cite{thuc2016climate} to define regional specific climate change variables.
-		\item The scenarios are based on the IPCC scenarios RCP 4.5 and 8.5.
 		\item It is possible to define regional specific paths for:
 			\begin{itemize}
 				\item annual average temperature 
 				\item annual average precipitation
 				\item sea level rise
 			\end{itemize}
-
-	\end{itemize}
-\end{frame}
-
-\begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection} Weather Extremes}
-	\begin{itemize}
-		\item \cite{thuc2016climate} do not explicitly report result sfor the frequency of weather extremes.
 		\item To include weather extremes we need to define the relationship between annual averages and the frequency of weather extremes, e.g. 
 			\begin{itemize}
 				\item cyclones
 				\item droughts
 			\end{itemize}
-		\item Previous studies report changes in the frequency of weather extremes for different climate change scenarios (see e.g. \cite{arndt2015economic}. 
 	\end{itemize}
 \end{frame}
 
 
 \begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection} Baseline Scenario (1)}
+	\frametitle{{\thesection.\thesubsection} Data for model calibration}
 	\begin{itemize}
-		\item To evaluate the potential impact of climate change we need a hypothetical reference path.
-		\item We assume for this path no further change in climate variables.
-		\item Further we need to define the evolution of sectoral TFP.
-		\item With a reference path it is possible to disentangle the impact of different impact chains on the economy.
+		\item Based on identified damages and potential losses in previous studies one can calibrate functional forms of the damage functions
+		\item Climate change will affect economic sectors to a different extent: Previous studies show a high potential impact of agriculture, electricity markets and transportation
 	\end{itemize}
 \end{frame}
 
+\subsection{Definition of Scenarios}
 
-\begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection} Baseline Scenario (2)}
-	\begin{itemize}
-		\item	Model parameters set to match characteristics of Vietnamese economy in 2016
-		\item	Catch-up process and transition to developed economy (Japan selected as benchmark)
-		\begin{itemize}
-			\item	Geometric average annual growth rate set to 4 percent  
-			\item	Determine sectoral TFP shocks to match an assumed new long-run composition of gross value added by economic activity (agriculture 1 percent, industry 35 percent, services 65 percent)
-			\item	Long-run dynamics of labour productivity to ensure employment shares converge to values observed for developed economies
-			\item	Exogenous evolution of sectoral labour and total factor productivity is completed after 120 periods
-		\end{itemize}
-		\item	No consideration of climate (change) effects on economic development
-	\end{itemize}
-\end{frame}
-
-
-
-
-\subsection{Identification of Climate Hazards}
-
-\begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection} Climate Hazards}
-	\begin{itemize}
-		\item	Vietnam will suffer from Sea level rise.
-		\item Cyclones
-	\end{itemize}
-\end{frame}
 
 
 \subsection{Calibration of Model Parameters}
+
 \begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection} Calibration}
+	\frametitle{{\thesection.\thesubsection} Regression analysis}
 	\begin{itemize}
-		\item	It is necessary to define strucutral parameters of the modle to reflect ....
+		\item D...
 	\end{itemize}
 \end{frame}
 
-%\begin{frame}<presentation>
-	%\frametitle{{\thesection.\thesubsection} Data for model calibration}
-	%\begin{itemize}
-		%\item Based on identified damages and potential losses in previous studies one can calibrate functional forms of the damage functions
-		%\item Climate change will affect economic sectors to a different extent: Previous studies show a high potential impact of agriculture, electricity markets and transportation
-	%\end{itemize}
-%\end{frame}
-%
-%
-%
-%\begin{frame}<presentation>
-	%\frametitle{{\thesection.\thesubsection} Modeling Steps}
-%\begin{itemize}
-	%\item In order to gauge the impact of climate change on economic outcomes, deterministic simulations are conducted.
-	%\item Different climate change scenarios need to be defined first, e.g. long-term projections for temperature or the sea level. 
-	%\item The model is simulated from its initial condition along the assumed climate change path.
-	%\item Simulation results then show the adjustment processes to climate change in the economy.
-	%\item Further, it is possible to specify adaptation measures reducing the impact of climate change on the damage function. %Adaptation measures such as building damns will increase government expenditures to tackle climate change.
-	%\end{itemize}
-%\end{frame}
 
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Modeling Steps}
+\begin{itemize}
+	\item In order to gauge the impact of climate change on economic outcomes, deterministic simulations are conducted.
+	\item Different climate change scenarios need to be defined first, e.g. long-term projections for temperature or the sea level. 
+	\item The model is simulated from its initial condition along the assumed climate change path.
+	\item Simulation results then show the adjustment processes to climate change in the economy.
+	\item Further, it is possible to specify adaptation measures reducing the impact of climate change on the damage function. %Adaptation measures such as building damns will increase government expenditures to tackle climate change.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Modeling Steps}
+	\begin{itemize}
+	\item An increase in government expenditures related to adaptation measures will reduce the available funds for other projects% like education with implications on long-run economic growth and human capital formation.
+	\item Further, it is possible to reallocate economic activity from regions very likely to be severely affected by climate change to regions with a lower exposure to climate change. A relocation of economic activity will very likely reduce productivity today to reduce potential damages in the future. This also applies to shifts from productive activities between economic sectors.
+	\end{itemize}
+\end{frame}
+
+
+\subsection{Performing scenario analysis}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Performing scenario analysis}
+	\begin{itemize}
+		\item 	Model parameters set to match characteristics of Vietnamese economy in 2016
+		\item 	Catch-up process and transition to developed economy (Japan selected as benchmark)
+		\begin{itemize}
+			\item 	Geometric average annual growth rate set to 4 percent  
+			\item 		Determine sectoral TFP shocks to match an assumed new long-run composition of gross value added by economic activity (agriculture 1 percent, industry 35 percent, services 65 percent)
+			\item 	Long-run dynamics of labour productivity to ensure employment shares converge to values observed for developed economies
+			\item 		Exogenous evolution of sectoral labour and total factor productivity is completed after 120 periods
+		\end{itemize}
+		\item 	No consideration of climate (change) effects on economic development
+		
+	\end{itemize}
+\end{frame}
+ 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction to Dynare}
@@ -1225,81 +1201,6 @@
 \end{frame}
 
 
-\subsection{Folder Structure}
-\begin{frame}[plain]
-\frametitle{Main Folder Structure}
-\begin{enumerate}
-\item The main file containing all necessary mod-files is {\tt DGE\_CRED\_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
-\item Subroutines responsible for finding the initial and terminal conditions are located in the subfolder {\tt Functions}:
-\item To define scenarios and structural parameters you need to create an Excel file located in the subfolder {\tt ExcelFiles}:
-\end{enumerate}
-\end{frame}
-
-
-\begin{frame}[plain]
-\frametitle{Mod Files}
-\begin{enumerate}
-\item The main file containing all necessary mod-files is {\tt DGE\_CRED\_Model.mod}. This file includes the following files stored in the {\tt ModFiles} folder:
-\begin{enumerate}
-\item {\tt DGE\_CRED\_Model\_Declarations.mod} declares all endogenous and exogenous variables of the model and structural parameters.
-\item {\tt DGE\_CRED\_Model\_Parameters.mod} assigns values to the structural parameters of the model.
-\item {\tt DGE\_CRED\_Model\_Equations.mod} contains the equations of the model.
-\item {\tt DGE\_CRED\_Model\_LatexOutput.mod} produces latex output for documentation of the declared variables and model equations.
-\item {\tt DGE\_CRED\_Model\_SteadyState.mod} computes initial and terminal condition for the dynamic simulation.
-\item {\tt DGE\_CRED\_Model\_Simulations.mod} starts the dynamic simulation.
-\end{enumerate}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}[plain]
-\frametitle{Functions}
-\begin{enumerate}
-\setcounter{enumi}{1}
-\item Subroutines responsible for finding the initial and terminal conditions are located in the subfolder {\tt Functions}:
-\begin{enumerate}
-\item {\tt Calibration.mat} finds the initial conditions to reflect a specific year of the economy.
-\item {\tt FindA.mat} looks for exogenous productivity shocks across sectors and regions to meet the terminal conditions.
-\item {\tt FindK.mat} looks for a capital allocation across sectors and regions to fulfill the static equations of the model.
-\item {\tt rng.mat} random number generator function necessary for Octave users.
-\item {\tt LoadExogenous.mat} reads exogenous variables for different scenarios.
-\end{enumerate}
-\end{enumerate}
-\end{frame}
-
-\begin{frame}[plain]
-\frametitle{Excel Files}
-\begin{enumerate}
-\setcounter{enumi}{2}
-\item To define scenarios and structural parameters you need to create an Excel file located in the subfolder {\tt ExcelFiles}:
-\begin{enumerate}
-\item {\tt ModelSimulationandCalibrationforKSectorsandRregions.xlsx} has multiple sheets:
-\begin{enumerate}
-\item initial {\tt Start}
-\item terminal {\tt Terminal}
-\item parameters to define rigidity parameters {\tt Dynamics}
-\item elasticity parameters and tax rates {\tt Structural Parameters}
-\item coefficients for regional and sector specific damage functions {\tt Climate Damage Functions (Labour, Capital, TFP)}
-\item {\tt Baseline} scenario and other optional scenario sheets {\tt Adaptation and Extremes} defining paths for exogenous variables 
-\item {\tt Data} to load external data sources
-\end{enumerate}
-\end{enumerate}
-\end{enumerate}
-\end{frame}
-
-
-
-\begin{frame}[plain]
-\frametitle{Mod Files}
-\begin{itemize}
-\item We will now define and implement all model equations into Dynare.
-\item For each Equation we will explain its derivation and how to implement it.
-\item The folder ModFiles contains the file \texttt{DGE\_CRED\_Model\_Equations.mod}.
-\item \texttt{DGE\_CRED\_Model\_Equations.mod} contains all model equations.
-\item We need to use the symbols defined in \texttt{DGE\_CRED\_Model\_Declarations.mod}.
-\end{itemize}
-\end{frame}
-
-
 \subsection{Demand}
 \begin{frame}
 \frametitle{Households}
@@ -1310,8 +1211,8 @@
 \item the optimization problem of the representative household is
 \begin{align*}
  & \underset{C_t(h), \, K_{k,r,t+1}(h), \, I_{k,r,t}(h), , \, N_{k,r,t}(h), \, B_{t+1}}{\mbox{max}} \sum_{t=0}^{\infty} \beta^{t} \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} A^{N}_{k,r,t} \, \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) \\
-\mbox{s.t.} & P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) = \\
- & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h)+S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h)
+\mbox{s.t.} & P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + B_{t+1}(h) = \\
+ & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h)
  %K_{k,r,t+1} = (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right).
 \end{align*}
 \end{itemize}
@@ -1325,8 +1226,8 @@
 \item We set-up the Lagrangian for the optimization problem to derive the first order conditions.
 \begin{align*}
 & \sum_{t=0}^{\infty} \beta^{t} \Bigg[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} A^{N}_{k,r,t} \, \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) \\
-& - \lambda_{t}(h) \Big(P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) \\
-& - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h) \Big) \\
+& - \lambda_{t}(h) \Big(P_{t} \, C_{t}(h) \, (1 + \tau^{C}) + \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h) + B_{t+1}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) \\
+& - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - S^{f}_{t} \, \phi^{B}_{t} \, (1 + r^{f}_{t} )\, B_{t}(h) \Big) \\
 & - \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace\Bigg] .
 \end{align*}
 \end{itemize}
@@ -1339,7 +1240,7 @@
 \begin{itemize}
 \item Marginal utility of consumption
 \begin{align*}
-\lambda_{t} =\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1+\tau^C)}
+\lambda_{t} =\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}
 \end{align*}
 \item Labour supply curve
 \begin{align*}
@@ -1350,22 +1251,25 @@
 
 \begin{frame}[fragile]
 \frametitle{Implementation of Households First Order Conditions - Intratemporal}
-
-\begin{lstlisting}[frame = single]
-model;
-...
-    @# for sec in 1:Sectors
-        @# for reg in 1:Regions
-        ...
+\scriptsize
+\begin{verbatim}
+	 model;
         [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
-        (1 - tauN_p)*W_@{sec}_@{reg}*(P*C/PoP)^(-sigmaC_p)/(1+tauC_p) = 
-        A_N_@{sec}_@{reg}*phiL_@{sec}_@{reg}_p*(N_@{sec}_@{reg})^(sigmaL_p);
-        ...						
-        @# endfor // end loop over regions
-    @# endfor // end loop over sectors
-...
-end;
-\end{lstlisting}
+        (1 - tauN_p) * W_@{sec}_@{reg} * (P * C/PoP)^(-sigmaC_p) / (1 + tauC_p) = A_N_@{sec}_@{reg} * phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
+	 end;
+\end{verbatim}
+
+
+%\begin{itemize}
+%\item Marginal utility of consumption
+%\begin{align*}
+%\lambda_{t} =\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1 + \tau^C)}
+%\end{align*}
+%\item Labour supply curve
+%\begin{align*}
+%\phi^{L}_{k,r} \, A^{N}_{k,r,t} \, N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{N}) \\
+%\end{align*}
+%\end{itemize}
 \end{frame}
 
 
@@ -1374,13 +1278,17 @@ end;
 \frametitle{Households First Order Conditions - Intertemporal}
 \scriptsize
 \begin{itemize}
+\item Euler equation for foreign bonds
+\begin{align*}
+\lambda_{t+1} \, \beta \, S^{f}_{t+1} \, \phi^{B}_{t+1} \left(1+{{r^{f}}_{t+1}}\right) = \lambda_{t} \\
+\end{align*}
 \item Euler equation for capital
 \begin{align*}
-\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} \, (1 - \tau^K)+(1 - \delta - D^{K}_{k,r,t+1}) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
+\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} \, (1 - \tau^K) + (1 - \delta - D^{K}_{k,r,t+1}) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
 \end{align*}
 \item Euler equation for investment
 \begin{align*}
-P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})+\frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial (\frac{I_{k,r,t}}{I_{k,r,t-1}})} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) - \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial (\frac{I_{k,r,t+1}}{I_{k,r,t}})} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
+P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) + \frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial (\frac{I_{k,r,t}}{I_{k,r,t-1}})} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) - \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial (\frac{I_{k,r,t+1}}{I_{k,r,t}})} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
 \end{align*}
 \item Investment adjustment cost
 \begin{align*}
@@ -1389,50 +1297,21 @@ P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gam
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Households First Order Conditions - Intertemporal (1)}
-
-\begin{lstlisting}[frame = single]
-...
-# Gamma_@{sec}_@{reg} = (3 - (exp(sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1))
-                       +exp(-sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1))));
-												
-# Gammapr_@{sec}_@{reg} = -I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)*sqrt(phiK_p/2)*
-                          (exp(sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1))
-                          -exp(-sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1)));
-													
-# Gammaprp1_@{sec}_@{reg} =  I_@{sec}_@{reg}(+1)^2/(I_@{sec}_@{reg})^2*sqrt(phiK_p/2)*
-                             (exp(sqrt(phiK_p/2)*(I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)) 
-                             -exp(-sqrt(phiK_p/2)*(I_@{sec}_@{reg}(+1)/I_@{sec}_@{reg}-1)));
-														
-# Gammap1_@{sec}_@{reg} = (3 - (exp(sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1))
-                         +exp(-sqrt(phiK_p/2)*(I_@{sec}_@{reg}/I_@{sec}_@{reg}(-1)-1))));
-...
-\end{lstlisting}
+\begin{frame}
+\frametitle{Households First Order Conditions - Intertemporal}
+\scriptsize
+\begin{itemize}
+\item Euler equation for capital
+\begin{align*}
+\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} \, (1 - \tau^K) + (1 - \delta - D^{K}_{k,r,t+1}) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
+\end{align*}
+\item Euler equation for investment
+\begin{align*}
+P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}}) + \frac{\partial \Gamma(\frac{I_{k,r,t}}{I_{k,r,t-1}})}{\partial (\frac{I_{k,r,t}}{I_{k,r,t-1}})} \, \frac{I_{k,r,t}}{I_{k,r,t-1}} \right) - \beta \lambda_{t+1}(h) \, \omega^{I}_{k,r,t+1} \, \frac{\partial \Gamma(\frac{I_{k,r,t+1}}{I_{k,r,t}})}{\partial (\frac{I_{k,r,t+1}}{I_{k,r,t}})} \, \left(\frac{I_{k,r,t+1}}{I_{k,r,t}}\right)^2
+\end{align*}
+\end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Households First Order Conditions - Intertemporal (2)}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'HH FOC capital',mcp = 'K_@{sec}_@{reg}>0']
-(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*beta_p*r_@{sec}_@{reg}(+1)*P_@{sec}_@{reg}(+1)*(1 - tauK_p)
-+ (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*omegaI_@{sec}_@{reg}(+1) 
-* beta_p*(1 - delta_p - D_K_@{sec}_@{reg}(+1))
-= omegaI_@{sec}_@{reg}*(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p));
-
-[name = 'HH FOC investment',mcp = 'I_@{sec}_@{reg} > 0']       
-(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p))*P_@{sec}_@{reg} = 
-(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p))*omegaI_@{sec}_@{reg}*(Gamma_@{sec}_@{reg}+Gammapr_@{sec}_@{reg})
-+ beta_p*(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*omegaI_@{sec}_@{reg}(+1)*Gammaprp1_@{sec}_@{reg};
-				
-[name = 'LOM capital',mcp = 'I_@{sec}_@{reg} > 0']
-K_@{sec}_@{reg} = (1 - delta_p - D_K_@{sec}_@{reg})*K_@{sec}_@{reg}(-1)+I_@{sec}_@{reg}*Gamma_@{sec}_@{reg};
-...
-\end{lstlisting}
-\end{frame}
 
 \begin{frame}
 \frametitle{Rest of the world}
@@ -1450,21 +1329,6 @@ K_@{sec}_@{reg} = (1 - delta_p - D_K_@{sec}_@{reg})*K_@{sec}_@{reg}(-1)+I_@{sec}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation Rest of the World}
-
-\begin{lstlisting}[frame = single]
-...
-# phiB = exp(-phiB_p*((Sf(+1)*rf(+1)*B/Y(+1)+NX(+1)/Y(+1))))
-
-[name = 'Foreign Assets']
-(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*beta_p*Sf(+1)*phiB*(1+rf(+1))
-= (C/PoP)^(-sigmaC_p)/(P*(1+tauC_p));
-...
-\end{lstlisting}
-\end{frame}
-
-
 
 \begin{frame}
 \frametitle{Government Budget Constraint}
@@ -1473,41 +1337,11 @@ K_@{sec}_@{reg} = (1 - delta_p - D_K_@{sec}_@{reg})*K_@{sec}_@{reg}(-1)+I_@{sec}
 \item We are interested in different policy measures taken by the government to adapt to a new climate regime. 
 \item Government behaviour is not a result of an optimization problem. 
 \begin{align*}
-G_{t}+\sum_{k}^{K} \sum_{r}^{R} \sum_{z}^{Z} G^{A,z}_{k,r,t}+B^G_{t+1} =& \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K}+\tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}+(\tau^{N}+\tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \right\rbrace \nonumber \\
-&+(1+r^{f}_{t}) \, S^{f}_{t} \phi^{B}_{t} \, B^G_{t}
+G_{t} + \sum_{k}^{K} \sum_{r}^{R} G^{A}_{k,r,t} + B^G_{t+1} =& \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K} + \tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t} + (\tau^{N} + \tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \right\rbrace \nonumber \\
+& + (1 + r^{f}_{t}) \, S^{f}_{t} \phi^{B}_{t} \, B^G_{t}
 \end{align*}
 \end{itemize}
 \end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Government Budget Constraint}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'Government Budget Constraint']
-G+BG
-@# for sec in 1:Sectors
-    @# for reg in 1:Regions
-        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
-           + G_A_@{z}_@{sec}_@{reg}+G_A_PREC_@{sec}_@{reg}
-        @# endfor
-    @# endfor
-@# endfor
-= (1+rf)*Sf*exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y)))*BG (-1)+tauC_p*C
-@# for sec in 1:Sectors
-    @# for reg in 1:Regions
-       +(tauN_p+tauN_@{sec}_@{reg})*W_@{sec}_@{reg}*N_@{sec}_@{reg}*PoP/P
-       +(tauK_p+tauK_@{sec}_@{reg})*P_@{sec}_@{reg} /P*r_@{sec}_@{reg}*K_@{sec}_@{reg} 
-    @# endfor
-@# endfor
-;
-
-[name = 'Government Budget Deficit']
-BG = exo_BG;
-...
-\end{lstlisting}
-\end{frame}
-
 
 \begin{frame}
 \frametitle{Government Policy Instruments}
@@ -1532,29 +1366,6 @@ K^{A,z}_{k,r,t+1} = (1 - \delta_{K^{A,z},k,r}) \, K^{A,z}_{k,r,t} + G^{A,z}_{k,r
 \end{itemize}
 \end{frame}
 
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Government Policy Instruments}
-
-\begin{lstlisting}[frame = single]
-...
-@# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
- [name = 'sector specific adaptation expenditures by the government against sea level rise']
- K_A_@{z}_@{sec}_@{reg} = exo_GA_@{z}_@{sec}_@{reg};
-
- [name = 'sector specific adaptation capital against sea level rise']
- K_A_@{z}_@{sec}_@{reg} = (1-deltaKA@{z}_@{sec}_@{reg}_p)*K_A_@{z}_@{sec}_@{reg}(-1)+G_A_@{z}_@{sec}_@{reg};
-@# endfor
-[name = 'sector specific corporate tax rate paid by firms']
-tauK_@{sec}_@{reg} = tauK_@{sec}_@{reg}_p + exo_tauK_@{sec}_@{reg};
-
-[name = 'sector specific labour tax rate paid by firms']
-tauN_@{sec}_@{reg} = tauN_@{sec}_@{reg}_p + exo_tauN_@{sec}_@{reg};	
-...
-\end{lstlisting}
-\end{frame}
-
-
 \begin{frame}
 \frametitle{Resource constraint}
 \scriptsize
@@ -1570,27 +1381,7 @@ NX_t = B_{t+1} - (1 + r^{f}_{t}) S^{f}_{t} \phi^B_{t} B_{t}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Resource Constraint}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'Resource Constraint']
-Y = C + I + G + NX
-@# for sec in 1:Sectors
-    @# for reg in 1:Regions
-		    @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
-            + G_A_@{z}_@{sec}_@{reg}
-		    @# endfor				
-    @# endfor
-@# endfor
-;
-
-[name = 'Net Exports']
-NX = (B - (1 + rf) * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * Sf * B(-1));
-...
-\end{lstlisting}
-\end{frame}
+%
 %
 \subsection{Production}
 
@@ -1612,28 +1403,6 @@ Y_{t} &= \left(\sum_{k} {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} Y_{k,t}^{\frac{\eta^
 \end{frame}
 
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Sectoral Decomposition}
-\begin{lstlisting}[frame = single]
-...
-[name = 'demand for sector output']
-P_@{sec}/P = omegaQ_@{sec}_p^(1/etaQ_p)*(Y_@{sec}/Y)^(-1/etaQ_p);
-...
-\end{lstlisting}
-
-\begin{lstlisting}[frame = single]
-[name = 'aggregate gross value added']
-P*Y = 
-@# for sec in 1:Sectors
-   + P_@{sec}*Y_@{sec}
-@# endfor
-;
-\end{lstlisting}
-
-\end{frame}
-
-
-
 \begin{frame}
 \frametitle{Regional Decomposition}
 \scriptsize
@@ -1648,29 +1417,6 @@ Y_{k,t} &= \left(\sum_{k} {\omega^{Q}_{k,r}}^{\frac{1}{\eta^Q_{k}}} Y_{k,r,t}^{\
 \frac{P_{k,r,t}}{P_{k,t}} &= {\omega^{Q}_{k,r}}^{\frac{1}{\eta^{Q}_{k}}} \left(\frac{Y_{k,r,t}}{Y_{k,t}}\right)^{\frac{-1}{\eta^{Q}_{k}}}
 \end{align*}
 \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Regional Decomposition}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'demand for regional sector output',mcp = 'Y_@{sec}_@{reg} > 0']
-P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
-                 *((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaQ_@{sec}_p)*P_@{sec};
-...
-\end{lstlisting}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'sector aggregate specific output']
-Y_@{sec} = (
-           @# for reg in 1:Regions
-              +omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)*((Y_@{sec}_@{reg}))^((etaQ_@{sec}_p-1)/etaQ_@{sec}_p)
-           @# endfor
-           )^(etaQ_@{sec}_p/(etaQ_@{sec}_p-W1));
-...
-\end{lstlisting}
 \end{frame}
 
 \begin{frame}
@@ -1689,7 +1435,7 @@ Y_@{sec} = (
 
 \begin{frame}
 \frametitle{Damages on TFP}
-
+\tiny
 \begin{align*}
 {{D_{k,r}}_{t}} &= \Big\lbrace \nonumber \\
  & (\underbrace{{{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}}_{\mbox{impact of temperature}})  \, \underbrace{exp(-\phi^{G^{A,T}}_{k,r} K^{A,T}_{k,r,t})}_{\mbox{impact of adaptation}} \, 
@@ -1702,34 +1448,9 @@ Y_@{sec} = (
 \end{align*}
 \end{frame}
 
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Damages on TFP}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'sector specific damage function']
-D_@{sec}_@{reg} = min(0.7,
-(a_T_1_@{sec}_@{reg}_p * T_@{reg} + a_T_2_@{sec}_@{reg}_p * T_@{reg}^(a_T_3_@{sec}_@{reg}_p))
- * exp(-phiGAT_@{sec}_@{reg}_p*K_A_T_@{sec}_@{reg}(-1)) + 
-(a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p))
- * (SL > (K_A_SL_@{sec}_@{reg}(-1) / phiGASL_@{sec}_@{reg}_p)) + 
-(a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p))
- * exp(-phiGAWS_@{sec}_@{reg}_p*K_A_WS_@{sec}_@{reg}(-1)) + 
-(a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p))
- * exp(-phiGAPREC_@{sec}_@{reg}_p*K_A_PREC_@{sec}_@{reg}(-1)) +
-(a_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + a_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(a_DR_3_@{sec}_@{reg}_p))
- * exp(-phiGADRO_@{sec}_@{reg}_p*K_A_DRO_@{sec}_@{reg}(-1)) +
-(a_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + a_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(a_CY_3_@{sec}_@{reg}_p))
- * exp(-phiGACYC_@{sec}_@{reg}_p*K_A_CYC_@{sec}_@{reg}(-1))
-								);
-...
-\end{lstlisting}
-\end{frame}
-
 \begin{frame}
 \frametitle{Damages on Labour Productivity}
-
+\tiny
 \begin{align*}
 {{D^{N}_{k,r}}_{t}}=& \Big( \nonumber \\
 &\underbrace{{{a^{N}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{N}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{N}_{T,3,k,r}}}_{\mbox{impact of temperature}} + 
@@ -1742,28 +1463,9 @@ D_@{sec}_@{reg} = min(0.7,
 \end{align*}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Damages on Labour Productivity}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'sector specific damage function on labour productivity']
-D_N_@{sec}_@{reg} = min(1,aN_T_1_@{sec}_@{reg}_p * T_@{reg} + aN_T_2_@{sec}_@{reg}_p * T_@{reg}^(aN_T_3_@{sec}_@{reg}_p) + 
-aN_SL_1_@{sec}_@{reg}_p * SL + aN_SL_2_@{sec}_@{reg}_p * SL^(aN_SL_3_@{sec}_@{reg}_p) +
-aN_W_1_@{sec}_@{reg}_p * WS_@{reg} + aN_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aN_W_3_@{sec}_@{reg}_p) + 
-aN_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aN_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aN_P_3_@{sec}_@{reg}_p) + 
-aN_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aN_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aN_DR_3_@{sec}_@{reg}_p) +
-aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_CY_3_@{sec}_@{reg}_p)
-);
-...
-\end{lstlisting}
-\end{frame}
-
-
-
 \begin{frame}
 \frametitle{Damages on Capital}
-
+\tiny
 \begin{align*}
 {{D^{K}_{k,r}}_{t}}=& \Big( \nonumber \\
 &\underbrace{{{a^{K}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{K}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{K}_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a^{K}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{K}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{K}_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
@@ -1775,24 +1477,79 @@ aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_
 \end{align*}
 \end{frame}
 
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Damages on Capital}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'sector specific damage function on capital formation']
-D_K_@{sec}_@{reg} = min(1,aK_T_1_@{sec}_@{reg}_p*T_@{reg}+aK_T_2_@{sec}_@{reg}_p*T_@{reg}^(aK_T_3_@{sec}_@{reg}_p)+ 
-aK_SL_1_@{sec}_@{reg}_p*SL+aK_SL_2_@{sec}_@{reg}_p*SL^(aK_SL_3_@{sec}_@{reg}_p)+
-aK_W_1_@{sec}_@{reg}_p*WS_@{reg}+aK_W_2_@{sec}_@{reg}_p*WS_@{reg}^(aK_W_3_@{sec}_@{reg}_p)+
-aK_P_1_@{sec}_@{reg}_p*PREC_@{reg}+aK_P_2_@{sec}_@{reg}_p*PREC_@{reg}^(aK_P_3_@{sec}_@{reg}_p)+
-aK_DR_1_@{sec}_@{reg}_p*DRO_@{reg}+aK_DR_2_@{sec}_@{reg}_p*DRO_@{reg}^(aK_DR_3_@{sec}_@{reg}_p)+
-aK_CY_1_@{sec}_@{reg}_p*CYC_@{reg}+aK_CY_2_@{sec}_@{reg}_p*CYC_@{reg}^(aK_CY_3_@{sec}_@{reg}_p)
-);
-...
-\end{lstlisting}
+\begin{frame}
+\frametitle{Regional Decomposition}
+\scriptsize
+\begin{itemize}
+\item In order to model regional economic activity we further decompose the production process on a regional level.
+\begin{align*}
+\underset{Y_{k,r,t}}{\mathrm{min}} & \sum_{k} Y_{k,r,t} \, P_{k,r,t} \\ 
+Y_{k,t} &= \left(\sum_{k} {\omega^{Q}_{k,r}}^{\frac{1}{\eta^Q_{k}}} Y_{k,r,t}^{\frac{\eta^Q_{k}-1}{\eta^Q_{k}}} \right)^{\frac{\eta^Q_{k}}{\eta^Q_{k}-1}}
+\end{align*}
+\item Demand for sectoral and regional products correspond to the first order conditions of the above optimization problem.
+\begin{align*}
+\frac{P_{k,r,t}}{P_{k,t}} &= {\omega^{Q}_{k,r}}^{\frac{1}{\eta^{Q}_{k}}} \left(\frac{Y_{k,r,t}}{Y_{k,t}}\right)^{\frac{-1}{\eta^{Q}_{k}}}
+\end{align*}
+\end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Regional Production}
+\scriptsize
+\begin{itemize}
+\item At the regional and sectoral level are representative firms maximizing profits using capital $K_{k,r,t}$ and labour $L_{k,r,t} = N_{k,r,t} \, Pop_{t}$ provided by households to produce products. 
+\item They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.
+\item Representative firms have access to a regional and sector specific constant elasticity of substitution production function.
+\item The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function affecting total factor productivity $A_{k,r,t}$ by $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, WS_{r,t}, \, SL_{r,t}, \, CYC_{r,t}, \, DRO_{r,t}, \, G^{A}_{r,k,t} \right)$.
+\item Further, we explicitly differentiate between climate induced damages affecting labour productivity $D_{N,k,r,t}$ and capital depreciation $D_{K,k,r,t}$. 
+\item As in \cite{nordhaus1993optimal}, we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Damages on TFP}
+\tiny
+\begin{align*}
+{{D_{k,r}}_{t}} &= \Big\lbrace \nonumber \\
+ & (\underbrace{{{a_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a_{T,3,k,r}}}_{\mbox{impact of temperature}})  \, \underbrace{exp(-\phi^{G^{A,T}}_{k,r} K^{A,T}_{k,r,t})}_{\mbox{impact of adaptation}} \, 
+ + (\underbrace{{{a_{SL,1,k,r}}}\, {{SL}_{t}}+{{a_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a_{SL,3,k,r}}}}}_{\mbox{impact of sea level}})   \, \underbrace{I(SL > \frac{K^{A,SL}_{k,r,t}}{\phi^{G^{A,SL}}_{k,r}})}_{\mbox{impact of adaptation}} \\
+& +  (\underbrace{{{a_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}}) \, \underbrace{exp(-\phi^{G^{A,WS}}_{k,r} K^{A,WS}_{k,r,t})}_{\mbox{impact of adaptation}} \\
+& + (\underbrace{{{a_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}}) \, \underbrace{exp(-\phi^{G^{A,PREC}}_{k,r} K^{A,PREC}_{k,r,t})}_{\mbox{impact of adaptation}} \nonumber \\
+& +  (\underbrace{{{a_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}) \, \underbrace{exp(-\phi^{G^{A,CYC}}_{k,r} K^{A,CYC}_{k,r,t})}_{\mbox{impact of adaptation}} \\
+& +  (\underbrace{{{a_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}}) \, \underbrace{exp(-\phi^{G^{A,DRO}}_{k,r} K^{A,DRO}_{k,r,t})}_{\mbox{impact of adaptation}} \\
+& \Big\rbrace.
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Damages on Labour Productivity}
+\tiny
+\begin{align*}
+{{D^{N}_{k,r}}_{t}}=& \Big( \nonumber \\
+&\underbrace{{{a^{N}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{N}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{N}_{T,3,k,r}}}_{\mbox{impact of temperature}} + 
+\underbrace{{{a^{N}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{N}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{N}_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
++ & \underbrace{{{a^{N}_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{N}_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{N}_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}} 
++ (\underbrace{{{a^{N}_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a^{N}_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{N}_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}}) \,  \nonumber \\
++ & \underbrace{{{a^{N}_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{N}_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{N}_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}
++ \underbrace{{{a^{N}_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a^{N}_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{N}_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}} \nonumber \\
+&\Big).
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Damages on Capital}
+\tiny
+\begin{align*}
+{{D^{K}_{k,r}}_{t}}=& \Big( \nonumber \\
+&\underbrace{{{a^{K}_{T,1,k,r}}} \, {{T_{r}}_{t}}+{{a^{K}_{T,2,k,r}}}\, \left({T_{r}}_{t}\right)^{a^{K}_{T,3,k,r}}}_{\mbox{impact of temperature}}+ \underbrace{{{a^{K}_{SL,1,k,r}}}\, {{SL}_{t}}+{{a^{K}_{SL,2,k,r}}}\, \left({SL}_{t}\right)^{{{a^{K}_{SL,3,k,r}}}}}_{\mbox{impact of sea level}} \nonumber \\
++ & \underbrace{{{a^{K}_{WS,1,k,r}}}\, {{WS_{r}}_{t}}+{{a^{K}_{WS,2,k,r}}}\, \left({WS_{r}}_{t}\right)^{{{a^{K}_{WS,3,k,r}}}}}_{\mbox{impact of wind speed}}
++ \underbrace{{{a^{K}_{PREC,1,k,r}}} \, {{PREC_{r}}_{t}}+{{a^{K}_{PREC,2,k,r}}}\, \left({PREC_{r}}_{t}\right)^{{{a^{K}_{PREC,3,k,r}}}}}_{\mbox{impact of precipitation}} \nonumber \\
++ & \underbrace{{{a^{K}_{CYC,1,k,r}}}\, {{CYC_{r}}_{t}}+{{a^{K}_{CYC,2,k,r}}}\, \left({CYC_{r}}_{t}\right)^{{{a^{K}_{CYC,3,k,r}}}}}_{\mbox{impact of cyclones}}
++ \underbrace{{{a^{K}_{DRO,1,k,r}}} \, {{DRO_{r}}_{t}}+{{a^{K}_{DRO,2,k,r}}}\, \left({DRO_{r}}_{t}\right)^{{{a^{K}_{DRO,3,k,r}}}}}_{\mbox{impact of droughts}} \nonumber \\
+&\Big).
+\end{align*}
+\end{frame}
 
 
 \begin{frame}
@@ -1824,25 +1581,6 @@ r_{k,r,t} \, (1 + \tau^{K}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Factor Demand}
-
-\begin{lstlisting}[frame = single]
-...
-[name='sector specific output']
-Y_@{sec}_@{reg} = (1-D_@{sec}_@{reg})*A_@{sec}_@{reg}*(alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p)*(A_K_@{sec}_@{reg}*K_@{sec}_@{reg}(-1))^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p)+(alphaN_@{sec}_@{reg}_p)^(1/etaNK_@{sec}_@{reg}_p)*((1-D_N_@{sec}_@{reg})*A_N_@{sec}_@{reg}*PoP*N_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/etaNK_@{sec}_@{reg}_p))^(etaNK_@{sec}_@{reg}_p/(etaNK_@{sec}_@{reg}_p-1));
-
-[name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
-r_@{sec}_@{reg}*(1+tauK_@{sec}_@{reg}) = alphaK_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p)*((1-D_@{sec}_@{reg})*A_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p))*A_K_@{sec}_@{reg}^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p))*(K_@{sec}_@{reg}(-1)/Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
-
-[name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
-W_@{sec}_@{reg}*(1+tauN_@{sec}_@{reg})/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p)*((1-D_N_@{sec}_@{reg})*A_N_@{sec}_@{reg}*(1-D_@{sec}_@{reg})*A_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p))*((PoP*N_@{sec}_@{reg})/Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
-...
-\end{lstlisting}
-\end{frame}
-
-
-
 \begin{frame}
 \frametitle{Trade with the rest of the world}
 \scriptsize
@@ -1856,291 +1594,47 @@ NX_{t} = \rho^{NX} \, NX_{t-1} + (1 - \rho^{NX}) \omega^{NX} P_{t} \, Y_{t} \, e
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Trade with rest of the World}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'LOM Net Exports']
-NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
-
-[name = 'World interest rate']
-rf = (1/beta_p-1);
-...
-\end{lstlisting}
-\end{frame}
-
-\subsection{Climate Variables}
-
 \begin{frame}
-\frametitle{Climate variables}
+\frametitle{Profit Maximization}
 \scriptsize
 \begin{itemize}
-\item Average annual regional temperature is given by:
+\item Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital.
 \begin{align*}
-T_{r,t} = T_{r,0} + \eta^{T}_{t}
-\end{align*}
-\item Average annual regional wind speed is given by:
-\begin{align*}
-WS_{r,t} = WS_{r,0} + \eta^{WS}_{t}
-\end{align*}
-\item Average annual regional precipitation is given by:
-\begin{align*}
-PREC_{r,t} = PREC_{r,0} + \eta^{PREC}_{t}
-\end{align*}
-
-\item Sea level:
-\begin{align*}
-SL_{t} = SL_{0} + \eta^{SL}_{t}
+\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \, (1 + \tau^{N}_{k,r,t}) - r_{k,r,t} \, P_{k,r,t} \, K_{k,r,t} \, (1 + \tau^{K}_{k,r,t})\nonumber \\ 
+\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t}) \, Pop_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
+\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
 \end{align*}
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Climate Variables}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'Temperature']
-T_@{reg} = T0_@{reg}_p + exo_T_@{reg};
-
-[name = 'Wind speed']
-WS_@{reg} = WS0_@{reg}_p + exo_WS_@{reg};
-
-[name = 'Precipitation']
-PREC_@{reg} = PREC0_@{reg}_p + exo_PREC_@{reg};
-
-[name = 'Sea Level']
-SL = SL0_p + exo_SL;
-...
-\end{lstlisting}
-\end{frame}
-
 
 \begin{frame}
-\frametitle{Weather Extremes}
+\frametitle{Factor Demand}
 \scriptsize
 \begin{itemize}
-\item A score reflecting the intensity and number of annual droughts in the region.
+\item Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
 \begin{align*}
-DRO_{r,t} = DRO_{r,0} + \eta^{DRO}_{t}
+\frac{W_{k,r,t}}{P_{k,r,t}}  \, (1 + \tau^{N}_{k,r,t}) = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^N_{k,r,t} \, (1 - D^N_{k,r,t})\right)^{\rho_{k,r}} \left(\frac{Pop_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
+r_{k,r,t} \, (1 + \tau^{K}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
 \end{align*}
-\item A score reflecting the intensity and number of annual cyclones in the region.
-\begin{align*}
-CYC_{r,t} = CYC_{r,0} + \eta^{CYC}_{t}
-\end{align*}
+\item We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. 
+\item The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. 
+\item Temporary productivity shocks are in our set-up also weather extremes. 
 \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]
-\frametitle{Implementation of Weather Extremes}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'Drought']
-DRO_@{reg} = DRO0_@{reg}_p + exo_DRO_@{reg};
-
-[name = 'Cyclones']
-CYC_@{reg} = CYC0_@{reg}_p + exo_CYC_@{reg};
-...
-\end{lstlisting}
-\end{frame}
-
-\subsection{Aggregation and Identities}
-
 \begin{frame}
-\frametitle{National Aggregates}
+\frametitle{Trade with the rest of the world}
 \scriptsize
 \begin{itemize}
-\item National aggregate investment is given by:
+\item The demand for domestic exports and foreign imports is not explicitly modelled in this version of the model. 
+\item We assume that net exports follow an auto-regressive process of order one and that the long-run value of net exports depend on the long-run development of gross domestic product.
 \begin{align*}
-P_{t} \, I_{t} = \sum_{k}^{K} P_{k,t} \, I_{k,t}
+NX_{t} = \rho^{NX} \, NX_{t-1} + (1 - \rho^{NX}) \omega^{NX} P_{t} \, Y_{t} \, exp\left({{\eta_{NX}}_{t}}\right)
 \end{align*}
-\item National aggregate capital stock is given by:
-\begin{align*}
-P_{t} \, K_{t} = \sum_{k}^{K} P_{k,t} \, K_{k,t-1}
-\end{align*}
-\item National aggregate labour input:
-\begin{align*}
-N_{t} = \sum_{k}^{K} N_{k,t}
-\end{align*}
-
+\item The effective exchange rate $S^f_{t}$ and the world interest rate $r^{f}_{t}$ determine how much governments and households have to pay back in domestic currency as net lender or how much they receive as net borrower to the rest of the world. \item Here the world interest rate is independent of domestic developments and only the effective exchange rate adjusts.
 \end{itemize}
 \end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of National Aggregates}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'aggregate investment']
-P * I = 
-@# for sec in 1:Sectors
- + P_@{sec} * I_@{sec}
-@# endfor
-;
-
-[name = 'aggregate capital']
-P * K = 
-@# for sec in 1:Sectors
- + P_@{sec} * K_@{sec}(-1)
-@# endfor
-;
-
-[name = 'aggregate labour']
-N = 
-@# for sec in 1:Sectors
-    + N_@{sec}
-@# endfor
-;
-...
-\end{lstlisting}
-\end{frame}
-
-\begin{frame}
-\frametitle{National Aggregates}
-\scriptsize
-\begin{itemize}
-\item Sector aggregate investment is given by:
-\begin{align*}
-P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
-\end{align*}
-\item Sector aggregate capital stock is given by:
-\begin{align*}
-P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t-1}
-\end{align*}
-\item Sector aggregate wage bill:
-\begin{align*}
-W_{k,t} N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
-\end{align*}
-\item Sector aggregate labour input:
-\begin{align*}
-N_{k,t} = \sum_{r}^{R} N_{k,r,t}
-\end{align*}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Sectoral Aggregates}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'aggergate sector labour']
-N_@{sec} = 
-@# for reg in 1:Regions
-+ N_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggergate sector labour income']
-W_@{sec} * N_@{sec} = 
-@# for reg in 1:Regions
-+ W_@{sec}_@{reg} * N_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggregate sector investment']
-P_@{sec} * I_@{sec} = 
-@# for reg in 1:Regions
-+ P_@{sec}_@{reg} * I_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggregate capital']
-P_@{sec} * K_@{sec} = 
-@# for reg in 1:Regions
-+ P_@{sec}_@{reg} * K_@{sec}_@{reg}
-@#
-;
-...
-\end{lstlisting}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{National Aggregates}
-\scriptsize
-\begin{itemize}
-\item Sector aggregate investment is given by:
-\begin{align*}
-P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
-\end{align*}
-\item Sector aggregate capital stock is given by:
-\begin{align*}
-P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t-1}
-\end{align*}
-\item Sector aggregate wage bill:
-\begin{align*}
-W_{k,t} N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
-\end{align*}
-\item Sector aggregate labour input:
-\begin{align*}
-N_{k,t} = \sum_{r}^{R} N_{k,r,t}
-\end{align*}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Sectoral Aggregates}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'aggergate sector labour']
-N_@{sec} = 
-@# for reg in 1:Regions
-+ N_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggergate sector labour income']
-W_@{sec} * N_@{sec} = 
-@# for reg in 1:Regions
-+ W_@{sec}_@{reg} * N_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggregate sector investment']
-P_@{sec} * I_@{sec} = 
-@# for reg in 1:Regions
-+ P_@{sec}_@{reg} * I_@{sec}_@{reg}
-@# endfor
-;
-[name = 'aggregate capital']
-P_@{sec} * K_@{sec} = 
-@# for reg in 1:Regions
-+ P_@{sec}_@{reg} * K_@{sec}_@{reg}
-@#
-;
-...
-\end{lstlisting}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Population and Price Level}
-\scriptsize
-\begin{itemize}
-\item population is independent of other variables in the model and is given by:
-\begin{align*}
-pop_{t} = pop_{0,t} + \eta^{pop}_{t}
-\end{align*}
-\item national price level in the model and is given by:
-\begin{align*}
-P_{t} = P_{0,t} + \eta^{P}_{t}
-\end{align*}
-\end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]
-\frametitle{Implementation of Sectoral Aggregates}
-
-\begin{lstlisting}[frame = single]
-...
-[name = 'national price level']
-P = P0_p * exp(exo_P);
-
-[name = 'Population']
-PoP = PoP0_p + exo_PoP;
-...
-\end{lstlisting}
-\end{frame}
-
-
 
 
 \section{Model Simulation and Calibration}

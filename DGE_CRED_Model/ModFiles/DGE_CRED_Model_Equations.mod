@@ -41,7 +41,7 @@ model(bytecode);
                           aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_CY_3_@{sec}_@{reg}_p)
                         );
 
-        [name = 'sector specific damage function on labour productivity']
+        [name = 'sector specific damage function on capital formation']
         D_K_@{sec}_@{reg} = min(1,aK_T_1_@{sec}_@{reg}_p * T_@{reg} + aK_T_2_@{sec}_@{reg}_p * T_@{reg}^(aK_T_3_@{sec}_@{reg}_p) + 
                           aK_SL_1_@{sec}_@{reg}_p * SL + aK_SL_2_@{sec}_@{reg}_p * SL^(aK_SL_3_@{sec}_@{reg}_p) +
                           aK_W_1_@{sec}_@{reg}_p * WS_@{reg} + aK_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aK_W_3_@{sec}_@{reg}_p) + 
@@ -134,7 +134,7 @@ model(bytecode);
     [name = 'Wind speed']
     WS_@{reg} = WS0_@{reg}_p + exo_WS_@{reg};
 
-    [name = 'Percipitation']
+    [name = 'Precipitation']
     PREC_@{reg} = PREC0_@{reg}_p + exo_PREC_@{reg};
 
     [name = 'Cyclone']
@@ -196,7 +196,7 @@ G + BG
     @# endfor
 @# endfor
 ;
-[name = 'Government Budget Constraint']
+[name = 'Government Budget Deficit']
 BG = exo_BG;
 
 [name = 'aggregate investment']
