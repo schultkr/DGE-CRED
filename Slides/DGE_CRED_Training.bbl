@@ -17,6 +17,104 @@
 \endgroup
 
 \datalist[entry]{nyt/global//global/global}
+  \entry{arndt2015economic}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AC}{%
+         family={Arndt},
+         familyi={A\bibinitperiod},
+         given={Channing},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=TF}{%
+         family={Tarp},
+         familyi={T\bibinitperiod},
+         given={Finn},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=TJ}{%
+         family={Thurlow},
+         familyi={T\bibinitperiod},
+         given={James},
+         giveni={J\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Multidisciplinary Digital Publishing Institute}%
+    }
+    \strng{namehash}{AC+1}
+    \strng{fullhash}{ACTFTJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2015}
+    \field{labeldatesource}{year}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{4}
+    \field{pages}{4131\bibrangedash 4145}
+    \field{title}{The economic costs of climate change: a multi-sector impact
+  assessment for {Vietnam}}
+    \field{volume}{7}
+    \field{journaltitle}{Sustainability}
+    \field{year}{2015}
+  \endentry
+
+  \entry{hsiang2016climate}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Hsiang},
+         familyi={H\bibinitperiod},
+         given={Solomon},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Annual Reviews}%
+    }
+    \strng{namehash}{HS1}
+    \strng{fullhash}{HS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{pages}{43\bibrangedash 75}
+    \field{title}{Climate econometrics}
+    \field{volume}{8}
+    \field{journaltitle}{Annual Review of Resource Economics}
+    \field{year}{2016}
+  \endentry
+
+  \entry{miller2009input}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MRE}{%
+         family={Miller},
+         familyi={M\bibinitperiod},
+         given={Ronald\bibnamedelima E},
+         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=BPD}{%
+         family={Blair},
+         familyi={B\bibinitperiod},
+         given={Peter\bibnamedelima D},
+         giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge university press}%
+    }
+    \strng{namehash}{MREBPD1}
+    \strng{fullhash}{MREBPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2009}
+    \field{labeldatesource}{year}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{title}{Input-output analysis: foundations and extensions}
+    \field{year}{2009}
+  \endentry
+
   \entry{nordhaus1993optimal}{article}{}
     \name{author}{1}{}{%
       {{hash=NWD}{%
@@ -44,6 +142,84 @@
     \field{volume}{83}
     \field{journaltitle}{American Economic Review}
     \field{year}{1993}
+  \endentry
+
+  \entry{thuc2016climate}{article}{}
+    \name{author}{6}{}{%
+      {{hash=TT}{%
+         family={Thuc},
+         familyi={T\bibinitperiod},
+         given={Tran},
+         giveni={T\bibinitperiod},
+      }}%
+      {{hash=VTN}{%
+         family={Van\bibnamedelima Thang},
+         familyi={V\bibinitperiod\bibinitdelim T\bibinitperiod},
+         given={Nguyen},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=HHTL}{%
+         family={Huong},
+         familyi={H\bibinitperiod},
+         given={Huynh Thi\bibnamedelima Lan},
+         giveni={H\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim
+  L\bibinitperiod},
+      }}%
+      {{hash=VKM}{%
+         family={Van\bibnamedelima Khiem},
+         familyi={V\bibinitperiod\bibinitdelim K\bibinitperiod},
+         given={Mai},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HNX}{%
+         family={Hien},
+         familyi={H\bibinitperiod},
+         given={Nguyen\bibnamedelima Xuan},
+         giveni={N\bibinitperiod\bibinitdelim X\bibinitperiod},
+      }}%
+      {{hash=PDH}{%
+         family={Phong},
+         familyi={P\bibinitperiod},
+         given={Doan\bibnamedelima Ha},
+         giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TT+1}
+    \strng{fullhash}{TTVTNHHTLVKMHNXPDH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2016}
+    \field{labeldatesource}{year}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Climate change and sea level rise scenarios for Vietnam}
+    \field{journaltitle}{Ministry of Natural resources and Environment. Hanoi,
+  Vietnam}
+    \field{year}{2016}
+  \endentry
+
+  \entry{wing2004computable}{article}{}
+    \name{author}{1}{}{%
+      {{hash=WIS}{%
+         family={Wing},
+         familyi={W\bibinitperiod},
+         given={Ian\bibnamedelima Sue},
+         giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{WIS1}
+    \strng{fullhash}{WIS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelyear}{2004}
+    \field{labeldatesource}{year}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{title}{Computable general equilibrium models and their use in
+  economy-wide policy analysis}
+    \field{journaltitle}{Technical Note, Joint Program on the Science and
+  Policy of Global Change, MIT}
+    \field{year}{2004}
   \endentry
 \enddatalist
 \endinput

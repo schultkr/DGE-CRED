@@ -1,67 +1,73 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Motivation}{3}{0}{1}
+\beamer@sectionintoc {1}{Economic Models and Climate Change}{3}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Modeling Approach}{5}{0}{2}
+\beamer@subsectionintoc {1}{1}{Motivation}{4}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{1}{Key characteristics}{6}{0}{2}
+\beamer@subsectionintoc {1}{2}{Modeling Approach}{5}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{2}{Advantages and limitations of the modeling approach}{11}{0}{2}
+\beamer@subsectionintoc {1}{3}{Advantages of the modeling approach}{14}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {2}{3}{Possible applications}{13}{0}{2}
+\beamer@subsectionintoc {1}{4}{Limitations of the modeling approach}{15}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Model building steps}{14}{0}{3}
+\beamer@subsectionintoc {1}{5}{Possible applications}{16}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{1}{Data for model calibration}{15}{0}{3}
+\beamer@sectionintoc {2}{Model building steps}{20}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{2}{Modeling Steps}{16}{0}{3}
+\beamer@subsectionintoc {2}{1}{Definition of Scenarios}{21}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{3}{Regression analysis}{18}{0}{3}
+\beamer@subsectionintoc {2}{2}{Identification of Climate Hazards}{25}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{4}{Performing scenario analysis}{19}{0}{3}
+\beamer@subsectionintoc {2}{3}{Calibration of Model Parameters}{26}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Introduction to Dynare}{20}{0}{4}
+\beamer@sectionintoc {3}{Introduction to Dynare}{27}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{1}{What is Dynare?}{21}{0}{4}
+\beamer@subsectionintoc {3}{1}{What is Dynare?}{28}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{2}{Implementing a Model in Dynare}{22}{0}{4}
+\beamer@subsectionintoc {3}{2}{Implementing a Model in Dynare}{29}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{1}{Model File}{22}{0}{4}
+\beamer@subsubsectionintoc {3}{2}{1}{Model File}{29}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{2}{Neoclassical Growth Model}{23}{0}{4}
+\beamer@subsubsectionintoc {3}{2}{2}{Neoclassical Growth Model}{30}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{3}{Variables and Parameters}{26}{0}{4}
+\beamer@subsubsectionintoc {3}{2}{3}{Variables and Parameters}{33}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{4}{The \texttt {model} block}{29}{0}{4}
+\beamer@subsubsectionintoc {3}{2}{4}{The \texttt {model} block}{36}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{3}{Steady State in Dynare}{30}{0}{4}
+\beamer@subsectionintoc {3}{3}{Steady State in Dynare}{37}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{4}{Deterministic Simulations in Dynare}{36}{0}{4}
+\beamer@subsectionintoc {3}{4}{Deterministic Simulations in Dynare}{43}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{1}{Deterministic Simulation}{36}{0}{4}
+\beamer@subsubsectionintoc {3}{4}{1}{Deterministic Simulation}{43}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{2}{Newton Method}{40}{0}{4}
+\beamer@subsubsectionintoc {3}{4}{2}{Newton Method}{47}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{3}{Perfect Foresight Setup in Dynare}{61}{0}{4}
+\beamer@subsubsectionintoc {3}{4}{3}{Perfect Foresight Setup in Dynare}{68}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{5}{Remarks and Examples}{77}{0}{4}
+\beamer@subsectionintoc {3}{5}{Remarks and Examples}{84}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{1}{Remarks}{77}{0}{4}
+\beamer@subsubsectionintoc {3}{5}{1}{Remarks}{84}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{2}{Examples}{78}{0}{4}
+\beamer@subsubsectionintoc {3}{5}{2}{Examples}{85}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{6}{Macro Processor}{82}{0}{4}
+\beamer@subsectionintoc {3}{6}{Macro Processor}{89}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{1}{Macro Language}{82}{0}{4}
+\beamer@subsubsectionintoc {3}{6}{1}{Macro Language}{89}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{2}{Introduction to the Syntax}{85}{0}{4}
+\beamer@subsubsectionintoc {3}{6}{2}{Introduction to the Syntax}{92}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{DGE--CRED Model}{94}{0}{5}
+\beamer@sectionintoc {4}{DGE--CRED Model}{101}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{1}{Introduction}{95}{0}{5}
+\beamer@subsectionintoc {4}{1}{Introduction}{102}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{2}{Demand}{97}{0}{5}
+\beamer@subsectionintoc {4}{2}{Folder Structure}{104}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{3}{Production}{106}{0}{5}
+\beamer@subsectionintoc {4}{3}{Demand}{109}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Model Simulation and Calibration}{124}{0}{6}
+\beamer@subsectionintoc {4}{4}{Production}{124}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{5}{Climate Variables}{140}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{6}{Aggregation and Identities}{144}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Model Simulation and Calibration}{152}{0}{5}
