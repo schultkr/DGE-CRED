@@ -84,9 +84,11 @@
 
 \setbeamercovered{transparent}
 
-%\setbeamertemplate{footline}[text line]{%
-  %\parbox{\linewidth}{\vspace*{-8pt} $\vert$ \hspace{1mm} \today \hspace{1mm} $\vert$ \hfill}}
+\setbeamertemplate{footline}[text line]{%
+  %\parbox{\linewidth}{\vspace*{-8pt} $\vert$ \hspace{1mm} \today \hspace{1mm} $\vert$ p. \insertframenumber{}  \hfill}}
+  \parbox{\linewidth}{\vspace*{-8pt} $\vert$ p.\insertframenumber{} $\vert$ \hfill}}
 \setbeamertemplate{navigation symbols}{}
+
 
 \linespread{1.2}
 
