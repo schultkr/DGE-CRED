@@ -1,15 +1,27 @@
-\frametitle{{\thesection.\thesubsection} Notation of Damage Function Parameters}
-%\scriptsize
-\begin{itemize}
-\item Damage function parameters have the general form:
-\begin{verbatim}
-	f\_c\_d\_s\_r\_p
-\end{verbatim}
-\begin{itemize}
-\item Input Factor (\texttt{f}): \texttt{aN}- labour, \texttt{aK} - capital, \texttt{a} - TFP
-\item Climate change phenomenon (\texttt{c}): \texttt{T} - temperature, \texttt{W} - wind speed, \texttt{P} - percipitation, \texttt{SL} - sea level, \texttt{DR} - drought, \texttt{CY} - cyclone
-\item Degree of polynomial (\texttt{d}): \texttt{1} - linear, \texttt{2} - quadratic, \texttt{3} - quadratic exponent
-\item Sector (\texttt{s}): \texttt{1} - agriculture, \texttt{2} - industry, \texttt{3} - services
-\item Region (\texttt{r}): \texttt{1} - region 1, \texttt{2} - region 2, \texttt{3} - region 3
-\end{itemize}
-\end{itemize}
+\frametitle{Appendix: Illustration of the Newton Method}
+	\begin{itemize}
+		\item Graphical illustration of the Newton method (unidimensional):
+		\begin{center}
+			\begin{overlayarea}{8cm}{5.5cm}
+				\only<1>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton1}}
+				\only<2>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton2}}
+				\only<3>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton3}}
+				\only<4>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton4}}
+				\only<5>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton5}}
+				\only<6>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton6}}
+				\only<7>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton7}}
+				\only<8>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton8}}
+				\only<9>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton9}}
+				\only<10>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton10}}
+				\only<11>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton11}}
+				\only<12>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton12}}
+				\only<13>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton13}}
+				\only<14>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton14}}
+				\only<15>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton15}}
+				\only<16>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton16}}
+				\only<17>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton17}}
+				\only<18>{\includegraphics[width=8cm,height=5.5cm]{pictures/Newton/Newton18}}
+			\end{overlayarea}
+			\hspace{-1cm} \tiny{Copyright \textcopyright \enspace 2005 Ralf Pfeifer / Creative Commons Attribution-ShareAlike 3.0}
+		\end{center}
+	\end{itemize}

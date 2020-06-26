@@ -1,0 +1,127 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[landscape]{geometry}
+\usepackage{fullpage}
+\usepackage{amsfonts}
+\usepackage{breqn}
+\usepackage{xcolor}
+\begin{document}
+\title{Using the Model-Simulation and Results Excel Sheets}
+\maketitle
+\section{Using the MS Excel Model Simulation and Calibration Interface}
+
+Regardless the number of sectors and number of regions, each Excel file contains the following sheets that will be explained in the following sections.
+
+\begin{itemize}\setlength{\itemsep}{0pt}
+\item Content
+\item Start
+\item Terminal
+\item Baseline
+\item Temperature
+\item Sea Level
+\item Adaptation
+\item Extremes
+\item Dynamics
+\item Structural Parameters
+\item Damage Functions TFP
+\item Damage Functions Labour
+\item Damage Functions Capital
+\item Data
+
+
+\end{itemize}
+\subsection{Content}
+The classification of economic sectors (sector A--T) 
+and the aggregation of individual sectors to the preferred number of sectors in the model are provided. For instance, in case of broad classification of 3 sectors (agriculture, industry and services), the classification is
+\begin{itemize}
+\item sector 1:	A
+\item sector 2:	B-F
+\item sector 3:	G-T
+\end{itemize}
+In the case of 9 sectors, besides agriculture manufacturing, construction, transportation and storage, accommodation and food service activities are analyzed separately. All remaining sectors are aggregated to further production activities, services, state-related sectors and other service activities.
+
+Furthermore, the number of regions is specified. In the case of 3 regions, we consider the two delta regions and the remaining ones as an aggregate separately. Otherwise, we consider the 6 regions Mekong River Delta, Red River Delta, North Central and Central Coast, Southeast, Central Highlands, and Northern Midlands and Mountains.
+
+
+ 
+\subsection{Data}
+
+Within this sheet we merge and link all data sources used for calibration. Data for different years is used. For instance, Supply-Use-Tables (SUT) refer the year 2016 while the Statistical Year Book 2018 refers to data end of 2017.
+That covers among other things 
+\begin{itemize}
+	\item Sectoral Gross Value Added Shares
+	\item Sectoral Employment Shares
+	\item Sectoral Labor Cost Shares
+\end{itemize}
+
+
+
+\subsection{Start}
+At the beginning we need to define initial values for economic variables, this includes, e.g. initial gross value added, initial price level, initial population, and initial employment level at the national level. Furthermore, at the sectoral and regional level gross value added shares, sectoral employment shares and labour cost shares.
+
+\subsection{Terminal}
+ Within this sheet we define the terminal values for the baseline scenario. Just adjust the red numbers to specify the target values.
+ 
+ \subsection{Baseline} 
+ In the standard version of the model we need to define how exogenous variables evolve over time. In the baseline, only population $\eta^{Pop}_{t}$ until 2100 starting from 2016 (84 periods) changes.
+ 
+ 
+ The evolution of the population is given by the projection of the GSO. The GSO published four different projections with different fertility rates of the Vietnamese population. We use the medium  variant population projection. The population is expected to grow from roughly 95 million people in  2016 to 108 million people by 2050. After 2050 the population stays constant.
+ %total factor productivity $\eta_{A,k,r,t}$, labour productivity $\eta^{A^N}_{k,r,t}$, climate variables $\{\eta^{T}_{r,t},\, \eta^{PREC}_{r,t},\, \eta^{WS}_{r,t},\, \eta^{CYC}_{r,t},\, \eta^{DRO}_{r,t},\, \eta^{SL}_{t}\}$, population $\eta^{Pop}_{t}$, price level $\eta^{P}_{t}$, taxes  $\eta^{\tau^{K,N}}_{k,r,t},\, \eta^{\tau^{K,N}}_{t},\, \eta^{\tau^{C}}_{t}$, the government deficit $\eta^{BG}_{t}$, adaptation measures $\eta^{G^{A}}_{k,r,t}$ and the trade balance $\eta^{NX}_{t}$ evolve over time. 
+
+ 
+ %\textcolor{red}{für was stehen die restlichen Abkürzungen? PoP population T temperature SL sea level GA governemnt expenditure adaptation measures siehe auch Model Description list of symbols}
+\subsection{Temperature}
+In this sheet the evolution for climate variables for the temperature scenario are defined. Hence, besides population also temperature in the regions change.
+ 
+\subsection{Sea Level}
+In this sheet the evolution of climate variables for the sea level scenario are defined. Hence, besides population and regional temperature, also the sea level changes.
+ 
+\subsection{Adaptation}
+In this sheet the evolution of adaptation measures are defined. Hence, besides population, regional temperature and the sea level, also government expenditure for regional and sectoral adaptation measures change.
+  
+  
+\subsection{Extremes}
+In this sheet cyclones and droughts are additionally specified by a variable, i.e. 1 in case of CYC or DRO or 0, respectively.
+    
+    
+\subsection{Dynamics}
+Values for structural parameters which influence the dynamics of the model are defined in the sheet Dynamics.
+  %\textcolor{red}{Z.11/18: muss das Initial nicht weg? Nein! Es sind die Veränderugsraten der ersten Periode der Simulation-}
+ 
+ \subsection{Structural Parameters}
+For each sector-region combination we define values for structural parameters mainly elasticities for labour and capital, adaptation cost effectiveness and taxes on capital and labor.
+ 
+ \subsection{Damage Functions for TFP, Labour and Capital}
+ 
+ Furthermore, we define the coefficients for the sectoral and regional damage functions to total factor productivity, labour productivity and capital stock for all sector-region combinations.
+
+\newpage
+\section{Interpreting the MS Excel Results and Scenario Interface}
+
+Regardless the number of sectors and number of regions, each Excel file contains the following sheets that will be explained in the following sections.
+\begin{itemize}\setlength{\itemsep}{0pt}
+	
+	\item Plot: shows the simulation path for an optional variable
+
+	\item Comparison: GDP levels for various scenarios are shown over time 
+	
+	\vspace{0.5cm}
+	For the remaining sheets the evolution of the exogenous variables are provided until the year 2100:
+	\item Baseline
+	\item Temperature
+	\item Sea Level
+	\item Adaptation
+	\item Extremes
+
+\end{itemize}
+%\textcolor{red}{ggf. Untersection, je nachdem was wir hier noch schreiben soll, sonst direkt die Beschreibung hinter die Items}
+
+%\textcolor{red}{noch eine Seite wo die Definitionen der Parameter names/kürzel stehen}
+%\subsection{Plot}
+%\subsection{Comparison}
+%\subsection{Baseline}
+%\subsection{Temperature}
+%\subsection{Sea Level}
+%\subsection{Adaptation}
+%\subsection{Extremes}
+\end{document}
