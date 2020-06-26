@@ -1,0 +1,6202 @@
+Starting preprocessing of the model file ...
+Found 308 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          2         2.89175                          4.59               1
+     1          4     1.00741e-16         0.6297       2.71e-08               1
+     2          6      1.4112e-28    3.71669e-09       3.21e-14            1.57
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',5.037047e-17,'selected',2.220446e-16,1.411198e-28,'selected',1.000000e-10,1.411198e-28,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum value added share error 2.7756e-16
+Maximum wage share error 2.2204e-16
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          2         2.89175                          4.59               1
+     1          4     1.00741e-16         0.6297       2.71e-08               1
+     2          6      1.4112e-28    3.71669e-09       3.21e-14            1.57
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',5.037047e-17,'selected',2.220446e-16,1.411198e-28,'selected',1.000000e-10,1.411198e-28,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum value added share error 2.7756e-16
+Maximum wage share error 2.2204e-16
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 0.816446
+C            		 0.236501
+PoP          		 0.95
+B            		 -0.316236
+Sf           		 1
+BG           		 0
+NX           		 0.016644
+rf           		 0.0526316
+G            		 0.046396
+I            		 0.0707586
+Y            		 0.3703
+N            		 0.145
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.211685
+K_1          		 0.419485
+N_1          		 0.0607042
+I_1          		 0.0363554
+P_1          		 0.948631
+W_1          		 2.32868
+Y_1_1        		 0.0481588
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.0954339
+N_1_1        		 0.0138104
+W_1_1        		 2.32868
+A_1_1        		 1
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 1
+A_K_1_1      		 1
+I_1_1        		 0.00827094
+P_1_1        		 0.948631
+omegaI_1_1   		 0.948631
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.014563
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0288587
+N_1_2        		 0.00417618
+W_1_2        		 2.32868
+A_1_2        		 1
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 1
+A_K_1_2      		 1
+I_1_2        		 0.00250109
+P_1_2        		 0.948631
+omegaI_1_2   		 0.948631
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.148963
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.295192
+N_1_3        		 0.0427177
+W_1_3        		 2.32868
+A_1_3        		 1
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 1
+A_K_1_3      		 1
+I_1_3        		 0.0255833
+P_1_3        		 0.948631
+omegaI_1_3   		 0.948631
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 0.257711
+K_2          		 0.623625
+N_2          		 0.0470493
+I_2          		 0.0540475
+P_2          		 2.70605
+W_2          		 9.29122
+Y_2_1        		 0.0337418
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.0816506
+N_2_1        		 0.00616012
+W_2_1        		 9.29122
+A_2_1        		 1
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 1
+A_K_2_1      		 1
+I_2_1        		 0.00707638
+P_2_1        		 2.70605
+omegaI_2_1   		 2.70605
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.0440953
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.106705
+N_2_2        		 0.00805033
+W_2_2        		 9.29122
+A_2_2        		 1
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 1
+A_K_2_2      		 1
+I_2_2        		 0.00924774
+P_2_2        		 2.70605
+omegaI_2_2   		 2.70605
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.179874
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 0.43527
+N_2_3        		 0.0328389
+W_2_3        		 9.29122
+A_2_3        		 1
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 1
+A_K_2_3      		 1
+I_2_3        		 0.0377234
+P_2_3        		 2.70605
+omegaI_2_3   		 2.70605
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.140915
+K_3          		 0.291355
+N_3          		 0.0372464
+I_3          		 0.0252508
+P_3          		 5.43739
+W_3          		 14.1701
+Y_3_1        		 0.0265032
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.0547979
+N_3_1        		 0.00700528
+W_3_1        		 14.1701
+A_3_1        		 1
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 1
+A_K_3_1      		 1
+I_3_1        		 0.00474915
+P_3_1        		 5.43739
+omegaI_3_1   		 5.43739
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.0321027
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.0663753
+N_3_2        		 0.00848533
+W_3_2        		 14.1701
+A_3_2        		 1
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 1
+A_K_3_2      		 1
+I_3_2        		 0.00575253
+P_3_2        		 5.43739
+omegaI_3_2   		 5.43739
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.0823094
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 0.170182
+N_3_3        		 0.0217558
+W_3_3        		 14.1701
+A_3_3        		 1
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 1
+A_K_3_3      		 1
+I_3_3        		 0.0147491
+P_3_3        		 5.43739
+omegaI_3_3   		 5.43739
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          2         2.89175                          4.59               1
+     1          4     8.29704e-16         0.6297       7.78e-08               1
+     2          6     4.93038e-32    1.06663e-08          6e-16            1.57
+     3          8      1.2326e-32    8.22231e-17          3e-16            1.57
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved_singular','CSHelpWindow');">Equation solved, fsolve stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'step_size_tol','CSHelpWindow');">step size tolerance</a> squared and the vector of function values
+is near zero as measured by the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',2.000000e+00,true,true,'fsolve',6.000370e-17,'selected',2.220446e-16,1.232595e-32,'selected',1.000000e-10,1.232595e-32,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum value added share error 1.8319e-15
+Maximum wage share error 1.1102e-16
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+       5.158e-38       -5.158e-38                0
+       5.158e-38       -5.158e-38                0
+       5.158e-38       -5.158e-38                0
+       5.158e-38       -5.158e-38                0
+        5.67e-38        -5.67e-38                0
+       2.174e-33        2.174e-33                0
+       9.933e-26        9.933e-26                0
+       8.835e-23        8.835e-23                0
+       1.278e-21        1.278e-21                0
+       1.163e-20       -1.163e-20                0
+       1.186e-20        1.186e-20                0
+       1.269e-20       -1.269e-20                0
+       1.071e-19       -1.071e-19                0
+       4.822e-19        4.822e-19                0
+        1.15e-18         1.15e-18                0
+       3.251e-18       -3.251e-18                0
+       6.066e-18        6.066e-18                0
+       8.769e-18       -8.769e-18                0
+       9.192e-18        9.192e-18                0
+       1.365e-17        1.365e-17                0
+       1.894e-17        1.894e-17                0
+       2.014e-17        2.014e-17                0
+         2.3e-17         -2.3e-17                0
+       2.751e-17        2.751e-17                0
+       3.775e-17       -3.775e-17                0
+       4.271e-17       -4.271e-17                0
+       5.245e-17        5.245e-17                0
+       6.781e-17       -6.781e-17                0
+       6.906e-17        6.906e-17                0
+       9.384e-17       -9.384e-17                0
+       9.787e-17       -9.787e-17                0
+       1.128e-16       -1.128e-16                0
+       1.168e-16        1.168e-16                0
+       1.237e-16       -1.237e-16                0
+       1.594e-16        1.594e-16                0
+         1.6e-16         -1.6e-16                0
+       1.958e-16        1.958e-16                0
+       2.204e-16        2.204e-16                0
+       2.224e-16        2.224e-16                0
+       2.841e-16       -2.841e-16                0
+       3.417e-16       -3.417e-16                0
+       3.618e-16        3.618e-16                0
+       5.168e-16       -5.168e-16                0
+       5.742e-16       -5.742e-16                0
+       6.259e-16       -6.259e-16                0
+       6.367e-16        6.367e-16                0
+       1.069e-15        1.069e-15                0
+       1.124e-15        1.124e-15                0
+        1.23e-15         1.23e-15                0
+       1.478e-15        1.478e-15                0
+       2.193e-15       -2.193e-15                0
+        9.49e-15         9.49e-15                0
+       3.313e-14       -3.313e-14                0
+       3.856e-14       -3.856e-14                0
+       5.578e-14       -5.578e-14                0
+          0.7049           0.7049                0
+          0.8849           0.8826          0.06434
+          0.8849           0.8826         -0.06434
+           0.891           0.8882          0.07021
+           0.891           0.8882         -0.07021
+           0.891           0.8882          0.07021
+           0.891           0.8882         -0.07021
+          0.8913           0.8886          0.06809
+          0.8913           0.8886         -0.06809
+          0.8913           0.8886          0.06809
+          0.8913           0.8886         -0.06809
+          0.8923           0.8904          0.05853
+          0.8923           0.8904         -0.05853
+          0.8923           0.8904          0.05853
+          0.8923           0.8904         -0.05853
+          0.9012           0.8979          0.07717
+          0.9012           0.8979         -0.07717
+          0.9024           0.8995          0.07262
+          0.9024           0.8995         -0.07262
+           1.053            1.053                0
+           1.166            1.159           0.1224
+           1.166            1.159          -0.1224
+           1.168            1.161           0.1247
+           1.168            1.161          -0.1247
+            1.18            1.169           0.1594
+            1.18            1.169          -0.1594
+            1.18            1.169           0.1594
+            1.18            1.169          -0.1594
+           1.181            1.171            0.157
+           1.181            1.171           -0.157
+           1.181            1.171            0.157
+           1.181            1.171           -0.157
+           1.181            1.171           0.1564
+           1.181            1.171          -0.1564
+           1.181            1.171           0.1564
+           1.181            1.171          -0.1564
+           1.191            1.187          0.09344
+           1.191            1.187         -0.09344
+       1.015e+15       -1.015e+15                0
+        1.39e+15        -1.39e+15                0
+        5.53e+15        -5.53e+15                0
+       8.553e+15        8.553e+15                0
+        1.25e+16         1.25e+16                0
+       1.725e+16       -1.725e+16                0
+       1.889e+16        1.889e+16                0
+         1.9e+16          1.9e+16                0
+       2.735e+16        2.735e+16                0
+       2.872e+16        2.872e+16                0
+       3.186e+16        3.186e+16                0
+       4.453e+16        4.453e+16                0
+       5.166e+16       -5.166e+16                0
+       6.119e+16       -6.119e+16                0
+       8.829e+16       -8.829e+16                0
+        8.95e+16         8.95e+16                0
+       9.629e+16       -9.629e+16                0
+       1.143e+17       -1.143e+17                0
+       1.188e+17       -1.188e+17                0
+       1.548e+17        1.548e+17                0
+       2.532e+17       -2.532e+17                0
+       3.149e+17       -3.149e+17                0
+       3.727e+17        3.727e+17                0
+       4.388e+17        4.388e+17                0
+       4.824e+17       -4.824e+17                0
+       5.149e+17        5.149e+17                0
+       5.267e+17       -5.267e+17                0
+       7.986e+17        7.986e+17                0
+       1.381e+18        1.381e+18                0
+        1.66e+18         1.66e+18                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+
+There are 52 eigenvalue(s) larger than 1 in modulus 
+for 52 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0          2         2.89175                          4.59               1
+     1          4     8.29704e-16         0.6297       7.78e-08               1
+     2          6     4.93038e-32    1.06663e-08          6e-16            1.57
+     3          8      1.2326e-32    8.22231e-17          3e-16            1.57
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_solved_singular','CSHelpWindow');">Equation solved, fsolve stalled</a>.
+
+fsolve stopped because the relative <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'norm_current_step','CSHelpWindow');">size of the current step</a> is less than the
+selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'step_size_tol','CSHelpWindow');">step size tolerance</a> squared and the vector of function values
+is near zero as measured by the selected value of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',2.000000e+00,true,true,'fsolve',6.000370e-17,'selected',2.220446e-16,1.232595e-32,'selected',1.000000e-10,1.232595e-32,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum value added share error 1.8319e-15
+Maximum wage share error 1.1102e-16
+MODEL_DIAGNOSTICS:  No obvious problems with this mod-file were detected.
+Step 1 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         5.81488                          12.6               1
+     1         11         5.81488       0.170718           12.6               1
+     2         21         1.82443      0.0426796           18.5          0.0427
+     3         31        0.862594      0.0363986           40.3           0.107
+     4         41       0.0131864     0.00945262           3.91           0.107
+     5         51     6.50094e-06     0.00152397         0.0879           0.107
+     6         61     1.84899e-12    3.52651e-05       5.21e-05           0.107
+     7         71     1.46459e-24    1.87003e-08       4.27e-11           0.107
+     8         81     3.72647e-27    1.67322e-14       2.71e-12           0.107
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',7.304314e-25,'selected',2.220446e-16,3.726468e-27,'selected',1.000000e-10,3.726468e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 3.8969e-14
+Maximum profit error 1.2212e-15
+Step 2 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10           1.768                          18.5               1
+     1         20        0.558806      0.0332546           31.4               1
+     2         30      0.00563334     0.00808023           2.76               1
+     3         40     1.30137e-06    0.000996363         0.0458               1
+     4         50     1.08752e-13    1.54681e-05        1.4e-05               1
+     5         60     1.48494e-25    4.44066e-09       1.71e-11               1
+     6         70     6.57983e-27    5.19604e-15       4.53e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',7.095703e-26,'selected',2.220446e-16,6.579827e-27,'selected',1.000000e-10,6.579827e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 6.5059e-14
+Maximum profit error 1.3989e-14
+Step 3 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.824974                          16.9               1
+     1         20       0.0644054      0.0182564           9.59               1
+     2         30     0.000127741     0.00316827          0.433               1
+     3         40     8.85029e-10    0.000153201        0.00124               1
+     4         50      4.3504e-20    4.01325e-07       8.97e-09               1
+     5         60     1.15103e-26    2.80069e-12       4.89e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',2.175202e-20,'selected',2.220446e-16,1.151034e-26,'selected',1.000000e-10,1.151034e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 6.4282e-14
+Maximum profit error 4.4409e-15
+Step 4 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.463938                            15               1
+     1         20       0.0169206      0.0124562           4.91               1
+     2         30     1.12973e-05      0.0016907          0.133               1
+     3         40     7.76488e-12    4.55522e-05       0.000118               1
+     4         50     1.11517e-24    3.74797e-08       3.89e-11               1
+     5         60     3.65423e-27    1.44813e-14       2.06e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',5.557581e-25,'selected',2.220446e-16,3.654226e-27,'selected',1.000000e-10,3.654226e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 2.7645e-14
+Maximum profit error 5.5511e-15
+Step 5 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         0.29031                          13.3               1
+     1         20      0.00646962     0.00937767           3.06               1
+     2         30     1.89482e-06     0.00106303         0.0554               1
+     3         40     2.31741e-13    1.86186e-05       2.05e-05               1
+     4         50     2.71854e-25    6.46309e-09       2.34e-11               1
+     5         60     1.01295e-26    7.00053e-15       5.85e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.308625e-25,'selected',2.220446e-16,1.012952e-26,'selected',1.000000e-10,1.012952e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 7.6827e-14
+Maximum profit error 9.3259e-15
+Step 6 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.198595                            12               1
+     1         20      0.00307832     0.00752442           2.12               1
+     2         30      4.5972e-07    0.000739273         0.0276               1
+     3         40     1.41387e-14    9.15361e-06       5.09e-06               1
+     4         50     3.02587e-26     1.5944e-09       6.67e-12               1
+     5         60     2.48006e-27    2.32815e-15       1.94e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.388932e-26,'selected',2.220446e-16,2.480055e-27,'selected',1.000000e-10,2.480055e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 2.7756e-14
+Maximum profit error 8.2157e-15
+Step 7 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.157553                          10.9               1
+     1         20      0.00167736     0.00645647           1.57               1
+     2         30     1.41896e-07    0.000548149         0.0155               1
+     3         40     1.37637e-15     5.0774e-06       1.59e-06               1
+     4         50     1.41873e-26    4.96984e-10       6.51e-12               1
+     5         60     2.27798e-27    1.58913e-15       2.61e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',5.954636e-27,'selected',2.220446e-16,2.277984e-27,'selected',1.000000e-10,2.277984e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 3.4861e-14
+Maximum profit error 9.77e-15
+Step 8 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.180763                          12.5               1
+     1         20       0.0012199     0.00623145           1.22               1
+     2         30     5.60355e-08    0.000466459        0.00944               1
+     3         40     1.87259e-16    3.18219e-06       5.87e-07               1
+     4         50     6.75642e-27    1.83173e-10       4.25e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',9.362957e-17,'selected',2.220446e-16,6.756421e-27,'selected',1.000000e-10,6.756421e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 5.6843e-14
+Maximum profit error 9.77e-15
+Step 9 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.445063                          34.8               1
+     1         20      0.00542651     0.00758299           3.16               1
+     2         30     1.75934e-06    0.000939269         0.0579               1
+     3         40     2.51455e-13     1.7446e-05        2.2e-05               1
+     4         50     1.87649e-25    6.59771e-09       1.97e-11               1
+     5         60     3.08662e-27    5.70503e-15       2.58e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',9.228105e-26,'selected',2.220446e-16,3.086616e-27,'selected',1.000000e-10,3.086616e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 3.697e-14
+Maximum profit error 1.6875e-14
+Step 10 of 10 to find terminal condition
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         6.69032                           280               1
+     1         20        0.406104      0.0143052           38.2               1
+     2         30      0.00618796     0.00614614            3.6               1
+     3         40     2.85527e-06    0.000992949          0.074               1
+     4         50     6.79163e-13    2.22795e-05       3.61e-05               1
+     5         60     5.05759e-25    1.08766e-08       3.25e-11               1
+     6         70      6.3275e-27    9.38686e-15       3.55e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',2.497158e-25,'selected',2.220446e-16,6.327503e-27,'selected',1.000000e-10,6.327503e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+Maximum absolute residual 5.0848e-14
+Maximum profit error 5.3291e-15
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 33.1915
+C            		 10.0475
+PoP          		 0.95
+B            		 -13.2819
+Sf           		 1
+BG           		 0
+NX           		 0.699048
+rf           		 0.0526316
+G            		 1.92945
+I            		 2.8766
+Y            		 15.5526
+N            		 0.145
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.377968
+K_1          		 0.742931
+N_1          		 0.00145
+I_1          		 0.0643874
+P_1          		 1.84949
+W_1          		 340.738
+Y_1_1        		 0.0859888
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.169019
+N_1_1        		 0.000329879
+W_1_1        		 340.738
+A_1_1        		 2.25617
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 22.285
+A_K_1_1      		 1
+I_1_1        		 0.0146483
+P_1_1        		 1.84949
+omegaI_1_1   		 1.84949
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0260026
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0511104
+N_1_2        		 9.97536e-05
+W_1_2        		 340.738
+A_1_2        		 2.25617
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 22.285
+A_K_1_2      		 1
+I_1_2        		 0.00442957
+P_1_2        		 1.84949
+omegaI_1_2   		 1.84949
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.265977
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.522802
+N_1_3        		 0.00102037
+W_1_3        		 340.738
+A_1_3        		 2.25617
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 22.285
+A_K_1_3      		 1
+I_1_3        		 0.0453095
+P_1_3        		 1.84949
+omegaI_1_3   		 1.84949
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 8.61569
+K_2          		 20.3863
+N_2          		 0.05075
+I_2          		 1.76682
+P_2          		 2.83978
+W_2          		 306.756
+Y_2_1        		 1.12804
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 2.66916
+N_2_1        		 0.00664464
+W_2_1        		 306.756
+A_2_1        		 9.42361
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.748263
+A_K_2_1      		 1
+I_2_1        		 0.231327
+P_2_1        		 2.83978
+omegaI_2_1   		 2.83978
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 1.47418
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 3.48818
+N_2_2        		 0.00868352
+W_2_2        		 306.756
+A_2_2        		 9.42361
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.748263
+A_K_2_2      		 1
+I_2_2        		 0.302309
+P_2_2        		 2.83978
+omegaI_2_2   		 2.83978
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 6.01347
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 14.229
+N_2_3        		 0.0354218
+W_2_3        		 306.756
+A_2_3        		 9.42361
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.748263
+A_K_2_3      		 1
+I_2_3        		 1.23318
+P_2_3        		 2.83978
+omegaI_2_3   		 2.83978
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 8.9879
+K_3          		 18.0647
+N_3          		 0.0928
+I_3          		 1.5656
+P_3          		 4.9777
+W_3          		 336.98
+Y_3_1        		 1.69044
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 3.39758
+N_3_1        		 0.0174537
+W_3_1        		 336.98
+A_3_1        		 16.956
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.354629
+A_K_3_1      		 1
+I_3_1        		 0.294457
+P_3_1        		 4.9777
+omegaI_3_1   		 4.9777
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 2.04758
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 4.11541
+N_3_2        		 0.0211413
+W_3_2        		 336.98
+A_3_2        		 16.956
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.354629
+A_K_3_2      		 1
+I_3_2        		 0.356669
+P_3_2        		 4.9777
+omegaI_3_2   		 4.9777
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 5.24988
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 10.5517
+N_3_3        		 0.054205
+W_3_3        		 336.98
+A_3_3        		 16.956
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.354629
+A_K_3_3      		 1
+I_3_3        		 0.914477
+P_3_3        		 4.9777
+omegaI_3_3   		 4.9777
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0                0                0
+               0               -0                0
+               0                0                0
+               0               -0                0
+               0               -0                0
+               0               -0                0
+        8.44e-41        -8.44e-41                0
+        8.44e-41        -8.44e-41                0
+        8.44e-41        -8.44e-41                0
+       8.441e-41       -8.441e-41                0
+       4.884e-39        4.884e-39                0
+       4.583e-35        4.583e-35                0
+       2.465e-24       -2.465e-24                0
+       6.122e-23       -6.122e-23                0
+        7.82e-23         7.82e-23                0
+       1.328e-22        1.328e-22                0
+       3.112e-21        3.112e-21                0
+       5.744e-21        5.744e-21                0
+       8.911e-21        8.911e-21                0
+       3.149e-20        3.149e-20                0
+       7.084e-20        7.084e-20                0
+       1.845e-19        1.845e-19                0
+       2.019e-19       -2.019e-19                0
+       2.892e-19        2.892e-19                0
+       3.275e-19       -3.275e-19                0
+       6.346e-19       -6.346e-19                0
+       7.951e-19       -7.951e-19                0
+       8.694e-19       -8.694e-19                0
+       1.138e-18        1.138e-18                0
+       1.413e-18       -1.413e-18                0
+       3.836e-18       -3.836e-18                0
+       4.674e-18       -4.674e-18                0
+       6.241e-18       -6.241e-18                0
+       1.018e-17        1.018e-17                0
+       1.643e-17        1.643e-17                0
+       1.924e-17        1.924e-17                0
+       2.149e-17       -2.149e-17                0
+       2.254e-17       -2.254e-17                0
+       2.515e-17       -2.515e-17                0
+       2.581e-17       -2.581e-17                0
+       2.833e-17        2.833e-17                0
+       3.373e-17        3.373e-17                0
+       4.126e-17        4.126e-17                0
+         4.2e-17         -4.2e-17                0
+       4.647e-17       -4.647e-17                0
+       4.847e-17       -4.847e-17                0
+       8.785e-17        8.785e-17                0
+       1.043e-16       -1.043e-16                0
+       1.164e-16       -1.164e-16                0
+       1.184e-16        1.184e-16                0
+       1.393e-16       -1.393e-16                0
+       1.615e-16       -1.615e-16                0
+       1.648e-16        1.648e-16                0
+       1.972e-16       -1.972e-16                0
+       2.038e-16        2.038e-16                0
+       2.478e-16        2.478e-16                0
+       2.758e-16       -2.758e-16                0
+       2.964e-16        2.964e-16                0
+       3.129e-16       -3.129e-16                0
+        6.25e-16         6.25e-16                0
+        7.01e-16         7.01e-16                0
+          0.7049           0.7049                0
+          0.8851           0.8826          0.06669
+          0.8851           0.8826         -0.06669
+          0.8909           0.8881           0.0706
+          0.8909           0.8881          -0.0706
+          0.8909           0.8881           0.0706
+          0.8909           0.8881          -0.0706
+          0.8911           0.8884          0.06952
+          0.8911           0.8884         -0.06952
+          0.8911           0.8884          0.06952
+          0.8911           0.8884         -0.06952
+          0.8922           0.8901          0.06009
+          0.8922           0.8901         -0.06009
+          0.8922           0.8901          0.06009
+          0.8922           0.8901         -0.06009
+           0.901           0.8976          0.07768
+           0.901           0.8976         -0.07768
+          0.9023           0.8994          0.07298
+          0.9023           0.8994         -0.07298
+           1.053            1.053                0
+           1.166            1.159           0.1226
+           1.166            1.159          -0.1226
+           1.168            1.162            0.125
+           1.168            1.162           -0.125
+            1.18            1.169            0.159
+            1.18            1.169           -0.159
+            1.18            1.169            0.159
+            1.18            1.169           -0.159
+           1.181            1.171           0.1566
+           1.181            1.171          -0.1566
+           1.181            1.171           0.1566
+           1.181            1.171          -0.1566
+           1.181            1.171           0.1563
+           1.181            1.171          -0.1563
+           1.181            1.171           0.1563
+           1.181            1.171          -0.1563
+            1.19            1.186           0.0962
+            1.19            1.186          -0.0962
+       4.559e+16        4.559e+16                0
+       6.461e+16       -6.461e+16                0
+       8.539e+16       -8.539e+16                0
+       9.971e+16       -9.971e+16                0
+       1.959e+17       -1.959e+17                0
+         2.7e+17          2.7e+17                0
+       5.977e+17       -5.977e+17                0
+       7.802e+17        7.802e+17                0
+       8.389e+17       -8.389e+17                0
+       8.895e+17        8.895e+17                0
+       1.007e+18        1.007e+18                0
+        1.08e+18        -1.08e+18                0
+       1.176e+18       -1.176e+18                0
+       1.284e+18       -1.284e+18                0
+       1.534e+18       -1.534e+18                0
+        1.63e+18        -1.63e+18                0
+       1.843e+18       -1.843e+18                0
+       1.979e+18       -1.979e+18                0
+       2.132e+18       -2.132e+18                0
+       2.311e+18       -2.311e+18                0
+       2.698e+18        2.698e+18                0
+       3.303e+18       -3.303e+18                0
+       4.173e+18        4.173e+18                0
+       6.436e+18       -6.436e+18                0
+       1.063e+19       -1.063e+19                0
+       1.193e+19       -1.193e+19                0
+       2.649e+19        2.649e+19                0
+       3.163e+19       -3.163e+19                0
+       3.497e+19       -3.497e+19                0
+       3.997e+19        3.997e+19                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+
+There are 52 eigenvalue(s) larger than 1 in modulus 
+for 52 forward-looking variable(s)
+
+The rank condition is verified.
+
+=============================================
+=== Step 1 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         21.1336                           143               1
+     1         20         2.53613       0.222653           20.6               1
+     2         30        0.145406       0.177977           2.83               1
+     3         40      0.00144821      0.0734337          0.234               1
+     4         50     2.54698e-07     0.00840536        0.00319               1
+     5         60     1.05436e-14    0.000100394       6.76e-07               1
+     6         70     5.65703e-27     2.1648e-08       1.12e-12               1
+     7         71     5.65703e-27    4.59904e-14       1.12e-12               1
+     8         81     2.31208e-27    1.14976e-14       1.18e-12        1.15e-14
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.672478e-27,'selected',2.220446e-16,2.312077e-27,'selected',1.000000e-10,2.312077e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 1.56716
+C            		 0.4552
+PoP          		 1.11194
+B            		 -0.60823
+Sf           		 1
+BG           		 0
+NX           		 0.0320121
+rf           		 0.0526316
+G            		 0.0891806
+I            		 0.135821
+Y            		 0.712213
+N            		 0.128272
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.271706
+K_1          		 0.537831
+N_1          		 0.037056
+I_1          		 0.046612
+P_1          		 1.03331
+W_1          		 4.55925
+Y_1_1        		 0.0618137
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.122358
+N_1_1        		 0.00843033
+W_1_1        		 4.55925
+A_1_1        		 1.11676
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 1.52389
+A_K_1_1      		 1
+I_1_1        		 0.0106044
+P_1_1        		 1.03331
+omegaI_1_1   		 1.03331
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0186922
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0370004
+N_1_2        		 0.00254929
+W_1_2        		 4.55925
+A_1_2        		 1.11676
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 1.52389
+A_K_1_2      		 1
+I_1_2        		 0.0032067
+P_1_2        		 1.03331
+omegaI_1_2   		 1.03331
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.1912
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.378473
+N_1_3        		 0.0260764
+W_1_3        		 4.55925
+A_1_3        		 1.11676
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 1.52389
+A_K_1_3      		 1
+I_1_3        		 0.032801
+P_1_3        		 1.03331
+omegaI_1_3   		 1.03331
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 0.495431
+K_2          		 1.19523
+N_2          		 0.0483315
+I_2          		 0.103587
+P_2          		 2.70632
+W_2          		 14.8877
+Y_2_1        		 0.0648662
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.15649
+N_2_1        		 0.00632798
+W_2_1        		 14.8877
+A_2_1        		 1.35588
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.961405
+A_K_2_1      		 1
+I_2_1        		 0.0135625
+P_2_1        		 2.70632
+omegaI_2_1   		 2.70632
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.0847701
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.204509
+N_2_2        		 0.0082697
+W_2_2        		 14.8877
+A_2_2        		 1.35588
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.961405
+A_K_2_2      		 1
+I_2_2        		 0.0177241
+P_2_2        		 2.70632
+omegaI_2_2   		 2.70632
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.345794
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 0.834232
+N_2_3        		 0.0337338
+W_2_3        		 14.8877
+A_2_3        		 1.35588
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.961405
+A_K_2_3      		 1
+I_2_3        		 0.0723001
+P_2_3        		 2.70632
+omegaI_2_3   		 2.70632
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.295978
+K_3          		 0.609614
+N_3          		 0.042885
+I_3          		 0.0528332
+P_3          		 5.3371
+W_3          		 21.7215
+Y_3_1        		 0.0556672
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.114656
+N_3_1        		 0.00806577
+W_3_1        		 21.7215
+A_3_1        		 1.4684
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.86875
+A_K_3_1      		 1
+I_3_1        		 0.00993683
+P_3_1        		 5.3371
+omegaI_3_1   		 5.3371
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.0674283
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.13888
+N_3_2        		 0.00976987
+W_3_2        		 21.7215
+A_3_2        		 1.4684
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.86875
+A_K_3_2      		 1
+I_3_2        		 0.0120362
+P_3_2        		 5.3371
+omegaI_3_2   		 5.3371
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.172882
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 0.356079
+N_3_3        		 0.0250493
+W_3_3        		 21.7215
+A_3_3        		 1.4684
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.86875
+A_K_3_3      		 1
+I_3_3        		 0.0308602
+P_3_3        		 5.3371
+omegaI_3_3   		 5.3371
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.6611463332e+02       
+      sqr. error=9.0852632306e+04       
+      abs. error=8.8052105118e+02       
+-----------------------------------
+(** 521.000000 milliseconds **)
+Sim : 132.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=7.0707634060e+01       
+      sqr. error=1.6451099474e+04       
+      abs. error=4.6778949555e+02       
+-----------------------------------
+(** 484.000000 milliseconds **)
+Sim : 133.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=2.1344396836e+01       
+      sqr. error=1.4626632732e+03       
+      abs. error=9.0298186868e+01       
+-----------------------------------
+(** 452.000000 milliseconds **)
+Sim : 127.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=3.1029982821e+00       
+      sqr. error=2.9658704953e+01       
+      abs. error=1.2879405508e+01       
+-----------------------------------
+(** 473.000000 milliseconds **)
+Sim : 113.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=4.8972780775e-02       
+      sqr. error=7.3367403414e-03       
+      abs. error=2.7191083234e-01       
+-----------------------------------
+(** 484.000000 milliseconds **)
+Sim : 135.000000 ms
+-----------------------------------
+      Simulate iteration no 6     
+      max. error=7.0489810795e-05       
+      sqr. error=1.5690039699e-08       
+      abs. error=3.6416897784e-04       
+-----------------------------------
+(** 472.000000 milliseconds **)
+Sim : 114.000000 ms
+-----------------------------------
+      Simulate iteration no 7     
+      max. error=1.1061462857e-10       
+      sqr. error=3.8606387263e-20       
+      abs. error=4.6990695536e-10       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 3.922942 seconds.
+=============================================
+=============================================
+=== Step 2 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10          2.2445                          15.2               1
+     1         20        0.119117       0.231754           2.06               1
+     2         30     0.000979984      0.0906358          0.137               1
+     3         40     1.12358e-07     0.00942175         0.0015               1
+     4         50     1.87997e-15      9.148e-05       2.04e-07               1
+     5         60     4.34057e-27     1.1875e-08       7.24e-13               1
+     6         61     4.34057e-27    4.03276e-14       7.24e-13               1
+     7         62     4.34057e-27    1.00819e-14       7.24e-13        1.01e-14
+     8         72     3.84567e-27    2.52048e-15       1.64e-12        2.52e-15
+     9         82     3.59341e-27    2.52048e-15        3.6e-13        2.52e-15
+    10         92     2.25804e-27    2.52048e-15        6.4e-13        2.52e-15
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',6.676845e-28,'selected',2.220446e-16,2.258040e-27,'selected',1.000000e-10,2.258040e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 2.09993
+C            		 0.611406
+PoP          		 1.11194
+B            		 -0.816436
+Sf           		 1
+BG           		 0
+NX           		 0.0429703
+rf           		 0.0526316
+G            		 0.119644
+I            		 0.181994
+Y            		 0.956014
+N            		 0.122963
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.285879
+K_1          		 0.565519
+N_1          		 0.0276387
+I_1          		 0.0490116
+P_1          		 1.08791
+W_1          		 6.77358
+Y_1_1        		 0.0650381
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.128657
+N_1_1        		 0.00628788
+W_1_1        		 6.77358
+A_1_1        		 1.1916
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 1.95173
+A_K_1_1      		 1
+I_1_1        		 0.0111503
+P_1_1        		 1.08791
+omegaI_1_1   		 1.08791
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0196672
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0389052
+N_1_2        		 0.00190142
+W_1_2        		 6.77358
+A_1_2        		 1.1916
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 1.95173
+A_K_1_2      		 1
+I_1_2        		 0.00337179
+P_1_2        		 1.08791
+omegaI_1_2   		 1.08791
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.201173
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.397957
+N_1_3        		 0.0194494
+W_1_3        		 6.77358
+A_1_3        		 1.1916
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 1.95173
+A_K_1_3      		 1
+I_1_3        		 0.0344896
+P_1_3        		 1.08791
+omegaI_1_3   		 1.08791
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 0.660255
+K_2          		 1.59002
+N_2          		 0.0489156
+I_2          		 0.137802
+P_2          		 2.71044
+W_2          		 19.6573
+Y_2_1        		 0.0864464
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.20818
+N_2_1        		 0.00640447
+W_2_1        		 19.6573
+A_2_1        		 1.62139
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.939433
+A_K_2_1      		 1
+I_2_1        		 0.0180423
+P_2_1        		 2.71044
+omegaI_2_1   		 2.71044
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.112972
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.272059
+N_2_2        		 0.00836965
+W_2_2        		 19.6573
+A_2_2        		 1.62139
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.939433
+A_K_2_2      		 1
+I_2_2        		 0.0235785
+P_2_2        		 2.71044
+omegaI_2_2   		 2.71044
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.460836
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 1.10978
+N_2_3        		 0.0341415
+W_2_3        		 19.6573
+A_2_3        		 1.62139
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.939433
+A_K_2_3      		 1
+I_2_3        		 0.0961814
+P_2_3        		 2.71044
+omegaI_2_3   		 2.71044
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.415448
+K_3          		 0.853755
+N_3          		 0.0464082
+I_3          		 0.0739921
+P_3          		 5.28692
+W_3          		 27.9428
+Y_3_1        		 0.0781371
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.160573
+N_3_1        		 0.00872841
+W_3_1        		 27.9428
+A_3_1        		 1.84014
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.799838
+A_K_3_1      		 1
+I_3_1        		 0.0139164
+P_3_1        		 5.28692
+omegaI_3_1   		 5.28692
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.0946456
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.194499
+N_3_2        		 0.0105725
+W_3_2        		 27.9428
+A_3_2        		 1.84014
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.799838
+A_K_3_2      		 1
+I_3_2        		 0.0168566
+P_3_2        		 5.28692
+omegaI_3_2   		 5.28692
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.242665
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 0.498683
+N_3_3        		 0.0271073
+W_3_3        		 27.9428
+A_3_3        		 1.84014
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.799838
+A_K_3_3      		 1
+I_3_3        		 0.0432192
+P_3_3        		 5.28692
+omegaI_3_3   		 5.28692
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.6266555867e+01       
+      sqr. error=1.6450250222e+03       
+      abs. error=4.0111898595e+02       
+-----------------------------------
+(** 530.000000 milliseconds **)
+Sim : 116.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=5.7992792368e+00       
+      sqr. error=2.4996359019e+02       
+      abs. error=2.4007611537e+02       
+-----------------------------------
+(** 442.000000 milliseconds **)
+Sim : 142.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=1.5260321459e+00       
+      sqr. error=1.2117306588e+01       
+      abs. error=1.8213456347e+01       
+-----------------------------------
+(** 456.000000 milliseconds **)
+Sim : 119.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=1.9603589475e-01       
+      sqr. error=1.9757561918e-01       
+      abs. error=1.3285454894e+00       
+-----------------------------------
+(** 473.000000 milliseconds **)
+Sim : 125.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=4.3344511113e-03       
+      sqr. error=9.6396877682e-05       
+      abs. error=2.6300659282e-02       
+-----------------------------------
+(** 472.000000 milliseconds **)
+Sim : 111.000000 ms
+-----------------------------------
+      Simulate iteration no 6     
+      max. error=2.2355641076e-06       
+      sqr. error=2.5675346961e-11       
+      abs. error=1.2721851951e-05       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 3.138493 seconds.
+=============================================
+=============================================
+=== Step 3 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         1.46249                          11.2               1
+     1         20       0.0617706       0.267251           1.41               1
+     2         30     0.000294645      0.0874402         0.0717               1
+     3         40     1.03647e-08     0.00658281       0.000397               1
+     4         50     1.62685e-17    3.54631e-05       1.48e-08               1
+     5         60      4.1695e-27    1.44765e-09        1.1e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',8.134265e-18,'selected',2.220446e-16,4.169500e-27,'selected',1.000000e-10,4.169500e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 2.68663
+C            		 0.784086
+PoP          		 1.11194
+B            		 -1.04637
+Sf           		 1
+BG           		 0
+NX           		 0.0550721
+rf           		 0.0526316
+G            		 0.153257
+I            		 0.232842
+Y            		 1.22526
+N            		 0.120399
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.29788
+K_1          		 0.58894
+N_1          		 0.0215804
+I_1          		 0.0510415
+P_1          		 1.13658
+W_1          		 9.44627
+Y_1_1        		 0.0677685
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.133985
+N_1_1        		 0.00490959
+W_1_1        		 9.44627
+A_1_1        		 1.25823
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 2.40192
+A_K_1_1      		 1
+I_1_1        		 0.0116121
+P_1_1        		 1.13658
+omegaI_1_1   		 1.13658
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0204929
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0405165
+N_1_2        		 0.00148464
+W_1_2        		 9.44627
+A_1_2        		 1.25823
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 2.40192
+A_K_1_2      		 1
+I_1_2        		 0.00351143
+P_1_2        		 1.13658
+omegaI_1_2   		 1.13658
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.209619
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.414438
+N_1_3        		 0.0151861
+W_1_3        		 9.44627
+A_1_3        		 1.25823
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 2.40192
+A_K_1_3      		 1
+I_1_3        		 0.035918
+P_1_3        		 1.13658
+omegaI_1_3   		 1.13658
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 0.838366
+K_2          		 2.01593
+N_2          		 0.049323
+I_2          		 0.174714
+P_2          		 2.71578
+W_2          		 24.8278
+Y_2_1        		 0.109766
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.263943
+N_2_1        		 0.0064578
+W_2_1        		 24.8278
+A_2_1        		 1.88379
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.921391
+A_K_2_1      		 1
+I_2_1        		 0.022875
+P_2_1        		 2.71578
+omegaI_2_1   		 2.71578
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.143448
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.344933
+N_2_2        		 0.00843935
+W_2_2        		 24.8278
+A_2_2        		 1.88379
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.921391
+A_K_2_2      		 1
+I_2_2        		 0.0298942
+P_2_2        		 2.71578
+omegaI_2_2   		 2.71578
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.585152
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 1.40705
+N_2_3        		 0.0344258
+W_2_3        		 24.8278
+A_2_3        		 1.88379
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.921391
+A_K_2_3      		 1
+I_2_3        		 0.121944
+P_2_3        		 2.71578
+omegaI_2_3   		 2.71578
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.550939
+K_3          		 1.13005
+N_3          		 0.0494953
+I_3          		 0.0979377
+P_3          		 5.24891
+W_3          		 34.5289
+Y_3_1        		 0.10362
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.212539
+N_3_1        		 0.00930903
+W_3_1        		 34.5289
+A_3_1        		 2.22357
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.746271
+A_K_3_1      		 1
+I_3_1        		 0.01842
+P_3_1        		 5.24891
+omegaI_3_1   		 5.24891
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.125513
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.257443
+N_3_2        		 0.0112758
+W_3_2        		 34.5289
+A_3_2        		 2.22357
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.746271
+A_K_3_2      		 1
+I_3_2        		 0.0223117
+P_3_2        		 5.24891
+omegaI_3_2   		 5.24891
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.321806
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 0.660068
+N_3_3        		 0.0289105
+W_3_3        		 34.5289
+A_3_3        		 2.22357
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.746271
+A_K_3_3      		 1
+I_3_3        		 0.0572059
+P_3_3        		 5.24891
+omegaI_3_3   		 5.24891
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=8.6070964287e+00       
+      sqr. error=5.3522546553e+02       
+      abs. error=3.3246862134e+02       
+-----------------------------------
+(** 548.000000 milliseconds **)
+Sim : 88.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=2.9950820053e+00       
+      sqr. error=1.0542733778e+02       
+      abs. error=1.8350263138e+02       
+-----------------------------------
+(** 506.000000 milliseconds **)
+Sim : 116.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=6.2788154590e-01       
+      sqr. error=2.1557492038e+00       
+      abs. error=8.8333922803e+00       
+-----------------------------------
+(** 481.000000 milliseconds **)
+Sim : 116.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=4.8762196971e-02       
+      sqr. error=1.2374934209e-02       
+      abs. error=3.3217911677e-01       
+-----------------------------------
+(** 497.000000 milliseconds **)
+Sim : 117.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=3.5368125993e-04       
+      sqr. error=6.4361403648e-07       
+      abs. error=2.1399161073e-03       
+-----------------------------------
+(** 497.000000 milliseconds **)
+Sim : 127.000000 ms
+-----------------------------------
+      Simulate iteration no 6     
+      max. error=1.9039950505e-08       
+      sqr. error=1.8619555885e-15       
+      abs. error=1.0846602543e-07       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 3.259632 seconds.
+=============================================
+=============================================
+=== Step 4 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         1.11601                          9.19               1
+     1         20       0.0403327        0.30894           1.09               1
+     2         30     0.000132997      0.0899162         0.0468               1
+     3         40      2.1264e-09     0.00548935       0.000175               1
+     4         50     7.33499e-19    2.00678e-05       3.02e-09               1
+     5         60     7.74092e-27    4.01236e-10       1.56e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',3.667496e-19,'selected',2.220446e-16,7.740919e-27,'selected',1.000000e-10,7.740919e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 3.3495
+C            		 0.979851
+PoP          		 1.11194
+B            		 -1.30681
+Sf           		 1
+BG           		 0
+NX           		 0.0687794
+rf           		 0.0526316
+G            		 0.191301
+I            		 0.29029
+Y            		 1.53022
+N            		 0.119277
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.30871
+K_1          		 0.610056
+N_1          		 0.017287
+I_1          		 0.0528715
+P_1          		 1.1823
+W_1          		 12.7158
+Y_1_1        		 0.0702324
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.138789
+N_1_1        		 0.00393283
+W_1_1        		 12.7158
+A_1_1        		 1.32084
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 2.89077
+A_K_1_1      		 1
+I_1_1        		 0.0120284
+P_1_1        		 1.1823
+omegaI_1_1   		 1.1823
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0212379
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0419691
+N_1_2        		 0.00118927
+W_1_2        		 12.7158
+A_1_2        		 1.32084
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 2.89077
+A_K_1_2      		 1
+I_1_2        		 0.00363733
+P_1_2        		 1.1823
+omegaI_1_2   		 1.1823
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.21724
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.429297
+N_1_3        		 0.0121649
+W_1_3        		 12.7158
+A_1_3        		 1.32084
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 2.89077
+A_K_1_3      		 1
+I_1_3        		 0.0372058
+P_1_3        		 1.1823
+omegaI_1_3   		 1.1823
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 1.0361
+K_2          		 2.48807
+N_2          		 0.0496301
+I_2          		 0.215633
+P_2          		 2.72181
+W_2          		 30.589
+Y_2_1        		 0.135656
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.32576
+N_2_1        		 0.00649802
+W_2_1        		 30.589
+A_2_1        		 2.15366
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.905581
+A_K_2_1      		 1
+I_2_1        		 0.0282326
+P_2_1        		 2.72181
+omegaI_2_1   		 2.72181
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.177281
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.425719
+N_2_2        		 0.00849191
+W_2_2        		 30.589
+A_2_2        		 2.15366
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.905581
+A_K_2_2      		 1
+I_2_2        		 0.0368956
+P_2_2        		 2.72181
+omegaI_2_2   		 2.72181
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.723167
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 1.73659
+N_2_3        		 0.0346402
+W_2_3        		 30.589
+A_2_3        		 2.15366
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.905581
+A_K_2_3      		 1
+I_2_3        		 0.150505
+P_2_3        		 2.72181
+omegaI_2_3   		 2.72181
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.707762
+K_3          		 1.44926
+N_3          		 0.0523597
+I_3          		 0.125603
+P_3          		 5.21768
+W_3          		 41.7181
+Y_3_1        		 0.133115
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.272576
+N_3_1        		 0.00984777
+W_3_1        		 41.7181
+A_3_1        		 2.63283
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.701496
+A_K_3_1      		 1
+I_3_1        		 0.0236233
+P_3_1        		 5.21768
+omegaI_3_1   		 5.21768
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.161239
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.330165
+N_3_2        		 0.0119284
+W_3_2        		 41.7181
+A_3_2        		 2.63283
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.701496
+A_K_3_2      		 1
+I_3_2        		 0.0286143
+P_3_2        		 5.21768
+omegaI_3_2   		 5.21768
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.413407
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 0.846523
+N_3_3        		 0.0305836
+W_3_3        		 41.7181
+A_3_3        		 2.63283
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.701496
+A_K_3_3      		 1
+I_3_3        		 0.0733653
+P_3_3        		 5.21768
+omegaI_3_3   		 5.21768
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=5.4503241565e+00       
+      sqr. error=2.7031549822e+02       
+      abs. error=3.0966989377e+02       
+-----------------------------------
+(** 505.000000 milliseconds **)
+Sim : 126.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.8219076636e+00       
+      sqr. error=7.2773562753e+01       
+      abs. error=1.6299653420e+02       
+-----------------------------------
+(** 462.000000 milliseconds **)
+Sim : 113.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.2355362240e-01       
+      sqr. error=6.1567962140e-01       
+      abs. error=5.6425576103e+00       
+-----------------------------------
+(** 484.000000 milliseconds **)
+Sim : 116.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=1.7140046307e-02       
+      sqr. error=1.5398638300e-03       
+      abs. error=1.1837941613e-01       
+-----------------------------------
+(** 469.000000 milliseconds **)
+Sim : 115.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=5.4841294103e-05       
+      sqr. error=1.5489418005e-08       
+      abs. error=3.3358792058e-04       
+-----------------------------------
+(** 507.000000 milliseconds **)
+Sim : 119.000000 ms
+-----------------------------------
+      Simulate iteration no 6     
+      max. error=5.6987925490e-10       
+      sqr. error=1.6672317896e-18       
+      abs. error=3.3077073441e-09       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 3.184831 seconds.
+=============================================
+=============================================
+=== Step 5 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.915544                          7.91               1
+     1         20       0.0293515       0.356302          0.896               1
+     2         30     7.30093e-05      0.0950251         0.0337               1
+     3         40     6.42387e-10     0.00496473       9.35e-05               1
+     4         50     5.45852e-20    1.35661e-05       7.69e-10               1
+     5         60     8.56408e-27    1.33114e-10       1.39e-12               1
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',2.729262e-20,'selected',2.220446e-16,8.564084e-27,'selected',1.000000e-10,8.564084e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 4.10382
+C            		 1.20333
+PoP          		 1.11194
+B            		 -1.60388
+Sf           		 1
+BG           		 0
+NX           		 0.0844145
+rf           		 0.0526316
+G            		 0.234664
+I            		 0.355665
+Y            		 1.87808
+N            		 0.119048
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.318784
+K_1          		 0.629681
+N_1          		 0.0140887
+I_1          		 0.0545723
+P_1          		 1.22628
+W_1          		 16.7143
+Y_1_1        		 0.0725241
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.143254
+N_1_1        		 0.00320522
+W_1_1        		 16.7143
+A_1_1        		 1.38113
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 3.42735
+A_K_1_1      		 1
+I_1_1        		 0.0124154
+P_1_1        		 1.22628
+omegaI_1_1   		 1.22628
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0219309
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0433193
+N_1_2        		 0.000969243
+W_1_2        		 16.7143
+A_1_2        		 1.38113
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 3.42735
+A_K_1_2      		 1
+I_1_2        		 0.00375434
+P_1_2        		 1.22628
+omegaI_1_2   		 1.22628
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.224329
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.443108
+N_1_3        		 0.00991426
+W_1_3        		 16.7143
+A_1_3        		 1.38113
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 3.42735
+A_K_1_3      		 1
+I_1_3        		 0.0384027
+P_1_3        		 1.22628
+omegaI_1_3   		 1.22628
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 1.2574
+K_2          		 3.01578
+N_2          		 0.0498704
+I_2          		 0.261367
+P_2          		 2.72829
+W_2          		 37.0621
+Y_2_1        		 0.16463
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.394852
+N_2_1        		 0.00652947
+W_2_1        		 37.0621
+A_2_1        		 2.43567
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.891289
+A_K_2_1      		 1
+I_2_1        		 0.0342205
+P_2_1        		 2.72829
+omegaI_2_1   		 2.72829
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.215147
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.516011
+N_2_2        		 0.00853301
+W_2_2        		 37.0621
+A_2_2        		 2.43567
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.891289
+A_K_2_2      		 1
+I_2_2        		 0.044721
+P_2_2        		 2.72829
+omegaI_2_2   		 2.72829
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 0.877626
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 2.10491
+N_2_3        		 0.0348079
+W_2_3        		 37.0621
+A_2_3        		 2.43567
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.891289
+A_K_2_3      		 1
+I_2_3        		 0.182426
+P_2_3        		 2.72829
+omegaI_2_3   		 2.72829
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 0.890003
+K_3          		 1.81961
+N_3          		 0.0550886
+I_3          		 0.157699
+P_3          		 5.19096
+W_3          		 49.6461
+Y_3_1        		 0.167391
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.34223
+N_3_1        		 0.010361
+W_3_1        		 49.6461
+A_3_1        		 3.07509
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.662716
+A_K_3_1      		 1
+I_3_1        		 0.02966
+P_3_1        		 5.19096
+omegaI_3_1   		 5.19096
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.202757
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.414535
+N_3_2        		 0.0125501
+W_3_2        		 49.6461
+A_3_2        		 3.07509
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.662716
+A_K_3_2      		 1
+I_3_2        		 0.0359264
+P_3_2        		 5.19096
+omegaI_3_2   		 5.19096
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.519855
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 1.06284
+N_3_3        		 0.0321775
+W_3_3        		 49.6461
+A_3_3        		 3.07509
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.662716
+A_K_3_3      		 1
+I_3_3        		 0.092113
+P_3_3        		 5.19096
+omegaI_3_3   		 5.19096
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=4.2666387803e+00       
+      sqr. error=1.8343745965e+02       
+      abs. error=3.0373576362e+02       
+-----------------------------------
+(** 507.000000 milliseconds **)
+Sim : 109.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.2050181227e+00       
+      sqr. error=6.5611299933e+01       
+      abs. error=1.5569092663e+02       
+-----------------------------------
+(** 490.000000 milliseconds **)
+Sim : 127.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=1.8695744485e-01       
+      sqr. error=2.3413015427e-01       
+      abs. error=4.1844392209e+00       
+-----------------------------------
+(** 494.000000 milliseconds **)
+Sim : 113.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=7.2378120616e-03       
+      sqr. error=2.7623094845e-04       
+      abs. error=5.1008330988e-02       
+-----------------------------------
+(** 478.000000 milliseconds **)
+Sim : 126.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=1.1995882697e-05       
+      sqr. error=7.4169805609e-10       
+      abs. error=7.3703088252e-05       
+-----------------------------------
+(** 484.000000 milliseconds **)
+Sim : 100.000000 ms
+-----------------------------------
+      Simulate iteration no 6     
+      max. error=3.3350211481e-11       
+      sqr. error=5.7076742547e-21       
+      abs. error=2.4779575787e-10       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 3.255225 seconds.
+=============================================
+=============================================
+=== Step 6 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.783138                             7               1
+     1         20       0.0227667       0.409562          0.764               1
+     2         30     4.50379e-05        0.10188         0.0258            1.02
+     3         40     2.44998e-10     0.00470259       5.64e-05            1.02
+     4         50     1.01139e-20     1.0185e-05       4.68e-10            1.02
+     5         60     1.04515e-26     6.8718e-11       2.08e-12            1.02
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',5.056946e-21,'selected',2.220446e-16,1.045148e-26,'selected',1.000000e-10,1.045148e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 4.96368
+C            		 1.45884
+PoP          		 1.11194
+B            		 -1.94325
+Sf           		 1
+BG           		 0
+NX           		 0.102276
+rf           		 0.0526316
+G            		 0.28417
+I            		 0.430185
+Y            		 2.27547
+N            		 0.11942
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.328323
+K_1          		 0.648254
+N_1          		 0.0116298
+I_1          		 0.056182
+P_1          		 1.26913
+W_1          		 21.5874
+Y_1_1        		 0.0746945
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.14748
+N_1_1        		 0.0026458
+W_1_1        		 21.5874
+A_1_1        		 1.43999
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 4.01882
+A_K_1_1      		 1
+I_1_1        		 0.0127816
+P_1_1        		 1.26913
+omegaI_1_1   		 1.26913
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0225872
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.044597
+N_1_2        		 0.000800078
+W_1_2        		 21.5874
+A_1_2        		 1.43999
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 4.01882
+A_K_1_2      		 1
+I_1_2        		 0.00386508
+P_1_2        		 1.26913
+omegaI_1_2   		 1.26913
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.231042
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.456178
+N_1_3        		 0.00818389
+W_1_3        		 21.5874
+A_1_3        		 1.43999
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 4.01882
+A_K_1_3      		 1
+I_1_3        		 0.0395354
+P_1_3        		 1.26913
+omegaI_1_3   		 1.26913
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 1.50564
+K_2          		 3.60701
+N_2          		 0.0500621
+I_2          		 0.312607
+P_2          		 2.73509
+W_2          		 44.3533
+Y_2_1        		 0.197132
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.472261
+N_2_1        		 0.00655457
+W_2_1        		 44.3533
+A_2_1        		 2.73266
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.878129
+A_K_2_1      		 1
+I_2_1        		 0.0409293
+P_2_1        		 2.73509
+omegaI_2_1   		 2.73509
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.257621
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.617173
+N_2_2        		 0.00856582
+W_2_2        		 44.3533
+A_2_2        		 2.73266
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.878129
+A_K_2_2      		 1
+I_2_2        		 0.0534883
+P_2_2        		 2.73509
+omegaI_2_2   		 2.73509
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 1.05089
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 2.51757
+N_2_3        		 0.0349417
+W_2_3        		 44.3533
+A_2_3        		 2.73266
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.878129
+A_K_2_3      		 1
+I_2_3        		 0.21819
+P_2_3        		 2.73509
+omegaI_2_3   		 2.73509
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 1.10167
+K_3          		 2.24909
+N_3          		 0.0577283
+I_3          		 0.194921
+P_3          		 5.16751
+W_3          		 58.4223
+Y_3_1        		 0.207201
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.423008
+N_3_1        		 0.0108575
+W_3_1        		 58.4223
+A_3_1        		 3.55558
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.628399
+A_K_3_1      		 1
+I_3_1        		 0.0366607
+P_3_1        		 5.16751
+omegaI_3_1   		 5.16751
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.250978
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.512379
+N_3_2        		 0.0131514
+W_3_2        		 58.4223
+A_3_2        		 3.55558
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.628399
+A_K_3_2      		 1
+I_3_2        		 0.0444062
+P_3_2        		 5.16751
+omegaI_3_2   		 5.16751
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.643492
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 1.31371
+N_3_3        		 0.0337194
+W_3_3        		 58.4223
+A_3_3        		 3.55558
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.628399
+A_K_3_3      		 1
+I_3_3        		 0.113855
+P_3_3        		 5.16751
+omegaI_3_3   		 5.16751
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=5.1057322271e+00       
+      sqr. error=1.5672026047e+02       
+      abs. error=3.0650210177e+02       
+-----------------------------------
+(** 543.000000 milliseconds **)
+Sim : 119.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=9.6049223158e-01       
+      sqr. error=6.7917039222e+01       
+      abs. error=1.5499713912e+02       
+-----------------------------------
+(** 517.000000 milliseconds **)
+Sim : 113.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=1.1601096226e-01       
+      sqr. error=1.1306872029e-01       
+      abs. error=3.4197757082e+00       
+-----------------------------------
+(** 485.000000 milliseconds **)
+Sim : 100.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=3.4342143146e-03       
+      sqr. error=6.2569327461e-05       
+      abs. error=2.4866416249e-02       
+-----------------------------------
+(** 503.000000 milliseconds **)
+Sim : 134.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=3.2646523914e-06       
+      sqr. error=5.4990487178e-11       
+      abs. error=2.0347150393e-05       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.670439 seconds.
+=============================================
+=============================================
+=== Step 7 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10         0.68838                          6.32               1
+     1         20       0.0184191       0.469185          0.667               1
+     2         30     3.00394e-05       0.110148         0.0206            1.17
+     3         40     1.09118e-10     0.00458818       3.68e-05            1.17
+     4         50      1.9589e-21    8.18488e-06       5.71e-11            1.17
+     5         60     1.25899e-26    5.06473e-11       1.11e-12            1.17
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',9.794458e-22,'selected',2.220446e-16,1.258991e-26,'selected',1.000000e-10,1.258991e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 5.94342
+C            		 1.7508
+PoP          		 1.11194
+B            		 -2.33076
+Sf           		 1
+BG           		 0
+NX           		 0.122672
+rf           		 0.0526316
+G            		 0.340662
+I            		 0.515096
+Y            		 2.72923
+N            		 0.120221
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.337467
+K_1          		 0.666045
+N_1          		 0.00969663
+I_1          		 0.0577239
+P_1          		 1.31123
+W_1          		 27.5004
+Y_1_1        		 0.0767747
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.151527
+N_1_1        		 0.00220601
+W_1_1        		 27.5004
+A_1_1        		 1.49796
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 4.67178
+A_K_1_1      		 1
+I_1_1        		 0.0131323
+P_1_1        		 1.31123
+omegaI_1_1   		 1.31123
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0232163
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.045821
+N_1_2        		 0.000667086
+W_1_2        		 27.5004
+A_1_2        		 1.49796
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 4.67178
+A_K_1_2      		 1
+I_1_2        		 0.00397115
+P_1_2        		 1.31123
+omegaI_1_2   		 1.31123
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.237476
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.468697
+N_1_3        		 0.00682354
+W_1_3        		 27.5004
+A_1_3        		 1.49796
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 4.67178
+A_K_1_3      		 1
+I_1_3        		 0.0406204
+P_1_3        		 1.31123
+omegaI_1_3   		 1.31123
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 1.78412
+K_2          		 4.2695
+N_2          		 0.0502168
+I_2          		 0.370023
+P_2          		 2.74211
+W_2          		 52.5674
+Y_2_1        		 0.233593
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.559001
+N_2_1        		 0.00657484
+W_2_1        		 52.5674
+A_2_1        		 3.04677
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.865864
+A_K_2_1      		 1
+I_2_1        		 0.0484467
+P_2_1        		 2.74211
+omegaI_2_1   		 2.74211
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.30527
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.730528
+N_2_2        		 0.0085923
+W_2_2        		 52.5674
+A_2_2        		 3.04677
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.865864
+A_K_2_2      		 1
+I_2_2        		 0.0633124
+P_2_2        		 2.74211
+omegaI_2_2   		 2.74211
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 1.24526
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 2.97997
+N_2_3        		 0.0350497
+W_2_3        		 52.5674
+A_2_3        		 3.04677
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.865864
+A_K_2_3      		 1
+I_2_3        		 0.258264
+P_2_3        		 2.74211
+omegaI_2_3   		 2.74211
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 1.347
+K_3          		 2.74617
+N_3          		 0.0603071
+I_3          		 0.238002
+P_3          		 5.14655
+W_3          		 68.1491
+Y_3_1        		 0.253343
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.516498
+N_3_1        		 0.0113425
+W_3_1        		 68.1491
+A_3_1        		 4.07884
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.597583
+A_K_3_1      		 1
+I_3_1        		 0.0447632
+P_3_1        		 5.14655
+omegaI_3_1   		 5.14655
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.306869
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.625622
+N_3_2        		 0.0137389
+W_3_2        		 68.1491
+A_3_2        		 4.07884
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.597583
+A_K_3_2      		 1
+I_3_2        		 0.0542205
+P_3_2        		 5.14655
+omegaI_3_2   		 5.14655
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.786792
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 1.60405
+N_3_3        		 0.0352257
+W_3_3        		 68.1491
+A_3_3        		 4.07884
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.597583
+A_K_3_3      		 1
+I_3_3        		 0.139018
+P_3_3        		 5.14655
+omegaI_3_3   		 5.14655
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=6.0916032266e+00       
+      sqr. error=1.5748257293e+02       
+      abs. error=3.1471312686e+02       
+-----------------------------------
+(** 533.000000 milliseconds **)
+Sim : 141.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.0460672106e+00       
+      sqr. error=7.5418110645e+01       
+      abs. error=1.5838948245e+02       
+-----------------------------------
+(** 501.000000 milliseconds **)
+Sim : 130.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=7.5642929846e-02       
+      sqr. error=6.8420957582e-02       
+      abs. error=2.9910355289e+00       
+-----------------------------------
+(** 455.000000 milliseconds **)
+Sim : 138.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=1.7685030962e-03       
+      sqr. error=1.6707652095e-05       
+      abs. error=1.3263380105e-02       
+-----------------------------------
+(** 500.000000 milliseconds **)
+Sim : 101.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=1.0352767534e-06       
+      sqr. error=5.5385573391e-12       
+      abs. error=6.5761661486e-06       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.652419 seconds.
+=============================================
+=============================================
+=== Step 8 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.616798                          5.78               1
+     1         20       0.0153555       0.535743          0.593               1
+     2         30     2.11846e-05       0.119711         0.0169            1.34
+     3         40     5.43972e-11     0.00456768       2.55e-05            1.34
+     4         50     3.83716e-22    6.90293e-06       3.37e-11            1.34
+     5         60     5.47707e-27    1.40993e-11       6.68e-13            1.34
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.918550e-22,'selected',2.220446e-16,5.477074e-27,'selected',1.000000e-10,5.477074e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 7.05831
+C            		 2.08394
+PoP          		 1.11194
+B            		 -2.77262
+Sf           		 1
+BG           		 0
+NX           		 0.145927
+rf           		 0.0526316
+G            		 0.405037
+I            		 0.61172
+Y            		 3.24663
+N            		 0.121337
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.346306
+K_1          		 0.683233
+N_1          		 0.00815112
+I_1          		 0.0592136
+P_1          		 1.35283
+W_1          		 34.6431
+Y_1_1        		 0.0787856
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.155437
+N_1_1        		 0.0018544
+W_1_1        		 34.6431
+A_1_1        		 1.55539
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 5.39279
+A_K_1_1      		 1
+I_1_1        		 0.0134712
+P_1_1        		 1.35283
+omegaI_1_1   		 1.35283
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0238244
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0470035
+N_1_2        		 0.000560761
+W_1_2        		 34.6431
+A_1_2        		 1.55539
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 5.39279
+A_K_1_2      		 1
+I_1_2        		 0.00407363
+P_1_2        		 1.35283
+omegaI_1_2   		 1.35283
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.243696
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.480793
+N_1_3        		 0.00573595
+W_1_3        		 34.6431
+A_1_3        		 1.55539
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 5.39279
+A_K_1_3      		 1
+I_1_3        		 0.0416687
+P_1_3        		 1.35283
+omegaI_1_3   		 1.35283
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 2.09624
+K_2          		 5.01121
+N_2          		 0.0503424
+I_2          		 0.434305
+P_2          		 2.7493
+W_2          		 61.8136
+Y_2_1        		 0.274458
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.656112
+N_2_1        		 0.00659128
+W_2_1        		 61.8136
+A_2_1        		 3.37977
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.854331
+A_K_2_1      		 1
+I_2_1        		 0.056863
+P_2_1        		 2.7493
+omegaI_2_1   		 2.7493
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.358674
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.857437
+N_2_2        		 0.00861379
+W_2_2        		 61.8136
+A_2_2        		 3.37977
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.854331
+A_K_2_2      		 1
+I_2_2        		 0.0743112
+P_2_2        		 2.7493
+omegaI_2_2   		 2.7493
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 1.4631
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 3.49766
+N_2_3        		 0.0351374
+W_2_3        		 61.8136
+A_2_3        		 3.37977
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.854331
+A_K_2_3      		 1
+I_2_3        		 0.30313
+P_2_3        		 2.7493
+omegaI_2_3   		 2.7493
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 1.63061
+K_3          		 3.32002
+N_3          		 0.0628436
+I_3          		 0.287735
+P_3          		 5.12758
+W_3          		 78.9291
+Y_3_1        		 0.306684
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.624427
+N_3_1        		 0.0118196
+W_3_1        		 78.9291
+A_3_1        		 4.64922
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.569613
+A_K_3_1      		 1
+I_3_1        		 0.054117
+P_3_1        		 5.12758
+omegaI_3_1   		 5.12758
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.371478
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.756353
+N_3_2        		 0.0143168
+W_3_2        		 78.9291
+A_3_2        		 4.64922
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.569613
+A_K_3_2      		 1
+I_3_2        		 0.0655506
+P_3_2        		 5.12758
+omegaI_3_2   		 5.12758
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 0.952447
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 1.93924
+N_3_3        		 0.0367073
+W_3_3        		 78.9291
+A_3_3        		 4.64922
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.569613
+A_K_3_3      		 1
+I_3_3        		 0.168068
+P_3_3        		 5.12758
+omegaI_3_3   		 5.12758
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=7.2413661608e+00       
+      sqr. error=1.7491485160e+02       
+      abs. error=3.2682605727e+02       
+-----------------------------------
+(** 533.000000 milliseconds **)
+Sim : 92.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.1490185558e+00       
+      sqr. error=8.6899702485e+01       
+      abs. error=1.6472356184e+02       
+-----------------------------------
+(** 556.000000 milliseconds **)
+Sim : 136.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=5.1174030925e-02       
+      sqr. error=5.0541453329e-02       
+      abs. error=2.7468782012e+00       
+-----------------------------------
+(** 458.000000 milliseconds **)
+Sim : 115.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=9.6828515770e-04       
+      sqr. error=5.0506280798e-06       
+      abs. error=7.5955128169e-03       
+-----------------------------------
+(** 504.000000 milliseconds **)
+Sim : 131.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=3.6795166569e-07       
+      sqr. error=7.0125890780e-13       
+      abs. error=2.3952239133e-06       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.686158 seconds.
+=============================================
+=============================================
+=== Step 9 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.560574                          5.33               1
+     1         20        0.013092       0.609904          0.534               1
+     2         30     1.55821e-05       0.130538         0.0142            1.52
+     3         40     2.93722e-11      0.0046142       1.83e-05            1.52
+     4         50     1.21112e-22    6.01603e-06       3.48e-11            1.52
+     5         60     9.64403e-27    1.26766e-11       6.27e-13            1.52
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',6.055126e-23,'selected',2.220446e-16,9.644034e-27,'selected',1.000000e-10,9.644034e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 8.32484
+C            		 2.46339
+PoP          		 1.11194
+B            		 -3.27555
+Sf           		 1
+BG           		 0
+NX           		 0.172397
+rf           		 0.0526316
+G            		 0.478266
+I            		 0.721486
+Y            		 3.83554
+N            		 0.122695
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.354907
+K_1          		 0.699948
+N_1          		 0.00689903
+I_1          		 0.0606622
+P_1          		 1.39411
+W_1          		 43.2344
+Y_1_1        		 0.0807422
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.15924
+N_1_1        		 0.00156955
+W_1_1        		 43.2344
+A_1_1        		 1.61254
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 6.18861
+A_K_1_1      		 1
+I_1_1        		 0.0138008
+P_1_1        		 1.39411
+omegaI_1_1   		 1.39411
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.024416
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0481534
+N_1_2        		 0.000474623
+W_1_2        		 43.2344
+A_1_2        		 1.61254
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 6.18861
+A_K_1_2      		 1
+I_1_2        		 0.00417329
+P_1_2        		 1.39411
+omegaI_1_2   		 1.39411
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.249748
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.492555
+N_1_3        		 0.00485486
+W_1_3        		 43.2344
+A_1_3        		 1.61254
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 6.18861
+A_K_1_3      		 1
+I_1_3        		 0.0426881
+P_1_3        		 1.39411
+omegaI_1_3   		 1.39411
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 2.44558
+K_2          		 5.84052
+N_2          		 0.0504445
+I_2          		 0.506178
+P_2          		 2.7566
+W_2          		 72.2081
+Y_2_1        		 0.320196
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.764692
+N_2_1        		 0.00660464
+W_2_1        		 72.2081
+A_2_1        		 3.73327
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.843414
+A_K_2_1      		 1
+I_2_1        		 0.0662733
+P_2_1        		 2.7566
+omegaI_2_1   		 2.7566
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.418447
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 0.999335
+N_2_2        		 0.00863124
+W_2_2        		 72.2081
+A_2_2        		 3.73327
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.843414
+A_K_2_2      		 1
+I_2_2        		 0.086609
+P_2_2        		 2.7566
+omegaI_2_2   		 2.7566
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 1.70693
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 4.07649
+N_2_3        		 0.0352086
+W_2_3        		 72.2081
+A_2_3        		 3.73327
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.843414
+A_K_2_3      		 1
+I_2_3        		 0.353296
+P_2_3        		 2.7566
+omegaI_2_3   		 2.7566
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 1.95755
+K_3          		 3.98069
+N_3          		 0.0653512
+I_3          		 0.344993
+P_3          		 5.11021
+W_3          		 90.8688
+Y_3_1        		 0.368174
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.748685
+N_3_1        		 0.0122912
+W_3_1        		 90.8688
+A_3_1        		 5.27104
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.544019
+A_K_3_1      		 1
+I_3_1        		 0.064886
+P_3_1        		 5.11021
+omegaI_3_1   		 5.11021
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.44596
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 0.906864
+N_3_2        		 0.014888
+W_3_2        		 90.8688
+A_3_2        		 5.27104
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.544019
+A_K_3_2      		 1
+I_3_2        		 0.0785948
+P_3_2        		 5.11021
+omegaI_3_2   		 5.11021
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 1.14341
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 2.32514
+N_3_3        		 0.038172
+W_3_3        		 90.8688
+A_3_3        		 5.27104
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.544019
+A_K_3_3      		 1
+I_3_3        		 0.201512
+P_3_3        		 5.11021
+omegaI_3_3   		 5.11021
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=8.5752557588e+00       
+      sqr. error=2.0569480316e+02       
+      abs. error=3.4203837236e+02       
+-----------------------------------
+(** 579.000000 milliseconds **)
+Sim : 111.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.2688606671e+00       
+      sqr. error=1.0221482151e+02       
+      abs. error=1.7343335509e+02       
+-----------------------------------
+(** 483.000000 milliseconds **)
+Sim : 100.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.5632475122e-02       
+      sqr. error=4.3444459067e-02       
+      abs. error=2.6142009135e+00       
+-----------------------------------
+(** 493.000000 milliseconds **)
+Sim : 115.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=5.5625965008e-04       
+      sqr. error=1.6848745815e-06       
+      abs. error=4.6180780259e-03       
+-----------------------------------
+(** 478.000000 milliseconds **)
+Sim : 136.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=1.4295658024e-07       
+      sqr. error=1.0622715077e-13       
+      abs. error=9.6000941944e-07       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.626768 seconds.
+=============================================
+=============================================
+=== Step 10 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.515093                          4.96               1
+     1         20       0.0113586       0.692406          0.485               1
+     2         30     1.18446e-05       0.142653         0.0121            1.73
+     3         40     1.69469e-11     0.00471223       1.36e-05            1.73
+     4         50     4.24446e-23    5.39315e-06       6.38e-12            1.73
+     5         60     1.09204e-26    7.59918e-12       3.84e-13            1.73
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',2.121685e-23,'selected',2.220446e-16,1.092037e-26,'selected',1.000000e-10,1.092037e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 9.76095
+C            		 2.89474
+PoP          		 1.11194
+B            		 -3.8469
+Sf           		 1
+BG           		 0
+NX           		 0.202469
+rf           		 0.0526316
+G            		 0.561411
+I            		 0.845949
+Y            		 4.50457
+N            		 0.124241
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.363316
+K_1          		 0.716284
+N_1          		 0.00587365
+I_1          		 0.062078
+P_1          		 1.43519
+W_1          		 53.5262
+Y_1_1        		 0.0826553
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.162956
+N_1_1        		 0.00133627
+W_1_1        		 53.5262
+A_1_1        		 1.66959
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 7.06633
+A_K_1_1      		 1
+I_1_1        		 0.0141229
+P_1_1        		 1.43519
+omegaI_1_1   		 1.43519
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0249945
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0492772
+N_1_2        		 0.000404081
+W_1_2        		 53.5262
+A_1_2        		 1.66959
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 7.06633
+A_K_1_2      		 1
+I_1_2        		 0.00427069
+P_1_2        		 1.43519
+omegaI_1_2   		 1.43519
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.255666
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.50405
+N_1_3        		 0.0041333
+W_1_3        		 53.5262
+A_1_3        		 1.66959
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 7.06633
+A_K_1_3      		 1
+I_1_3        		 0.0436844
+P_1_3        		 1.43519
+omegaI_1_3   		 1.43519
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 2.83597
+K_2          		 6.76636
+N_2          		 0.0505271
+I_2          		 0.586418
+P_2          		 2.764
+W_2          		 83.8756
+Y_2_1        		 0.37131
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 0.885912
+N_2_1        		 0.00661546
+W_2_1        		 83.8756
+A_2_1        		 4.10883
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.833027
+A_K_2_1      		 1
+I_2_1        		 0.076779
+P_2_1        		 2.764
+omegaI_2_1   		 2.764
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.485245
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 1.15775
+N_2_2        		 0.00864538
+W_2_2        		 83.8756
+A_2_2        		 4.10883
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.833027
+A_K_2_2      		 1
+I_2_2        		 0.100338
+P_2_2        		 2.764
+omegaI_2_2   		 2.764
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 1.97941
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 4.7227
+N_2_3        		 0.0352663
+W_2_3        		 83.8756
+A_2_3        		 4.10883
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.833027
+A_K_2_3      		 1
+I_2_3        		 0.4093
+P_2_3        		 2.764
+omegaI_2_3   		 2.764
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 2.3334
+K_3          		 4.73926
+N_3          		 0.0678398
+I_3          		 0.410736
+P_3          		 5.09419
+W_3          		 104.08
+Y_3_1        		 0.438865
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 0.891356
+N_3_1        		 0.0127593
+W_3_1        		 104.08
+A_3_1        		 5.94875
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.520446
+A_K_3_1      		 1
+I_3_1        		 0.0772508
+P_3_1        		 5.09419
+omegaI_3_1   		 5.09419
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.531586
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 1.07968
+N_3_2        		 0.015455
+W_3_2        		 104.08
+A_3_2        		 5.94875
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.520446
+A_K_3_2      		 1
+I_3_2        		 0.0935721
+P_3_2        		 5.09419
+omegaI_3_2   		 5.09419
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 1.36295
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 2.76823
+N_3_3        		 0.0396256
+W_3_3        		 104.08
+A_3_3        		 5.94875
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.520446
+A_K_3_3      		 1
+I_3_3        		 0.239913
+P_3_3        		 5.09419
+omegaI_3_3   		 5.09419
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.0116376417e+01       
+      sqr. error=2.4975503163e+02       
+      abs. error=3.5991518309e+02       
+-----------------------------------
+(** 537.000000 milliseconds **)
+Sim : 142.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.4059872484e+00       
+      sqr. error=1.2170704276e+02       
+      abs. error=1.8423716107e+02       
+-----------------------------------
+(** 487.000000 milliseconds **)
+Sim : 142.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.4587940226e-02       
+      sqr. error=4.1297681194e-02       
+      abs. error=2.5543723583e+00       
+-----------------------------------
+(** 490.000000 milliseconds **)
+Sim : 87.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=3.3226393994e-04       
+      sqr. error=6.1003286316e-07       
+      abs. error=2.9608754703e-03       
+-----------------------------------
+(** 488.000000 milliseconds **)
+Sim : 115.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=5.9685453080e-08       
+      sqr. error=1.8615720561e-14       
+      abs. error=4.1681674871e-07       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.645125 seconds.
+=============================================
+=============================================
+=== Step 11 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.477444                          4.65               1
+     1         20      0.00999316       0.784064          0.445               1
+     2         30     9.24349e-06       0.156111         0.0105            1.96
+     3         40     1.03365e-11     0.00485255       1.04e-05            1.96
+     4         50     5.61782e-23    4.93687e-06        4.9e-12            1.96
+     5         60      1.1018e-26    2.51207e-11       1.86e-12            1.96
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',2.808359e-23,'selected',2.220446e-16,1.101797e-26,'selected',1.000000e-10,1.101797e-26,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 11.3863
+C            		 3.38412
+PoP          		 1.11194
+B            		 -4.49471
+Sf           		 1
+BG           		 0
+NX           		 0.236564
+rf           		 0.0526316
+G            		 0.65563
+I            		 0.986812
+Y            		 5.26313
+N            		 0.125937
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.371572
+K_1          		 0.732314
+N_1          		 0.0050263
+I_1          		 0.0634672
+P_1          		 1.47617
+W_1          		 65.8086
+Y_1_1        		 0.0845335
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.166603
+N_1_1        		 0.0011435
+W_1_1        		 65.8086
+A_1_1        		 1.72669
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 8.03347
+A_K_1_1      		 1
+I_1_1        		 0.014439
+P_1_1        		 1.47617
+omegaI_1_1   		 1.47617
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0255625
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.05038
+N_1_2        		 0.000345787
+W_1_2        		 65.8086
+A_1_2        		 1.72669
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 8.03347
+A_K_1_2      		 1
+I_1_2        		 0.00436627
+P_1_2        		 1.47617
+omegaI_1_2   		 1.47617
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.261476
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.515331
+N_1_3        		 0.00353702
+W_1_3        		 65.8086
+A_1_3        		 1.72669
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 8.03347
+A_K_1_3      		 1
+I_1_3        		 0.044662
+P_1_3        		 1.47617
+omegaI_1_3   		 1.47617
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 3.27152
+K_2          		 7.79832
+N_2          		 0.0505935
+I_2          		 0.675855
+P_2          		 2.77147
+W_2          		 96.9511
+Y_2_1        		 0.428337
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 1.02103
+N_2_1        		 0.00662415
+W_2_1        		 96.9511
+A_2_1        		 4.50796
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.823103
+A_K_2_1      		 1
+I_2_1        		 0.0884889
+P_2_1        		 2.77147
+omegaI_2_1   		 2.77147
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.55977
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 1.33432
+N_2_2        		 0.00865674
+W_2_2        		 96.9511
+A_2_2        		 4.50796
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.823103
+A_K_2_2      		 1
+I_2_2        		 0.115641
+P_2_2        		 2.77147
+omegaI_2_2   		 2.77147
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 2.28342
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 5.44297
+N_2_3        		 0.0353126
+W_2_3        		 96.9511
+A_2_3        		 4.50796
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.823103
+A_K_2_3      		 1
+I_2_3        		 0.471724
+P_2_3        		 2.77147
+omegaI_2_3   		 2.77147
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 2.76435
+K_3          		 5.60796
+N_3          		 0.0703168
+I_3          		 0.486023
+P_3          		 5.0793
+W_3          		 118.682
+Y_3_1        		 0.519916
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 1.05474
+N_3_1        		 0.0132251
+W_3_1        		 118.682
+A_3_1        		 6.68698
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.498619
+A_K_3_1      		 1
+I_3_1        		 0.0914109
+P_3_1        		 5.0793
+omegaI_3_1   		 5.0793
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.629762
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 1.27758
+N_3_2        		 0.0160193
+W_3_2        		 118.682
+A_3_2        		 6.68698
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.498619
+A_K_3_2      		 1
+I_3_2        		 0.110724
+P_3_2        		 5.0793
+omegaI_3_2   		 5.0793
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 1.61467
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 3.27564
+N_3_3        		 0.0410724
+W_3_3        		 118.682
+A_3_3        		 6.68698
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.498619
+A_K_3_3      		 1
+I_3_3        		 0.283889
+P_3_3        		 5.0793
+omegaI_3_3   		 5.0793
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.1890740747e+01       
+      sqr. error=3.0887142672e+02       
+      abs. error=3.8022414237e+02       
+-----------------------------------
+(** 524.000000 milliseconds **)
+Sim : 117.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.5613250362e+00       
+      sqr. error=1.4602405006e+02       
+      abs. error=1.9700960614e+02       
+-----------------------------------
+(** 490.000000 milliseconds **)
+Sim : 127.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.5756987206e-02       
+      sqr. error=4.1776616953e-02       
+      abs. error=2.5455471511e+00       
+-----------------------------------
+(** 531.000000 milliseconds **)
+Sim : 87.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=2.0501782121e-04       
+      sqr. error=2.3724683155e-07       
+      abs. error=1.9933833628e-03       
+-----------------------------------
+(** 512.000000 milliseconds **)
+Sim : 98.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=2.6452916857e-08       
+      sqr. error=3.6865217256e-15       
+      abs. error=1.9400345162e-07       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.668611 seconds.
+=============================================
+=============================================
+=== Step 12 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.445695                          4.38               1
+     1         20      0.00889275        0.88577          0.411               1
+     2         30     7.37202e-06       0.170991        0.00917            2.21
+     3         40     6.57353e-12     0.00503024       8.19e-06            2.21
+     4         50     3.56732e-23    4.59453e-06       1.41e-11            2.21
+     5         60     8.85644e-27    1.56318e-11       5.24e-13            2.21
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.783218e-23,'selected',2.220446e-16,8.856443e-27,'selected',1.000000e-10,8.856443e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 13.2223
+C            		 3.93828
+PoP          		 1.11194
+B            		 -5.22781
+Sf           		 1
+BG           		 0
+NX           		 0.275148
+rf           		 0.0526316
+G            		 0.762197
+I            		 1.14594
+Y            		 6.12156
+N            		 0.127755
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.379703
+K_1          		 0.748096
+N_1          		 0.00432066
+I_1          		 0.0648349
+P_1          		 1.51712
+W_1          		 80.415
+Y_1_1        		 0.0863834
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.170194
+N_1_1        		 0.000982962
+W_1_1        		 80.415
+A_1_1        		 1.78394
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 9.09802
+A_K_1_1      		 1
+I_1_1        		 0.0147501
+P_1_1        		 1.51712
+omegaI_1_1   		 1.51712
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0261219
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0514657
+N_1_2        		 0.000297243
+W_1_2        		 80.415
+A_1_2        		 1.78394
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 9.09802
+A_K_1_2      		 1
+I_1_2        		 0.00446036
+P_1_2        		 1.51712
+omegaI_1_2   		 1.51712
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.267198
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.526436
+N_1_3        		 0.00304046
+W_1_3        		 80.415
+A_1_3        		 1.78394
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 9.09802
+A_K_1_3      		 1
+I_1_3        		 0.0456245
+P_1_3        		 1.51712
+omegaI_1_3   		 1.51712
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 3.75667
+K_2          		 8.94672
+N_2          		 0.0506462
+I_2          		 0.775383
+P_2          		 2.77899
+W_2          		 111.581
+Y_2_1        		 0.491857
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 1.17138
+N_2_1        		 0.00663105
+W_2_1        		 111.581
+A_2_1        		 4.93216
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.813588
+A_K_2_1      		 1
+I_2_1        		 0.10152
+P_2_1        		 2.77899
+omegaI_2_1   		 2.77899
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.642781
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 1.53082
+N_2_2        		 0.00866576
+W_2_2        		 111.581
+A_2_2        		 4.93216
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.813588
+A_K_2_2      		 1
+I_2_2        		 0.132671
+P_2_2        		 2.77899
+omegaI_2_2   		 2.77899
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 2.62203
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 6.24452
+N_2_3        		 0.0353494
+W_2_3        		 111.581
+A_2_3        		 4.93216
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.813588
+A_K_2_3      		 1
+I_2_3        		 0.541192
+P_2_3        		 2.77899
+omegaI_2_3   		 2.77899
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 3.2572
+K_3          		 6.60031
+N_3          		 0.0727883
+I_3          		 0.572026
+P_3          		 5.06539
+W_3          		 134.802
+Y_3_1        		 0.612611
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 1.24138
+N_3_1        		 0.01369
+W_3_1        		 134.802
+A_3_1        		 7.49057
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.47832
+A_K_3_1      		 1
+I_3_1        		 0.107586
+P_3_1        		 5.06539
+omegaI_3_1   		 5.06539
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.742041
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 1.50365
+N_3_2        		 0.0165823
+W_3_2        		 134.802
+A_3_2        		 7.49057
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.47832
+A_K_3_2      		 1
+I_3_2        		 0.130317
+P_3_2        		 5.06539
+omegaI_3_2   		 5.06539
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 1.90255
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 3.85527
+N_3_3        		 0.042516
+W_3_3        		 134.802
+A_3_3        		 7.49057
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.47832
+A_K_3_3      		 1
+I_3_3        		 0.334124
+P_3_3        		 5.06539
+omegaI_3_3   		 5.06539
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.3927431095e+01       
+      sqr. error=3.8621080023e+02       
+      abs. error=4.0285407689e+02       
+-----------------------------------
+(** 547.000000 milliseconds **)
+Sim : 95.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.7361756665e+00       
+      sqr. error=1.7606275034e+02       
+      abs. error=2.1171971672e+02       
+-----------------------------------
+(** 499.000000 milliseconds **)
+Sim : 87.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.7254790718e-02       
+      sqr. error=4.3904571152e-02       
+      abs. error=2.5753452500e+00       
+-----------------------------------
+(** 491.000000 milliseconds **)
+Sim : 117.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=1.3004755512e-04       
+      sqr. error=9.8612399203e-08       
+      abs. error=1.4056489223e-03       
+-----------------------------------
+(** 516.000000 milliseconds **)
+Sim : 98.000000 ms
+-----------------------------------
+      Simulate iteration no 5     
+      max. error=1.2333541521e-08       
+      sqr. error=8.1147437288e-16       
+      abs. error=9.6119891346e-08       
+-----------------------------------
+Perfect foresight solution found.
+
+Elapsed time is 2.617600 seconds.
+=============================================
+=============================================
+=== Step 13 of 20 for Baseline ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         10        0.418511                          4.14               1
+     1         20      0.00798929       0.998495          0.381               1
+     2         30      5.9868e-06       0.187391        0.00811             2.5
+     3         40     4.33565e-12     0.00524194       6.56e-06             2.5
+     4         50     3.00582e-23    4.34325e-06        3.2e-12             2.5
+     5         60     9.84248e-27    1.24191e-11       2.42e-13             2.5
+
+<a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the selected value
+of the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview([docroot '/toolbox/optim/msg_csh/optim_msg_csh.map'],'last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg('trustnleqn',3.000000e+00,true,true,'fsolve',1.502418e-23,'selected',2.220446e-16,9.842482e-27,'selected',1.000000e-10,9.842482e-27,'selected',1.000000e-10);">stopping criteria details</a>>
+
+
+STEADY-STATE RESULTS:
+
+P            		 4.49474
+K            		 15.2926
+C            		 4.56459
+PoP          		 1.11194
+B            		 -6.05587
+Sf           		 1
+BG           		 0
+NX           		 0.31873
+rf           		 0.0526316
+G            		 0.882506
+I            		 1.32536
+Y            		 7.09119
+N            		 0.129675
+SL           		 0
+PREC_1       		 0
+T_1          		 0
+WS_1         		 0
+CYC_1        		 0
+DRO_1        		 0
+PREC_2       		 0
+T_2          		 0
+WS_2         		 0
+CYC_2        		 0
+DRO_2        		 0
+PREC_3       		 0
+T_3          		 0
+WS_3         		 0
+CYC_3        		 0
+DRO_3        		 0
+Y_1          		 0.387733
+K_1          		 0.763675
+N_1          		 0.00372909
+I_1          		 0.0661851
+P_1          		 1.55811
+W_1          		 97.7282
+Y_1_1        		 0.0882103
+D_1_1        		 0
+D_N_1_1      		 0
+D_K_1_1      		 0
+K_1_1        		 0.173738
+N_1_1        		 0.000848378
+W_1_1        		 97.7282
+A_1_1        		 1.84145
+G_A_T_1_1    		 0
+K_A_T_1_1    		 0
+G_A_WS_1_1   		 0
+K_A_WS_1_1   		 0
+G_A_PREC_1_1 		 0
+K_A_PREC_1_1 		 0
+G_A_SL_1_1   		 0
+K_A_SL_1_1   		 0
+G_A_CYC_1_1  		 0
+K_A_CYC_1_1  		 0
+G_A_DRO_1_1  		 0
+K_A_DRO_1_1  		 0
+gA_1_1       		 1
+A_N_1_1      		 10.2685
+A_K_1_1      		 1
+I_1_1        		 0.0150573
+P_1_1        		 1.55811
+omegaI_1_1   		 1.55811
+r_1_1        		 0.139298
+tauK_1_1     		 0.2
+tauN_1_1     		 0
+Y_1_2        		 0.0266743
+D_1_2        		 0
+D_N_1_2      		 0
+D_K_1_2      		 0
+K_1_2        		 0.0525375
+N_1_2        		 0.000256545
+W_1_2        		 97.7282
+A_1_2        		 1.84145
+G_A_T_1_2    		 0
+K_A_T_1_2    		 0
+G_A_WS_1_2   		 0
+K_A_WS_1_2   		 0
+G_A_PREC_1_2 		 0
+K_A_PREC_1_2 		 0
+G_A_SL_1_2   		 0
+K_A_SL_1_2   		 0
+G_A_CYC_1_2  		 0
+K_A_CYC_1_2  		 0
+G_A_DRO_1_2  		 0
+K_A_DRO_1_2  		 0
+gA_1_2       		 1
+A_N_1_2      		 10.2685
+A_K_1_2      		 1
+I_1_2        		 0.00455325
+P_1_2        		 1.55811
+omegaI_1_2   		 1.55811
+r_1_2        		 0.139298
+tauK_1_2     		 0.2
+tauN_1_2     		 0
+Y_1_3        		 0.272849
+D_1_3        		 0
+D_N_1_3      		 0
+D_K_1_3      		 0
+K_1_3        		 0.537399
+N_1_3        		 0.00262417
+W_1_3        		 97.7282
+A_1_3        		 1.84145
+G_A_T_1_3    		 0
+K_A_T_1_3    		 0
+G_A_WS_1_3   		 0
+K_A_WS_1_3   		 0
+G_A_PREC_1_3 		 0
+K_A_PREC_1_3 		 0
+G_A_SL_1_3   		 0
+K_A_SL_1_3   		 0
+G_A_CYC_1_3  		 0
+K_A_CYC_1_3  		 0
+G_A_DRO_1_3  		 0
+K_A_DRO_1_3  		 0
+gA_1_3       		 1
+A_N_1_3      		 10.2685
+A_K_1_3      		 1
+I_1_3        		 0.0465746
+P_1_3        		 1.55811
+omegaI_1_3   		 1.55811
+r_1_3        		 0.139298
+tauK_1_3     		 0.2
+tauN_1_3     		 0
+Y_2          		 4.29619
+K_2          		 10.2227
+N_2          		 0.0506871
+I_2          		 0.885966
+P_2          		 2.78654
+W_2          		 127.923
+Y_2_1        		 0.562496
+D_2_1        		 0
+D_N_2_1      		 0
+D_K_2_1      		 0
+K_2_1        		 1.33844
+N_2_1        		 0.0066364
+W_2_1        		 127.923
+A_2_1        		 5.38299
+G_A_T_2_1    		 0
+K_A_T_2_1    		 0
+G_A_WS_2_1   		 0
+K_A_WS_2_1   		 0
+G_A_PREC_2_1 		 0
+K_A_PREC_2_1 		 0
+G_A_SL_2_1   		 0
+K_A_SL_2_1   		 0
+G_A_CYC_2_1  		 0
+K_A_CYC_2_1  		 0
+G_A_DRO_2_1  		 0
+K_A_DRO_2_1  		 0
+gA_2_1       		 1
+A_N_2_1      		 0.804441
+A_K_2_1      		 1
+I_2_1        		 0.115998
+P_2_1        		 2.78654
+omegaI_2_1   		 2.78654
+r_2_1        		 0.139298
+tauK_2_1     		 0.2
+tauN_2_1     		 0
+Y_2_2        		 0.735096
+D_2_2        		 0
+D_N_2_2      		 0
+D_K_2_2      		 0
+K_2_2        		 1.74914
+N_2_2        		 0.00867275
+W_2_2        		 127.923
+A_2_2        		 5.38299
+G_A_T_2_2    		 0
+K_A_T_2_2    		 0
+G_A_WS_2_2   		 0
+K_A_WS_2_2   		 0
+G_A_PREC_2_2 		 0
+K_A_PREC_2_2 		 0
+G_A_SL_2_2   		 0
+K_A_SL_2_2   		 0
+G_A_CYC_2_2  		 0
+K_A_CYC_2_2  		 0
+G_A_DRO_2_2  		 0
+K_A_DRO_2_2  		 0
+gA_2_2       		 1
+A_N_2_2      		 0.804441
+A_K_2_2      		 1
+I_2_2        		 0.151592
+P_2_2        		 2.78654
+omegaI_2_2   		 2.78654
+r_2_2        		 0.139298
+tauK_2_2     		 0.2
+tauN_2_2     		 0
+Y_2_3        		 2.9986
+D_2_3        		 0
+D_N_2_3      		 0
+D_K_2_3      		 0
+K_2_3        		 7.1351
+N_2_3        		 0.0353779
+W_2_3        		 127.923
+A_2_3        		 5.38299
+G_A_T_2_3    		 0
+K_A_T_2_3    		 0
+G_A_WS_2_3   		 0
+K_A_WS_2_3   		 0
+G_A_PREC_2_3 		 0
+K_A_PREC_2_3 		 0
+G_A_SL_2_3   		 0
+K_A_SL_2_3   		 0
+G_A_CYC_2_3  		 0
+K_A_CYC_2_3  		 0
+G_A_DRO_2_3  		 0
+K_A_DRO_2_3  		 0
+gA_2_3       		 1
+A_N_2_3      		 0.804441
+A_K_2_3      		 1
+I_2_3        		 0.618375
+P_2_3        		 2.78654
+omegaI_2_3   		 2.78654
+r_2_3        		 0.139298
+tauK_2_3     		 0.2
+tauN_2_3     		 0
+Y_3          		 3.8195
+K_3          		 7.7312
+N_3          		 0.075259
+I_3          		 0.670037
+P_3          		 5.05233
+W_3          		 152.576
+Y_3_1        		 0.718368
+D_3_1        		 0
+D_N_3_1      		 0
+D_K_3_1      		 0
+K_3_1        		 1.45408
+N_3_1        		 0.0141547
+W_3_1        		 152.576
+A_3_1        		 8.36466
+G_A_T_3_1    		 0
+K_A_T_3_1    		 0
+G_A_WS_3_1   		 0
+K_A_WS_3_1   		 0
+G_A_PREC_3_1 		 0
+K_A_PREC_3_1 		 0
+G_A_SL_3_1   		 0
+K_A_SL_3_1   		 0
+G_A_CYC_3_1  		 0
+K_A_CYC_3_1  		 0
+G_A_DRO_3_1  		 0
+K_A_DRO_3_1  		 0
+gA_3_1       		 1
+A_N_3_1      		 0.459371
+A_K_3_1      		 1
+I_3_1        		 0.12602
+P_3_1        		 5.05233
+omegaI_3_1   		 5.05233
+r_3_1        		 0.139298
+tauK_3_1     		 0.2
+tauN_3_1     		 0
+Y_3_2        		 0.870142
+D_3_2        		 0
+D_N_3_2      		 0
+D_K_3_2      		 0
+K_3_2        		 1.76129
+N_3_2        		 0.0171452
+W_3_2        		 152.576
+A_3_2        		 8.36466
+G_A_T_3_2    		 0
+K_A_T_3_2    		 0
+G_A_WS_3_2   		 0
+K_A_WS_3_2   		 0
+G_A_PREC_3_2 		 0
+K_A_PREC_3_2 		 0
+G_A_SL_3_2   		 0
+K_A_SL_3_2   		 0
+G_A_CYC_3_2  		 0
+K_A_CYC_3_2  		 0
+G_A_DRO_3_2  		 0
+K_A_DRO_3_2  		 0
+gA_3_2       		 1
+A_N_3_2      		 0.459371
+A_K_3_2      		 1
+I_3_2        		 0.152645
+P_3_2        		 5.05233
+omegaI_3_2   		 5.05233
+r_3_2        		 0.139298
+tauK_3_2     		 0.2
+tauN_3_2     		 0
+Y_3_3        		 2.23099
+D_3_3        		 0
+D_N_3_3      		 0
+D_K_3_3      		 0
+K_3_3        		 4.51583
+N_3_3        		 0.0439592
+W_3_3        		 152.576
+A_3_3        		 8.36466
+G_A_T_3_3    		 0
+K_A_T_3_3    		 0
+G_A_WS_3_3   		 0
+K_A_WS_3_3   		 0
+G_A_PREC_3_3 		 0
+K_A_PREC_3_3 		 0
+G_A_SL_3_3   		 0
+K_A_SL_3_3   		 0
+G_A_CYC_3_3  		 0
+K_A_CYC_3_3  		 0
+G_A_DRO_3_3  		 0
+K_A_DRO_3_3  		 0
+gA_3_3       		 1
+A_N_3_3      		 0.459371
+A_K_3_3      		 1
+I_3_3        		 0.391372
+P_3_3        		 5.05233
+omegaI_3_3   		 5.05233
+r_3_3        		 0.139298
+tauK_3_3     		 0.2
+tauN_3_3     		 0
+MODEL SIMULATION: (method=Sparse LU)
+-----------------------------------
+      Simulate iteration no 1     
+      max. error=1.6258832035e+01       
+      sqr. error=4.8627161498e+02       
+      abs. error=4.2777172030e+02       
+-----------------------------------
+(** 591.000000 milliseconds **)
+Sim : 101.000000 ms
+-----------------------------------
+      Simulate iteration no 2     
+      max. error=1.9321405650e+00       
+      sqr. error=2.1296759753e+02       
+      abs. error=2.2839826865e+02       
+-----------------------------------
+(** 461.000000 milliseconds **)
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('perfect_foresight_solver_core', 'C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver_core.m', 72)" style="font-weight:bold">perfect_foresight_solver_core</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver_core.m',72,0)">line 72</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('perfect_foresight_solver', 'C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver.m', 63)" style="font-weight:bold">perfect_foresight_solver</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver.m',63,0)">line 63</a>)
+oo_ = perfect_foresight_solver_core(M_,options_,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DGE_CRED_Model.driver', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\+DGE_CRED_Model\driver.m', 6965)" style="font-weight:bold">DGE_CRED_Model.driver</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\+DGE_CRED_Model\driver.m',6965,0)">line 6965</a>)
+perfect_foresight_solver;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.6.1\matlab\dynare.m', 293)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\dynare.m',293,0)">line 293</a>)
+evalin('base',[fname '.driver']) ;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RunSimulations', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\RunSimulations.m', 10)" style="font-weight:bold">RunSimulations</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\RunSimulations.m',10,0)">line 10</a>)
+dynare DGE_CRED_Model noclearall
+} 
+Sim : 115.000000 ms
+-----------------------------------
+      Simulate iteration no 3     
+      max. error=3.9054623602e-02       
+      sqr. error=4.7272810466e-02       
+      abs. error=2.6356044523e+00       
+-----------------------------------
+(** 479.000000 milliseconds **)
+Sim : 96.000000 ms
+-----------------------------------
+      Simulate iteration no 4     
+      max. error=8.4491053115e-05       
+      sqr. error=4.3830393029e-08       
+      abs. error=1.0361181562e-03       
+-----------------------------------
+(** 477.000000 milliseconds **)
+Fatal error in bytecode: User break
+
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('perfect_foresight_solver_core', 'C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver_core.m', 72)" style="font-weight:bold">perfect_foresight_solver_core</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver_core.m',72,0)">line 72</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('perfect_foresight_solver', 'C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver.m', 63)" style="font-weight:bold">perfect_foresight_solver</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\perfect-foresight-models\perfect_foresight_solver.m',63,0)">line 63</a>)
+oo_ = perfect_foresight_solver_core(M_,options_,oo_);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DGE_CRED_Model.driver', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\+DGE_CRED_Model\driver.m', 6965)" style="font-weight:bold">DGE_CRED_Model.driver</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\+DGE_CRED_Model\driver.m',6965,0)">line 6965</a>)
+perfect_foresight_solver;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.6.1\matlab\dynare.m', 293)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.6.1\matlab\dynare.m',293,0)">line 293</a>)
+evalin('base',[fname '.driver']) ;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RunSimulations', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\RunSimulations.m', 10)" style="font-weight:bold">RunSimulations</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Vietnam_RBC_model\DGE_CRED_Model\RunSimulations.m',10,0)">line 10</a>)
+dynare DGE_CRED_Model noclearall
+} 
+[Warning: A value of class "matlab.internal.video.PluginManager" was indexed with no subscripts specified.
+Currently the result of this operation is the indexed value itself, but in a future release, it will be an
+error.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader/createChannel', 'C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 486)" style="font-weight:bold">matlab.internal.VideoReader/createChannel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',486,0)">line 486</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader', 'C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 185)" style="font-weight:bold">matlab.internal.VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',185,0)">line 185</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader/init', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 608)" style="font-weight:bold">VideoReader/init</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',608,0)">line 608</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 176)" style="font-weight:bold">VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',176,0)">line 176</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>getVideoInfo', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 205)" style="font-weight:bold">finfo>getVideoInfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',205,0)">line 205</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>openAsMultimediaFile', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 194)" style="font-weight:bold">finfo>openAsMultimediaFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',194,0)">line 194</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 79)" style="font-weight:bold">finfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',79,0)">line 79</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('open', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\open.m', 115)" style="font-weight:bold">open</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\open.m',115,0)">line 115</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('uiopen', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\uitools\uiopen.m', 175)" style="font-weight:bold">uiopen</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\uitools\uiopen.m',175,0)">line 175</a>)] 
+[Warning: A value of class "matlab.internal.video.PluginManager" was indexed with no subscripts specified.
+Currently the result of this operation is the indexed value itself, but in a future release, it will be an
+error.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader/createChannel', 'C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 486)" style="font-weight:bold">matlab.internal.VideoReader/createChannel</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',486,0)">line 486</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('matlab.internal.VideoReader', 'C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m', 185)" style="font-weight:bold">matlab.internal.VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\shared\multimedia\+matlab\+internal\VideoReader.m',185,0)">line 185</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader/init', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 608)" style="font-weight:bold">VideoReader/init</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',608,0)">line 608</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('VideoReader', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m', 176)" style="font-weight:bold">VideoReader</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\audiovideo\@VideoReader\VideoReader.m',176,0)">line 176</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>getVideoInfo', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 205)" style="font-weight:bold">finfo>getVideoInfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',205,0)">line 205</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo>openAsMultimediaFile', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 194)" style="font-weight:bold">finfo>openAsMultimediaFile</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',194,0)">line 194</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('finfo', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m', 79)" style="font-weight:bold">finfo</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\finfo.m',79,0)">line 79</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('open', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\open.m', 115)" style="font-weight:bold">open</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\general\open.m',115,0)">line 115</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('uiopen', 'C:\Program Files\MATLAB\R2018b\toolbox\matlab\uitools\uiopen.m', 175)" style="font-weight:bold">uiopen</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018b\toolbox\matlab\uitools\uiopen.m',175,0)">line 175</a>)] 
+RunSimulations
+Using 64-bit preprocessor
+Starting Dynare (version 4.6.1).
+Calling Dynare with arguments: noclearall console
+Starting preprocessing of the model file ...
+Found 197 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
