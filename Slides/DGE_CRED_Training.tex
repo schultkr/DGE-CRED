@@ -556,31 +556,6 @@
 \end{frame}
 
 \subsection{Implementing a Model in Dynare}
-\subsubsection{Model File}
-\begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Model File}
-	\begin{itemize}
-		\item A model file or mod-file (filename.mod) contains commands and blocks 
-		\begin{itemize}
-			\item Each command and each element of a block is terminated by a semicolon (;)
-			\item Blocks are terminated by \texttt{end;} 
-		\end{itemize}
-		\item The model file complementary to these slides is \textit{Introduction\_Dynare.mod}
-		\item Code lines within the mode file can be deactivated using \%, // or /* ... */
-		\item In order to run a model file:
-		\begin{itemize}
-			\item The Dynare path has to be added to the search path of MATLAB
-				\begin{verbatim}
-				   addpath('C:\dynare\4.6.1\matlab')
-				\end{verbatim}
-			\item Dynare executed to run the model in MATLAB
-				\begin{verbatim}
-				   dynare filename
-				\end{verbatim}
-		\end{itemize} 
-	\end{itemize}
-\end{frame}
-
 \subsubsection{Neoclassical Growth Model}
 \begin{frame}<presentation>
 \frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementing a Model in Dynare}
@@ -627,6 +602,31 @@
 		\end{itemize}  
 	\end{itemize}
 \end{frame}
+\subsubsection{Model File}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Model File}
+	\begin{itemize}
+		\item A model file or mod-file (filename.mod) contains commands and blocks 
+		\begin{itemize}
+			\item Each command and each element of a block is terminated by a semicolon (;)
+			\item Blocks are terminated by \texttt{end;} 
+		\end{itemize}
+		\item The model file complementary to these slides is \textit{Introduction\_Dynare.mod}
+		\item Code lines within the mode file can be deactivated using \%, // or /* ... */
+		\item In order to run a model file:
+		\begin{itemize}
+			\item The Dynare path has to be added to the search path of MATLAB
+				\begin{verbatim}
+				   addpath('C:\dynare\4.6.1\matlab')
+				\end{verbatim}
+			\item Dynare executed to run the model in MATLAB
+				\begin{verbatim}
+				   dynare filename
+				\end{verbatim}
+		\end{itemize} 
+	\end{itemize}
+\end{frame}
+
 \subsubsection{Variables and Parameters}
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Variables and Parameters (1)}
@@ -890,11 +890,11 @@
 		\end{itemize}
 	\end{itemize}
 \end{frame}
-\subsubsection{Perfect Foresight Setup in Dynare}
+\subsection{Perfect Foresight Setup in Dynare}
 %\paragraph{Getting stated with Perfect Foresight}
+\subsubsection{Introduction}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-		\framesubtitle{Introduction}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Introduction}
 	\begin{itemize}
 		\item In order to perform the deterministic simulation, one has to specify:
 		\begin{itemize}
@@ -910,9 +910,9 @@
 		\item Then, the \texttt{perfect\_foresight\_solver} replaces $y_1,\ldots,y_T$ by the solution 
 	\end{itemize}
 \end{frame}
+\subsubsection{Transition from an Initial to a Terminal Steady State}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Transition from an Initial to a Terminal Steady State (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (1)}
 	\begin{itemize}
 		\item The following slides examine a specific type of deterministic simulation, which is needed in the DGE-CRED framework 
 		\item The DGE-CRED Model allows its user to investigate:
@@ -928,8 +928,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Transition from an Initial to a Terminal Steady State (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (2)}
 	\begin{itemize}
 		\item In order to implement this specific type of deterministic simulation, the following can be conducted in Dynare:
 		\begin{itemize}
@@ -941,8 +940,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Transition from an Initial to a Terminal Steady State (3)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (3)}
 	\begin{itemize}
 		\item The initial steady state values are determined based on the values of the exogenous variables assigned in the \texttt{initval} block 
 		\begin{itemize}
@@ -955,8 +953,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Transition from an Initial to a Terminal Steady State (4)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (4)}
 	\begin{itemize}
 		\item Example: The economy starts from the initial steady state, where $A_0=1$. In the terminal steady state, the total factory productivity is 10\% higher.
 		\begin{verbatim}
@@ -973,8 +970,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Transition from an Initial to a Terminal Steady State (5)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (5)}
 	\begin{itemize}
 		\item The following trajectories are obtained:
 		\begin{figure}
@@ -985,9 +981,9 @@
 		\end{figure}
 	\end{itemize}
 \end{frame}
+\subsubsection{The \texttt{initval} Block}
 \begin{frame}<presentation>
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{initval} Block (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (1)}
 	\begin{itemize}
 		\item While the previous slides examined the usage of the \texttt{initval} and \texttt{endval} block in combination with \texttt{steady}, these blocks have more functionalities than encountered so far
 		\item In presence of the \texttt{initval} and absence of other blocks:
@@ -1000,10 +996,9 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{initval} Block (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (2)}
 	\begin{itemize}
-		\item Example: Let us assume that we want to set $c_0=c_{T+1}=4$ and $k_0=k_{T+1}=20$ in the neoclassical growth model. Furthermore, we assume that TFP is constant at $A_t=1$. 
+		\item Example: Let us assume that we want to set $c_0=c_{T+1}=4$ and $k_0=k_{T+1}=20$ in the neoclassical growth model. Furthermore, we assume that TFP is constant at $A_t=1$.
 			\begin{verbatim}
 				   initval;
 				   c = 4;
@@ -1015,8 +1010,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{initval} Block (3)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (3)}
 	\begin{itemize}
 		\item In order to run the deterministic simulation for $T=100$ periods, enter:
 		\begin{verbatim}
@@ -1026,7 +1020,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (4)}
 	\framesubtitle{The \texttt{initval} Block (4)}
 	\begin{itemize}
 		\item The following trajectories are obtained:
@@ -1044,9 +1038,9 @@
 	\end{itemize}
 \end{frame}
 %\paragraph{The \texttt{endval} block}
+\subsubsection{The \texttt{endval} Block}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{endval} Block (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{endval} Block (1)}
 	\begin{itemize}
 		\item In the absence of an \texttt{initval} block, the \texttt{endval} block fills both\linebreak \texttt{oo\_.endo\_simul} and \texttt{oo\_.exo\_simul}
 		\begin{itemize}
@@ -1062,8 +1056,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{endval} Block (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{endval} Block (2)}
 	\begin{itemize}
 		\item Leading the following code:
 			\begin{verbatim}
@@ -1082,8 +1075,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{endval} Block (3)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{endval} Block (3)}
 		\begin{itemize}
 		\item The following trajectories are obtained:
 		\begin{figure}
@@ -1095,9 +1087,9 @@
 		\item Comment: As in the previous example, consumption is forward looking, while capital is backward looking.
 	\end{itemize}
 \end{frame}
+\subsubsection{The \texttt{histval} Block}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{histval} Block (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{histval} Block (1)}
 	\begin{itemize}
 		\item The usage of the \texttt{histval} block is particularly interesting, if there are variables with more than one lead or lag 
 		\item In a deterministic simulation the \texttt{histval} block must be combined with an \texttt{initval} block 
@@ -1106,8 +1098,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{The \texttt{histval} Block (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{histval} Block (2)}
 	\begin{itemize}
 		\item The previous example can, therefore, also be implemented by:
 			\begin{verbatim}
@@ -1125,9 +1116,9 @@
 			\end{verbatim}
 	\end{itemize}
 \end{frame}
+\subsubsection{Shocks on Exogenous Variables}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Shocks on Exogenous Variables (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables (1)}
 	\begin{itemize}
 		\item For deterministic simulations, the \texttt{shocks} block specifies temporary changes in the value of exogenous variables 
 		\item For permanent shocks, use an \texttt{endval} block
@@ -1143,8 +1134,7 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Perfect Foresight Setup in Dynare}
-	\framesubtitle{Shocks on Exogenous Variables (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables (2)}
 	\begin{itemize}
 		\item The \texttt{shock} block has the following structure:
 			\begin{verbatim}

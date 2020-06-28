@@ -48,9 +48,9 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {3}{2}{Implementing a Model in Dynare}{48}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{2}{1}{Model File}{49}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{1}{Neoclassical Growth Model}{49}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{2}{2}{Neoclassical Growth Model}{50}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{2}{Model File}{52}{0}{3}
 \defcounter {refsection}{0}\relax 
 \beamer@subsubsectionintoc {3}{2}{3}{Variables and Parameters}{53}{0}{3}
 \defcounter {refsection}{0}\relax 
@@ -70,150 +70,162 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsubsectionintoc {3}{4}{2}{Newton Method}{71}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{4}{3}{Perfect Foresight Setup in Dynare}{74}{0}{3}
+\beamer@subsectionintoc {3}{5}{Perfect Foresight Setup in Dynare}{74}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{5}{Remarks and Examples}{91}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{1}{Introduction}{75}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{5}{1}{Remarks}{92}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{2}{Transition from an Initial to a Terminal Steady State}{76}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{5}{2}{Examples}{93}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{3}{The \texttt {initval} Block}{81}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {3}{6}{Macro Processor}{97}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{4}{The \texttt {endval} Block}{85}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{6}{1}{Macro Language}{98}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{5}{The \texttt {histval} Block}{88}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {3}{6}{2}{Introduction to the Syntax}{101}{0}{3}
+\beamer@subsubsectionintoc {3}{5}{6}{Shocks on Exogenous Variables}{90}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{DGE--CRED Model}{110}{0}{4}
+\beamer@subsectionintoc {3}{6}{Remarks and Examples}{92}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{1}{Introduction}{110}{0}{4}
+\beamer@subsubsectionintoc {3}{6}{1}{Remarks}{93}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{2}{Folder Structure}{113}{0}{4}
+\beamer@subsubsectionintoc {3}{6}{2}{Examples}{94}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{1}{Main Folder Structure}{114}{0}{4}
+\beamer@subsectionintoc {3}{7}{Macro Processor}{98}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{2}{Mod Files}{115}{0}{4}
+\beamer@subsubsectionintoc {3}{7}{1}{Macro Language}{99}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{3}{Functions}{116}{0}{4}
+\beamer@subsubsectionintoc {3}{7}{2}{Introduction to the Syntax}{102}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{4}{Excel Files}{117}{0}{4}
+\beamer@sectionintoc {4}{DGE--CRED Model}{111}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{2}{5}{Mod Files}{118}{0}{4}
+\beamer@subsectionintoc {4}{1}{Introduction}{111}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{3}{Demand}{119}{0}{4}
+\beamer@subsectionintoc {4}{2}{Folder Structure}{114}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{1}{Households}{120}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{1}{Main Folder Structure}{115}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{2}{Households Lagrangian}{121}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{2}{Mod Files}{116}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{3}{Households First Order Conditions -- Intratemporal}{122}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{3}{Functions}{117}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{4}{Implementation of Households First Order Conditions -- Intratemporal}{123}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{4}{Excel Files}{118}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{5}{Households First Order Conditions -- Intertemporal}{124}{0}{4}
+\beamer@subsubsectionintoc {4}{2}{5}{Mod Files}{119}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{6}{Implementation of Households First Order Conditions -- Intertemporal}{125}{0}{4}
+\beamer@subsectionintoc {4}{3}{Demand}{120}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{7}{Rest of the world}{127}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{1}{Households}{121}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{8}{Implementation Rest of the World}{128}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{2}{Households Lagrangian}{122}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{9}{Government Budget Constraint}{129}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{3}{Households First Order Conditions -- Intratemporal}{123}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{10}{Implementation of Government Budget Constraint}{130}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{4}{Implementation of Households First Order Conditions -- Intratemporal}{124}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{11}{Government Policy Instruments}{131}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{5}{Households First Order Conditions -- Intertemporal}{125}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{12}{Implementation of Government Policy Instruments}{132}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{6}{Implementation of Households First Order Conditions -- Intertemporal}{126}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{13}{Resource constraint}{133}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{7}{Rest of the world}{128}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{3}{14}{Implementation of Resource Constraint}{134}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{8}{Implementation Rest of the World}{129}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{4}{Production}{135}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{9}{Government Budget Constraint}{130}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{1}{Sectoral Decomposition}{136}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{10}{Implementation of Government Budget Constraint}{131}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{2}{Implementation of Sectoral Decomposition}{137}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{11}{Government Policy Instruments}{132}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{3}{Regional Decomposition}{138}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{12}{Implementation of Government Policy Instruments}{133}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{4}{Implementation of Regional Decomposition}{139}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{13}{Resource constraint}{134}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{5}{Regional Production}{140}{0}{4}
+\beamer@subsubsectionintoc {4}{3}{14}{Implementation of Resource Constraint}{135}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{6}{Damages on TFP}{141}{0}{4}
+\beamer@subsectionintoc {4}{4}{Production}{136}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{7}{Implementation of Damages on TFP}{142}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{1}{Sectoral Decomposition}{137}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{8}{Damages on Labour Productivity}{143}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{2}{Implementation of Sectoral Decomposition}{138}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{9}{Implementation of Damages on Labour Productivity}{144}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{3}{Regional Decomposition}{139}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{10}{Damages on Capital}{145}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{4}{Implementation of Regional Decomposition}{140}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{11}{Implementation of Damages on Capital}{146}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{5}{Regional Production}{141}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{12}{Profit Maximization}{147}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{6}{Damages on TFP}{142}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{13}{Factor Demand}{148}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{7}{Implementation of Damages on TFP}{143}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{14}{Implementation of Factor Demand}{149}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{8}{Damages on Labour Productivity}{144}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{15}{Trade with the Rest of the World}{150}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{9}{Implementation of Damages on Labour Productivity}{145}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{4}{16}{Implementation of Trade with Rest of the World}{151}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{10}{Damages on Capital}{146}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{5}{Climate Variables}{152}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{11}{Implementation of Damages on Capital}{147}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{1}{Climate Variables}{153}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{12}{Profit Maximization}{148}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{2}{Implementation of Climate Variables}{154}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{13}{Factor Demand}{149}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{3}{Weather Extremes}{155}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{14}{Implementation of Factor Demand}{150}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{5}{4}{Implementation of Weather Extremes}{156}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{15}{Trade with the Rest of the World}{151}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {4}{6}{Aggregation and Identities}{157}{0}{4}
+\beamer@subsubsectionintoc {4}{4}{16}{Implementation of Trade with Rest of the World}{152}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{1}{National Aggregates}{158}{0}{4}
+\beamer@subsectionintoc {4}{5}{Climate Variables}{153}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{2}{Implementation of National Aggregates}{159}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{1}{Climate Variables}{154}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{3}{Sectoral Aggregates}{160}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{2}{Implementation of Climate Variables}{155}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{4}{Implementation of Sectoral Aggregates}{161}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{3}{Weather Extremes}{156}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{5}{Implementation of Sectoral Aggregates}{162}{0}{4}
+\beamer@subsubsectionintoc {4}{5}{4}{Implementation of Weather Extremes}{157}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{6}{National Aggregates}{163}{0}{4}
+\beamer@subsectionintoc {4}{6}{Aggregation and Identities}{158}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{7}{Implementation of Sectoral Aggregates}{164}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{1}{National Aggregates}{159}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{8}{Population and Price Level}{165}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{2}{Implementation of National Aggregates}{160}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {4}{6}{9}{Implementation of Population and Prices}{166}{0}{4}
+\beamer@subsubsectionintoc {4}{6}{3}{Sectoral Aggregates}{161}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Model Simulation and Calibration}{167}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{4}{Implementation of Sectoral Aggregates}{162}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{1}{Definitions}{167}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{5}{Implementation of Sectoral Aggregates}{163}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{2}{Calibration}{170}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{6}{National Aggregates}{164}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{2}{1}{Calibration of Parameters}{171}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{7}{Implementation of Sectoral Aggregates}{165}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{2}{2}{Calibration of Damage Function Parameters}{172}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{8}{Population and Price Level}{166}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{2}{3}{Notation of Damage Function Parameters}{173}{0}{5}
+\beamer@subsubsectionintoc {4}{6}{9}{Implementation of Population and Prices}{167}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {5}{3}{Scenario Analyses}{174}{0}{5}
+\beamer@sectionintoc {5}{Model Simulation and Calibration}{168}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{3}{1}{Temperature}{175}{0}{5}
+\beamer@subsectionintoc {5}{1}{Definitions}{168}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{3}{2}{Sea Level}{178}{0}{5}
+\beamer@subsectionintoc {5}{2}{Calibration}{171}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{3}{3}{Adaption}{180}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{1}{Calibration of Parameters}{172}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{3}{4}{Extremes}{182}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{2}{Calibration of Damage Function Parameters}{173}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@subsubsectionintoc {5}{3}{5}{Simulation Results}{183}{0}{5}
+\beamer@subsubsectionintoc {5}{2}{3}{Notation of Damage Function Parameters}{174}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{3}{Scenario Analyses}{175}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{1}{Temperature}{176}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{2}{Sea Level}{179}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{3}{Adaption}{181}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{4}{Extremes}{183}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{5}{Simulation Results}{184}{0}{5}

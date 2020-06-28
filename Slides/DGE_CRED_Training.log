@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  26 JUN 2020 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7140 64-bit) (preloaded format=pdflatex 2019.10.28)  28 JUN 2020 21:31
 entering extended mode
 **./DGE_CRED_Training.tex
 (DGE_CRED_Training.tex
@@ -1581,22 +1581,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ua1/b/n' tried instead on input line 69.
-<pictures/GIZ_Logo.png, id=132, 1505.625pt x 415.5525pt>
+<pictures/GIZ_Logo.png, id=136, 1505.625pt x 415.5525pt>
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 69.
 (pdftex.def)             Requested size: 113.81102pt x 31.40604pt.
-<pictures/IWH_Logo_RGB_DE_Grossformat.png, id=133, 316.5426pt x 124.5453pt>
+<pictures/IWH_Logo_RGB_DE_Grossformat.png, id=137, 316.5426pt x 124.5453pt>
 File: pictures/IWH_Logo_RGB_DE_Grossformat.png Graphic file (type png)
 <use pictures/IWH_Logo_RGB_DE_Grossformat.png>
 Package pdftex.def Info: pictures/IWH_Logo_RGB_DE_Grossformat.png  used on input line 69.
 (pdftex.def)             Requested size: 113.81102pt x 44.77925pt.
-<pictures/seperationbar.png, id=135, 288.1164pt x 17.3448pt>
+<pictures/seperationbar.png, id=139, 288.1164pt x 17.3448pt>
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
 Package pdftex.def Info: pictures/seperationbar.png  used on input line 69.
 (pdftex.def)             Requested size: 113.81102pt x 6.8515pt.
-<pictures/BMWI_logo.png, id=136, 164.7756pt x 98.2872pt>
+<pictures/BMWI_logo.png, id=140, 164.7756pt x 98.2872pt>
 File: pictures/BMWI_logo.png Graphic file (type png)
 <use pictures/BMWI_logo.png>
 Package pdftex.def Info: pictures/BMWI_logo.png  used on input line 69.
@@ -1611,7 +1611,7 @@ Overfull \hbox (22.4775pt too wide) in paragraph at lines 69--69
 [] 
  []
 
-<pictures/BackgroundGIZ.jpg, id=137, 702.9462pt x 279.9258pt>
+<pictures/BackgroundGIZ.jpg, id=141, 702.9462pt x 279.9258pt>
 File: pictures/BackgroundGIZ.jpg Graphic file (type jpg)
 <use pictures/BackgroundGIZ.jpg>
 Package pdftex.def Info: pictures/BackgroundGIZ.jpg  used on input line 69.
@@ -1970,7 +1970,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 371.
  [28
 
 ]
-<pictures/Sea_Level_Rise_Vietnam.png, id=399, 476.0184pt x 281.853pt>
+<pictures/Sea_Level_Rise_Vietnam.png, id=403, 476.0184pt x 281.853pt>
 File: pictures/Sea_Level_Rise_Vietnam.png Graphic file (type png)
 <use pictures/Sea_Level_Rise_Vietnam.png>
 Package pdftex.def Info: pictures/Sea_Level_Rise_Vietnam.png  used on input line 379.
@@ -1997,7 +1997,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 394.
  [30
 
 ]
-<pictures/Cost_Benefit_Analysis_Dike.png, id=414, 442.7742pt x 301.6068pt>
+<pictures/Cost_Benefit_Analysis_Dike.png, id=418, 442.7742pt x 301.6068pt>
 File: pictures/Cost_Benefit_Analysis_Dike.png Graphic file (type png)
 <use pictures/Cost_Benefit_Analysis_Dike.png>
 Package pdftex.def Info: pictures/Cost_Benefit_Analysis_Dike.png  used on input line 404.
@@ -2036,7 +2036,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 426.
  [33
 
 ]
-<pictures/temperature/region1.jpg, id=438, 568.1225pt x 455.7025pt>
+<pictures/temperature/region1.jpg, id=442, 568.1225pt x 455.7025pt>
 File: pictures/temperature/region1.jpg Graphic file (type jpg)
 <use pictures/temperature/region1.jpg>
 Package pdftex.def Info: pictures/temperature/region1.jpg  used on input line 442.
@@ -2056,7 +2056,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 442.
 [34
 
  <./pictures/temperature/region1.jpg>]
-<pictures/temperature/region2.jpg, id=444, 568.1225pt x 455.7025pt>
+<pictures/temperature/region2.jpg, id=448, 568.1225pt x 455.7025pt>
 File: pictures/temperature/region2.jpg Graphic file (type jpg)
 <use pictures/temperature/region2.jpg>
 Package pdftex.def Info: pictures/temperature/region2.jpg  used on input line 442.
@@ -2076,7 +2076,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 442.
 [35
 
  <./pictures/temperature/region2.jpg>]
-<pictures/temperature/region3.jpg, id=450, 568.1225pt x 455.7025pt>
+<pictures/temperature/region3.jpg, id=454, 568.1225pt x 455.7025pt>
 File: pictures/temperature/region3.jpg Graphic file (type jpg)
 <use pictures/temperature/region3.jpg>
 Package pdftex.def Info: pictures/temperature/region3.jpg  used on input line 442.
@@ -2140,7 +2140,7 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 484.
  [40
 
 ]
-<pictures/climate/graph_SL.png, id=484, 568.1225pt x 455.7025pt>
+<pictures/climate/graph_SL.png, id=488, 568.1225pt x 455.7025pt>
 File: pictures/climate/graph_SL.png Graphic file (type png)
 <use pictures/climate/graph_SL.png>
 Package pdftex.def Info: pictures/climate/graph_SL.png  used on input line 496.
@@ -2234,6 +2234,39 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 558.
 [48
 
 ]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 571.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 571.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [49
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 588.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 588.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [50
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 604.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 604.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [51
+
+]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb
@@ -2248,44 +2281,11 @@ File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
 ))
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 582.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 628.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 582.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [49
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 596.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 596.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [50
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 613.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 613.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [51
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 629.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 629.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 628.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [52
 
@@ -2557,6 +2557,17 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 892.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [73
 
+] (DGE_CRED_Training.toc)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 893.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 893.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [74
+
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
@@ -2569,7 +2580,7 @@ File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 912.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [74
+ [75
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -2583,20 +2594,6 @@ File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 929.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [75
-
-]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 942.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 942.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
 [76
 
@@ -2606,11 +2603,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 942.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 956.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 941.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 956.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 941.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [77
 
@@ -2620,55 +2617,13 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 956.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 974.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 954.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 974.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 954.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [78
-
-]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb
-<pictures/transition/consumption_transition.png, id=731, 198.7425pt x 198.7425pt>
-File: pictures/transition/consumption_transition.png Graphic file (type png)
-<use pictures/transition/consumption_transition.png>
-Package pdftex.def Info: pictures/transition/consumption_transition.png  used on input line 7.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/transition/capital_transition.png, id=732, 198.7425pt x 198.7425pt>
-File: pictures/transition/capital_transition.png Graphic file (type png)
-<use pictures/transition/capital_transition.png>
-Package pdftex.def Info: pictures/transition/capital_transition.png  used on input line 8.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/transition/TFP_transition.png, id=733, 198.7425pt x 198.7425pt>
-File: pictures/transition/TFP_transition.png Graphic file (type png)
-<use pictures/transition/TFP_transition.png>
-Package pdftex.def Info: pictures/transition/TFP_transition.png  used on input line 9.
-(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 987.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 987.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [79
-
- <./pictures/transition/consumption_transition.png (PNG copy)> <./pictures/transition/capital_transition.png (PNG copy)>
- <./pictures/transition/TFP_transition.png (PNG copy)>]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1001.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1001.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [80
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -2676,11 +2631,54 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1001.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1016.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 971.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1016.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 971.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [79
+
+]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb
+<pictures/transition/consumption_transition.png, id=754, 198.7425pt x 198.7425pt>
+File: pictures/transition/consumption_transition.png Graphic file (type png)
+<use pictures/transition/consumption_transition.png>
+Package pdftex.def Info: pictures/transition/consumption_transition.png  used on input line 6.
+(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
+<pictures/transition/capital_transition.png, id=755, 198.7425pt x 198.7425pt>
+File: pictures/transition/capital_transition.png Graphic file (type png)
+<use pictures/transition/capital_transition.png>
+Package pdftex.def Info: pictures/transition/capital_transition.png  used on input line 7.
+(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
+<pictures/transition/TFP_transition.png, id=756, 198.7425pt x 198.7425pt>
+File: pictures/transition/TFP_transition.png Graphic file (type png)
+<use pictures/transition/TFP_transition.png>
+Package pdftex.def Info: pictures/transition/TFP_transition.png  used on input line 8.
+(pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
+)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 983.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 983.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+
+[80
+
+ <./pictures/transition/consumption_transition.png (PNG copy)> <./pictures/transition/capital_transition.png (PNG copy)>
+ <./pictures/transition/TFP_transition.png (PNG copy)>]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 997.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 997.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [81
 
@@ -2690,29 +2688,44 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1016.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1027.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1011.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1027.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1011.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [82
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
+ (DGE_CRED_Training.vrb)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1021.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1021.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+
+[83
+
+]
+\openout4 = `DGE_CRED_Training.vrb'.
+
  (DGE_CRED_Training.vrb
-<pictures/consumption01.png, id=755, 198.7425pt x 198.7425pt>
+<pictures/consumption01.png, id=778, 198.7425pt x 198.7425pt>
 File: pictures/consumption01.png Graphic file (type png)
 <use pictures/consumption01.png>
 Package pdftex.def Info: pictures/consumption01.png  used on input line 7.
 (pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/capital01.png, id=756, 198.7425pt x 198.7425pt>
+<pictures/capital01.png, id=779, 198.7425pt x 198.7425pt>
 File: pictures/capital01.png Graphic file (type png)
 <use pictures/capital01.png>
 Package pdftex.def Info: pictures/capital01.png  used on input line 8.
 (pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/TFP01.png, id=757, 198.7425pt x 198.7425pt>
+<pictures/TFP01.png, id=780, 198.7425pt x 198.7425pt>
 File: pictures/TFP01.png Graphic file (type png)
 <use pictures/TFP01.png>
 Package pdftex.def Info: pictures/TFP01.png  used on input line 9.
@@ -2720,100 +2733,84 @@ Package pdftex.def Info: pictures/TFP01.png  used on input line 9.
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1045.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1039.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1045.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
-[83
-
- <./pictures/consumption01.png (PNG copy)> <./pictures/capital01.png (PNG copy)> <./pictures/TFP01.png (PNG copy)>]
-\openout4 = `DGE_CRED_Training.vrb'.
-
-
-(DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1063.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1063.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1039.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [84
 
-]
+ <./pictures/consumption01.png (PNG copy)> <./pictures/capital01.png (PNG copy)> <./pictures/TFP01.png (PNG copy)>]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1083.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1057.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1083.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1057.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [85
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
+ (DGE_CRED_Training.vrb)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1076.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1076.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [86
+
+]
+\openout4 = `DGE_CRED_Training.vrb'.
+
  (DGE_CRED_Training.vrb
-<pictures/consumption02.png, id=774, 198.7425pt x 198.7425pt>
+<pictures/consumption02.png, id=798, 198.7425pt x 198.7425pt>
 File: pictures/consumption02.png Graphic file (type png)
 <use pictures/consumption02.png>
-Package pdftex.def Info: pictures/consumption02.png  used on input line 7.
+Package pdftex.def Info: pictures/consumption02.png  used on input line 6.
 (pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/capital02.png, id=775, 198.7425pt x 198.7425pt>
+<pictures/capital02.png, id=799, 198.7425pt x 198.7425pt>
 File: pictures/capital02.png Graphic file (type png)
 <use pictures/capital02.png>
-Package pdftex.def Info: pictures/capital02.png  used on input line 8.
+Package pdftex.def Info: pictures/capital02.png  used on input line 7.
 (pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
-<pictures/TFP02.png, id=776, 198.7425pt x 198.7425pt>
+<pictures/TFP02.png, id=800, 198.7425pt x 198.7425pt>
 File: pictures/TFP02.png Graphic file (type png)
 <use pictures/TFP02.png>
-Package pdftex.def Info: pictures/TFP02.png  used on input line 9.
+Package pdftex.def Info: pictures/TFP02.png  used on input line 8.
 (pdftex.def)             Requested size: 99.58464pt x 99.5863pt.
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1097.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1089.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1097.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [86
-
- <./pictures/consumption02.png (PNG copy)> <./pictures/capital02.png (PNG copy)> <./pictures/TFP02.png (PNG copy)>]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1107.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1107.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1089.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [87
 
-]
+ <./pictures/consumption02.png (PNG copy)> <./pictures/capital02.png (PNG copy)> <./pictures/TFP02.png (PNG copy)>]
 \openout4 = `DGE_CRED_Training.vrb'.
 
 
 (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1127.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1099.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1127.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1099.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [88
 
@@ -2823,11 +2820,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1127.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1144.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1118.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1144.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1118.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [89
 
@@ -2837,37 +2834,37 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1144.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1159.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1135.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1159.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1135.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [90
-
-] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1160.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1160.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [91
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
-
-(DGE_CRED_Training.vrb)
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1172.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1149.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1172.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1149.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [91
+
+]
+(DGE_CRED_Training.toc)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1150.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1150.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [92
 
@@ -2877,11 +2874,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1172.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1191.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1162.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1191.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1162.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [93
 
@@ -2891,11 +2888,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1191.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1208.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1181.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1208.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1181.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [94
 
@@ -2905,11 +2902,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1208.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1225.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1198.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1225.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1198.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [95
 
@@ -2920,96 +2917,13 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1225.
 (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1244.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1215.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1244.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1215.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [96
-
-] (DGE_CRED_Training.toc)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1246.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1246.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [97
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1263.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1263.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [98
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1272.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1272.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [99
-
-]
-<pictures/flowchart_macroprocessor.png, id=864, 449.68pt x 217.81375pt>
-File: pictures/flowchart_macroprocessor.png Graphic file (type png)
-<use pictures/flowchart_macroprocessor.png>
-Package pdftex.def Info: pictures/flowchart_macroprocessor.png  used on input line 1283.
-(pdftex.def)             Requested size: 284.52756pt x 137.82494pt.
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1283.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1283.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [100
-
- <./pictures/flowchart_macroprocessor.png>]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1300.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1300.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
-[101
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1319.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1319.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [102
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1333.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1333.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [103
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3017,11 +2931,93 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1333.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1352.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1234.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1352.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1234.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [97
+
+] (DGE_CRED_Training.toc)
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1236.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1236.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [98
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1253.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1253.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [99
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1262.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1262.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [100
+
+]
+<pictures/flowchart_macroprocessor.png, id=892, 449.68pt x 217.81375pt>
+File: pictures/flowchart_macroprocessor.png Graphic file (type png)
+<use pictures/flowchart_macroprocessor.png>
+Package pdftex.def Info: pictures/flowchart_macroprocessor.png  used on input line 1273.
+(pdftex.def)             Requested size: 284.52756pt x 137.82494pt.
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1273.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1273.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [101
+
+ <./pictures/flowchart_macroprocessor.png>]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1290.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1290.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [102
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1309.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1309.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [103
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1323.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1323.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [104
 
@@ -3031,11 +3027,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1352.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1364.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1342.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1364.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1342.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [105
 
@@ -3045,11 +3041,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1364.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1380.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1354.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1380.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1354.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [106
 
@@ -3060,11 +3056,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1380.
 (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1391.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1370.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1391.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1370.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [107
 
@@ -3074,11 +3070,11 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1391.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1410.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1381.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1410.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1381.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [108
 
@@ -3088,165 +3084,179 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1410.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1421.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1400.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1421.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1400.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [109
 
-] (DGE_CRED_Training.toc)
+]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1425.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1411.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1425.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1411.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
 [110
 
-]
+] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1438.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1415.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1438.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1415.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [111
 
 ]
-<pictures/Model_Structure.png, id=943, 963.6pt x 542.025pt>
-File: pictures/Model_Structure.png Graphic file (type png)
-<use pictures/Model_Structure.png>
-Package pdftex.def Info: pictures/Model_Structure.png  used on input line 1443.
-(pdftex.def)             Requested size: 398.3386pt x 224.0595pt.
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1443.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1428.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1443.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1428.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [112
+
+]
+<pictures/Model_Structure.png, id=971, 963.6pt x 542.025pt>
+File: pictures/Model_Structure.png Graphic file (type png)
+<use pictures/Model_Structure.png>
+Package pdftex.def Info: pictures/Model_Structure.png  used on input line 1433.
+(pdftex.def)             Requested size: 398.3386pt x 224.0595pt.
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1433.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1433.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [113
 
  <./pictures/Model_Structure.png>] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1446.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1436.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1446.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [113
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1455.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1455.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1436.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [114
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1471.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1445.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1471.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1445.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [115
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1487.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1461.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1487.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1461.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [116
+
+[116
 
 ]
-LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <9> not available
-(Font)              Font shape `T1/ua1/b/n' tried instead on input line 1508.
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1508.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1477.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1508.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1477.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [117
 
 ]
+LaTeX Font Info:    Font shape `T1/ua1/bx/n' in size <9> not available
+(Font)              Font shape `T1/ua1/b/n' tried instead on input line 1498.
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1522.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1498.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1522.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1498.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [118
 
 ]
-(DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1525.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1512.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1525.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1512.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [119
 
-]
+] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1541.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1515.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1541.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1515.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [120
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1556.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1531.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1556.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1531.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [121
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1572.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1546.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1572.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1546.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [122
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1562.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1562.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [123
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3259,28 +3269,28 @@ File: ts1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for TS1/ua1.
 ))
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1593.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1583.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1593.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1583.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [123
+ [124
 
 ]
-Overfull \hbox (10.2378pt too wide) detected at line 1614
+Overfull \hbox (10.2378pt too wide) detected at line 1604
 []
  []
 
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1614.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1604.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1614.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1604.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-[124
+[125
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3288,38 +3298,38 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1614.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1638.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1628.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1638.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [125
-
-]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1660.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1660.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1628.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [126
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1677.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1650.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1677.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1650.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [127
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1667.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1667.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [128
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3327,24 +3337,24 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1677.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1691.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1681.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1691.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1681.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [128
+ [129
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1706.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1696.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1706.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1696.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [129
+ [130
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3353,49 +3363,49 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1706.
 (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1729.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1719.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1729.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [130
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1753.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1753.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1719.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [131
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1775.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1743.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1775.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1743.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [132
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1791.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1765.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1791.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1765.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [133
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1781.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1781.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [134
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3403,40 +3413,40 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1791.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1812.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1802.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1812.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1802.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [134
+ [135
 
 ]
 (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1814.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1804.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1814.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1804.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [135
+ [136
 
 ]
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 1832.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 1822.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1832.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1822.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1832.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1822.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [136
+ [137
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3444,112 +3454,86 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1832.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1853.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1843.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1853.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1843.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
-[137
+[138
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1871.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1861.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1871.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [138
-
-]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1893.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1893.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1861.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [139
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1907.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1883.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1907.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1883.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [140
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1923.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1897.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1923.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1897.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [141
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1938.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1913.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1938.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1913.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [142
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1954.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1928.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1954.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1928.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [143
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1972.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1944.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1972.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1944.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
-[144
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 1988.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1988.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [145
+ [144
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3557,122 +3541,148 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1988.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2006.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1962.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2006.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1962.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+
+[145
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1978.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1978.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [146
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2022.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 1996.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2022.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 1996.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [147
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2038.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2012.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2038.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2012.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [148
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2056.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2028.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2056.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2028.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [149
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2072.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2046.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2072.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2046.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [150
 
 ]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2062.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2062.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [151
+
+]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2087.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2077.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2087.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2077.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
-[151
+[152
 
 ] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2089.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2079.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2089.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [152
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2114.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2114.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2079.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [153
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2135.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2104.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2135.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2104.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [154
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2151.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2125.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2151.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2125.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [155
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2141.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2141.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [156
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3680,61 +3690,61 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2151.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2166.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2156.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2166.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2156.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [156
+ [157
 
 ]
 (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2168.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2158.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2168.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [157
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2189.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2189.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2158.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [158
 
 ]
-\openout4 = `DGE_CRED_Training.vrb'.
-
- (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2219.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2179.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2219.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2179.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [159
 
 ]
+\openout4 = `DGE_CRED_Training.vrb'.
+
+ (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2243.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2209.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2243.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2209.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [160
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2233.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2233.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [161
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3742,13 +3752,13 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2243.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2265.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2255.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2265.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2255.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [161
+ [162
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3757,52 +3767,52 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2265.
 (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2287.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2277.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2287.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [162
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2313.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2313.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2277.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [163
 
 ]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2303.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2303.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [164
+
+]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb)
-Overfull \vbox (8.14561pt too high) detected at line 2347
+Overfull \vbox (8.14561pt too high) detected at line 2337
  []
 
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2347.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2337.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2347.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2337.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-[164
+[165
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2363.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2353.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2363.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2353.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [165
+ [166
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3810,80 +3820,80 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2363.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2378.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2368.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2378.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2368.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [166
+ [167
 
 ] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2384.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2374.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2384.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [167
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2412.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2412.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2374.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [168
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2430.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2402.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2430.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2402.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [169
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2420.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2420.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [170
 
 ] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2432.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2422.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2432.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2422.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [170
+ [171
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2447.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2437.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2447.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2437.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
-[171
+[172
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2472.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2462.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2472.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2462.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [172
+ [173
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
@@ -3891,105 +3901,116 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2472.
  (DGE_CRED_Training.vrb)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2491.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2481.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2491.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2481.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [173
+ [174
 
 ] (DGE_CRED_Training.toc)
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2493.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2483.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2493.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2483.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [174
+ [175
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2507.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2497.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2507.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2497.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [175
+ [176
 
 ]
 
 pdfTeX warning: pdflatex.exe (file ./pictures/scenario_temperature.pdf): PDF inclusion: found PDF version <1.6>, but at 
 most version <1.5> allowed
-<pictures/scenario_temperature.pdf, id=1375, 347.54843pt x 223.38457pt>
+<pictures/scenario_temperature.pdf, id=1403, 347.54843pt x 223.38457pt>
 File: pictures/scenario_temperature.pdf Graphic file (type pdf)
 <use pictures/scenario_temperature.pdf>
-Package pdftex.def Info: pictures/scenario_temperature.pdf  used on input line 2516.
+Package pdftex.def Info: pictures/scenario_temperature.pdf  used on input line 2506.
 (pdftex.def)             Requested size: 284.52756pt x 182.88678pt.
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2516.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2506.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2516.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2506.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-[176
+[177
 
  <./pictures/scenario_temperature.pdf>]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2529.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2519.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2529.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [177
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2544.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2544.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2519.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [178
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2559.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2534.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2559.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2534.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [179
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2577.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2549.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2577.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2549.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [180
 
 ]
-<pictures/scenario_adaptation.png, id=1405, 442.7742pt x 301.6068pt>
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2567.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2567.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [181
+
+]
+<pictures/scenario_adaptation.png, id=1434, 442.7742pt x 301.6068pt>
 File: pictures/scenario_adaptation.png Graphic file (type png)
 <use pictures/scenario_adaptation.png>
-Package pdftex.def Info: pictures/scenario_adaptation.png  used on input line 2586.
+Package pdftex.def Info: pictures/scenario_adaptation.png  used on input line 2576.
 (pdftex.def)             Requested size: 284.52756pt x 193.81924pt.
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2576.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2576.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [182
+
+ <./pictures/scenario_adaptation.png>]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
 Package pdftex.def Info: pictures/seperationbar.png  used on input line 2586.
@@ -3998,18 +4019,134 @@ File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2586.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [181
+ [183
 
- <./pictures/scenario_adaptation.png>]
+]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2596.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2599.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2596.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2599.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [182
+
+[184
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2603.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2603.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [185
+
+]
+Overfull \hbox (8.6237pt too wide) in paragraph at lines 2609--2609
+|   []\T1/ua1/m/n/10.95 .[] 
+ []
+
+
+Overfull \hbox (3.37851pt too wide) in paragraph at lines 2609--2609
+|   []\T1/ua1/m/n/10.95 .[][][]  
+ []
+
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+[186
+
+ <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [187
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [188
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [189
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [190
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [191
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [192
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [193
+
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
@@ -4021,164 +4158,37 @@ File: pictures/GIZ_Logo.png Graphic file (type png)
 Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
 
-[183
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2613.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2613.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [184
-
-]
-Overfull \hbox (8.6237pt too wide) in paragraph at lines 2619--2619
-|   []\T1/ua1/m/n/10.95 .[] 
- []
-
-
-Overfull \hbox (3.37851pt too wide) in paragraph at lines 2619--2619
-|   []\T1/ua1/m/n/10.95 .[][][]  
- []
-
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-[185
-
- <C:/Program Files/MiKTeX 2.9/tex/latex/beamer/beamericonarticle.pdf>]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [186
+[194
 
 
 ]
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2609.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [187
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [188
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [189
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [190
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [191
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [192
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
-
-[193
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2619.
-(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [194
-
-
-]
-File: pictures/seperationbar.png Graphic file (type png)
-<use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2624.
-(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
-File: pictures/GIZ_Logo.png Graphic file (type png)
-<use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2624.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2609.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
  [195
+
+
+]
+File: pictures/seperationbar.png Graphic file (type png)
+<use pictures/seperationbar.png>
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2614.
+(pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
+File: pictures/GIZ_Logo.png Graphic file (type png)
+<use pictures/GIZ_Logo.png>
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2614.
+(pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
+ [196
 
 ]
 \openout4 = `DGE_CRED_Training.vrb'.
 
  (DGE_CRED_Training.vrb
-<pictures/Newton/Newton1.png, id=1523, 428.60126pt x 307.1475pt>
+<pictures/Newton/Newton1.png, id=1551, 428.60126pt x 307.1475pt>
 File: pictures/Newton/Newton1.png Graphic file (type png)
 <use pictures/Newton/Newton1.png>
 Package pdftex.def Info: pictures/Newton/Newton1.png  used on input line 6.
@@ -4190,16 +4200,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [196
+ [197
 
  <./pictures/Newton/Newton1.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton2.png, id=1530, 428.60126pt x 307.1475pt>
+<pictures/Newton/Newton2.png, id=1558, 428.60126pt x 307.1475pt>
 File: pictures/Newton/Newton2.png Graphic file (type png)
 <use pictures/Newton/Newton2.png>
 Package pdftex.def Info: pictures/Newton/Newton2.png  used on input line 7.
@@ -4211,16 +4221,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [197
+ [198
 
  <./pictures/Newton/Newton2.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton3.png, id=1537, 431.6125pt x 309.155pt>
+<pictures/Newton/Newton3.png, id=1565, 431.6125pt x 309.155pt>
 File: pictures/Newton/Newton3.png Graphic file (type png)
 <use pictures/Newton/Newton3.png>
 Package pdftex.def Info: pictures/Newton/Newton3.png  used on input line 8.
@@ -4232,16 +4242,16 @@ Overfull \vbox (16.32216pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [198
+ [199
 
  <./pictures/Newton/Newton3.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton4.png, id=1544, 429.605pt x 309.155pt>
+<pictures/Newton/Newton4.png, id=1573, 429.605pt x 309.155pt>
 File: pictures/Newton/Newton4.png Graphic file (type png)
 <use pictures/Newton/Newton4.png>
 Package pdftex.def Info: pictures/Newton/Newton4.png  used on input line 9.
@@ -4253,16 +4263,16 @@ Overfull \vbox (16.32216pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [199
+ [200
 
  <./pictures/Newton/Newton4.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton5.png, id=1552, 429.605pt x 307.1475pt>
+<pictures/Newton/Newton5.png, id=1580, 429.605pt x 307.1475pt>
 File: pictures/Newton/Newton5.png Graphic file (type png)
 <use pictures/Newton/Newton5.png>
 Package pdftex.def Info: pictures/Newton/Newton5.png  used on input line 10.
@@ -4274,16 +4284,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [200
+ [201
 
  <./pictures/Newton/Newton5.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton6.png, id=1559, 429.605pt x 308.15125pt>
+<pictures/Newton/Newton6.png, id=1587, 429.605pt x 308.15125pt>
 File: pictures/Newton/Newton6.png Graphic file (type png)
 <use pictures/Newton/Newton6.png>
 Package pdftex.def Info: pictures/Newton/Newton6.png  used on input line 11.
@@ -4295,16 +4305,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [201
+ [202
 
  <./pictures/Newton/Newton6.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton7.png, id=1566, 430.60875pt x 308.15125pt>
+<pictures/Newton/Newton7.png, id=1594, 430.60875pt x 308.15125pt>
 File: pictures/Newton/Newton7.png Graphic file (type png)
 <use pictures/Newton/Newton7.png>
 Package pdftex.def Info: pictures/Newton/Newton7.png  used on input line 12.
@@ -4316,16 +4326,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [202
+ [203
 
  <./pictures/Newton/Newton7.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton8.png, id=1573, 429.605pt x 309.155pt>
+<pictures/Newton/Newton8.png, id=1601, 429.605pt x 309.155pt>
 File: pictures/Newton/Newton8.png Graphic file (type png)
 <use pictures/Newton/Newton8.png>
 Package pdftex.def Info: pictures/Newton/Newton8.png  used on input line 13.
@@ -4337,16 +4347,16 @@ Overfull \vbox (16.32216pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [203
+ [204
 
  <./pictures/Newton/Newton8.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton9.png, id=1580, 429.605pt x 308.15125pt>
+<pictures/Newton/Newton9.png, id=1608, 429.605pt x 308.15125pt>
 File: pictures/Newton/Newton9.png Graphic file (type png)
 <use pictures/Newton/Newton9.png>
 Package pdftex.def Info: pictures/Newton/Newton9.png  used on input line 14.
@@ -4358,16 +4368,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [204
+ [205
 
  <./pictures/Newton/Newton9.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton10.png, id=1587, 428.60126pt x 307.1475pt>
+<pictures/Newton/Newton10.png, id=1616, 428.60126pt x 307.1475pt>
 File: pictures/Newton/Newton10.png Graphic file (type png)
 <use pictures/Newton/Newton10.png>
 Package pdftex.def Info: pictures/Newton/Newton10.png  used on input line 15.
@@ -4379,16 +4389,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [205
+ [206
 
  <./pictures/Newton/Newton10.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton11.png, id=1595, 430.60875pt x 307.1475pt>
+<pictures/Newton/Newton11.png, id=1623, 430.60875pt x 307.1475pt>
 File: pictures/Newton/Newton11.png Graphic file (type png)
 <use pictures/Newton/Newton11.png>
 Package pdftex.def Info: pictures/Newton/Newton11.png  used on input line 16.
@@ -4400,16 +4410,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [206
+ [207
 
  <./pictures/Newton/Newton11.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton12.png, id=1602, 429.605pt x 308.15125pt>
+<pictures/Newton/Newton12.png, id=1630, 429.605pt x 308.15125pt>
 File: pictures/Newton/Newton12.png Graphic file (type png)
 <use pictures/Newton/Newton12.png>
 Package pdftex.def Info: pictures/Newton/Newton12.png  used on input line 17.
@@ -4421,16 +4431,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [207
+ [208
 
  <./pictures/Newton/Newton12.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton13.png, id=1609, 430.60875pt x 308.15125pt>
+<pictures/Newton/Newton13.png, id=1637, 430.60875pt x 308.15125pt>
 File: pictures/Newton/Newton13.png Graphic file (type png)
 <use pictures/Newton/Newton13.png>
 Package pdftex.def Info: pictures/Newton/Newton13.png  used on input line 18.
@@ -4442,16 +4452,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [208
+ [209
 
  <./pictures/Newton/Newton13.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton14.png, id=1616, 430.60875pt x 307.1475pt>
+<pictures/Newton/Newton14.png, id=1644, 430.60875pt x 307.1475pt>
 File: pictures/Newton/Newton14.png Graphic file (type png)
 <use pictures/Newton/Newton14.png>
 Package pdftex.def Info: pictures/Newton/Newton14.png  used on input line 19.
@@ -4463,16 +4473,16 @@ Overfull \vbox (16.32298pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [209
+ [210
 
  <./pictures/Newton/Newton14.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton15.png, id=1623, 429.605pt x 308.15125pt>
+<pictures/Newton/Newton15.png, id=1651, 429.605pt x 308.15125pt>
 File: pictures/Newton/Newton15.png Graphic file (type png)
 <use pictures/Newton/Newton15.png>
 Package pdftex.def Info: pictures/Newton/Newton15.png  used on input line 20.
@@ -4484,16 +4494,16 @@ Overfull \vbox (16.32188pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [210
+ [211
 
  <./pictures/Newton/Newton15.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton16.png, id=1630, 429.605pt x 306.14375pt>
+<pictures/Newton/Newton16.png, id=1659, 429.605pt x 306.14375pt>
 File: pictures/Newton/Newton16.png Graphic file (type png)
 <use pictures/Newton/Newton16.png>
 Package pdftex.def Info: pictures/Newton/Newton16.png  used on input line 21.
@@ -4505,16 +4515,16 @@ Overfull \vbox (16.32076pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [211
+ [212
 
  <./pictures/Newton/Newton16.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton17.png, id=1638, 430.60875pt x 309.155pt>
+<pictures/Newton/Newton17.png, id=1666, 430.60875pt x 309.155pt>
 File: pictures/Newton/Newton17.png Graphic file (type png)
 <use pictures/Newton/Newton17.png>
 Package pdftex.def Info: pictures/Newton/Newton17.png  used on input line 22.
@@ -4526,16 +4536,16 @@ Overfull \vbox (16.32216pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [212
+ [213
 
  <./pictures/Newton/Newton17.png>] (DGE_CRED_Training.vrb
-<pictures/Newton/Newton18.png, id=1645, 431.6125pt x 307.1475pt>
+<pictures/Newton/Newton18.png, id=1673, 431.6125pt x 307.1475pt>
 File: pictures/Newton/Newton18.png Graphic file (type png)
 <use pictures/Newton/Newton18.png>
 Package pdftex.def Info: pictures/Newton/Newton18.png  used on input line 23.
@@ -4547,13 +4557,13 @@ Overfull \vbox (4.89905pt too high) detected at line 24
 )
 File: pictures/seperationbar.png Graphic file (type png)
 <use pictures/seperationbar.png>
-Package pdftex.def Info: pictures/seperationbar.png  used on input line 2653.
+Package pdftex.def Info: pictures/seperationbar.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 1.7126pt.
 File: pictures/GIZ_Logo.png Graphic file (type png)
 <use pictures/GIZ_Logo.png>
-Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
+Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2643.
 (pdftex.def)             Requested size: 28.45274pt x 7.84991pt.
- [213
+ [214
 
  <./pictures/Newton/Newton18.png>]
 \tf@nav=\write10
@@ -4565,13 +4575,13 @@ Package pdftex.def Info: pictures/GIZ_Logo.png  used on input line 2653.
 \tf@snm=\write12
 \openout12 = `DGE_CRED_Training.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2655.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2655.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2645.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2645.
  (DGE_CRED_Training.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2655.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2655.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2645.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2645.
 Package rerunfilecheck Info: File `DGE_CRED_Training.out' has not changed.
-(rerunfilecheck)             Checksum: EA265A67B2F5B078746EC9EDAE4D916E;2085.
+(rerunfilecheck)             Checksum: CFF4863E78ED05992D2D778C2F7CD153;2170.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4582,10 +4592,10 @@ Package logreq Info: Writing requests to 'DGE_CRED_Training.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 35395 strings out of 492891
- 680360 string characters out of 3133353
- 1372088 words of memory out of 3000000
- 37779 multiletter control sequences out of 15000+200000
+ 35415 strings out of 492891
+ 681142 string characters out of 3133353
+ 1371088 words of memory out of 3000000
+ 37789 multiletter control sequences out of 15000+200000
  211074 words of font info for 138 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,21n,78p,797b,1607s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4602,9 +4612,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Pro
 am Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/arial/ua1ri8a.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pf
 b>
-Output written on DGE_CRED_Training.pdf (213 pages, 2013486 bytes).
+Output written on DGE_CRED_Training.pdf (214 pages, 2017875 bytes).
 PDF statistics:
- 1838 PDF objects out of 2073 (max. 8388607)
- 568 named destinations out of 1000 (max. 500000)
- 499 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1867 PDF objects out of 2073 (max. 8388607)
+ 576 named destinations out of 1000 (max. 500000)
+ 507 words of extra memory for PDF output out of 10000 (max. 10000000)
 
