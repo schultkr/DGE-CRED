@@ -1,0 +1,101 @@
+%\documentclass[envcountsect,11pt,trans]{beamer}
+\documentclass[11pt,aspectratio=169]{beamer}
+\input{def}
+\mode<presentation>{
+    \setbeamertemplate{itemize item}{\color{RedGIZ}$\blacksquare$}
+    \setbeamertemplate{itemize subitem}{\color{RedGIZ}$\blacktriangleright$}
+		}
+\title[DGE--CRED]{Dynamic General Equilibrium Model for Climate Resilient Economic Development}
+%\subtitle[]{Training}
+
+\author[Christoph Schult]{Andrej Drygalla, Katja Heinisch and Christoph Schult*} \date[July 2020]{July 2020}
+\institute[IWH]{Halle Institute for Economic Research}
+
+ 
+\logo{\begin{tabular}{c}\includegraphics[keepaspectratio,width=1.00cm]{pictures/seperationbar.png} \\ \includegraphics[keepaspectratio,width=1.00cm]{pictures/GIZ_Logo}\end{tabular}}
+
+\usepackage[style=authoryear-comp,maxbibnames=9,maxcitenames=2,backend=bibtex]{biblatex}
+\bibliography{references}
+
+% Settings by yw:
+% Outline at beginning of each section:
+\AtBeginSection[] {
+	\begin{frame}<beamer>{Outline}
+		\tableofcontents[sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/show/hide]
+	\end{frame}
+}
+% Packages:
+\usepackage{ragged2e}
+\usepackage{upquote}
+\usepackage{subfigure}
+\usepackage{ragged2e}
+\lstset{ 
+  backgroundcolor=\color{white},
+	breaklines=true,
+	basicstyle=\tiny
+}
+% Section numbering:
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{subsubsection in toc}[subsubsections numbered]
+\setbeamertemplate{section in toc}[ball]
+\setbeamertemplate{subsection in toc}[ball]
+\setbeamertemplate{subsubsection in toc}[ball]
+\setbeamercolor{section number projected}{bg={RedGIZ}}
+\setbeamercolor{subsection number projected}{bg={RedGIZ}}
+\setbeamercolor{subsubsection number projected}{bg={RedGIZ}}
+%\usefonttheme{serif}
+\begin{document}
+%\footnotesize
+\usebackgroundtemplate{
+\vbox to \paperheight{\vspace{0.1cm}\hbox to \paperwidth{\hfil\includegraphics[width=0.975\paperwidth,height = 0.7\paperheight]{pictures/BackgroundGIZ.jpg}\hfil}\vfil
+}}
+
+\begin{frame}<presentation>[noframenumbering,plain]
+  \titlepage \\
+	{\tiny} \scalebox{.4}{* Research assistance by Yoshiki Wiskamp is greatly acknowledged.}
+\end{frame}
+\usebackgroundtemplate{
+}
+\begin{frame}<presentation>[noframenumbering]
+	\frametitle{Outline}
+		 \tableofcontents[hideallsubsections]
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Economic Models and Climate Change}
+
+\subsection{Motivation}
+\subsection{Modeling Approach}
+\subsection{Advantages of the Modeling Approach}
+\subsection{Limitations of the Modeling Approach}
+\subsection{Possible Applications}
+
+\section{Model building steps}
+
+\subsection{Definition of Scenarios}
+
+\subsection{Identification of Climate Hazards}
+\subsection{Calibration of Model Parameters}
+\section{Introduction to Dynare}
+
+\subsection{What is Dynare?}
+
+\subsection{Implementing a Model in Dynare}
+\subsubsection{The \texttt{model} block}
+\subsection{Steady State in Dynare}
+\subsection{Deterministic Simulations in Dynare}
+\subsection{Remarks and Examples}
+\subsection{Macro Processor}
+\section{DGE--CRED Model}
+
+\subsection{Introduction}
+\subsection{Folder Structure}
+\subsection{Demand}
+\subsection{Production}
+\subsection{Climate Variables}
+\subsection{Aggregation and Identities}
+
+\section{Model Simulation and Calibration}
+
+\end{document}
