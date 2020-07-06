@@ -14,7 +14,7 @@ model(bytecode);
 
 
         [name = 'sector specific TFP']
-        A_@{sec}_@{reg} = rhoA_@{sec}_@{reg}_p * A_@{sec}_@{reg}(-1) + (1 - rhoA_@{sec}_@{reg}_p) * (A_@{sec}_@{reg}_p * exp(exo_@{sec}_@{reg}));
+        A_@{sec}_@{reg} = rhoA_@{sec}_@{reg}_p * A_@{sec}_@{reg}(-1) + (1 - rhoA_@{sec}_@{reg}_p) * (A_@{sec}_@{reg}_p * KG^phiG_p * exp(exo_@{sec}_@{reg}));
 
         [name = 'sector and capital specific productivity shock']
         A_K_@{sec}_@{reg} = rhoA_K_@{sec}_@{reg}_p * A_K_@{sec}_@{reg}(-1) + (1 - rhoA_K_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg}_p * exp(exo_K_@{sec}_@{reg}));
@@ -24,6 +24,8 @@ model(bytecode);
 
         [name = 'sector specific damage function']
         D_@{sec}_@{reg} = 
+		
+		
 
         [name = 'sector specific damage function on labour productivity']
         D_N_@{sec}_@{reg} = min(1,aN_T_1_@{sec}_@{reg}_p * T_@{reg} + aN_T_2_@{sec}_@{reg}_p * T_@{reg}^(aN_T_3_@{sec}_@{reg}_p) + 
@@ -45,17 +47,17 @@ model(bytecode);
 
         @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
             [name = 'sector specific adaptation expenditures by the government against sea level rise']
-            
+
 
             [name = 'sector specific adaptation capital against sea level rise']
-            
+
         @# endfor
 
         [name = 'demand for regional sector output',mcp = 'Y_@{sec}_@{reg} > 0']
         P_@{sec}_@{reg}  = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p) * ((Y_@{sec}_@{reg})/Y_@{sec})^(-1/etaQ_@{sec}_p) * P_@{sec};
 
         [name = 'sector specific output']
-
+        
 
         [name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
 
@@ -82,7 +84,7 @@ model(bytecode);
 
 
     [name = 'sector aggregate specific output']
-   
+
 
 
 
@@ -153,6 +155,7 @@ P * Y =
 Y = C + I + G + NX
 @# for sec in 1:Sectors
 
+
 @# endfor
 ;
 
@@ -172,14 +175,20 @@ rf = (1/beta_p-1);
 [name = 'Government Budget Constraint']
 G + BG
 @# for sec in 1:Sectors
+    @# for reg in 1:Regions
 
+    @# endfor
 @# endfor
 = (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1) + tauC_p * C
 @# for sec in 1:Sectors
 
 @# endfor
 ;
-[name = 'Government Budget Deficit']
+
+[name = 'public good capital stock']
+KG = (1 - deltaKG_p) * KG(-1) + G;
+
+[name = 'Government Budget Constraint']
 BG = exo_BG;
 
 [name = 'aggregate investment']

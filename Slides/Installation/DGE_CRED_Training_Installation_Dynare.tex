@@ -1,0 +1,266 @@
+%\documentclass[envcountsect,11pt,trans]{beamer}
+\documentclass[11pt,aspectratio=169]{beamer}
+\input{def}
+\mode<presentation>{
+    \setbeamertemplate{itemize item}{\color{RedGIZ}$\blacksquare$}
+    \setbeamertemplate{itemize subitem}{\color{RedGIZ}$\blacktriangleright$}
+		}
+\title[DGE--CRED]{Dynamic General Equilibrium Model for Climate Resilient Economic Development}
+%\subtitle[]{Training}
+
+\author[Christoph Schult]{Andrej Drygalla, Katja Heinisch and Christoph Schult*} \date[July 2020]{July 2020}
+\institute[IWH]{Halle Institute for Economic Research}
+
+ 
+\logo{\begin{tabular}{c}\includegraphics[keepaspectratio,width=1.00cm]{pictures/seperationbar.png} \\ \includegraphics[keepaspectratio,width=1.00cm]{pictures/GIZ_Logo}\end{tabular}}
+
+\usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,backend=bibtex]{biblatex}
+\bibliography{references}
+
+% Settings by yw:
+% Outline at beginning of each section:
+
+
+\AtBeginSection[]{	
+	{\setbeamertemplate{footline}{}
+	\begin{frame}<beamer>{Outline}
+		\tableofcontents[sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/show/hide]
+		\setbeamertemplate{footline}{}
+		\addtocounter{framenumber}{-1}
+	\end{frame}}
+}
+
+% Packages:
+\usepackage{ragged2e}
+\usepackage{upquote}
+\usepackage{subfigure}
+\usepackage{ragged2e}
+\lstset{ 
+  backgroundcolor=\color{white},
+	breaklines=true,
+	basicstyle=\tiny
+}
+% Section numbering:
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{subsubsection in toc}[subsubsections numbered]
+\setbeamertemplate{section in toc}[ball]
+\setbeamertemplate{subsection in toc}[ball]
+\setbeamertemplate{subsubsection in toc}[ball]
+\setbeamercolor{section number projected}{bg={RedGIZ}}
+\setbeamercolor{subsection number projected}{bg={RedGIZ}}
+\setbeamercolor{subsubsection number projected}{bg={RedGIZ}}
+%\usefonttheme{serif}
+\begin{document}
+%\footnotesize
+\usebackgroundtemplate{
+\vbox to \paperheight{\vspace{0.1cm}\hbox to \paperwidth{\hfil\includegraphics[width=0.975\paperwidth,height = 0.7\paperheight]{pictures/BackgroundGIZ.jpg}\hfil}\vfil
+}}
+
+\begin{frame}<presentation>[noframenumbering,plain]
+  \titlepage \\
+	{\tiny} \scalebox{.4}{* Research assistance by Yoshiki Wiskamp is greatly acknowledged.}
+\end{frame}
+\usebackgroundtemplate{
+}
+{\setbeamertemplate{footline}{}
+\begin{frame}<presentation>[noframenumbering]
+	\frametitle{Outline}
+		 \tableofcontents[hideallsubsections]
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Installation of Dynare}
+
+\subsection{Installation of Dynare: Introduction}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Installation of Dynare: Introduction}
+	\begin{itemize}
+		\item Packaged versions of Dynare are available for:
+		\begin{itemize}
+			\item Windows (7, 8.1, 10)
+			\item Several GNU/Linux distributions (Debian, Ubuntu, Linux Mint, Arch Linux)
+			\item macOS 10.11 or later
+			\item Should work on other systems, but some compilation steps are necessary
+		\end{itemize}
+	\item In order to run Dynare, you need one of the following:
+		\begin{itemize}
+			\item MATLAB version 7.9 (R2009b) or above
+			\item GNU Octave version 4.2.1 or above, with the statistics package from Octave-Forge
+		\end{itemize}
+	\item For the DGE CRED model only Dynare 4.6 and the newest Octave version are suitable
+	\end{itemize}
+\end{frame}
+
+
+\subsection{Installation of Dynare: Windows}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Installation of Dynare: Windows (1)}
+	\begin{itemize}
+			\item Access the Dynare web page (\texttt{https://www.dynare.org}) and click on ``Download v4.6.1'': 
+				\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/windows1}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: Windows (2)}
+	\begin{itemize}
+		\item The following page will be displayed:
+		\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/windows2}}
+		\end{figure}
+	\item Click on ``Dynare 4.6.1 (exe)'' to download the executable installer.
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: Windows (3)}
+	\begin{itemize}
+		\item Open the downloaded executable installer ``\texttt{dynare-4.6.1.exe}''
+		\item Follow the displayed instructions
+		\begin{figure}
+			\frame{\includegraphics[width=6cm]{pictures/Dynare_installation/windows3}}
+		\end{figure}
+
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: Windows (4)}
+	\begin{itemize}
+		\item Finally, choose a folder in which to install Dynare
+		
+		\begin{figure}
+			\frame{\includegraphics[width=6cm]{pictures/Dynare_installation/windows4}}
+		\end{figure}
+			\item You will later need to tell MATLAB the path where Dynare is installed
+	\end{itemize}
+\end{frame}
+
+\subsection{Installation of Dynare: macOS}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: macOS (1)}
+	\begin{itemize}
+		\item Access the Dynare web page (\texttt{https://www.dynare.org}) and click on ``Download v4.6.1'':
+		\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/mac1}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: macOS (2)}
+	\begin{itemize}
+		\item The following page will be displayed:
+		\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/mac2}}
+		\end{figure}
+	\item Click on ``Dynare 4.6.1 (pkg)'' to download the installation package.
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: macOS (3)}
+	\begin{itemize}
+		\item Open the downloaded installation package ``\texttt{dynare-4.6.1.pkg}''
+		\item In case that the following security notification is displayed:
+		\begin{figure}
+			\frame{\includegraphics[width=6cm]{pictures/Dynare_installation/mac3}}
+		\end{figure}
+		\begin{itemize}
+			\item Access: ``System Preferences'' --> ``Security \& Privacy'' --> press: ``Open Anyway''
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: macOS (4)}
+	\begin{itemize}
+		\item The following window should appear:
+		\begin{figure}
+			\frame{\includegraphics[width=6cm]{pictures/Dynare_installation/mac4}}
+		\end{figure}
+		\item Follow the displayed instuctions.
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Installation of Dynare: macOS (5)}
+	\begin{itemize}
+		\item If the installation was successfull the following window will appear:
+		\begin{figure}
+			\frame{\includegraphics[width=6cm]{pictures/Dynare_installation/mac5}}
+		\end{figure}
+		\item The Dynare folder should now be listed under ``Applications''.
+		\item Dynare is now ready to use and the installation package ``\texttt{dynare-4.6.1.pkg}'' can be deleted.
+	\end{itemize}
+\end{frame}
+
+\section{Set path to Dynare in Matlab}
+
+\subsection{Set path to Dynare in Matlab: permanently}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Set path to Dynare in Matlab: permanently (1)}
+	\begin{itemize}
+			\item On the MATLAB Home tab, in the Environment section, click on Set Path
+				\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/setpath1}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Set path to Dynare in Matlab: permanently (2)}
+	\begin{itemize}
+			\item Click Add Folder
+				\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/setpath2}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Set path to Dynare in Matlab: permanently (3)}
+	\begin{itemize}
+			\item Select the matlab subdirectory of your Dynare installation
+				\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/setpath3}}
+		\end{figure}
+		\item Then select choose folder
+	\end{itemize}
+\end{frame}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Set path to Dynare in Matlab: permanently (4)}
+	\begin{itemize}
+			\item Apply the setting by clicking Save button
+				\begin{figure}
+			\frame{\includegraphics[width=9cm]{pictures/Dynare_installation/setpath4}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\subsection{Set path to Dynare in Matlab: temporarily}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Set path to Dynare in Matlab: temporarily}
+	\begin{itemize}
+		\item Alternatively, the path to Dynare can be set \textit{temporarily} in Matlab
+		\begin{itemize}
+			\item This allows to switch between different versions of Dynare
+		\end{itemize}
+		\item The following command has to be entered in Matlab:
+		\begin{itemize}
+			\item Windows: \texttt{addpath C:\textbackslash dynare\textbackslash4.6.1\textbackslash matlab}
+			\item macOS: \texttt{addpath /Applications/Dynare/4.X.Y/matlab}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

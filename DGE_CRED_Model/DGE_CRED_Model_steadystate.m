@@ -43,7 +43,12 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         else
             options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
         end
-        xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+        if strpar.phiG_p > 0
+            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p+1,1);
+        else
+            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+        end
+        
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);
             for icoreg = 1:strpar.inbregions_p
@@ -51,6 +56,9 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
                 icovec = icoreg + (icosec-1)*strpar.inbregions_p;
                 xstart_vec(icovec) = strys.(['K_' ssec '_' sreg]);
             end
+        end
+        if strpar.phiG_p > 0
+            xstart_vec(end) = strys.G;
         end
         FindKtemp = @(x)FindK(x,strys,strexo,strpar);
         [Fval_vec, strys,strexo] = FindK(xstart_vec, strys, strexo, strpar);
@@ -64,22 +72,22 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
         else
             options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
         end
-        xstart_vec_1 = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
-        xstart_vec_2 = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
-        xstart_vec_3 = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+        if strpar.phiG_p > 0
+            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p+1,1);
+        else
+            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+        end
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);
             for icoreg = 1:strpar.inbregions_p
                 sreg = num2str(icoreg);
                 icovec = icoreg + (icosec-1)*strpar.inbregions_p;
-                xstart_vec_1(icovec) = strys.(['A_' ssec '_' sreg]);
-                xstart_vec_2(icovec) = strys.(['A_N_' ssec '_' sreg]);
-                xstart_vec_3(icovec) = strys.(['K_' ssec '_' sreg])/strys.(['Y_' ssec '_' sreg]);
+                xstart_vec(icovec) = strys.(['K_' ssec '_' sreg])/strys.(['Y_' ssec '_' sreg]);
             end
         end
-%         xstart_vec = [xstart_vec_1(:); xstart_vec_2(:); xstart_vec_3(:)];
-        xstart_vec = [xstart_vec_1(:); xstart_vec_3(:)];
-        xstart_vec = xstart_vec_3;
+        if strpar.phiG_p > 0
+            xstart_vec(end) = strys.G / strys.Y;
+        end
         % evaluate residuals of HH FOC w.r.t. labour in each region and sector
         iStep = options_.iStepSteadyState;
         YTtemp_p = strpar.YT_p;
@@ -94,11 +102,8 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
                     strpar.NT_p = icostep./iStep .* NTtemp_p + (iStep-icostep)./iStep .* strpar.N0_p;
                     strpar.(['phiY_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiY0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiYT_' ssec '_' sreg '_p']);
                     strpar.(['phiN_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiN0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiNT_' ssec '_' sreg '_p']);
-%                     iIncrease = (icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p)./((icostep-1)./iStep .* YTtemp_p + (iStep-(icostep-1))./iStep .* strpar.Y0_p);
                 end
             end
-%             FindAtemp = @(x)FindA(x,strys,strexo,strpar);
-%             [Fval_vec, strys,strexo] = FindA(xstart_vec, strys, strexo, strpar);
             FindKtemp = @(x)FindK(x,strys,strexo,strpar);
             [Fval_vec, strys,strexo] = FindK(xstart_vec, strys, strexo, strpar);
             if max(abs(Fval_vec(:)))>1e-8
