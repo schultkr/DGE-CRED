@@ -14,7 +14,7 @@ model(bytecode);
         tauN_@{sec}_@{reg} = tauN_@{sec}_@{reg}_p + exo_tauN_@{sec}_@{reg};
 
         [name = 'sector specific TFP']
-        A_@{sec}_@{reg} = rhoA_@{sec}_@{reg}_p * A_@{sec}_@{reg}(-1) + (1 - rhoA_@{sec}_@{reg}_p) * (A_@{sec}_@{reg}_p * exp(exo_@{sec}_@{reg}));
+        A_@{sec}_@{reg} = rhoA_@{sec}_@{reg}_p * A_@{sec}_@{reg}(-1) + (1 - rhoA_@{sec}_@{reg}_p) * (A_@{sec}_@{reg}_p * KG^phiG_p * exp(exo_@{sec}_@{reg}));
 
         [name = 'sector and capital specific productivity shock']
         A_K_@{sec}_@{reg} = rhoA_K_@{sec}_@{reg}_p * A_K_@{sec}_@{reg}(-1) + (1 - rhoA_K_@{sec}_@{reg}_p) * (A_K_@{sec}_@{reg}_p * exp(exo_K_@{sec}_@{reg}));
@@ -196,7 +196,11 @@ G + BG
     @# endfor
 @# endfor
 ;
-[name = 'Government Budget Deficit']
+
+[name = 'public good capital stock']
+KG = (1 - deltaKG_p) * KG(-1) + G;
+
+[name = 'Government Budget Constraint']
 BG = exo_BG;
 
 [name = 'aggregate investment']

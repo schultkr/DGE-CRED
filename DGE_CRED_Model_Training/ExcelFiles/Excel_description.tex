@@ -9,23 +9,23 @@
 \maketitle
 \section{Using the MS Excel Model Simulation and Calibration Interface}
 
-Regardless the number of sectors and number of regions, each Excel file contains the following sheets that will be explained in the following sections.
+Regardless of the number of sectors and number of regions, each Excel file contains the following sheets that are explained in the following sections.
 
 \begin{itemize}\setlength{\itemsep}{0pt}
-\item Content
-\item Start
-\item Terminal
-\item Baseline
-\item Temperature
-\item Sea Level
-\item Adaptation
-\item Extremes
-\item Dynamics
-\item Structural Parameters
-\item Damage Functions TFP
-\item Damage Functions Labour
-\item Damage Functions Capital
-\item Data
+\item Content: describes the various sheets and their specific usage.
+\item Start: defines the economic structure at the beginning of the simulation.
+\item Terminal: defines the economic structure at the end of the simulation.
+\item Baseline: scenario without climate change
+\item Temperature: scenario there only the increase in temperature is considered
+\item Sea Level: scenario there the increase in temperature and sea level is considered 
+\item Adaptation: scenario there the increase in temperature and sea level is considered, but also counteracting adaptation measures.
+\item Extremes: in addition to Adaptation also the occurrence of weather extremes is considered.
+\item Dynamics: definition of initial sectoral growth rates and other parameters defining the dynamic behaviour of the model.
+\item Structural Parameters: defines values of structural parameters mainly elasticities.
+\item Damage Functions TFP: define coefficients regarding damages to total factor productivity for different sectors and regions.
+\item Damage Functions Labour: define coefficients regarding damages to labour productivity for different sectors and regions.
+\item Damage Functions Capital: define coefficients regarding damages to total capital stock for different sectors and regions.
+\item Data: sheet containing optional data to use for calibration.
 
 
 \end{itemize}
@@ -45,7 +45,7 @@ Furthermore, the number of regions is specified. In the case of 3 regions, we co
  
 \subsection{Data}
 
-Within this sheet we merge and link all data sources used for calibration. Data for different years is used. For instance, Supply-Use-Tables (SUT) refer the year 2016 while the Statistical Year Book 2018 refers to data end of 2017.
+Within this sheet we merge and link all data sources used for calibration. Data for different years is used. For instance, Supply-Use-Tables (SUT) refer to the year 2016 while the Statistical Year Book 2018 refers to data end of 2017.
 That covers among other things 
 \begin{itemize}
 	\item Sectoral Gross Value Added Shares
@@ -59,17 +59,13 @@ That covers among other things
 At the beginning we need to define initial values for economic variables, this includes, e.g. initial gross value added, initial price level, initial population, and initial employment level at the national level. Furthermore, at the sectoral and regional level gross value added shares, sectoral employment shares and labour cost shares.
 
 \subsection{Terminal}
- Within this sheet we define the terminal values for the baseline scenario. Just adjust the red numbers to specify the target values.
+Within this sheet we define the terminal values for the baseline scenario. Just adjust the red numbers to specify the target values.
  
- \subsection{Baseline} 
- In the standard version of the model we need to define how exogenous variables evolve over time. In the baseline, only population $\eta^{Pop}_{t}$ until 2100 starting from 2016 (84 periods) changes.
- 
- 
- The evolution of the population is given by the projection of the GSO. The GSO published four different projections with different fertility rates of the Vietnamese population. We use the medium  variant population projection. The population is expected to grow from roughly 95 million people in  2016 to 108 million people by 2050. After 2050 the population stays constant.
- %total factor productivity $\eta_{A,k,r,t}$, labour productivity $\eta^{A^N}_{k,r,t}$, climate variables $\{\eta^{T}_{r,t},\, \eta^{PREC}_{r,t},\, \eta^{WS}_{r,t},\, \eta^{CYC}_{r,t},\, \eta^{DRO}_{r,t},\, \eta^{SL}_{t}\}$, population $\eta^{Pop}_{t}$, price level $\eta^{P}_{t}$, taxes  $\eta^{\tau^{K,N}}_{k,r,t},\, \eta^{\tau^{K,N}}_{t},\, \eta^{\tau^{C}}_{t}$, the government deficit $\eta^{BG}_{t}$, adaptation measures $\eta^{G^{A}}_{k,r,t}$ and the trade balance $\eta^{NX}_{t}$ evolve over time. 
+\subsection{Baseline} 
+In the standard version of the model we need to define how exogenous variables evolve over time. In the baseline, only population $\eta^{Pop}_{t}$ until 2100 starting from 2016 (84 periods) changes.
 
- 
- %\textcolor{red}{für was stehen die restlichen Abkürzungen? PoP population T temperature SL sea level GA governemnt expenditure adaptation measures siehe auch Model Description list of symbols}
+The evolution of the population is given by the projection of the GSO. The GSO published four different projections with different fertility rates of the Vietnamese population. We use the medium  variant population projection. The population is expected to grow from roughly 95 million people in  2016 to 108 million people by 2050. After 2050 the population stays constant.
+
 \subsection{Temperature}
 In this sheet the evolution for climate variables for the temperature scenario are defined. Hence, besides population also temperature in the regions change.
  
@@ -86,19 +82,17 @@ In this sheet cyclones and droughts are additionally specified by a variable, i.
     
 \subsection{Dynamics}
 Values for structural parameters which influence the dynamics of the model are defined in the sheet Dynamics.
-  %\textcolor{red}{Z.11/18: muss das Initial nicht weg? Nein! Es sind die Veränderugsraten der ersten Periode der Simulation-}
  
- \subsection{Structural Parameters}
+\subsection{Structural Parameters}
 For each sector-region combination we define values for structural parameters mainly elasticities for labour and capital, adaptation cost effectiveness and taxes on capital and labor.
  
- \subsection{Damage Functions for TFP, Labour and Capital}
- 
- Furthermore, we define the coefficients for the sectoral and regional damage functions to total factor productivity, labour productivity and capital stock for all sector-region combinations.
+\subsection{Damage Functions for TFP, Labour and Capital}
+Furthermore, we define the coefficients for the sectoral and regional damage functions to total factor productivity, labour productivity and capital stock for all sector-region combinations.
 
 \newpage
 \section{Interpreting the MS Excel Results and Scenario Interface}
 
-Regardless the number of sectors and number of regions, each Excel file contains the following sheets that will be explained in the following sections.
+Regardless of the number of sectors and number of regions, each Excel file contains the following sheets that will be explained in the following sections.
 \begin{itemize}\setlength{\itemsep}{0pt}
 	
 	\item Plot: shows the simulation path for an optional variable
@@ -114,14 +108,4 @@ Regardless the number of sectors and number of regions, each Excel file contains
 	\item Extremes
 
 \end{itemize}
-%\textcolor{red}{ggf. Untersection, je nachdem was wir hier noch schreiben soll, sonst direkt die Beschreibung hinter die Items}
-
-%\textcolor{red}{noch eine Seite wo die Definitionen der Parameter names/kürzel stehen}
-%\subsection{Plot}
-%\subsection{Comparison}
-%\subsection{Baseline}
-%\subsection{Temperature}
-%\subsection{Sea Level}
-%\subsection{Adaptation}
-%\subsection{Extremes}
 \end{document}

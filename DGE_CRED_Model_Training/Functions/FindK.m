@@ -49,6 +49,9 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
                 strys.(['K_' ssec '_' sreg]) = sqrt(real(x(icovec)).^2) * strys.(['Y_' ssec '_' sreg]);
             end
         end
+        if strpar.phiG_p > 0
+            strys.G = x(end) * strys.Y;
+        end
     else
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);
@@ -57,8 +60,12 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
                 icovec = icoreg + (icosec-1)*strpar.inbregions_p;
                 strys.(['K_' ssec '_' sreg]) = sqrt(real(x(icovec)).^2);
             end
-        end        
+        end
+        if strpar.phiG_p > 0
+            strys.G = x(end);
+        end
     end    
+    strys.KG = strys.G / strpar.deltaKG_p;
     %% calculate sectoral and regional production factors and output
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
@@ -68,7 +75,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
             strys.(['tauN_' ssec '_' sreg]) = strpar.(['tauN_' ssec '_' sreg '_p']) + strexo.(['exo_tauN_' ssec '_' sreg]);
             rhotemp = ((strpar.(['etaNK_' ssec '_' sreg '_p'])-1)/strpar.(['etaNK_' ssec '_' sreg '_p']));
             strys.(['lambK_' ssec '_' sreg]) = 0;
-            strys.(['A_' ssec '_' sreg]) = strpar.(['A_' ssec '_' sreg '_p']) * exp(strexo.(['exo_' ssec '_' sreg]));
+            strys.(['A_' ssec '_' sreg]) = strys.KG^strpar.phiG_p * strpar.(['A_' ssec '_' sreg '_p']) * exp(strexo.(['exo_' ssec '_' sreg]));
             strys.(['gA_' ssec '_' sreg]) = 1;
             strys.(['A_K_' ssec '_' sreg]) = strpar.(['A_K_' ssec '_' sreg '_p']) * exp(strexo.(['exo_K_' ssec '_' sreg]));
             strys.(['A_N_' ssec '_' sreg]) = strpar.(['A_N_' ssec '_' sreg '_p']) * exp(strexo.(['exo_N_' ssec '_' sreg]));
@@ -105,7 +112,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
             if strpar.lCalibration_p == 2
                 strys.(['A_' ssec '_' sreg]) = (rkgross / (strpar.(['alphaK_' ssec '_' sreg '_p'])^(1/ strpar.(['etaNK_' ssec '_' sreg '_p'])) * ...
                                                           (strys.(['A_K_' ssec '_' sreg]) * (1 - strys.(['D_' ssec '_' sreg])))^rhotemp * (strys.(['K_' ssec '_' sreg])/strys.(['Y_' ssec '_' sreg]))^(-1/strpar.(['etaNK_' ssec '_' sreg '_p']))))^(1/rhotemp);
-                strexo.(['exo_' ssec '_' sreg]) = log(strys.(['A_' ssec '_' sreg]) / strpar.(['A_' ssec '_' sreg '_p']));
+                strexo.(['exo_' ssec '_' sreg]) = log(strys.(['A_' ssec '_' sreg]) / (strys.KG^strpar.phiG_p * strpar.(['A_' ssec '_' sreg '_p'])));
                 temp1 = (strys.(['K_' ssec '_' sreg]) * rkgross^strpar.(['etaNK_' ssec '_' sreg '_p']) / (strpar.(['alphaK_' ssec '_' sreg '_p']) * strys.(['A_K_' ssec '_' sreg])^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1) * (strys.(['A_' ssec '_' sreg]) * (1 - strys.(['D_' ssec '_' sreg])))^(strpar.(['etaNK_' ssec '_' sreg '_p']))))^rhotemp;
                 temp2 = strpar.(['alphaK_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * strys.(['A_K_' ssec '_' sreg])^rhotemp * strys.(['K_' ssec '_' sreg])^rhotemp;
                 temp = ((temp1 - temp2) / (strpar.(['alphaN_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * (strys.PoP .* strys.(['N_' ssec '_' sreg]))^rhotemp))^(1/rhotemp);
@@ -197,9 +204,14 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     strys.lambrf = 1;
 
     strys.C = (strys.Y - strys.NX - strys.I - strys.wagetax  - strys.capitaltax + strys.rf * strys.BG) / (1 + strpar.tauC_p);
-    strys.G = (strys.wagetax + strys.capitaltax + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost;
+    if strpar.phiG_p > 0
+        fval_vec = nan(strpar.inbsectors_p*strpar.inbregions_p+1,1);        
+        fval_vec(end) = 1 - strys.G / ((strys.wagetax + strys.capitaltax + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost);
+    else
+        strys.G = (strys.wagetax + strys.capitaltax + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost;
+    end
     %% evaluate resiudals of HH FOC w.r.t. labour in each region and sector
-    fval_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         for icoreg = 1:strpar.inbregions_p

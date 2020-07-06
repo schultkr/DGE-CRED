@@ -95,7 +95,6 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             temp = (strpar.(['alphaK_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * (strys.(['A_K_' ssec '_' sreg]) * strys.(['K_' ssec '_' sreg]))^(rhotemp) + strpar.(['alphaN_' ssec '_' sreg '_p'])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) * (strys.PoP * strys.(['A_N_' ssec '_' sreg]) * (1 - strys.(['D_N_' ssec '_' sreg])) * strys.(['N_' ssec '_' sreg]))^(rhotemp))^(1/rhotemp);
             strys.(['A_' ssec '_' sreg]) = strys.(['Y_' ssec '_' sreg]) / ((1 - strys.(['D_' ssec '_' sreg])) * temp);
             strys.(['gA_' ssec '_' sreg]) = 1;
-            strpar.(['A_' ssec '_' sreg '_p']) = strys.(['A_' ssec '_' sreg]) ./ exp(strexo.(['exo_' ssec '_' sreg]));
             strpar.(['A_N_' ssec '_' sreg '_p']) = strys.(['A_N_' ssec '_' sreg]) ./ exp(strexo.(['exo_N_' ssec '_' sreg]));
             strys.(['I_' ssec '_' sreg]) = (strpar.delta_p + strys.(['D_K_' ssec '_' sreg])) * strys.(['K_' ssec '_' sreg]);
         end
@@ -194,11 +193,13 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
 
     strys.C = (strys.Y - strys.NX - strys.I - strys.wagetax  - strys.capitaltax + strys.rf * strys.BG) / (1 + strpar.tauC_p);
     strys.G = (strys.wagetax + strys.capitaltax + strpar.tauC_p * strys.C) - strys.rf * strys.BG - strys.adaptationcost;
+    strys.KG = strys.G / strpar.deltaKG_p;
     %% compute labour disutlity parameters
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         for icoreg = 1:strpar.inbregions_p
             sreg = num2str(icoreg);
+            strpar.(['A_' ssec '_' sreg '_p']) = strys.(['A_' ssec '_' sreg]) ./ (strys.KG^strpar.phiG_p * exp(strexo.(['exo_' ssec '_' sreg])));
             strys.(['omegaI_' ssec '_' sreg]) = strys.(['P_' ssec '_' sreg]);
             strys.(['kappaI_' ssec '_' sreg]) = 0;%strys.(['P_' ssec '_' sreg]);
             strys.(['kappaIprime_' ssec '_' sreg]) = 0;%strys.(['P_' ssec '_' sreg]);
