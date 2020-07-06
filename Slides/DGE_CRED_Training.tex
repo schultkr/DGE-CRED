@@ -354,7 +354,7 @@
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Limitations of the Modeling Approach}
 		\begin{itemize}
 			\item Demand for computational power increases tremendously with the number of regions and sectors 
-			\item The number factors is smaller compared to I-O models and static CGE models
+			\item The number of factors is smaller compared to I-O models and static CGE models
 			\item Deviations from perfect foresight setup is not straightforward
 			\item Specifying a functional relationship between climate and sectoral productivity restricts the functional form considered
 		\end{itemize}
@@ -567,7 +567,7 @@
 	 	\underset{\left\{ c_t, \thinspace k_{t+1}\right\} _{t=1}^{\infty}}{\max} = \sum_{t=1}^{\infty} \beta^{\thinspace t-1} \thinspace \frac{c_t^{1-\sigma}}{1-\sigma}\\
 	 	\text{s.t.} \quad c_t + k_{t+1} = A_t \thinspace k_t^{\alpha} + (1-\delta) \thinspace k_t
 	 	\end{gather*}
-	 	\item It follows from the first order condition of the above problem with respect to consumption that the Lagrange multiplier is defined as  $$\lambda_t=\beta^{\thinspace t-1}\thinspace\sigma_t^{-\sigma},$$ representing the marginal utility of consumption
+	 	\item It follows from the first order condition of the above problem with respect to consumption that the Lagrange multiplier is defined as  $$\lambda_t=\beta^{\thinspace t-1}\thinspace c_t^{-\sigma},$$ representing the marginal utility of consumption
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>
@@ -579,7 +579,7 @@
 		c_t^{-\sigma} = \beta \thinspace c_{t+1}^{-\sigma} (\alpha \thinspace A_{t+1} \thinspace k_{t+1}^{\alpha -1} + 1 - \delta)\\[5pt]
 		c_t + k_{t+1} = A_t \thinspace k_t^\alpha + (1-\delta) \thinspace k_t
 		\end{gather*}
-		\item By the definition $c_t=c_{t+1}=\bar{c}$ and $k_t=k_{t+1}=\bar{k}$ has to hold in the \newline steady state
+		\item By the definition $c_t=c_{t+1}=\bar{c}$, $k_t=k_{t+1}=\bar{k}$ and $A_t=A_{t+1}=\bar{A}$ has to hold in the steady state
 		\item Therefore, the first order conditions in the steady state case become:
 		\begin{gather*}
 		\bar{c}^{-\sigma} = \beta \thinspace \bar{c}^{-\sigma} (\alpha \thinspace \bar{A} \thinspace \bar{k}^{\alpha -1} + 1 - \delta)\\[5pt]
@@ -605,7 +605,7 @@
 \end{frame}
 \subsubsection{Model File}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Model File}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Model File (1)}
 	\begin{itemize}
 		\item A model file or mod-file (filename.mod) contains commands and blocks 
 		\begin{itemize}
@@ -627,6 +627,20 @@
 		\end{itemize} 
 	\end{itemize}
 \end{frame}
+\subsubsection{Model File}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Model File (2)}
+	\begin{itemize}
+		\item To set up a model in Dynare the following componets are needed:
+		\begin{itemize}
+			\item \texttt{var}: Used to declare the \textit{endogenous} variables
+			\item \texttt{varexo}: Used to declare the \textit{endogenous} variables
+			\item \texttt{parameters}: Used to declare the parameters
+			\item \texttt{model} block: The model equations must be provided in this block
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
 
 \subsubsection{Variables and Parameters}
 \begin{frame}<presentation>[fragile]
@@ -675,16 +689,23 @@
 				\item Minimize interface with Matlab or Octave functions
 				\item Example: Do not use correctly-spelled greek letters like \texttt{beta}, instead \linebreak e.g. \texttt{betta}
 			\end{itemize}
-		\item Note that by convention in Dynare, the time indice of a variable refers to the period when its value is determined. The typical example is for capital stock:
-			\begin{itemize}
-				\item Since the capital stock entering the production function in the current period is determined in the previous period, the capital stock becomes \texttt{k(-1)}, and the law of motion of capital must be written as: \texttt{k = i + (1-delta)*k(-1)} 
-				\item This convention can be modified using the \texttt{predetermined\_variables} setting
-			\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Variables and Parameters (4)}
+	\begin{itemize}
+		\item In Dynare a leading/lagging variable is denoted by adding (+1)/(-1) after the variable
+		\item Note that by convention in Dynare, the time indice of a variable refers to the period when its value is determined. In the context of the neoclassical growth model:
+		\begin{itemize}
+			\item \texttt{c} refers to $c_t$, \texttt{c(+1)} to $c_{t+1}$ and \texttt{c(-1)} to $c_{t-1}$
+			\item Since the capital stock entering the production function in the current period is determined in the previous period, the capital stock $k_t$ becomes \texttt{k(-1)}, and the law of motion of capital must be written as: \texttt{k = i + (1-delta)*k(-1)} 
+			\item This convention can be modified using the \texttt{predetermined\_variables} setting
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 \subsubsection{The \texttt{model} block}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{model} block}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{model} block (1)}
 	\begin{itemize}
 		\item A model is declared inside a \texttt{model} block 
 		\item In general, there must be as many equations as there are endogenous variables in the model 
@@ -694,6 +715,27 @@
 		   c + k = A*k(-1)^alpha_p + (1-delta_p)*k(-1);
 		   c^(-gamma_p) = beta_p*c(+1)^(-gamma_p)
 		           *(alpha_p*A(+1)*k^(alpha_p-1) + 1 - delta_p);
+		   end;
+		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{model} block (2)}
+	\begin{itemize}
+		\item Inside the \texttt{model} block, \textit{model-local variables} can be used
+		\begin{itemize}
+			\item Simple way to share a common expression between several equations
+			\item Syntax: \texttt{\# name\_of\_the\_model\_local\_variable = expression}
+			\item Scope of this variable is restricted to the model block			 
+		\end{itemize}
+		\item Therefore, the Neoclassical growth model can also be expressed as:
+		\begin{verbatim}
+		   model;
+		   # lambda1 = c^(-sigma_p)
+		   # lambda2 = beta_p * c(+1)^(-sigma_p)
+		   c + k = A*k(-1)^alpha_p + (1-delta_p)*k(-1);
+		   lambda1 = lambda2 * (alpha_p*A(+1)*k^(alpha_p-1) 
+		            + 1 - delta_p);
 		   end;
 		\end{verbatim}
 	\end{itemize}
@@ -779,6 +821,18 @@
 \end{frame}
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Steady State: Approach 3 (2)}
+	\begin{itemize}
+		\item Before typing the command \texttt{steady}, the steady state values of the exogenous variables have to be assigned in an \texttt{initval} block
+		\begin{verbatim}
+		   initval;
+		   A = 1;
+		   end;		
+		   steady;
+		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Steady State: Approach 3 (3)}
 	\begin{itemize}
 		\item Advantage: 
 		\begin{itemize}
@@ -899,8 +953,8 @@
 	\begin{itemize}
 		\item In order to perform the deterministic simulation, one has to specify:
 		\begin{itemize}
-			\item The constraints of the stacked system $y_0$, $y_{T+1}$ and $u_1, \ldots , u_T$
-			\item Provide an initial guess $y_1, \ldots , y_T$ for the Newton algorithm 
+			\item The \textit{constraints} of the stacked system $y_0$, $y_{T+1}$ and $u_1, \ldots , u_T$
+			\item Provide an \textit{initial guess} $y_1, \ldots , y_T$ for the Newton algorithm 
 		\end{itemize} 
 		\item The path for the endogenous and exogenous variables are stored in two MATLAB/Octave matrices:
 		\begin{itemize}
@@ -956,7 +1010,7 @@
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (4)}
 	\begin{itemize}
-		\item Example: The economy starts from the initial steady state, where $A_0=1$. In the terminal steady state, the total factory productivity is 10\% higher.
+		\item Example: The economy starts from the initial steady state, where $A_0=1$. In the terminal steady state, the total factory productivity is 10\% $(A_{T+1}=1.1)$ higher.
 		\begin{verbatim}
 		   initval;
 		   A = 1;
@@ -972,6 +1026,16 @@
 \end{frame}
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (5)}
+		\begin{itemize}
+			\item In order to run the deterministic simulation for $T=100$ periods, enter:
+			\begin{verbatim}
+			   perfect_foresight_setup(periods=100);
+			   perfect_foresight_solver;
+			\end{verbatim}
+		\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Transition from an Initial to a Terminal Steady State (6)}
 	\begin{itemize}
 		\item The following trajectories are obtained:
 		\begin{figure}
@@ -1012,17 +1076,6 @@
 \end{frame}
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (3)}
-	\begin{itemize}
-		\item In order to run the deterministic simulation for $T=100$ periods, enter:
-		\begin{verbatim}
-		perfect_foresight_setup(periods=100);
-		perfect_foresight_solver;
-		\end{verbatim}
-	\end{itemize}
-\end{frame}
-\begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{initval} Block (4)}
-	\framesubtitle{The \texttt{initval} Block (4)}
 	\begin{itemize}
 		\item The following trajectories are obtained:
 		\begin{figure}
@@ -1092,10 +1145,10 @@
 \begin{frame}<presentation>[fragile]
 	\frametitle{{\thesection.\thesubsection.\thesubsubsection} The \texttt{histval} Block (1)}
 	\begin{itemize}
+		\item The \texttt{histval} block assigns the initial condition, while the \texttt{initval} block provides the terminal condition and inital guess for the perfect foresight solver
 		\item The usage of the \texttt{histval} block is particularly interesting, if there are variables with more than one lead or lag 
 		\item In a deterministic simulation the \texttt{histval} block must be combined with an \texttt{initval} block 
 		\item A \texttt{histval} and \texttt{endval} block cannot be combined
-		\item The \texttt{histval} block assigns the initial condition, while the \texttt{initval} block provides the terminal condition and inital guess for the perfect foresight solver
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
@@ -1119,7 +1172,8 @@
 \end{frame}
 \subsubsection{Shocks on Exogenous Variables}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables (1)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Introduction (1)}
 	\begin{itemize}
 		\item For deterministic simulations, the \texttt{shocks} block specifies temporary changes in the value of exogenous variables 
 		\item For permanent shocks, use an \texttt{endval} block
@@ -1135,7 +1189,8 @@
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables (2)}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Introduction (2)}
 	\begin{itemize}
 		\item The \texttt{shock} block has the following structure:
 			\begin{verbatim}
@@ -1145,7 +1200,70 @@
 			   values ... ;
 			   end;
 			\end{verbatim}
-		\item Examples using the \texttt{shock} block will be examined at the end of this section
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Example No. 1 (1)}
+	\begin{itemize}
+		\item Scenario: The economy starts from the steady state. There is an unexpected temporary positive productivity shock at the beginning of period 1: $A_1 = 1.1$.
+		\begin{verbatim}
+		   initval;
+		   A = 1;
+		   end;
+		   steady;
+		
+		   shocks;
+		   var A;
+		   periods 1;
+		   values 1.1;
+		   end;
+		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Example No. 1 (2)}
+	\begin{itemize}
+		\item The following trajectories are obtained:
+		\begin{figure}
+			\centering
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex2consumption}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex2capital}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex2TFP}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Example No. 2 (1)}
+	\begin{itemize}
+		\item Scenario: The economy starts from the steady state. There is a sequence of shocks to $A_t$: 10\% in period 5 and an 5\% during the 4 following periods.
+		\begin{verbatim}
+		   initval;
+		   A = 1;
+		   end;
+		   steady;
+		
+		   shocks;
+		   var A;
+		   periods 5, 6:9;
+		   values 1.1, 1.05;
+		   end;
+		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Shocks on Exogenous Variables}
+	\framesubtitle{Example No. 2 (2)}
+	\begin{itemize}
+		\item The following trajectories are obtained:
+		\begin{figure}
+			\centering
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex3consumption}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex3capital}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex3TFP}}
+		\end{figure}
 	\end{itemize}
 \end{frame}
 \subsection{Remarks and Examples}
@@ -1155,7 +1273,7 @@
 	\begin{itemize}
 		\item Because of the various functions of the \texttt{initval}, \texttt{endval} and \texttt{histval} blocks, it is strongly recommended to check the constructed \texttt{oo\_.endo\_simul} and \texttt{oo\_.exo\_simul} variables after running \texttt{perfect\_foresight\_setup} and before running \texttt{perfect\_foresight\_solver} 
 		\item \texttt{simul(periods = T}) executes both,  \texttt{perfect\_foresight\_setup} and \linebreak \texttt{perfect\_foresight\_solver} at the same time and can also be used
-		\item The following slides cover some examples based on the neoclassical growth model 
+		\item The following slides cover two examples based on the neoclassical growth model 
 		\begin{itemize}
 			\item It is recommendable to take a look at the file \textit{Introduction\_Dynare.mod} while proceeding with these examples
 		\end{itemize}
@@ -1163,74 +1281,87 @@
 \end{frame}
 \subsubsection{Examples}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 1}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 1 (1)}
 	\begin{itemize}
-		\item Scenario 1: Return to equilibrium starting from $k_0=0.5\bar{k}$.
-			\begin{verbatim}
-			   ...
-			   steady;
-			   
-			   ik = varlist_indices('k',M_.endo_names);
-			   kstar = oo_.steady_state(ik);
-			   
-			   histval;
-			   k(0) = kstar/2;
-			   end;
-			   ...
-			\end{verbatim}
-	\end{itemize}
-\end{frame}
-\begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 2}
-	\begin{itemize}
-		\item Scenario 2: The economy starts from the steady state. There is an unexpected positive productivity shock at the beginning of period 1: $A_1 = 1.1$.
+		\item Scenario: Return to equilibrium starting from $k_0=0.5\bar{k}$ and $c_0=0.5\bar{c}$.
 		\begin{verbatim}
-		   ...
+		   initval;
+		   A = 1;
+		   end;
 		   steady;
 		
-		   shocks;
-		   var A;
-		   periods 1;
-		   values 1.1;
-		   end;
-		   ...
+		   ik = varlist_indices('k',M_.endo_names);
+		   ic = varlist_indices('c',M_.endo_names);
+		   kstar = oo_.steady_state(ik);
+		   cstar = oo_.steady_state(ic);
 		\end{verbatim}
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 3}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 1 (2)}
 	\begin{itemize}
-		\item Scenario 3: The economy starts from the steady state. There is a sequence of shocks to $A_t$: 10\% in period 5 and an additional 5\% during the 4 following periods.
+		\item ... continued:
 		\begin{verbatim}
-	  	...
-		   steady;
-		
-		   shocks;
-		   var A;
-		   periods 5, 6:9;
-		   values 1.1, 1.05;
+		   histval;
+		   A(0) = 1;
+		   k(0) = kstar/2;
+		   c(0) = cstar/2;
 		   end;
-		   ...
 		\end{verbatim}
 	\end{itemize}
 \end{frame}
 \begin{frame}<presentation>[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 4}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 1 (3)}
 	\begin{itemize}
-		\item Scenario 4: The economy starts from the initial steady state. In period 6, TFP increases by 10\% permanently. 
-			\begin{itemize}
-				\item Same \texttt{initval} and \texttt{endval} blocks as in Scenario 4.
-				\item A shock block is used to maintain TFP at its initial level during periods 1-5.
-			\end{itemize}
+		\item The following trajectories are obtained:
+		\begin{figure}
+			\centering
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex1consumption}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex1capital}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex1TFP}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 2 (1)}
+	\begin{itemize}
+		\item Scenario: The economy starts from the initial steady state. In period 6, TFP increases by 10\% permanently. 
 		\begin{verbatim}
-		   ...
+		   initval;
+		   A = 1;
+		   end; 
+		   steady;
+		
+		   endval;
+		   A = 1.1;
+		   end;
+		   steady;
+		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 2 (2)}
+	\begin{itemize}
+		\item A shock block is used to maintain TFP at its initial level during periods 1-5.
+		\begin{verbatim}
 		   shocks;
 		   var A;
 		   periods 1:5;
 		   values 1;
 		   end;
-		   ...
 		\end{verbatim}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Example No. 2 (3)}
+	\begin{itemize}
+		\item The following trajectories are obtained:
+		\begin{figure}
+			\centering
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex4consumption}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex4capital}}\qquad
+			\subfigure{\includegraphics[width=3.5cm]{pictures/examples/ex4TFP}}
+		\end{figure}
 	\end{itemize}
 \end{frame}
 

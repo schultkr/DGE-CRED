@@ -1,7 +1,8 @@
-// Introduction to Dynare
+// Title: Introduction to Dynare
 
-// This mod-file is designed as supplementary material for part 1 of the slides
-// "Dynamic General Equilibrium Model for Climate Resilient Economic Development".
+// Content: This mod-file is designed as supplementary material for the part 
+// "Introduction to Dynare" of the slides "Dynamic General Equilibrium Model 
+// for Climate Resilient Economic Development".
 
 // Parts of the code can be activated (deactivated) by removing (inserting) 
 // the commands: (i) % (ii) // (iii) /* ... */
@@ -10,29 +11,27 @@
 
 % -------------------------------------------------------------------------
 
-// Basic Settings:
+// Section: Implementing a Model in Dynare
 
-// Declare variables and parameters:
+// Part: Variables and Parameters
 
     var c k;
     varexo A;
     parameters alpha_p beta_p sigma_p delta_p;
-
-// Assign the parameter values:
 
     alpha_p = 0.5;
     beta_p = 0.95;
     sigma_p = 0.5;
     delta_p = 0.02;
 
-// Declare the model inside the model block:
+// Part: The model block
 
     model;
     c + k = A*k(-1)^alpha_p + (1-delta_p)*k(-1);
     c^(-sigma_p) = beta_p*c(+1)^(-sigma_p)*(alpha_p*A(+1)*k^(alpha_p-1) + 1 - delta_p);
     end;
 
-// Alternatively, use model-local variables:
+// Alternatively, model block with model-local variables:
 /*
     model;
     # lambda1 = c^(-sigma_p);
@@ -44,31 +43,16 @@
 
 % -------------------------------------------------------------------------
 
-// This section examines the most relevant application in the DGE-CRED
-// framework: "Transition from an initial to a different terminal Steady State".
+// Section: Steady State in Dynare 
 
-// The steady state file "Introduction_Dynare_steadystate.m" is used for the
-// computation of the initial and terminal steady state. Make sure that this
-// file is ON your MATLAB path.
+// Note: Deactivated the last section of this code if only the steady state 
+// should be computed.
 
+// Approach 1: Initial guess for Steady State
 
-    initval;
-    A = 1;
-    end; 
-    steady;
-
-    endval;
-    A = 1.1;
-    end;
-    steady;
-
-
-% -------------------------------------------------------------------------
-
-// This section examines the three approaches to determine the steady 
-// state in Dynare.
-
-// Approach 1: initial guess for steady state
+// Note: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
+// is NOT on your MATLAB path. Otherwise it will be used for the steady state
+// computation.
 /*
     initval;
     c = 2;
@@ -77,11 +61,12 @@
     end;
     steady;
 */
-// Note: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
-// is NOT on your MATLAB path. Otherwise it will be used for the steady state
-// computation.
 
 // Approach 2: Steady State Model Block
+
+// Again: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
+// is NOT on your MATLAB path. Otherwise it will be used for the steady state
+// computation.
 /*
     initval;
     A = 1;
@@ -93,30 +78,40 @@
     end;
     steady;
 */
-// Again: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
-// is NOT on your MATLAB path. Otherwise it will be used for the steady state
-// computation.
 
 // Approach 3: Use steady state file "Introduction_Dynare_steadystate.m"
+
+// This time: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
+// is ON your MATLAB path.
 /*
     initval;
     A = 1;
     end;
     steady;
 */
-// This time: Make sure that the steady state file "Introduction_Dynare_steadystate.m"
-// is ON your MATLAB path.
 
 % -------------------------------------------------------------------------
 
-// The purpose of the following three example is solely to illustated the usage 
-// of the initval block. They do not necessarily adress meaningful questions.
+// Section: Perfect Foresight Setup in Dynare
 
-// Make sure that the steady state file "Introduction_Dynare_steadystate.m"
-// is NOT on your MATLAB path. Otherwise it will be used for the steady state
-// computation.
+// The steady state file "Introduction_Dynare_steadystate.m" is used for 
+// the computation of the steady state. Make sure that this file is ON your 
+// MATLAB path.
 
-// Only an initval block: Initial and terminal condition are the same.
+// Part: Transition from an Initial to a Terminal Steady State
+/*
+    initval;
+    A = 1;
+    end; 
+    steady;
+
+    endval;
+    A = 1.1;
+    end;
+    steady;
+*/
+
+// Part: The initval block
 /*
     initval;
     c = 4;
@@ -125,23 +120,7 @@
     end;
 */
 
-// Initval and enval block: Different initial and terminal conditions.
-/*
-    endval;
-    c = 4;
-    k = 20;
-    A = 1;
-    end;
-
-    endval;
-    c = 6;
-    k = 30;
-    A = 1;
-    end;
-*/
-
-// Initval and histval block: Different initial and terminal conditions. In 
-// this case this is the same as having an initval and endval block.
+// Part: The endval block
 /*
     initval;
     c = 4;
@@ -156,14 +135,58 @@
     end;
 */
 
+// Part: The histval block
+/*
+    histval;
+    c(0) = 4;
+    k(0) = 20;
+    A(0) = 1;
+    end;
+
+    initval;
+    c = 6;
+    k = 30;
+    A = 1;
+    end;
+*/
+
+// Part: Shocks on Exogenous Variables - Example No. 1
+/*
+    initval;
+    A = 1;
+    end;
+    steady;
+
+    shocks;
+    var A;
+    periods 1;
+    values 1.1;
+    end;
+*/
+
+// Part: Shocks on Exogenous Variables - Example No. 2
+/*
+    initval;
+    A = 1;
+    end;
+    steady;
+
+    shocks;
+    var A;
+    periods 5, 6:9;
+    values 1.1, 1.05;
+    end;
+*/
+
 % -------------------------------------------------------------------------
 
-// More examples (same as on the slides):
+// Section: Remarks and Examples
 
-// Make sure that the steady state file "Introduction_Dynare_steadystate.m"
-// is ON your MATLAB path before running the examples.
+// The steady state file "Introduction_Dynare_steadystate.m" is used for 
+// the computation of the steady state. Make sure that this file is ON your 
+// MATLAB path.
 
-// Scenario 1: transition to steady state
+// Part: Example No. 1
 /*
     initval;
     A = 1;
@@ -181,36 +204,7 @@
     c(0) = cstar/2;
     end;
 */
-
-// Scenario 2: temporary shock in period 1
-/*
-    initval;
-    A = 1;
-    end;
-    steady;
-
-    shocks;
-    var A;
-    periods 1;
-    values 1.1;
-    end;
-*/
-
-// Scenario 3: sequence of shocks
-/*
-    initval;
-    A = 1;
-    end;
-    steady;
-
-    shocks;
-    var A;
-    periods 5, 6:9;
-    values 1.1, 1.05;
-    end;
-*/
-
-// Scenario 4: permanent shock in period 6
+// Part: Example No. 2
 /*
     initval;
     A = 1;
@@ -231,6 +225,8 @@
 
 % -------------------------------------------------------------------------
 
+// Note: Deactivate this section if only the steady state should be computed.
+
 // Conduct deterministic simulation using perfect foresight:
 
     perfect_foresight_setup(periods=100);
@@ -238,9 +234,7 @@
 
 // Alternatively use "simul":
 
-    % simul(periods=1000);
-
-% -------------------------------------------------------------------------
+    % simul(periods=100);
 
 // Optional: plot graphs
 
