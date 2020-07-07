@@ -283,11 +283,13 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {52}{52}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{53}{Variables and Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{3}{53}{Model File}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {3}{2}{6}{53/53}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {53}{53}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{4}{54}{Variables and Parameters}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {3}{2}{7}{54/54}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
@@ -297,799 +299,839 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {55}{55}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{2}{4}{56}{The \texttt {model} block}}
-\defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {3}{2}{9}{56/56}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {56}{56}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {48}{56}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{3}{57}{Steady State in Dynare}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{1}{57/57}{Steady State in Dynare}{0}}
+\headcommand {\slideentry {3}{2}{10}{57/57}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {57}{57}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{2}{58/58}{Steady State in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{5}{58}{The \texttt {model} block}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{2}{11}{58/58}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {58}{58}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{3}{59/59}{Steady State in Dynare}{0}}
+\headcommand {\slideentry {3}{2}{12}{59/59}{Implementing a Model in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {59}{59}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{60}{Approach 1}}
+\headcommand {\beamer@subsectionpages {48}{59}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{4}{60/60}{Steady State in Dynare}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{60}{Steady State in Dynare}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{3}{1}{60/60}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {60}{60}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{61}{Approach 2}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{5}{61/61}{Steady State in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{2}{61/61}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {61}{61}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{6}{62/62}{Steady State in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{3}{62/62}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {62}{62}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{3}{63}{Approach 3}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{63}{Approach 1}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{7}{63/63}{Steady State in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{4}{63/63}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {63}{63}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{3}{8}{64/64}{Steady State in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{64}{Approach 2}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{3}{5}{64/64}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {64}{64}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {57}{64}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{4}{65}{Deterministic Simulations in Dynare}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{1}{65/65}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{6}{65/65}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {65}{65}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{4}{1}{66}{Deterministic Simulation}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{3}{66}{Approach 3}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{2}{66/66}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{7}{66/66}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {66}{66}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{3}{67/67}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{8}{67/67}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {67}{67}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{4}{68/68}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{3}{9}{68/68}{Steady State in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {68}{68}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{5}{69/69}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\beamer@subsectionpages {60}{68}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{4}{69}{Deterministic Simulations in Dynare}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{4}{1}{69/69}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {69}{69}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{6}{70/70}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{4}{1}{70}{Deterministic Simulation}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{4}{2}{70/70}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {70}{70}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{4}{2}{71}{Newton Method}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{7}{71/71}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{3}{71/71}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {71}{71}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{8}{72/72}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{4}{72/72}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {72}{72}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{4}{9}{73/73}{Deterministic Simulations in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{5}{73/73}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {73}{73}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {65}{73}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{5}{74}{Perfect Foresight Setup in Dynare}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{1}{74/74}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{6}{74/74}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {74}{74}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{1}{75}{Introduction}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{4}{2}{75}{Newton Method}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{2}{75/75}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{7}{75/75}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {75}{75}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{2}{76}{Transition from an Initial to a Terminal Steady State}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{3}{76/76}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{8}{76/76}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {76}{76}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{4}{77/77}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{4}{9}{77/77}{Deterministic Simulations in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {77}{77}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{5}{78/78}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\beamer@subsectionpages {69}{77}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{5}{78}{Perfect Foresight Setup in Dynare}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{1}{78/78}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {78}{78}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{6}{79/79}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{1}{79}{Introduction}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{2}{79/79}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {79}{79}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{7}{80/80}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{2}{80}{Transition from an Initial to a Terminal Steady State}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{3}{80/80}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {80}{80}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{3}{81}{The \texttt {initval} Block}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{8}{81/81}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{4}{81/81}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {81}{81}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{9}{82/82}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{5}{82/82}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {82}{82}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{10}{83/83}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{6}{83/83}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {83}{83}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{11}{84/84}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{7}{84/84}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {84}{84}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{4}{85}{The \texttt {endval} Block}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{12}{85/85}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{8}{85/85}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {85}{85}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{13}{86/86}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{3}{86}{The \texttt {initval} Block}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{9}{86/86}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {86}{86}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{14}{87/87}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{10}{87/87}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {87}{87}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{5}{88}{The \texttt {histval} Block}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{15}{88/88}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{11}{88/88}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {88}{88}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{16}{89/89}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{4}{89}{The \texttt {endval} Block}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{5}{12}{89/89}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {89}{89}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{5}{6}{90}{Shocks on Exogenous Variables}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{17}{90/90}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{13}{90/90}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {90}{90}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{5}{18}{91/91}{Perfect Foresight Setup in Dynare}{0}}
+\headcommand {\slideentry {3}{5}{14}{91/91}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {91}{91}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {74}{91}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{5}{92}{The \texttt {histval} Block}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{6}{92}{Remarks and Examples}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{1}{92/92}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{15}{92/92}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {92}{92}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{6}{1}{93}{Remarks}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{2}{93/93}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{16}{93/93}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {93}{93}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{6}{2}{94}{Examples}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{5}{6}{94}{Shocks on Exogenous Variables}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{3}{94/94}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{17}{94/94}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {94}{94}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{4}{95/95}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{18}{95/95}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {95}{95}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{5}{96/96}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{19}{96/96}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {96}{96}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{6}{6}{97/97}{Remarks and Examples}{0}}
+\headcommand {\slideentry {3}{5}{20}{97/97}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {97}{97}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {92}{97}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{3}{7}{98}{Macro Processor}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{1}{98/98}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{5}{21}{98/98}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {98}{98}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{7}{1}{99}{Macro Language}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{2}{99/99}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{5}{22}{99/99}{Perfect Foresight Setup in Dynare}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {99}{99}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{3}{100/100}{Macro Processor}{0}}
+\headcommand {\beamer@subsectionpages {78}{99}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{6}{100}{Remarks and Examples}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{1}{100/100}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {100}{100}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{4}{101/101}{Macro Processor}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{6}{1}{101}{Remarks}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{6}{2}{101/101}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {101}{101}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{3}{7}{2}{102}{Introduction to the Syntax}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{6}{2}{102}{Examples}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{5}{102/102}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{3}{102/102}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {102}{102}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{6}{103/103}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{4}{103/103}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {103}{103}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{7}{104/104}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{5}{104/104}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {104}{104}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{8}{105/105}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{6}{105/105}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {105}{105}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{9}{106/106}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{7}{106/106}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {106}{106}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{10}{107/107}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{6}{8}{107/107}{Remarks and Examples}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {107}{107}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{11}{108/108}{Macro Processor}{0}}
+\headcommand {\beamer@subsectionpages {100}{107}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{3}{7}{108}{Macro Processor}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{1}{108/108}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {108}{108}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{12}{109/109}{Macro Processor}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{7}{1}{109}{Macro Language}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{2}{109/109}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {109}{109}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {3}{7}{13}{110/110}{Macro Processor}{0}}
+\headcommand {\slideentry {3}{7}{3}{110/110}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {110}{110}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {46}{110}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {98}{110}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {4}{DGE--CRED Model}{111}{DGE--CRED Model}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {111}{110}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{1}{111}{Introduction}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{1}{111/111}{Introduction}{0}}
+\headcommand {\slideentry {3}{7}{4}{111/111}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {111}{111}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{2}{112/112}{Introduction}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{7}{2}{112}{Introduction to the Syntax}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {3}{7}{5}{112/112}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {112}{112}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{1}{3}{113/113}{Introduction}{0}}
+\headcommand {\slideentry {3}{7}{6}{113/113}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {113}{113}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {111}{113}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{2}{114}{Folder Structure}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{1}{114/114}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{7}{114/114}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {114}{114}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{1}{115}{Main Folder Structure}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{2}{115/115}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{8}{115/115}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {115}{115}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{2}{116}{Mod Files}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{3}{116/116}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{9}{116/116}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {116}{116}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{3}{117}{Functions}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{4}{117/117}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{10}{117/117}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {117}{117}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{4}{118}{Excel Files}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{5}{118/118}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{11}{118/118}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {118}{118}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{2}{5}{119}{Mod Files}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{2}{6}{119/119}{Folder Structure}{0}}
+\headcommand {\slideentry {3}{7}{12}{119/119}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {119}{119}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {114}{119}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{3}{120}{Demand}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{1}{120/120}{Demand}{0}}
+\headcommand {\slideentry {3}{7}{13}{120/120}{Macro Processor}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {120}{120}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{1}{121}{Households}}
+\headcommand {\beamer@sectionpages {46}{120}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{2}{121/121}{Demand}{0}}
+\headcommand {\beamer@subsectionpages {108}{120}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {4}{DGE--CRED Model}{121}{DGE--CRED Model}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {121}{120}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{4}{1}{121}{Introduction}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{1}{1}{121/121}{Introduction}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {121}{121}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{2}{122}{Households Lagrangian}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{3}{122/122}{Demand}{0}}
+\headcommand {\slideentry {4}{1}{2}{122/122}{Introduction}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {122}{122}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{3}{123}{Households First Order Conditions -- Intratemporal}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{4}{123/123}{Demand}{0}}
+\headcommand {\slideentry {4}{1}{3}{123/123}{Introduction}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {123}{123}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{4}{124}{Implementation of Households First Order Conditions -- Intratemporal}}
+\headcommand {\beamer@subsectionpages {121}{123}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{5}{124/124}{Demand}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{124}{Folder Structure}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{2}{1}{124/124}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {124}{124}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{5}{125}{Households First Order Conditions -- Intertemporal}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{1}{125}{Main Folder Structure}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{6}{125/125}{Demand}{0}}
+\headcommand {\slideentry {4}{2}{2}{125/125}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {125}{125}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{6}{126}{Implementation of Households First Order Conditions -- Intertemporal}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{2}{126}{Mod Files}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{7}{126/126}{Demand}{0}}
+\headcommand {\slideentry {4}{2}{3}{126/126}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {126}{126}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{8}{127/127}{Demand}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{3}{127}{Functions}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{2}{4}{127/127}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {127}{127}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{7}{128}{Rest of the world}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{4}{128}{Excel Files}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{9}{128/128}{Demand}{0}}
+\headcommand {\slideentry {4}{2}{5}{128/128}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {128}{128}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{8}{129}{Implementation Rest of the World}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{2}{5}{129}{Mod Files}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{10}{129/129}{Demand}{0}}
+\headcommand {\slideentry {4}{2}{6}{129/129}{Folder Structure}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {129}{129}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{9}{130}{Government Budget Constraint}}
+\headcommand {\beamer@subsectionpages {124}{129}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{11}{130/130}{Demand}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{3}{130}{Demand}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{3}{1}{130/130}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {130}{130}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{10}{131}{Implementation of Government Budget Constraint}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{1}{131}{Households}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{12}{131/131}{Demand}{0}}
+\headcommand {\slideentry {4}{3}{2}{131/131}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {131}{131}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{11}{132}{Government Policy Instruments}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{2}{132}{Households Lagrangian}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{13}{132/132}{Demand}{0}}
+\headcommand {\slideentry {4}{3}{3}{132/132}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {132}{132}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{12}{133}{Implementation of Government Policy Instruments}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{3}{133}{Households First Order Conditions -- Intratemporal}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{14}{133/133}{Demand}{0}}
+\headcommand {\slideentry {4}{3}{4}{133/133}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {133}{133}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{13}{134}{Resource constraint}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{4}{134}{Implementation of Households First Order Conditions -- Intratemporal}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{15}{134/134}{Demand}{0}}
+\headcommand {\slideentry {4}{3}{5}{134/134}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {134}{134}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{3}{14}{135}{Implementation of Resource Constraint}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{5}{135}{Households First Order Conditions -- Intertemporal}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{3}{16}{135/135}{Demand}{0}}
+\headcommand {\slideentry {4}{3}{6}{135/135}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {135}{135}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {120}{135}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{6}{136}{Implementation of Households First Order Conditions -- Intertemporal}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{4}{136}{Production}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{1}{136/136}{Production}{0}}
+\headcommand {\slideentry {4}{3}{7}{136/136}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {136}{136}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{1}{137}{Sectoral Decomposition}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{2}{137/137}{Production}{0}}
+\headcommand {\slideentry {4}{3}{8}{137/137}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {137}{137}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{2}{138}{Implementation of Sectoral Decomposition}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{7}{138}{Rest of the world}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{3}{138/138}{Production}{0}}
+\headcommand {\slideentry {4}{3}{9}{138/138}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {138}{138}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{3}{139}{Regional Decomposition}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{8}{139}{Implementation Rest of the World}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{4}{139/139}{Production}{0}}
+\headcommand {\slideentry {4}{3}{10}{139/139}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {139}{139}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{4}{140}{Implementation of Regional Decomposition}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{9}{140}{Government Budget Constraint}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{5}{140/140}{Production}{0}}
+\headcommand {\slideentry {4}{3}{11}{140/140}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {140}{140}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{5}{141}{Regional Production}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{10}{141}{Implementation of Government Budget Constraint}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{6}{141/141}{Production}{0}}
+\headcommand {\slideentry {4}{3}{12}{141/141}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {141}{141}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{6}{142}{Damages on TFP}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{11}{142}{Government Policy Instruments}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{7}{142/142}{Production}{0}}
+\headcommand {\slideentry {4}{3}{13}{142/142}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {142}{142}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{7}{143}{Implementation of Damages on TFP}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{12}{143}{Implementation of Government Policy Instruments}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{8}{143/143}{Production}{0}}
+\headcommand {\slideentry {4}{3}{14}{143/143}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {143}{143}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{8}{144}{Damages on Labour Productivity}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{13}{144}{Resource constraint}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{9}{144/144}{Production}{0}}
+\headcommand {\slideentry {4}{3}{15}{144/144}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {144}{144}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{9}{145}{Implementation of Damages on Labour Productivity}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{3}{14}{145}{Implementation of Resource Constraint}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{10}{145/145}{Production}{0}}
+\headcommand {\slideentry {4}{3}{16}{145/145}{Demand}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {145}{145}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{10}{146}{Damages on Capital}}
+\headcommand {\beamer@subsectionpages {130}{145}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{11}{146/146}{Production}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{4}{146}{Production}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{4}{1}{146/146}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {146}{146}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{11}{147}{Implementation of Damages on Capital}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{1}{147}{Sectoral Decomposition}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{12}{147/147}{Production}{0}}
+\headcommand {\slideentry {4}{4}{2}{147/147}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {147}{147}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{12}{148}{Profit Maximization}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{2}{148}{Implementation of Sectoral Decomposition}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{13}{148/148}{Production}{0}}
+\headcommand {\slideentry {4}{4}{3}{148/148}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {148}{148}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{13}{149}{Factor Demand}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{3}{149}{Regional Decomposition}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{14}{149/149}{Production}{0}}
+\headcommand {\slideentry {4}{4}{4}{149/149}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {149}{149}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{14}{150}{Implementation of Factor Demand}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{4}{150}{Implementation of Regional Decomposition}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{15}{150/150}{Production}{0}}
+\headcommand {\slideentry {4}{4}{5}{150/150}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {150}{150}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{15}{151}{Trade with the Rest of the World}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{5}{151}{Regional Production}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{16}{151/151}{Production}{0}}
+\headcommand {\slideentry {4}{4}{6}{151/151}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {151}{151}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{16}{152}{Implementation of Trade with Rest of the World}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{6}{152}{Profit Maximization}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{4}{17}{152/152}{Production}{0}}
+\headcommand {\slideentry {4}{4}{7}{152/152}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {152}{152}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {136}{152}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{7}{153}{Factor Demand}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{5}{153}{Climate Variables}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{5}{1}{153/153}{Climate Variables}{0}}
+\headcommand {\slideentry {4}{4}{8}{153/153}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {153}{153}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{1}{154}{Climate Variables}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{8}{154}{Implementation of Factor Demand}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{5}{2}{154/154}{Climate Variables}{0}}
+\headcommand {\slideentry {4}{4}{9}{154/154}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {154}{154}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{2}{155}{Implementation of Climate Variables}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{9}{155}{Damages on TFP}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{5}{3}{155/155}{Climate Variables}{0}}
+\headcommand {\slideentry {4}{4}{10}{155/155}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {155}{155}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{3}{156}{Weather Extremes}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{10}{156}{Implementation of Damages on TFP}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{5}{4}{156/156}{Climate Variables}{0}}
+\headcommand {\slideentry {4}{4}{11}{156/156}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {156}{156}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{5}{4}{157}{Implementation of Weather Extremes}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{11}{157}{Damages on Labour Productivity}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{5}{5}{157/157}{Climate Variables}{0}}
+\headcommand {\slideentry {4}{4}{12}{157/157}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {157}{157}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {153}{157}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{12}{158}{Implementation of Damages on Labour Productivity}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{4}{6}{158}{Aggregation and Identities}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{1}{158/158}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{4}{13}{158/158}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {158}{158}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{1}{159}{National Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{13}{159}{Damages on Capital}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{2}{159/159}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{4}{14}{159/159}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {159}{159}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{2}{160}{Implementation of National Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{14}{160}{Implementation of Damages on Capital}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{3}{160/160}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{4}{15}{160/160}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {160}{160}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{3}{161}{Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{15}{161}{Trade with the Rest of the World}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{4}{161/161}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{4}{16}{161/161}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {161}{161}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{4}{162}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{16}{162}{Implementation of Trade with Rest of the World}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{5}{162/162}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{4}{17}{162/162}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {162}{162}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{5}{163}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsectionpages {146}{162}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{6}{163/163}{Aggregation and Identities}{0}}
+\headcommand {\beamer@subsectionentry {0}{4}{5}{163}{Climate Variables}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{5}{1}{163/163}{Climate Variables}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {163}{163}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{6}{164}{National Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{1}{164}{Climate Variables}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{7}{164/164}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{5}{2}{164/164}{Climate Variables}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {164}{164}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{7}{165}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{2}{165}{Implementation of Climate Variables}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{8}{165/165}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{5}{3}{165/165}{Climate Variables}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {165}{165}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{8}{166}{Population and Price Level}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{3}{166}{Weather Extremes}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{9}{166/166}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{5}{4}{166/166}{Climate Variables}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {166}{166}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{9}{167}{Implementation of Population and Prices}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{5}{4}{167}{Implementation of Weather Extremes}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{10}{167/167}{Aggregation and Identities}{0}}
+\headcommand {\slideentry {4}{5}{5}{167/167}{Climate Variables}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {167}{167}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {111}{167}}
+\headcommand {\beamer@subsectionpages {163}{167}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {158}{167}}
+\headcommand {\beamer@subsectionentry {0}{4}{6}{168}{Aggregation and Identities}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {5}{Model Simulation and Calibration}{168}{Model Simulation and Calibration}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {168}{167}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{1}{168}{Definitions}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{168/168}{Definitions}{0}}
+\headcommand {\slideentry {4}{6}{1}{168/168}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {168}{168}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{2}{169/169}{Definitions}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{1}{169}{National Aggregates}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{6}{2}{169/169}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {169}{169}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{3}{170/170}{Definitions}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{2}{170}{Implementation of National Aggregates}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{6}{3}{170/170}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {170}{170}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {168}{170}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{3}{171}{Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{2}{171}{Calibration}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{1}{171/171}{Calibration}{0}}
+\headcommand {\slideentry {4}{6}{4}{171/171}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {171}{171}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{1}{172}{Calibration of Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{4}{172}{Implementation of Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{2}{172/172}{Calibration}{0}}
+\headcommand {\slideentry {4}{6}{5}{172/172}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {172}{172}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{2}{173}{Calibration of Damage Function Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{5}{173}{Implementation of Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{3}{173/173}{Calibration}{0}}
+\headcommand {\slideentry {4}{6}{6}{173/173}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {173}{173}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{3}{174}{Notation of Damage Function Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{6}{174}{National Aggregates}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{4}{174/174}{Calibration}{0}}
+\headcommand {\slideentry {4}{6}{7}{174/174}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {174}{174}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {171}{174}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{7}{175}{Implementation of Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{3}{175}{Scenario Analyses}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{1}{175/175}{Scenario Analyses}{0}}
+\headcommand {\slideentry {4}{6}{8}{175/175}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {175}{175}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{1}{176}{Temperature}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{8}{176}{Population and Price Level}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{2}{176/176}{Scenario Analyses}{0}}
+\headcommand {\slideentry {4}{6}{9}{176/176}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {176}{176}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{3}{177/177}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{9}{177}{Implementation of Population and Prices}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {4}{6}{10}{177/177}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {177}{177}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{4}{178/178}{Scenario Analyses}{0}}
+\headcommand {\beamer@sectionpages {121}{177}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {168}{177}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {5}{Model Simulation and Calibration}{178}{Model Simulation and Calibration}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {178}{177}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{1}{178}{Definitions}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{1}{1}{178/178}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {178}{178}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{2}{179}{Sea Level}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{5}{179/179}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{1}{2}{179/179}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {179}{179}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{6}{180/180}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{1}{3}{180/180}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {180}{180}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{3}{181}{Adaption}}
+\headcommand {\beamer@subsectionpages {178}{180}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{7}{181/181}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{181}{Calibration}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{1}{181/181}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {181}{181}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{8}{182/182}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{1}{182}{Calibration of Parameters}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{2}{182/182}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {182}{182}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{4}{183}{Extremes}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{2}{183}{Calibration of Damage Function Parameters}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{9}{183/183}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{2}{3}{183/183}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {183}{183}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{5}{184}{Simulation Results}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{3}{184}{Notation of Damage Function Parameters}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{10}{184/184}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{2}{4}{184/184}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {184}{184}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{11}{185/185}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsectionpages {181}{184}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{3}{185}{Scenario Analyses}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{1}{185/185}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {185}{185}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {168}{185}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{1}{186}{Temperature}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {175}{185}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {6}{References}{186}{References}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/186}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{2}{186/186}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {186}{186}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/187}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{3}{187/187}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{187}}
+\headcommand {\beamer@framepages {187}{187}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/188}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{4}{188/188}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{188}}
+\headcommand {\beamer@framepages {188}{188}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/189}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{2}{189}{Sea Level}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{189}}
+\headcommand {\slideentry {5}{3}{5}{189/189}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/190}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {189}{189}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{190}}
+\headcommand {\slideentry {5}{3}{6}{190/190}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/191}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {190}{190}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{191}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{3}{191}{Adaption}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/192}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{7}{191/191}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{192}}
+\headcommand {\beamer@framepages {191}{191}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/193}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{8}{192/192}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{193}}
+\headcommand {\beamer@framepages {192}{192}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/194}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{4}{193}{Extremes}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{194}}
+\headcommand {\slideentry {5}{3}{9}{193/193}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{186/195}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {193}{193}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {186}{195}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{5}{194}{Simulation Results}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {168}{195}}
+\headcommand {\slideentry {5}{3}{10}{194/194}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {175}{195}}
+\headcommand {\beamer@framepages {194}{194}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {7}{Appendix}{196}{Appendix}{0}}
+\headcommand {\slideentry {5}{3}{11}{195/195}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{1}{196/196}{}{0}}
+\headcommand {\beamer@framepages {195}{195}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {178}{195}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {185}{195}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{References}{196}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/196}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {196}{196}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{2}{197/214}{}{0}}
+\headcommand {\slideentry {6}{0}{0}{196/197}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{214}}
-\headcommand {\beamer@partpages {1}{214}}
-\headcommand {\beamer@subsectionpages {196}{214}}
-\headcommand {\beamer@sectionpages {196}{214}}
-\headcommand {\beamer@documentpages {214}}
-\headcommand {\gdef \inserttotalframenumber {169}}
+\headcommand {\beamer@framepages {196}{197}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/198}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{198}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/199}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{199}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/200}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{200}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/201}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{201}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/202}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{202}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/203}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{203}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/204}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{204}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/205}{Scenario Analyses}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {196}{205}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@sectionpages {178}{205}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {185}{205}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {7}{Appendix}{206}{Appendix}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {7}{0}{1}{206/206}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {206}{206}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {7}{0}{2}{207/224}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {207}{224}}
+\headcommand {\beamer@partpages {1}{224}}
+\headcommand {\beamer@subsectionpages {206}{224}}
+\headcommand {\beamer@sectionpages {206}{224}}
+\headcommand {\beamer@documentpages {224}}
+\headcommand {\gdef \inserttotalframenumber {179}}

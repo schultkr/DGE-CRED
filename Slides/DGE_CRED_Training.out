@@ -11,21 +11,21 @@
 \BOOKMARK [2][]{Outline0.3}{Introduction to Dynare}{}% 11
 \BOOKMARK [3][]{Outline0.3.1.46}{What is Dynare?}{Outline0.3}% 12
 \BOOKMARK [3][]{Outline0.3.2.48}{Implementing a Model in Dynare}{Outline0.3}% 13
-\BOOKMARK [3][]{Outline0.3.3.57}{Steady State in Dynare}{Outline0.3}% 14
-\BOOKMARK [3][]{Outline0.3.4.65}{Deterministic Simulations in Dynare}{Outline0.3}% 15
-\BOOKMARK [3][]{Outline0.3.5.74}{Perfect Foresight Setup in Dynare}{Outline0.3}% 16
-\BOOKMARK [3][]{Outline0.3.6.92}{Remarks and Examples}{Outline0.3}% 17
-\BOOKMARK [3][]{Outline0.3.7.98}{Macro Processor}{Outline0.3}% 18
+\BOOKMARK [3][]{Outline0.3.3.60}{Steady State in Dynare}{Outline0.3}% 14
+\BOOKMARK [3][]{Outline0.3.4.69}{Deterministic Simulations in Dynare}{Outline0.3}% 15
+\BOOKMARK [3][]{Outline0.3.5.78}{Perfect Foresight Setup in Dynare}{Outline0.3}% 16
+\BOOKMARK [3][]{Outline0.3.6.100}{Remarks and Examples}{Outline0.3}% 17
+\BOOKMARK [3][]{Outline0.3.7.108}{Macro Processor}{Outline0.3}% 18
 \BOOKMARK [2][]{Outline0.4}{DGE\205CRED Model}{}% 19
-\BOOKMARK [3][]{Outline0.4.1.111}{Introduction}{Outline0.4}% 20
-\BOOKMARK [3][]{Outline0.4.2.114}{Folder Structure}{Outline0.4}% 21
-\BOOKMARK [3][]{Outline0.4.3.120}{Demand}{Outline0.4}% 22
-\BOOKMARK [3][]{Outline0.4.4.136}{Production}{Outline0.4}% 23
-\BOOKMARK [3][]{Outline0.4.5.153}{Climate Variables}{Outline0.4}% 24
-\BOOKMARK [3][]{Outline0.4.6.158}{Aggregation and Identities}{Outline0.4}% 25
+\BOOKMARK [3][]{Outline0.4.1.121}{Introduction}{Outline0.4}% 20
+\BOOKMARK [3][]{Outline0.4.2.124}{Folder Structure}{Outline0.4}% 21
+\BOOKMARK [3][]{Outline0.4.3.130}{Demand}{Outline0.4}% 22
+\BOOKMARK [3][]{Outline0.4.4.146}{Production}{Outline0.4}% 23
+\BOOKMARK [3][]{Outline0.4.5.163}{Climate Variables}{Outline0.4}% 24
+\BOOKMARK [3][]{Outline0.4.6.168}{Aggregation and Identities}{Outline0.4}% 25
 \BOOKMARK [2][]{Outline0.5}{Model Simulation and Calibration}{}% 26
-\BOOKMARK [3][]{Outline0.5.1.168}{Definitions}{Outline0.5}% 27
-\BOOKMARK [3][]{Outline0.5.2.171}{Calibration}{Outline0.5}% 28
-\BOOKMARK [3][]{Outline0.5.3.175}{Scenario Analyses}{Outline0.5}% 29
+\BOOKMARK [3][]{Outline0.5.1.178}{Definitions}{Outline0.5}% 27
+\BOOKMARK [3][]{Outline0.5.2.181}{Calibration}{Outline0.5}% 28
+\BOOKMARK [3][]{Outline0.5.3.185}{Scenario Analyses}{Outline0.5}% 29
 \BOOKMARK [2][]{Outline0.6}{References}{}% 30
 \BOOKMARK [2][]{Outline0.7}{Appendix}{}% 31

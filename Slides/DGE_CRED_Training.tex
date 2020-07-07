@@ -1655,9 +1655,9 @@
 \item Optimization problem of the representative household is
 \begin{align*}
  & \underset{C_t(h), \, K_{k,r,t+1}(h), \, I_{k,r,t}(h), , \, N_{k,r,t}(h), \, B_{t+1}}{\mbox{max}} \sum_{t=0}^{\infty} \beta^{t} \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} A^{N}_{k,r,t} \, \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) \\
-\mbox{s.t.} & P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) = \\
- & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h)+S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h)
- %K_{k,r,t+1} = (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right).
+\mbox{s.t.} \quad & P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) = \\
+ & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h)+S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h) \\
+ \mbox{and} \quad & K_{k,r,t+1} = (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right).
 \end{align*}
 \end{itemize}
 \end{frame}
@@ -2023,10 +2023,58 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \item They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.
 \item Representative firms have access to a regional and sector specific constant elasticity of substitution production function.
 \item The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function affecting total factor productivity $A_{k,r,t}$ by $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, WS_{r,t}, \, SL_{r,t}, \, CYC_{r,t}, \, DRO_{r,t}, \, G^{A}_{r,k,t} \right)$.
-\item Further, we explicitly differentiate between climate induced damages affecting labour productivity $D_{N,k,r,t}$ and capital depreciation $D_{K,k,r,t}$. 
+\item Further, we explicitly differentiate between climate induced damages affecting labour productivity $D_{k,r,t}^N$ and capital depreciation $D_{k,r,t}^K$. 
 \item As in \cite{nordhaus1993optimal}, we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors.
 \end{itemize}
 \end{frame}
+
+\subsubsection{Profit Maximization}
+\begin{frame}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Profit Maximization}
+	\scriptsize
+	\begin{itemize}
+		\item Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital.	
+		\begin{align*}
+		\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \, (1 + \tau^{N}_{k,r,t}) - r_{k,r,t} \, P_{k,r,t} \, K_{k,r,t} \, (1 + \tau^{K}_{k,r,t})\nonumber \\ 
+		\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t}) \, Pop_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
+		\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
+		\end{align*}
+	\end{itemize}
+\end{frame}
+
+\subsubsection{Factor Demand}
+\begin{frame}
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Factor Demand}
+	\scriptsize
+	\begin{itemize}
+		\item Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
+		\begin{align*}
+		\frac{W_{k,r,t}}{P_{k,r,t}}  \, (1 + \tau^{N}_{k,r,t}) = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^N_{k,r,t} \, (1 - D^N_{k,r,t})\right)^{\rho_{k,r}} \left(\frac{Pop_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
+		r_{k,r,t} \, (1 + \tau^{K}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
+		\end{align*}
+		\item We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. 
+		\item The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. 
+		\item Temporary productivity shocks are in our set-up also weather extremes. 
+	\end{itemize}
+\end{frame}
+
+\subsubsection{Implementation of Factor Demand}
+\begin{frame}[fragile]
+	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Factor Demand}	
+	\begin{lstlisting}[frame = single]
+	...
+	[name='sector specific output']
+	
+	
+	[name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
+	
+	
+	[name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
+	
+	...
+	\end{lstlisting}
+\end{frame}
+
 
 \subsubsection{Damages on TFP}
 \begin{frame}
@@ -2047,7 +2095,6 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \subsubsection{Implementation of Damages on TFP}
 \begin{frame}[fragile]
 \frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Damages on TFP}
-
 \begin{lstlisting}[frame = single]
 ...
 [name = 'sector specific damage function']
@@ -2057,6 +2104,14 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 
 ...
 \end{lstlisting}
+\scriptsize
+\begin{itemize}
+	\item Note: As $D_{k,r,t} \in [0,1]$, an upper bound has to be included in the code
+	\begin{itemize}
+		\scriptsize
+		\item Due to computational constraints, the upper bound is set to 0.7 for $D_{k,r,t}$
+	\end{itemize}
+\end{itemize}
 \end{frame}
 
 \subsubsection{Damages on Labour Productivity}
@@ -2078,7 +2133,6 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \subsubsection{Implementation of Damages on Labour Productivity}
 \begin{frame}[fragile]
 \frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Damages on Labour Productivity}
-
 \begin{lstlisting}[frame = single]
 ...
 [name = 'sector specific damage function on labour productivity']
@@ -2091,6 +2145,10 @@ aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_
 );
 ...
 \end{lstlisting}
+\begin{itemize}
+	\scriptsize
+	\item Note: As $D_{k,r,t}^N \in [0,1]$, an upper bound has to be included in the code
+\end{itemize}
 \end{frame}
 
 
@@ -2125,57 +2183,13 @@ aK_CY_1_@{sec}_@{reg}_p*CYC_@{reg}+aK_CY_2_@{sec}_@{reg}_p*CYC_@{reg}^(aK_CY_3_@
 );
 ...
 \end{lstlisting}
-\end{frame}
-
-
-\subsubsection{Profit Maximization}
-\begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Profit Maximization}
-\scriptsize
 \begin{itemize}
-\item Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital.
-
-\begin{align*}
-\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \, (1 + \tau^{N}_{k,r,t}) - r_{k,r,t} \, P_{k,r,t} \, K_{k,r,t} \, (1 + \tau^{K}_{k,r,t})\nonumber \\ 
-\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t}) \, Pop_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
-\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
-\end{align*}
+	\scriptsize
+	\item Note: As $D_{k,r,t}^K \in [0,1]$, an upper bound has to be included in the code
 \end{itemize}
 \end{frame}
 
-\subsubsection{Factor Demand}
-\begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Factor Demand}
-\scriptsize
-\begin{itemize}
-\item Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
-\begin{align*}
-\frac{W_{k,r,t}}{P_{k,r,t}}  \, (1 + \tau^{N}_{k,r,t}) = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^N_{k,r,t} \, (1 - D^N_{k,r,t})\right)^{\rho_{k,r}} \left(\frac{Pop_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
-r_{k,r,t} \, (1 + \tau^{K}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
-\end{align*}
-\item We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. 
-\item The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. 
-\item Temporary productivity shocks are in our set-up also weather extremes. 
-\end{itemize}
-\end{frame}
 
-\subsubsection{Implementation of Factor Demand}
-\begin{frame}[fragile]
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Factor Demand}
-
-\begin{lstlisting}[frame = single]
-...
-[name='sector specific output']
-
-
-[name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
-
-
-[name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
-
-...
-\end{lstlisting}
-\end{frame}
 
 
 \subsubsection{Trade with the Rest of the World}
@@ -2300,7 +2314,7 @@ P_{t} \, I_{t} = \sum_{k}^{K} P_{k,t} \, I_{k,t}
 \end{align*}
 \item National aggregate capital stock is given by:
 \begin{align*}
-P_{t} \, K_{t} = \sum_{k}^{K} P_{k,t} \, K_{k,t-1}
+P_{t} \, K_{t} = \sum_{k}^{K} P_{k,t} \, K_{k,t}
 \end{align*}
 \item National aggregate labour input:
 \begin{align*}
@@ -2351,7 +2365,7 @@ P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
 \end{align*}
 \item Sector aggregate capital stock is given by:
 \begin{align*}
-P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t-1}
+P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t}
 \end{align*}
 \item Sector aggregate wage bill:
 \begin{align*}
@@ -2421,7 +2435,7 @@ P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
 \end{align*}
 \item Sector aggregate capital stock is given by:
 \begin{align*}
-P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t-1}
+P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t}
 \end{align*}
 \item Sector aggregate wage bill:
 \begin{align*}
