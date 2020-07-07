@@ -2356,7 +2356,7 @@ N =
 
 \subsubsection{Sectoral Aggregates}
 \begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates (1)}
+\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates}
 \scriptsize
 \begin{itemize}
 \item Sector aggregate investment is given by:
@@ -2367,16 +2367,9 @@ P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
 \begin{align*}
 P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t}
 \end{align*}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates (2)}
-\scriptsize
-\begin{itemize}
 \item Sector aggregate wage bill:
 \begin{align*}
-W_{k,t} \, N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
+W_{k,t} N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
 \end{align*}
 \item Sector aggregate labour input:
 \begin{align*}
@@ -2384,9 +2377,6 @@ N_{k,t} = \sum_{r}^{R} N_{k,r,t}
 \end{align*}
 \end{itemize}
 \end{frame}
-
-
-
 
 \subsubsection{Implementation of Sectoral Aggregates}
 \begin{frame}[fragile]

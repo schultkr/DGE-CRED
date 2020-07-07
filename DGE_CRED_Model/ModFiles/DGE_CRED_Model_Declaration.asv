@@ -137,13 +137,10 @@ parameters
             a_@{z}_2_@{sec}_@{reg}_p ${a_{2,k,n}}$ (long_name = 'slope of TFP damage function @{z}')
             a_@{z}_3_@{sec}_@{reg}_p ${a_{3,k,n}}$ (long_name = 'exponent of TFP damage function @{z}')
             // Capital
-            aK_@{z}_1_@{sec}_@{reg}_p ${a_{1,k,n}}$ (long_name = 'intercept of damage function @{z}')
-            aK_@{z}_2_@{sec}_@{reg}_p ${a_{2,k,n}}$ (long_name = 'slope of damage function @{z}')
-            aK_@{z}_3_@{sec}_@{reg}_p ${a_{3,k,n}}$ (long_name = 'exponent of damage function @{z}')
-            // Labour
-            aN_@{z}_1_@{sec}_@{reg}_p ${a_{1,k,n}}$ (long_name = 'intercept of damage function @{z}')
-            aN_@{z}_2_@{sec}_@{reg}_p ${a_{2,k,n}}$ (long_name = 'slope of damage function @{z}')
-            aN_@{z}_3_@{sec}_@{reg}_p ${a_{3,k,n}}$ (long_name = 'exponent of damage function @{z}')
+            a_@{z}_1_@{sec}_@{reg}_p ${a_{1,k,n}}$ (long_name = 'intercept of damage function @{z}')
+            a_@{z}_2_@{sec}_@{reg}_p ${a_{2,k,n}}$ (long_name = 'slope of damage function @{z}')
+            a_@{z}_3_@{sec}_@{reg}_p ${a_{3,k,n}}$ (long_name = 'exponent of damage function @{z}')
+
         @# endfor
     @# endfor
 @# endfor

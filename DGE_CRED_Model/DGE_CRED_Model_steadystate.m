@@ -14,6 +14,7 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
     check = 0;
     % read out parameters to access them with their name
     NumberOfParameters = M_.param_nbr;
+    strpar.casClimatevars = strsplit(strrep(strrep(M_.ClimateVars,'[','' ), ']', ''), ', ');
     strpar.Init = nan;
     for ii = 1:NumberOfParameters
       paramname = char(M_.param_names(ii,:));
@@ -117,8 +118,8 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
                 ssec = num2str(icosec);
                 for icoreg = 1:strpar.inbregions_p
                     sreg = num2str(icoreg);
-                    wtemp = strys.(['W_' ssec '_' sreg]) * (1 + strys.(['tauN_' ssec '_' sreg])) / strys.(['P_' ssec '_' sreg]);
-                    rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauK_' ssec '_' sreg]));
+                    wtemp = strys.(['W_' ssec '_' sreg]) * (1 + strys.(['tauNF_' ssec '_' sreg])) / strys.(['P_' ssec '_' sreg]);
+                    rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauKF_' ssec '_' sreg]));
                     errortemp = max(abs(strys.(['Y_' ssec '_' sreg]) - (wtemp * strys.PoP * strys.(['N_' ssec '_' sreg]) + rkgross * strys.(['K_' ssec '_' sreg]))), errortemp);
                 end
             end
@@ -145,7 +146,7 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
             for icoreg = 1:strpar.inbregions_p
                 sreg = num2str(icoreg);
                 errorvatemp = max(abs(strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg]) / (strys.Y * strys.P) - strpar.(['phiY_' ssec '_' sreg '_p'])), errorvatemp);
-                errorwagetemp = max(abs(strys.(['W_' ssec '_' sreg]) * strys.(['N_' ssec '_' sreg]) * strys.PoP * (1 + strys.(['tauN_' ssec '_' sreg])) / (strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg])) - strpar.(['phiW_' ssec '_' sreg '_p'])), errorwagetemp);
+                errorwagetemp = max(abs(strys.(['W_' ssec '_' sreg]) * strys.(['N_' ssec '_' sreg]) * strys.PoP * (1 + strys.(['tauNF_' ssec '_' sreg])) / (strys.(['Y_' ssec '_' sreg]) * strys.(['P_' ssec '_' sreg])) - strpar.(['phiW_' ssec '_' sreg '_p'])), errorwagetemp);
             end
         end
         disp(['Maximum value added share error ' num2str(max(abs(errorvatemp)))])
