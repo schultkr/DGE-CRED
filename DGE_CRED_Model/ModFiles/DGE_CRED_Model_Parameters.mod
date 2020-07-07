@@ -5,8 +5,8 @@ inbsectors_p = @{Sectors};
 inbregions_p = @{Regions};
 etaQ_p = 9;
 tauC_p = 0.19;
-tauN_p = 0.2;
-tauK_p = 0.3;
+tauNH_p = 0.2;
+tauKH_p = 0.3;
 beta_p = 0.95;
 delta_p = 0.05;
 deltaKG_p = 0.10;
@@ -46,20 +46,12 @@ SLT_p = 0;
     CYC0_@{reg}_p = 0;
 @# endfor
 
-aT_1_mat = [0.0, 0.0; 0.0 0.0];
-aT_2_mat = [0.01,0.005;  0.00236, 0.00236];
-aT_3_mat = [2, 2; 2 2];
-
-aSL_1_mat = [7 0; 0 0];
-aSL_2_mat = [0 0; 0 0];
-aSL_3_mat = [2, 2; 2 2];
-
 @# for sec in 1:Sectors
     omegaQ_@{sec}_p = 1/inbsectors_p;
     etaQ_@{sec}_p = 2;
     @# for reg in 1:Regions
-        tauK_@{sec}_@{reg}_p = 0.2;
-        tauN_@{sec}_@{reg}_p = 0;
+        tauKF_@{sec}_@{reg}_p = 0.2;
+        tauNF_@{sec}_@{reg}_p = 0;
         A_@{sec}_@{reg}_p = 1;
         omegaA_@{sec}_@{reg}_p = 0.025;
         gY0_@{sec}_@{reg}_p = 1.06;
@@ -94,63 +86,21 @@ aSL_3_mat = [2, 2; 2 2];
         alphaN_@{sec}_@{reg}_p = 0.5;
         omegaQ_@{sec}_@{reg}_p = 1/inbregions_p;
         etaNK_@{sec}_@{reg}_p = 0.95;
-        // TFP coefficients
-        a_T_1_@{sec}_@{reg}_p = 0;
-        a_T_2_@{sec}_@{reg}_p = 0.00253;
-        a_T_3_@{sec}_@{reg}_p = 2;
-        a_SL_1_@{sec}_@{reg}_p = 0;
-        a_SL_2_@{sec}_@{reg}_p = 0;
-        a_SL_3_@{sec}_@{reg}_p = 2;
-        a_W_1_@{sec}_@{reg}_p = 0;
-        a_W_2_@{sec}_@{reg}_p = 0;
-        a_W_3_@{sec}_@{reg}_p = 2;
-        a_P_1_@{sec}_@{reg}_p = 0;
-        a_P_2_@{sec}_@{reg}_p = 0;
-        a_P_3_@{sec}_@{reg}_p = 2;
-        a_DR_1_@{sec}_@{reg}_p = 0;
-        a_DR_2_@{sec}_@{reg}_p = 0;
-        a_DR_3_@{sec}_@{reg}_p = 2;
-        a_CY_1_@{sec}_@{reg}_p = 0;
-        a_CY_2_@{sec}_@{reg}_p = 0;
-        a_CY_3_@{sec}_@{reg}_p = 2;
-        // labour productvity coefficients
-        aN_T_1_@{sec}_@{reg}_p = 0;
-        aN_T_2_@{sec}_@{reg}_p = 0;
-        aN_T_3_@{sec}_@{reg}_p = 2;
-        aN_SL_1_@{sec}_@{reg}_p = 0;
-        aN_SL_2_@{sec}_@{reg}_p = 0;
-        aN_SL_3_@{sec}_@{reg}_p = 2;
-        aN_W_1_@{sec}_@{reg}_p = 0;
-        aN_W_2_@{sec}_@{reg}_p = 0;
-        aN_W_3_@{sec}_@{reg}_p = 2;
-        aN_P_1_@{sec}_@{reg}_p = 0;
-        aN_P_2_@{sec}_@{reg}_p = 0;
-        aN_P_3_@{sec}_@{reg}_p = 2;
-        aN_DR_1_@{sec}_@{reg}_p = 0;
-        aN_DR_2_@{sec}_@{reg}_p = 0;
-        aN_DR_3_@{sec}_@{reg}_p = 2;
-        aN_CY_1_@{sec}_@{reg}_p = 0;
-        aN_CY_2_@{sec}_@{reg}_p = 0;
-        aN_CY_3_@{sec}_@{reg}_p = 2;
-        // capital stock coefficients
-        aK_T_1_@{sec}_@{reg}_p = 0;
-        aK_T_2_@{sec}_@{reg}_p = 0;
-        aK_T_3_@{sec}_@{reg}_p = 2;
-        aK_SL_1_@{sec}_@{reg}_p = 0;
-        aK_SL_2_@{sec}_@{reg}_p = 0;
-        aK_SL_3_@{sec}_@{reg}_p = 2;
-        aK_W_1_@{sec}_@{reg}_p = 0;
-        aK_W_2_@{sec}_@{reg}_p = 0;
-        aK_W_3_@{sec}_@{reg}_p = 2;
-        aK_P_1_@{sec}_@{reg}_p = 0;
-        aK_P_2_@{sec}_@{reg}_p = 0;
-        aK_P_3_@{sec}_@{reg}_p = 2;
-        aK_DR_1_@{sec}_@{reg}_p = 0;
-        aK_DR_2_@{sec}_@{reg}_p = 0;
-        aK_DR_3_@{sec}_@{reg}_p = 2;
-        aK_CY_1_@{sec}_@{reg}_p = 0;
-        aK_CY_2_@{sec}_@{reg}_p = 0;
-        aK_CY_3_@{sec}_@{reg}_p = 2;
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+            // TFP coefficients
+            a_@{z}_1_@{sec}_@{reg}_p = 0;
+            a_@{z}_2_@{sec}_@{reg}_p = 0;
+            a_@{z}_3_@{sec}_@{reg}_p = 2;
+            // labour productvity coefficients
+            aN_@{z}_1_@{sec}_@{reg}_p = 0;
+            aN_@{z}_2_@{sec}_@{reg}_p = 0;
+            aN_@{z}_3_@{sec}_@{reg}_p = 2;
+            // capital stock coefficients
+            aK_@{z}_1_@{sec}_@{reg}_p = 0;
+            aK_@{z}_2_@{sec}_@{reg}_p = 0;
+            aK_@{z}_3_@{sec}_@{reg}_p = 2;
+        @# endfor
+
     @# endfor
 @# endfor
 

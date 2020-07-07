@@ -71,7 +71,7 @@ model(bytecode);
         W_@{sec}_@{reg} * (1 + tauN_@{sec}_@{reg})/P_@{sec}_@{reg} = alphaN_@{sec}_@{reg}_p^(1/etaNK_@{sec}_@{reg}_p) * ((1 - D_N_@{sec}_@{reg}) * A_N_@{sec}_@{reg} * (1 - D_@{sec}_@{reg}) * A_@{sec}_@{reg})^((etaNK_@{sec}_@{reg}_p-1)/(etaNK_@{sec}_@{reg}_p)) * ((PoP * N_@{sec}_@{reg}) / Y_@{sec}_@{reg})^(-1/etaNK_@{sec}_@{reg}_p);
 
         [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
-        (1 - tauN_p) * W_@{sec}_@{reg} * (P * C/PoP)^(-sigmaC_p) / (1 + tauC_p) = A_N_@{sec}_@{reg} * phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
+        (1 - tauN_p) * W_@{sec}_@{reg} * (C/PoP)^(-sigmaC_p) / (P * (1 + tauC_p)) = A_N_@{sec}_@{reg} * phiL_@{sec}_@{reg}_p * (N_@{sec}_@{reg})^(sigmaL_p);
 
         [name = 'HH FOC capital',mcp = 'K_@{sec}_@{reg}>0']
         (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1) * (1 + tauC_p)) * beta_p * r_@{sec}_@{reg}(+1) * P_@{sec}_@{reg}(+1) * (1 - tauK_p) + (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1 + tauC_p)) * omegaI_@{sec}_@{reg}(+1) * beta_p * (1 - delta_p - D_K_@{sec}_@{reg}(+1)) = omegaI_@{sec}_@{reg} * (C/PoP)^(-sigmaC_p)/(P*(1 + tauC_p));
@@ -213,7 +213,7 @@ P * I =
 [name = 'aggregate capital']
 P * K = 
 @# for sec in 1:Sectors
- + P_@{sec} * K_@{sec}(-1)
+ + P_@{sec} * K_@{sec}
 @# endfor
 ;
 

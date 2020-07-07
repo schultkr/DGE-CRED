@@ -24,38 +24,38 @@ model(bytecode);
 
         [name = 'sector specific damage function']
         D_@{sec}_@{reg} = min(0.7,
-                          @# for z in ClimateVars
+                          @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
                             @# if z == "SL"
-                                + (a_@{z}_1_@{sec}_@{reg}_p * @{z} + a_@{z}_2_@{sec}_@{reg}_p * @{z}^(a_@{z}_3_@{sec}_@{reg}_p)) * (SL > (K_A_SL_@{sec}_@{reg}(-1) / phiGASL_@{sec}_@{reg}_p))
+                                + (a_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + a_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(a_@{z}_3_@{sec}_@{reg}_p)) * exp(-phiGA@{z}_@{sec}_@{reg}_p*K_A_@{z}_@{sec}_@{reg}(-1)) 
                             @# else
                                 + (a_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + a_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(a_@{z}_3_@{sec}_@{reg}_p)) * exp(-phiGA@{z}_@{sec}_@{reg}_p*K_A_@{z}_@{sec}_@{reg}(-1)) 
-                            @# endif
+                          (a_SL_1_@{sec}_@{reg}_p * SL + a_SL_2_@{sec}_@{reg}_p * SL^(a_SL_3_@{sec}_@{reg}_p)) * (SL > (K_A_SL_@{sec}_@{reg}(-1) / phiGASL_@{sec}_@{reg}_p)) + 
+                          (a_W_1_@{sec}_@{reg}_p * WS_@{reg} + a_W_2_@{sec}_@{reg}_p * WS_@{reg}^(a_W_3_@{sec}_@{reg}_p)) * exp(-phiGAWS_@{sec}_@{reg}_p*K_A_WS_@{sec}_@{reg}(-1)) + 
+                          (a_P_1_@{sec}_@{reg}_p * PREC_@{reg} + a_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(a_P_3_@{sec}_@{reg}_p)) * exp(-phiGAPREC_@{sec}_@{reg}_p*K_A_PREC_@{sec}_@{reg}(-1)) +
+                          (a_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + a_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(a_DR_3_@{sec}_@{reg}_p)) * exp(-phiGADRO_@{sec}_@{reg}_p*K_A_DRO_@{sec}_@{reg}(-1)) +
+                          (a_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + a_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(a_CY_3_@{sec}_@{reg}_p)) * exp(-phiGACYC_@{sec}_@{reg}_p*K_A_CYC_@{sec}_@{reg}(-1))
                           @# endfor
                         );
 
         [name = 'sector specific damage function on labour productivity']
-        D_N_@{sec}_@{reg} = min(1,
-                          @# for z in ClimateVars
-                            @# if z == "SL"
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
-                            @# else
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
-                            @# endif
-                          @# endfor
+        D_N_@{sec}_@{reg} = min(1,aN_T_1_@{sec}_@{reg}_p * T_@{reg} + aN_T_2_@{sec}_@{reg}_p * T_@{reg}^(aN_T_3_@{sec}_@{reg}_p) + 
+                          aN_SL_1_@{sec}_@{reg}_p * SL + aN_SL_2_@{sec}_@{reg}_p * SL^(aN_SL_3_@{sec}_@{reg}_p) +
+                          aN_W_1_@{sec}_@{reg}_p * WS_@{reg} + aN_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aN_W_3_@{sec}_@{reg}_p) + 
+                          aN_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aN_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aN_P_3_@{sec}_@{reg}_p) + 
+                          aN_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aN_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aN_DR_3_@{sec}_@{reg}_p) +
+                          aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_CY_3_@{sec}_@{reg}_p)
                         );
 
         [name = 'sector specific damage function on capital formation']
-        D_K_@{sec}_@{reg} = min(1,
-                          @# for z in ClimateVars
-                            @# if z == "SL"
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
-                            @# else
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
-                            @# endif
-                          @# endfor
+        D_K_@{sec}_@{reg} = min(1,aK_T_1_@{sec}_@{reg}_p * T_@{reg} + aK_T_2_@{sec}_@{reg}_p * T_@{reg}^(aK_T_3_@{sec}_@{reg}_p) + 
+                          aK_SL_1_@{sec}_@{reg}_p * SL + aK_SL_2_@{sec}_@{reg}_p * SL^(aK_SL_3_@{sec}_@{reg}_p) +
+                          aK_W_1_@{sec}_@{reg}_p * WS_@{reg} + aK_W_2_@{sec}_@{reg}_p * WS_@{reg}^(aK_W_3_@{sec}_@{reg}_p) + 
+                          aK_P_1_@{sec}_@{reg}_p * PREC_@{reg} + aK_P_2_@{sec}_@{reg}_p * PREC_@{reg}^(aK_P_3_@{sec}_@{reg}_p) +
+                          aK_DR_1_@{sec}_@{reg}_p * DRO_@{reg} + aK_DR_2_@{sec}_@{reg}_p * DRO_@{reg}^(aK_DR_3_@{sec}_@{reg}_p) +
+                          aK_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aK_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aK_CY_3_@{sec}_@{reg}_p)
                         );
 
-        @# for z in ClimateVars
+        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
             [name = 'sector specific adaptation expenditures by the government against sea level rise']
             K_A_@{z}_@{sec}_@{reg} = exo_GA_@{z}_@{sec}_@{reg};
 
@@ -132,17 +132,23 @@ model(bytecode);
 
 @# endfor
 
-
 @# for reg in 1:Regions
+    [name = 'Temperature']
+    T_@{reg} = T0_@{reg}_p + exo_T_@{reg};
 
-    @# for z in ClimateVars
-        @# if  z != "SL"
-            [name = '@{z}']
-            @{z}_@{reg} = @{z}0_@{reg}_p + exo_@{z}_@{reg};
-        @# endif
-    @# endfor
+    [name = 'Wind speed']
+    WS_@{reg} = WS0_@{reg}_p + exo_WS_@{reg};
+
+    [name = 'Precipitation']
+    PREC_@{reg} = PREC0_@{reg}_p + exo_PREC_@{reg};
+
+    [name = 'Cyclone']
+    CYC_@{reg} = CYC0_@{reg}_p + exo_CYC_@{reg};
+
+    [name = 'Drought']
+    DRO_@{reg} = DRO0_@{reg}_p + exo_DRO_@{reg};
+
 @# endfor
-
 [name = 'Sea level']
 SL = SL0_p + exo_SL;
 
@@ -163,9 +169,7 @@ P * Y =
 Y = C + I + G + NX
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
-        @# for z in ClimateVars
-            + G_A_@{z}_@{sec}_@{reg}
-        @# endfor
+        + G_A_SL_@{sec}_@{reg}  + G_A_PREC_@{sec}_@{reg} + G_A_T_@{sec}_@{reg} + G_A_WS_@{sec}_@{reg} + G_A_CYC_@{sec}_@{reg} + G_A_DRO_@{sec}_@{reg} 
     @# endfor
 @# endfor
 ;
@@ -196,9 +200,7 @@ tauC = tauC_p + exo_tauC;
 G + BG
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
-        @# for z in ClimateVars
-            + G_A_@{z}_@{sec}_@{reg}
-        @# endfor
+        + G_A_SL_@{sec}_@{reg}  + G_A_PREC_@{sec}_@{reg} + G_A_T_@{sec}_@{reg} + G_A_WS_@{sec}_@{reg} + G_A_CYC_@{sec}_@{reg} + G_A_DRO_@{sec}_@{reg} 
     @# endfor
 @# endfor
 = (1 + rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1) + tauC * C

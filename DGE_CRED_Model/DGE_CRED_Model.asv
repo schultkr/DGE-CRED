@@ -18,7 +18,7 @@
 % ============================================
 @# define Sectors = 3
 @# define Regions = 3
-@# define ClimateVars = ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+@# define ClimateVars 
 % ==============================
 % === Define number of steps ===
 % ==============================
@@ -44,7 +44,7 @@ end
 //@# include "ModFiles/DGE_CRED_Model_LatexOutput.mod"
 
 @# include "ModFiles/DGE_CRED_Model_Parameters.mod"
-M_.ClimateVars = '@{ClimateVars}';
+
 for icoScenario = 1:size(casScenarioNames,2)
     sScenario = char(casScenarioNames(icoScenario));
     @# include "ModFiles/DGE_CRED_Model_SteadyState.mod"
