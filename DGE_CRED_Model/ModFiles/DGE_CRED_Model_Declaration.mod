@@ -72,6 +72,7 @@ exo_PoP ${\eta_{PoP}}$ (long_name = 'exogeneous population')
 exo_SL ${\eta_{SL}}$ (long_name = 'exogeneous sea level')
 exo_NX ${\eta_{NX}}$ (long_name = 'exogenous net exports')
 exo_BG ${\eta_{BG}}$ (long_name = 'exogenous structural balance')
+exo_rf ${\eta_{r^f}}$ (long_name = 'exogenous world interest rate')
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         exo_tauKF_@{sec}_@{reg} ${\eta_{\tau^{K,F},k,n}}$ (long_name = 'exogenous sector and region corporate tax rate')
@@ -183,6 +184,7 @@ lCalibration_p  ${l^{Calib}}$ (long_name = 'logical indiactor whether model is c
     WST_@{reg}_p ${W^{S}_{T,n}}$ (long_name = 'terminal regional wind speed')
 @# endfor
 % === initial values ===
+rf0_p ${r^f_0}$ (long_name = 'initial world interest rate')
 SL0_p ${SL_0}$ (long_name = 'initial sea level')
 PoP0_p ${POP_0}$ (long_name = 'initial population')
 Y0_p ${Y_0}$ (long_name = 'initial output')

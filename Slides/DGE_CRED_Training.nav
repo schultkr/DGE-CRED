@@ -805,55 +805,55 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {151}{151}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{6}{152}{Profit Maximization}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{6}{152}{Damages on TFP}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{7}{152/152}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {152}{152}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{7}{153}{Factor Demand}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{7}{153}{Implementation of Damages on TFP}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{8}{153/153}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {153}{153}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{8}{154}{Implementation of Factor Demand}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{8}{154}{Damages on Labour Productivity}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{9}{154/154}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {154}{154}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{9}{155}{Damages on TFP}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{9}{155}{Implementation of Damages on Labour Productivity}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{10}{155/155}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {155}{155}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{10}{156}{Implementation of Damages on TFP}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{10}{156}{Damages on Capital}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{11}{156/156}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {156}{156}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{11}{157}{Damages on Labour Productivity}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{11}{157}{Implementation of Damages on Capital}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{12}{157/157}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {157}{157}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{12}{158}{Implementation of Damages on Labour Productivity}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{12}{158}{Profit Maximization}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{13}{158/158}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {158}{158}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{13}{159}{Damages on Capital}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{13}{159}{Factor Demand}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{14}{159/159}{Production}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {159}{159}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{4}{14}{160}{Implementation of Damages on Capital}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{4}{14}{160}{Implementation of Factor Demand}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{4}{15}{160/160}{Production}{0}}
 \defcounter {refsection}{0}\relax 
@@ -929,213 +929,209 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {171}{171}}
 \defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{4}{172}{Implementation of Sectoral Aggregates}}
+\defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{5}{172/172}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {172}{172}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{4}{173}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{5}{173}{Implementation of Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{6}{173/173}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {173}{173}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{5}{174}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{6}{174}{National Aggregates}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{7}{174/174}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {174}{174}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{6}{175}{National Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{7}{175}{Implementation of Sectoral Aggregates}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{8}{175/175}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {175}{175}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{7}{176}{Implementation of Sectoral Aggregates}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{8}{176}{Population and Price Level}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{9}{176/176}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {176}{176}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{8}{177}{Population and Price Level}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{6}{9}{177}{Implementation of Population and Prices}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\slideentry {4}{6}{10}{177/177}{Aggregation and Identities}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {177}{177}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{4}{6}{9}{178}{Implementation of Population and Prices}}
+\headcommand {\beamer@sectionpages {121}{177}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {4}{6}{11}{178/178}{Aggregation and Identities}{0}}
+\headcommand {\beamer@subsectionpages {168}{177}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {5}{Model Simulation and Calibration}{178}{Model Simulation and Calibration}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {178}{177}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{1}{178}{Definitions}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{1}{1}{178/178}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {178}{178}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {121}{178}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {168}{178}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {5}{Model Simulation and Calibration}{179}{Model Simulation and Calibration}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {179}{178}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{1}{179}{Definitions}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{1}{179/179}{Definitions}{0}}
+\headcommand {\slideentry {5}{1}{2}{179/179}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {179}{179}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{2}{180/180}{Definitions}{0}}
+\headcommand {\slideentry {5}{1}{3}{180/180}{Definitions}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {180}{180}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{1}{3}{181/181}{Definitions}{0}}
+\headcommand {\beamer@subsectionpages {178}{180}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{5}{2}{181}{Calibration}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{2}{1}{181/181}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {181}{181}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {179}{181}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{1}{182}{Calibration of Parameters}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{2}{182}{Calibration}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{1}{182/182}{Calibration}{0}}
+\headcommand {\slideentry {5}{2}{2}{182/182}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {182}{182}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{1}{183}{Calibration of Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{2}{183}{Calibration of Damage Function Parameters}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{2}{183/183}{Calibration}{0}}
+\headcommand {\slideentry {5}{2}{3}{183/183}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {183}{183}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{2}{184}{Calibration of Damage Function Parameters}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{2}{3}{184}{Notation of Damage Function Parameters}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{3}{184/184}{Calibration}{0}}
+\headcommand {\slideentry {5}{2}{4}{184/184}{Calibration}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {184}{184}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{2}{3}{185}{Notation of Damage Function Parameters}}
+\headcommand {\beamer@subsectionpages {181}{184}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{2}{4}{185/185}{Calibration}{0}}
+\headcommand {\beamer@subsectionentry {0}{5}{3}{185}{Scenario Analyses}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{1}{185/185}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {185}{185}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {182}{185}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{1}{186}{Temperature}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{5}{3}{186}{Scenario Analyses}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{1}{186/186}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{2}{186/186}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {186}{186}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{1}{187}{Temperature}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{2}{187/187}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{3}{187/187}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {187}{187}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{3}{188/188}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{4}{188/188}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {188}{188}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{4}{189/189}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{2}{189}{Sea Level}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{5}{189/189}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {189}{189}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{2}{190}{Sea Level}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{5}{190/190}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{6}{190/190}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {190}{190}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{6}{191/191}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{3}{191}{Adaption}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{7}{191/191}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {191}{191}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{3}{192}{Adaption}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{7}{192/192}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{8}{192/192}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {192}{192}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{8}{193/193}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{4}{193}{Extremes}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {5}{3}{9}{193/193}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {193}{193}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{4}{194}{Extremes}}
+\headcommand {\beamer@subsubsectionentry {0}{5}{3}{5}{194}{Simulation Results}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{9}{194/194}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{10}{194/194}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {194}{194}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsubsectionentry {0}{5}{3}{5}{195}{Simulation Results}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{10}{195/195}{Scenario Analyses}{0}}
+\headcommand {\slideentry {5}{3}{11}{195/195}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {195}{195}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {5}{3}{11}{196/196}{Scenario Analyses}{0}}
+\headcommand {\beamer@sectionpages {178}{195}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {185}{195}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\sectionentry {6}{References}{196}{References}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {6}{0}{0}{196/196}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {196}{196}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {179}{196}}
+\headcommand {\slideentry {6}{0}{0}{196/197}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {186}{196}}
+\headcommand {\beamer@framepages {196}{197}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {6}{References}{197}{References}{0}}
+\headcommand {\slideentry {6}{0}{0}{196/198}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/197}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{198}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{197}}
+\headcommand {\slideentry {6}{0}{0}{196/199}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/198}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{199}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{198}}
+\headcommand {\slideentry {6}{0}{0}{196/200}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/199}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{200}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{199}}
+\headcommand {\slideentry {6}{0}{0}{196/201}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/200}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{201}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{200}}
+\headcommand {\slideentry {6}{0}{0}{196/202}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/201}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{202}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{201}}
+\headcommand {\slideentry {6}{0}{0}{196/203}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/202}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{203}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{202}}
+\headcommand {\slideentry {6}{0}{0}{196/204}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/203}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{204}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{203}}
+\headcommand {\slideentry {6}{0}{0}{196/205}{Scenario Analyses}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/204}{Scenario Analyses}{0}}
+\headcommand {\beamer@framepages {196}{205}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{204}}
+\headcommand {\beamer@sectionpages {178}{205}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/205}{Scenario Analyses}{0}}
+\headcommand {\beamer@subsectionpages {185}{205}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{205}}
+\headcommand {\sectionentry {7}{Appendix}{206}{Appendix}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {6}{0}{0}{197/206}{Scenario Analyses}{0}}
+\headcommand {\slideentry {7}{0}{1}{206/206}{}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {197}{206}}
+\headcommand {\beamer@framepages {206}{206}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@sectionpages {179}{206}}
+\headcommand {\slideentry {7}{0}{2}{207/224}{}{0}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {186}{206}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\sectionentry {7}{Appendix}{207}{Appendix}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{1}{207/207}{}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {207}{207}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {7}{0}{2}{208/225}{}{0}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@framepages {208}{225}}
-\headcommand {\beamer@partpages {1}{225}}
-\headcommand {\beamer@subsectionpages {207}{225}}
-\headcommand {\beamer@sectionpages {207}{225}}
-\headcommand {\beamer@documentpages {225}}
-\headcommand {\gdef \inserttotalframenumber {180}}
+\headcommand {\beamer@framepages {207}{224}}
+\headcommand {\beamer@partpages {1}{224}}
+\headcommand {\beamer@subsectionpages {206}{224}}
+\headcommand {\beamer@sectionpages {206}{224}}
+\headcommand {\beamer@documentpages {224}}
+\headcommand {\gdef \inserttotalframenumber {179}}

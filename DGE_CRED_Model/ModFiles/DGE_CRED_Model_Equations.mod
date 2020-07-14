@@ -48,9 +48,9 @@ model(bytecode);
         D_K_@{sec}_@{reg} = min(1,
                           @# for z in ClimateVars
                             @# if z == "SL"
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
+                                + (aK_@{z}_1_@{sec}_@{reg}_p * @{z} + aK_@{z}_2_@{sec}_@{reg}_p * @{z}^(aK_@{z}_3_@{sec}_@{reg}_p)) 
                             @# else
-                                + (aN_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + aN_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(aN_@{z}_3_@{sec}_@{reg}_p)) 
+                                + (aK_@{z}_1_@{sec}_@{reg}_p * @{z}_@{reg} + aK_@{z}_2_@{sec}_@{reg}_p * @{z}_@{reg}^(aK_@{z}_3_@{sec}_@{reg}_p)) 
                             @# endif
                           @# endfor
                         );
@@ -177,7 +177,7 @@ NX = (B - (1 + rf) * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * Sf * B(-1));
 NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
 
 [name = 'World interest rate']
-rf = (1/beta_p-1);
+rf = rf0_p + exo_rf;
 
 
 [name = 'Foreign Assets']
