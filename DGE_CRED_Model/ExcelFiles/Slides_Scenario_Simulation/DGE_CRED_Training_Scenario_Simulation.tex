@@ -1,0 +1,238 @@
+%\documentclass[envcountsect,11pt,trans]{beamer}
+\documentclass[11pt,aspectratio=169]{beamer}
+\input{def}
+\mode<presentation>{
+    \setbeamertemplate{itemize item}{\color{RedGIZ}$\blacksquare$}
+    \setbeamertemplate{itemize subitem}{\color{RedGIZ}$\blacktriangleright$}
+		}
+\title[DGE--CRED]{Dynamic General Equilibrium Model for Climate Resilient Economic Development}
+%\subtitle[]{Training}
+
+\author[Christoph Schult]{Andrej Drygalla, Katja Heinisch and Christoph Schult*} \date[July 2020]{July 2020}
+\institute[IWH]{Halle Institute for Economic Research}
+
+ 
+\logo{\begin{tabular}{c}\includegraphics[keepaspectratio,width=1.00cm]{pictures/seperationbar.png} \\ \includegraphics[keepaspectratio,width=1.00cm]{pictures/GIZ_Logo}\end{tabular}}
+
+\usepackage[style=authoryear,maxbibnames=9,maxcitenames=2,backend=bibtex]{biblatex}
+\bibliography{references}
+
+% Settings by yw:
+% Outline at beginning of each section:
+\AtBeginSection[]{	
+	{\setbeamertemplate{footline}{}
+	\begin{frame}<beamer>{Outline}
+		\tableofcontents[sectionstyle=show/hide, subsectionstyle=show/show/hide, subsubsectionstyle=show/show/hide]
+		\setbeamertemplate{footline}{}
+		\addtocounter{framenumber}{-1}
+	\end{frame}}
+}
+% Packages:
+\usepackage{ragged2e}
+\usepackage{upquote}
+\usepackage{subfigure}
+\usepackage{ragged2e}
+\lstset{ 
+  backgroundcolor=\color{white},
+	breaklines=true,
+	basicstyle=\tiny
+}
+% Section numbering:
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{subsubsection in toc}[subsubsections numbered]
+\setbeamertemplate{section in toc}[ball]
+\setbeamertemplate{subsection in toc}[ball]
+\setbeamertemplate{subsubsection in toc}[ball]
+\setbeamercolor{section number projected}{bg={RedGIZ}}
+\setbeamercolor{subsection number projected}{bg={RedGIZ}}
+\setbeamercolor{subsubsection number projected}{bg={RedGIZ}}
+%\usefonttheme{serif}
+\begin{document}
+%\footnotesize
+\usebackgroundtemplate{
+\vbox to \paperheight{\vspace{0.1cm}\hbox to \paperwidth{\hfil\includegraphics[width=0.975\paperwidth,height = 0.7\paperheight]{pictures/BackgroundGIZ.jpg}\hfil}\vfil
+}}
+
+\begin{frame}<presentation>[noframenumbering,plain]
+  \titlepage \\
+	{\tiny} \scalebox{.4}{* Research assistance by Yoshiki Wiskamp is greatly acknowledged.}
+\end{frame}
+\usebackgroundtemplate{
+}
+{\setbeamertemplate{footline}{}
+\begin{frame}<presentation>[noframenumbering]
+	\frametitle{Outline}
+		 \tableofcontents[hideallsubsections]
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{DGE-CRED Model: Scenario Creation and Simulation}
+
+\subsection{Introduction}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Introduction}
+	\begin{itemize}
+		\item The DGE-CRED model allows its user to analyze and compare different \textit{scenarios}
+		\begin{itemize}
+			\item The model can be used without a detailed knowledge about programming 
+			\item The user has to edit an excel sheet in order to: (i) set the paths of the exogenous variables, (ii) specify the initial and terminal values, (iii) assign parameter values, etc.
+		\end{itemize}
+		\item The following slides encompass a guideline on how to \textit{create} and \textit{simulate} a new \textit{scenario} 
+		\begin{itemize}
+			\item For a comprehensive explanation on how to set the structural parameters for the simulation, see the presentation ``DGE\_CRED\_Training''
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{\texttt{ModelSimulationandCalibration\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}}
+
+\begin{frame}<presentation>
+\frametitle{{\thesection.\thesubsection} Setting up a new Sceanrio (1)}
+	\begin{itemize}
+			\item At first, the user has to choose the:
+				\begin{itemize}
+					\item number of sectors \textcolor{red}{k}
+					\item number of regions \textcolor{red}{r}
+				\end{itemize}
+			\item The settings for the simulation of \textcolor{red}{k} sectors and \textcolor{red}{r} regions must be provided in ``\texttt{ModelSimulationandCalibration\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}''
+			\item To create a new \textit{scenario}, a new sheet has to be added to this workbook
+			\begin{itemize}
+				\item The name of the sheet becomes the name of the scenario
+				\item Avoid using symbols or spaces when naming the scenario
+				\item Examples of valid scenario names: \texttt{RCP\_45\_Average}, \texttt{Baseline}
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Setting up a new Sceanrio (2)}
+	\begin{itemize}
+		\item The trajectories of the \textit{exogenous} variables examined in this new scenario must be added to the excel sheet
+		\begin{itemize}
+			\item As the initial value is provided in the sheet ``\texttt{start}'', values starting from period $t=2$ must be provided
+			\item Note that absolute changes compared to the initial value must be provided
+			\item If no specific trajectory for an exogenous variable is provided in this sheet, the variable will remain at its initial value 
+			\item Include a timeline in the first column of the sheet
+			\item Recommendation: Include a trajectory for population (\texttt{exo\_PoP})
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Setting up a new Sceanrio (3)}
+	\begin{itemize}
+		\item Example: Set up a new scenario called ``RCP\_45\_Average'' in a 3 sector and 3 regions setting. Include the trajectories of population (\texttt{exo\_PoP}), temperature (\texttt{exo\_T\_r}), precipitation (\texttt{exo\_PREC\_r}) and sea level (\texttt{exo\_SL}).
+		\begin{figure}
+			\frame{\includegraphics[width=8cm]{pictures/Scenario_Simulation/scensim01}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\subsection{\texttt{DGE\_CRED\_Model.mod}}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} \texttt{DGE\_CRED\_Model.mod}}
+	\begin{itemize}
+		\item After creating a new scenario in ``\texttt{ModelSimulationandCalibration\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}'', open the Dynare file ``\texttt{DGE\_CRED\_Model.mod}''
+		\item Define the number of sectors \textcolor{red}{k} and regions \textcolor{red}{r}
+		\item Example:
+		\begin{figure}
+			\frame{\includegraphics[width=7cm]{pictures/Scenario_Simulation/scensim02}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\subsection{\texttt{RunSimulations.m}}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} \texttt{RunSimulations.m}}
+	\begin{itemize}
+		\item The next step is to open the MATLAB file ``\texttt{RunSimulations.m}'' and to specify the scenario names in ``\texttt{casScenarioNames}''
+		\item Example:
+		\begin{figure}
+			\frame{\includegraphics[width=7cm]{pictures/Scenario_Simulation/scensim03}}
+		\end{figure}
+		\item Now, everything is set up for the simulation of the new scenario
+		\begin{itemize}
+			\item Press ``Run'' to conduct the simulation
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\subsection{\texttt{ResultsScenarios\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} \texttt{ResultsScenarios\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx} (1)}
+	\begin{itemize}
+		\item The results of the simulation are stored in ``\texttt{ResultsScenarios\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}''
+		\item There will be a result sheet for every scenario containing the trajectories of all model variables
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} \texttt{ResultsScenarios\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx} (2)}
+	\begin{itemize}
+		\item Example:
+		\begin{figure}
+			\frame{\includegraphics[width=8cm]{pictures/Scenario_Simulation/scensim04}}
+		\end{figure}
+	\end{itemize}
+\end{frame}
+
+\section{Appendix}
+
+\subsection{Determine the Trajectories of the Climate Variables}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Determine the Trajectories of the Climate Variables (1)}
+	\begin{itemize}
+		\item The set of MATLAB files starting with the abbreviation \texttt{CCS} (Climate Change Scenarios) can be used to generate trajectories for temperature (\texttt{T}), precipitation (\texttt{PREC}) and sea level (\texttt{SL}) 
+		\item The excel workbook ``\texttt{Input\_Climate\_Change\_Scenarios.xlsx}'' has to be edited by the user
+		\begin{itemize}
+			\item The regions have to be specified in the sheet ``\texttt{define regions}''
+			\item The target values for the climate variables must be provided in the respective sheets
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Determine the Trajectories of the Climate Variables (2)}
+	\begin{itemize}
+		\item Next, the user has to choose among different options/procedures in the MATLAB file ``\texttt{CCS\_Run.m}'' 
+		\begin{itemize}
+			\item Now, everything is set up and the code can be executed
+		\end{itemize}
+		\item The set of \texttt{CCS} files generates a discrete trajectory (annual basis) for all climate variables and scenarios specified in ``\texttt{Input\_Climate\_Change\_Scenarios.xlsx}''
+	\end{itemize}
+\end{frame}
+
+\subsection{Generate a Climate Change Scenario Sheet Automatically}
+
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Generate a Climate Change Scenario Sheet Automatically (1)}
+	\begin{itemize}
+		\item A \textit{scenario} sheet can be generated and directly written into  ``\texttt{ModelSimulationandCalibration\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.xlsx}'' by using the MATLAB code 	\footnotesize ``\texttt{CCS\_write\_to\_ModelSimulationandCalibration\textcolor{red}{k}Sectorsand\textcolor{red}{r}Regions.m}''
+		\begin{itemize}
+			\item Advantage: New scenarios for the climate variables do not have to be assembled manually
+		\end{itemize}
+		\item This code can be use:
+		\begin{itemize}
+			\item After the the MATLAB code ``\texttt{CCS\_Run.m}'' has been executed 
+			\item While these results are still in the MATLAB memory
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+\begin{frame}<presentation>
+	\frametitle{{\thesection.\thesubsection} Generate a Climate Change Scenario Sheet Automatically (2)}
+	\begin{itemize}
+		\item The number of sectors \textcolor{red}{k} as well as the desired combination of the climate variables has to be chosen by the user
+		\item Example:
+		\begin{figure}
+			\frame{\includegraphics[width=7cm]{pictures/Scenario_Simulation/scensim05}}
+		\end{figure}
+		\item A descriptive name for the sceanrio will be assigned automatically 
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
