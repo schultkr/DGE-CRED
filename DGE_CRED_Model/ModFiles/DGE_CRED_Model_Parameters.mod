@@ -19,6 +19,7 @@ omegaNX_p = omegaNX0_p;
 omegaNXT_p = 0.01;
 rhoNX_p = 0.7;
 rhoSL_p = 0.9;
+rf0_p = 1/beta_p - 1;
 PoP0_p = 95;
 Y0_p = 1;
 N0_p = 0.145;

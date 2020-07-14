@@ -65,18 +65,23 @@
 \texttt{P\_k\_r} & ${P_{k,r}}$ & regional sector price index\\
 \texttt{omegaI\_k\_r} & ${\omega^I_{k,r}}$ & shadow value of regional private sector investment\\
 \texttt{r\_k\_r} & ${r_{k,r}}$ & regional sector rental rate on capital\\
-\texttt{tauK\_k\_r} & ${\tau^{K}_{k,r}}$ & regional sector corporate tax rate on capital\\
-\texttt{tauN\_k\_r} & ${\tau^{N}_{k,r}}$ & regional sector labour tax rate on capital\\
+\texttt{tauKF\_k\_r} & ${\tau^{K,F}_{k,r}}$ & regional sector corporate tax rate on capital firms\\
+\texttt{tauNF\_k\_r} & ${\tau^{N,F}_{k,r}}$ & regional sector labour tax rate on capital firms\\
+\texttt{tauKH} & ${\tau^{K,H}}$ & tax rate on capital households\\
+\texttt{tauNH} & ${\tau^{N,H}}$ & tax rate on clabour income households\\
 \hline
 \multicolumn{3}{c}{Exogenous}\\%
 \hline
 \texttt{exo\_P} & ${\eta_{P}}$ & exogenous price index evolution\\
 \texttt{exo\_PoP} & ${\eta_{Pop}}$ & exogenous population\\
+\texttt{exo\_rf} & ${\eta_{r^f}}$ & exogenous world interest rate\\
 \texttt{exo\_SL} & ${\eta_{SL}}$ & exogenous sea level\\
 \texttt{exo\_NX} & ${\eta_{NX}}$ & exogenous net exports\\
 \texttt{exo\_BG} & ${\eta_{BG}}$ & exogenous structural balance\\
-\texttt{exo\_tauK\_k\_r} & ${\eta_{\tau^{K},k,r}}$ & exogenous sector and region corporate tax rate\\
-\texttt{exo\_tauN\_k\_r} & ${\eta_{\tau^{N},k,r}}$ & exogenous sector and region labour tax rate\\
+\texttt{exo\_tauKF\_k\_r} & ${\eta_{\tau^{K,F},k,r}}$ & exogenous sector and region corporate tax rate\\
+\texttt{exo\_tauNF\_k\_r} & ${\eta_{\tau^{N,F},k,r}}$ & exogenous sector and region labour tax rate\\
+\texttt{exo\_tauKH} & ${\eta_{\tau^{K,H}}}$ & exogenous capital income tax rate households\\
+\texttt{exo\_tauNH} & ${\eta_{\tau^{N,H}}}$ & exogenous labour income  tax rate households\\
 \texttt{exo\_k\_r} & ${\eta_{A,k,r}}$ & exogenous TFP\\
 \texttt{exo\_N\_k\_r} & ${\eta_{A^{N},k,r}}$ & exogenous labour specific TFP\\
 \texttt{exo\_K\_k\_r} & ${\eta_{A^{K},k,r}}$ & exogenous capital specific TFP\\
@@ -127,15 +132,21 @@
 \texttt{a\_T\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function temperature\\
 \texttt{a\_T\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function temperature\\
 \texttt{a\_T\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function temperature\\
-\texttt{a\_P\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function precipitation\\
-\texttt{a\_P\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function precipitation\\
-\texttt{a\_P\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function precipitation\\
-\texttt{a\_W\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function wind speed\\
-\texttt{a\_W\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function wind speed\\
-\texttt{a\_W\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function wind speed\\
+\texttt{a\_PREC\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function precipitation\\
+\texttt{a\_PREC\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function precipitation\\
+\texttt{a\_PREC\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function precipitation\\
+\texttt{a\_WS\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function wind speed\\
+\texttt{a\_WS\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function wind speed\\
+\texttt{a\_WS\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function wind speed\\
 \texttt{a\_SL\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function sea level\\
 \texttt{a\_SL\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function sea level\\
 \texttt{a\_SL\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function sea level\\
+\texttt{a\_CYC\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function cyclone\\
+\texttt{a\_CYC\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function cyclone\\
+\texttt{a\_CYC\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function cyclone\\
+\texttt{a\_DRO\_1\_k\_r\_p} & ${a_{1,k,r}}$ & intercept of damage function drought\\
+\texttt{a\_DRO\_2\_k\_r\_p} & ${a_{2,k,r}}$ & slope of damage function drought\\
+\texttt{a\_DRO\_3\_k\_r\_p} & ${a_{3,k,r}}$ & exponent of damage function drought\\
 \texttt{beta\_p} & ${\beta}$ & discount factor\\
 \texttt{delta\_p} & ${\delta}$ & capital depreciation rate\\
 \texttt{deltaKASL\_k\_r\_p} & ${\delta_{K^{A,SL},k,r}}$ & capital depreciation rate for adaptation capital stock against sea level rise\\
@@ -150,8 +161,8 @@
 \texttt{phiB\_p} & ${\phi^{B}}$ & coefficient of foreign adjustment cost\\
 \texttt{phiK\_p} & ${\phi^{K}}$ & coefficient of investment adjustment cost\\
 \texttt{tauC\_p} & ${\tau^{C}}$ & consumption tax\\
-\texttt{tauN\_p} & ${\tau^{N}}$ & labour tax\\
-\texttt{tauK\_p} & ${\tau^{K}}$ & capital tax\\
+\texttt{tauNH\_p} & ${\tau^{N}}$ & labour income tax\\
+\texttt{tauKH\_p} & ${\tau^{K}}$ & capital income tax\\
 \texttt{omegaNX\_p} & ${\omega^{NX}}$ & share of net exports relative to domestic GDP\\
 \texttt{omegaNX0\_p} & ${\omega^{NX,0}}$ & initial share of net exports relative to domestic GDP\\
 \texttt{omegaNXT\_p} & ${\omega^{NX,T}}$ & terminal share of net exports relative to domestic GDP\\
@@ -171,6 +182,7 @@
 \texttt{TT\_r\_p} & ${T_{T,n}}$ & terminal regional temperature\\
 \texttt{PRECT\_r\_p} & ${PREC_{T,n}}$ & terminal regional precipitation\\
 \texttt{WST\_r\_p} & ${WS_{T,n}}$ & terminal regional wind speed\\
+\texttt{rf0\_p} & ${r^f_0}$ & initial world interest rate\\
 \texttt{SL0\_p} & ${SL_0}$ & initial sea level\\
 \texttt{PoP0\_p} & ${POP_0}$ & initial population\\
 \texttt{Y0\_p} & ${Y_0}$ & initial output\\

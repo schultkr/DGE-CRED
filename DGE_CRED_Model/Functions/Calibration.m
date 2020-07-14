@@ -95,10 +95,10 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             strys.(['N_' ssec '_' sreg]) = strpar.(['phiN_' ssec '_' sreg '_p']) * strys.N;
             strys.(['r_' ssec '_' sreg]) = (1/strpar.beta_p - 1 + strpar.delta_p + strys.(['D_K_' ssec '_' sreg]))/(1 - strys.tauKH);
             rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauKF_' ssec '_' sreg]));
-            wtemp = ((strys.(['A_' ssec '_' sreg])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) - (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * rkgross^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1)) / strpar.(['phiW_' ssec '_' sreg '_p']))^(1/(strpar.(['etaNK_' ssec '_' sreg '_p'])-1));
-            strys.(['P_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p'])/wtemp * strpar.(['phiY_' ssec '_' sreg '_p']) * strys.Y *strys.P / (strys.PoP * strys.(['N_' ssec '_' sreg]));
+            wtemp = ((strys.(['A_' ssec '_' sreg])^(1/strpar.(['etaNK_' ssec '_' sreg '_p'])) - (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * rkgross^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1)) / strpar.(['phiW_' ssec '_' sreg '_p']))^(1/(strpar.(['etaNK_' ssec '_' sreg '_p'])-1)) * strys.(['A_N_' ssec '_' sreg]) * (1 -  strys.(['D_N_' ssec '_' sreg]));
             strpar.(['alphaK_' ssec '_' sreg '_p']) = (1 - strpar.(['phiW_' ssec '_' sreg '_p'])) * (rkgross/strys.(['A_' ssec '_' sreg]))^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1);
-            strpar.(['alphaN_' ssec '_' sreg '_p']) = strpar.(['phiW_' ssec '_' sreg '_p']) *  strys.(['A_N_' ssec '_' sreg])^(strpar.(['etaNK_' ssec '_' sreg '_p'])*rhotemp) * (wtemp/strys.(['A_' ssec '_' sreg]))^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1);
+            strpar.(['alphaN_' ssec '_' sreg '_p']) = strpar.(['phiW_' ssec '_' sreg '_p']) *  (wtemp/(((1 - strys.(['D_N_' ssec '_' sreg])) * strys.(['A_N_' ssec '_' sreg])) * strys.(['A_' ssec '_' sreg])))^(strpar.(['etaNK_' ssec '_' sreg '_p'])-1);		
+            strys.(['P_' ssec '_' sreg]) = strpar.(['phiW_' ssec '_' sreg '_p'])/wtemp * strpar.(['phiY_' ssec '_' sreg '_p']) * strys.Y *strys.P / (strys.PoP * strys.(['N_' ssec '_' sreg]));
 
             strys.(['K_' ssec '_' sreg]) = strpar.(['alphaK_' ssec '_' sreg '_p']) / (strpar.(['alphaN_' ssec '_' sreg '_p']) * strys.(['A_N_' ssec '_' sreg])^(rhotemp * strpar.(['etaNK_' ssec '_' sreg '_p']))) * (rkgross/wtemp)^(-strpar.(['etaNK_' ssec '_' sreg '_p'])) * strys.PoP * strys.(['N_' ssec '_' sreg]);
             strys.(['Y_' ssec '_' sreg]) = wtemp * strys.PoP * strys.(['N_' ssec '_' sreg]) + rkgross * strys.(['K_' ssec '_' sreg]);

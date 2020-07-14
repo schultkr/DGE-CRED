@@ -44,7 +44,8 @@
 \lstset{ 
   backgroundcolor=\color{white},
 	breaklines=true,
-	basicstyle=\tiny
+	basicstyle=\tiny,
+	escapeinside={<@}{@>}
 }
 % Section numbering:
 \setbeamertemplate{section in toc}[sections numbered]
@@ -1655,9 +1656,9 @@
 \item Optimization problem of the representative household is
 \begin{align*}
  & \underset{C_t(h), \, K_{k,r,t+1}(h), \, I_{k,r,t}(h), , \, N_{k,r,t}(h), \, B_{t+1}}{\mbox{max}} \sum_{t=0}^{\infty} \beta^{t} \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} A^{N}_{k,r,t} \, \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) \\
-\mbox{s.t.} \quad & P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) = \\
- & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h)+S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h) \\
- \mbox{and} \quad & K_{k,r,t+1} = (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right).
+\mbox{s.t.} & P_{t} \, C_{t}(h) \, (1+\tau^{C}_t)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) = \\
+ & \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N,H}_{t}) \, W_{k,r,t} N_{k,r,t}(h)+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K,H}_{t}) \, K_{k,r,t}(h) + S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h)
+ %K_{k,r,t+1} = (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right).
 \end{align*}
 \end{itemize}
 \end{frame}
@@ -1670,8 +1671,8 @@
 \item We set-up the Lagrangian for the optimization problem to derive the first order conditions.
 \begin{align*}
 & \sum_{t=0}^{\infty} \beta^{t} \Bigg[ \left(\frac{C_{t}(h)^{1 - \sigma^{C}}}{1 - \sigma^{C}} - \sum_{k=1}^{K} \sum_{r=1}^{R} A^{N}_{k,r,t} \, \phi^{L}_{k,r} \frac{N_{k,r,t}(h)^{1+\sigma^{L}}}{1+\sigma^{L}} \right) \\
-& - \lambda_{t}(h) \Big(P_{t} \, C_{t}(h) \, (1+\tau^{C})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N}) \, W_{k,r,t} N_{k,r,t}(h) \\
-& - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K}) \, K_{k,r,t}(h) - S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h) \Big) \\
+& - \lambda_{t}(h) \Big(P_{t} \, C_{t}(h) \, (1+\tau^{C}_{t})+\sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} I_{k,r,t}(h)+B_{t+1}(h) - \sum_{k=1}^{K} \sum_{r=1}^{R} (1 - \tau^{N,H}_{t}) \, W_{k,r,t} N_{k,r,t}(h) \\
+& - \sum_{k=1}^{K} \sum_{r=1}^{R} P_{k,r,t} \, r_{k,r,t} \, (1 - \tau^{K,H}_{t}) \, K_{k,r,t}(h) - S^{f}_{t} \, \phi^{B}_{t} \, (1+r^{f}_{t} )\, B_{t}(h) \Big) \\
 & - \sum_{k=1}^{K} \sum_{r=1}^{R} \lambda_{t}(h) \omega^{I}_{k,r,t}(h) \left\lbrace K_{k,r,t+1} - (1 - \delta - D^K_{k,r,t}) \, K_{k,r,t} - I_{k,r,t} \, \Gamma\left(\frac{I_{k,r,t}}{I_{k,r,t-1}}\right) \right\rbrace\Bigg] .
 \end{align*}
 \end{itemize}
@@ -1684,11 +1685,11 @@
 \begin{itemize}
 \item Marginal utility of consumption
 \begin{align*}
-\lambda_{t} =\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1+\tau^C)}
+\lambda_{t} =\frac{C_{t}(h)^{-\sigma^{C}}}{P_{t}\, (1+\tau^C_t)}
 \end{align*}
 \item Labour supply curve
 \begin{align*}
-\phi^{L}_{k,r} \, A^{N}_{k,r,t} \, N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{N}) \\
+\phi^{L}_{k,r} \, A^{N}_{k,r,t} \, N_{k,r,t}(h)^{\sigma^{L}} = \lambda_{t}(h) \, W_{k,r,t} \, (1 - \tau^{N,H}_t) \\
 \end{align*}
 \end{itemize}
 \end{frame}
@@ -1704,7 +1705,7 @@ model;
         @# for reg in 1:Regions
         ...
         [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
-        (1 - tauN_p)*W_@{sec}_@{reg}*(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p)) = 
+        (1 - tauNH)*W_@{sec}_@{reg}*(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p)) = 
         A_N_@{sec}_@{reg}*phiL_@{sec}_@{reg}_p*(N_@{sec}_@{reg})^(sigmaL_p);
         ...						
         @# endfor // end loop over regions
@@ -1722,7 +1723,7 @@ end;
 \begin{itemize}
 \item Euler equation for capital
 \begin{align*}
-\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} \, (1 - \tau^K)+(1 - \delta - D^{K}_{k,r,t+1}) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
+\lambda_{t+1}(h) \, \beta \, \left(P_{k,r,t+1} \, r_{k,r,t+1} \, (1 - \tau^{K,H}_{t})+(1 - \delta - D^{K}_{k,r,t+1}) \, \omega^{I}_{k,r,t+1} \right) = \lambda_{t}(h) \, \omega^{I}_{k,r,t}.
 \end{align*}
 \item Euler equation for investment
 \begin{align*}
@@ -1765,18 +1766,18 @@ P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gam
 \begin{lstlisting}[frame = single]
 ...
 [name = 'HH FOC capital',mcp = 'K_@{sec}_@{reg}>0']
-(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*beta_p*r_@{sec}_@{reg}(+1)*P_@{sec}_@{reg}(+1)*(1 - tauK_p)
-+ (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*omegaI_@{sec}_@{reg}(+1) 
+(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC(+1)))*beta_p*r_@{sec}_@{reg}(+1)*P_@{sec}_@{reg}(+1)*(1 - tauKH(+1))
++ (C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC(+1)))*omegaI_@{sec}_@{reg}(+1) 
 * beta_p*(1 - delta_p - D_K_@{sec}_@{reg}(+1))
-= omegaI_@{sec}_@{reg}*(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p));
+= omegaI_@{sec}_@{reg}*(C/PoP)^(-sigmaC_p)/(P*(1+tauC));
 
 [name = 'HH FOC investment',mcp = 'I_@{sec}_@{reg} > 0']       
-(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p))*P_@{sec}_@{reg} = 
-(C/PoP)^(-sigmaC_p)/(P*(1+tauC_p))*omegaI_@{sec}_@{reg}*(Gamma_@{sec}_@{reg}+Gammapr_@{sec}_@{reg})
-+ beta_p*(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC_p))*omegaI_@{sec}_@{reg}(+1)*Gammaprp1_@{sec}_@{reg};
+(C/PoP)^(-sigmaC_p)/(P*(1+tauC))*P_@{sec}_@{reg} = 
+(C/PoP)^(-sigmaC_p)/(P*(1+tauC))*omegaI_@{sec}_@{reg}*(Gamma_@{sec}_@{reg}+Gammapr_@{sec}_@{reg})
++ beta_p*(C(+1)/PoP(+1))^(-sigmaC_p)/(P(+1)*(1+tauC(+1)))*omegaI_@{sec}_@{reg}(+1)*Gammaprp1_@{sec}_@{reg};
 				
 [name = 'LOM capital',mcp = 'I_@{sec}_@{reg} > 0']
-
+<@\color{red}{!enter missing equation!}@>
 ...
 \end{lstlisting}
 \end{frame}
@@ -1805,9 +1806,8 @@ P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gam
 \begin{lstlisting}[frame = single]
 ...
 
-
 [name = 'Foreign Assets']
-
+<@\color{red}{!enter missing equation!}@>
 ...
 \end{lstlisting}
 \end{frame}
@@ -1821,7 +1821,7 @@ P_{k,r,t} \, \lambda_{t}(h) = \lambda_{t}(h) \, \omega^{I}_{k,r,t} \, \left(\Gam
 \item We are interested in different policy measures taken by the government to adapt to a new climate regime. 
 \item Government behaviour is not a result of an optimization problem. 
 \begin{align*}
-G_{t}+\sum_{k}^{K} \sum_{r}^{R} \sum_{z}^{Z} G^{A,z}_{k,r,t}+B^G_{t+1} =& \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K}+\tau_{r,k,t}^{K}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}+(\tau^{N}+\tau_{k,r,t}^{N}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \right\rbrace \nonumber \\
+G_{t}+\sum_{k}^{K} \sum_{r}^{R} \sum_{z}^{Z} G^{A,z}_{k,r,t}+B^G_{t+1} =& \tau^C_{t} \, C_t + \sum_{k}^{K} \sum_{r}^{R} \, \left\lbrace (\tau^{K,H}_{t}+\tau_{r,k,t}^{K,F}) \, P_{k,r,t} \, r_{k,r,t} \, K_{k,r,t}+(\tau^{N,H}_{t}+\tau_{k,r,t}^{N,F}) \, W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \right\rbrace \nonumber \\
 &+(1+r^{f}_{t}) \, S^{f}_{t} \phi^{B}_{t} \, B^G_{t}
 \end{align*}
 \end{itemize}
@@ -1836,11 +1836,11 @@ G_{t}+\sum_{k}^{K} \sum_{r}^{R} \sum_{z}^{Z} G^{A,z}_{k,r,t}+B^G_{t+1} =& \sum_{
 [name = 'Government Budget Constraint']
 G+BG
 @# for sec in 1:Sectors
- 
+	<@\color{red}{!enter missing equation!}@>
 @# endfor
-= (1+rf)*Sf*exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y)))*BG (-1)+tauC_p*C
+= (1+rf) * Sf * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * BG (-1)+tauC*C
 @# for sec in 1:Sectors
-    
+	<@\color{red}{!enter missing equation!}@>
 @# endfor
 ;
 
@@ -1865,12 +1865,25 @@ K^{A,z}_{k,r,t+1} = (1 - \delta_{K^{A,z},k,r}) \, K^{A,z}_{k,r,t} + G^{A,z}_{k,r
 \end{align*}
 \item Tax on capital expenditures paid by firms
 \begin{align*}
-\tau^{K}_{k,r,t} = \tau^{K}_{k,r,0} + \eta^{\tau^{K}}_{k,r,t} \nonumber \\
+\tau^{K,F}_{k,r,t} = \tau^{K,F}_{k,r,0} + \eta^{\tau^{K,F}}_{k,r,t} \nonumber \\
 \end{align*}
 \item Tax rate on wage bill paid by firms
 \begin{align*}
-\tau^{N}_{k,r,t} = \tau^{N}_{k,r,0} + \eta^{\tau^{N}}_{k,r,t} \nonumber \\
+\tau^{N,F}_{k,r,t} = \tau^{N,F}_{k,r,0} + \eta^{\tau^{N,F}}_{k,r,t} \nonumber \\
 \end{align*}
+\item Tax on capital income paid by households
+\begin{align*}
+\tau^{K,H}_{t} = \tau^{K,H}_{0} + \eta^{\tau^{K,H}}_{t} \nonumber \\
+\end{align*}
+\item Tax rate on labour income paid by households
+\begin{align*}
+\tau^{N,H}_{t} = \tau^{N,H}_{0} + \eta^{\tau^{N,H}}_{t} \nonumber \\
+\end{align*}
+\item Tax rate on consumption
+\begin{align*}
+\tau^{C}_{t} = \tau^{C}_{0} + \eta^{\tau^{C}}_{t} \nonumber \\
+\end{align*}
+
 \end{itemize}
 \end{frame}
 
@@ -1882,15 +1895,17 @@ K^{A,z}_{k,r,t+1} = (1 - \delta_{K^{A,z},k,r}) \, K^{A,z}_{k,r,t} + G^{A,z}_{k,r
 ...
 @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
  [name = 'sector specific adaptation expenditures by the government against sea level rise']
-
+	<@\color{red}{!enter missing equation!}@>
 
  [name = 'sector specific adaptation capital against sea level rise']
-
+	<@\color{red}{!enter missing equation!}@>
+	
 @# endfor
 [name = 'sector specific corporate tax rate paid by firms']
-
+<@\color{red}{!enter missing equation!}@>
 
 [name = 'sector specific labour tax rate paid by firms']
+<@\color{red}{!enter missing equation!}@>
 
 ...
 \end{lstlisting}
@@ -1921,9 +1936,7 @@ NX_t = B_{t+1} - (1 + r^{f}_{t}) S^{f}_{t} \phi^B_{t} B_{t}
 [name = 'Resource Constraint']
 Y = C + I + G + NX
 @# for sec in 1:Sectors
-
-
-
+<@\color{red}{!enter missing equation!}@>
 @# endfor
 ;
 
@@ -1959,7 +1972,7 @@ Y_{t} &= \left(\sum_{k} {\omega^{Q}_{k}}^{\frac{1}{\eta^Q}} Y_{k,t}^{\frac{\eta^
 \begin{lstlisting}[frame = single]
 ...
 [name = 'demand for sector output']
-
+<@\color{red}{!enter missing equation!}@>
 ...
 \end{lstlisting}
 
@@ -2007,8 +2020,7 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \begin{lstlisting}[frame = single]
 ...
 [name = 'sector aggregate specific output']
-
-
+<@\color{red}{!enter missing equation!}@>
 
 ...
 \end{lstlisting}
@@ -2023,58 +2035,10 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \item They charge a price $P_{k,r,t}$ for their products and have to pay households wages $W_{k,r,t}$, interest on rented capital $P_{r,k,t} \, r_{r,k,t}$, taxes related to the wage bill $\tau^{N}_{r,k,t}$ and on capital expenditure $\tau^{K}_{r,k,t}$.
 \item Representative firms have access to a regional and sector specific constant elasticity of substitution production function.
 \item The productivity of capital and labour of a firm in one sector and region depends on the climate variables, and the adaption measures by the government represented by a damage function affecting total factor productivity $A_{k,r,t}$ by $D_{k,r,t} = D_{k,r}\left(T_{r,t}, \, PREC_{r,t}, \, WS_{r,t}, \, SL_{r,t}, \, CYC_{r,t}, \, DRO_{r,t}, \, G^{A}_{r,k,t} \right)$.
-\item Further, we explicitly differentiate between climate induced damages affecting labour productivity $D_{k,r,t}^N$ and capital depreciation $D_{k,r,t}^K$. 
+\item Further, we explicitly differentiate between climate induced damages affecting labour productivity $D_{N,k,r,t}$ and capital depreciation $D_{K,k,r,t}$. 
 \item As in \cite{nordhaus1993optimal}, we assume a polynomial functional form of the damage functions, but the damages are different across regions and sectors.
 \end{itemize}
 \end{frame}
-
-\subsubsection{Profit Maximization}
-\begin{frame}
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Profit Maximization}
-	\scriptsize
-	\begin{itemize}
-		\item Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital.	
-		\begin{align*}
-		\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \, (1 + \tau^{N}_{k,r,t}) - r_{k,r,t} \, P_{k,r,t} \, K_{k,r,t} \, (1 + \tau^{K}_{k,r,t})\nonumber \\ 
-		\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t}) \, Pop_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
-		\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
-		\end{align*}
-	\end{itemize}
-\end{frame}
-
-\subsubsection{Factor Demand}
-\begin{frame}
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Factor Demand}
-	\scriptsize
-	\begin{itemize}
-		\item Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
-		\begin{align*}
-		\frac{W_{k,r,t}}{P_{k,r,t}}  \, (1 + \tau^{N}_{k,r,t}) = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^N_{k,r,t} \, (1 - D^N_{k,r,t})\right)^{\rho_{k,r}} \left(\frac{Pop_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
-		r_{k,r,t} \, (1 + \tau^{K}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
-		\end{align*}
-		\item We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. 
-		\item The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. 
-		\item Temporary productivity shocks are in our set-up also weather extremes. 
-	\end{itemize}
-\end{frame}
-
-\subsubsection{Implementation of Factor Demand}
-\begin{frame}[fragile]
-	\frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Factor Demand}	
-	\begin{lstlisting}[frame = single]
-	...
-	[name='sector specific output']
-	
-	
-	[name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
-	
-	
-	[name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
-	
-	...
-	\end{lstlisting}
-\end{frame}
-
 
 \subsubsection{Damages on TFP}
 \begin{frame}
@@ -2095,23 +2059,16 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \subsubsection{Implementation of Damages on TFP}
 \begin{frame}[fragile]
 \frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Damages on TFP}
+
 \begin{lstlisting}[frame = single]
 ...
 [name = 'sector specific damage function']
-
+<@\color{red}{!enter missing equation!}@>
 
 
 
 ...
 \end{lstlisting}
-\scriptsize
-\begin{itemize}
-	\item Note: As $D_{k,r,t} \in [0,1]$, an upper bound has to be included in the code
-	\begin{itemize}
-		\scriptsize
-		\item Due to computational constraints, the upper bound is set to 0.7 for $D_{k,r,t}$
-	\end{itemize}
-\end{itemize}
 \end{frame}
 
 \subsubsection{Damages on Labour Productivity}
@@ -2133,6 +2090,7 @@ P_@{sec}_@{reg} = omegaQ_@{sec}_@{reg}_p^(1/etaQ_@{sec}_p)
 \subsubsection{Implementation of Damages on Labour Productivity}
 \begin{frame}[fragile]
 \frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Damages on Labour Productivity}
+
 \begin{lstlisting}[frame = single]
 ...
 [name = 'sector specific damage function on labour productivity']
@@ -2145,10 +2103,6 @@ aN_CY_1_@{sec}_@{reg}_p * CYC_@{reg} + aN_CY_2_@{sec}_@{reg}_p * CYC_@{reg}^(aN_
 );
 ...
 \end{lstlisting}
-\begin{itemize}
-	\scriptsize
-	\item Note: As $D_{k,r,t}^N \in [0,1]$, an upper bound has to be included in the code
-\end{itemize}
 \end{frame}
 
 
@@ -2183,13 +2137,58 @@ aK_CY_1_@{sec}_@{reg}_p*CYC_@{reg}+aK_CY_2_@{sec}_@{reg}_p*CYC_@{reg}^(aK_CY_3_@
 );
 ...
 \end{lstlisting}
-\begin{itemize}
-	\scriptsize
-	\item Note: As $D_{k,r,t}^K \in [0,1]$, an upper bound has to be included in the code
-\end{itemize}
 \end{frame}
 
 
+\subsubsection{Profit Maximization}
+\begin{frame}
+\frametitle{{\thesection.\thesubsection.\thesubsubsection} Profit Maximization}
+\scriptsize
+\begin{itemize}
+\item Firms in each region and sector have access to a constant elasticity of substitution production function with production factors labour and capital.
+
+\begin{align*}
+\underset{Y_{k,r,t}, N_{k,r,t}, K_{k,r,t}}{\mathrm{max}} P_{k,r,t} \, Y_{k,r,t} - W_{k,r,t} \, N_{k,r,t} \, Pop_{t} \, (1 + \tau^{N,F}_{k,r,t}) - r_{k,r,t} \, P_{k,r,t} \, K_{k,r,t} \, (1 + \tau^{K,F}_{k,r,t})\nonumber \\ 
+\mbox{s.t.} \, Y_{k,r,t} = A_{k,r,t} (1 - D_{k,r,t}) \, \left[{\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left( A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t}) \, Pop_{t} \, N_{k,r,t}\right)^{\rho_{k,r}} + {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(K_{k,r,t}\right)^{\rho_{k,r}}\right]^{\frac{1}{\rho_{k,r}}}, \nonumber \\
+\mbox{ where } \rho_{k,r} = \frac{\eta^{NK}_{k} - 1}{\eta^{NK}_{k}}.
+\end{align*}
+\end{itemize}
+\end{frame}
+
+\subsubsection{Factor Demand}
+\begin{frame}
+\frametitle{{\thesection.\thesubsection.\thesubsubsection} Factor Demand}
+\scriptsize
+\begin{itemize}
+\item Demand for production factors are given by the first order condition of the above optimization problem. The Lagrange multiplier is equal to the price charged by companies. 
+\begin{align*}
+\frac{W_{k,r,t}}{P_{k,r,t}}  \, (1 + \tau^{N,F}_{k,r,t}) = {\alpha^{N}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^N_{k,r,t} \, (1 - D^N_{k,r,t})\right)^{\rho_{k,r}} \left(\frac{Pop_{t} N_{k,r,t}}{Y_{k,r,t}}\right)^{-\frac{1}{\eta^{NK}_{k,r}}} \nonumber \\ 
+r_{k,r,t} \, (1 + \tau^{K,F}_{k,r,t}) = {\alpha^{K}_{k,r}}^{\frac{1}{\eta^{NK}_{k,r}}} \, \left(A_{k,r,t} \, (1 - D_{k,r,t})\right)^{\rho_{k,r}}\left(\frac{K_{k,r,t}}{Y_{k,r,t}} \right)^{-\frac{1}{\eta^{NK}_{k,r}}} \\ 
+\end{align*}
+\item We use the more general case of the CES production function rather than the more commonly used Cobb-Douglas production function. 
+\item The parameter $\eta^{NK}_{k,r}$ allows us to control the response of capital and labour demand to temporary productivity shocks. 
+\item Temporary productivity shocks are in our set-up also weather extremes. 
+\end{itemize}
+\end{frame}
+
+\subsubsection{Implementation of Factor Demand}
+\begin{frame}[fragile]
+\frametitle{{\thesection.\thesubsection.\thesubsubsection} Implementation of Factor Demand}
+
+\begin{lstlisting}[frame = single]
+...
+[name='sector specific output']
+<@\color{red}{!enter missing equation!}@>
+
+[name = 'Firms FOC capital',mcp = 'K_@{sec}_@{reg} > 0']
+<@\color{red}{!enter missing equation!}@>
+
+[name = 'Firms FOC labour',mcp = 'N_@{sec}_@{reg} > 0']
+<@\color{red}{!enter missing equation!}@>
+
+...
+\end{lstlisting}
+\end{frame}
 
 
 \subsubsection{Trade with the Rest of the World}
@@ -2217,7 +2216,7 @@ NX_{t} = \rho^{NX} \, NX_{t-1} + (1 - \rho^{NX}) \omega^{NX} P_{t} \, Y_{t} \, e
 NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
 
 [name = 'World interest rate']
-rf = (1/beta_p-1);
+rf = rf0_p + exo_rf;
 ...
 \end{lstlisting}
 \end{frame}
@@ -2340,7 +2339,7 @@ P * I =
 [name = 'aggregate capital']
 P * K = 
 @# for sec in 1:Sectors
- + P_@{sec} * K_@{sec}(-1)
+ + P_@{sec} * K_@{sec}
 @# endfor
 ;
 
@@ -2356,7 +2355,7 @@ N =
 
 \subsubsection{Sectoral Aggregates}
 \begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates (1)}
+\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates}
 \scriptsize
 \begin{itemize}
 \item Sector aggregate investment is given by:
@@ -2367,16 +2366,9 @@ P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
 \begin{align*}
 P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t}
 \end{align*}
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{{\thesection.\thesubsection.\thesubsubsection} Sectoral Aggregates (2)}
-\scriptsize
-\begin{itemize}
 \item Sector aggregate wage bill:
 \begin{align*}
-W_{k,t} \, N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
+W_{k,t} N_{k,t} = \sum_{r}^{R}  W_{k,r,t} N_{k,r,t}
 \end{align*}
 \item Sector aggregate labour input:
 \begin{align*}
@@ -2384,9 +2376,6 @@ N_{k,t} = \sum_{r}^{R} N_{k,r,t}
 \end{align*}
 \end{itemize}
 \end{frame}
-
-
-
 
 \subsubsection{Implementation of Sectoral Aggregates}
 \begin{frame}[fragile]
@@ -2445,7 +2434,7 @@ P_{k,t} \, I_{k,t} = \sum_{r}^{R} P_{k,r,t} \, I_{k,r,t}
 \end{align*}
 \item Sector aggregate capital stock is given by:
 \begin{align*}
-P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t}
+P_{k,t} \, K_{k,t} = \sum_{r}^{R} P_{k,r,t} \, K_{k,r,t-1}
 \end{align*}
 \item Sector aggregate wage bill:
 \begin{align*}

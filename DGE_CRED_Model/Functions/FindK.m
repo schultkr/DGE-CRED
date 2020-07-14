@@ -15,7 +15,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     %   - strys     [structure] see inputs
     %% calculate exogenous variables
     casClimateVariables = {'T', 'WS', 'CYC', 'DRO', 'PREC', 'SL'};
-    strys.rf = 1/strpar.beta_p-1;
+    strys.rf = strpar.rf0_p + strexo.exo_rf;
     for icoreg = 1:strpar.inbregions_p
         sreg = num2str(icoreg);
         strys.(['T_' sreg]) = strpar.(['T0_' sreg '_p']) + strexo.(['exo_T_' sreg]);

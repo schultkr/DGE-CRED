@@ -55,12 +55,12 @@ production function
 % Equation 4
 firms FOC capital
 \begin{dmath}
-{{r_{k,r}}_{t}} \, \left(1+\tau^{K}_{k,r,t}\right)={{\alpha^{K}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left({A_{k,r}}_{t} \, (1 - D_{k,r,t})\right)^{\frac{{{\eta^{N,K}_{k,r}}}-1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{K_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
+{{r_{k,r}}_{t}} \, \left(1+\tau^{K,F}_{k,r,t}\right)={{\alpha^{K}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left({A_{k,r}}_{t} \, (1 - D_{k,r,t})\right)^{\frac{{{\eta^{N,K}_{k,r}}}-1}{{{\eta^{N,K}_{k,r}}}}}\, \left(\frac{{{K_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
 \end{dmath}
 % Equation 5
 firms FOC labour
 \begin{dmath}
-\frac{{{W_{k,r}}_{t}}\left(1+\tau^{N}_{k,r,t}\right)}{{{P_{k,r}}_{t}}}={{\alpha^{N}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t})\right)^{\frac{\eta^{N,K}_{k,r}-1}{\eta^{N,K}_{k,r}}} \, \left(\frac{{Pop_{t}}\, {{N_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
+\frac{{{W_{k,r}}_{t}}\left(1+\tau^{N,F}_{k,r,t}\right)}{{{P_{k,r}}_{t}}}={{\alpha^{N}_{k,r}}}^{\frac{1}{{{\eta^{N,K}_{k,r}}}}}\, \left(A_{k,r,t} \, (1 - D_{k,r,t}) \, A^{N}_{k,r,t} \, (1 - D^{N}_{k,r,t})\right)^{\frac{\eta^{N,K}_{k,r}-1}{\eta^{N,K}_{k,r}}} \, \left(\frac{{Pop_{t}}\, {{N_{k,r}}_{t}}}{{{Y_{k,r}}_{t}}}\right)^{\frac{-1}{{{\eta^{N,K}_{k,r}}}}}
 \end{dmath}
 
 \subsection{Aggregation}
@@ -78,17 +78,17 @@ Y_{k,t}=\left(\sum_{r}^{R}{{\omega^{Q}_{k,r}}}^{\frac{1}{{{\eta^{Q}_{k}}}}}\, {{
 % Equation 6
 households FOC labour
 \begin{dmath}
-\frac{{{W_{k,r}}_{t}}\, \left(1-{{\tau^{N}}}\right)\, \left(\frac{{C_{t}}}{{Pop_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right) \, P_{t}}={{\phi^{L}}}\, {{N_k}_{t}}^{{{\sigma^{L}}}}
+\frac{{{W_{k,r}}_{t}}\, \left(1-{{\tau^{N}}}\right)\, \left(\frac{{C_{t}}}{{Pop_{t}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}_{t}}}\right) \, P_{t}}={{\phi^{L}}}\, {{N_k}_{t}}^{{{\sigma^{L}}}}
 \end{dmath}
 % Equation 7
 households FOC capital
 \begin{dmath}
-\frac{\left(\frac{{P_{t+1}}\, {C_{t+1}}}{{Pop_{t+1}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right) \, P_{t+1}}\, {{\beta}}\, {{P_{k,r}}_{t+1}}\, {{r_{k,r}}_{t+1}}\, \left(1-{{\tau^{K}}}\right)+{{\beta}}\, {{\omega^I_{k,r}}_{t+1}}\, \left(1-{{\delta}} - D^{K}_{k,r,t+1}\right)={{\omega^I_{k,r}}_{t}}
+\frac{\left(\frac{{P_{t+1}}\, {C_{t+1}}}{{Pop_{t+1}}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}_{t}}}\right) \, P_{t+1}}\, {{\beta}}\, {{P_{k,r}}_{t+1}}\, {{r_{k,r}}_{t+1}}\, \left(1-{{\tau^{K}}}\right)+{{\beta}}\, {{\omega^I_{k,r}}_{t+1}}\, \left(1-{{\delta}} - D^{K}_{k,r,t+1}\right)={{\omega^I_{k,r}}_{t}}
 \end{dmath}
 % Equation 8
 households FOC investment
 \begin{dmath}
-P_{k,r,t}\, \frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}={{\omega^I_{k,r}}}_{t} \, \frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}\, \left(\Gamma\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) - \Gamma'\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \, \left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \right) + {{\omega^I_{k,r}}}_{t+1}\, \frac{\left(\frac{{C}_{t+1}}{{Pop}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}\, {{\beta}}}{\left(1+{{\tau^{C}}}\right)\, {P}_{t+1}} \, \Gamma'\left(\frac{{{I_{k,r}}}_{t+1}}{{{I_{k,r}}}_{t}}\right) \, \frac{{{I_{k,r}}}_{t+1}^{2}}{{{I_{k,r}}}_{t}^{2}}
+P_{k,r,t}\, \frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}_{t}}}\right)}={{\omega^I_{k,r}}}_{t} \, \frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}_{t}}}\right)}\, \left(\Gamma\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) - \Gamma'\left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \, \left(\frac{{{I_{k,r}}}_{t}}{{{I_{k,r}}}_{t-1}}\right) \right) + {{\omega^I_{k,r}}}_{t+1}\, \frac{\left(\frac{{C}_{t+1}}{{Pop}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}\, {{\beta}}}{\left(1+{{\tau^{C}_{t}}}\right)\, {P}_{t+1}} \, \Gamma'\left(\frac{{{I_{k,r}}}_{t+1}}{{{I_{k,r}}}_{t}}\right) \, \frac{{{I_{k,r}}}_{t+1}^{2}}{{{I_{k,r}}}_{t}^{2}}
 \end{dmath}
 % Equation 8
 households LOM capital
@@ -97,7 +97,7 @@ households LOM capital
 \end{dmath}
 households FOC foreign bonds
 \begin{dmath}
-\frac{\left(\frac{{C}_{t+1}}{{Pop}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}}}\right)\, {P}_{t+1}}\, {{\beta}}\, {S^{f}}_{t+1}\, \exp\left(-\phi^{B}\, \left(\frac{{B}_{t+1}\, {S^{f}}_{t+1}\, {{r^{f}}}_{t+1}}{{Y}_{t+1}}+\frac{{NX}_{t+1}}{{Y}_{t+1}}\right)\right)\, \left(1+{{r^{f}}}_{t+1}\right)=\frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}}}\right)}
+\frac{\left(\frac{{C}_{t+1}}{{Pop}_{t+1}}\right)^{\left(-{{\sigma^{C}}}\right)}}{\left(1+{{\tau^{C}_{t}}}\right)\, {P}_{t+1}}\, {{\beta}}\, {S^{f}}_{t+1}\, \exp\left(-\phi^{B}\, \left(\frac{{B}_{t+1}\, {S^{f}}_{t+1}\, {{r^{f}}}_{t+1}}{{Y}_{t+1}}+\frac{{NX}_{t+1}}{{Y}_{t+1}}\right)\right)\, \left(1+{{r^{f}}}_{t+1}\right)=\frac{\left(\frac{{C}_{t}}{{Pop}_{t}}\right)^{\left(-{{\sigma^{C}}}\right)}}{{P}_{t}\, \left(1+{{\tau^{C}_{t}}}\right)}
 \end{dmath}
 
 \subsection{Climate Variables}
@@ -137,26 +137,35 @@ net exports
 \end{dmath}
 foreign interest rates
 \begin{dmath}
-r^{f}_{t} = \bar{r}^{f}
+r^{f}_{t} = r^{f}_{0} + \eta^{r^{f}}_t
 \end{dmath}
 
 \subsection{Government}
 budget constraint with adaptation measures for climate variables $z \in \{T,\, SL,\, WS,\, PREC,\, CYC,\, DRO\}$
 \begin{dmath}
-{P_{t}}\, {G_{t}} + \sum_{r}^{R} \sum_{k}^{K} {P_{t}} \, \sum_{z} G^{A,z}_{k,r,t} + {P_{t}}\, {B^{G}_{t+1}}={P_{t}} \, {S^{f}_{t}} \, \left(1+{{r^{f}}_{t}}\right)\, {B^{G}_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}}}+\sum_{k}^{K} \sum_{r}^{R} \, N_{k,r,t} \, W_{k,r,t} \, \left({\tau^{N} + \tau^{N}_{k,r,t}}\right)+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, \left(\tau^{K} + \tau^{K}_{k,r,t}\right)
+{P_{t}}\, {G_{t}} + \sum_{r}^{R} \sum_{k}^{K} {P_{t}} \, \sum_{z} G^{A,z}_{k,r,t} + {P_{t}}\, {B^{G}_{t+1}}={P_{t}} \, {S^{f}_{t}} \, \left(1+{{r^{f}}_{t}}\right)\, {B^{G}_{t}}+{C_{t}}\, {P_{t}}\, {{\tau^{C}_{t}}}+\sum_{k}^{K} \sum_{r}^{R} \, N_{k,r,t} \, W_{k,r,t} \, \left({\tau^{N,H}_{t} + \tau^{N,F}_{k,r,t}}\right)+{{K_{k,r}}_{t}}\, {{r_{k,r}}_{t}}\, {{P_{k,r}}_{t}}\, \left(\tau^{K,H}_{t} + \tau^{K,F}_{k,r,t}\right)
 \end{dmath}
 government foreign debt
 \begin{dmath}
 {B^{G}_{t}}={{\eta_{B^{G}}}_{t}}
 \end{dmath}
-tax rates on capital expenditure
+tax rates on capital expenditure firms
 \begin{dmath}
-\tau^{K}_{k,r,t} = \tau^{K}_{k,r,0} + \eta^{\tau^{K}}_{k,r,t}
+\tau^{K,F}_{k,r,t} = \tau^{K,F}_{k,r,0} + \eta^{\tau^{K,F}}_{k,r,t}
 \end{dmath}
-tax rates on labour compensation
+tax rates on labour compensation firms
 \begin{dmath}
-\tau^{N}_{k,r,t} = \tau^{N}_{k,r,0} + \eta^{\tau^{N}}_{k,r,t}
+\tau^{N,F}_{k,r,t} = \tau^{N,F}_{k,r,0} + \eta^{\tau^{N,F}}_{k,r,t}
 \end{dmath}
+tax rates on capital expenditure households
+\begin{dmath}
+\tau^{K,H}_{k,t} = \tau^{K,H}_{r,0} + \eta^{\tau^{K,H}}_{r,t}
+\end{dmath}
+tax rates on labour compensation households
+\begin{dmath}
+\tau^{N,H}_{r,t} = \tau^{N,H}_{r,0} + \eta^{\tau^{N,H}}_{r,t}
+\end{dmath}
+
 
 
 \subsection{Aggregates}
