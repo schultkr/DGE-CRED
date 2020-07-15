@@ -80,7 +80,7 @@ exo_rf ${\eta_{r^f}}$ (long_name = 'exogenous world interest rate')
         exo_@{sec}_@{reg} ${\eta_{A,k,n}}$ (long_name = 'exogenus TFP')
         exo_N_@{sec}_@{reg} ${\eta_{A^{N},k,n}}$ (long_name = 'exogenous labour specific TFP')
         exo_K_@{sec}_@{reg} ${\eta_{A^{K},k,n}}$ (long_name = 'exogenous capital specific TFP')
-        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+        @# for z in ClimateVars
             exo_GA_@{z}_@{sec}_@{reg} ${\eta_{G^{A,@{z}},k,n}}$ (long_name = 'exogenous sector adaptation expenditure against @{z}')
         @# endfor
 
@@ -122,7 +122,7 @@ parameters
         alphaN_@{sec}_@{reg}_p ${\alpha^{N}_{k,n}}$ (long_name = 'distribution parameter labour share')
         etaNK_@{sec}_@{reg}_p ${\eta^{N,K}_{k,n}}$ (long_name = 'elasticity of substitution between labour and capital')
         A_@{sec}_@{reg}_p ${A_{k,n}}$ (long_name = 'sector long-run TFP')
-        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+        @# for z in ClimateVars
             phiGA@{z}_@{sec}_@{reg}_p ${\phi^{G^{A,@{z}}}_{k,n}}$ (long_name = 'coefficient of effectiveness of government expenditure on adaptation measures in a specific region and sector @{z}')
             deltaKA@{z}_@{sec}_@{reg}_p ${\delta^{K^{A,@{z}}_{k,n}}$ (long_name = 'depreciation rate of adaptation capital stock against @{z}')
         @# endfor
@@ -132,7 +132,7 @@ parameters
         A_N_@{sec}_@{reg}_p ${A^{N}_{k,n}}$ (long_name = 'sector labour specific TFP')
         A_K_@{sec}_@{reg}_p ${A^{K}_{k,n}}$ (long_name = 'sector capital specific TFP')
         // coefficients for damage functions to TFP
-        @# for z in ["T", "WS", "PREC", "SL", "CYC", "DRO"]
+        @# for z in ClimateVars
             // TFP
             a_@{z}_1_@{sec}_@{reg}_p ${a_{1,k,n}}$ (long_name = 'intercept of TFP damage function @{z}')
             a_@{z}_2_@{sec}_@{reg}_p ${a_{2,k,n}}$ (long_name = 'slope of TFP damage function @{z}')

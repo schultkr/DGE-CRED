@@ -14,15 +14,14 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     %                        FOC of Households with respect to regional labour
     %   - strys     [structure] see inputs
     %% calculate exogenous variables
-    casClimateVariables = {'T', 'WS', 'CYC', 'DRO', 'PREC', 'SL'};
     strys.rf = strpar.rf0_p + strexo.exo_rf;
     for icoreg = 1:strpar.inbregions_p
         sreg = num2str(icoreg);
-        strys.(['T_' sreg]) = strpar.(['T0_' sreg '_p']) + strexo.(['exo_T_' sreg]);
-        strys.(['WS_' sreg]) = strpar.(['WS0_' sreg '_p']) + strexo.(['exo_WS_' sreg]);
-        strys.(['PREC_' sreg]) = strpar.(['PREC0_' sreg '_p']) + strexo.(['exo_PREC_' sreg]);
-		strys.(['CYC_' sreg]) = strpar.(['CYC0_' sreg '_p']) + strexo.(['exo_CYC_' sreg]);
-		strys.(['DRO_' sreg]) = strpar.(['DRO0_' sreg '_p']) + strexo.(['exo_DRO_' sreg]);
+        for sClimateVar = strpar.casClimatevars
+            if ~isequal(char(sClimateVar), 'SL')
+                strys.([char(sClimateVar) '_' sreg]) = strpar.([char(sClimateVar) '0_' sreg '_p']) + strexo.(['exo_' char(sClimateVar) '_' sreg]);
+            end
+        end
     end
     strys.Sf = 1;
     strys.SL = strpar.SL0_p + strexo.exo_SL;
@@ -209,7 +208,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
             strys.adaptationcost = strys.adaptationcost + strys.(['G_A_SL_' ssec '_' sreg]) + strys.(['G_A_T_' ssec '_' sreg]) + strys.(['G_A_WS_' ssec '_' sreg]) + strys.(['G_A_PREC_' ssec '_' sreg]) + strys.(['G_A_DRO_' ssec '_' sreg]) + strys.(['G_A_CYC_' ssec '_' sreg]);
         end
     end
-    strys.NX = strpar.omegaNX_p * strys.Y * strys.P * exp(strexo.exo_NX);
+    strys.NX = strpar.omegaNX_p * strys.Y * strys.P  + strexo.exo_NX;
     strys.B = -strys.NX/strys.rf;
     strys.BG = strexo.exo_BG;
     strys.lambrf = 1;

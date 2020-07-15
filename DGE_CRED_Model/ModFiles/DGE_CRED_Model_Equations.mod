@@ -1,7 +1,7 @@
 % ===============================
 % === Declare Model Equations ===
 % ===============================
-model(bytecode);
+model;
 @# for sec in 1:Sectors
     @# for reg in 1:Regions
         [name = 'sector specific TFP growth rate']
@@ -174,7 +174,7 @@ Y = C + I + G + NX
 NX = (B - (1 + rf) * exp(-phiB_p*((Sf*rf*B(-1)/Y+NX/Y))) * Sf * B(-1));
 
 [name = 'LOM Net Exports']
-NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * exp(exo_NX) * omegaNX_p * Y * P;
+NX = rhoNX_p * NX(-1) + (1 - rhoNX_p) * omegaNX_p * Y * P + exo_NX;
 
 [name = 'World interest rate']
 rf = rf0_p + exo_rf;
