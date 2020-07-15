@@ -5,7 +5,7 @@
 addpath('C:\dynare\4.6.1\matlab')
 % specify scenario names
 % casScenarioNames = {'Baseline', 'Temperature', 'SeaLevel', 'Adaptation', 'Extremes'};
-casScenarioNames = {'Extremes'};
+casScenarioNames = {'Baseline', 'RCP_45_Average'};
 % execute dynare to run the model
 dynare DGE_CRED_Model noclearall
 close all;
