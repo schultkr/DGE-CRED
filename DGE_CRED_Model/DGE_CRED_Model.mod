@@ -16,8 +16,8 @@
 % ============================================
 % === Define number of sectors and regions ===
 % ============================================
-@# define Sectors = 3
-@# define Regions = 3
+@# define Sectors = 9
+@# define Regions = 6
 @# define ClimateVars = ["T", "WS", "PREC", "SL", "CYC", "DRO"]
 % ==============================
 % === Define number of steps ===

@@ -18,6 +18,6 @@ function g2 = static_g2(T, y, x, params, T_flag)
 if T_flag
     T = DGE_CRED_Model.static_g2_tt(T, y, x, params);
 end
-g2 = sparse([],[],[],312,97344);
+g2 = sparse([],[],[],1668,2782224);
 
 end
