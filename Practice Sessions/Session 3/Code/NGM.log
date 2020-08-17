@@ -1,0 +1,63 @@
+Starting preprocessing of the model file ...
+Found 3 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 1).
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c 		 5.93625
+k 		 47.3903
+D 		 0
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.9328           0.9328                0
+           1.129            1.129                0
+             Inf             -Inf                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+STEADY-STATE RESULTS:
+
+c 		 4.80799
+k 		 38.3831
+D 		 0.100036
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+          0.9328           0.9328                0
+           1.129            1.129                0
+             Inf             -Inf                0
+
+
+There are 2 eigenvalue(s) larger than 1 in modulus 
+for 2 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 9.4468,	 time = 0.25798
+Iter: 2,	 err. = 0.0344448,	 time = 0.267845
+Iter: 3,	 err. = 3.20801e-05,	 time = 0.251862
+Iter: 4,	 err. = 1.21639e-09,	 time = 0.198898
+
+Total time of simulation: 1.01008.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Total computing time : 0h00m07s
