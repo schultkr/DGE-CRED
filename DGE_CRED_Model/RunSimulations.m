@@ -3,18 +3,24 @@
 % Regions>Regions.xlsx  workbook. The DGE_CRED_Model.mod file is changed 
 % in the script.
 
-addpath('C:\dynare\4.6.3\matlab')
+addpath('C:\dynare\4.6.4\matlab')
 %% Specify scenario names
 casScenarioNames = {...
-                     'Baseline', 'SSP585_AFD',...
+                     'Baseline', 'SSP126', 'SSP585',...
+                     'SSP126_AdaptForestry', 'SSP126_AdaptTransport', 'SSP126_AdaptConstruction',...
+                     'SSP585_AdaptForestry', 'SSP585_AdaptTransport', 'SSP126_AdaptConstruction'...
                      };
-
+casScenarioNames = {...
+                     'SSP585_AdaptTransport', 'SSP126_AdaptConstruction',...
+                     };
+                 
+                 
 %% Define sector strucutre
 sSubsecstart = '[1, 7, 9, 10, 11]';                 
 sSubsecend =   '[6, 8, 9, 10, 12]';
 
 %% Define number of regions
-sRegions = '1';
+sRegions = '6';
 
 %% Define additonal specification ofthe version of the modle for sensitivity analysis.
 sSensitivity = '';

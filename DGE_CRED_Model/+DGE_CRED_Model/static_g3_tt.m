@@ -13,7 +13,7 @@ function T = static_g3_tt(T, y, x, params)
 %   T         [#temp variables by 1]  double   vector of temporary terms
 %
 
-assert(length(T) >= 605);
+assert(length(T) >= 2891);
 
 T = DGE_CRED_Model.static_g2_tt(T, y, x, params);
 
