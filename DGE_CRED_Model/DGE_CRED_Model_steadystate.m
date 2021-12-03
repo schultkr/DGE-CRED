@@ -1,20 +1,27 @@
-function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
-% function [ys,check] = IWH_CRED_Model_steadystate(ys,exo)
+function [ys,params,check,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
+% function [ys,params,check,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options)
 % computes the steady state for the IWH_CRED_Model.mod and uses a numerical
 % solver to do so
 % Inputs: 
 %   - ys        [vector] vector of initial values for the steady state of
 %                   the endogenous variables
 %   - exo       [vector] vector of values for the exogenous variables
+%   - M_        [structure] dynare model structure
+%   - options_  [structure] dynare model options structure
+%
 %
 % Output: 
 %   - ys        [vector] vector of steady state values for the the endogenous variables
-%   - check     [scalar] set to 0 if steady state computation worked and to
-%                    1 if not (allows to impose restriction on parameters)
-    check = 0;
+%   - params    [vector] vector of parameter values of the model
+%   - exo       [vector] vector of exogenous variables of the model
+
+    check = false;
+    options_ = options_;%#ok
     % read out parameters to access them with their name
     NumberOfParameters = M_.param_nbr;
-    strpar.casClimatevars = strsplit(strrep(strrep(M_.ClimateVars,'[','' ), ']', ''), ', ');
+    strpar.casClimatevarsNational = strsplit(strrep(strrep(M_.ClimateVarsNational,'[','' ), ']', ''), ', ');
+    strpar.casClimatevarsRegional = strsplit(strrep(strrep(M_.ClimateVarsRegional,'[','' ), ']', ''), ', ');
+    strpar.casClimatevars = [strpar.casClimatevarsNational strpar.casClimatevarsRegional];
     strpar.Init = nan;
     for ii = 1:NumberOfParameters
       paramname = char(M_.param_names(ii,:));
@@ -37,108 +44,150 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
       exoname = char(M_.exo_names(ii,:));
       strexo.(exoname) = exo(ii);
     end
-    if strpar.lCalibration_p == 0 || strpar.lCalibration_p == 3
+    if strpar.lCalibration_p == 0
         %% find steady state
         if isoctave()
-            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'Updating', 'on');  
+            options = optimset('Display', 'off', 'TolFun', 1e-16, 'TolX', 1e-12, 'Updating', 'on');  
         else
-            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
+            options = optimset('Display', 'iter', 'TolFun', 1e-16, 'TolX', 1e-12, 'MaxFunEval', 100000);
         end
-        if strpar.phiG_p > 0
-            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p+1,1);
-        else
-            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
-        end
-        
+        sMaxsec = num2str(strpar.inbsectors_p);
+        xstart_vec_1 = nan(strpar.(['subend_' sMaxsec '_p'])*strpar.inbregions_p,1);
+        xstart_vec_2 = nan(strpar.(['subend_' sMaxsec '_p'])*strpar.inbregions_p,1);
+        xstart_vec_3 = nan(strpar.(['subend_' sMaxsec '_p']),1);
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);
-            for icoreg = 1:strpar.inbregions_p
-                sreg = num2str(icoreg);
-                icovec = icoreg + (icosec-1)*strpar.inbregions_p;
-                xstart_vec(icovec) = strys.(['K_' ssec '_' sreg]);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
+                xstart_vec_3(icosubsec) = strys.(['X_' ssubsec]);
+                for icoreg = 1:strpar.inbregions_p
+                    sreg = num2str(icoreg);
+                    icovec = icoreg + (icosubsec-1)*strpar.inbregions_p;
+                    xstart_vec_1(icovec) = strys.(['K_' ssubsec '_' sreg]);                
+                    xstart_vec_2(icovec) = strys.(['Q_I_' ssubsec '_' sreg]);
+                end
             end
         end
         if strpar.phiG_p > 0
-            xstart_vec(end) = strys.G;
+            xstart_vec = [xstart_vec_1(:); xstart_vec_2; xstart_vec_3; strys.M; strys.G];
+        else
+            xstart_vec = [xstart_vec_1(:); xstart_vec_2; xstart_vec_3; strys.M];
+        end
+        if strpar.lEndogenousY_p == 0
+            xstart_vec = [xstart_vec; strys.P_M];
         end
         FindKtemp = @(x)FindK(x,strys,strexo,strpar);
-        [Fval_vec, strys,strexo] = FindK(xstart_vec, strys, strexo, strpar);
+        [Fval_vec, strys, strexo] = FindK(xstart_vec, strys, strexo, strpar);
         if max(abs(Fval_vec(:)))>1e-8
             [xopt, ~, ~, ~, ~] = fsolve(FindKtemp, xstart_vec, options);%, strys, strexo, strpar);
             [~, strys,strexo] = FindK(real(xopt), strys, strexo, strpar);
         end
     elseif strpar.lCalibration_p == 2
         if isoctave()
-            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'Updating', 'on');  
+            options = optimset('Display', 'off', 'TolFun', 1e-16, 'TolX', 1e-12, 'Updating', 'on');  
         else
-            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 100000);
+            options = optimset('Display', 'iter', 'TolFun', 1e-16, 'TolX', 1e-12, 'MaxFunEval', 100000);
+        end
+        sMaxsec = num2str(strpar.inbsectors_p);
+        xstart_vec_1 = nan(strpar.(['subend_' sMaxsec '_p'])*strpar.inbregions_p,1);
+        xstart_vec_2 = nan(strpar.(['subend_' sMaxsec '_p'])*strpar.inbregions_p,1);
+        xstart_vec_3 = nan(strpar.(['subend_' sMaxsec '_p']),1);
+        for icosec = 1:strpar.inbsectors_p
+            ssec = num2str(icosec);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
+                xstart_vec_3(icosubsec) = strys.(['D_X_' ssubsec]);
+                for icoreg = 1:strpar.inbregions_p
+                    sreg = num2str(icoreg);
+                    icovec = icoreg + (icosubsec-1)*strpar.inbregions_p;
+                    if strpar.(['etaNK_' ssubsec '_' sreg '_p']) ~= 1
+                        xstart_vec_1(icovec) = strys.(['K_' ssubsec '_' sreg])/strys.(['Y_' ssubsec '_' sreg]);
+                    else                        
+                        xstart_vec_1(icovec) = strys.(['A_N_' ssubsec '_' sreg]);%A
+                    end
+                    xstart_vec_2(icovec) = strys.(['Q_I_' ssubsec '_' sreg])*strys.P / (strys.(['Y_' ssubsec '_' sreg]) * strys.(['P_' ssubsec '_' sreg]));
+                end
+            end
         end
         if strpar.phiG_p > 0
-            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p+1,1);
+            xstart_vec = [xstart_vec_1(:); xstart_vec_2(:); xstart_vec_3(:); strys.M/strys.Y; strys.G];
         else
-            xstart_vec = nan(strpar.inbsectors_p*strpar.inbregions_p,1);
+            xstart_vec = [xstart_vec_1(:); xstart_vec_2(:); xstart_vec_3(:); strys.M/strys.Y];
+        end
+        if strpar.lEndogenousY_p == 0
+            xstart_vec = [xstart_vec; strys.P_M];
+        end
+        %% evaluate residuals of HH FOC w.r.t. labour in each region and sector
+        strpar.YT_p = 0;
+        strpar.NT_p = 0;
+        for icosec = 1:strpar.inbsectors_p
+            ssec = num2str(icosec);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
+                for icoreg = 1:strpar.inbregions_p
+                    sreg = num2str(icoreg);
+                    strpar.YT_p = strpar.YT_p + strpar.(['phiY0_' ssubsec '_' sreg '_p']) .*  exp(strexo.(['exo_' ssubsec '_' sreg])) .* strpar.Y0_p ./ strpar.P0_p;
+                    strpar.NT_p = strpar.NT_p + strpar.(['phiN0_' ssubsec '_' sreg '_p']) .*  exp(strexo.(['exo_N_' ssubsec '_' sreg])) .* strpar.N0_p;
+                end
+            end
         end
         for icosec = 1:strpar.inbsectors_p
             ssec = num2str(icosec);
-            for icoreg = 1:strpar.inbregions_p
-                sreg = num2str(icoreg);
-                icovec = icoreg + (icosec-1)*strpar.inbregions_p;
-                xstart_vec(icovec) = strys.(['K_' ssec '_' sreg])/strys.(['Y_' ssec '_' sreg]);
-            end
-        end
-        if strpar.phiG_p > 0
-            xstart_vec(end) = strys.G / strys.Y;
-        end
-        % evaluate residuals of HH FOC w.r.t. labour in each region and sector
-        iStep = options_.iStepSteadyState;
-        YTtemp_p = strpar.YT_p;
-        NTtemp_p = strpar.NT_p;
-        for icostep = 1:iStep
-            disp(['Step ' num2str(icostep) ' of ' num2str(iStep) ' to find terminal condition'])
-            for icosec = 1:strpar.inbsectors_p
-                ssec = num2str(icosec);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
                 for icoreg = 1:strpar.inbregions_p
                     sreg = num2str(icoreg);
-                    strpar.YT_p = icostep./iStep .* YTtemp_p + (iStep-icostep)./iStep .* strpar.Y0_p;
-                    strpar.NT_p = icostep./iStep .* NTtemp_p + (iStep-icostep)./iStep .* strpar.N0_p;
-                    strpar.(['phiY_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiY0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiYT_' ssec '_' sreg '_p']);
-                    strpar.(['phiN_' ssec '_' sreg '_p']) = (iStep-icostep)./iStep .* strpar.(['phiN0_' ssec '_' sreg '_p']) + icostep./iStep .* strpar.(['phiNT_' ssec '_' sreg '_p']);
+                    strpar.(['phiY_' ssubsec '_' sreg '_p']) = (strpar.(['phiY0_' ssubsec '_' sreg '_p']) .*  exp(strexo.(['exo_' ssubsec '_' sreg ])) .* strpar.Y0_p ./ strpar.P0_p) / strpar.YT_p;
+                    strpar.(['phiN_' ssubsec '_' sreg '_p']) = (strpar.(['phiN0_' ssubsec '_' sreg '_p']) .*  exp(strexo.(['exo_N_' ssubsec '_' sreg])) .* strpar.N0_p) ./ strpar.NT_p;
                 end
             end
-            FindKtemp = @(x)FindK(x,strys,strexo,strpar);
-            [Fval_vec, strys,strexo] = FindK(xstart_vec, strys, strexo, strpar);
-            if max(abs(Fval_vec(:)))>1e-8
-                [xopt, Fval_vec, ~, ~, ~] = fsolve(FindKtemp, xstart_vec, options);%, strys, strexo, strpar);
-                [~, strys,strexo] = FindK(real(xopt), strys, strexo, strpar);
-                xstart_vec = xopt;
-            end 
-            disp(['Maximum absolute residual ' num2str(max(abs(Fval_vec)))])          
-            errortemp = 0;
-            for icosec = 1:strpar.inbsectors_p
-                ssec = num2str(icosec);
+        end        
+        FindKtemp = @(x)FindK(x,strys,strexo,strpar);
+        [Fval_vec, strys, strexo] = FindK(xstart_vec, strys, strexo, strpar);
+        if max(abs(Fval_vec(:)))>1e-8
+           [xopt, Fval_vec, ~, ~, ~] = fsolve(FindKtemp, xstart_vec, options);%, strys, strexo, strpar);
+           [~, strys, strexo] = FindK(real(xopt), strys, strexo, strpar);
+        end 
+        strpar.PT_p = strys.P;
+        disp(['Maximum absolute residual ' num2str(max(abs(Fval_vec)))])          
+        errortemp = 0;
+        for icosec = 1:strpar.inbsectors_p
+            ssec = num2str(icosec);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
                 for icoreg = 1:strpar.inbregions_p
                     sreg = num2str(icoreg);
-                    wtemp = strys.(['W_' ssec '_' sreg]) * (1 + strys.(['tauNF_' ssec '_' sreg])) / strys.(['P_' ssec '_' sreg]);
-                    rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauKF_' ssec '_' sreg]));
-                    errortemp = max(abs(strys.(['Y_' ssec '_' sreg]) - (wtemp * strys.PoP * strys.(['N_' ssec '_' sreg]) + rkgross * strys.(['K_' ssec '_' sreg]))), errortemp);
+                    wtemp = strys.(['W_' ssubsec '_' sreg]) * (1 + strys.(['tauNF_' ssubsec '_' sreg])) / strys.(['P_' ssubsec '_' sreg]);
+                    rkgross = strys.(['r_' ssec '_' sreg]) * (1 + strys.(['tauKF_' ssubsec '_' sreg]));
+                    errortemp = max(abs(strys.(['Y_' ssubsec '_' sreg]) - (wtemp * strys.PoP * strys.(['N_' ssubsec '_' sreg]) + rkgross * strys.(['K_' ssubsec '_' sreg]))), errortemp);
                 end
             end
-            disp(['Maximum profit error ' num2str(max(abs(errortemp)))])
-            
         end
-    else
+        disp(['Maximum profit error ' num2str(max(abs(errortemp)))])
+    else 
         % calibrate model
         if isoctave()
             options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20);  
         else
-            options = optimset('Display', 'iter', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
+            options = optimset('Display', 'off', 'TolFun', 1e-20, 'TolX', 1e-20, 'MaxFunEval', 10000);
         end
+        
+        for icosec = 1:strpar.inbsectors_p
+            ssec = num2str(icosec);
+            for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+                ssubsec = num2str(icosubsec);
+                for icoreg = 1:strpar.inbregions_p
+                    sreg = num2str(icoreg);
+                    strpar.(['phiY_' ssubsec '_' sreg '_p']) = strpar.(['phiY0_' ssubsec '_' sreg '_p']);
+                    strpar.(['phiN_' ssubsec '_' sreg '_p']) = strpar.(['phiN0_' ssubsec '_' sreg '_p']);
+                end
+            end
+        end 
         
         Calibrationtemp = @(x)Calibration(x,strys,strexo,strpar);
         xstart_vec = 1;
         [xopt, Feval, Info, outtemp, fjac] = fsolve(Calibrationtemp, xstart_vec, options);%#ok
         [~, strpar,strys] = Calibration(xopt, strys, strexo, strpar);
-        
         errorvatemp = 0;
         errorwagetemp = 0;        
         for icosec = 1:strpar.inbsectors_p
@@ -171,5 +220,4 @@ function [ys,params,exo] = DGE_CRED_Model_steadystate(ys,exo,M_,options_)
       varname = char(M_.exo_names(ii,:));
       exo(ii) = strexo.(varname);
     end
-    
 end

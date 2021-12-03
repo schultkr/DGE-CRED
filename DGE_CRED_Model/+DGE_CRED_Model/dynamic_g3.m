@@ -22,6 +22,6 @@ function g3 = dynamic_g3(T, y, x, params, steady_state, it_, T_flag)
 if T_flag
     T = DGE_CRED_Model.dynamic_g3_tt(T, y, x, params, steady_state, it_);
 end
-g3 = sparse([],[],[],1668,-2019939512);
+g3 = sparse([],[],[],1680,1918526033);
 
 end
