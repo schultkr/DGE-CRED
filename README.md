@@ -14,7 +14,7 @@ To use the model just download the repository and follow the instructions provid
 
 The model can be used to simulate different climate change scenarios. Therefore one first defines a Baseline scenario and various climate change scenarios. 
 
-![](pictures/SimulationGVA_example.jpg)
+![](pictures/ssp585C.jpg)
 
 _For more examples on using dynare, please refer to the website of [Dynare](https://www.dynare.org/)._
 
