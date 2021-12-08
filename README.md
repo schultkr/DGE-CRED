@@ -21,7 +21,7 @@ _For more examples on using dynare, please refer to the website of [Dynare](http
 ## Release History
 
 * 0.0.1
-    * Work in progress
+  1.0.0
 
 ## Contact
 
