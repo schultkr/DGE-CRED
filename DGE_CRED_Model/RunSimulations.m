@@ -30,7 +30,7 @@ sSensitivity = '';
 
 %% Execute dynare to run the model
 addpath([pwd() '/Functions'])
-addpath([pwd() '/Functions/Miscallenous'])
+addpath([pwd() '/Functions/Miscellaneous'])
 addpath([pwd() '/Functions/Auxiliary'])
 if isoctave()
     error('Octave is currently not supported please use Matlab 2019 or above')
