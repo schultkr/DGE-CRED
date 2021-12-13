@@ -1,0 +1,21 @@
+Starting preprocessing of the model file ...
+Found 440 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('readtable', 'C:\Program Files\MATLAB\R2020b\toolbox\matlab\iofun\readtable.m', 245)" style="font-weight:bold">readtable</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2020b\toolbox\matlab\iofun\readtable.m',245,0)">line 245</a>)
+Unable to find or open 'ExcelFiles/ModelSimulationandCalibration12Sectorsand1Regions.xlsx'.
+Check the path and filename or file permissions.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DGE_CRED_Model.driver', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Practical Sessions\Training 2021\Session 1\DGE_CRED_Model\+DGE_CRED_Model\driver.m', 7539)" style="font-weight:bold">DGE_CRED_Model.driver</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Practical Sessions\Training 2021\Session 1\DGE_CRED_Model\+DGE_CRED_Model\driver.m',7539,0)">line 7539</a>)
+TempValues = readtable(sWorkbookNameInput, 'Sheet', 'Start','Range','A:C');
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\4.6.3\matlab\dynare.m', 293)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\4.6.3\matlab\dynare.m',293,0)">line 293</a>)
+evalin('base',[fname '.driver']) ;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('RunSimulations', 'G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Practical Sessions\Training 2021\Session 1\DGE_CRED_Model\RunSimulations.m', 30)" style="font-weight:bold">RunSimulations</a> (<a href="matlab: opentoline('G:\VWGR\Gemeins.Projekte\2020\GIZ_Klima\Github\master\Practical Sessions\Training 2021\Session 1\DGE_CRED_Model\RunSimulations.m',30,0)">line 30</a>)
+    dynare DGE_CRED_Model noclearall
+} 
