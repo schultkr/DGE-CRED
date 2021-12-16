@@ -12,8 +12,6 @@ casScenarioNames = {...
                      };
 casScenarioNames = {...
                      'Baseline',...
-                     'SSP126_AdaptTransport',...
-                     'SSP585_AdaptTransport'....
                      };
                  
                  
@@ -22,7 +20,7 @@ sSubsecstart = '[1, 7, 9, 10, 11]';
 sSubsecend =   '[6, 8, 9, 10, 12]';
 
 %% Define number of regions
-sRegions = '6';
+sRegions = '1';
 
 %% Define additonal specification ofthe version of the modle for sensitivity analysis.
 sSensitivity = '';

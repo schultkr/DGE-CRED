@@ -59,8 +59,6 @@ strSheet(2:end) = strSheettemp(1:end-1);
 temp = cellfun(@(x) reshape(x,[],1), {strSheet(iposData).Categories.CellNames}, 'UniformOutput', false);
 casCellNamesTotal = vertcat(temp{:});
 casCellNamesTotal = casCellNamesTotal(cellfun(@(x) ~isempty(x), casCellNamesTotal));
-exl = actxserver('excel.application');
-set(exl,'AskToUpdateLinks',0)
 
 for icosheet = 1:size(strSheet,2)
     if isstruct(strSheet(icosheet).Categories)
@@ -74,6 +72,20 @@ for icosheet = 1:size(strSheet,2)
             icostartcol = icostartcol + inbcol;
         end
 
+    elseif isequal(strSheet(icosheet).Name,'Baseline') || isequal(strSheet(icosheet).Name,'Scenario')
+        inbrow = size(strSheet(icosheet).Categories,1);
+        inbcol = size(strSheet(icosheet).Categories,2);
+        [~, iparamcol] = ismember('Parameter', strSheet(icosheet).Categories(1,:));
+        [~, ivaluecol] = ismember('Value', strSheet(icosheet).Categories(1,:));
+        for icocol = 1:inbcol
+                dat_range = [GetExcelColumn(icocol) '1:' GetExcelColumn(icocol) '1']; % Example range
+                writecell(strSheet(icosheet).Categories(1, icocol),...
+                    sExcelFileName, 'Sheet', strSheet(icosheet).Name, 'Range', dat_range)
+
+                dat_range = [GetExcelColumn(icocol) '2:' GetExcelColumn(icocol) num2str(inbrow)]; % Example range
+                writecell(strSheet(icosheet).Categories(2:end, icocol),...
+                    sExcelFileName, 'Sheet', strSheet(icosheet).Name, 'Range', dat_range)
+        end
     else
         inbrow = size(strSheet(icosheet).Categories,1);
         inbcol = size(strSheet(icosheet).Categories,2);
