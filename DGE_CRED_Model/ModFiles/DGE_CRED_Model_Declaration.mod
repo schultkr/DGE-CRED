@@ -201,7 +201,6 @@ lCalibration_p  ${l^{Calib}}$ (long_name = 'logical indiactor whether model is c
             alphaN_@{subsec}_@{reg}_p ${\alpha^{N}_{k,r}}$ (long_name = 'distribution parameter labour share')
             etaNK_@{subsec}_@{reg}_p ${\eta^{N,K}_{k,r}}$ (long_name = 'elasticity of substitution between labour and capital')
             A_@{subsec}_@{reg}_p ${A_{k,r}}$ (long_name = 'subsector long-run TFP')
-            phiGA_@{subsec}_@{reg}_p ${\phi^{G^{A}}_{k,r}}$ (long_name = 'coefficient of effectiveness of government expenditure on adaptation measures in a specific region and subsector @{z}')
             deltaKA_@{subsec}_@{reg}_p ${\delta^{K^{A}_{k,r}}$ (long_name = 'depreciation rate of adaptation capital stock against @{z}')
             gY0_@{subsec}_@{reg}_p ${\frac{Y_{2,k,r}}{Y_{1,k,r}}}$ (long_name = 'initial subsector growth')
             gN0_@{subsec}_@{reg}_p ${\frac{\frac{N_{2,k,r}{N_{2}}}}{\frac{N_{1,k,r}}{N_{1}}}$ (long_name = 'initial subsector labour growth')
