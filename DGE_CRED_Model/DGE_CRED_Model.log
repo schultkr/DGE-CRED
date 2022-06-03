@@ -727,16 +727,16 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 0.0260793,	 time = 9.117
-Iter: 2,	 err. = 0.00223377,	 time = 6.96
-Iter: 3,	 err. = 1.03758e-06,	 time = 5.221
+Iter: 1,	 err. = 0.0260793,	 time = 9.792
+Iter: 2,	 err. = 0.00223377,	 time = 10.67
+Iter: 3,	 err. = 1.03758e-06,	 time = 8.038
 
-Total time of simulation: 26.226.
+Total time of simulation: 37.926.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 26.293759 seconds.
+Elapsed time is 38.034759 seconds.
 =============================================
 =============================================
 === Step 2 of 10 for Scenario ===
@@ -1435,14 +1435,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 4.678
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.859
 
-Total time of simulation: 4.683.
+Total time of simulation: 5.892.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 4.737542 seconds.
+Elapsed time is 6.094611 seconds.
 =============================================
 =============================================
 === Step 3 of 10 for Scenario ===
@@ -2141,14 +2141,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 5.938
+Iter: 1,	 err. = 1.03758e-06,	 time = 6.288
 
-Total time of simulation: 5.943.
+Total time of simulation: 6.295.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 6.009015 seconds.
+Elapsed time is 6.384227 seconds.
 =============================================
 =============================================
 === Step 4 of 10 for Scenario ===
@@ -2847,14 +2847,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 4.494
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.142
 
-Total time of simulation: 4.5.
+Total time of simulation: 5.148.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 4.576810 seconds.
+Elapsed time is 5.218653 seconds.
 =============================================
 =============================================
 === Step 5 of 10 for Scenario ===
@@ -3553,14 +3553,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 4.715
+Iter: 1,	 err. = 1.03758e-06,	 time = 4.763
 
-Total time of simulation: 4.722.
+Total time of simulation: 4.769.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 4.783913 seconds.
+Elapsed time is 4.836284 seconds.
 =============================================
 =============================================
 === Step 6 of 10 for Scenario ===
@@ -4259,14 +4259,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 4.869
+Iter: 1,	 err. = 1.03758e-06,	 time = 4.546
 
-Total time of simulation: 4.876.
+Total time of simulation: 4.553.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 4.948068 seconds.
+Elapsed time is 4.620705 seconds.
 =============================================
 =============================================
 === Step 7 of 10 for Scenario ===
@@ -4965,14 +4965,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 4.725
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.092
 
-Total time of simulation: 4.731.
+Total time of simulation: 5.097.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 4.791235 seconds.
+Elapsed time is 5.156782 seconds.
 =============================================
 =============================================
 === Step 8 of 10 for Scenario ===
@@ -5671,14 +5671,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 5.034
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.127
 
-Total time of simulation: 5.047.
+Total time of simulation: 5.134.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 5.123974 seconds.
+Elapsed time is 5.237433 seconds.
 =============================================
 =============================================
 === Step 9 of 10 for Scenario ===
@@ -6377,14 +6377,14 @@ A_K_12_2     		 1
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 5.648
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.708
 
-Total time of simulation: 5.656.
+Total time of simulation: 5.716.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 5.749973 seconds.
+Elapsed time is 5.791018 seconds.
 =============================================
 =============================================
 === Step 10 of 10 for Scenario ===
@@ -7183,24 +7183,24 @@ The rank condition is verified.
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 5.66
+Iter: 1,	 err. = 1.03758e-06,	 time = 5.364
 
-Total time of simulation: 5.667.
+Total time of simulation: 5.37.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Elapsed time is 5.734363 seconds.
+Elapsed time is 5.441671 seconds.
 =============================================
 
 --------------------------------------------------------
 MODEL SIMULATION:
 
-Iter: 1,	 err. = 1.03758e-06,	 time = 5.11
+Iter: 1,	 err. = 1.03758e-06,	 time = 4.587
 
-Total time of simulation: 5.123.
+Total time of simulation: 4.593.
 --------------------------------------------------------
 
 Perfect foresight solution found.
 
-Total computing time : 0h02m17s
+Total computing time : 0h02m29s

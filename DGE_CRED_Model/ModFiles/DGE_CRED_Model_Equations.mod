@@ -403,7 +403,7 @@ lambda * omegaH = PH * (1 + tauH) * lambda;
 lambdaEXP * beta_p * (1 + rfEXP) * exp(-phiB_p*((rfEXP*(BEXP+BG)/YEXP+NXEXP/YEXP))) = lambda;
 
 [name = 'adaptation measures for housing stock']
-G_A_DH = exo_G_A_DH * Y0_p / (P * ((iGAH_p == 0)*1
+G_A_DH = exo_G_A_DH * Y0_p / (P0_p * ((iGAH_p == 0)*1
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
                         + (iGAH_p == @{subsec}) * P_D_@{subsec}_p

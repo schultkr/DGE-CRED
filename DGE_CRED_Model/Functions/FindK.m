@@ -164,9 +164,9 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     
     % government expenditure to the housing area
     if strpar.iGAH_p == 0
-        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strys.P;
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strpar.P0_p;
     else
-        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strys.P * strpar.(['P_D_' num2str(strpar.iGAH_p) '_p']));    
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strpar.P0_p * strpar.(['P_D_' num2str(strpar.iGAH_p) '_p']));    
     end
     
     %% calculate sectoral and regional production factors and output

@@ -47,7 +47,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     
     if strpar.iGAH_p == 0
         % adaptation measures in the housing sector
-        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strys.P;
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strpar.P0_p;
     end
 
     %% calculate sectoral and regional production factors and output
@@ -220,7 +220,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
 
             if strpar.iGAH_p == icosubsec
                 % adaptation measures in the housing sector
-                strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
+                strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strpar.P0_p * strpar.(['P_D_' ssubsec '_p']));
             end            
             
             % inititlalize gross value added
