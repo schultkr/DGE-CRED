@@ -11,7 +11,7 @@ casScenarioNames = {...
                      'SSP585_AdaptForestry', 'SSP585_AdaptTransport', 'SSP585_AdaptConstruction'...
                      };
 casScenarioNames = {...
-                     'Baseline',...
+                     'Baseline', 'Scenario'...
                      };
                  
                  
@@ -20,7 +20,7 @@ sSubsecstart = '[1, 7, 9, 10, 11]';
 sSubsecend =   '[6, 8, 9, 10, 12]';
 
 %% Define number of regions
-sRegions = '1';
+sRegions = '2';
 
 %% Define additonal specification ofthe version of the modle for sensitivity analysis.
 sSensitivity = '';

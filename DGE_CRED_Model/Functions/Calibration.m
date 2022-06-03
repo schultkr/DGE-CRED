@@ -14,14 +14,15 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     %   - strpar    [structure]  see inputs
 	
 
-    %% calculate exogenous variables
-    [strys,strpar, strexo] = AssignPredeterminedVariables(strys,strpar,strexo);
-    
     % assign initial value for national price level
     strys.P = x;
     
     % update parameter value for initila price level
-    strpar.P0_p = strys.P; 
+    strpar.P0_p = strys.P;
+
+    %% calculate exogenous variables
+    [strys,strpar, strexo] = AssignPredeterminedVariables(strys,strpar,strexo);
+    
     
     % assign value for initial gross vlaue added
     strys.Y = strpar.Y0_p./strys.P; 
