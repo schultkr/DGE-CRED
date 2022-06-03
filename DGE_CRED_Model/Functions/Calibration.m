@@ -44,8 +44,10 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     % hours worked as share of total available hours
     strys.N = strpar.N0_p;
     
-    % adaptation measures in the housing sector
-    strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p;
+    if strpar.iGAH_p == 0
+        % adaptation measures in the housing sector
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strys.P;
+    end
 
     %% calculate sectoral and regional production factors and output
     
@@ -211,9 +213,14 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             
             % aggregate price index across region in one sbsector
             strys.(['P_D_' ssubsec]) = strys.(['P_D_' ssubsec])^(1/(1 - strpar.(['etaQ_' ssubsec '_p'])));
-            
+                        
             % update intital aggregate price index across region in one sbsector
             strpar.(['P_D_' ssubsec '_p']) = strys.(['P_D_' ssubsec]);
+
+            if strpar.iGAH_p == icosubsec
+                % adaptation measures in the housing sector
+                strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
+            end            
             
             % inititlalize gross value added
             strys.(['Y_' ssubsec]) = 0;
@@ -238,10 +245,26 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
             
             % compute sub-sectoral exports 
             strys.(['X_' ssubsec]) = strys.(['Q_' ssubsec]) * strpar.(['phiX_' ssubsec '_p']);       
-           
+
+            strys.(['GA_direct_' ssubsec]) = 0;
+            for icosecm = 1:strpar.inbsectors_p
+                ssecm = num2str(icosecm);      
+                iasubsecm = strpar.(['substart_' ssecm '_p']):strpar.(['subend_' ssecm '_p']);
+                for icosubsecm = iasubsecm
+                    ssubsecm = num2str(icosubsecm);
+                    for icoreg = 1:strpar.inbregions_p
+                        sreg = num2str(icoreg);
+                        if strpar.(['iGA_' ssubsecm '_p']) == icosubsec
+                            strys.(['K_A_' ssubsecm '_' sreg]) = strexo.(['exo_GA_' ssubsecm '_' sreg]) * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
+                            strys.(['G_A_' ssubsecm '_' sreg]) = strpar.(['deltaKA_' ssubsecm '_' sreg '_p']) * strys.(['K_A_' ssubsecm '_' sreg]);
+                        end
+                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]);
+                    end
+                end
+            end            
             
             % compute sub-sectoral output used domestically
-            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]);       
+            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - strys.(['GA_direct_' ssubsec]) * strys.P - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P;       
             
             % compute sub-sectoral exports share
             strys.(['D_X_' ssubsec]) = strys.(['X_' ssubsec]) / strys.(['Q_' ssubsec]);

@@ -163,8 +163,11 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     end
     
     % government expenditure to the housing area
-    strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p;
-    
+    if strpar.iGAH_p == 0
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strys.P;
+    else
+        strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strys.P * strpar.(['P_D_' num2str(strpar.iGAH_p) '_p']));    
+    end
     
     %% calculate sectoral and regional production factors and output
     for icosec = 1:strpar.inbsectors_p
@@ -331,6 +334,20 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
             end
             % compute subsector production
             strys.(['Q_' ssubsec]) = strys.(['Q_' ssubsec])^(strpar.(['etaQ_' ssubsec '_p'])/(strpar.(['etaQ_' ssubsec '_p'])-1));        
+
+            % compute direct adaptation expenditures in the current subsector
+            strys.(['GA_direct_' ssubsec]) = 0;
+            for icosecm = 1:strpar.inbsectors_p
+                ssecm = num2str(icosecm);      
+                iasubsecm = strpar.(['substart_' ssecm '_p']):strpar.(['subend_' ssecm '_p']);
+                for icosubsecm = iasubsecm
+                    ssubsecm = num2str(icosubsecm);
+                    for icoreg = 1:strpar.inbregions_p
+                        sreg = num2str(icoreg);
+                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]);
+                    end
+                end
+            end
             
             if strpar.lCalibration_p == 2                   
                 % compute exports
@@ -343,7 +360,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
             end
             
             % compute domestically used products
-            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]);
+            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P  - strys.(['GA_direct_' ssubsec]) * strys.P;
             
             % aggregate sector production
             strys.(['Q_A_' ssec])  = strys.(['Q_A_' ssec]) + strpar.(['omegaQ_' ssubsec '_p'])^(1/strpar.(['etaQA_' ssec '_p'])) * strys.(['Q_D_' ssubsec])^rhotemp;

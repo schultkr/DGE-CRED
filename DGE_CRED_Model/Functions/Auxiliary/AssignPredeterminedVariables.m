@@ -46,8 +46,14 @@ function [strys,strpar, strexo] = AssignPredeterminedVariables(strys,strpar, str
                 strys.(['D_N_' ssubsec '_' sreg]) = strexo.(['exo_D_N_' ssubsec '_' sreg]);
                 strys.(['D_K_' ssubsec '_' sreg]) = strexo.(['exo_D_K_' ssubsec '_' sreg]) * strpar.Y0_p;
                 strys.(['D_KHelp_' ssec '_' sreg]) = strys.(['D_KHelp_' ssec '_' sreg]) + strys.(['D_K_' ssubsec '_' sreg]);
-                strys.(['K_A_' ssubsec '_' sreg]) = strexo.(['exo_GA_' ssubsec '_' sreg]) * strpar.Y0_p;
-                strys.(['G_A_' ssubsec '_' sreg]) = strpar.(['deltaKA_' ssubsec '_' sreg '_p']) * strys.(['K_A_' ssubsec '_' sreg]);
+                if strpar.(['iGA_' ssubsec '_p']) == 0
+                    strys.(['K_A_' ssubsec '_' sreg]) = strexo.(['exo_GA_' ssubsec '_' sreg]) * strpar.Y0_p / strys.P;
+                    strys.(['G_A_' ssubsec '_' sreg]) = strpar.(['deltaKA_' ssubsec '_' sreg '_p']) * strys.(['K_A_' ssubsec '_' sreg]);
+                end
+                if strpar.(['iGA_' ssubsec '_p']) ~= 0 && strpar.lCalibration_p ~= 1
+                    strys.(['K_A_' ssubsec '_' sreg]) = strexo.(['exo_GA_' ssubsec '_' sreg]) * strpar.Y0_p / (strys.P * strpar.(['P_D_' num2str(strpar.(['iGA_' ssubsec '_p'])) '_p']));
+                    strys.(['G_A_' ssubsec '_' sreg]) = strpar.(['deltaKA_' ssubsec '_' sreg '_p']) * strys.(['K_A_' ssubsec '_' sreg]);
+                end   
             end
         end
     end

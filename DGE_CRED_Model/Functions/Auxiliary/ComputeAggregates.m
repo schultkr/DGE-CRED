@@ -77,8 +77,26 @@ function [strys, strpar, strexo] = ComputeAggregates(strys, strpar, strexo)
             strys.X = strys.X + strys.(['X_' num2str(icosubsec)]) * strys.(['P_D_' num2str(icosubsec)]) / strys.P_D;
         end
     end
-    % 
-    strys.Q_D = strys.Q - strys.X;
+    % compute domestically used products accounting for spedicifc demand
+    % caused by adaptation
+    strys.adaptationused = 0;
+    for icosec = 1:strpar.inbsectors_p
+        ssec = num2str(icosec);
+        for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
+            ssubsec = num2str(icosubsec);
+            for icoreg = 1:strpar.inbregions_p
+                sreg = num2str(icoreg);
+                if strpar.(['iGA_' ssubsec '_p']) > 0
+                    strys.adaptationused = strys.adaptationused + strys.(['G_A_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGA_' ssubsec '_p']))]);     
+                end
+            end
+        end
+    end
+    if strpar.iGAH_p > 0
+        strys.adaptationused = strys.adaptationused + strys.G_A_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAH_p)]);       
+    end
+    strys.Q_D = strys.Q - strys.X - strys.adaptationused / strys.P_D;
+    
 end
 
 

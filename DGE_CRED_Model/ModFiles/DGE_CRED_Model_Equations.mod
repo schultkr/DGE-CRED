@@ -25,7 +25,27 @@ model;
             # P_@{sec}_@{reg}EXP = omegaP_p * P_@{sec}_@{reg}(+1) + (1 - omegaP_p) * P_@{sec}_@{reg};
     @# endfor
 @# endfor
-
+# GAexpend = G_A_DH * ((iGAH_p == 0)*1
+                @# for sec in 1:Sectors
+                    @# for subsec in Subsecstart[sec]:Subsecend[sec]
+                        + (iGAH_p == @{subsec}) * P_D_@{subsec}
+                    @# endfor
+                @# endfor
+                ) + 
+                @# for sec in 1:Sectors
+                    @# for subsec in Subsecstart[sec]:Subsecend[sec]
+                        @# for reg in 1:Regions
+                            + G_A_@{subsec}_@{reg} * ((iGA_@{subsec}_p == 0) * 1
+                            @# for secm in 1:Sectors
+                                @# for subsecm in Subsecstart[secm]:Subsecend[secm]
+                                    + (iGA_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}
+                                @# endfor
+                            @# endfor
+                            )
+                        @# endfor
+                    @# endfor
+                @# endfor
+;
 
 
 @# for sec in 1:Sectors   
@@ -100,7 +120,13 @@ model;
             D_K_@{subsec}_@{reg} = exo_D_K_@{subsec}_@{reg} * Y0_p;
 
             [name = 'subsector specific adaptation expenditures by the government against climate change']
-            K_A_@{subsec}_@{reg} = exo_GA_@{subsec}_@{reg} * Y0_p;
+            K_A_@{subsec}_@{reg} = exo_GA_@{subsec}_@{reg} * Y0_p /(P0_p * ((iGA_@{subsec}_p == 0) * 1                        
+            @# for secm in 1:Sectors                         
+                @# for subsecm in Subsecstart[secm]:Subsecend[secm]
+                        + (iGA_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}_p
+                @# endfor
+            @# endfor
+            ));
 
             [name = 'subsector specific adaptation capital against climate change']
             K_A_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_A_@{subsec}_@{reg}(-1) + G_A_@{subsec}_@{reg};
@@ -151,7 +177,15 @@ model;
         P_M_@{subsec} / P_M  = omegaM_@{subsec}_p^(1/etaM_p) * (M_@{subsec}/M)^(-1/etaM_p);
 
         [name = 'use of domestic subsector produced products']
-        Q_@{subsec} = Q_D_@{subsec} + X_@{subsec};
+        Q_@{subsec} = Q_D_@{subsec} + X_@{subsec} + (iGAH_p == @{subsec}) * G_A_DH * P
+                        @# for secm in 1:Sectors                         
+                            @# for subsecm in Subsecstart[secm]:Subsecend[secm]
+                                @# for reg in 1:Regions                        
+                                    + (iGA_@{subsecm}_p == @{subsec}) * G_A_@{subsecm}_@{reg} * P
+                                @# endfor
+                            @# endfor
+                        @# endfor
+        ;
 
         [name = 'domestic subsector produced products']
         P_D_@{subsec} * Q_@{subsec} = 
@@ -309,15 +343,7 @@ P_M / P = omegaF_p^(1/etaF_p) * (M/Q_U)^(-1/etaF_p);
 P_D / P = (1 - omegaF_p)^(1/etaF_p) * (Q_D/Q_U)^(-1/etaF_p);
 
 [name = 'Resource Constraint']
-P_D / P * Q = C + PH/P * IH + I + G + NX + Q_I
-@# for sec in 1:Sectors
-    @# for subsec in Subsecstart[sec]:Subsecend[sec]
-        @# for reg in 1:Regions
-            + G_A_@{subsec}_@{reg}
-        @# endfor
-    @# endfor
-@# endfor
-+ G_A_DH
+P_D / P * Q = C + PH/P * IH + I + G + NX + Q_I + GAexpend
 ;
 
 [name = 'taxes on household labour income']
@@ -377,17 +403,16 @@ lambda * omegaH = PH * (1 + tauH) * lambda;
 lambdaEXP * beta_p * (1 + rfEXP) * exp(-phiB_p*((rfEXP*(BEXP+BG)/YEXP+NXEXP/YEXP))) = lambda;
 
 [name = 'adaptation measures for housing stock']
-G_A_DH = exo_G_A_DH * Y0_p;
+G_A_DH = exo_G_A_DH * Y0_p / (P * ((iGAH_p == 0)*1
+                @# for sec in 1:Sectors
+                    @# for subsec in Subsecstart[sec]:Subsecend[sec]
+                        + (iGAH_p == @{subsec}) * P_D_@{subsec}_p
+                    @# endfor
+                @# endfor
+                ));
 
 [name = 'Government Budget Constraint']
-G + BG + G_A_DH
-@# for sec in 1:Sectors
-    @# for subsec in Subsecstart[sec]:Subsecend[sec]
-        @# for reg in 1:Regions
-                + G_A_@{subsec}_@{reg}
-        @# endfor
-    @# endfor
-@# endfor
+G + BG + GAexpend
 = (1 + rf) * BG(-1) * exp(-phiB_p*((rf*(B+BG(-1))/Y+NX/Y))) + tauC * C +  tauH * PH / P * IH
 @# for sec in 1:Sectors
     @# for subsec in Subsecstart[sec]:Subsecend[sec]

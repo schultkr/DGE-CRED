@@ -59,10 +59,12 @@ phiQDD_p = 0.5;
     @# endfor
 @# endfor
 
+iGAH_p = 8;  
 @# for sec in 1:Sectors
     omegaQA_@{sec}_p = 1/(subend_@{sec}_p - substart_@{sec}_p + 1);
     etaQA_@{sec}_p = 0.01;
     @# for subsec in Subsecstart[sec]:Subsecend[sec]
+        iGA_@{subsec}_p = 8;  
         omega_@{subsec}_p = 1/inbsectors_p;
         omegaM_@{subsec}_p = 1/2;
         D_X_@{subsec}_p = 1;

@@ -14,6 +14,7 @@ function [strys,strpar, strexo] = TaxIncome(strys,strpar, strexo)
     strys.wagetax = 0;
     strys.capitaltax = 0;
     strys.adaptationcost = 0;
+    strys.adaptationcost = 0;
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
@@ -22,11 +23,19 @@ function [strys,strpar, strexo] = TaxIncome(strys,strpar, strexo)
                 sreg = num2str(icoreg);
                 strys.wagetax = strys.wagetax + strys.(['W_' ssubsec '_' sreg]) * strys.(['N_' ssubsec '_' sreg]) * strys.PoP ./strys.P * (strys.tauNH + strys.(['tauNF_' ssubsec '_' sreg]));
                 strys.capitaltax = strys.capitaltax + strys.(['P_' ssubsec '_' sreg]) * strys.(['K_' ssubsec '_' sreg]) * strys.(['r_' ssec '_' sreg])./strys.P * (strys.tauKH + strys.(['tauKF_' ssubsec '_' sreg]));
-                strys.adaptationcost = strys.adaptationcost + strys.(['G_A_' ssubsec '_' sreg]);                    
+                if strpar.(['iGA_' ssubsec '_p']) > 0
+                    strys.adaptationcost = strys.adaptationcost + strys.(['G_A_' ssubsec '_' sreg]) * strys.(['P_D_' num2str(strpar.(['iGA_' ssubsec '_p']))]);                    
+                else
+                    strys.adaptationcost = strys.adaptationcost + strys.(['G_A_' ssubsec '_' sreg]);                                       
+                end
             end
         end
     end
-    strys.adaptationcost = strys.adaptationcost+ strys.G_A_DH;    
+    if strpar.iGAH_p > 0
+        strys.adaptationcost = strys.adaptationcost+ strys.G_A_DH * strys.(['P_D_' num2str(strpar.iGAH_p)]);    
+    else
+        strys.adaptationcost = strys.adaptationcost+ strys.G_A_DH; 
+    end 
 
 end
 
