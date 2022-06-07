@@ -85,6 +85,8 @@ G_A_DH ${G^{A,D^H}}$ (long_name = 'adaptation government expenditure for housing
             D_N_@{subsec}_@{reg} ${D_{s,r}}$ (long_name = 'regional subsector damages to labour productivity')
             D_K_@{subsec}_@{reg} ${D_{s,r}}$ (long_name = 'regional subsector destuction of capital stock')
             K_@{subsec}_@{reg} ${K_{s,r}}$ (long_name = 'regional subsector capital')
+			G_AP_@{subsec}_@{reg} ${G^{A,P}_{s,r}}$ (long_name = 'regional subsector private adaptation government expenditure')       
+            K_AP_@{subsec}_@{reg} ${K^{A,P}_{s,r}}$ (long_name = 'regional subsector private adaptation capital stock')
             G_A_@{subsec}_@{reg} ${G^{A}_{s,r}}$ (long_name = 'regional subsector adaptation government expenditure')       
             K_A_@{subsec}_@{reg} ${K^{A}_{s,r}}$ (long_name = 'regional subsector adaptation capital stock')
             P_@{subsec}_@{reg} ${P_{s,r}}$ (long_name = 'regional subsector price index')
@@ -136,10 +138,12 @@ exo_P ${\eta_{P}}$ (long_name = 'exogenous price level')
             exo_tauKF_@{subsec}_@{reg} ${\eta_{\tau^{K},s,r}}$ (long_name = 'exogenous sector and region corporate tax rate')
             exo_tauNF_@{subsec}_@{reg} ${\eta_{\tau^{N},s,r}}$ (long_name = 'exogenous sector and region labour tax rate')
             exo_GA_@{subsec}_@{reg} ${\eta_{G^{A,@{z}},s,r}}$ (long_name = 'exogenous sector adaptation expenditure against @{z}')
+			exo_GAP_@{subsec}_@{reg} ${\eta_{G^{A,P,@{z}},s,r}}$ (long_name = 'exogenous sector private adaptation expenditure against @{z}')
         @# endfor
     @# endfor
 @# endfor
 exo_G_A_DH ${\eta_{G^{A,H}}$ (long_name = 'exogenous sector adaptation expenditure for housing')
+exo_G_AP_DH ${\eta_{G^{A,P,H}}$ (long_name = 'exogenous sector private adaptation expenditure for housing')
 @# for z in ClimateVarsNational
     exo_@{z} ${\eta_{@{z},r}}$ (long_name = 'exogenus @{z}')
 @# endfor
@@ -175,6 +179,7 @@ lCalibration_p  ${l^{Calib}}$ (long_name = 'logical indiactor whether model is c
     etaQA_@{sec}_p ${\eta^{Q^A}_{k}}$ (long_name = 'elasticity of substitution between products from different subsectors in one sector')
     @# for subsec in Subsecstart[sec]:Subsecend[sec]
         iGA_@{subsec}_p ${i^{G^A}_s}$ (long_name = 'subsector which provides goods for adaptation measures in the respective sub-sector')
+        iGAP_@{subsec}_p ${i^{G^{A,P}}_s}$ (long_name = 'subsector which provides goods for private adaptation measures in the respecitve sub-sector')		
         phiM_@{subsec}_p $\frac{M_{s,0} \, P^{M}_{k,0}}{P_{0} \, Q_{0}}$ (long_name = 'share of sector imports on total output')
         phiX_@{subsec}_p $\frac{X_{s,0} \, P_{k,0}}{P_{k,0} \, Y_{s,0}}$ (long_name = 'share of exports on gross value added')
         phiQI_@{subsec}_p $\frac{Q^{I}_{s,0} \, P_{0}}{P_{s,0} \, Q_{s,0}}$ (long_name = 'share of intermediate inputs on total subsectoral prodcution')
@@ -213,6 +218,7 @@ lCalibration_p  ${l^{Calib}}$ (long_name = 'logical indiactor whether model is c
     @# endfor
 @# endfor
 iGAH_p ${i^{G^{A,H}}$ (long_name = 'sub sector output used for government housing adaptation')
+iGAPH_p ${i^{G^{A,P,H}}$ (long_name = 'sub sector output used for private housing adaptation expenditure')
 beta_p ${\beta}$ (long_name = 'discount factor')
 omegaP_p ${\omega^{P}}$ (long_name = 'share of rational agents')
 gamma_p ${\gamma}$ (long_name = 'preferences for housing in utility function')

@@ -169,6 +169,13 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
         strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / (strpar.P0_p * strpar.(['P_D_' num2str(strpar.iGAH_p) '_p']));    
     end
     
+	% prvate adaptation expenditure to the housing area   
+	if strpar.iGAPH_p == 0
+        strys.G_AP_DH = strexo.exo_G_AP_DH * strpar.Y0_p / strpar.P0_p;
+    else
+        strys.G_AP_DH = strexo.exo_G_AP_DH * strpar.Y0_p / (strpar.P0_p * strpar.(['P_D_' num2str(strpar.iGAPH_p) '_p']));    
+    end  
+	
     %% calculate sectoral and regional production factors and output
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
@@ -344,7 +351,7 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
                     ssubsecm = num2str(icosubsecm);
                     for icoreg = 1:strpar.inbregions_p
                         sreg = num2str(icoreg);
-                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]);
+                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]) + (strpar.(['iGAP_' ssubsecm '_p'])==icosubsec) * strys.(['G_AP_' ssubsecm '_' sreg]);
                     end
                 end
             end
@@ -358,10 +365,9 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
                 strys.(['D_X_' ssubsec]) = strys.(['X_' ssubsec]) / strys.(['Q_' ssubsec]);
                 
             end
-            
             % compute domestically used products
-            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P  - strys.(['GA_direct_' ssubsec]) * strys.P;
-            
+            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - (strpar.iGAPH_p == icosubsec) * strys.G_AP_DH * strys.P - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P  - strys.(['GA_direct_' ssubsec]) * strys.P;
+                        
             % aggregate sector production
             strys.(['Q_A_' ssec])  = strys.(['Q_A_' ssec]) + strpar.(['omegaQ_' ssubsec '_p'])^(1/strpar.(['etaQA_' ssec '_p'])) * strys.(['Q_D_' ssubsec])^rhotemp;
         end
@@ -504,9 +510,9 @@ function [fval_vec,strys,strexo] = FindK(x,strys,strexo,strpar)
     
 
     %% Households consumption level, FOC w.r.t housing and consumption
-    strys.C = ((strys.P_D / strys.P * strys.Q - strys.NX - strys.Q_I  - strys.I - strys.wagetax  - strys.capitaltax + strys.rf * strys.BG - strys.Y * strexo.exo_DH * (1 + strys.tauH)) / (1 + strys.tauC)) / (1 + strpar.gamma_p/(1- strpar.gamma_p) * strpar.deltaH_p * strpar.beta_p / (1-strpar.beta_p*(1-strpar.deltaH_p)));
+    strys.C = ((strys.P_D / strys.P * strys.Q - strys.NX - strys.Q_I  - strys.I - strys.privateadaptationcost / strys.P  - strys.wagetax  - strys.capitaltax + strys.rf * strys.BG - strys.Y * strexo.exo_DH * (1 + strys.tauH)) / (1 + strys.tauC)) / (1 + strpar.gamma_p/(1- strpar.gamma_p) * strpar.deltaH_p * strpar.beta_p / (1-strpar.beta_p*(1-strpar.deltaH_p)));
     
-    if strpar.lEndogenousY_p == 0
+	if strpar.lEndogenousY_p == 0
         % house prices
         strys.PH = (strpar.gamma_p/(1 - strpar.gamma_p)  * strpar.beta_p / (1 - strpar.beta_p * (1 - strpar.deltaH_p)) * strys.C * strys.P * (1 + strys.tauC)) / (strys.H * (1 + strys.tauH));    
         

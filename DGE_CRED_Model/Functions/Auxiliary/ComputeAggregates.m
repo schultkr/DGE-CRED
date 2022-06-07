@@ -80,6 +80,7 @@ function [strys, strpar, strexo] = ComputeAggregates(strys, strpar, strexo)
     % compute domestically used products accounting for spedicifc demand
     % caused by adaptation
     strys.adaptationused = 0;
+    strys.privateadaptationcost = 0;
     for icosec = 1:strpar.inbsectors_p
         ssec = num2str(icosec);
         for icosubsec = strpar.(['substart_' ssec '_p']):strpar.(['subend_' ssec '_p'])
@@ -89,11 +90,24 @@ function [strys, strpar, strexo] = ComputeAggregates(strys, strpar, strexo)
                 if strpar.(['iGA_' ssubsec '_p']) > 0
                     strys.adaptationused = strys.adaptationused + strys.(['G_A_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGA_' ssubsec '_p']))]);     
                 end
+                if strpar.(['iGAP_' ssubsec '_p']) > 0
+                    strys.adaptationused = strys.adaptationused + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGAP_' ssubsec '_p']))]);     
+                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGAP_' ssubsec '_p']))]);
+                else
+                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P;
+                end
+                
             end
         end
     end
     if strpar.iGAH_p > 0
         strys.adaptationused = strys.adaptationused + strys.G_A_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAH_p)]);       
+    end
+    if strpar.iGAPH_p > 0
+        strys.adaptationused = strys.adaptationused + strys.G_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAPH_p)]);       
+        strys.privateadaptationcost = strys.privateadaptationcost + strys.G_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAPH_p)]);       
+    else   
+        strys.privateadaptationcost = strys.privateadaptationcost + strys.G_AP_DH * strys.P;       
     end
     strys.Q_D = strys.Q - strys.X - strys.adaptationused / strys.P_D;
     
