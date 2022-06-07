@@ -1,5 +1,5 @@
 function [residual, g1, g2, g3] = static(y, x, params)
-    T = NaN(1139, 1);
+    T = NaN(1177, 1);
     if nargout <= 1
         residual = DGE_CRED_Model.static_resid(T, y, x, params, true);
     elseif nargout == 2

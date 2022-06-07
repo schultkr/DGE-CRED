@@ -150,8 +150,10 @@ temp = arrayfun(@(x) arrayfun(@(y) ['exo_D_K_' num2str(x) '_' num2str(y)], 1:inb
 casDamK = [temp{:}];
 temp = arrayfun(@(x) arrayfun(@(y) ['exo_GA_' num2str(x) '_' num2str(y)], 1:inbregions_p, 'UniformOutput', false), 1:inbsubsectors_p, 'UniformOutput', false);
 casAdapt = [temp{:}];
+temp = arrayfun(@(x) arrayfun(@(y) ['exo_GAP_' num2str(x) '_' num2str(y)], 1:inbregions_p, 'UniformOutput', false), 1:inbsubsectors_p, 'UniformOutput', false);
+casAdapt = [temp{:}];
 
-casCategoriesHeader = [{'Time'}, {'exo_PoP'}, casClimExoReg, casClimExoNat, casAdapt, casDam, casDamN, casDamK, {'exo_DH'},{'exo_G_A_DH'}];
+casCategoriesHeader = [{'Time'}, {'exo_PoP'}, casClimExoReg, casClimExoNat, casAdapt, casAdaptP, casDam, casDamN, casDamK, {'exo_DH'},{'exo_G_A_DH'},{'exo_G_AP_DH'}];
 casData = num2cell([(2:100)' zeros(99, size(casCategoriesHeader,2)-1)]);
 casCategories = [casCategoriesHeader; casData];
 strSheet(icosheet).Categories = casCategories;

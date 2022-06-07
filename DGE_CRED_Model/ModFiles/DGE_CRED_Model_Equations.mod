@@ -164,18 +164,6 @@ model;
             [name = 'subsector specific adaptation capital against climate change']
             K_A_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_A_@{subsec}_@{reg}(-1) + G_A_@{subsec}_@{reg};
 
-			[name = 'subsector specific adaptation expenditures by the government against climate change']
-            K_A_@{subsec}_@{reg} = exo_GA_@{subsec}_@{reg} * Y0_p /(P0_p * ((iGA_@{subsec}_p == 0) * 1                        
-            @# for secm in 1:Sectors                         
-                @# for subsecm in Subsecstart[secm]:Subsecend[secm]
-                        + (iGA_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}_p
-                @# endfor
-            @# endfor
-            ));
-
-            [name = 'subsector specific adaptation capital against climate change']
-            K_A_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_A_@{subsec}_@{reg}(-1) + G_A_@{subsec}_@{reg};
-
             [name = 'demand for regional subsector output']
             P_D_@{subsec}_@{reg}  = omegaQ_@{subsec}_@{reg}_p^(1/etaQ_@{subsec}_p) * ((Q_@{subsec}_@{reg})/Q_@{subsec})^(-1/etaQ_@{subsec}_p) * P_D_@{subsec};
 

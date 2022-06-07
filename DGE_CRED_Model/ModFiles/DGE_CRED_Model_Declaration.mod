@@ -68,6 +68,7 @@ Q $Q$ (long_name = 'total production')
 M $M$ (long_name = 'Imports')
 X $X$ (long_name = 'Exports')
 G_A_DH ${G^{A,D^H}}$ (long_name = 'adaptation government expenditure for housing')       
+G_AP_DH ${G^{A,P,D^H}}$ (long_name = 'private adaptation expenditure for housing')       
 @# for sec in 1:Sectors
     Q_A_@{sec} ${Q^A_k}$ (long_name = 'sector aggregate output')
     P_A_@{sec} ${P^A_k}$ (long_name = 'sector aggregate price level')
