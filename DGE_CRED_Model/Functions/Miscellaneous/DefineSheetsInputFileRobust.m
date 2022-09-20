@@ -26,7 +26,7 @@ strSubSheet(icosubsheet)  = AddSubSheet(casVariables, casCellNames, casSubSector
 
 icosubsheet = icosubsheet + 1;
 casVariables = {'export share', 'import share', 'intermediate products', 'subsectors for adaptation measures', 'subsectors for private adaptation measures'};
-casCellNames = {'phiX', 'phiM', 'phiQI', 'iGA', 'iGAP'};
+casCellNames = {'phiX', 'phiM', 'phiQI', 'iGA', 'iIAP'};
 lSectoral = true;
 lRegional = false;
 strSubSheet(icosubsheet)  = AddSubSheet(casVariables, casCellNames, casSubSectors(:), casRegions(:), lSectoral, lRegional, inbsubsectors_p, inbregions_p);
@@ -46,8 +46,8 @@ lRegional = false;
 strSubSheet(icosubsheet) = AddSubSheet(casVariables, casCellNames, casSubSectors(:), casRegions(:), lSectoral, lRegional, inbsubsectors_p, inbregions_p);
 
 icosubsheet = icosubsheet + 1;
-casVariables = {'initial population (PoP0)', 'initial value added (Y0)', 'import share (phiM)', 'housing to population ratio (H0)', 'investmetns in residential building relative to GDP (sH)'};
-casCellNames = {'PoP0_p', 'Y0_p', 'phiM_p', 'H0_p', 'sH_p'};
+casVariables = {'initial population', 'initial value added', 'import share', 'housing to population ratio', 'investmetns in residential building relative to GDP', 'subsector for adaptation measures in the housing sector', 'subsector for private adaptation measures in the housing sector'};
+casCellNames = {'PoP0_p', 'Y0_p', 'phiM_p', 'H0_p', 'sH_p', 'iGAH_p', 'iIAPH_p'};
 lSectoral = false;
 lRegional = false;
 strSubSheet(icosubsheet) = AddSubSheet(casVariables, casCellNames, casSubSectors(:), casRegions(:), lSectoral, lRegional, inbsubsectors_p, inbregions_p);
@@ -101,9 +101,9 @@ casParams = [{'beta'; 0.9606; 'discount factor'; false; false; false} ...
              {'tauKH'; 0; 'tax rate on capital income'; false; false; false}... 
              {'phiM'; 0.3; 'share of imports on total used domestic products'; false; false; false}... 
              {'iGAH'; '=8'; 'subsector to provide output for adaptation measures for housing sector'; false; false; false}...                                        
-             {'iGAPH'; '=8'; 'subsector to provide output for private adaptation measures for housing sector'; false; false; false}...                                                     
+             {'iIAPH'; '=8'; 'subsector to provide output for private adaptation measures for housing sector'; false; false; false}...                                                     
              {'iGA'; '=0'; 'subsector to provide output for adaptaion measures in respective subsector'; false; true; false}...                           
-             {'iGAP'; '=0'; 'subsector to provide output for private adaptaion measures in respective subsector'; false; true; false}...                                                     
+             {'iIAP'; '=0'; 'subsector to provide output for private adaptaion measures in respective subsector'; false; true; false}...                                                     
              {'etaQA'; 0.01; 'elasticity of substitution between subsectors in one sector'; false; true; false}... 
              {'etaQ'; 2; 'elasticity of substitution between regions in one subsector'; false; true; false}... 
              {'phiQI'; 0.5; 'cost share of intermeidate goods'; false; true; false}... 
@@ -150,10 +150,10 @@ temp = arrayfun(@(x) arrayfun(@(y) ['exo_D_K_' num2str(x) '_' num2str(y)], 1:inb
 casDamK = [temp{:}];
 temp = arrayfun(@(x) arrayfun(@(y) ['exo_GA_' num2str(x) '_' num2str(y)], 1:inbregions_p, 'UniformOutput', false), 1:inbsubsectors_p, 'UniformOutput', false);
 casAdapt = [temp{:}];
-temp = arrayfun(@(x) arrayfun(@(y) ['exo_GAP_' num2str(x) '_' num2str(y)], 1:inbregions_p, 'UniformOutput', false), 1:inbsubsectors_p, 'UniformOutput', false);
-casAdapt = [temp{:}];
+temp = arrayfun(@(x) arrayfun(@(y) ['exo_IAP_' num2str(x) '_' num2str(y)], 1:inbregions_p, 'UniformOutput', false), 1:inbsubsectors_p, 'UniformOutput', false);
+casAdaptP = [temp{:}];
 
-casCategoriesHeader = [{'Time'}, {'exo_PoP'}, casClimExoReg, casClimExoNat, casAdapt, casAdaptP, casDam, casDamN, casDamK, {'exo_DH'},{'exo_G_A_DH'},{'exo_G_AP_DH'}];
+casCategoriesHeader = [{'Time'}, {'exo_PoP'}, casClimExoReg, casClimExoNat, casAdapt, casAdaptP, casDam, casDamN, casDamK, {'exo_DH'},{'exo_I_A_DH'},{'exo_I_AP_DH'}];
 casData = num2cell([(2:100)' zeros(99, size(casCategoriesHeader,2)-1)]);
 casCategories = [casCategoriesHeader; casData];
 strSheet(icosheet).Categories = casCategories;
