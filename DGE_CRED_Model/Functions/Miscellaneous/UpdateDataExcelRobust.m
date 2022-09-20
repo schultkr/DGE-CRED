@@ -63,7 +63,7 @@ for icosheet = 1:length(casSheetNames)
                     end
                     caValueWrite = caData(iposrow+itemploc, iposcol);
                 end
-                if ~isequal(caValueWrite, {'enter value here'})
+                if ~isequal(caValueWrite, {'enter value here'})  && ~ismissing(caValueWrite{:})
                     writecell(caValueWrite,sExcelFileName, 'Sheet', sSheetName, 'Range', [GetExcelColumn(ivaluecol) num2str(icorow)])
                 end
             end
