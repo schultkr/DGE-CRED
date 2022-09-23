@@ -25,6 +25,7 @@ model;
             # P_@{sec}_@{reg}EXP = omegaP_p * P_@{sec}_@{reg}(+1) + (1 - omegaP_p) * P_@{sec}_@{reg};
     @# endfor
 @# endfor
+
 # GAexpend = G_A_DH * ((iGAH_p == 0)*1
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
@@ -47,20 +48,20 @@ model;
                 @# endfor
 ;
 
-# GAPexpend = G_AP_DH * ((iGAPH_p == 0)*1
+# GAPexpend = I_AP_DH * ((iIAPH_p == 0)*1
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
-                        + (iGAPH_p == @{subsec}) * P_D_@{subsec}
+                        + (iIAPH_p == @{subsec}) * P_D_@{subsec}
                     @# endfor
                 @# endfor
                 ) + 
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
                         @# for reg in 1:Regions
-                            + G_AP_@{subsec}_@{reg} * ((iGAP_@{subsec}_p == 0) * 1
+                            + I_AP_@{subsec}_@{reg} * ((iIAP_@{subsec}_p == 0) * 1
                             @# for secm in 1:Sectors
                                 @# for subsecm in Subsecstart[secm]:Subsecend[secm]
-                                    + (iGAP_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}
+                                    + (iIAP_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}
                                 @# endfor
                             @# endfor
                             )
@@ -68,6 +69,8 @@ model;
                     @# endfor
                 @# endfor
 ;
+
+
 
 @# for sec in 1:Sectors   
     [name = 'domestic aggregate sector output']
@@ -139,18 +142,20 @@ model;
 
             [name = 'subsector specific damage function on capital formation']
             D_K_@{subsec}_@{reg} = exo_D_K_@{subsec}_@{reg} * Y0_p;
-            
-			[name = 'subsector specific adaptation expenditures by households against climate change']
-            K_AP_@{subsec}_@{reg} = exo_GAP_@{subsec}_@{reg} * Y0_p /(P * ((iGAP_@{subsec}_p == 0) * 1                        
+
+
+            [name = 'subsector specific adaptation expenditures by households against climate change']
+            K_AP_@{subsec}_@{reg} = exo_IAP_@{subsec}_@{reg} * Y0_p /(P * ((iIAP_@{subsec}_p == 0) * 1                        
                         @# for secm in 1:Sectors                         
                             @# for subsecm in Subsecstart[secm]:Subsecend[secm]
-                                    + (iGAP_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}_p
+                                    + (iIAP_@{subsec}_p == @{subsecm}) * P_D_@{subsecm}_p
                             @# endfor
                         @# endfor
                         ));
 
             [name = 'subsector specific private adaptation capital against climate change']
-            K_AP_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_AP_@{subsec}_@{reg}(-1) + G_AP_@{subsec}_@{reg};
+            K_AP_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_AP_@{subsec}_@{reg}(-1) + I_AP_@{subsec}_@{reg};
+
 
             [name = 'subsector specific adaptation expenditures by the government against climate change']
             K_A_@{subsec}_@{reg} = exo_GA_@{subsec}_@{reg} * Y0_p /(P * ((iGA_@{subsec}_p == 0) * 1                        
@@ -165,7 +170,7 @@ model;
             K_A_@{subsec}_@{reg} = (1 - deltaKA_@{subsec}_@{reg}_p) * K_A_@{subsec}_@{reg}(-1) + G_A_@{subsec}_@{reg};
 
             [name = 'demand for regional subsector output']
-            P_D_@{subsec}_@{reg}  = omegaQ_@{subsec}_@{reg}_p^(1/etaQ_@{subsec}_p) * ((Q_@{subsec}_@{reg})/Q_@{subsec})^(-1/etaQ_@{subsec}_p) * P_D_@{subsec};
+            P_D_@{subsec}_@{reg}  = omegaQ_@{subsec}_@{reg}_p^(1/etaQ_@{subsec}_p) * (Q_@{subsec}_@{reg}/Q_@{subsec})^(-1/etaQ_@{subsec}_p) * P_D_@{subsec};
 
             [name = 'demand for regional subsector value added']
             P_@{subsec}_@{reg}  = (1 - omegaQI_@{subsec}_@{reg}_p)^(1/etaI_@{subsec}_p) * ((Y_@{subsec}_@{reg})/Q_@{subsec}_@{reg})^(-1/etaI_@{subsec}_p) * P_D_@{subsec}_@{reg};
@@ -210,12 +215,12 @@ model;
         P_M_@{subsec} / P_M  = omegaM_@{subsec}_p^(1/etaM_p) * (M_@{subsec}/M)^(-1/etaM_p);
 
         [name = 'use of domestic subsector produced products']
-        Q_@{subsec} = Q_D_@{subsec} + X_@{subsec} + (iGAH_p == @{subsec}) * G_A_DH * P + (iGAPH_p == @{subsec}) * G_AP_DH * P
+        Q_@{subsec} = Q_D_@{subsec} + X_@{subsec} + (iGAH_p == @{subsec}) * G_A_DH * P + (iIAPH_p == @{subsec}) * I_AP_DH * P
                         @# for secm in 1:Sectors                         
                             @# for subsecm in Subsecstart[secm]:Subsecend[secm]
                                 @# for reg in 1:Regions                        
                                     + (iGA_@{subsecm}_p == @{subsec}) * G_A_@{subsecm}_@{reg} * P
-                                    + (iGAP_@{subsecm}_p == @{subsec}) * G_AP_@{subsecm}_@{reg} * P
+                                    + (iIAP_@{subsecm}_p == @{subsec}) * I_AP_@{subsecm}_@{reg} * P
                                 @# endfor
                             @# endfor
                         @# endfor
@@ -376,9 +381,11 @@ P_M / P = omegaF_p^(1/etaF_p) * (M/Q_U)^(-1/etaF_p);
 [name = 'demand for domestic produced products']
 P_D / P = (1 - omegaF_p)^(1/etaF_p) * (Q_D/Q_U)^(-1/etaF_p);
 
+
 [name = 'Resource Constraint']
 P_D / P * Q = C + PH/P * IH + I + G + NX + Q_I
-+ GAexpend + GAPexpend;
++ GAexpend + GAPexpend
+;
 
 [name = 'taxes on household labour income']
 tauNH = tauNH_p + exo_tauNH;
@@ -437,19 +444,19 @@ lambda * omegaH = PH * (1 + tauH) * lambda;
 lambdaEXP * beta_p * (1 + rfEXP) * exp(-phiB_p*((rfEXP*(BEXP+BG)/YEXP+NXEXP/YEXP))) = lambda;
 
 [name = 'adaptation measures for housing stock']
-G_A_DH = exo_G_A_DH * Y0_p / (P0_p * ((iGAH_p == 0)*1
+G_A_DH = exo_G_A_DH * Y0_p / (P * ((iGAH_p == 0)*1
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
                         + (iGAH_p == @{subsec}) * P_D_@{subsec}_p
                     @# endfor
                 @# endfor
                 ));
-				
+
 [name = 'private adaptation measures for housing stock']
-G_AP_DH = exo_G_AP_DH * Y0_p / (P * ((iGAPH_p == 0)*1
+I_AP_DH = exo_I_AP_DH * Y0_p / (P * ((iIAPH_p == 0)*1
                 @# for sec in 1:Sectors
                     @# for subsec in Subsecstart[sec]:Subsecend[sec]
-                        + (iGAPH_p == @{subsec}) * P_D_@{subsec}_p
+                        + (iIAPH_p == @{subsec}) * P_D_@{subsec}_p
                     @# endfor
                 @# endfor
                 ));

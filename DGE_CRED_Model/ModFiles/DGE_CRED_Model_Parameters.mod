@@ -49,7 +49,7 @@ phiK_p = 10;
 phiM_p = 0.45;
 phiQDD_p = 0.5;
 iGAH_p = 8;      
-iGAPH_p = 8;        
+iIAPH_p = 8;        
 @# for z in ClimateVarsNational
     @{z}0_p = 0;
     @{z}T_p = @{z}0_p;
@@ -66,7 +66,7 @@ iGAPH_p = 8;
     etaQA_@{sec}_p = 0.01;
     @# for subsec in Subsecstart[sec]:Subsecend[sec]
         iGA_@{subsec}_p = 8; 
-        iGAP_@{subsec}_p = 8;  
+        iIAP_@{subsec}_p = 8;  
         omega_@{subsec}_p = 1/inbsectors_p;
         omegaM_@{subsec}_p = 1/2;
         D_X_@{subsec}_p = 1;

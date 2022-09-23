@@ -90,11 +90,11 @@ function [strys, strpar, strexo] = ComputeAggregates(strys, strpar, strexo)
                 if strpar.(['iGA_' ssubsec '_p']) > 0
                     strys.adaptationused = strys.adaptationused + strys.(['G_A_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGA_' ssubsec '_p']))]);     
                 end
-                if strpar.(['iGAP_' ssubsec '_p']) > 0
-                    strys.adaptationused = strys.adaptationused + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGAP_' ssubsec '_p']))]);     
-                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iGAP_' ssubsec '_p']))]);
+                if strpar.(['iIAP_' ssubsec '_p']) > 0
+                    strys.adaptationused = strys.adaptationused + strys.(['I_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iIAP_' ssubsec '_p']))]);     
+                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['I_AP_' ssubsec '_' sreg]) * strys.P * strys.(['P_D_' num2str(strpar.(['iIAP_' ssubsec '_p']))]);
                 else
-                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['G_AP_' ssubsec '_' sreg]) * strys.P;
+                    strys.privateadaptationcost = strys.privateadaptationcost + strys.(['I_AP_' ssubsec '_' sreg]) * strys.P;
                 end
                 
             end
@@ -103,11 +103,11 @@ function [strys, strpar, strexo] = ComputeAggregates(strys, strpar, strexo)
     if strpar.iGAH_p > 0
         strys.adaptationused = strys.adaptationused + strys.G_A_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAH_p)]);       
     end
-    if strpar.iGAPH_p > 0
-        strys.adaptationused = strys.adaptationused + strys.G_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAPH_p)]);       
-        strys.privateadaptationcost = strys.privateadaptationcost + strys.G_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iGAPH_p)]);       
+    if strpar.iIAPH_p > 0
+        strys.adaptationused = strys.adaptationused + strys.I_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iIAPH_p)]);       
+        strys.privateadaptationcost = strys.privateadaptationcost + strys.I_AP_DH * strys.P * strys.(['P_D_' num2str(strpar.iIAPH_p)]);       
     else   
-        strys.privateadaptationcost = strys.privateadaptationcost + strys.G_AP_DH * strys.P;       
+        strys.privateadaptationcost = strys.privateadaptationcost + strys.I_AP_DH * strys.P;       
     end
     strys.Q_D = strys.Q - strys.X - strys.adaptationused / strys.P_D;
     

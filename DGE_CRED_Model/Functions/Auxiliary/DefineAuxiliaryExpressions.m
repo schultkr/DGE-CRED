@@ -51,6 +51,12 @@ temp = arrayfun(@(y) arrayfun(@(x) ['exo_D_' num2str(y) '_' num2str(x)], 1:inbre
 casDamageShocks = [temp{:}];
 [lSelectDamShocks,iposDamShocks] = ismember(casDamageShocks, cellstr(M_.exo_names));
 
+% find positions of exogenous expenditures
+temp = arrayfun(@(y) arrayfun(@(x) ['exo_GA_' num2str(y) '_' num2str(x)], 1:inbregions_p, 'UniformOutput', false), 1:imaxsec_p, 'UniformOutput', false);
+casExoExpendShocks = [temp{:}];
+[lSelectExoExpendShocks,iposExoExpendShocks] = ismember(casExoExpendShocks, cellstr(M_.exo_names));
+
+
 % find positions of capital damage shocks
 temp = arrayfun(@(y) arrayfun(@(x) ['exo_D_K_' num2str(y) '_' num2str(x)], 1:inbregions_p, 'UniformOutput', false), 1:imaxsec_p, 'UniformOutput', false);
 casDamageShocks = [temp{:}];
