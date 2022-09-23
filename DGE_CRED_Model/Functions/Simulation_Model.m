@@ -2,12 +2,22 @@
 % === Deterministic Simulations ===
 % =================================
 if ~isequal(sScenario,'Baseline')
-    oo_.exo_simul(:,iposProdShocks) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposAVars,:)./structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposAVars,1))';
-    oo_.exo_simul(:,iposProdShocksN) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposANVars,:))';
-    oo_.exo_simul(:,iposPMShock) = (structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPM,:)-structScenarioResults.(sVersion).Baseline.M_.params(ismember(M_.param_names, 'P0_M_p')))';
-    oo_.exo_simul(:,iposPriceHShock) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPH,:)./structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPH,1))';
-    oo_.exo_steady_state = oo_.exo_simul(end,:)';
-    M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;
+    if isfield(structScenarioResults.(sVersion),sScenario(1:6))
+        sFieldName = (sScenario(1:6));
+        oo_.exo_simul(:,iposProdShocks) = log(structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposAVars,:)./structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposAVars,1))';
+        oo_.exo_simul(:,iposProdShocksN) = log(structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposANVars,:))';
+        oo_.exo_simul(:,iposPMShock) = (structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposPM,:)-structScenarioResults.(sVersion).(sFieldName).M_.params(ismember(M_.param_names, 'P0_M_p')))';
+        oo_.exo_simul(:,iposPriceHShock) = log(structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposPH,:)./structScenarioResults.(sVersion).(sFieldName).oo_.endo_simul(iposPH,1))';
+        oo_.exo_steady_state = oo_.exo_simul(end,:)';
+        M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;        
+    else
+        oo_.exo_simul(:,iposProdShocks) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposAVars,:)./structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposAVars,1))';
+        oo_.exo_simul(:,iposProdShocksN) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposANVars,:))';
+        oo_.exo_simul(:,iposPMShock) = (structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPM,:)-structScenarioResults.(sVersion).Baseline.M_.params(ismember(M_.param_names, 'P0_M_p')))';
+        oo_.exo_simul(:,iposPriceHShock) = log(structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPH,:)./structScenarioResults.(sVersion).Baseline.oo_.endo_simul(iposPH,1))';
+        oo_.exo_steady_state = oo_.exo_simul(end,:)';
+        M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;
+    end
 end
 
 M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;
@@ -73,6 +83,7 @@ else
         oo_.exo_simul(:,iposDamKShocks) = oo_.exo_simul_start(:,iposDamKShocks).*(icostep./iStep);
         oo_.exo_simul(:,iposDamNShocks) = oo_.exo_simul_start(:,iposDamNShocks).*(icostep./iStep);
         oo_.exo_simul(:,iposDamHShock) = oo_.exo_simul_start(:,iposDamHShock).*(icostep./iStep);
+        oo_.exo_simul(:,iposExoExpendShocks) = oo_.exo_simul_start(:,iposExoExpendShocks).*(icostep./iStep);        
         [ystemp, ~, ~, exotemp] = DGE_CRED_Model_steadystate(oo_.endo_simul(:, end), oo_.exo_simul(end,:),M_,options_);            
         oo_.steady_state = ystemp;
         oo_.endo_simul(:, end) = repmat(ystemp,1,size(oo_.endo_simul(:, end), 2));

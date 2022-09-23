@@ -49,11 +49,12 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
         % adaptation measures in the housing sector
         strys.G_A_DH = strexo.exo_G_A_DH * strpar.Y0_p / strpar.P0_p;
     end
-    
-	if strpar.iGAPH_p == 0
+
+    if strpar.iIAPH_p == 0
         % private adaptation measures in the housing sector
-        strys.G_AP_DH = strexo.exo_G_AP_DH * strpar.Y0_p / strpar.P0_p;
+        strys.I_AP_DH = strexo.exo_I_AP_DH * strpar.Y0_p / strpar.P0_p;
     end
+	
     %% calculate sectoral and regional production factors and output
     
     for icosec = 1:strpar.inbsectors_p
@@ -263,18 +264,18 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
                             strys.(['K_A_' ssubsecm '_' sreg]) = strexo.(['exo_GA_' ssubsecm '_' sreg]) * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
                             strys.(['G_A_' ssubsecm '_' sreg]) = strpar.(['deltaKA_' ssubsecm '_' sreg '_p']) * strys.(['K_A_' ssubsecm '_' sreg]);
                         end
-                        if strpar.(['iGAP_' ssubsecm '_p']) == icosubsec
-                            strys.(['K_AP_' ssubsecm '_' sreg]) = strexo.(['exo_GAP_' ssubsecm '_' sreg]) * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
-                            strys.(['G_AP_' ssubsecm '_' sreg]) = strpar.(['deltaKA_' ssubsecm '_' sreg '_p']) * strys.(['K_AP_' ssubsecm '_' sreg]);
+                        if strpar.(['iIAP_' ssubsecm '_p']) == icosubsec
+                            strys.(['K_AP_' ssubsecm '_' sreg]) = strexo.(['exo_IAP_' ssubsecm '_' sreg]) * strpar.Y0_p / (strys.P * strpar.(['P_D_' ssubsec '_p']));
+                            strys.(['I_AP_' ssubsecm '_' sreg]) = strpar.(['deltaKA_' ssubsecm '_' sreg '_p']) * strys.(['K_AP_' ssubsecm '_' sreg]);
                         end						
 						
-                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]) + (strpar.(['iGAP_' ssubsecm '_p'])==icosubsec) * strys.(['G_AP_' ssubsecm '_' sreg]);
+                        strys.(['GA_direct_' ssubsec]) = strys.(['GA_direct_' ssubsec]) + (strpar.(['iGA_' ssubsecm '_p'])==icosubsec) * strys.(['G_A_' ssubsecm '_' sreg]) + (strpar.(['iIAP_' ssubsecm '_p'])==icosubsec) * strys.(['I_AP_' ssubsecm '_' sreg]);
                     end
                 end
-            end             
+            end            
             
             % compute sub-sectoral output used domestically
-            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - strys.(['GA_direct_' ssubsec]) * strys.P - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P;       
+            strys.(['Q_D_' ssubsec]) = strys.(['Q_' ssubsec]) - strys.(['X_' ssubsec]) - strys.(['GA_direct_' ssubsec]) * strys.P - (strpar.iGAH_p == icosubsec) * strys.G_A_DH * strys.P - (strpar.iIAPH_p == icosubsec) * strys.I_AP_DH * strys.P;       
             
             % compute sub-sectoral exports share
             strys.(['D_X_' ssubsec]) = strys.(['X_' ssubsec]) / strys.(['Q_' ssubsec]);
@@ -499,7 +500,7 @@ function [fval_vec,strpar,strys] = Calibration(x,strys,strexo,strpar)
     strys.PH = strpar.sH_p * strys.P * strys.Y / (strpar.deltaH_p * strys.H * (1 + strys.tauH));
     
     % consumption
-    strys.C = ((strys.P_D / strys.P * strys.Q - strys.NX - strys.Q_I - strys.privateadaptationcost / strys.P - strys.I - strys.wagetax  - strys.capitaltax - strys.PH / strys.P * strys.H * strpar.deltaH_p * (1 + strys.tauH) + strys.rf * strys.BG) / (1 + strys.tauC));
+    strys.C = ((strys.P_D / strys.P * strys.Q - strys.NX - strys.Q_I  - strys.I - strys.wagetax  - strys.capitaltax - strys.privateadaptationcost / strys.P - strys.PH / strys.P * strys.H * strpar.deltaH_p * (1 + strys.tauH) + strys.rf * strys.BG) / (1 + strys.tauC));
     
     % auxiliary variable to compute gamma
     tempgam = strys.H * strys.PH * (1 + strys.tauH) / (strys.C * strys.P * (1 + strys.tauC)) *  (1 - strpar.beta_p * (1 - strpar.deltaH_p)) / (strpar.beta_p);
