@@ -9,28 +9,18 @@ clearvars;
 sPathWD = pwd();
 
 %% Define sectors
-casSectors = {'Rice, Agriculture excluding rice, Aquaculture, Forestry';...
-              'Water, Energy, Manufacturing and Construction';
-              'TransportWater'; 'TransportLand';  'Health and Services'...
-              };
+casSectors = {'Sector1'; 'Sector2'; 'Sector3'};
 inbsectors_p = length(casSectors);
 %% Define subsectors
-casSubSectors = {'Rice'; 'Agriculture excluding rice'; 'Aquaculture'; 'Forestry';...
-              'Water'; 'Energy'; 'Manufacturing'; 'Construction';
-              'TransportWater'; 'TransportLand';  'Health'; 'Services'...
-              };
+casSubSectors = {'Sector1'; 'Sector2'; 'Sector3'};
 inbsubsectors_p = length(casSubSectors);
 %% Define regions
-casRegions = {'Vietnam'; 'RoW'};
+casRegions = {'Region'};
 inbregions_p = length(casRegions);
 
 %% Define regional climate variables
-casClimateVarsRegionalName = {'surface temperature (Celsius)', 'surface windspeed (m/s)',...
-    'surface precipitation flux (mm)', 'sunshine (hour per day)', 'surface relative humidity (percent)',...
-    'heatwaves per year', 'maximal consecutive dry days', 'maximal consecutive wet days',...
-    'number of storms (equivalent to average historic storm)', 'number of floods (equivalent to historic floods)', 'number of forest fire', ' land slides'...
-    };
-casClimateVarsRegional = {'tas', 'SfcWind', 'pr', 'sunshine', 'hurs', 'heatwave', 'maxdrydays', 'maxwetdays', 'storms', 'floods', 'fire', 'landslide'};
+casClimateVarsRegionalName = {'temperature'};
+casClimateVarsRegional = {'tas'};
 
 %% Define national climate variables
 casClimateVarsNationalName = {'Sea level'};

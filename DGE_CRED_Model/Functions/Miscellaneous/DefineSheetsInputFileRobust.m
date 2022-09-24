@@ -46,7 +46,7 @@ lRegional = false;
 strSubSheet(icosubsheet) = AddSubSheet(casVariables, casCellNames, casSubSectors(:), casRegions(:), lSectoral, lRegional, inbsubsectors_p, inbregions_p);
 
 icosubsheet = icosubsheet + 1;
-casVariables = {'initial population', 'initial value added', 'import share', 'housing to population ratio', 'investmetns in residential building relative to GDP', 'subsector for adaptation measures in the housing sector', 'subsector for private adaptation measures in the housing sector'};
+casVariables = {'initial population (PoP0_p)', 'initial value added (Y0_p)', 'import share (phiM_p)', 'housing to population ratio (H0_p)', 'investmetns in residential building relative to GDP (sH_p)', 'subsector for adaptation measures in the housing sector (iGAH_p)', 'subsector for private adaptation measures in the housing sector (iIAPH_p)'};
 casCellNames = {'PoP0_p', 'Y0_p', 'phiM_p', 'H0_p', 'sH_p', 'iGAH_p', 'iIAPH_p'};
 lSectoral = false;
 lRegional = false;
