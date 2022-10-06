@@ -7,7 +7,6 @@
 clearvars;
 % define working directory path
 sPathWD = pwd();
-
 %% Define sectors
 casSectors = {'Sector1'; 'Sector2'; 'Sector3'};
 inbsectors_p = length(casSectors);

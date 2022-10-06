@@ -9,9 +9,9 @@ clearvars;
 % define working directory path
 sPathWD = pwd();
 % define number of total subsectors
-inbsubsectors_p = 12;
+inbsubsectors_p = 3;
 % define number of regions
-inbregions_p = 2;
+inbregions_p = 1;
 
 
 %% Update the excel file
@@ -35,37 +35,40 @@ casSheetNames = sheetnames(sExcelFileName);
 for icosheet = 1:length(casSheetNames)
     sSheetName = char(casSheetNames(icosheet));
     if ~ismember(sSheetName, {'Sheet1', 'Content', 'Data', 'Damage Functions'})
-        caValues = readcell(sExcelFileName, 'Sheet', sSheetName);
-        inbrow = size(caValues,1);
-        inbcol = size(caValues,2);
-        caHeader = readcell(sExcelFileName, 'Sheet', sSheetName, 'Range', 'A1:C1');
-        [~, iparamcol] = ismember('Parameter', caHeader);
-        [~, ivaluecol] = ismember('Value', caHeader);
+    caValues = readcell(sExcelFileName, 'Sheet', sSheetName);
+    inbrow = size(caValues,1);
+    inbcol = size(caValues,2);
+    caHeader = readcell(sExcelFileName, 'Sheet', sSheetName, 'Range', 'A1:C1');
+    [~, iparamcol] = ismember('Parameter', caHeader);
+    [~, ivaluecol] = ismember('Value', caHeader);
         if iparamcol > 0 && ivaluecol > 0
             for icorow = 1:inbrow
-                caValueWrite = {'enter value here'};
-                dat_range = ['A' num2str(icorow) ':' GetExcelColumn(inbcol) num2str(icorow)];
-                temp = strsplit(caValues{icorow, iparamcol}, '_');
-                sSearchTerm = {['(' char(temp(1)) ')']};
-                [iposrow, iposcol] = find(cellfun(@(x) ~isempty(strfind(x,sSearchTerm)), casDataString));
-
-                
-
-
-                if iposrow > 1
-                    caValueWrite = caData(iposrow, iposcol+1);
-                elseif iposrow  == 1
-                    temploc = strsplit(caValues{icorow, iparamcol}, '_');
-                    if length(temploc) == 3
-                        itemploc = str2double(temploc(2));
-                    elseif length(temploc) == 4
-                        itemploc = str2double(temploc(3)) + (str2double(temploc(2))-1) * inbregions_p;
-                    end
-                    caValueWrite = caData(iposrow+itemploc, iposcol);
+            caValueWrite = {'enter value here'};
+            dat_range = ['A' num2str(icorow) ':' GetExcelColumn(inbcol) num2str(icorow)];
+            temp = strsplit(caValues{icorow, iparamcol}, '_');
+            sSearchTerm = {['(' char(temp(1)) ')']};
+            [iaposrow, iaposcol] = find(cellfun(@(x) ~isempty(strfind(x,sSearchTerm)), casDataString));
+            if length(temp) <=  2
+                iposrow = iaposrow(iaposrow > 1);
+                iposcol = iaposcol(iaposrow > 1);
+            elseif length(temp) > 2
+                iposrow = iaposrow(iaposrow == 1);
+                iposcol = iaposcol(iaposrow == 1);
+            end
+            if iposrow > 1
+                caValueWrite = caData(iposrow, iposcol+1);
+            elseif iposrow  == 1
+                temploc = strsplit(caValues{icorow, iparamcol}, '_');
+                if length(temploc) == 3
+                    itemploc = str2double(temploc(2));
+                elseif length(temploc) == 4
+                    itemploc = str2double(temploc(3)) + (str2double(temploc(2))-1) * inbregions_p;
                 end
-                if ~isequal(caValueWrite, {'enter value here'})  && ~ismissing(caValueWrite{:})
-                    writecell(caValueWrite,sExcelFileName, 'Sheet', sSheetName, 'Range', [GetExcelColumn(ivaluecol) num2str(icorow)])
-                end
+                caValueWrite = caData(iposrow+itemploc, iposcol);
+            end
+            if ~isequal(caValueWrite, {'enter value here'})  && ~ismissing(caValueWrite{:})
+                writecell(caValueWrite,sExcelFileName, 'Sheet', sSheetName, 'Range', [GetExcelColumn(ivaluecol) num2str(icorow)])
+            end
             end
         end
     end
