@@ -8,13 +8,13 @@
 
 ## Installation
 
-To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/Model%20Description.pdf).
+To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/DGE-CRED%20Model%20Technical%20Report%20reduced.pdf).
 
 ## Scenario Simulation
 
 The model can be used to simulate different climate change scenarios. Therefore one first defines a Baseline scenario and various climate change scenarios. 
 
-![](pictures/ssp585C.jpg)
+![](pictures/RegionsVASSP245.jpg)
 
 _For more examples on using dynare, please refer to the website of [Dynare](https://www.dynare.org/)._
 
