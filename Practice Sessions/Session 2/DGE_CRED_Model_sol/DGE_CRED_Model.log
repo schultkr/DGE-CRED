@@ -1,0 +1,2057 @@
+Starting preprocessing of the model file ...
+Found 163 equation(s).
+Evaluating expressions...done
+Computing static model derivatives (order 1).
+Computing dynamic model derivatives (order 2).
+Processing outputs ...
+done
+Preprocessing completed.
+=============================================
+=== Step 1 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00147926                        0.0496               1
+     1         22     2.27379e-06       0.790644        0.00177               1
+     2         33     6.17628e-12     0.00676751       2.65e-06            1.98
+     3         44     3.36702e-23    9.54698e-06       6.73e-12            1.98
+     4         55     2.12268e-27     2.9481e-11       5.88e-14            1.98
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','1.683402e-23','2.220446e-16','2.122677e-27','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 24.4063
+N            		 0.219023
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0540083
+Y_1          		 0.266919
+Q_D_1        		 0.949195
+Q_I_1        		 0.57928
+M_1          		 0.321591
+X_1          		 0.178902
+D_X_1        		 0.158587
+K_1          		 1.20019
+N_1          		 0.0194946
+P_D_1        		 0.691342
+P_M_1        		 2.18159
+W_1          		 9.24848
+Q_1_1        		 1.1281
+W_1_1        		 9.24848
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.691342
+I_2          		 0.553387
+Y_2          		 1.77729
+Q_D_2        		 11.269
+Q_I_2        		 7.61712
+M_2          		 0.321591
+X_2          		 3.06417
+D_X_2        		 0.213782
+K_2          		 12.2497
+N_2          		 0.0887624
+P_D_2        		 0.594611
+P_M_2        		 2.18159
+W_2          		 9.77085
+Q_2_1        		 14.3331
+W_2_1        		 9.77085
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.594611
+I_3          		 0.493035
+Y_3          		 2.11603
+Q_D_3        		 7.36425
+Q_I_3        		 3.64001
+M_3          		 0.234518
+X_3          		 0.312636
+D_X_3        		 0.0407244
+K_3          		 10.9563
+N_3          		 0.110766
+P_D_3        		 0.695521
+P_M_3        		 2.99159
+W_3          		 11.8853
+Q_3_1        		 7.67689
+W_3_1        		 11.8853
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.695521
+P            		 0.88555
+lambda       		 0.30799
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.90346
+H            		 22.2187
+IH           		 1.13077
+PH           		 0.0353707
+DH           		 0.0198346
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -1.60705
+BG           		 0
+NX           		 0.0659149
+rf           		 0.041016
+G            		 0.58295
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.8295
+I            		 1.10043
+Y            		 4.69792
+Q_U          		 16.4684
+Q_D          		 19.0205
+Q_I          		 11.8364
+Q            		 22.3176
+M            		 0.868296
+X            		 3.29707
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.949195
+P_A_1        		 0.691342
+KH_1_1       		 1.20019
+r_1_1        		 0.086016
+I_1_1        		 0.0540083
+omegaI_1_1   		 0.88555
+Q_1          		 1.1281
+D_1_1        		 0.00150569
+D_N_1_1      		 0.02252
+D_K_1_1      		 0
+K_1_1        		 2.47832
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.428849
+Y_1_1        		 0.622409
+N_1_1        		 0.0194946
+Q_I_1_1      		 0.57928
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 11.269
+P_A_2        		 0.594611
+KH_2_1       		 12.2497
+r_2_1        		 0.086016
+I_2_1        		 0.553387
+omegaI_2_1   		 0.88555
+Q_2          		 14.3331
+D_2_1        		 0
+D_N_2_1      		 0.00938662
+D_K_2_1      		 0.00214974
+K_2_1        		 83.9378
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.129235
+Y_2_1        		 13.7524
+N_2_1        		 0.0887624
+Q_I_2_1      		 7.61712
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.36425
+P_A_3        		 0.695521
+KH_3_1       		 10.9563
+r_3_1        		 0.086016
+I_3_1        		 0.493035
+omegaI_3_1   		 0.88555
+Q_3          		 7.67689
+D_3_1        		 0
+D_N_3_1      		 0.00138038
+D_K_3_1      		 0
+K_3_1        		 20.1771
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.480861
+Y_3_1        		 4.40049
+N_3_1        		 0.110766
+Q_I_3_1      		 3.64001
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 61.038,	 time = 0.883
+Iter: 2,	 err. = 0.0138333,	 time = 0.623
+Iter: 3,	 err. = 5.8234e-05,	 time = 0.518
+Iter: 4,	 err. = 3.21599e-09,	 time = 0.415
+
+Total time of simulation: 3.869.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 3.941072 seconds.
+=============================================
+=============================================
+=== Step 2 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00153858                        0.0509               1
+     1         22     2.49345e-06       0.793967        0.00186               1
+     2         33     7.46426e-12     0.00685538       2.99e-06            1.98
+     3         44     4.93773e-23    1.01501e-05       8.94e-12            1.98
+     4         55     3.36796e-27    2.58797e-11       9.28e-14            1.98
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','2.468695e-23','2.220446e-16','3.367955e-27','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 24.3214
+N            		 0.219579
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0523677
+Y_1          		 0.258811
+Q_D_1        		 0.911693
+Q_I_1        		 0.56174
+M_1          		 0.319901
+X_1          		 0.178382
+D_X_1        		 0.163642
+K_1          		 1.16373
+N_1          		 0.0191951
+P_D_1        		 0.693769
+P_M_1        		 2.18159
+W_1          		 9.10747
+Q_1_1        		 1.09008
+W_1_1        		 9.10747
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.693769
+I_2          		 0.551603
+Y_2          		 1.76461
+Q_D_2        		 11.1619
+Q_I_2        		 7.56291
+M_2          		 0.319901
+X_2          		 3.06308
+D_X_2        		 0.215331
+K_2          		 12.1623
+N_2          		 0.0887896
+P_D_2        		 0.594865
+P_M_2        		 2.18159
+W_2          		 9.69815
+Q_2_1        		 14.225
+W_2_1        		 9.69815
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.594865
+I_3          		 0.494791
+Y_3          		 2.12356
+Q_D_3        		 7.39889
+Q_I_3        		 3.65288
+M_3          		 0.233286
+X_3          		 0.312895
+D_X_3        		 0.0405736
+K_3          		 10.9954
+N_3          		 0.111595
+P_D_3        		 0.694828
+P_M_3        		 2.99159
+W_3          		 11.839
+Q_3_1        		 7.71178
+W_3_1        		 11.839
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.694828
+P            		 0.88555
+lambda       		 0.310347
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.88141
+H            		 22.05
+IH           		 1.14204
+PH           		 0.0353707
+DH           		 0.0395427
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -1.91621
+BG           		 0
+NX           		 0.0785951
+rf           		 0.041016
+G            		 0.578563
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.78563
+I            		 1.09876
+Y            		 4.68294
+Q_U          		 16.3819
+Q_D          		 18.9206
+Q_I          		 11.7775
+Q            		 22.2179
+M            		 0.863734
+X            		 3.29733
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.911693
+P_A_1        		 0.693769
+KH_1_1       		 1.16373
+r_1_1        		 0.086016
+I_1_1        		 0.0523677
+omegaI_1_1   		 0.88555
+Q_1          		 1.09008
+D_1_1        		 0.00301138
+D_N_1_1      		 0.04504
+D_K_1_1      		 0
+K_1_1        		 2.37855
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.433262
+Y_1_1        		 0.597354
+N_1_1        		 0.0191951
+Q_I_1_1      		 0.56174
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 11.1619
+P_A_2        		 0.594865
+KH_2_1       		 12.1623
+r_2_1        		 0.086016
+I_2_1        		 0.551603
+omegaI_2_1   		 0.88555
+Q_2          		 14.225
+D_2_1        		 0
+D_N_2_1      		 0.0187732
+D_K_2_1      		 0.00429948
+K_2_1        		 83.1679
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.129501
+Y_2_1        		 13.6262
+N_2_1        		 0.0887896
+Q_I_2_1      		 7.56291
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.39889
+P_A_3        		 0.694828
+KH_3_1       		 10.9954
+r_3_1        		 0.086016
+I_3_1        		 0.494791
+omegaI_3_1   		 0.88555
+Q_3          		 7.71178
+D_3_1        		 0
+D_N_3_1      		 0.00276077
+D_K_3_1      		 0
+K_3_1        		 20.2999
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.479654
+Y_3_1        		 4.42727
+N_3_1        		 0.111595
+Q_I_3_1      		 3.65288
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0772927,	 time = 0.649
+Iter: 2,	 err. = 0.0141723,	 time = 0.301
+Iter: 3,	 err. = 6.39406e-05,	 time = 0.227
+Iter: 4,	 err. = 3.84895e-09,	 time = 0.706
+
+Total time of simulation: 3.008.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 3.023301 seconds.
+=============================================
+=============================================
+=== Step 3 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00160189                        0.0522               1
+     1         22     2.74019e-06       0.797314        0.00196               1
+     2         33     9.04327e-12     0.00694862        3.4e-06            1.99
+     3         44      1.9101e-22    1.07315e-05       1.18e-11            1.99
+     4         55     5.51426e-28    9.94771e-11       1.02e-14            1.99
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','9.550451e-23','2.220446e-16','5.514261e-28','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 24.2369
+N            		 0.220138
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0507437
+Y_1          		 0.250785
+Q_D_1        		 0.874683
+Q_I_1        		 0.544377
+M_1          		 0.318217
+X_1          		 0.177848
+D_X_1        		 0.168971
+K_1          		 1.12764
+N_1          		 0.0188921
+P_D_1        		 0.696282
+P_M_1        		 2.18159
+W_1          		 8.96653
+Q_1_1        		 1.05253
+W_1_1        		 8.96653
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.696282
+I_2          		 0.549806
+Y_2          		 1.75189
+Q_D_2        		 11.0545
+Q_I_2        		 7.50853
+M_2          		 0.318217
+X_2          		 3.06197
+D_X_2        		 0.216908
+K_2          		 12.0746
+N_2          		 0.0888137
+P_D_2        		 0.595126
+P_M_2        		 2.18159
+W_2          		 9.62561
+Q_2_1        		 14.1164
+W_2_1        		 9.62561
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.595126
+I_3          		 0.49656
+Y_3          		 2.13115
+Q_D_3        		 7.43381
+Q_I_3        		 3.66584
+M_3          		 0.232057
+X_3          		 0.313155
+D_X_3        		 0.0404229
+K_3          		 11.0347
+N_3          		 0.112432
+P_D_3        		 0.694135
+P_M_3        		 2.99159
+W_3          		 11.7929
+Q_3_1        		 7.74697
+W_3_1        		 11.7929
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.694135
+P            		 0.88555
+lambda       		 0.312728
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.85947
+H            		 21.8821
+IH           		 1.15323
+PH           		 0.0353707
+DH           		 0.0591259
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -2.22462
+BG           		 0
+NX           		 0.091245
+rf           		 0.041016
+G            		 0.574197
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.74197
+I            		 1.09711
+Y            		 4.66809
+Q_U          		 16.2956
+Q_D          		 18.8209
+Q_I          		 11.7188
+Q            		 22.1185
+M            		 0.859185
+X            		 3.29759
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.874683
+P_A_1        		 0.696282
+KH_1_1       		 1.12764
+r_1_1        		 0.086016
+I_1_1        		 0.0507437
+omegaI_1_1   		 0.88555
+Q_1          		 1.05253
+D_1_1        		 0.00451706
+D_N_1_1      		 0.06756
+D_K_1_1      		 0
+K_1_1        		 2.28056
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.437865
+Y_1_1        		 0.572745
+N_1_1        		 0.0188921
+Q_I_1_1      		 0.544377
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 11.0545
+P_A_2        		 0.595126
+KH_2_1       		 12.0746
+r_2_1        		 0.086016
+I_2_1        		 0.549806
+omegaI_2_1   		 0.88555
+Q_2          		 14.1164
+D_2_1        		 0
+D_N_2_1      		 0.0281599
+D_K_2_1      		 0.00644922
+K_2_1        		 82.3947
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.129774
+Y_2_1        		 13.4995
+N_2_1        		 0.0888137
+Q_I_2_1      		 7.50853
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.43381
+P_A_3        		 0.694135
+KH_3_1       		 11.0347
+r_3_1        		 0.086016
+I_3_1        		 0.49656
+omegaI_3_1   		 0.88555
+Q_3          		 7.74697
+D_3_1        		 0
+D_N_3_1      		 0.00414115
+D_K_3_1      		 0
+K_3_1        		 20.4239
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.478447
+Y_3_1        		 4.45432
+N_3_1        		 0.112432
+Q_I_3_1      		 3.66584
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0794111,	 time = 0.259
+Iter: 2,	 err. = 0.0145267,	 time = 0.225
+Iter: 3,	 err. = 7.03149e-05,	 time = 0.364
+Iter: 4,	 err. = 4.62062e-09,	 time = 0.345
+
+Total time of simulation: 2.553.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 2.574473 seconds.
+=============================================
+=============================================
+=== Step 4 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00166956                        0.0535               1
+     1         22     3.01869e-06       0.800685        0.00206               1
+     2         33     1.10197e-11      0.0070463       3.86e-06               2
+     3         44     1.35713e-22    1.13768e-05       1.46e-11               2
+     4         55     5.28611e-28    2.02741e-11        3.2e-14               2
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','6.785601e-23','2.220446e-16','5.286108e-28','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 24.1528
+N            		 0.220698
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0491366
+Y_1          		 0.242842
+Q_D_1        		 0.838172
+Q_I_1        		 0.527194
+M_1          		 0.316537
+X_1          		 0.177297
+D_X_1        		 0.174596
+K_1          		 1.09192
+N_1          		 0.0185858
+P_D_1        		 0.698887
+P_M_1        		 2.18159
+W_1          		 8.82565
+Q_1_1        		 1.01547
+W_1_1        		 8.82565
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.698887
+I_2          		 0.547998
+Y_2          		 1.73912
+Q_D_2        		 10.9467
+Q_I_2        		 7.454
+M_2          		 0.316537
+X_2          		 3.06082
+D_X_2        		 0.218512
+K_2          		 11.9866
+N_2          		 0.0888345
+P_D_2        		 0.595394
+P_M_2        		 2.18159
+W_2          		 9.55325
+Q_2_1        		 14.0075
+W_2_1        		 9.55325
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.595394
+I_3          		 0.498342
+Y_3          		 2.1388
+Q_D_3        		 7.46903
+Q_I_3        		 3.6789
+M_3          		 0.230832
+X_3          		 0.313415
+D_X_3        		 0.0402721
+K_3          		 11.0743
+N_3          		 0.113278
+P_D_3        		 0.69344
+P_M_3        		 2.99159
+W_3          		 11.7468
+Q_3_1        		 7.78244
+W_3_1        		 11.7468
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.69344
+P            		 0.88555
+lambda       		 0.315133
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.83764
+H            		 21.715
+IH           		 1.16434
+PH           		 0.0353707
+DH           		 0.0785855
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -2.53229
+BG           		 0
+NX           		 0.103864
+rf           		 0.041016
+G            		 0.569854
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.69854
+I            		 1.09548
+Y            		 4.65334
+Q_U          		 16.2096
+Q_D          		 18.7216
+Q_I          		 11.6601
+Q            		 22.0195
+M            		 0.854649
+X            		 3.29787
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.838172
+P_A_1        		 0.698887
+KH_1_1       		 1.09192
+r_1_1        		 0.086016
+I_1_1        		 0.0491366
+omegaI_1_1   		 0.88555
+Q_1          		 1.01547
+D_1_1        		 0.00602275
+D_N_1_1      		 0.09008
+D_K_1_1      		 0
+K_1_1        		 2.18437
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.44267
+Y_1_1        		 0.548586
+N_1_1        		 0.0185858
+Q_I_1_1      		 0.527194
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.9467
+P_A_2        		 0.595394
+KH_2_1       		 11.9866
+r_2_1        		 0.086016
+I_2_1        		 0.547998
+omegaI_2_1   		 0.88555
+Q_2          		 14.0075
+D_2_1        		 0
+D_N_2_1      		 0.0375465
+D_K_2_1      		 0.00859896
+K_2_1        		 81.618
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.130054
+Y_2_1        		 13.3723
+N_2_1        		 0.0888345
+Q_I_2_1      		 7.454
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.46903
+P_A_3        		 0.69344
+KH_3_1       		 11.0743
+r_3_1        		 0.086016
+I_3_1        		 0.498342
+omegaI_3_1   		 0.88555
+Q_3          		 7.78244
+D_3_1        		 0
+D_N_3_1      		 0.00552154
+D_K_3_1      		 0
+K_3_1        		 20.5491
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.477239
+Y_3_1        		 4.48161
+N_3_1        		 0.113278
+Q_I_3_1      		 3.6789
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.081614,	 time = 0.571
+Iter: 2,	 err. = 0.0148975,	 time = 0.388
+Iter: 3,	 err. = 7.74471e-05,	 time = 0.449
+Iter: 4,	 err. = 5.56441e-09,	 time = 0.404
+
+Total time of simulation: 3.336.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 3.359050 seconds.
+=============================================
+=============================================
+=== Step 5 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00174201                        0.0549               1
+     1         22     3.33374e-06       0.804074        0.00218               1
+     2         33     1.35025e-11     0.00714533       4.41e-06            2.01
+     3         44     2.27881e-22    1.21285e-05       1.89e-11            2.01
+     4         55     6.53473e-28    3.85468e-11       2.21e-14            2.01
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','1.139402e-22','2.220446e-16','6.534727e-28','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 24.0692
+N            		 0.221261
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0475467
+Y_1          		 0.234985
+Q_D_1        		 0.802171
+Q_I_1        		 0.510194
+M_1          		 0.314862
+X_1          		 0.17673
+D_X_1        		 0.180539
+K_1          		 1.05659
+N_1          		 0.0182761
+P_D_1        		 0.70159
+P_M_1        		 2.18159
+W_1          		 8.68482
+Q_1_1        		 0.978901
+W_1_1        		 8.68482
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.70159
+I_2          		 0.546177
+Y_2          		 1.72632
+Q_D_2        		 10.8386
+Q_I_2        		 7.3993
+M_2          		 0.314862
+X_2          		 3.05965
+D_X_2        		 0.220146
+K_2          		 11.8984
+N_2          		 0.0888521
+P_D_2        		 0.59567
+P_M_2        		 2.18159
+W_2          		 9.48106
+Q_2_1        		 13.8983
+W_2_1        		 9.48106
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.59567
+I_3          		 0.500137
+Y_3          		 2.1465
+Q_D_3        		 7.50453
+Q_I_3        		 3.69206
+M_3          		 0.229611
+X_3          		 0.313677
+D_X_3        		 0.0401213
+K_3          		 11.1141
+N_3          		 0.114133
+P_D_3        		 0.692743
+P_M_3        		 2.99159
+W_3          		 11.7008
+Q_3_1        		 7.81821
+W_3_1        		 11.7008
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.692743
+P            		 0.88555
+lambda       		 0.317564
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.81592
+H            		 21.5488
+IH           		 1.17536
+PH           		 0.0353707
+DH           		 0.0979231
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -2.83921
+BG           		 0
+NX           		 0.116453
+rf           		 0.041016
+G            		 0.565532
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.65532
+I            		 1.09386
+Y            		 4.63871
+Q_U          		 16.1238
+Q_D          		 18.6225
+Q_I          		 11.6016
+Q            		 21.9207
+M            		 0.850127
+X            		 3.29815
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.802171
+P_A_1        		 0.70159
+KH_1_1       		 1.05659
+r_1_1        		 0.086016
+I_1_1        		 0.0475467
+omegaI_1_1   		 0.88555
+Q_1          		 0.978901
+D_1_1        		 0.00752844
+D_N_1_1      		 0.1126
+D_K_1_1      		 0
+K_1_1        		 2.08998
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.447691
+Y_1_1        		 0.524882
+N_1_1        		 0.0182761
+Q_I_1_1      		 0.510194
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.8386
+P_A_2        		 0.59567
+KH_2_1       		 11.8984
+r_2_1        		 0.086016
+I_2_1        		 0.546177
+omegaI_2_1   		 0.88555
+Q_2          		 13.8983
+D_2_1        		 0
+D_N_2_1      		 0.0469331
+D_K_2_1      		 0.0107487
+K_2_1        		 80.838
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.130343
+Y_2_1        		 13.2445
+N_2_1        		 0.0888521
+Q_I_2_1      		 7.3993
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.50453
+P_A_3        		 0.692743
+KH_3_1       		 11.1141
+r_3_1        		 0.086016
+I_3_1        		 0.500137
+omegaI_3_1   		 0.88555
+Q_3          		 7.81821
+D_3_1        		 0
+D_N_3_1      		 0.00690192
+D_K_3_1      		 0
+K_3_1        		 20.6754
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.47603
+Y_3_1        		 4.50917
+N_3_1        		 0.114133
+Q_I_3_1      		 3.69206
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0839057,	 time = 0.499
+Iter: 2,	 err. = 0.0152859,	 time = 0.426
+Iter: 3,	 err. = 8.54404e-05,	 time = 0.394
+Iter: 4,	 err. = 6.72246e-09,	 time = 0.38
+
+Total time of simulation: 3.02.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 3.040942 seconds.
+=============================================
+=============================================
+=== Step 6 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00181971                        0.0564               1
+     1         22     3.69165e-06       0.807482        0.00234               1
+     2         33     1.66225e-11     0.00724704       5.05e-06            2.02
+     3         44     3.27929e-22    1.29132e-05       2.28e-11            2.02
+     4         55     2.56616e-27    7.26921e-11       6.67e-14            2.02
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','1.639632e-22','2.220446e-16','2.566165e-27','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 23.9859
+N            		 0.221826
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0459745
+Y_1          		 0.227215
+Q_D_1        		 0.766687
+Q_I_1        		 0.493381
+M_1          		 0.313192
+X_1          		 0.176145
+D_X_1        		 0.186826
+K_1          		 1.02166
+N_1          		 0.017963
+P_D_1        		 0.704397
+P_M_1        		 2.18159
+W_1          		 8.54402
+Q_1_1        		 0.942832
+W_1_1        		 8.54402
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.704397
+I_2          		 0.544345
+Y_2          		 1.71348
+Q_D_2        		 10.7302
+Q_I_2        		 7.34443
+M_2          		 0.313192
+X_2          		 3.05845
+D_X_2        		 0.22181
+K_2          		 11.8099
+N_2          		 0.0888662
+P_D_2        		 0.595952
+P_M_2        		 2.18159
+W_2          		 9.40905
+Q_2_1        		 13.7886
+W_2_1        		 9.40905
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.595952
+I_3          		 0.501945
+Y_3          		 2.15426
+Q_D_3        		 7.54032
+Q_I_3        		 3.70532
+M_3          		 0.228393
+X_3          		 0.313939
+D_X_3        		 0.0399705
+K_3          		 11.1543
+N_3          		 0.114997
+P_D_3        		 0.692046
+P_M_3        		 2.99159
+W_3          		 11.6549
+Q_3_1        		 7.85426
+W_3_1        		 11.6549
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.692046
+P            		 0.88555
+lambda       		 0.32002
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.79431
+H            		 21.3834
+IH           		 1.18631
+PH           		 0.0353707
+DH           		 0.11714
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -3.14538
+BG           		 0
+NX           		 0.129011
+rf           		 0.041016
+G            		 0.561232
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.61232
+I            		 1.09226
+Y            		 4.6242
+Q_U          		 16.0383
+Q_D          		 18.5238
+Q_I          		 11.5431
+Q            		 21.8222
+M            		 0.84562
+X            		 3.29845
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.766687
+P_A_1        		 0.704397
+KH_1_1       		 1.02166
+r_1_1        		 0.086016
+I_1_1        		 0.0459745
+omegaI_1_1   		 0.88555
+Q_1          		 0.942832
+D_1_1        		 0.00903413
+D_N_1_1      		 0.13512
+D_K_1_1      		 0
+K_1_1        		 1.99743
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.452946
+Y_1_1        		 0.501637
+N_1_1        		 0.017963
+Q_I_1_1      		 0.493381
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.7302
+P_A_2        		 0.595952
+KH_2_1       		 11.8099
+r_2_1        		 0.086016
+I_2_1        		 0.544345
+omegaI_2_1   		 0.88555
+Q_2          		 13.7886
+D_2_1        		 0
+D_N_2_1      		 0.0563197
+D_K_2_1      		 0.0128984
+K_2_1        		 80.0545
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.130639
+Y_2_1        		 13.1161
+N_2_1        		 0.0888662
+Q_I_2_1      		 7.34443
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.54032
+P_A_3        		 0.692046
+KH_3_1       		 11.1543
+r_3_1        		 0.086016
+I_3_1        		 0.501945
+omegaI_3_1   		 0.88555
+Q_3          		 7.85426
+D_3_1        		 0
+D_N_3_1      		 0.00828231
+D_K_3_1      		 0
+K_3_1        		 20.803
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.474822
+Y_3_1        		 4.53699
+N_3_1        		 0.114997
+Q_I_3_1      		 3.70532
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0862903,	 time = 0.648
+Iter: 2,	 err. = 0.0156931,	 time = 0.604
+Iter: 3,	 err. = 9.44139e-05,	 time = 0.658
+Iter: 4,	 err. = 8.14806e-09,	 time = 0.496
+
+Total time of simulation: 4.132.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 4.185725 seconds.
+=============================================
+=============================================
+=== Step 7 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00190321                        0.0579               1
+     1         22     4.09927e-06        0.81091        0.00255               1
+     2         33      2.0587e-11     0.00735284        5.8e-06            2.03
+     3         44     5.07853e-22    1.37965e-05       3.01e-11            2.03
+     4         55     6.16261e-28    4.81307e-11       1.92e-14            2.03
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','2.539264e-22','2.220446e-16','6.162606e-28','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 23.9031
+N            		 0.222393
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0444203
+Y_1          		 0.219533
+Q_D_1        		 0.73173
+Q_I_1        		 0.476759
+M_1          		 0.311528
+X_1          		 0.175542
+D_X_1        		 0.193483
+K_1          		 0.987117
+N_1          		 0.0176464
+P_D_1        		 0.707315
+P_M_1        		 2.18159
+W_1          		 8.40326
+Q_1_1        		 0.907272
+W_1_1        		 8.40326
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.707315
+I_2          		 0.5425
+Y_2          		 1.7006
+Q_D_2        		 10.6213
+Q_I_2        		 7.28939
+M_2          		 0.311528
+X_2          		 3.05721
+D_X_2        		 0.223504
+K_2          		 11.7211
+N_2          		 0.0888767
+P_D_2        		 0.596242
+P_M_2        		 2.18159
+W_2          		 9.33721
+Q_2_1        		 13.6786
+W_2_1        		 9.33721
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.596242
+I_3          		 0.503766
+Y_3          		 2.16208
+Q_D_3        		 7.5764
+Q_I_3        		 3.71866
+M_3          		 0.22718
+X_3          		 0.314202
+D_X_3        		 0.0398198
+K_3          		 11.1948
+N_3          		 0.11587
+P_D_3        		 0.691347
+P_M_3        		 2.99159
+W_3          		 11.609
+Q_3_1        		 7.8906
+W_3_1        		 11.609
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.691347
+P            		 0.88555
+lambda       		 0.322501
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.77281
+H            		 21.2189
+IH           		 1.19718
+PH           		 0.0353707
+DH           		 0.136238
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -3.4508
+BG           		 0
+NX           		 0.141538
+rf           		 0.041016
+G            		 0.556954
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.56954
+I            		 1.09069
+Y            		 4.60981
+Q_U          		 15.9531
+Q_D          		 18.4254
+Q_I          		 11.4848
+Q            		 21.7241
+M            		 0.841126
+X            		 3.29876
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.73173
+P_A_1        		 0.707315
+KH_1_1       		 0.987117
+r_1_1        		 0.086016
+I_1_1        		 0.0444203
+omegaI_1_1   		 0.88555
+Q_1          		 0.907272
+D_1_1        		 0.0105398
+D_N_1_1      		 0.15764
+D_K_1_1      		 0
+K_1_1        		 1.90672
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.458453
+Y_1_1        		 0.478857
+N_1_1        		 0.0176464
+Q_I_1_1      		 0.476759
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.6213
+P_A_2        		 0.596242
+KH_2_1       		 11.7211
+r_2_1        		 0.086016
+I_2_1        		 0.5425
+omegaI_2_1   		 0.88555
+Q_2          		 13.6786
+D_2_1        		 0
+D_N_2_1      		 0.0657063
+D_K_2_1      		 0.0150482
+K_2_1        		 79.2676
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.130944
+Y_2_1        		 12.9872
+N_2_1        		 0.0888767
+Q_I_2_1      		 7.28939
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.5764
+P_A_3        		 0.691347
+KH_3_1       		 11.1948
+r_3_1        		 0.086016
+I_3_1        		 0.503766
+omegaI_3_1   		 0.88555
+Q_3          		 7.8906
+D_3_1        		 0
+D_N_3_1      		 0.00966269
+D_K_3_1      		 0
+K_3_1        		 20.9317
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.473613
+Y_3_1        		 4.56507
+N_3_1        		 0.11587
+Q_I_3_1      		 3.71866
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0887724,	 time = 0.682
+Iter: 2,	 err. = 0.0161204,	 time = 0.655
+Iter: 3,	 err. = 0.000104505,	 time = 0.38
+Iter: 4,	 err. = 9.90886e-09,	 time = 0.505
+
+Total time of simulation: 4.141.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 4.175693 seconds.
+=============================================
+=============================================
+=== Step 8 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11       0.0019931                        0.0595               1
+     1         22     4.56538e-06       0.814351        0.00278               1
+     2         33     2.56332e-11      0.0074582       6.69e-06            2.04
+     3         44     1.16796e-21    1.47632e-05       4.08e-11            2.04
+     4         55     1.83384e-27    1.52379e-10       7.59e-14            2.04
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','5.839795e-22','2.220446e-16','1.833843e-27','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 23.8206
+N            		 0.222962
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0428844
+Y_1          		 0.211943
+Q_D_1        		 0.697311
+Q_I_1        		 0.460332
+M_1          		 0.309869
+X_1          		 0.174919
+D_X_1        		 0.200542
+K_1          		 0.952986
+N_1          		 0.0173265
+P_D_1        		 0.710351
+P_M_1        		 2.18159
+W_1          		 8.26251
+Q_1_1        		 0.87223
+W_1_1        		 8.26251
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.710351
+I_2          		 0.540642
+Y_2          		 1.68768
+Q_D_2        		 10.5122
+Q_I_2        		 7.23419
+M_2          		 0.309869
+X_2          		 3.05594
+D_X_2        		 0.22523
+K_2          		 11.6321
+N_2          		 0.0888836
+P_D_2        		 0.59654
+P_M_2        		 2.18159
+W_2          		 9.26556
+Q_2_1        		 13.5681
+W_2_1        		 9.26556
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.59654
+I_3          		 0.5056
+Y_3          		 2.16995
+Q_D_3        		 7.61276
+Q_I_3        		 3.73211
+M_3          		 0.22597
+X_3          		 0.314467
+D_X_3        		 0.0396692
+K_3          		 11.2355
+N_3          		 0.116752
+P_D_3        		 0.690647
+P_M_3        		 2.99159
+W_3          		 11.5633
+Q_3_1        		 7.92723
+W_3_1        		 11.5633
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.690647
+P            		 0.88555
+lambda       		 0.325008
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.75143
+H            		 21.0553
+IH           		 1.20798
+PH           		 0.0353707
+DH           		 0.155219
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -3.75546
+BG           		 0
+NX           		 0.154034
+rf           		 0.041016
+G            		 0.552698
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.52698
+I            		 1.08913
+Y            		 4.59554
+Q_U          		 15.8681
+Q_D          		 18.3272
+Q_I          		 11.4266
+Q            		 21.6263
+M            		 0.836647
+X            		 3.29907
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.697311
+P_A_1        		 0.710351
+KH_1_1       		 0.952986
+r_1_1        		 0.086016
+I_1_1        		 0.0428844
+omegaI_1_1   		 0.88555
+Q_1          		 0.87223
+D_1_1        		 0.0120455
+D_N_1_1      		 0.18016
+D_K_1_1      		 0
+K_1_1        		 1.81788
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.46423
+Y_1_1        		 0.456546
+N_1_1        		 0.0173265
+Q_I_1_1      		 0.460332
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.5122
+P_A_2        		 0.59654
+KH_2_1       		 11.6321
+r_2_1        		 0.086016
+I_2_1        		 0.540642
+omegaI_2_1   		 0.88555
+Q_2          		 13.5681
+D_2_1        		 0
+D_N_2_1      		 0.0750929
+D_K_2_1      		 0.0171979
+K_2_1        		 78.4773
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.131258
+Y_2_1        		 12.8577
+N_2_1        		 0.0888836
+Q_I_2_1      		 7.23419
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.61276
+P_A_3        		 0.690647
+KH_3_1       		 11.2355
+r_3_1        		 0.086016
+I_3_1        		 0.5056
+omegaI_3_1   		 0.88555
+Q_3          		 7.92723
+D_3_1        		 0
+D_N_3_1      		 0.0110431
+D_K_3_1      		 0
+K_3_1        		 21.0617
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.472404
+Y_3_1        		 4.59342
+N_3_1        		 0.116752
+Q_I_3_1      		 3.73211
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0913565,	 time = 0.554
+Iter: 2,	 err. = 0.0165692,	 time = 0.341
+Iter: 3,	 err. = 0.000115871,	 time = 0.267
+Iter: 4,	 err. = 1.20909e-08,	 time = 0.416
+
+Total time of simulation: 2.927.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 2.942872 seconds.
+=============================================
+=============================================
+=== Step 9 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11       0.0020901                        0.0612               1
+     1         22     5.10033e-06       0.817812        0.00304               1
+     2         33     3.21148e-11     0.00756934       7.75e-06            2.04
+     3         44     1.31758e-21      1.582e-05       4.95e-11            2.04
+     4         55     2.33652e-27    1.69555e-10       7.12e-14            2.04
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','6.587870e-22','2.220446e-16','2.336520e-27','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 23.7386
+N            		 0.223533
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0413673
+Y_1          		 0.204445
+Q_D_1        		 0.663439
+Q_I_1        		 0.444105
+M_1          		 0.308215
+X_1          		 0.174275
+D_X_1        		 0.208036
+K_1          		 0.919273
+N_1          		 0.0170032
+P_D_1        		 0.713515
+P_M_1        		 2.18159
+W_1          		 8.12177
+Q_1_1        		 0.837714
+W_1_1        		 8.12177
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.713515
+I_2          		 0.538772
+Y_2          		 1.67472
+Q_D_2        		 10.4026
+Q_I_2        		 7.17881
+M_2          		 0.308215
+X_2          		 3.05465
+D_X_2        		 0.226988
+K_2          		 11.5428
+N_2          		 0.0888867
+P_D_2        		 0.596845
+P_M_2        		 2.18159
+W_2          		 9.19409
+Q_2_1        		 13.4573
+W_2_1        		 9.19409
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.596845
+I_3          		 0.507447
+Y_3          		 2.17788
+Q_D_3        		 7.64941
+Q_I_3        		 3.74564
+M_3          		 0.224764
+X_3          		 0.314732
+D_X_3        		 0.0395186
+K_3          		 11.2766
+N_3          		 0.117643
+P_D_3        		 0.689946
+P_M_3        		 2.99159
+W_3          		 11.5176
+Q_3_1        		 7.96414
+W_3_1        		 11.5176
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.689946
+P            		 0.88555
+lambda       		 0.32754
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.73016
+H            		 20.8925
+IH           		 1.21871
+PH           		 0.0353707
+DH           		 0.174083
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -4.05936
+BG           		 0
+NX           		 0.166499
+rf           		 0.041016
+G            		 0.548465
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.48465
+I            		 1.08759
+Y            		 4.58139
+Q_U          		 15.7834
+Q_D          		 18.2294
+Q_I          		 11.3686
+Q            		 21.5288
+M            		 0.832182
+X            		 3.2994
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.663439
+P_A_1        		 0.713515
+KH_1_1       		 0.919273
+r_1_1        		 0.086016
+I_1_1        		 0.0413673
+omegaI_1_1   		 0.88555
+Q_1          		 0.837714
+D_1_1        		 0.0135512
+D_N_1_1      		 0.20268
+D_K_1_1      		 0
+K_1_1        		 1.73094
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.470301
+Y_1_1        		 0.43471
+N_1_1        		 0.0170032
+Q_I_1_1      		 0.444105
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.4026
+P_A_2        		 0.596845
+KH_2_1       		 11.5428
+r_2_1        		 0.086016
+I_2_1        		 0.538772
+omegaI_2_1   		 0.88555
+Q_2          		 13.4573
+D_2_1        		 0
+D_N_2_1      		 0.0844796
+D_K_2_1      		 0.0193477
+K_2_1        		 77.6836
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.131581
+Y_2_1        		 12.7277
+N_2_1        		 0.0888867
+Q_I_2_1      		 7.17881
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.64941
+P_A_3        		 0.689946
+KH_3_1       		 11.2766
+r_3_1        		 0.086016
+I_3_1        		 0.507447
+omegaI_3_1   		 0.88555
+Q_3          		 7.96414
+D_3_1        		 0
+D_N_3_1      		 0.0124235
+D_K_3_1      		 0
+K_3_1        		 21.1929
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.471196
+Y_3_1        		 4.62202
+N_3_1        		 0.117643
+Q_I_3_1      		 3.74564
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.0940475,	 time = 0.695
+Iter: 2,	 err. = 0.0170412,	 time = 0.424
+Iter: 3,	 err. = 0.000128696,	 time = 0.492
+Iter: 4,	 err. = 1.48041e-08,	 time = 0.439
+
+Total time of simulation: 3.823.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 3.852580 seconds.
+=============================================
+=============================================
+=== Step 10 of 10 for SSP585 ===
+
+                                         Norm of      First-order   Trust-region
+ Iteration  Func-count     f(x)          step         optimality    radius
+     0         11      0.00219497                         0.063               1
+     1         22     5.71634e-06       0.821292        0.00333               1
+     2         33     4.04835e-11     0.00768472          9e-06            2.05
+     3         44     2.39227e-21    1.69886e-05       6.67e-11            2.05
+     4         55     1.80452e-28    1.77352e-10       3.11e-14            2.05
+
+<a href = "matlab: helpview('optim','eqn_inaccuracy','CSHelpWindow');">Equation solved, inaccuracy possible</a>.
+
+The vector of function values is near zero, as measured by the value
+of the <a href = "matlab: helpview('optim','fcn_tolerance_fsolve','CSHelpWindow');">function tolerance</a>. However, the <a href = "matlab: helpview('optim','last_step_ineffective','CSHelpWindow');">last step was ineffective</a>.
+
+<<a href = "matlab: createExitMsg({'optim:fsolve:Exit3basic'},{'optim:fsolve:Exit3detailed','fsolve','1.196135e-21','2.220446e-16','1.804519e-28','1.000000e-08'},true,true);;">stopping criteria details</a>>
+
+STEADY-STATE RESULTS:
+
+K            		 23.6571
+N            		 0.224106
+SL           		 61.038
+tas_1        		 3.94396
+SfcWind_1    		 0
+pr_1         		 0
+sunshine_1   		 0
+hurs_1       		 0
+heatwave_1   		 0
+maxdrydays_1 		 0
+maxwetdays_1 		 0
+storms_1     		 13.3264
+floods_1     		 0
+fire_1       		 0
+landslide_1  		 0
+I_1          		 0.0398694
+Y_1          		 0.197042
+Q_D_1        		 0.630126
+Q_I_1        		 0.428082
+M_1          		 0.306567
+X_1          		 0.173609
+D_X_1        		 0.216002
+K_1          		 0.885987
+N_1          		 0.0166765
+P_D_1        		 0.716816
+P_M_1        		 2.18159
+W_1          		 7.98104
+Q_1_1        		 0.803735
+W_1_1        		 7.98104
+tauKF_1_1    		 0
+tauNF_1_1    		 0
+P_D_1_1      		 0.716816
+I_2          		 0.53689
+Y_2          		 1.66172
+Q_D_2        		 10.2928
+Q_I_2        		 7.12326
+M_2          		 0.306567
+X_2          		 3.05331
+D_X_2        		 0.22878
+K_2          		 11.4532
+N_2          		 0.0888859
+P_D_2        		 0.597159
+P_M_2        		 2.18159
+W_2          		 9.1228
+Q_2_1        		 13.3461
+W_2_1        		 9.1228
+tauKF_2_1    		 0
+tauNF_2_1    		 0
+P_D_2_1      		 0.597159
+I_3          		 0.509306
+Y_3          		 2.18586
+Q_D_3        		 7.68635
+Q_I_3        		 3.75927
+M_3          		 0.223562
+X_3          		 0.314998
+D_X_3        		 0.0393681
+K_3          		 11.3179
+N_3          		 0.118544
+P_D_3        		 0.689244
+P_M_3        		 2.99159
+W_3          		 11.472
+Q_3_1        		 8.00135
+W_3_1        		 11.472
+tauKF_3_1    		 0
+tauNF_3_1    		 0
+P_D_3_1      		 0.689244
+P            		 0.88555
+lambda       		 0.330098
+P_D          		 0.656073
+P_M          		 2.42399
+C            		 2.709
+H            		 20.7306
+IH           		 1.22936
+PH           		 0.0353707
+DH           		 0.192834
+omegaH       		 0.0371393
+PoP          		 0.9734
+B            		 -4.3625
+BG           		 0
+NX           		 0.178932
+rf           		 0.041016
+G            		 0.544255
+tauC         		 0.2
+tauH         		 0.05
+tauNH        		 0
+tauKH        		 0
+KG           		 5.44255
+I            		 1.08607
+Y            		 4.56736
+Q_U          		 15.699
+Q_D          		 18.1319
+Q_I          		 11.3106
+Q            		 21.4317
+M            		 0.827731
+X            		 3.29974
+G_A_DH       		 0
+I_AP_DH      		 0
+Q_A_1        		 0.630126
+P_A_1        		 0.716816
+KH_1_1       		 0.885987
+r_1_1        		 0.086016
+I_1_1        		 0.0398694
+omegaI_1_1   		 0.88555
+Q_1          		 0.803735
+D_1_1        		 0.0150569
+D_N_1_1      		 0.2252
+D_K_1_1      		 0
+K_1_1        		 1.6459
+I_AP_1_1     		 0
+K_AP_1_1     		 0
+G_A_1_1      		 0
+K_A_1_1      		 0
+P_1_1        		 0.476691
+Y_1_1        		 0.413354
+N_1_1        		 0.0166765
+Q_I_1_1      		 0.428082
+A_1_1        		 3.96872
+A_N_1_1      		 2.01221
+A_K_1_1      		 1
+Q_A_2        		 10.2928
+P_A_2        		 0.597159
+KH_2_1       		 11.4532
+r_2_1        		 0.086016
+I_2_1        		 0.53689
+omegaI_2_1   		 0.88555
+Q_2          		 13.3461
+D_2_1        		 0
+D_N_2_1      		 0.0938662
+D_K_2_1      		 0.0214974
+K_2_1        		 76.8864
+I_AP_2_1     		 0
+K_AP_2_1     		 0
+G_A_2_1      		 0
+K_A_2_1      		 0
+P_2_1        		 0.131913
+Y_2_1        		 12.5971
+N_2_1        		 0.0888859
+Q_I_2_1      		 7.12326
+A_2_1        		 9.4857
+A_N_2_1      		 0.19085
+A_K_2_1      		 1
+Q_A_3        		 7.68635
+P_A_3        		 0.689244
+KH_3_1       		 11.3179
+r_3_1        		 0.086016
+I_3_1        		 0.509306
+omegaI_3_1   		 0.88555
+Q_3          		 8.00135
+D_3_1        		 0
+D_N_3_1      		 0.0138038
+D_K_3_1      		 0
+K_3_1        		 21.3252
+I_AP_3_1     		 0
+K_AP_3_1     		 0
+G_A_3_1      		 0
+K_A_3_1      		 0
+P_3_1        		 0.469987
+Y_3_1        		 4.65089
+N_3_1        		 0.118544
+Q_I_3_1      		 3.75927
+A_3_1        		 7.50101
+A_N_3_1      		 0.544058
+A_K_3_1      		 1
+
+EIGENVALUES:
+         Modulus             Real        Imaginary
+
+               0                0                0
+       8.867e-21        8.867e-21                0
+       2.223e-20        2.223e-20                0
+       2.385e-20       -2.385e-20                0
+        5.99e-20         5.99e-20                0
+       1.059e-19       -1.059e-19                0
+       3.634e-19       -3.634e-19                0
+       3.668e-18        3.668e-18                0
+       2.137e-16        2.137e-16                0
+          0.4308           0.4308                0
+          0.8878           0.8878                0
+             0.9              0.9                0
+          0.9143           0.9143                0
+          0.9233           0.9203          0.07528
+          0.9233           0.9203         -0.07528
+          0.9264           0.9237          0.07188
+          0.9264           0.9237         -0.07188
+            1.11            1.107          0.08408
+            1.11            1.107         -0.08408
+           1.114             1.11          0.08889
+           1.114             1.11         -0.08889
+           1.141            1.137          0.08791
+           1.141            1.137         -0.08791
+           2.422            2.422                0
+       7.263e+42        7.263e+42                0
+       1.175e+44       -1.175e+44                0
+       5.577e+44       -5.577e+44                0
+       7.925e+44       -7.925e+44                0
+       3.521e+45        3.521e+45                0
+             Inf              Inf                0
+             Inf              Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+             Inf             -Inf                0
+
+
+There are 19 eigenvalue(s) larger than 1 in modulus 
+for 19 forward-looking variable(s)
+
+The rank condition is verified.
+
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 0.09685,	 time = 1.047
+Iter: 2,	 err. = 0.017538,	 time = 0.402
+Iter: 3,	 err. = 0.000143188,	 time = 0.299
+Iter: 4,	 err. = 1.81887e-08,	 time = 0.43
+
+Total time of simulation: 4.728.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Elapsed time is 4.743540 seconds.
+=============================================
+
+--------------------------------------------------------
+MODEL SIMULATION:
+
+Iter: 1,	 err. = 1.81887e-08,	 time = 0.382
+
+Total time of simulation: 0.384.
+--------------------------------------------------------
+
+Perfect foresight solution found.
+
+Total computing time : 0h01m05s
