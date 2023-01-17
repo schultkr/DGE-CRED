@@ -9,15 +9,13 @@ tic0 = tic;
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'DGE_CRED_Model';
-M_.dynare_version = '4.6.4';
-oo_.dynare_version = '4.6.4';
-options_.dynare_version = '4.6.4';
+M_.dynare_version = '5.3';
+oo_.dynare_version = '5.3';
+options_.dynare_version = '5.3';
 %
 % Some global variables initialization
 %
 global_initialization;
-diary off;
-diary('DGE_CRED_Model.log');
 M_.exo_names = cell(61,1);
 M_.exo_names_tex = cell(61,1);
 M_.exo_names_long = cell(61,1);
@@ -1215,17 +1213,20 @@ M_.param_nbr = 169;
 M_.orig_endo_nbr = 163;
 M_.aux_vars = [];
 M_.predetermined_variables = [ 78 ];
+M_ = setup_solvers(M_);
 M_.Sigma_e = zeros(61, 61);
 M_.Correlation_matrix = eye(61, 61);
 M_.H = 0;
 M_.Correlation_matrix_ME = 1;
 M_.sigma_e_is_diagonal = true;
 M_.det_shocks = [];
+M_.surprise_shocks = [];
+M_.heteroskedastic_shocks.Qvalue_orig = [];
+M_.heteroskedastic_shocks.Qscale_orig = [];
 options_.linear = false;
 options_.block = false;
 options_.bytecode = false;
 options_.use_dll = false;
-options_.linear_decomposition = false;
 M_.nonzero_hessian_eqs = [1 2 3 4 5 6 9 10 11 15 17 19 20 21 22 23 24 25 26 28 29 30 31 32 33 35 36 37 38 39 40 41 42 43 44 47 48 49 53 55 57 58 59 60 61 62 63 64 66 67 68 69 70 71 72 74 75 76 77 78 79 80 81 82 83 86 87 88 92 94 96 97 98 99 100 101 102 103 105 106 107 108 109 110 111 113 114 115 116 130 131 132 133 134 135 136 137 138 140 141 142 147 149 151 152 153 154 155 156 157 158 159 160 163];
 M_.hessian_eq_zero = isempty(M_.nonzero_hessian_eqs);
 M_.orig_eq_nbr = 163;
@@ -1414,7 +1415,7 @@ M_.nboth   = 4;
 M_.nsfwrd   = 19;
 M_.nspred   = 17;
 M_.ndynamic   = 32;
-M_.dynamic_tmp_nbr = [182; 309; 190; 0; ];
+M_.dynamic_tmp_nbr = [181; 309; 190; 0; ];
 M_.model_local_variables_dynamic_tt_idxs = {
 };
 M_.equations_tags = {
@@ -2225,29 +2226,32 @@ structScenarioResults.(sVersion).(sScenario).M_ = M_;
 structScenarioResults.(sVersion).(sScenario).options_ = options_; 
 save('structScenarioResults.mat', 'structScenarioResults')
 end
-save('DGE_CRED_Model_results.mat', 'oo_', 'M_', 'options_');
+
+
+oo_.time = toc(tic0);
+disp(['Total computing time : ' dynsec2hms(oo_.time) ]);
+if ~exist([M_.dname filesep 'Output'],'dir')
+    mkdir(M_.dname,'Output');
+end
+save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'oo_', 'M_', 'options_');
 if exist('estim_params_', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'estim_params_', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'estim_params_', '-append');
 end
 if exist('bayestopt_', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'bayestopt_', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'bayestopt_', '-append');
 end
 if exist('dataset_', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'dataset_', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'dataset_', '-append');
 end
 if exist('estimation_info', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'estimation_info', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'estimation_info', '-append');
 end
 if exist('dataset_info', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'dataset_info', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'dataset_info', '-append');
 end
 if exist('oo_recursive_', 'var') == 1
-  save('DGE_CRED_Model_results.mat', 'oo_recursive_', '-append');
+  save([M_.dname filesep 'Output' filesep 'DGE_CRED_Model_results.mat'], 'oo_recursive_', '-append');
 end
-
-
-disp(['Total computing time : ' dynsec2hms(toc(tic0)) ]);
 if ~isempty(lastwarn)
   disp('Note: warning(s) encountered in MATLAB/Octave code')
 end
-diary off
