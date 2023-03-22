@@ -9,6 +9,7 @@
 ## Installation
 
 To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/DGE-CRED%20Model%20Technical%20Report%20reduced.pdf).
+Further, an example excel workbook with a description of the different variables is avaialable [here](https://github.com/schultkr/DGE-CRED/blob/master/DGE_CRED_Model/ExcelFiles/ModelSimulationandCalibration17Sectorsand6Regions.xlsx).
 
 ## Scenario Simulation
 
