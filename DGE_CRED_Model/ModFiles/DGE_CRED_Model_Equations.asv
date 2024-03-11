@@ -176,27 +176,19 @@ model;
             [name = 'regional subsector demand for intermediates']
             P  = omegaQI_@{subsec}_@{reg}_p^(1/etaI_@{subsec}_p) * ((Q_I_@{subsec}_@{reg})/Q_@{subsec}_@{reg})^(-1/etaI_@{subsec}_p) * P_D_@{subsec}_@{reg};
             
-            //# lhsY_@{subsec}_@{reg} = Y_@{subsec}_@{reg};
-            //# rhsY_@{subsec}_@{reg} = (etaNK_@{subsec}_@{reg}_p == 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^alphaK_@{subsec}_@{reg}_p * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^alphaN_@{subsec}_@{reg}_p
-            //+ (etaNK_@{subsec}_@{reg}_p != 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (alphaK_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p) + alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p))^(etaNK_@{subsec}_@{reg}_p/(etaNK_@{subsec}_@{reg}_p - 1 + (etaNK_@{subsec}_@{reg}_p == 1)));
-            [name = 'subsector specific output']
-            Y_@{subsec}_@{reg} = (etaNK_@{subsec}_@{reg}_p == 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^alphaK_@{subsec}_@{reg}_p * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^alphaN_@{subsec}_@{reg}_p
+            # lhs_@{subsec}_@{reg} = Y_@{subsec}_@{reg};
+            # rhs_@{subsec}_@{reg} = (etaNK_@{subsec}_@{reg}_p == 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^alphaK_@{subsec}_@{reg}_p * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^alphaN_@{subsec}_@{reg}_p
             + (etaNK_@{subsec}_@{reg}_p != 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (alphaK_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p) + alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p))^(etaNK_@{subsec}_@{reg}_p/(etaNK_@{subsec}_@{reg}_p - 1 + (etaNK_@{subsec}_@{reg}_p == 1)));
-            //(lhsY_@{subsec}_@{reg}+1)/(rhsY_@{subsec}_@{reg}+1)=1; 
-
-            //# lhsr_@{subsec}_@{reg} = r_@{sec}_@{reg} * (1 + tauKF_@{subsec}_@{reg});
-            //# rhsr_@{subsec}_@{reg} = alphaK_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * ((1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * A_K_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1)/(etaNK_@{subsec}_@{reg}_p)) * (K_@{subsec}_@{reg} / Y_@{subsec}_@{reg})^(-1/etaNK_@{subsec}_@{reg}_p);
+            [name = 'subsector specific output']
+            //Y_@{subsec}_@{reg} = (etaNK_@{subsec}_@{reg}_p == 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^alphaK_@{subsec}_@{reg}_p * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^alphaN_@{subsec}_@{reg}_p
+            //+ (etaNK_@{subsec}_@{reg}_p != 1) * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * (alphaK_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (A_K_@{subsec}_@{reg} * K_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p) + alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * (PoP * (1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * N_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1 + (etaNK_@{subsec}_@{reg}_p == 1))/etaNK_@{subsec}_@{reg}_p))^(etaNK_@{subsec}_@{reg}_p/(etaNK_@{subsec}_@{reg}_p - 1 + (etaNK_@{subsec}_@{reg}_p == 1)));
+            
 
             [name = 'Firms FOC capital',mcp = 'K_@{subsec}_@{reg} > 0']
             r_@{sec}_@{reg} * (1 + tauKF_@{subsec}_@{reg}) = alphaK_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * ((1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg} * A_K_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1)/(etaNK_@{subsec}_@{reg}_p)) * (K_@{subsec}_@{reg} / Y_@{subsec}_@{reg})^(-1/etaNK_@{subsec}_@{reg}_p);
-            //(lhsr_@{subsec}_@{reg}+1)/(rhsr_@{subsec}_@{reg}+1)=1; 
-
-            //# lhsW_@{subsec}_@{reg} = W_@{subsec}_@{reg} * (1 + tauNF_@{subsec}_@{reg})/P_@{subsec}_@{reg};
-            //# rhsW_@{subsec}_@{reg} = alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * ((1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1)/(etaNK_@{subsec}_@{reg}_p)) * ((PoP * N_@{subsec}_@{reg}) / Y_@{subsec}_@{reg})^(-1/etaNK_@{subsec}_@{reg}_p);
-
+            
             [name = 'Firms FOC labour',mcp = 'N_@{subsec}_@{reg} > 0']
-            W_@{subsec}_@{reg} * (1 + tauNF_@{subsec}_@{reg})/P_@{subsec}_@{reg} / (alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * ((1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1)/(etaNK_@{subsec}_@{reg}_p)) * ((PoP * N_@{subsec}_@{reg}) / Y_@{subsec}_@{reg})^(-1/etaNK_@{subsec}_@{reg}_p))=1;
-            //(lhsW_@{subsec}_@{reg}+1)/(rhsW_@{subsec}_@{reg}+1)=1; 
+            W_@{subsec}_@{reg} * (1 + tauNF_@{subsec}_@{reg})/P_@{subsec}_@{reg} - alphaN_@{subsec}_@{reg}_p^(1/etaNK_@{subsec}_@{reg}_p) * ((1 - D_N_@{subsec}_@{reg}) * A_N_@{subsec}_@{reg} * (1 - D_@{subsec}_@{reg}) * A_@{subsec}_@{reg})^((etaNK_@{subsec}_@{reg}_p-1)/(etaNK_@{subsec}_@{reg}_p)) * ((PoP * N_@{subsec}_@{reg}) / Y_@{subsec}_@{reg})^(-1/etaNK_@{subsec}_@{reg}_p);
 
             [name = 'HH FOC labour',mcp = 'N_@{sec}_@{reg}>0']
             (1 - tauNH) * W_@{subsec}_@{reg} * lambda = phiL_@{subsec}_@{reg}_p * A_N_@{subsec}_@{reg} * (N_@{subsec}_@{reg})^(sigmaL_p);

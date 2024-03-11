@@ -8,18 +8,18 @@ clearvars;
 % define working directory path
 sPathWD = pwd();
 %% Define sectors
-casSectors = {'Agriculture'; 'Energy'; 'Manufacturing'; 'Tourism'; 'Services'};
+casSectors = {'Agriculture'; 'Energy'; 'Manufacturing'; "Tourism"; "Services"};
 inbsectors_p = length(casSectors);
 %% Define subsectors
-casSubSectors = {'Agriculture'; 'Energy'; 'Manufacturing'; 'Tourism'; 'Services'};
+casSubSectors = {'Sector1'; 'Sector2'; 'Sector3'};
 inbsubsectors_p = length(casSubSectors);
 %% Define regions
-casRegions = {'Thailand'};
+casRegions = {'Vietnam'};
 inbregions_p = length(casRegions);
 
 %% Define regional climate variables
-casClimateVarsRegionalName = {'surface temperature (Celsius)', 'floods (number)', 'droughts (number)'};
-casClimateVarsRegional = {'tas', 'floods', 'droughts'};
+casClimateVarsRegionalName = {'surface temperature (Celsius)'};
+casClimateVarsRegional = {'tas'};
 
 %% Define national climate variables
 casClimateVarsNationalName = {'Sea level'};
