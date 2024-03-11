@@ -11,8 +11,18 @@
 To use the model just download the repository and follow the instructions provided in the [documentation](https://github.com/schultkr/DGE-CRED/blob/master/DGE-CRED%20Model%20Technical%20Report.pdf).
 Further, an example excel workbook with a description of the different variables is avaialable [here](https://github.com/schultkr/DGE-CRED/blob/master/DGE_CRED_Model/ExcelFiles/ModelSimulationandCalibration17Sectorsand6Regions.xlsx).
 
+## Compatibility and Functionality Differences between Matlab and Octave with Dynare
+
+### Matlab
+- **Compatible Versions:** Matlab 2020 and later versions
+- **Dynare Compatibility:** Works with Dynare versions 4 to 5
+
 ### Octave
-The code only works for Octave 8.1.0 together with dynare 5.4. The dynare command check does not work in Octave. It is not possible to verify whether Blanchard -Kahn conditions are verified. Functions CreateRawExcelInputFileRobust.m and UpdateDataExcelRobust.m do not work with Octave.
+- **Compatible Version:** Only Octave version 8.1.0 is compatible
+- **Dynare Compatibility:** Only works with Dynare version 5.4
+- **Limitations in Octave:**
+  - The `dynare` command check does not function, preventing verification of the Blanchard-Kahn conditions
+  - The functions `CreateRawExcelInputFileRobust.m` and `UpdateDataExcelRobust.m` are not supported in Octave
 
 
 ## Scenario Simulation
