@@ -18,8 +18,9 @@ iminTermination_p = 100;
 imaxsec_p = eval(['subend_' num2str(inbsectors_p) '_p']);
 
 options_.periods = 1000;
+sversion = dynare_version;
 if isequal(sScenario, 'Baseline')
-    if str2double(dynare_version) < 6
+    if str2double(sversion(1)) < 6
         perfect_foresight_setup;
     else
         oo_ = perfect_foresight_setup(M_, options_, oo_);
@@ -63,7 +64,7 @@ if isequal(sScenario, 'Baseline')
             [eigenvalues_,result,info] = check(M_, options_, oo_);
         end
         tic;
-        if str2double(dynare_version) < 6
+        if str2double(sversion(1)) < 6
             perfect_foresight_solver;
         else
             [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
@@ -91,7 +92,7 @@ else
             [eigenvalues_,result,info] = check(M_, options_, oo_);
         end
         tic;
-        if str2double(dynare_version) < 6
+        if str2double(sversion(1)) < 6
             perfect_foresight_solver;
         else
             [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
@@ -101,7 +102,7 @@ else
     end    
 end
 M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;
-if str2double(dynare_version) < 6
+if str2double(sversion(1)) < 6
     perfect_foresight_solver;
 else
     [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
