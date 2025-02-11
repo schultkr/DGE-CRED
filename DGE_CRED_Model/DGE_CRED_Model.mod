@@ -1,11 +1,11 @@
 % ============================================
 % === Define number of sectors and regions ===
 % ============================================
-@# define Subsecstart = [1, 7, 9, 10, 11]
-@# define Subsecend = [6, 8, 9, 10, 12]
+@# define Subsecstart = [1, 2, 3]
+@# define Subsecend = [1, 2, 3]
 @# define Sectors = length(Subsecend)
 @# define ForwardLooking = 1
-@# define Regions = 2
+@# define Regions = 1
 @# define ClimateVarsRegional = ["tas", "SfcWind", "pr", "sunshine", "hurs", "heatwave", "maxdrydays", "maxwetdays", "storms", "floods", "fire", "landslide"]
 @# define ClimateVarsNational = ["SL"]
 @# define ClimateVars = ClimateVarsRegional + ClimateVarsNational
