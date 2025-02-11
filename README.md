@@ -15,11 +15,11 @@ Further, an example excel workbook with a description of the different variables
 
 ### Matlab
 - **Compatible Versions:** Matlab 2020 and later versions
-- **Dynare Compatibility:** Works with Dynare versions 4 to 5
+- **Dynare Compatibility:** Works with Dynare versions 4, 5 and 6
 
 ### Octave
 - **Compatible Version:** Only Octave version 8.1.0 is compatible
-- **Dynare Compatibility:** Only works with Dynare version 5.4
+- **Dynare Compatibility:** Only works with Dynare versions 4, 5 and 6.
 - **Limitations in Octave:**
   - The `dynare` command check does not function, preventing verification of the Blanchard-Kahn conditions
   - The functions `CreateRawExcelInputFileRobust.m` and `UpdateDataExcelRobust.m` are not supported in Octave
