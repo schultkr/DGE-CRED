@@ -19,7 +19,11 @@ imaxsec_p = eval(['subend_' num2str(inbsectors_p) '_p']);
 
 options_.periods = 1000;
 if isequal(sScenario, 'Baseline')
-    perfect_foresight_setup;
+    if str2double(dynare_version) < 6
+        perfect_foresight_setup;
+    else
+        oo_ = perfect_foresight_setup(M_, options_, oo_);
+    end
 end
 oo_ = LoadExogenous(sWorkbookNameInput, sScenario, oo_, M_);
 oo_.endo_simul_start = oo_.endo_simul;
@@ -59,7 +63,11 @@ if isequal(sScenario, 'Baseline')
             [eigenvalues_,result,info] = check(M_, options_, oo_);
         end
         tic;
-        perfect_foresight_solver;
+        if str2double(dynare_version) < 6
+            perfect_foresight_solver;
+        else
+            [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
+        end
         toc;
         disp('=============================================')
     end
@@ -83,13 +91,21 @@ else
             [eigenvalues_,result,info] = check(M_, options_, oo_);
         end
         tic;
-        perfect_foresight_solver;
+        if str2double(dynare_version) < 6
+            perfect_foresight_solver;
+        else
+            [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
+        end
         toc;
        disp('=============================================')
     end    
 end
 M_.params(ismember(M_.param_names, 'lCalibration_p')) = 0;
-perfect_foresight_solver;
+if str2double(dynare_version) < 6
+    perfect_foresight_solver;
+else
+    [oo_, ts]=perfect_foresight_solver(M_, options_, oo_, [], []);
+end
 iDisplay = 100;
 iFrequency = 1;
 iStartYear = 2014;

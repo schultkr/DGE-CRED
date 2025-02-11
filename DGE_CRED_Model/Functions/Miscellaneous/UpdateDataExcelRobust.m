@@ -9,7 +9,7 @@ clearvars;
 % define working directory path
 sPathWD = pwd();
 % define number of total subsectors
-inbsubsectors_p = 5;
+inbsubsectors_p = 3;
 % define number of regions
 inbregions_p = 1;
 
